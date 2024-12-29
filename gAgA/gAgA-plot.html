@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Visualization</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Include MathJax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -20,8 +19,6 @@
         // Initialize MathJax expressions for titles
         document.getElementById('math-title').innerHTML = '\\(g_Ag_A\\)';
         document.getElementById('math-x-axis').innerHTML = '\\(\\lambda \\text{ (m)}\\)';
-
-        // Trigger MathJax rendering for static elements
         MathJax.typeset();
 
         // List of CSV files and their custom labels
@@ -35,38 +32,13 @@
         const ctx = document.getElementById('myChart').getContext('2d');
         const chart = new Chart(ctx, {
             type: 'line',
-            data: {
-                labels: [], // Will be set dynamically
-                datasets: [] // Empty initially
-            },
+            data: { labels: [], datasets: [] },
             options: {
                 responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'top',
-                    },
-                },
+                plugins: { legend: { position: 'top' } },
                 scales: {
-                    x: {
-                        type: 'logarithmic', // Logarithmic scale for x-axis
-                        title: {
-                            display: true,
-                            text: 'λ (m)' // Plain text fallback (for internal rendering)
-                        },
-                        ticks: {
-                            callback: (value) => value.toExponential(), // Scientific notation for ticks
-                        }
-                    },
-                    y: {
-                        type: 'logarithmic', // Logarithmic scale for y-axis
-                        title: {
-                            display: true,
-                            text: 'g_Ag_A' // Plain text fallback (for internal rendering)
-                        },
-                        ticks: {
-                            callback: (value) => value.toExponential() // Scientific notation for ticks
-                        }
-                    }
+                    x: { type: 'logarithmic', title: { display: true, text: 'λ (m)' }, ticks: { callback: (value) => value.toExponential() } },
+                    y: { type: 'logarithmic', title: { display: true, text: 'g_Ag_A' }, ticks: { callback: (value) => value.toExponential() } }
                 }
             }
         });
@@ -77,22 +49,27 @@
                 .then(response => response.text())
                 .then(csvText => {
                     const rows = csvText.trim().split('\n'); // Split rows
-                    const xData = rows.map(row => parseFloat(row.split(',')[0])); // First column as x-axis (λ)
-                    const yData = rows.map(row => parseFloat(row.split(',')[1])); // Second column as y-axis (gAgA)
-                    return { xData, yData }; // Return the parsed x and y data
+                    if (rows.length === 0) throw new Error(`File ${filePath} is empty or invalid.`);
+                    
+                    const xData = rows.map(row => parseFloat(row.split(',')[0])); // First column: λ
+                    const yData = rows.map(row => parseFloat(row.split(',')[1])); // Second column: gAgA
+                    
+                    // Validate data to ensure it's numerical and valid
+                    if (xData.some(isNaN) || yData.some(isNaN)) {
+                        throw new Error(`File ${filePath} contains invalid numerical data.`);
+                    }
+                    
+                    return { xData, yData }; // Return parsed x and y data
                 });
         }
 
         // Load all datasets and update the chart
         Promise.all(datasetsInfo.map(dataset =>
             processCsvFile(dataset.file).then(({ xData, yData }) => ({
-                xData,
-                yData,
-                label: dataset.label // Use custom label
+                xData, yData, label: dataset.label
             }))
         )).then(datasets => {
             datasets.forEach(({ xData, yData, label }) => {
-                // Add each dataset to the chart
                 chart.data.datasets.push({
                     label: label, // Custom label
                     data: xData.map((x, i) => ({ x: x, y: yData[i] })), // Combine x and y into {x, y}
@@ -101,8 +78,7 @@
                     fill: false
                 });
             });
-
-            chart.update(); // Render the chart with new data
+            chart.update();
         }).catch(error => console.error('Error loading datasets:', error));
     </script>
 </body>
