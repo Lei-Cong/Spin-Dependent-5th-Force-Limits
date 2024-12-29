@@ -7,57 +7,85 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Line Chart from Dataset</h1>
+    <h1>Line Chart from Multiple Datasets</h1>
     <canvas id="myChart" width="800" height="400"></canvas>
-    
-    <script>
-        // Fetch the dataset
-        fetch('./lepton-lepton/2Almasi2020_m_abs_ee.csv') // Replace with your dataset path
-            .then(response => response.text())
-            .then(csvText => {
-                const rows = csvText.trim().split('\n'); // Split rows and remove empty spaces
-                const xData = rows.map(row => row.split(',')[0]); // First column as x-axis
-                const yData = rows.map(row => parseFloat(row.split(',')[1])); // Second column as y-axis
 
-                // Create the chart
-                const ctx = document.getElementById('myChart').getContext('2d');
-                new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: xData,
-                        datasets: [{
-                            label: 'My Dataset',
-                            data: yData,
-                            borderColor: 'blue',
-                            borderWidth: 2,
-                            fill: false
-                        }]
+    <script>
+        // List of CSV files in the folder
+        const csvFiles = [
+            './lepton-lepton/2Almasi2020_m_abs_ee.csv',
+            './lepton-lepton/2Ficek_2017_V2_m_abs_ee.csv',
+            './lepton-lepton/2Heckel_2013_m_abs_ee.csv'
+        ];
+
+        // Chart initialization
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [], // Will be set dynamically
+                datasets: [] // Empty initially
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
                     },
-                    options: {
-                        responsive: true,
-                        plugins: {
-                            legend: {
-                                position: 'top',
-                            },
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: '$\\lambda$ (m)', // X-axis label
                         },
-                        scales: {
-                            x: {
-                                title: {
-                                    display: true,
-                                    text: 'X-axis'
-                                }
-                            },
-                            y: {
-                                title: {
-                                    display: true,
-                                    text: 'Y-axis'
-                                }
-                            }
+                        type: 'logarithmic', // Assuming $\lambda$ spans orders of magnitude
+                        ticks: {
+                            callback: (value) => value.toExponential() // Format ticks as scientific notation
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: '$g_Ag_A$', // Y-axis label
                         }
                     }
+                }
+            }
+        });
+
+        // Function to fetch and process a single CSV file
+        function processCsvFile(filePath) {
+            return fetch(filePath)
+                .then(response => response.text())
+                .then(csvText => {
+                    const rows = csvText.trim().split('\n'); // Split rows
+                    const xData = rows.map(row => parseFloat(row.split(',')[0])); // First column as x-axis (λ)
+                    const yData = rows.map(row => parseFloat(row.split(',')[1])); // Second column as y-axis (gAgA)
+                    return { xData, yData, label: filePath.split('/').pop().replace('.csv', '') }; // File name as label
                 });
-            })
-            .catch(error => console.error('Error loading the dataset:', error));
+        }
+
+        // Load all CSV files and update the chart
+        Promise.all(csvFiles.map(processCsvFile)).then(datasets => {
+            datasets.forEach(({ xData, yData, label }) => {
+                // Update chart data
+                chart.data.datasets.push({
+                    label: label, // File name as dataset label
+                    data: xData.map((x, i) => ({ x: x, y: yData[i] })), // Combine x and y into {x, y}
+                    borderColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`, // Random color
+                    borderWidth: 2,
+                    fill: false
+                });
+
+                // Update the x-axis labels if empty
+                if (chart.data.labels.length === 0) {
+                    chart.data.labels = xData; // Use xData as labels
+                }
+            });
+
+            chart.update(); // Render the chart with new data
+        }).catch(error => console.error('Error loading datasets:', error));
     </script>
 </body>
 </html>
