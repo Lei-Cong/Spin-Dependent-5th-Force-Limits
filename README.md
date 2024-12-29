@@ -8,10 +8,11 @@ This repository contains datasets of constraints on spin-dependent exotic intera
 2. Pseudoscalar/scalar (\(g_pg_s\)), pseudoscalar/pseudoscalar (\(g_pg_p\)), scalar/scalar (\(g_sg_s\)).
 3. Tensor/tensor, pseudotensor/tensor, and pseudotensor/pseudotensor.
 
-The repository serves as a live webpage designed to present the latest experimental results. For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
+As a reference, one may consult the format of the exotic potentials presented in the RMP review: [**Spin-Dependent Exotic Interactions**](https://doi.org/10.48550/arXiv.2408.15691).
 
-These datasets were initially compiled for the review:  
-[**Spin-dependent exotic interactions**](https://doi.org/10.48550/arXiv.2408.15691).
+The repository serves as a \textbf{live} webpage designed to present the latest experimental results. For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
+
+
 
 ---
 
@@ -32,9 +33,9 @@ These datasets were initially compiled for the review:
 - **Data**: The data are available in the folder [**gAgA**](./gAgA/).
 
 - **Interactive Plots**: Explore the constraints through interactive plots:
-  - **Lepton-Lepton Interactions**: [View Plot](https://ccclll2020.github.io/SDFF-Dataset/gAgA/gAgA-plot_LL.html)
-  - **Lepton-Nucleon Interactions**: [View Plot](https://ccclll2020.github.io/SDFF-Dataset/gAgA/gAgA-plot_LN.html)
-  - **Nucleon-Nucleon Interactions**: [View Plot](https://ccclll2020.github.io/SDFF-Dataset/gAgA/gAgA-plot_NN.html)
+  - **Lepton-lepton Interactions**: [View Plot](https://ccclll2020.github.io/SDFF-Dataset/gAgA/gAgA-plot_LL.html)
+  - **Lepton-nucleon Interactions**: [View Plot](https://ccclll2020.github.io/SDFF-Dataset/gAgA/gAgA-plot_LN.html)
+  - **Nucleon-nucleon Interactions**: [View Plot](https://ccclll2020.github.io/SDFF-Dataset/gAgA/gAgA-plot_NN.html)
 
 ---
 
@@ -50,6 +51,7 @@ These datasets were initially compiled for the review:
 - **Data**: *(Specify the folder or file where the data is located.)*
 - **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
 
+[^1]: The similar dataset for \(g_pg_s\) can be found in [Ciaran O'Hare's github](https://github.com/cajohare/AxionLimits/tree/v1.0)
 ---
 
 ### 5. \(g_pg_p\)
@@ -81,3 +83,9 @@ These datasets were initially compiled for the review:
 
 (2). See the file named [$g_g_s$.md]() for organized details.  
    The data are presented in the folder [**g_g_sdata**]().
+   
+   
+   
+## Acknoledgement
+
+We acknowledge the initialize of the idea of the webpage by Fadeev Pavel, Wei Ji, Lei Cong. We acknowledge Haosen Guan collect most of the data. We acknowledge support from Prof. Dmitry Budker. 
