@@ -5,12 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Visualization</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        #y-label {
+            transform: rotate(-90deg);
+            position: absolute;
+            top: 50%;
+            left: -40px;
+            transform-origin: center;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body>
-    <h1>Log-Log Plot for gAgA</h1>
-    <canvas id="myChart" width="800" height="400"></canvas>
+    <h1><span id="math-title"></span></h1>
+    <div style="display: flex; align-items: center;">
+        <!-- Y-axis label -->
+        <div id="y-label">
+            <span id="math-y-axis"></span>
+        </div>
+        <!-- Chart canvas -->
+        <div>
+            <canvas id="myChart" width="800" height="400"></canvas>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <!-- X-axis label -->
+        <p><span id="math-x-axis"></span></p>
+    </div>
 
     <script>
+        // Set MathJax expressions for title, x-label, and y-label
+        document.getElementById('math-title').innerHTML = '\\(g_Ag_A\\) Constraints';
+        document.getElementById('math-x-axis').innerHTML = '\\(\\lambda \\text{ (m)}\\)';
+        document.getElementById('math-y-axis').innerHTML = '\\(g_Ag_A\\)';
+
+        // Trigger MathJax rendering for static elements
+        MathJax.typeset();
+
         // List of CSV files and their custom labels
         const datasetsInfo = [
             { file: './lepton-lepton/2Almasi2020_m_abs_ee.csv', label: 'Almasi 2020' },
@@ -38,7 +71,7 @@
                         type: 'logarithmic', // Logarithmic scale for x-axis
                         title: {
                             display: true,
-                            text: 'λ (m)' // Text for x-axis
+                            text: '' // Leave blank; handled by MathJax
                         },
                         ticks: {
                             callback: (value) => value.toExponential(), // Scientific notation for ticks
@@ -48,7 +81,7 @@
                         type: 'logarithmic', // Logarithmic scale for y-axis
                         title: {
                             display: true,
-                            text: 'g_Ag_A' // Text for y-axis
+                            text: '' // Leave blank; handled by MathJax
                         },
                         ticks: {
                             callback: (value) => value.toExponential() // Scientific notation for ticks
@@ -73,9 +106,7 @@
         // Load all datasets and update the chart
         Promise.all(datasetsInfo.map(dataset =>
             processCsvFile(dataset.file).then(({ xData, yData }) => ({
-                xData,
-                yData,
-                label: dataset.label
+                xData, yData, label: dataset.label
             }))
         )).then(datasets => {
             datasets.forEach(({ xData, yData, label }) => {
