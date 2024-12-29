@@ -1,0 +1,21 @@
+{
+    "title": "Spin-Dependent Exotic Interactions Dataset",
+    "authors": [
+      {
+        "name": "Lei Cong",
+        "affiliation": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University, Mainz 55128, Germany"
+      },
+      {
+        "name": "Wei Ji",
+        "affiliation": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University, Mainz 55128, Germany"
+      },
+      {
+        "name": "Dmitry Budker",
+        "affiliation": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University, Mainz 55128, Germany"
+      }
+    ],
+    "description": "This dataset contains constraints on spin-dependent exotic interactions.",
+    "keywords": ["new physics", "exotic interactions", "dataset"],
+    "license": "MIT",
+    "version": "1.0.0"
+  }
