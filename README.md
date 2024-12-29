@@ -16,7 +16,7 @@ The repository serves as a \textbf{live} webpage designed to present the latest 
 
 Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14572653.svg)](https://doi.org/10.5281/zenodo.14572653).
 
-For those using BibTeX, download the citation file here: [**BibTeX Format**](./citation.bib).
+For those using BibTeX, download the citation file here: [**BibTeX Format**](./Citation.bib).
 
 ---
 
