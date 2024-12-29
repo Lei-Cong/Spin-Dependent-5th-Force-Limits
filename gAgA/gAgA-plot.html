@@ -10,10 +10,20 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-    <h1>Log-Log Plot for $g_Ag_A$</h1>
+    <h1>Log-Log Plot for <span id="math-title"></span></h1>
     <canvas id="myChart" width="800" height="400"></canvas>
+    <div style="text-align: center;">
+        <p><span id="math-x-axis"></span></p>
+    </div>
 
     <script>
+        // Initialize MathJax expressions for titles
+        document.getElementById('math-title').innerHTML = '\\(g_Ag_A\\)';
+        document.getElementById('math-x-axis').innerHTML = '\\(\\lambda \\text{ (m)}\\)';
+
+        // Trigger MathJax rendering for static elements
+        MathJax.typeset();
+
         // List of CSV files and their custom labels
         const datasetsInfo = [
             { file: './lepton-lepton/2Almasi2020_m_abs_ee.csv', label: 'Almasi 2020' },
@@ -41,7 +51,7 @@
                         type: 'logarithmic', // Logarithmic scale for x-axis
                         title: {
                             display: true,
-                            text: '\\(\\lambda\\) (m)' // LaTeX for lambda with MathJax
+                            text: 'λ (m)' // Plain text fallback (for internal rendering)
                         },
                         ticks: {
                             callback: (value) => value.toExponential(), // Scientific notation for ticks
@@ -51,7 +61,7 @@
                         type: 'logarithmic', // Logarithmic scale for y-axis
                         title: {
                             display: true,
-                            text: '\\(g_Ag_A\\)' // LaTeX for g_Ag_A with MathJax
+                            text: 'g_Ag_A' // Plain text fallback (for internal rendering)
                         },
                         ticks: {
                             callback: (value) => value.toExponential() // Scientific notation for ticks
@@ -93,9 +103,6 @@
             });
 
             chart.update(); // Render the chart with new data
-
-            // Re-render MathJax after updating the chart
-            MathJax.typeset();
         }).catch(error => console.error('Error loading datasets:', error));
     </script>
 </body>
