@@ -3,124 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Visualization</title>
+    <title>Minimal Working Chart</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <style>
-        #y-label {
-            transform: rotate(-90deg);
-            position: absolute;
-            top: 50%;
-            left: -40px;
-            transform-origin: center;
-            white-space: nowrap;
-        }
-    </style>
 </head>
 <body>
-    <h1><span id="math-title"></span></h1>
-    <div style="display: flex; align-items: center;">
-        <!-- Y-axis label -->
-        <div id="y-label">
-            <span id="math-y-axis"></span>
-        </div>
-        <!-- Chart canvas -->
-        <div>
-            <canvas id="myChart" width="800" height="400"></canvas>
-        </div>
-    </div>
-    <div style="text-align: center;">
-        <!-- X-axis label -->
-        <p><span id="math-x-axis"></span></p>
-    </div>
+    <h1>Log-Log Plot Example</h1>
+    <canvas id="myChart" width="800" height="400"></canvas>
 
     <script>
-        // Set MathJax expressions for title, x-label, and y-label
-        document.getElementById('math-title').innerHTML = '\\(g_Ag_A\\) Constraints';
-        document.getElementById('math-x-axis').innerHTML = '\\(\\lambda \\text{ (m)}\\)';
-        document.getElementById('math-y-axis').innerHTML = '\\(g_Ag_A\\)';
+        // Fetch the single dataset and render the chart
+        fetch('./data.csv') // Ensure this file exists in the same directory
+            .then(response => response.text())
+            .then(csvText => {
+                // Parse the CSV into x and y data
+                const rows = csvText.trim().split('\n');
+                const xData = rows.map(row => parseFloat(row.split(',')[0]));
+                const yData = rows.map(row => parseFloat(row.split(',')[1]));
 
-        // Trigger MathJax rendering for static elements
-        MathJax.typeset();
-
-        // List of CSV files and their custom labels
-        const datasetsInfo = [
-            { file: './lepton-lepton/2Almasi2020_m_abs_ee.csv', label: 'Almasi 2020' },
-            { file: './lepton-lepton/2Ficek_2017_V2_m_abs_ee.csv', label: 'Ficek 2017' },
-            { file: './lepton-lepton/2Heckel_2013_m_abs_ee.csv', label: 'Heckel 2013' }
-        ];
-
-        // Chart initialization
-        const ctx = document.getElementById('myChart').getContext('2d');
-        const chart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: [], // Will be set dynamically
-                datasets: [] // Empty initially
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'top',
+                // Initialize the chart
+                const ctx = document.getElementById('myChart').getContext('2d');
+                const chart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        datasets: [{
+                            label: 'Example Dataset',
+                            data: xData.map((x, i) => ({ x: x, y: yData[i] })),
+                            borderColor: 'blue',
+                            borderWidth: 2,
+                            fill: false
+                        }]
                     },
-                },
-                scales: {
-                    x: {
-                        type: 'logarithmic', // Logarithmic scale for x-axis
-                        title: {
-                            display: true,
-                            text: '' // Leave blank; handled by MathJax
-                        },
-                        ticks: {
-                            callback: (value) => value.toExponential(), // Scientific notation for ticks
-                        }
-                    },
-                    y: {
-                        type: 'logarithmic', // Logarithmic scale for y-axis
-                        title: {
-                            display: true,
-                            text: '' // Leave blank; handled by MathJax
-                        },
-                        ticks: {
-                            callback: (value) => value.toExponential() // Scientific notation for ticks
+                    options: {
+                        responsive: true,
+                        scales: {
+                            x: {
+                                type: 'logarithmic',
+                                title: { display: true, text: 'λ (m)' },
+                                ticks: { callback: value => value.toExponential() }
+                            },
+                            y: {
+                                type: 'logarithmic',
+                                title: { display: true, text: 'g_Ag_A' },
+                                ticks: { callback: value => value.toExponential() }
+                            }
                         }
                     }
-                }
-            }
-        });
-
-        // Function to fetch and process a single CSV file
-        function processCsvFile(filePath) {
-            return fetch(filePath)
-                .then(response => response.text())
-                .then(csvText => {
-                    const rows = csvText.trim().split('\n'); // Split rows
-                    const xData = rows.map(row => parseFloat(row.split(',')[0])); // First column as x-axis (λ)
-                    const yData = rows.map(row => parseFloat(row.split(',')[1])); // Second column as y-axis (gAgA)
-                    return { xData, yData };
                 });
-        }
-
-        // Load all datasets and update the chart
-        Promise.all(datasetsInfo.map(dataset =>
-            processCsvFile(dataset.file).then(({ xData, yData }) => ({
-                xData, yData, label: dataset.label
-            }))
-        )).then(datasets => {
-            datasets.forEach(({ xData, yData, label }) => {
-                chart.data.datasets.push({
-                    label: label, // Custom label
-                    data: xData.map((x, i) => ({ x: x, y: yData[i] })), // Combine x and y into {x, y}
-                    borderColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`, // Random color
-                    borderWidth: 2,
-                    fill: false
-                });
-            });
-
-            chart.update();
-        }).catch(error => console.error('Error loading datasets:', error));
+            })
+            .catch(error => console.error('Error loading data:', error));
     </script>
 </body>
 </html>
