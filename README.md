@@ -31,9 +31,9 @@ These datasets were initially compiled for the review:
 
 ### 3. \(g_sg_s\)
 - **Description**: Constraints for scalar/scalar couplings (\(g_sg_s\)).
-- **Data**: The data are presented in the folder [**gAgA**](./gAgA/).
+- **Data**: The data are presented in the folder [**gsgs**](./gsgs/).
 - **Interactive Plot**: You can view the interactive plot for scalar/scalar constraints here:  
-  [**gAgA Plot**](https://ccclll2020.github.io/SDFF-Dataset/gAgA/gAgA-plot.html).
+  [**gsgs Plot**](https://ccclll2020.github.io/SDFF-Dataset/gsgs/gsgs-plot.html).
 
 ---
 
@@ -45,9 +45,10 @@ These datasets were initially compiled for the review:
 ---
 
 ### 5. \(g_Ag_A\)
-- **Description**: *(Provide a brief description of the \(g_Ag_A\) coupling constraints and their significance.)*
-- **Data**: *(Specify the folder or file where the data is located.)*
-- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
+- **Description**: Constraints for scalar/scalar couplings (\(g_sg_s\)).
+- **Data**: The data are presented in the folder [**gAgA**](./gAgA/).
+- **Interactive Plot**: You can view the interactive plot for scalar/scalar constraints here:  
+  [**gAgA Plot**](https://ccclll2020.github.io/SDFF-Dataset/gAgA/gAgA-plot.html).
 
 ---
 
