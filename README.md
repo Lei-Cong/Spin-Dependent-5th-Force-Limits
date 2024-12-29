@@ -12,7 +12,24 @@ As a reference, one may consult the format of the exotic potentials presented in
 
 The repository serves as a \textbf{live} webpage designed to present the latest experimental results. For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
 
+### Citation
+
 Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14572653.svg)](https://doi.org/10.5281/zenodo.14572653).
+
+For those using BibTeX, click [here](#bibtex) to access the BibTeX format.
+
+---
+
+### BibTeX
+
+```bibtex
+@article{cong_fifth_2024,
+  title = {Fifth Force Limits},
+  author = {Cong, Lei and Ji, Wei and Budker, Dmitry},
+  year = {2024},
+  journal = {Zenodo},
+  doi = {10.5281/zenodo.14572653}
+}
 
 ---
 
