@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Visualization</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-    <h1>Log-Log Plot from Multiple Datasets</h1>
+    <h1>Log-Log Plot for $g_Ag_A$</h1>
     <canvas id="myChart" width="800" height="400"></canvas>
 
     <script>
@@ -38,7 +41,7 @@
                         type: 'logarithmic', // Logarithmic scale for x-axis
                         title: {
                             display: true,
-                            text: '$\\lambda$ (m)' // X-axis label
+                            text: '\\(\\lambda\\) (m)' // LaTeX for lambda with MathJax
                         },
                         ticks: {
                             callback: (value) => value.toExponential(), // Scientific notation for ticks
@@ -48,7 +51,7 @@
                         type: 'logarithmic', // Logarithmic scale for y-axis
                         title: {
                             display: true,
-                            text: '$g_Ag_A$' // Y-axis label
+                            text: '\\(g_Ag_A\\)' // LaTeX for g_Ag_A with MathJax
                         },
                         ticks: {
                             callback: (value) => value.toExponential() // Scientific notation for ticks
@@ -90,6 +93,9 @@
             });
 
             chart.update(); // Render the chart with new data
+
+            // Re-render MathJax after updating the chart
+            MathJax.typeset();
         }).catch(error => console.error('Error loading datasets:', error));
     </script>
 </body>
