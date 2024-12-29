@@ -7,15 +7,15 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Line Chart from Multiple Datasets</h1>
+    <h1>Log-Log Plot from Multiple Datasets</h1>
     <canvas id="myChart" width="800" height="400"></canvas>
 
     <script>
-        // List of CSV files in the folder
-        const csvFiles = [
-            './lepton-lepton/2Almasi2020_m_abs_ee.csv',
-            './lepton-lepton/2Ficek_2017_V2_m_abs_ee.csv',
-            './lepton-lepton/2Heckel_2013_m_abs_ee.csv'
+        // List of CSV files and their custom labels
+        const datasetsInfo = [
+            { file: './lepton-lepton/2Almasi2020_m_abs_ee.csv', label: 'Almasi 2020' },
+            { file: './lepton-lepton/2Ficek_2017_V2_m_abs_ee.csv', label: 'Ficek 2017' },
+            { file: './lepton-lepton/2Heckel_2013_m_abs_ee.csv', label: 'Heckel 2013' }
         ];
 
         // Chart initialization
@@ -35,19 +35,23 @@
                 },
                 scales: {
                     x: {
+                        type: 'logarithmic', // Logarithmic scale for x-axis
                         title: {
                             display: true,
-                            text: '$\\lambda$ (m)', // X-axis label
+                            text: '$\\lambda$ (m)' // X-axis label
                         },
-                        type: 'logarithmic', // Assuming $\lambda$ spans orders of magnitude
                         ticks: {
-                            callback: (value) => value.toExponential() // Format ticks as scientific notation
+                            callback: (value) => value.toExponential(), // Scientific notation for ticks
                         }
                     },
                     y: {
+                        type: 'logarithmic', // Logarithmic scale for y-axis
                         title: {
                             display: true,
-                            text: '$g_Ag_A$', // Y-axis label
+                            text: '$g_Ag_A$' // Y-axis label
+                        },
+                        ticks: {
+                            callback: (value) => value.toExponential() // Scientific notation for ticks
                         }
                     }
                 }
@@ -62,26 +66,27 @@
                     const rows = csvText.trim().split('\n'); // Split rows
                     const xData = rows.map(row => parseFloat(row.split(',')[0])); // First column as x-axis (λ)
                     const yData = rows.map(row => parseFloat(row.split(',')[1])); // Second column as y-axis (gAgA)
-                    return { xData, yData, label: filePath.split('/').pop().replace('.csv', '') }; // File name as label
+                    return { xData, yData }; // Return the parsed x and y data
                 });
         }
 
-        // Load all CSV files and update the chart
-        Promise.all(csvFiles.map(processCsvFile)).then(datasets => {
+        // Load all datasets and update the chart
+        Promise.all(datasetsInfo.map(dataset =>
+            processCsvFile(dataset.file).then(({ xData, yData }) => ({
+                xData,
+                yData,
+                label: dataset.label // Use custom label
+            }))
+        )).then(datasets => {
             datasets.forEach(({ xData, yData, label }) => {
-                // Update chart data
+                // Add each dataset to the chart
                 chart.data.datasets.push({
-                    label: label, // File name as dataset label
+                    label: label, // Custom label
                     data: xData.map((x, i) => ({ x: x, y: yData[i] })), // Combine x and y into {x, y}
                     borderColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`, // Random color
                     borderWidth: 2,
                     fill: false
                 });
-
-                // Update the x-axis labels if empty
-                if (chart.data.labels.length === 0) {
-                    chart.data.labels = xData; // Use xData as labels
-                }
             });
 
             chart.update(); // Render the chart with new data
