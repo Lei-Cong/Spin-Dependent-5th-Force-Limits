@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Line Chart from Dataset</h1>
+    <canvas id="myChart" width="800" height="400"></canvas>
+    
+    <script>
+        // Fetch the dataset
+        fetch('./lepton-lepton/2Almasi2020_m_abs_ee.csv') // Replace with your dataset path
+            .then(response => response.text())
+            .then(csvText => {
+                const rows = csvText.trim().split('\n'); // Split rows and remove empty spaces
+                const xData = rows.map(row => row.split(',')[0]); // First column as x-axis
+                const yData = rows.map(row => parseFloat(row.split(',')[1])); // Second column as y-axis
+
+                // Create the chart
+                const ctx = document.getElementById('myChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: xData,
+                        datasets: [{
+                            label: 'My Dataset',
+                            data: yData,
+                            borderColor: 'blue',
+                            borderWidth: 2,
+                            fill: false
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                        },
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'X-axis'
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Y-axis'
+                                }
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading the dataset:', error));
+    </script>
+</body>
+</html>
