@@ -10,7 +10,7 @@ This repository contains datasets of constraints on spin-dependent exotic intera
 
 As a reference, one may consult the format of the exotic potentials presented in the RMP review: [**Spin-Dependent Exotic Interactions**](https://doi.org/10.48550/arXiv.2408.15691).
 
-The repository serves as a \textbf{live} webpage designed to present the latest experimental results. For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
+The repository serves as a **live** webpage designed to present the latest experimental results. For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
 
 ### Citation
 
