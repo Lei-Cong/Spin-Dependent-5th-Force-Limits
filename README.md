@@ -4,8 +4,8 @@
 
 This repository contains datasets of constraints on spin-dependent exotic interactions, also referred to as the spin-dependent fifth force (SDFF), mediated by the exchange of a single boson of mass $M$ between fermions $X$ and $Y$. The interactions are categorized into the following types:
 
-1. Axial-vector/vector ($g_Ag_V$), axial-vector/axial-vector (\(g_Ag_A\)), vector/vector (\(g_Vg_V\)).
-2. Pseudoscalar/scalar (\(g_pg_s\)), pseudoscalar/pseudoscalar (\(g_pg_p\)), scalar/scalar (\(g_sg_s\)).
+1. Axial-vector/vector ($g_Ag_V$), axial-vector/axial-vector ($g_Ag_A$), vector/vector ($g_Vg_V$).
+2. Pseudoscalar/scalar ($g_pg_s$), pseudoscalar/pseudoscalar ($g_pg_p$), scalar/scalar ($g_sg_s$).
 3. Tensor/tensor, pseudotensor/tensor, and pseudotensor/pseudotensor.
 
 As a reference, one may consult the format of the exotic potentials presented in the RMP review: [**Spin-Dependent Exotic Interactions**](https://doi.org/10.48550/arXiv.2408.15691).
@@ -21,16 +21,16 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 ## Datasets
 
 
-### 1. \(g_Ag_V\)
-- **Description**: *(Provide a brief description of the \(g_Ag_V\) coupling constraints and their significance.)*
+### 1. $g_Ag_V$
+- **Description**: *(Provide a brief description of the $g_Ag_V$ coupling constraints and their significance.)*
 - **Data**: *(Specify the folder or file where the data is located.)*
 - **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
 
 ---
 
-### 2. \(g_Ag_A\)
+### 2. $g_Ag_A$
 
-- **Description**: Constraints for axial-vector/axial-vector couplings (\(g_Ag_A\)) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
+- **Description**: Constraints for axial-vector/axial-vector couplings ($g_Ag_A$) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
 
 - **Data**: The data are available in the folder [**gAgA**](./gAgA/).
 
@@ -41,30 +41,30 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ---
 
-### 3. \(g_Vg_V\)
-- **Description**: *(Provide a brief description of the \(g_Vg_V\) coupling constraints and their significance.)*
+### 3. $g_Vg_V$
+- **Description**: *(Provide a brief description of the $g_Vg_V$ coupling constraints and their significance.)*
 - **Data**: *(Specify the folder or file where the data is located.)*
 - **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
 
 ---
 
-### 4. \(g_pg_s\)
-- **Description**: *(Provide a brief description of the \(g_pg_s\) coupling constraints and their significance.)*
+### 4. $g_pg_s$
+- **Description**: *(Provide a brief description of the $g_pg_s$ coupling constraints and their significance.)*
 - **Data**: *(Specify the folder or file where the data is located.)*
 - **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
 
-[^1]: The similar dataset for \(g_pg_s\) can be found in [Ciaran O'Hare's github](https://github.com/cajohare/AxionLimits/tree/v1.0)
+[^1]: The similar dataset for $g_pg_s$ can be found in [Ciaran O'Hare's github](https://github.com/cajohare/AxionLimits/tree/v1.0)
 ---
 
-### 5. \(g_pg_p\)
-- **Description**: *(Provide a brief description of the \(g_pg_p\) coupling constraints and their significance.)*
+### 5. $g_pg_p$
+- **Description**: *(Provide a brief description of the $g_pg_p$ coupling constraints and their significance.)*
 - **Data**: *(Specify the folder or file where the data is located.)*
 - **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
 
 ---
 
-### 6. \(g_sg_s\)
-- **Description**: Constraints for scalar/scalar couplings (\(g_sg_s\)).
+### 6. $g_sg_s$
+- **Description**: Constraints for scalar/scalar couplings ($g_sg_s$).
 - **Data**: The data are presented in the folder [**gsgs**](./gsgs/).
 - **Interactive Plot**: You can view the interactive plot for scalar/scalar constraints here:  
   [**gsgs Plot**](https://ccclll2020.github.io/SDFF-Dataset/gsgs/gsgs-plot.html).
@@ -79,7 +79,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ---
 
-### 8. \(V_1\) Results
+### 8. $V_1$ Results
 (1). See the file named [**V1_data.md**](./V1/V1_data.md) for organized details.  
    The data are presented in the folder [**V1alphadataLei**](./V1/V1alphadataLei/).
 
