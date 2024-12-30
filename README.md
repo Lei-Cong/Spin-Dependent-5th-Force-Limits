@@ -87,8 +87,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
    The data are presented in the folder [**g_g_sdata**]().
    
 ## Conference Information
-- 11.05.2025 to 16.05.2025, [Frontiers of Quantum Metrology for New Physics Searches](https://www.dpg-physik.de/veranstaltungen/2025/quantum_metrology_for_new_physics_searches)
 - 2025-01-17 to 2025-01-20, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816)
+- 11.05.2025 to 16.05.2025, [Frontiers of Quantum Metrology for New Physics Searches](https://www.dpg-physik.de/veranstaltungen/2025/quantum_metrology_for_new_physics_searches)
    
 ## Job Information
 - [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship)
