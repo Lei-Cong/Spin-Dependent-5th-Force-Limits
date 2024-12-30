@@ -3,3 +3,5 @@ kramdown:
   math_engine: mathjax
   mathjax:
     cdn: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+theme: jekyll-theme-minimal
