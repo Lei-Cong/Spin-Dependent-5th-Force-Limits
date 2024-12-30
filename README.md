@@ -32,7 +32,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 - **Description**: Constraints for axial-vector/axial-vector couplings ($g_Ag_A$) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
 
-- **Data**: The data are available in the folder [**gAgA**](./gAgA/gAgA-plot_LL.html).
+- **Data**: The data are available in the folder [**gAgA**](./gAgA/).
 
 - **Interactive Plots**: Explore the constraints through interactive plots:
   - **Lepton-lepton Interactions**: [View Plot](https://ccclll2020.github.io/SDFF-Dataset/gAgA/gAgA-plot_LL.html)
