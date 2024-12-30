@@ -99,7 +99,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 Soon...
 
+## Acknowledgement
 
-## Acknoledgement
+We would like to express our gratitude to Fadeev Pavel, Wei Ji for initiating the idea of this webpage. We sincerely acknowledge Haosen Guan for collecting most of the data. We also extend our heartfelt thanks to Prof. Dmitry Budker for his invaluable support and guidance.
 
-We acknowledge the initialize of the idea of the webpage by Fadeev Pavel, Wei Ji, Lei Cong. We acknowledge Haosen Guan collect most of the data. We acknowledge support from Prof. Dmitry Budker. 
+Additionally, we would like to thank all contributors, including [Name 1], [Name 2], and [Name 3], who provided data for this repository, enabling its comprehensive and collaborative nature.
