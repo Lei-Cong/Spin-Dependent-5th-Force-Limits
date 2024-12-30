@@ -88,12 +88,12 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
    
 ## Conference Information
 - 11.05.2025 to 16.05.2025, [Frontiers of Quantum Metrology for New Physics Searches](https://www.dpg-physik.de/veranstaltungen/2025/quantum_metrology_for_new_physics_searches)
-- 2025-01-17 to 2025-01-20, [International Symposium on New Physics Beyond the Standard Model] (https://isnp2025.casconf.cn/page/1830408968258850816)
+- 2025-01-17 to 2025-01-20, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816)
    
 ## Job Information
 - [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship)
 - [Marie Skłodowska-Curie Actions - Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships)
-- [Helmholtz-OCPC postdoc program](https://www.helmholtz.de/assets/helmholtz_gemeinschaft/user_upload/Ausschreibungen/2023/Call_Helmholtz-OCPC-Postdocprogram_2023.pdf)
+- [Helmholtz-OCPC postdoc program](https://www.helmholtz.de/assets/helmholtz_gemeinschaft/user_upload/Ausschreibungen/2023/Call_Helmholtz-OCPC-Postdocprogram_2023.pdf), [OCPC Anancement](https://www.chinapostdoctor.org.cn/article?inid=cbcb0e46-8ed6-44ef-94c5-f2d78b8055c5&catname=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A&catid=8c892b1c-4ade-4a5f-9a87-5e736cb5e9f9)
 
 ## Subscription
 
