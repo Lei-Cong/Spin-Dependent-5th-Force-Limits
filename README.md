@@ -2,9 +2,9 @@
 
 ## Overview
 
-This repository contains datasets of constraints on spin-dependent exotic interactions, also referred to as the spin-dependent fifth force (SDFF), mediated by the exchange of a single boson of mass \(M\) between fermions \(X\) and \(Y\). The interactions are categorized into the following types:
+This repository contains datasets of constraints on spin-dependent exotic interactions, also referred to as the spin-dependent fifth force (SDFF), mediated by the exchange of a single boson of mass $M$ between fermions $X$ and $Y$. The interactions are categorized into the following types:
 
-1. Axial-vector/vector (\(g_Ag_V\)), axial-vector/axial-vector (\(g_Ag_A\)), vector/vector (\(g_Vg_V\)).
+1. Axial-vector/vector ($g_Ag_V$), axial-vector/axial-vector (\(g_Ag_A\)), vector/vector (\(g_Vg_V\)).
 2. Pseudoscalar/scalar (\(g_pg_s\)), pseudoscalar/pseudoscalar (\(g_pg_p\)), scalar/scalar (\(g_sg_s\)).
 3. Tensor/tensor, pseudotensor/tensor, and pseudotensor/pseudotensor.
 
