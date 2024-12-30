@@ -52,8 +52,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - **Description**: *(Provide a brief description of the $g_pg_s$ coupling constraints and their significance.)*
 - **Data**: *(Specify the folder or file where the data is located.)*
 - **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
-
-[^1]: The similar dataset for $g_pg_s$ can be found in [Ciaran O'Hare's github](https://github.com/cajohare/AxionLimits/tree/v1.0)
+- The similar dataset for $g_pg_s$ can be found in [Ciaran O'Hare's github](https://github.com/cajohare/AxionLimits/tree/v1.0)
 ---
 
 ### 5. $g_pg_p$
