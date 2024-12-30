@@ -4,4 +4,4 @@ kramdown:
   mathjax:
     cdn: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
