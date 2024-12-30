@@ -86,8 +86,20 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 (2). See the file named [$g_g_s$.md]() for organized details.  
    The data are presented in the folder [**g_g_sdata**]().
    
+## Conference Information
+- 11.05.2025 to 16.05.2025, [Frontiers of Quantum Metrology for New Physics Searches](https://www.dpg-physik.de/veranstaltungen/2025/quantum_metrology_for_new_physics_searches)
+- 2025-01-17 to 2025-01-20, [International Symposium on New Physics Beyond the Standard Model] (https://isnp2025.casconf.cn/page/1830408968258850816)
    
-   
+## Job Information
+- [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship)
+- [Marie Skłodowska-Curie Actions - Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships)
+- [Helmholtz-OCPC postdoc program](https://www.helmholtz.de/assets/helmholtz_gemeinschaft/user_upload/Ausschreibungen/2023/Call_Helmholtz-OCPC-Postdocprogram_2023.pdf)
+
+## Subscription
+
+Soon...
+
+
 ## Acknoledgement
 
 We acknowledge the initialize of the idea of the webpage by Fadeev Pavel, Wei Ji, Lei Cong. We acknowledge Haosen Guan collect most of the data. We acknowledge support from Prof. Dmitry Budker. 
