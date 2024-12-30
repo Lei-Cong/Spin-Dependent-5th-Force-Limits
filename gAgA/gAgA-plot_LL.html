@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Visualization</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Reference the MathJax script in the parent folder -->
+    <script src="../es5/tex-mml-chtml.js" async></script>
 </head>
 <body>
-    <h1>Log-Log Plot for gAgA</h1>
+    <h1>Log-Log Plot for \(g_Ag_A\)</h1>
     <canvas id="myChart" width="800" height="400"></canvas>
 
     <script>
@@ -38,7 +40,7 @@
                         type: 'logarithmic', // Logarithmic scale for x-axis
                         title: {
                             display: true,
-                            text: 'λ (m)' // Text for x-axis
+                            text: '\\(\\lambda\\) (m)' // LaTeX for x-axis
                         },
                         ticks: {
                             callback: (value) => value.toExponential(), // Scientific notation for ticks
@@ -48,7 +50,7 @@
                         type: 'logarithmic', // Logarithmic scale for y-axis
                         title: {
                             display: true,
-                            text: 'g_Ag_A' // Text for y-axis
+                            text: '\\(g_Ag_A\\)' // LaTeX for y-axis
                         },
                         ticks: {
                             callback: (value) => value.toExponential() // Scientific notation for ticks
