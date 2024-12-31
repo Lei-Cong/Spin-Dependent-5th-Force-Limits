@@ -5,27 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Visualization</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Reference MathJax script -->
-    <script src="./es5/tex-mml-chtml.js" async></script>
+    <script src="../es5/tex-mml-chtml.js" async></script>
 </head>
 <body>
-    <h1>Log-Log Plot for \(g_Ag_A\)</h1>
+    <h1>Line Chart from Multiple Datasets</h1>
     <canvas id="myChart" width="800" height="400"></canvas>
-
+    
     <script>
-        // List of CSV files and their custom labels
+        // List of CSV files and their labels
         const datasetsInfo = [
-            { file: './gAgA/lepton-lepton/2Almasi2020_m_abs_ee.csv', label: 'Almasi 2020' },
-            { file: './gAgA/lepton-lepton/2Ficek_2017_V2_m_abs_ee.csv', label: 'Ficek 2017' },
-            { file: './gAgA/lepton-lepton/2Heckel_2013_m_abs_ee.csv', label: 'Heckel 2013' }
+            { file: './lepton-lepton/2Almasi2020_m_abs_ee.csv', label: 'Almasi 2020', borderColor: 'blue' },
+            { file: './lepton-lepton/2Ficek_2017_V2_m_abs_ee.csv', label: 'Ficek 2017', borderColor: 'red' },
+            { file: './lepton-lepton/2Heckel_2013_m_abs_ee.csv', label: 'Heckel 2013', borderColor: 'green' }
         ];
 
-        // Chart initialization
+        // Initialize the chart
         const ctx = document.getElementById('myChart').getContext('2d');
         const chart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: [], // Will be set dynamically
+                labels: [], // Will be updated dynamically
                 datasets: [] // Empty initially
             },
             options: {
@@ -37,23 +36,15 @@
                 },
                 scales: {
                     x: {
-                        type: 'logarithmic', // Logarithmic scale for x-axis
                         title: {
                             display: true,
-                            text: '\\(\\lambda\\) (m)' // LaTeX for x-axis
-                        },
-                        ticks: {
-                            callback: (value) => value.toExponential(), // Scientific notation for ticks
+                            text: 'X-axis'
                         }
                     },
                     y: {
-                        type: 'logarithmic', // Logarithmic scale for y-axis
                         title: {
                             display: true,
-                            text: '\\(g_Ag_A\\)' // LaTeX for y-axis
-                        },
-                        ticks: {
-                            callback: (value) => value.toExponential() // Scientific notation for ticks
+                            text: 'Y-axis'
                         }
                     }
                 }
@@ -61,37 +52,36 @@
         });
 
         // Function to fetch and process a single CSV file
-        function processCsvFile(filePath) {
-            return fetch(filePath)
+        function fetchAndAddDataset(datasetInfo) {
+            fetch(datasetInfo.file)
                 .then(response => response.text())
                 .then(csvText => {
-                    const rows = csvText.trim().split('\n'); // Split rows
-                    const xData = rows.map(row => parseFloat(row.split(',')[0])); // First column as x-axis (λ)
-                    const yData = rows.map(row => parseFloat(row.split(',')[1])); // Second column as y-axis (gAgA)
-                    return { xData, yData };
-                });
+                    const rows = csvText.trim().split('\n');
+                    const xData = rows.map(row => row.split(',')[0]); // First column as x-axis
+                    const yData = rows.map(row => parseFloat(row.split(',')[1])); // Second column as y-axis
+
+                    // Add the dataset to the chart
+                    chart.data.datasets.push({
+                        label: datasetInfo.label,
+                        data: yData,
+                        borderColor: datasetInfo.borderColor,
+                        borderWidth: 2,
+                        fill: false
+                    });
+
+                    // Update labels (x-axis data) if not already set
+                    if (chart.data.labels.length === 0) {
+                        chart.data.labels = xData;
+                    }
+
+                    // Update the chart
+                    chart.update();
+                })
+                .catch(error => console.error(`Error loading ${datasetInfo.file}:`, error));
         }
 
-        // Load all datasets and update the chart
-        Promise.all(datasetsInfo.map(dataset =>
-            processCsvFile(dataset.file).then(({ xData, yData }) => ({
-                xData,
-                yData,
-                label: dataset.label
-            }))
-        )).then(datasets => {
-            datasets.forEach(({ xData, yData, label }) => {
-                chart.data.datasets.push({
-                    label: label, // Custom label
-                    data: xData.map((x, i) => ({ x: x, y: yData[i] })), // Combine x and y into {x, y}
-                    borderColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`, // Random color
-                    borderWidth: 2,
-                    fill: false
-                });
-            });
-
-            chart.update();
-        }).catch(error => console.error('Error loading datasets:', error));
+        // Fetch and add all datasets
+        datasetsInfo.forEach(fetchAndAddDataset);
     </script>
 </body>
 </html>
