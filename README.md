@@ -35,9 +35,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - **Data**: The data are available in the folder [**gAgA**](./gAgA/).
 
 - **Interactive Plots**: Explore the constraints through interactive plots:
-  - ## Run the Script Online: You can execute the script interactively using Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Lei-5th-Force/SDFF-Dataset/main?filepath=gAgA/gAgA-plot.ipynb)
-
-  - **Lepton-lepton Interactions**: [View Plot via Binder](https://mybinder.org/v2/gh/Lei-5th-Force/SDFF-Dataset/main?filepath=gAgA/gAgA-plot.ipynb)  - **Lepton-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_LN.html)
+  - **Lepton-lepton Interactions**: [View Plot via Binder](https://mybinder.org/v2/gh/Lei-5th-Force/SDFF-Dataset/main?filepath=gAgA/gAgA-plot.ipynb)  
+  - **Lepton-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_LN.html)
   - **Nucleon-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_NN.html)
 
 ---
