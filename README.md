@@ -85,9 +85,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
    The data are presented in the folder [**g_g_sdata**]().
  
 ---
-## test
-
- ## Course
+## Course
  - [TASI Lectures](https://www.colorado.edu/physics/events/summer-intensive-programs/theoretical-advanced-study-institute-elementary-particle-physics#TASI-2023)
  - ETH, [Quantum Technologies for Searches of New Physics](https://www.lehrbetrieb.ethz.ch/Vorlesungsverzeichnis/dozent.view?dozide=10032887&ansicht=2&semkez=2024W&lang=en)
 - [University of Bologna](https://www.unibo.it/en/study/phd-professional-masters-specialisation-schools-and-other-programmes/course-unit-catalogue/course-unit/2024/492255)
