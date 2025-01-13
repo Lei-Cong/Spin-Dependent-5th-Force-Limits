@@ -2,10 +2,12 @@
 
 ## Overview
 
-This repository contains datasets of constraints on spin-dependent exotic interactions, also referred to as the spin-dependent fifth force (SDFF), mediated by the exchange of a single boson of mass $M$ between fermions $X$ and $Y$. The interactions are categorized into the following types:
+This repository contains datasets of constraints on spin-dependent exotic interactions, also referred to as the spin-dependent fifth force (SDFF), mediated by the exchange of a single boson of mass M between fermions X and Y. The interactions are categorized into the following types:
 
-1. Axial-vector/vector ($g_Ag_V$), axial-vector/axial-vector ($g_Ag_A$), vector/vector ($g_Vg_V$).
-2. Pseudoscalar/scalar ($g_pg_s$), pseudoscalar/pseudoscalar ($g_pg_p$), scalar/scalar ($g_sg_s$).
+1. Axial-vector/vector, axial-vector/axial-vector, vector/vector.
+2. Pseudoscalar/scalar, pseudoscalar/pseudoscalar, scalar/scalar.
+#1. Axial-vector/vector ($g_Ag_V$), axial-vector/axial-vector ($g_Ag_A$), vector/vector ($g_Vg_V$).
+#2. Pseudoscalar/scalar ($g_pg_s$), pseudoscalar/pseudoscalar ($g_pg_p$), scalar/scalar ($g_sg_s$).
 3. Tensor/tensor, pseudotensor/tensor, and pseudotensor/pseudotensor.
 
 As a reference, one may consult the format of the exotic potentials presented in the RMP review: [**Spin-Dependent Exotic Interactions**](https://doi.org/10.48550/arXiv.2408.15691).
@@ -14,25 +16,27 @@ The repository serves as a **live** webpage designed to present the latest exper
 
 ### Citation
 
-Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14572653.svg)](https://doi.org/10.5281/zenodo.14572653). One can copy the BibTeX file from here: [**BibTeX Format**](./Citation.bib).
+Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14572652.svg)](https://doi.org/10.5281/zenodo.14572652). One can copy the BibTeX file from here: [**BibTeX Format**](./Citation.bib).
 
 ---
 
 ## Datasets
 
 
-### 1. $g_Ag_V$
+### 1. $g_Ag_A$
+
+- **Description**: Constraints for axial-vector/axial-vector couplings ($g_Ag_A$) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
+
+- **Data**: The data are available in the folder [**gAgA**](./gAgA/).
+
+---
+
+### 2. $g_Ag_V$
 - **Description**: *(Provide a brief description of the $g_Ag_V$ coupling constraints and their significance.)*
 - **Data**: *(Specify the folder or file where the data is located.)*
 - **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
 
 ---
-
-### 2. $g_Ag_A$
-
-- **Description**: Constraints for axial-vector/axial-vector couplings ($g_Ag_A$) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
-
-- **Data**: The data are available in the folder [**gAgA**](./gAgA/).
 
 - **Interactive Plots**: Explore the constraints through interactive plots:
   - **Lepton-lepton Interactions**: [View Plot via Binder](https://mybinder.org/v2/gh/Lei-Cong/Spin-Dependent-5th-Force-Limits/main?filepath=gAgA/gAgA-plot.ipynb)  
@@ -84,9 +88,16 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 (2). See the file named [$g_g_s$.md]() for organized details.  
    The data are presented in the folder [**g_g_sdata**]().
-   
+ 
+ ## Course
+ - [TASI Lectures](https://www.colorado.edu/physics/events/summer-intensive-programs/theoretical-advanced-study-institute-elementary-particle-physics#TASI-2023)
+ - ETH, [Quantum Technologies for Searches of New Physics](https://www.lehrbetrieb.ethz.ch/Vorlesungsverzeichnis/dozent.view?dozide=10032887&ansicht=2&semkez=2024W&lang=en)
+- [University of Bologna](https://www.unibo.it/en/study/phd-professional-masters-specialisation-schools-and-other-programmes/course-unit-catalogue/course-unit/2024/492255)
+- [Why Do We Think There's Physics Beyond the Standard Model? by Bryan Webber](https://www.youtube.com/watch?v=ZtKGH9qiWgQ&ab_channel=KavliInstituteforTheoreticalPhysics)
+ 
 ## Conference Information
 - 2025-01-17 to 2025-01-20, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816)
+- 17.02.2025 to 21.02.2025 [CAU BSM Workshop](https://indico.cern.ch/event/1492675/)
 - 11.05.2025 to 16.05.2025, [Frontiers of Quantum Metrology for New Physics Searches](https://www.dpg-physik.de/veranstaltungen/2025/quantum_metrology_for_new_physics_searches)
    
 ## Job Information
@@ -94,9 +105,13 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - [Marie Skłodowska-Curie Actions - Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships)
 - [Helmholtz-OCPC Postdoctoral Program](https://www.helmholtz.de/assets/helmholtz_gemeinschaft/user_upload/Ausschreibungen/2023/Call_Helmholtz-OCPC-Postdocprogram_2023.pdf); [OCPC Announcement](https://www.chinapostdoctor.org.cn/article?inid=cbcb0e46-8ed6-44ef-94c5-f2d78b8055c5&catname=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A&catid=8c892b1c-4ade-4a5f-9a87-5e736cb5e9f9)
 
+---
+
 ## Subscription
 
 Soon...
+
+---
 
 ## Acknowledgement
 
