@@ -85,6 +85,9 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 (2). See the file named [$g_g_s$.md]() for organized details.  
    The data are presented in the folder [**g_g_sdata**]().
  
+---
+
+
  ## Course
  - [TASI Lectures](https://www.colorado.edu/physics/events/summer-intensive-programs/theoretical-advanced-study-institute-elementary-particle-physics#TASI-2023)
  - ETH, [Quantum Technologies for Searches of New Physics](https://www.lehrbetrieb.ethz.ch/Vorlesungsverzeichnis/dozent.view?dozide=10032887&ansicht=2&semkez=2024W&lang=en)
@@ -92,9 +95,9 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - [Why Do We Think There's Physics Beyond the Standard Model? by Bryan Webber](https://www.youtube.com/watch?v=ZtKGH9qiWgQ&ab_channel=KavliInstituteforTheoreticalPhysics)
  
 ## Conference Information
-- 2025-01-17 to 2025-01-20, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816)
-- 17.02.2025 to 21.02.2025 [CAU BSM Workshop](https://indico.cern.ch/event/1492675/)
-- 11.05.2025 to 16.05.2025, [Frontiers of Quantum Metrology for New Physics Searches](https://www.dpg-physik.de/veranstaltungen/2025/quantum_metrology_for_new_physics_searches)
+- 2025-01-17 to 2025-01-20, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816), Sanya, China
+- 17.02.2025 to 21.02.2025 [CAU BSM Workshop](https://indico.cern.ch/event/1492675/), Chung-Ang University, Korea
+- 11.05.2025 to 16.05.2025, [Frontiers of Quantum Metrology for New Physics Searches](https://www.dpg-physik.de/veranstaltungen/2025/quantum_metrology_for_new_physics_searches), Bad Honnef, Germany
    
 ## Job Information
 - [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship)
