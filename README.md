@@ -6,8 +6,6 @@ This repository contains datasets of constraints on spin-dependent exotic intera
 
 1. Axial-vector/vector, axial-vector/axial-vector, vector/vector.
 2. Pseudoscalar/scalar, pseudoscalar/pseudoscalar, scalar/scalar.
-#1. Axial-vector/vector ($g_Ag_V$), axial-vector/axial-vector ($g_Ag_A$), vector/vector ($g_Vg_V$).
-#2. Pseudoscalar/scalar ($g_pg_s$), pseudoscalar/pseudoscalar ($g_pg_p$), scalar/scalar ($g_sg_s$).
 3. Tensor/tensor, pseudotensor/tensor, and pseudotensor/pseudotensor.
 
 As a reference, one may consult the format of the exotic potentials presented in the RMP review: [**Spin-Dependent Exotic Interactions**](https://doi.org/10.48550/arXiv.2408.15691).
