@@ -79,10 +79,9 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 ---
 
 ### 8. $V_1$ Results
-(1). See the file named [**V1_data.md**](./V1/V1_data.md) for organized details.  
+- See the file named [**V1_data.md**](./V1/V1_data.md) for organized details.  
    The data are presented in the folder [**V1alphadataLei**](./V1/V1alphadataLei/).
-
-(2). See the file named [$g_g_s$.md]() for organized details.  
+- See the file named [$g_g_s$.md]() for organized details.  
    The data are presented in the folder [**g_g_sdata**]().
  
 ---
