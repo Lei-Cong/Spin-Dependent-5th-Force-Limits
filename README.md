@@ -95,7 +95,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - 2025-01-17 to 2025-01-20, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816), Sanya, China
 - 17.02.2025 to 21.02.2025 [CAU BSM Workshop](https://indico.cern.ch/event/1492675/), Seoul, Korea
 - 11.05.2025 to 16.05.2025, [Frontiers of Quantum Metrology for New Physics Searches](https://www.dpg-physik.de/veranstaltungen/2025/quantum_metrology_for_new_physics_searches), Bad Honnef, Germany
-   
+ - 04.08.2025 to 15.08.2025 [New ways to discover light new physics](https://indico.mitp.uni-mainz.de/event/410/), Mainz, Germany
+ 
 ## Job Information
 - [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship)
 - [Marie Skłodowska-Curie Actions - Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships)
