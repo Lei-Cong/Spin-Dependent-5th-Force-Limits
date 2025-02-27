@@ -4,11 +4,10 @@
 
 This repository contains datasets of constraints on spin-dependent exotic interactions, also referred to as the spin-dependent fifth force (SDFF), mediated by the exchange of a single boson of mass M between fermions X and Y. The fifth force refers to a new force beyond the existing [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html) of nature. A SDFF is a force that depends on the spins of the involved fermions, similar to the magnetic force. 
 
-<figure>
+<figure style="text-align:center;">
   <img src="./Cover.png" alt="My Figure" width="400">
-  <figcaption>Figure 1: An exotic boson carrying a fifth force that depends on the spins of the involved fermions..</figcaption>
+  <figcaption><b>Figure 1:</b> Figure 1: An exotic boson carrying a fifth force that depends on the spins of the involved fermions.</figcaption>
 </figure>
-
 The interactions are categorized into the following types:
 
 1. Axial-vector/vector, axial-vector/axial-vector, vector/vector.
