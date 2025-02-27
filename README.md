@@ -6,7 +6,7 @@ This repository contains datasets of constraints on spin-dependent exotic intera
 
 <figure style="text-align:center;">
   <img src="./Cover.png" alt="My Figure" width="400">
-  <figcaption><b> <b>Figure 1:</b> An exotic boson carrying a fifth force that depends on the spins of the involved fermions.</figcaption>
+  <figcaption><b>Figure 1:</b> An exotic boson carrying a fifth force that depends on the spins of the involved fermions.</figcaption>
 </figure>
 
 The interactions are categorized into the following types:
