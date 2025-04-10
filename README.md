@@ -128,6 +128,7 @@ Soon...
 
 ![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=Lei-Cong.Spin-Dependent-5th-Force-Limits)
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visits&edge_flat=false)](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits)
 ## Acknowledgement
 
 We would like to express our gratitude to Fadeev Pavel, Wei Ji for initiating the idea of this webpage. We sincerely acknowledge Haosen Guan for collecting most of the data. We deeply appreciate Yevgeny Stadnik for supervising the work on astrophysical limits and combined limits. We also extend our heartfelt thanks to Prof. Dmitry Budker for his invaluable support and guidance.
