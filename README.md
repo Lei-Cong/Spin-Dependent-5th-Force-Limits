@@ -28,7 +28,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 ## Datasets
 
 <figure style="text-align:center;">
-  <img src="./FermionPairs.pdf" alt="My Figure" width="400">
+  <img src="./FermionPairs.png" alt="My Figure" width="400">
   <figcaption><b>Figure 2:</b> Studied and unexplored fermion pairs.</figcaption>
 </figure>
 
