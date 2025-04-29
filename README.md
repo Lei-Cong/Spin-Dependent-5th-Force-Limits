@@ -102,6 +102,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - [University of Bologna](https://www.unibo.it/en/study/phd-professional-masters-specialisation-schools-and-other-programmes/course-unit-catalogue/course-unit/2024/492255)
 - [Why Do We Think There's Physics Beyond the Standard Model? by Bryan Webber](https://www.youtube.com/watch?v=ZtKGH9qiWgQ&ab_channel=KavliInstituteforTheoreticalPhysics)
 - [Probing New Physics at Precision Frontier - by Prof. Yotam Soreq ](https://www.google.com.hk/search?q=Prof.+Yotam+Soreq+%28Technion%29%3A+Probing+new+hadronic+forces+with+heavy+exotic+atoms+&sca_esv=021eb8b12bbb8799&hl=zh-CN&source=hp&ei=6TCcZ7qIE8Kxi-gP1YbvkAI&iflsig=ACkRmUkAAAAAZ5w--W6jyEqPjpWvvfEaxyphuZtvijwJ#fpstate=ive&vld=cid:a10a29a8,vid:jvxmCcIO1rA,st:0)
+
+---
 ## White papers
 
 -[New Horizons: Scalar and Vector Ultralight Dark Matter](https://arxiv.org/abs/2203.14915)
