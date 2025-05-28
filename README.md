@@ -37,21 +37,13 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - **Description**: Constraints for axial-vector/axial-vector couplings ($g_Ag_A$) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
 
 - **Data**: The data are available in the folder [**gAgA**](./Dataset/normalized/gAgA/).
-<!--
-- **Interactive Plots**: Explore the constraints through interactive plots:
-  - **Lepton-lepton Interactions**: [View Plot via Binder](https://mybinder.org/v2/gh/Lei-Cong/Spin-Dependent-5th-Force-Limits/main?filepath=gAgA/gAgA-plot.ipynb)  
-  - **Lepton-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_LN.html)
-  - **Nucleon-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_NN.html)
--->
+
 ---
 
 ### 2. $g_Ag_V$
 - **Description**: Constraints for vector/vector couplings ($g_Ag_V$).
 - **Data**: The data are available in the folder [**gAgV**](./Dataset/normalized/gAgV/).
-<!--
-#- **Data**: *(Specify the folder or file where the data is located.)*
-#- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
--->
+
 ---
 
 ### 3. $g_Vg_V$
@@ -76,10 +68,6 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 ### 6. $g_sg_s$
 - **Description**: Constraints for scalar/scalar couplings ($g_sg_s$).
 - **Data**: The data are available in the folder [**gsgs**](./Dataset/normalized/gsgs/).
-<!--
-- **Interactive Plot**: You can view the interactive plot for scalar/scalar constraints here:  
-  [**gsgs Plot**](https://Lei-5th-force.github.io/SDFF-Dataset/gsgs/gsgs-plot.html).
--->
 
 ---
 
@@ -92,12 +80,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ### 8. $V_1$ Results
 - **Data**: The data are available in the folder [**V1**](./Dataset/normalized/V1/).
-<!--
-- See the file named [**V1_data.md**](./V1/V1_data.md) for organized details.  
-   The data are presented in the folder [**V1alphadataLei**](./V1/V1alphadataLei/).
-- See the file named [$g_g_s$.md]() for organized details.  
-   The data are presented in the folder [**g_g_sdata**]().
--->
+
  
 ---
 ## Course
@@ -107,19 +90,6 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - [Why Do We Think There's Physics Beyond the Standard Model? by Bryan Webber](https://www.youtube.com/watch?v=ZtKGH9qiWgQ&ab_channel=KavliInstituteforTheoreticalPhysics)
 - [Probing New Physics at Precision Frontier - by Prof. Yotam Soreq ](https://www.google.com.hk/search?q=Prof.+Yotam+Soreq+%28Technion%29%3A+Probing+new+hadronic+forces+with+heavy+exotic+atoms+&sca_esv=021eb8b12bbb8799&hl=zh-CN&source=hp&ei=6TCcZ7qIE8Kxi-gP1YbvkAI&iflsig=ACkRmUkAAAAAZ5w--W6jyEqPjpWvvfEaxyphuZtvijwJ#fpstate=ive&vld=cid:a10a29a8,vid:jvxmCcIO1rA,st:0)
 
----
-<!--
-## White papers
-
--[New Horizons: Scalar and Vector Ultralight Dark Matter](https://arxiv.org/abs/2203.14915)
-
-## Quantum physics and Particle physics 
-
--[Quantum sensing for particle physics](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.115.201301)
-
-## Related concept
-- [Feebly-interacting particles](https://link.springer.com/article/10.1140/epjc/s10052-023-12168-5)
--->
 
 ## Conference Information
 - 17.01 to 20.01, 2025, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816), Sanya, China
@@ -141,7 +111,11 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ## Subscription
 
-[Send me a link to this dataset by email](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) 
+[Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan:
+
+<figure style="text-align:center;">
+  <img src="./QR-QODE2.png" alt="My Figure" width="200">
+</figure>
 
 ---
 
