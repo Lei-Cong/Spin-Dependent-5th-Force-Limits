@@ -86,7 +86,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ### 7. Tensor and Pseudotensor Interactions
 - **Description**: Constraints for tensor and pseudotensor Interactions couplings.
-- **Data**: *(Please find the data in Tab. IV and V of our [review](https://doi.org/10.48550/arXiv.2408.15691))*
+- **Data**: *Please find the data in Tab. IV and V of our [review](https://doi.org/10.48550/arXiv.2408.15691)*
 
 ---
 
@@ -108,6 +108,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - [Probing New Physics at Precision Frontier - by Prof. Yotam Soreq ](https://www.google.com.hk/search?q=Prof.+Yotam+Soreq+%28Technion%29%3A+Probing+new+hadronic+forces+with+heavy+exotic+atoms+&sca_esv=021eb8b12bbb8799&hl=zh-CN&source=hp&ei=6TCcZ7qIE8Kxi-gP1YbvkAI&iflsig=ACkRmUkAAAAAZ5w--W6jyEqPjpWvvfEaxyphuZtvijwJ#fpstate=ive&vld=cid:a10a29a8,vid:jvxmCcIO1rA,st:0)
 
 ---
+<!--
 ## White papers
 
 -[New Horizons: Scalar and Vector Ultralight Dark Matter](https://arxiv.org/abs/2203.14915)
@@ -118,6 +119,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ## Related concept
 - [Feebly-interacting particles](https://link.springer.com/article/10.1140/epjc/s10052-023-12168-5)
+-->
 
 ## Conference Information
 - 17.01 to 20.01, 2025, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816), Sanya, China
