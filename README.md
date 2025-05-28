@@ -46,7 +46,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 ---
 
 ### 2. $g_Ag_V$
-- **Description**: *(Provide a brief description of the $g_Ag_V$ coupling constraints and their significance.)*
+- **Description**: Constraints for vector/vector couplings ($g_Ag_V$).
 - **Data**: The data are available in the folder [**gAgV**](./Dataset/normalized/gAgV/).
 <!--
 #- **Data**: *(Specify the folder or file where the data is located.)*
@@ -55,20 +55,20 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 ---
 
 ### 3. $g_Vg_V$
-- **Description**: *(Provide a brief description of the $g_Vg_V$ coupling constraints and their significance.)*
+- **Description**: Constraints for vector/vector couplings ($g_Vg_V$).
 - **Data**: The data are available in the folder [**gVgV**](./Dataset/normalized/gVgV/).
 
 
 ---
 
 ### 4. $g_pg_s$
-- **Description**: *(Provide a brief description of the $g_pg_s$ coupling constraints and their significance.)*
+- **Description**: Constraints for pseudoscalar/scalar couplings ($g_pg_s$).
 - **Data**: The data are available in the folder [**gpgs**](./Dataset/normalized/gpgs/).
 - The similar dataset for $g_pg_s$ can be found in [Ciaran O'Hare's github](https://github.com/cajohare/AxionLimits/tree/v1.0)
 ---
 
 ### 5. $g_pg_p$
-- **Description**: *(Provide a brief description of the $g_pg_p$ coupling constraints and their significance.)*
+- **Description**: Constraints for pseudoscalar/pseudoscalar couplings ($g_pg_p$).
 - **Data**: The data are available in the folder [**gpgp**](./Dataset/normalized/gpgp/).
 
 ---
@@ -85,7 +85,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 
 ### 7. Tensor and Pseudotensor Interactions
-- **Description**: *(Provide a brief description of tensor and pseudotensor coupling constraints.)*
+- **Description**: Constraints for tensor and pseudotensor Interactions couplings.
 - **Data**: *(Please find the data in Tab. IV and V of our [review](https://doi.org/10.48550/arXiv.2408.15691))*
 
 ---
