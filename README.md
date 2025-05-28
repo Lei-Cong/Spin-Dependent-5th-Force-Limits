@@ -56,7 +56,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 ### 4. $g_pg_s$
 - **Description**: Constraints for pseudoscalar/scalar couplings ($g_pg_s$).
 - **Data**: The data are available in the folder [**gpgs**](./Dataset/normalized/gpgs/).
-- The similar dataset for $g_pg_s$ can be found in [Ciaran O'Hare's github](https://github.com/cajohare/AxionLimits/tree/v1.0)
+-  **Ciaran O'Hare's page**: The similar dataset for $g_pg_s$ can be found [here](https://github.com/cajohare/AxionLimits/tree/v1.0).
+
 ---
 
 ### 5. $g_pg_p$
