@@ -32,9 +32,9 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
   <figcaption><b>Figure 2:</b> Studied and unexplored fermion pairs.</figcaption>
 </figure>
 
-### 1. **gAgA**
+### 1. $g_Ag_A$
 
-- **Description**: Constraints for axial-vector/axial-vector couplings (**gAgA**) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
+- **Description**: Constraints for axial-vector/axial-vector couplings ($g_Ag_A$) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
 
 - **Data**: The data are available in the folder [**gAgA**](./Dataset/normalized/gAgA/).
 
