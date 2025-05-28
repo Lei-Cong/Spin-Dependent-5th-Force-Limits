@@ -141,7 +141,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ## Subscription
 
-Soon...
+[Click to receive a link to this dataset by email.](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true).  
 
 ---
 
