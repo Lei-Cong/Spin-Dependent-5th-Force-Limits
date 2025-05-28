@@ -51,7 +51,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 <!--
 #- **Data**: *(Specify the folder or file where the data is located.)*
 #- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
-c
+-->
 ---
 
 ### 3. $g_Vg_V$
