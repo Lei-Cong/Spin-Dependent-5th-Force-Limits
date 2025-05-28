@@ -37,7 +37,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - **Description**: Constraints for axial-vector/axial-vector couplings ($g_Ag_A$) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
 
 - **Data**: The data are available in the folder [**gAgA**](./Dataset/normalized/gAgA/).
-
+<!--
 - **Interactive Plots**: Explore the constraints through interactive plots:
   - **Lepton-lepton Interactions**: [View Plot via Binder](https://mybinder.org/v2/gh/Lei-Cong/Spin-Dependent-5th-Force-Limits/main?filepath=gAgA/gAgA-plot.ipynb)  
   - **Lepton-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_LN.html)
@@ -51,51 +51,53 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 <!--
 #- **Data**: *(Specify the folder or file where the data is located.)*
 #- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
--->
+c
 ---
 
 ### 3. $g_Vg_V$
 - **Description**: *(Provide a brief description of the $g_Vg_V$ coupling constraints and their significance.)*
-- **Data**: *(Specify the folder or file where the data is located.)*
-- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
+- **Data**: The data are available in the folder [**gVgV**](./Dataset/normalized/gVgV/).
+
 
 ---
 
 ### 4. $g_pg_s$
 - **Description**: *(Provide a brief description of the $g_pg_s$ coupling constraints and their significance.)*
-- **Data**: *(Specify the folder or file where the data is located.)*
-- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
+- **Data**: The data are available in the folder [**gpgs**](./Dataset/normalized/gpgs/).
 - The similar dataset for $g_pg_s$ can be found in [Ciaran O'Hare's github](https://github.com/cajohare/AxionLimits/tree/v1.0)
 ---
 
 ### 5. $g_pg_p$
 - **Description**: *(Provide a brief description of the $g_pg_p$ coupling constraints and their significance.)*
-- **Data**: *(Specify the folder or file where the data is located.)*
-- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
+- **Data**: The data are available in the folder [**gpgp**](./Dataset/normalized/gpgp/).
 
 ---
 
 ### 6. $g_sg_s$
 - **Description**: Constraints for scalar/scalar couplings ($g_sg_s$).
-- **Data**: The data are presented in the folder [**gsgs**](./gsgs/).
+- **Data**: The data are available in the folder [**gsgs**](./Dataset/normalized/gsgs/).
+<!--
 - **Interactive Plot**: You can view the interactive plot for scalar/scalar constraints here:  
   [**gsgs Plot**](https://Lei-5th-force.github.io/SDFF-Dataset/gsgs/gsgs-plot.html).
+-->
 
 ---
 
 
 ### 7. Tensor and Pseudotensor Interactions
 - **Description**: *(Provide a brief description of tensor and pseudotensor coupling constraints.)*
-- **Data**: *(Specify the folder or file where the data is located.)*
-- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
+- **Data**: *(Please find the data in Tab. IV and V of our [review](https://doi.org/10.48550/arXiv.2408.15691))*
 
 ---
 
 ### 8. $V_1$ Results
+- **Data**: The data are available in the folder [**V1**](./Dataset/normalized/V1/).
+<!--
 - See the file named [**V1_data.md**](./V1/V1_data.md) for organized details.  
    The data are presented in the folder [**V1alphadataLei**](./V1/V1alphadataLei/).
 - See the file named [$g_g_s$.md]() for organized details.  
    The data are presented in the folder [**g_g_sdata**]().
+-->
  
 ---
 ## Course
