@@ -38,19 +38,20 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 - **Data**: The data are available in the folder [**gAgA**](./Dataset/normalized/gAgA/).
 
-%- **Interactive Plots**: Explore the constraints through interactive plots:
- % - **Lepton-lepton Interactions**: [View Plot via Binder](https://mybinder.org/v2/gh/Lei-Cong/Spin-Dependent-5th-Force-Limits/main?filepath=gAgA/gAgA-plot.ipynb)  
- % - **Lepton-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_LN.html)
- % - **Nucleon-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_NN.html)
-
+- **Interactive Plots**: Explore the constraints through interactive plots:
+  - **Lepton-lepton Interactions**: [View Plot via Binder](https://mybinder.org/v2/gh/Lei-Cong/Spin-Dependent-5th-Force-Limits/main?filepath=gAgA/gAgA-plot.ipynb)  
+  - **Lepton-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_LN.html)
+  - **Nucleon-nucleon Interactions**: [View Plot](https://Lei-5th-force.github.io/SDFF-Dataset/gAgA/gAgA-plot_NN.html)
+-->
 ---
 
 ### 2. $g_Ag_V$
 - **Description**: *(Provide a brief description of the $g_Ag_V$ coupling constraints and their significance.)*
 - **Data**: The data are available in the folder [**gAgV**](./Dataset/normalized/gAgV/).
-%- **Data**: *(Specify the folder or file where the data is located.)*
-%- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
-
+<!--
+#- **Data**: *(Specify the folder or file where the data is located.)*
+#- **Interactive Plot**: *(Provide a link to the interactive plot if available.)*
+-->
 ---
 
 ### 3. $g_Vg_V$
