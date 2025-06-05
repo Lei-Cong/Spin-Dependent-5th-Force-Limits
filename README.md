@@ -35,28 +35,24 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 ### 1. $g_Ag_A$
 
 - **Description**: Constraints for axial-vector/axial-vector couplings ($g_Ag_A$) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
-
 - **Data**: The data are available in the folder [**gAgA**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gAgA).
 
 ---
 
 ### 2. $g_Ag_V$
 - **Description**: Constraints for vector/vector couplings ($g_Ag_V$).
-
 - **Data**: The data are available in the folder [**gAgV**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gAgV).
 
 ---
 
 ### 3. $g_Vg_V$
 - **Description**: Constraints for vector/vector couplings ($g_Vg_V$).
-
 - **Data**: The data are available in the folder [**gVgV**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gVgV).
 
 ---
 
 ### 4. $g_pg_s$
 - **Description**: Constraints for pseudoscalar/scalar couplings ($g_pg_s$).
-
 - **Data**: The data are available in the folder [**gpgs**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gpgs).
 
 -  **Ciaran O'Hare's page**: The similar dataset for $g_pg_s$ can be found [here](https://github.com/cajohare/AxionLimits/tree/v1.0).
@@ -65,14 +61,12 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ### 5. $g_pg_p$
 - **Description**: Constraints for pseudoscalar/pseudoscalar couplings ($g_pg_p$).
-
 - **Data**: The data are available in the folder [**gpgp**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gpgp).
 
 ---
 
 ### 6. $g_sg_s$
 - **Description**: Constraints for scalar/scalar couplings ($g_sg_s$).
-
 - **Data**: The data are available in the folder [**gsgs**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gsgs).
 
 ---
@@ -80,7 +74,6 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ### 7. Tensor and Pseudotensor Interactions
 - **Description**: Constraints for tensor and pseudotensor Interactions couplings.
-
 - **Data**: *Please find the data in Tab. IV and V of our [review](https://doi.org/10.48550/arXiv.2408.15691)*
 
 ---
