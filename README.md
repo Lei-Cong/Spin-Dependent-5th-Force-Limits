@@ -15,7 +15,7 @@ The interactions are categorized into the following types:
 2. Pseudoscalar/scalar, pseudoscalar/pseudoscalar, scalar/scalar.
 3. Tensor/tensor, pseudotensor/tensor, and pseudotensor/pseudotensor.
 
-As a reference, one may consult the format of the exotic potentials presented in the RMP review: [Spin-Dependent Exotic Interactions](https://doi.org/10.48550/arXiv.2408.15691).
+As a reference, one may consult the format of the exotic potentials presented in the RMP review: [Spin-Dependent Exotic Interactions](https://link.aps.org/doi/10.1103/RevModPhys.97.025005).
 
 The repository serves as a **live** webpage designed to present the latest experimental results. For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
 
