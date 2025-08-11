@@ -34,8 +34,9 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ---
 
-* You can download the entire normalized dataset here:  
+* You can download the complete normalized dataset and example plotting code here:  
 [📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
+
 ---
 
 ### 1. $g_Ag_A$
