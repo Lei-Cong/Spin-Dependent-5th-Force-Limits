@@ -34,8 +34,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ---
 
-The complete normalized dataset and reference plotting code are available for download [here](Dataset/normalized/).
-
+* You can download the entire normalized dataset here:  
+[📦 Download SDFF normalized dataset](https://raw.githubusercontent.com/leicong/Spin-Dependent-5th-Force-Limits/main/Dataset/SDFF_dataset_normalized.zip)
 ---
 
 ### 1. $g_Ag_A$
