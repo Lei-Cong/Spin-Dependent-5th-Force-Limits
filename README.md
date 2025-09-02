@@ -109,8 +109,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - 26.05 to 30.05, 2025 [10th International Conference on Precision Physics and Fundamental Physical Constants (FFK2025)](https://www.ffk2025.candela.org.pl/)
 - 23.06 to 11.07, 2025 [Axions in Stockholm](https://indico.fysik.su.se/event/8808/)
 - 04.08 to 15.08, 2025 [New ways to discover light new physics](https://indico.mitp.uni-mainz.de/event/410/), Mainz, Germany
-- 22.09 to 26.09, 2025 [20th Patras Workshop on Axions, WIMPs and WISPs](https://agenda.infn.it/event/46273/overview)
- 
+- 22.09 to 26.09, 2025 [20th Patras Workshop on Axions, WIMPs and WISPs](https://agenda.infn.it/event/46273/overview), Tenerife, Spain
+- 29.03 to 01.04, 2026 [Parity Violation in Molecules](https://www.we-heraeus-stiftung.de/veranstaltungen/parity-violation-in-molecules/), Bad Honnef, Germany
 ---
 
 

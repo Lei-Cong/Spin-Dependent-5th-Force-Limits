@@ -50,12 +50,12 @@ folders = {
 
 % Indicate which data you want to add for comparision
 nameHints = {
-    '2Ficek_2017_V2_m_abs_ee', 
+    '2Ficek_2017_V2_m_abs_ee', % Name of the data from the dataset you want to show
     '2Jiao_2019_m_abs_ee',
     '2Kotler_2015_m_abs_ee',
     %'3Ficek_2017_2_m_abs_ee',
     %'45Ficek_2017_V4+5_m_abs_ee',
-    'New_constriants_1',
+    'New_constriants_1', % Name of the data from your own folder 
     %'New_constriants_2',
 };
 
