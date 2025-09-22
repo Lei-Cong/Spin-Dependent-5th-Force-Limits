@@ -111,6 +111,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - 04.08 to 15.08, 2025 [New ways to discover light new physics](https://indico.mitp.uni-mainz.de/event/410/), Mainz, Germany
 - 22.09 to 26.09, 2025 [20th Patras Workshop on Axions, WIMPs and WISPs](https://agenda.infn.it/event/46273/overview), Tenerife, Spain
 - 29.03 to 01.04, 2026 [Parity Violation in Molecules](https://www.we-heraeus-stiftung.de/veranstaltungen/parity-violation-in-molecules/), Bad Honnef, Germany
+- 29.09 to 03.10, 2025 [Ultralight Dark Matter and observable phenomena](https://indico.sissa.it/event/165/overview)
+
 ---
 
 
