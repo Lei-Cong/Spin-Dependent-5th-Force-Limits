@@ -106,13 +106,12 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - 24.03 to 27.03, 2025[Criticality and Continuous Measurements in Quantum Sensing: From Theory to Experiments](https://indico.sns.it/event/81/)
 - 04.05 to 14.05, 2025 [LULBI - Light \& ultralight BSM interactions](https://conferences.weizmann.ac.il/SRitp/May2025/sritp-advanced-school-lulbi-light-ultralight-bsm-interactions)
 - 11.05 to 16.05, 2025, [Frontiers of Quantum Metrology for New Physics Searches](https://www.dpg-physik.de/veranstaltungen/2025/quantum_metrology_for_new_physics_searches), Bad Honnef, Germany
-- 26.05 to 30.05, 2025 [10th International Conference on Precision Physics and Fundamental Physical Constants (FFK2025)](https://www.ffk2025.candela.org.pl/)
+- 26.05 to 30.05, 2025 [10th International Conference on Precision Physics and Fundamental Physical Constants (FFK2025)](https://www.ffk2025.candela.org.pl/), Warsaw, Poland
 - 23.06 to 11.07, 2025 [Axions in Stockholm](https://indico.fysik.su.se/event/8808/)
 - 04.08 to 15.08, 2025 [New ways to discover light new physics](https://indico.mitp.uni-mainz.de/event/410/), Mainz, Germany
 - 22.09 to 26.09, 2025 [20th Patras Workshop on Axions, WIMPs and WISPs](https://agenda.infn.it/event/46273/overview), Tenerife, Spain
+- 29.09 to 03.10, 2025 [Ultralight Dark Matter and observable phenomena](https://indico.sissa.it/event/165/overview), Trieste (IFPU), Italy
 - 29.03 to 01.04, 2026 [Parity Violation in Molecules](https://www.we-heraeus-stiftung.de/veranstaltungen/parity-violation-in-molecules/), Bad Honnef, Germany
-- 29.09 to 03.10, 2025 [Ultralight Dark Matter and observable phenomena](https://indico.sissa.it/event/165/overview)
-
 ---
 
 
