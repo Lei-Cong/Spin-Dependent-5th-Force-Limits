@@ -39,12 +39,9 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 *  🌐 Interactive Plot Viewer (Test Version)
 
-A preliminary **interactive viewer** is available here:
-
 👉 **[Spin-Dependent Fifth-Force Interactive Viewer (Test)](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
 
-> ⚠️ **Note:** This is a *testing version* of the online dataset viewer.  
-> It may still undergo layout and performance improvements, and some datasets could be incomplete or under verification.
+> ⚠️ **Note:**  The webpage may take up to <strong>10 seconds</strong> to load all datasets. If no data appear after that, please try <strong>refreshing</strong> the page.<br/>
 
 The viewer allows users to:
 - Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.)
