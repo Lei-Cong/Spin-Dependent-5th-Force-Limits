@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SDFF Limits — Multi-Group, Per-Subfolder Charts (+Uploads, Axis Overrides)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+  :root{--bd:#e5e7eb;--fg:#111;--muted:#666;}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;padding:1rem;background:#fafafa;}
+  h2{margin:0 0 .25rem 0;font-weight:700;}
+  #wrap{display:grid;grid-template-columns:1fr 360px;gap:1rem;align-items:start;max-width:1800px;margin:0 auto;}
+  .panel{border:1px solid var(--bd);border-radius:12px;padding:.8rem;background:#fff;}
+  .controls{display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0 .8rem 0}
+  .btn{border:1px solid #d1d5db;padding:.35rem .7rem;border-radius:9px;background:#fff;cursor:pointer;}
+  .btn.active{background:#111;color:#fff;border-color:#111;}
+  .btn.secondary{background:#f7f7f7;}
+  .hint{color:#555;font-size:.9rem;line-height:1.35;margin-top:.5rem;}
+  .chartcard{margin:0 0 1rem 0;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;}
+  .chartcard .title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bd);padding:.55rem .8rem;font-weight:600}
+  .chart{height:120vh;background:#fff;} /* 用户设置为 120 */
+  .chart-toolbar{display:flex;gap:.5rem;align-items:center;padding:.5rem .8rem;border-top:1px solid #e5e7eb;background:#fafafa;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
+  #checklist{max-height:82vh;overflow:auto;border:1px dashed var(--bd);border-radius:10px;padding:.5rem;background:#fff;}
+  .folder{margin:.5rem 0 .8rem 0;}
+  .folder>div.title{font-weight:600;color:#333;margin:.2rem 0 .2rem 0;display:flex;justify-content:space-between;align-items:center;}
+  .folder .count{color:#999;font-weight:500;}
+  .item{display:flex;align-items:center;margin:.28rem 0;}
+  .item input{margin-right:.5rem;}
+  .item label{cursor:pointer;user-select:none;flex:1;}
+  .search{display:flex;gap:.4rem;margin:.2rem 0 .6rem 0;}
+  .search input{flex:1;border:1px solid var(--bd);border-radius:8px;padding:.35rem .6rem;}
+</style>
+</head>
+<body>
+  <h2>Spin-Dependent Fifth Force — Interactive Limits Viewer</h2>
+  <div class="controls">
+    <button class="btn active" data-group="gAgA">g<sub>A</sub>g<sub>A</sub></button>
+    <button class="btn" data-group="gAgV">g<sub>A</sub>g<sub>V</sub></button>
+    <button class="btn" data-group="gpgp">g<sub>p</sub>g<sub>p</sub></button>
+    <button class="btn" data-group="gpgs">g<sub>p</sub>g<sub>s</sub></button>
+    <button class="btn" data-group="gsgs">g<sub>s</sub>g<sub>s</sub></button>
+    <button class="btn" data-group="gVgV">g<sub>V</sub>g<sub>V</sub></button>
+    <button class="btn" data-group="V1">V<sub>1</sub></button>
+    <button class="btn secondary" id="showAll">Show all</button>
+    <button class="btn secondary" id="hideAll">Hide all</button>
+    <button class="btn secondary" id="resetHL">Reset highlight</button>
+  </div>
+
+  <div id="wrap">
+    <div id="charts" class="panel">
+      <!-- charts injected here -->
+    </div>
+    <div id="side" class="panel">
+      <div class="search">
+        <input id="filter" placeholder="Filter by filename or folder..." />
+      </div>
+      <div id="checklist"></div>
+      <div class="hint">
+        • 每个耦合（如 gAgA）按<strong>子文件夹</strong>生成多幅图；图例在图下方。<br/>
+        • 右侧清单按子文件夹分组：勾选 = 显示/隐藏；点击名称 = 高亮该曲线。<br/>
+        • 横轴：λ [m]（对数），默认范围 [1e-14, 1e14]；纵轴上限 1e10，下限自动或按配置覆盖。<br/>
+        • 每张图下有“添加对比数据”按钮，可上传两列数据（λ, limit），仅加入该图。
+      </div>
+    </div>
+  </div>
+
+<script>
+/* ====== CONFIG ====== */
+const USE_LOCAL_MANIFEST = false;   // 本地清单模式（datasets_multi.json）
+const GH_USER   = "Lei-Cong";
+const GH_REPO   = "Spin-Dependent-5th-Force-Limits";
+const GH_BRANCH = "main";
+
+// 各耦合对应目录（相对仓库根，或相对 index_multi.html 的本地路径）
+const DIRS = {
+  gAgA: "Dataset/normalized/gAgA",
+  gAgV: "Dataset/normalized/gAgV",
+  gpgp: "Dataset/normalized/gpgp",
+  gpgs: "Dataset/normalized/gpgs",
+  gsgs: "Dataset/normalized/gsgs",
+  gVgV: "Dataset/normalized/gVgV",
+  V1:   "Dataset/normalized/V1"
+};
+
+// ====== Per-chart axis config ======
+const AXIS_CONFIG = {
+  defaults: {
+    x: [1e-14, 1e14],
+    y: { min: 'auto', max: 1e10 }
+  },
+  overrides: {
+    // 示例：按需填写。子文件夹名需与图/清单中一致；根目录文件用 "(root)"
+    // gAgA: {
+    //   "subfolderA": { x: [1e-12, 1e-3], y: { min: 1e-18, max: 1e8 } },
+    //   "*": { y: { min: 1e-20, max: 5e9 } } // 通配该 group 全部子文件夹
+    // }
+  }
+};
+
+/* ====== UTIL: Fetch & parse ====== */
+async function fetchText(url){
+  const r = await fetch(url);
+  if(!r.ok) throw new Error("Fetch failed " + r.status + " " + url);
+  return r.text();
+}
+function parse2col(txt){
+  let sep = null;
+  if (txt.includes("\t")) sep = "\t";
+  else if (txt.includes(",")) sep = ",";
+  const rows = txt.trim().split(/\r?\n/).map(r => sep ? r.split(sep) : r.trim().split(/\s+/));
+  let start = 0;
+  if (rows.length && (isNaN(parseFloat(rows[0][0])) || isNaN(parseFloat(rows[0][1])))) start = 1;
+  const x=[], y=[];
+  for (let i=start;i<rows.length;i++){
+    const xi = parseFloat(rows[i][0]);
+    const yi = parseFloat(rows[i][1]);
+    if (isFinite(xi) && isFinite(yi)){ x.push(xi); y.push(yi); }
+  }
+  return {x,y};
+}
+
+/* ====== Data loading (GitHub Trees API or local manifest) ====== */
+const GH_API_BASE = "https://api.github.com";
+function rawUrl(path){ return `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/${GH_BRANCH}/${path}`; }
+
+async function ghTreeRecursive(){
+  const url = `${GH_API_BASE}/repos/${GH_USER}/${GH_REPO}/git/trees/${GH_BRANCH}?recursive=1`;
+  const res = await fetch(url);
+  if(!res.ok) throw new Error("GitHub Trees API error " + res.status);
+  return res.json(); // {tree:[{path,type},...]}
+}
+
+async function loadGroup_GitHub(groupKey, tree){
+  const base = DIRS[groupKey];
+  const files = tree.tree.filter(n => n.type==="blob" && n.path.startsWith(base + "/") && /\.(csv|tsv|txt)$/i.test(n.path));
+  const groups = {}; // subfolder -> [{path,name,x,y}...]
+  for (const f of files){
+    const rel = f.path.slice(base.length + 1);
+    const parts = rel.split("/");
+    const subfolder = parts.length>1 ? parts[0] : "(root)";
+    const name = rel.replace(/\.(csv|tsv|txt)$/i,"");
+    try{
+      const txt = await fetchText(rawUrl(f.path));
+      const {x,y} = parse2col(txt);
+      if (x.length && y.length){
+        if(!groups[subfolder]) groups[subfolder]=[];
+        groups[subfolder].push({ id:`${groupKey}:${rel}`, name, path:f.path, x, y });
+      }
+    }catch(e){ console.warn("Skip", f.path, e); }
+  }
+  return groups;
+}
+
+async function loadAllGroups(){
+  if (USE_LOCAL_MANIFEST){
+    const res = await fetch("./datasets_multi.json?_=" + Date.now());
+    if(!res.ok) throw new Error("Failed to load datasets_multi.json");
+    const manifest = await res.json();
+    const result = {};
+    for (const g of Object.keys(DIRS)){
+      result[g] = {};
+      const group = manifest[g] || {};
+      for (const sub of Object.keys(group)){
+        result[g][sub] = [];
+        for (const entry of group[sub]){
+          try{
+            const txt = await fetchText(entry.path);
+            const {x,y} = parse2col(txt);
+            if (x.length && y.length){
+              result[g][sub].push({ id:`${g}:${entry.path}`, name: entry.label || entry.path, path: entry.path, x, y });
+            }
+          }catch(e){ console.warn("Skip local", entry.path, e); }
+        }
+      }
+    }
+    return result;
+  }else{
+    const tree = await ghTreeRecursive();
+    const out = {};
+    for (const g of Object.keys(DIRS)){
+      out[g] = await loadGroup_GitHub(g, tree);
+    }
+    return out;
+  }
+}
+
+/* ====== Rendering ====== */
+const BASE_LINE = { width:2, opacity:0.9 };
+const HILIGHT_LINE = { width:4, opacity:1.0 };
+const DIM_LINE = { width:2, opacity:0.25 };
+
+let DATA = {};     // { groupKey: { subfolder: [datasets] } }
+let current = 'gAgA';
+let traceIndex = {}; // chartId -> { datasetId -> traceIdx }
+let UPLOADS = {};   // uploads[groupKey][subfolder] = [ {id,name,x,y} ... ]
+
+// Compute y-min (positive) for datasets
+function computeYMin(datasets){
+  let m = Infinity;
+  datasets.forEach(ds => ds.y.forEach(v => { if (v>0 && v<m) m=v; }));
+  if (!isFinite(m)) m = 1e-20;
+  return m * 0.8;
+}
+
+// Resolve per-chart axis ranges by config
+function resolveAxisRanges(groupKey, subfolder, datasets){
+  let x = AXIS_CONFIG.defaults.x.slice();
+  let yMinMode = AXIS_CONFIG.defaults.y.min;
+  let yMax = AXIS_CONFIG.defaults.y.max;
+
+  const g = AXIS_CONFIG.overrides[groupKey] || {};
+  const ov = g[subfolder] || g["*"] || null;
+  if (ov){
+    if (ov.x && ov.x.length === 2) x = ov.x.slice();
+    if (ov.y){
+      if (typeof ov.y.min !== 'undefined') yMinMode = ov.y.min;
+      if (typeof ov.y.max === 'number')    yMax     = ov.y.max;
+    }
+  }
+
+  let yMin;
+  if (yMinMode === 'auto'){
+    yMin = computeYMin(datasets);
+  } else {
+    yMin = yMinMode;
+  }
+
+  if (!(x[0] > 0 && x[1] > x[0])) x = AXIS_CONFIG.defaults.x.slice();
+  if (!(yMin > 0 && yMax > yMin)) { yMin = 1e-20; yMax = Math.max(1e10, yMin*10); }
+
+  return { xRange: x, yRange: [yMin, yMax] };
+}
+
+// Build a chart card for one subfolder
+function buildChartCard(groupKey, subfolder, datasets){
+  const chartsDiv = document.getElementById('charts');
+  const card = document.createElement('div');
+  card.className = 'chartcard';
+
+  const title = document.createElement('div');
+  title.className = 'title';
+  title.innerHTML = `<span>${groupKey} / ${subfolder}</span>`;
+  card.appendChild(title);
+
+  const chartDiv = document.createElement('div');
+  const chartId = `chart-${groupKey}-${subfolder}`.replace(/[^a-zA-Z0-9_-]/g,'_');
+  chartDiv.id = chartId;
+  chartDiv.className = 'chart';
+  card.appendChild(chartDiv);
+  chartsDiv.appendChild(card);
+
+  // traces
+  traceIndex[chartId] = {};
+  const traces = datasets.map((d, idx) => {
+    traceIndex[chartId][d.id] = idx;
+    return {
+      name: d.name,
+      x: d.x, y: d.y,
+      type: 'scatter', mode: 'lines+markers',
+      hovertemplate: `λ = %{x:.2e} m<br>limit ≤ %{y:.2e}<extra></extra>`,
+      visible: true,
+      line: { width: BASE_LINE.width },
+      opacity: BASE_LINE.opacity
+    };
+  });
+
+  // axis ranges
+  const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, datasets);
+  const layout = {
+    margin:{l:70,r:20,t:10,b:90},
+    xaxis:{type:'log', range:[Math.log10(xRange[0]), Math.log10(xRange[1])], title:{text:'λ [m]'}},
+    yaxis:{type:'log', range:[Math.log10(yRange[0]), Math.log10(yRange[1])], title:{text:'Limit'}},
+    legend:{orientation:'h', x:0.5, xanchor:'center', y:-0.3},
+    hovermode:'closest'
+  };
+  const config = { responsive:true, displaylogo:false, modeBarButtonsToAdd:['toImage'] };
+
+  Plotly.newPlot(chartId, traces, layout, config).then(gd => {
+    gd.on('plotly_legendclick', ev => {
+      const ds = datasets[ev.curveNumber];
+      highlightTrace(chartId, ds.id);
+      return false;
+    });
+  });
+
+  // --- toolbar with upload button (per chart) ---
+  const bar = document.createElement('div');
+  bar.className = 'chart-toolbar';
+
+  const btn = document.createElement('button');
+  btn.className = 'btn';
+  btn.textContent = '➕ Add my data for comparison';
+  btn.style.marginLeft = 'auto';
+
+  const file = document.createElement('input');
+  file.type = 'file';
+  file.accept = '.csv,.tsv,.txt';
+  file.style.display = 'none';
+
+  btn.addEventListener('click', ()=> file.click());
+  file.addEventListener('change', async (ev) => {
+    const f = ev.target.files && ev.target.files[0];
+    if(!f) return;
+    try{
+      const txt = await f.text();
+      const {x,y} = parse2col(txt);
+      if(!x.length || !y.length){ alert('未检测到两列数值数据'); return; }
+      const name = f.name.replace(/\.(csv|tsv|txt)$/i,'') + ' (upload)';
+      addUploadTrace(chartId, groupKey, subfolder, name, x, y);
+    }catch(e){
+      console.error(e);
+      alert('读取/解析失败：' + e.message);
+    }finally{
+      ev.target.value = '';
+    }
+  });
+
+  bar.appendChild(btn);
+  bar.appendChild(file);
+  card.appendChild(bar);
+}
+
+// Render all charts for current group
+function renderCharts(){
+  const chartsDiv = document.getElementById('charts');
+  chartsDiv.innerHTML = '';
+  const group = DATA[current] || {};
+  const subfolders = Object.keys(group).sort();
+  if (subfolders.length === 0){
+    chartsDiv.innerHTML = '<div class="hint">No data for this group.</div>';
+    return;
+  }
+  subfolders.forEach(sub => buildChartCard(current, sub, group[sub]));
+}
+
+// Build right-side checklist grouped by subfolder
+function renderChecklist(){
+  const box = document.getElementById('checklist');
+  box.innerHTML = '';
+  const group = DATA[current] || {};
+  const filterValue = (document.getElementById('filter').value || '').toLowerCase();
+
+  Object.keys(group).sort().forEach(sub => {
+    const baseList = group[sub].filter(d => (d.name.toLowerCase().includes(filterValue) || sub.toLowerCase().includes(filterValue)));
+    const uploadsForSub = (UPLOADS[current] && UPLOADS[current][sub]) ? UPLOADS[current][sub] : [];
+    if (baseList.length === 0 && uploadsForSub.length === 0) return;
+
+    const sec = document.createElement('div');
+    sec.className = 'folder';
+
+    const title = document.createElement('div');
+    title.className = 'title';
+    const total = baseList.length + uploadsForSub.length;
+    title.innerHTML = `<span>${sub}</span><span class="count">${total} files</span>`;
+    sec.appendChild(title);
+
+    baseList.forEach(d => {
+      const div = document.createElement('div'); div.className='item';
+      const cb = document.createElement('input'); cb.type='checkbox'; cb.checked=true; cb.dataset.id=d.id; cb.dataset.sub=sub;
+      cb.addEventListener('change', e => {
+        const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g,'_');
+        const idx = traceIndex[chartId][d.id];
+        Plotly.restyle(chartId, { visible: e.target.checked ? true : 'legendonly' }, [idx]);
+      });
+      const label = document.createElement('label'); label.textContent = d.name;
+      label.addEventListener('click', () => {
+        const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g,'_');
+        highlightTrace(chartId, d.id);
+      });
+      div.appendChild(cb); div.appendChild(label); sec.appendChild(div);
+    });
+
+    if (uploadsForSub.length){
+      const uplTitle = document.createElement('div');
+      uplTitle.className = 'title';
+      uplTitle.innerHTML = `<span>Uploads</span><span class="count">${uploadsForSub.length}</span>`;
+      sec.appendChild(uplTitle);
+
+      uploadsForSub.forEach(u => {
+        const div = document.createElement('div'); div.className='item';
+        const cb = document.createElement('input'); cb.type='checkbox'; cb.checked=true;
+        cb.addEventListener('change', e => {
+          const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g,'_');
+          const idx = traceIndex[chartId][u.id];
+          Plotly.restyle(chartId, { visible: e.target.checked ? true : 'legendonly' }, [idx]);
+        });
+        const label = document.createElement('label'); label.textContent = u.name;
+        label.addEventListener('click', () => {
+          const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g,'_');
+          highlightTrace(chartId, u.id);
+        });
+        div.appendChild(cb); div.appendChild(label); sec.appendChild(div);
+      });
+    }
+
+    box.appendChild(sec);
+  });
+}
+
+// Highlight one trace in a chart; dim others
+function highlightTrace(chartId, datasetId){
+  const idxMap = traceIndex[chartId];
+  Object.entries(idxMap).forEach(([id, idx]) => {
+    const on = (id === datasetId);
+    Plotly.restyle(chartId, {
+      'line.width': on ? HILIGHT_LINE.width : BASE_LINE.width,
+      'opacity': on ? HILIGHT_LINE.opacity : DIM_LINE.opacity
+    }, [idx]);
+  });
+}
+
+// Add uploaded trace to a specific chart and sync checklist + axis
+function addUploadTrace(chartId, groupKey, subfolder, name, x, y){
+  const trace = {
+    name,
+    x, y,
+    type: 'scatter', mode: 'lines+markers',
+    hovertemplate: `λ = %{x:.2e} m<br>limit ≤ %{y:.2e}<extra></extra>`,
+    visible: true,
+    line: { width: HILIGHT_LINE.width },
+    opacity: HILIGHT_LINE.opacity
+  };
+  Plotly.addTraces(chartId, trace).then(() => {
+    const idx = document.getElementById(chartId).data.length - 1;
+    const id = `${groupKey}:upload:${Date.now()}:${Math.random().toString(36).slice(2,7)}`;
+    if(!traceIndex[chartId]) traceIndex[chartId] = {};
+    traceIndex[chartId][id] = idx;
+
+    if(!UPLOADS[groupKey]) UPLOADS[groupKey] = {};
+    if(!UPLOADS[groupKey][subfolder]) UPLOADS[groupKey][subfolder] = [];
+    UPLOADS[groupKey][subfolder].push({ id, name, x, y });
+
+    const baseDatasets = (DATA[groupKey] && DATA[groupKey][subfolder]) ? DATA[groupKey][subfolder] : [];
+    const all = baseDatasets.concat(UPLOADS[groupKey][subfolder]);
+    const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, all);
+    Plotly.relayout(chartId, {
+      'xaxis.range': [Math.log10(xRange[0]), Math.log10(xRange[1])],
+      'yaxis.range': [Math.log10(yRange[0]), Math.log10(yRange[1])]
+    });
+
+    renderChecklist();
+  });
+}
+
+function resetHighlights(){
+  Object.keys(traceIndex).forEach(chartId => {
+    const idxMap = traceIndex[chartId];
+    Object.values(idxMap).forEach(idx => {
+      Plotly.restyle(chartId, {
+        'line.width': BASE_LINE.width,
+        'opacity': BASE_LINE.opacity
+      }, [idx]);
+    });
+  });
+}
+
+function setAllVisible(flag){
+  Object.keys(traceIndex).forEach(chartId => {
+    const idxMap = traceIndex[chartId];
+    Object.values(idxMap).forEach(idx => {
+      Plotly.restyle(chartId, { visible: flag ? true : 'legendonly' }, [idx]);
+    });
+  });
+  document.querySelectorAll('#checklist input[type="checkbox"]').forEach(cb => cb.checked = !!flag);
+}
+
+/* ====== Bootstrap ====== */
+document.getElementById('filter').addEventListener('input', renderChecklist);
+
+document.getElementById('showAll').addEventListener('click', ()=> setAllVisible(true));
+document.getElementById('hideAll').addEventListener('click', ()=> setAllVisible(false));
+document.getElementById('resetHL').addEventListener('click', resetHighlights);
+
+document.querySelectorAll('.btn').forEach(btn => {
+  const id = btn.getAttribute('id');
+  if (id === 'showAll' || id === 'hideAll' || id === 'resetHL') return;
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.btn').forEach(b => {
+      const bid = b.getAttribute('id');
+      if (bid !== 'showAll' && bid !== 'hideAll' && bid !== 'resetHL') b.classList.remove('active');
+    });
+    btn.classList.add('active');
+    current = btn.dataset.group;
+    renderCharts();
+    renderChecklist();
+  });
+});
+
+(async function main(){
+  try{
+    DATA = await loadAllGroups();
+    renderCharts();
+    renderChecklist();
+  }catch(e){
+    console.error(e);
+    alert("Failed to load data:\n" + e.message + "\n\n若你在本地，请确保 datasets_multi.json 存在，并已将 USE_LOCAL_MANIFEST 设为 true。");
+  }
+})();
+</script>
+</body>
+</html>

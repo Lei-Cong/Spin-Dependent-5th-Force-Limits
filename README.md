@@ -2,20 +2,20 @@
 
 ## Overview
 
-This repository contains datasets of constraints on spin-dependent exotic interactions, also referred to as the spin-dependent fifth force (SDFF), mediated by the exchange of a single boson of mass M between fermions X and Y. The fifth force refers to a new force beyond the existing [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html) of nature. A SDFF is a force that depends on the spins of the involved fermions, similar to the magnetic force. 
+This repository contains datasets of constraints on spin-dependent exotic interactions—also referred to as the spin-dependent fifth force (SDFF)—mediated by the exchange of a single boson of mass M between fermions X and Y. The fifth force refers to a new force beyond the existing  [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html). An SDFF is a force that depends on the spins of the involved fermions, similar to the magnetic force.
 
 <figure style="text-align:center;">
   <img src="./Cover.png" alt="My Figure" width="400">
   <figcaption><b>Figure 1:</b> An exotic boson carrying a fifth force that depends on the spins of the involved fermions.</figcaption>
 </figure>
 
-The interactions are categorized into the following types:
+We categorize interactions into the following types:
 
 1. Axial-vector/vector, axial-vector/axial-vector, vector/vector.
 2. Pseudoscalar/scalar, pseudoscalar/pseudoscalar, scalar/scalar.
 3. Tensor/tensor, pseudotensor/tensor, and pseudotensor/pseudotensor.
 
-As a reference, one may consult the format of the exotic potentials presented in the RMP review: [Spin-Dependent Exotic Interactions](https://link.aps.org/doi/10.1103/RevModPhys.97.025005).
+For notation and operator definitions, see the RMP review: [Spin-Dependent Exotic Interactions](https://link.aps.org/doi/10.1103/RevModPhys.97.025005).
 
 The repository serves as a **live** webpage designed to present the latest experimental results. For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
 
@@ -34,7 +34,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ---
 
-* You can download the complete normalized dataset and example plotting code here:  
+* Download the complete normalized dataset and example plotting code:  
 [📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
 
 ---
@@ -101,6 +101,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 
 ## Conference Information
+- 2020 [Seminar on Precision Physics and Fundamental Symmetries](https://indico.cern.ch/category/12183/?utm_source=chatgpt.com)
 - 17.01 to 20.01, 2025, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816), Sanya, China
 - 17.02 to 21.02, 2025 [CAU BSM Workshop](https://indico.cern.ch/event/1492675/), Seoul, Korea
 - 24.03 to 27.03, 2025[Criticality and Continuous Measurements in Quantum Sensing: From Theory to Experiments](https://indico.sns.it/event/81/)
@@ -112,6 +113,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - 22.09 to 26.09, 2025 [20th Patras Workshop on Axions, WIMPs and WISPs](https://agenda.infn.it/event/46273/overview), Tenerife, Spain
 - 29.09 to 03.10, 2025 [Ultralight Dark Matter and observable phenomena](https://indico.sissa.it/event/165/overview), Trieste, Italy
 - 29.03 to 01.04, 2026 [Parity Violation in Molecules](https://www.we-heraeus-stiftung.de/veranstaltungen/parity-violation-in-molecules/), Bad Honnef, Germany
+- 18.05 to 22.05, 2026 [International Conference on Precision Physics of Simple Atomic Systems (PSAS 2026)](https://indico.global/event/15739/)
 ---
 
 
