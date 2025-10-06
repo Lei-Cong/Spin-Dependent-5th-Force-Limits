@@ -39,7 +39,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 *  🌐 Interactive Plot Viewer (Test Version) 👉 **[Spin-Dependent Fifth-Force Interactive Viewer (Test)](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
 
-> ⚠️ **Note:**  The webpage may take up to <strong>10 seconds</strong> to load all datasets. If no data appear after that, please try <strong>refreshing</strong> the page.<br/>
+> ⚠️ **Note:**  The webpage may take up to <strong>10 seconds</strong> to load all datasets. If no figure appear after that, please try <strong>refreshing</strong> the page.<br/>
 
 &nbsp;&nbsp; &nbsp;&nbsp; The viewer allows users to:
 
