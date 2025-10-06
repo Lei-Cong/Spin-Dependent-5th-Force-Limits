@@ -37,6 +37,20 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 * Download the complete normalized dataset and example plotting code:  
 [📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
 
+*  🌐 Interactive Plot Viewer (Test Version)
+
+A preliminary **interactive viewer** is available here:
+
+👉 **[Spin-Dependent Fifth-Force Interactive Viewer (Test)](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
+
+> ⚠️ **Note:** This is a *testing version* of the online dataset viewer.  
+> It may still undergo layout and performance improvements, and some datasets could be incomplete or under verification.
+
+The viewer allows users to:
+- Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.)
+- Display or hide datasets
+- Upload your own data files (λ [m], gg) for direct comparison
+
 ---
 
 ### 1. $g_Ag_A$
