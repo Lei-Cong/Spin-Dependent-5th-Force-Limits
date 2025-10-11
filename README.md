@@ -133,7 +133,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - [Marie Skłodowska-Curie Actions - Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships); [More Information](https://mp.weixin.qq.com/s/Gx92VvQ4Hl2UAyHi9A3gFA)
 - [Helmholtz-OCPC Postdoctoral Program](https://www.helmholtz.de/assets/helmholtz_gemeinschaft/user_upload/Ausschreibungen/2023/Call_Helmholtz-OCPC-Postdocprogram_2023.pdf); [OCPC Announcement](https://www.chinapostdoctor.org.cn/article?inid=cbcb0e46-8ed6-44ef-94c5-f2d78b8055c5&catname=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A&catid=8c892b1c-4ade-4a5f-9a87-5e736cb5e9f9)
 - [CSC-DAAD](https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?detail=50015315)
-
+- [Fondazione Antonio Madonna ETS](https://www.cstq.org/opportunities/fam-scholarship-2025/)
+- [Enrico Fermi Fellowships](https://www.eff.cstq.org/)
 ---
 
 ## Subscription
