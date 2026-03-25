@@ -2,7 +2,18 @@
 
 ## Overview
 
-This repository contains datasets of constraints on spin-dependent exotic interactions—also referred to as the spin-dependent fifth force (SDFF)—mediated by the exchange of a single boson of mass M between fermions X and Y. The fifth force refers to a new force beyond the existing  [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html). An SDFF is a force that depends on the spins of the involved fermions, similar to the magnetic force.
+This repository provides a standardized, continuously updated research software platform for collecting, analyzing, and visualizing experimental constraints on spin-dependent exotic interactions (also known as the spin-dependent fifth force, SDFF).
+
+The platform integrates a curated dataset of experimental limits with an interactive visualization and comparison tool, enabling researchers to:
+	- Access and compare constraints across different experiments and interaction types
+	- Generate exclusion plots in a unified and consistent framework
+	- Benchmark new theoretical models or experimental results against existing bounds
+	- Contribute and update data as part of a growing community resource
+	
+	
+The SDFF arises from the exchange of a hypothetical boson of mass M between fermions X and Y, representing a possible extension beyond the  [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html)￼. Unlike conventional forces, SDFF depends explicitly on the spin degrees of freedom, analogous in some aspects to magnetic interactions.
+
+<!--This repository contains datasets of constraints on spin-dependent exotic interactions—also referred to as the spin-dependent fifth force (SDFF)—mediated by the exchange of a single boson of mass M between fermions X and Y. The fifth force refers to a new force beyond the existing  [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html). An SDFF is a force that depends on the spins of the involved fermions, similar to the magnetic force.-->
 
 <figure style="text-align:center;">
   <img src="./Cover.png" alt="My Figure" width="400">
@@ -17,7 +28,14 @@ We categorize interactions into the following types:
 
 For notation and operator definitions, see the RMP review: [Spin-Dependent Exotic Interactions](https://link.aps.org/doi/10.1103/RevModPhys.97.025005).
 
-The repository serves as a **live** webpage designed to present the latest experimental results. For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
+### Role as a Community Research Tool
+
+This project is designed as a **community-driven scientific software platform**, rather than a static dataset. It serves as a reference infrastructure for the field, accompanying recent review work and supporting ongoing theoretical and experimental studies.
+
+The software is actively used within our collaboration and is intended for broader adoption by the community.
+
+<!--The repository serves as a **live** webpage designed to present the latest experimental results. -->
+For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
 
 ### Citation
 
@@ -125,6 +143,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - 29.09 to 03.10, 2025 [Ultralight Dark Matter and observable phenomena](https://indico.sissa.it/event/165/overview), Trieste, Italy
 - 29.03 to 01.04, 2026 [Parity Violation in Molecules](https://www.we-heraeus-stiftung.de/veranstaltungen/parity-violation-in-molecules/), Bad Honnef, Germany
 - 18.05 to 22.05, 2026 [International Conference on Precision Physics of Simple Atomic Systems (PSAS 2026)](https://indico.global/event/15739/)
+- 02.08.2026 to 07.08.2026 [Dark Intersections](https://www.dpg-physik.de/veranstaltungen/2026/dark_intersections), Bad Honnef, Germany
+
 ---
 
 
@@ -135,6 +155,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 - [CSC-DAAD](https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?detail=50015315)
 - [Fondazione Antonio Madonna ETS](https://www.cstq.org/opportunities/fam-scholarship-2025/)
 - [Enrico Fermi Fellowships](https://www.eff.cstq.org/)
+- [Postdoc-theory](https://academicjobsonline.org/ajo/jobs/30778)
 ---
 
 ## Subscription
