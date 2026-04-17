@@ -60,6 +60,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 > ⚠️ **Note:**  The webpage may take up to <strong>10 seconds</strong> to load all datasets. If no figure appear after that, please try <strong>refreshing</strong> the page.<br/>
 
 &nbsp;&nbsp; &nbsp;&nbsp; The viewer allows users to:
+
   - Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.)
   - Display or hide datasets
   - Upload your own data files (λ [m], gg) for direct comparison
