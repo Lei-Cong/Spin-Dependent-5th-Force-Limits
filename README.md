@@ -51,7 +51,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 </figure>
 
 ---
-
+* For additional explanations of the constraints, see the [Author Notes](notes.md) page.
 * Download the complete normalized dataset and example plotting code:  
 [📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
 
