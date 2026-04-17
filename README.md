@@ -56,7 +56,7 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 [📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
 
 *  🌐 Interactive Plot Viewer (Test Version) 👉 **[Spin-Dependent Fifth-Force Interactive Viewer (Test)](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
-  - ⚠️ **Note:**  The webpage may take up to <strong>10 seconds</strong> to load all datasets. If no figure appear after that, please try <strong>refreshing</strong> the page.<br/>
+  - ⚠️ **Note:**  The viewer webpage may take up to <strong>10 seconds</strong> to load all datasets. If no figure appear after that, please try <strong>refreshing</strong> the page.<br/>
   - The viewer allows users to:
   a. Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.);
   b. Display or hide datasets;
