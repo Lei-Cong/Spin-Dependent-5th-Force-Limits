@@ -5,10 +5,10 @@
 This repository provides a standardized, continuously updated research software platform for collecting, analyzing, and visualizing experimental constraints on spin-dependent exotic interactions (also known as the spin-dependent fifth force, SDFF).
 
 The platform integrates a curated dataset of experimental limits with an interactive visualization and comparison tool, enabling researchers to:
-	- Access and compare constraints across different experiments and interaction types
-	- Generate exclusion plots in a unified and consistent framework
-	- Benchmark new theoretical models or experimental results against existing bounds
-	- Contribute and update data as part of a growing community resource
+  - Access and compare constraints across different experiments and interaction types;
+	- Generate exclusion plots in a unified and consistent framework;
+	- Benchmark new theoretical models or experimental results against existing bounds;
+	- Contribute and update data as part of a growing community resource.
 	
 	
 The SDFF arises from the exchange of a hypothetical boson of mass M between fermions X and Y, representing a possible extension beyond the  [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html)￼. Unlike conventional forces, SDFF depends explicitly on the spin degrees of freedom, analogous in some aspects to magnetic interactions.
