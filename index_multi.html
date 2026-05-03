@@ -76,26 +76,16 @@ const AXIS_CONFIG = {
     x: [1e-14, 1e14],
     y: { min: "auto", max: 1e10 }
   },
-  overrides: {
-    gAgV: {
-      "*": { y: { min: 1e-60, max: 1e0 } }
-    },
-    gAgA: {
-      "*": { y: { min: 1e-50, max: 1e20 } }
-    },
-    gVgV: {
-      "*": { y: { min: 1e-50, max: 1e10 } }
-    },
-    gpgs: {
-      "*": { y: { min: 1e-40, max: 1e10 } }
-    },
-    gpgp: {
-      "*": { y: { min: 1e-27, max: 1e12 } }
-    },
-    gsgs: {
-      "*": { y: { min: 1e-50, max: 1e6 } }
-    }
-  }
+  overrides: {}
+};
+
+const GROUP_Y_RANGES = {
+  gAgA: [1e-50, 1e20],
+  gAgV: [1e-60, 1e0],
+  gVgV: [1e-50, 1e10],
+  gpgs: [1e-40, 1e10],
+  gpgp: [1e-27, 1e12],
+  gsgs: [1e-50, 1e6]
 };
 
 /* ====== UTIL ====== */
@@ -138,16 +128,22 @@ function parse2col(txt){
   return {x, y};
 }
 
-function makeLogTicks(minVal, maxVal){
+function makeLogTicks(minVal, maxVal, step = 2){
   const minExp = Math.ceil(Math.log10(minVal));
   const maxExp = Math.floor(Math.log10(maxVal));
 
   const tickvals = [];
   const ticktext = [];
 
-  for (let e = minExp; e <= maxExp; e++){
+  for (let e = minExp; e <= maxExp; e += step){
     tickvals.push(Math.pow(10, e));
-    ticktext.push("1e" + e);
+    ticktext.push(`10<sup>${e}</sup>`);
+  }
+
+  const maxTick = Math.pow(10, maxExp);
+  if (!tickvals.includes(maxTick)) {
+    tickvals.push(maxTick);
+    ticktext.push(`10<sup>${maxExp}</sup>`);
   }
 
   return {tickvals, ticktext};
@@ -227,22 +223,31 @@ function computeYMin(datasets){
 
 function resolveAxisRanges(groupKey, subfolder, datasets){
   let x = AXIS_CONFIG.defaults.x.slice();
-  let yMinMode = AXIS_CONFIG.defaults.y.min;
+
+  let yMin = AXIS_CONFIG.defaults.y.min === "auto"
+    ? computeYMin(datasets)
+    : AXIS_CONFIG.defaults.y.min;
+
   let yMax = AXIS_CONFIG.defaults.y.max;
 
   const g = AXIS_CONFIG.overrides[groupKey] || {};
   const ov = g[subfolder] || g["*"] || null;
 
   if (ov){
-    if (ov.x && ov.x.length === 2) x = ov.x.slice();
+    if (ov.x && ov.x.length === 2) {
+      x = ov.x.slice();
+    }
 
     if (ov.y){
-      if (typeof ov.y.min !== "undefined") yMinMode = ov.y.min;
-      if (typeof ov.y.max === "number") yMax = ov.y.max;
+      if (typeof ov.y.min !== "undefined") yMin = ov.y.min;
+      if (typeof ov.y.max !== "undefined") yMax = ov.y.max;
     }
   }
 
-  let yMin = yMinMode === "auto" ? computeYMin(datasets) : yMinMode;
+  if (GROUP_Y_RANGES[groupKey]) {
+    yMin = GROUP_Y_RANGES[groupKey][0];
+    yMax = GROUP_Y_RANGES[groupKey][1];
+  }
 
   if (!(x[0] > 0 && x[1] > x[0])) {
     x = AXIS_CONFIG.defaults.x.slice();
@@ -250,7 +255,7 @@ function resolveAxisRanges(groupKey, subfolder, datasets){
 
   if (!(yMin > 0 && yMax > yMin)) {
     yMin = 1e-20;
-    yMax = Math.max(1e10, yMin * 10);
+    yMax = 1e10;
   }
 
   return { xRange: x, yRange: [yMin, yMax] };
@@ -297,20 +302,23 @@ function buildChartCard(groupKey, subfolder, datasets){
 
   const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, datasets);
 
-  const xTicks = makeLogTicks(xRange[0], xRange[1]);
-  const yTicks = makeLogTicks(yRange[0], yRange[1]);
+  const xTicks = makeLogTicks(xRange[0], xRange[1], 2);
+
+  let yTickStep = 5;
+  if (groupKey === "gAgA") yTickStep = 10;
+  if (groupKey === "gAgV") yTickStep = 10;
+
+  const yTicks = makeLogTicks(yRange[0], yRange[1], yTickStep);
 
   const layout = {
-    margin:{l:80,r:20,t:10,b:95},
+    margin:{l:90,r:20,t:10,b:95},
     xaxis:{
       type:"log",
       range:[Math.log10(xRange[0]), Math.log10(xRange[1])],
       title:{text:"λ [m]"},
       tickmode:"array",
       tickvals:xTicks.tickvals,
-      ticktext:xTicks.ticktext,
-      exponentformat:"e",
-      showexponent:"all"
+      ticktext:xTicks.ticktext
     },
     yaxis:{
       type:"log",
@@ -318,9 +326,7 @@ function buildChartCard(groupKey, subfolder, datasets){
       title:{text:"Limit"},
       tickmode:"array",
       tickvals:yTicks.tickvals,
-      ticktext:yTicks.ticktext,
-      exponentformat:"e",
-      showexponent:"all"
+      ticktext:yTicks.ticktext
     },
     legend:{orientation:"h", x:0.5, xanchor:"center", y:-0.25},
     hovermode:"closest"
@@ -569,8 +575,14 @@ function addUploadTrace(chartId, groupKey, subfolder, name, x, y){
 
     const all = baseDatasets.concat(UPLOADS[groupKey][subfolder]);
     const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, all);
-    const xTicks = makeLogTicks(xRange[0], xRange[1]);
-    const yTicks = makeLogTicks(yRange[0], yRange[1]);
+
+    const xTicks = makeLogTicks(xRange[0], xRange[1], 2);
+
+    let yTickStep = 5;
+    if (groupKey === "gAgA") yTickStep = 10;
+    if (groupKey === "gAgV") yTickStep = 10;
+
+    const yTicks = makeLogTicks(yRange[0], yRange[1], yTickStep);
 
     Plotly.relayout(chartId, {
       "xaxis.range": [Math.log10(xRange[0]), Math.log10(xRange[1])],
