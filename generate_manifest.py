@@ -27,7 +27,8 @@ for group, base in DIRS.items():
             parts = rel.split("/")
             subfolder = parts[0] if len(parts) > 1 else "(root)"
 
-            label = os.path.splitext(rel)[0]
+            # 只保留文件名
+            label = os.path.splitext(os.path.basename(file))[0]
 
             if subfolder not in manifest[group]:
                 manifest[group][subfolder] = []
