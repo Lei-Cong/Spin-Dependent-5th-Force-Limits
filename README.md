@@ -55,13 +55,28 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 * Download the complete normalized dataset and example plotting code:  
 [📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
 
-*  🌐 Interactive Plot Viewer (Test Version) 👉 **[Spin-Dependent Fifth-Force Interactive Viewer (Test)](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
-  - ⚠️ **Note:**  The viewer webpage may take up to <strong>10 seconds</strong> to load all datasets. If no figure appear after that, please try <strong>refreshing</strong> the page.<br/>
+*  🌐 Interactive Plot Viewer 👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
   - The viewer allows users to:
   a. Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.);
   b. Display or hide datasets;
   c. Upload your own data files (λ [m], gg) for direct comparison.
 
+<!--
+Interactive viewer structure:
+
+Dataset/normalized/  →  generate_manifest.py  →  datasets_multi.json  →  index_multi.html
+
+- Dataset/normalized/: stores the actual data files.
+- generate_manifest.py: scans the dataset folders and generates datasets_multi.json.
+- datasets_multi.json: records dataset paths, groups, subfolders, and labels.
+- index_multi.html: reads datasets_multi.json and displays the interactive plots.
+
+After adding, deleting, renaming, or moving dataset files, regenerate the manifest:
+
+    python generate_manifest.py
+
+Then commit and push the updated datasets_multi.json file.
+-->
 
 ---
 
