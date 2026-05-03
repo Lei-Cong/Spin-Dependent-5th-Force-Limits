@@ -19,7 +19,7 @@
   .hint{color:#555;font-size:.9rem;line-height:1.35;margin-top:.5rem;}
   .chartcard{margin:0 0 1rem 0;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;}
   .chartcard .title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bd);padding:.55rem .8rem;font-weight:600}
-  .chart{height:80vh;background:#fff;}
+  .chart{height:120vh;background:#fff;}
   .chart-toolbar{display:flex;gap:.5rem;align-items:center;padding:.5rem .8rem;border-top:1px solid #e5e7eb;background:#fafafa;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
   #checklist{max-height:82vh;overflow:auto;border:1px dashed var(--bd);border-radius:10px;padding:.5rem;background:#fff;}
   .folder{margin:.5rem 0 .8rem 0;}
@@ -59,7 +59,7 @@
     <div id="checklist"></div>
     <div class="hint">
       • Data are loaded from <strong>datasets_multi.json</strong>.<br/>
-      • Only the selected coupling group is loaded, so the initial page should load much faster.<br/>
+      • Only the selected coupling group is loaded.<br/>
       • Checklist: check = show/hide; click name = highlight curve.<br/>
       • Use “Add my data for comparison” to upload a two-column file.
     </div>
@@ -74,14 +74,27 @@ const MANIFEST_PATH = "./datasets_multi.json";
 const AXIS_CONFIG = {
   defaults: {
     x: [1e-14, 1e14],
-    y: { min: 'auto', max: 1e10 }
+    y: { min: "auto", max: 1e10 }
   },
   overrides: {
-    // Example:
-    // gAgA: {
-    //   "subfolderA": { x: [1e-12, 1e-3], y: { min: 1e-18, max: 1e8 } },
-    //   "*": { y: { min: 1e-20, max: 5e9 } }
-    // }
+    gAgV: {
+      "*": { y: { min: 1e-60, max: 1e0 } }
+    },
+    gAgA: {
+      "*": { y: { min: 1e-50, max: 1e20 } }
+    },
+    gVgV: {
+      "*": { y: { min: 1e-50, max: 1e10 } }
+    },
+    gpgs: {
+      "*": { y: { min: 1e-40, max: 1e10 } }
+    },
+    gpgp: {
+      "*": { y: { min: 1e-27, max: 1e12 } }
+    },
+    gsgs: {
+      "*": { y: { min: 1e-50, max: 1e6 } }
+    }
   }
 };
 
@@ -123,6 +136,21 @@ function parse2col(txt){
   }
 
   return {x, y};
+}
+
+function makeLogTicks(minVal, maxVal){
+  const minExp = Math.ceil(Math.log10(minVal));
+  const maxExp = Math.floor(Math.log10(maxVal));
+
+  const tickvals = [];
+  const ticktext = [];
+
+  for (let e = minExp; e <= maxExp; e++){
+    tickvals.push(Math.pow(10, e));
+    ticktext.push("1e" + e);
+  }
+
+  return {tickvals, ticktext};
 }
 
 /* ====== Global State ====== */
@@ -269,19 +297,32 @@ function buildChartCard(groupKey, subfolder, datasets){
 
   const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, datasets);
 
+  const xTicks = makeLogTicks(xRange[0], xRange[1]);
+  const yTicks = makeLogTicks(yRange[0], yRange[1]);
+
   const layout = {
-    margin:{l:70,r:20,t:10,b:90},
+    margin:{l:80,r:20,t:10,b:95},
     xaxis:{
       type:"log",
       range:[Math.log10(xRange[0]), Math.log10(xRange[1])],
-      title:{text:"λ [m]"}
+      title:{text:"λ [m]"},
+      tickmode:"array",
+      tickvals:xTicks.tickvals,
+      ticktext:xTicks.ticktext,
+      exponentformat:"e",
+      showexponent:"all"
     },
     yaxis:{
       type:"log",
       range:[Math.log10(yRange[0]), Math.log10(yRange[1])],
-      title:{text:"Limit"}
+      title:{text:"Limit"},
+      tickmode:"array",
+      tickvals:yTicks.tickvals,
+      ticktext:yTicks.ticktext,
+      exponentformat:"e",
+      showexponent:"all"
     },
-    legend:{orientation:"h", x:0.5, xanchor:"center", y:-0.3},
+    legend:{orientation:"h", x:0.5, xanchor:"center", y:-0.25},
     hovermode:"closest"
   };
 
@@ -528,10 +569,16 @@ function addUploadTrace(chartId, groupKey, subfolder, name, x, y){
 
     const all = baseDatasets.concat(UPLOADS[groupKey][subfolder]);
     const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, all);
+    const xTicks = makeLogTicks(xRange[0], xRange[1]);
+    const yTicks = makeLogTicks(yRange[0], yRange[1]);
 
     Plotly.relayout(chartId, {
       "xaxis.range": [Math.log10(xRange[0]), Math.log10(xRange[1])],
-      "yaxis.range": [Math.log10(yRange[0]), Math.log10(yRange[1])]
+      "xaxis.tickvals": xTicks.tickvals,
+      "xaxis.ticktext": xTicks.ticktext,
+      "yaxis.range": [Math.log10(yRange[0]), Math.log10(yRange[1])],
+      "yaxis.tickvals": yTicks.tickvals,
+      "yaxis.ticktext": yTicks.ticktext
     });
 
     renderChecklist();
