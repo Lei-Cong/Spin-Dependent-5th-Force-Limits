@@ -61,6 +61,7 @@
       • Data are loaded from <strong>datasets_multi.json</strong>.<br/>
       • Only the selected coupling group is loaded.<br/>
       • Checklist: check = show/hide; click name = highlight curve.<br/>
+      • Hover over a curve to see the dataset name.<br/>
       • Use “Add my data for comparison” to upload a two-column file.
     </div>
   </div>
@@ -128,22 +129,29 @@ function parse2col(txt){
   return {x, y};
 }
 
-function makeLogTicks(minVal, maxVal, step = 2){
+function makeMajorLogTicks(minVal, maxVal, nLabels = 5){
   const minExp = Math.ceil(Math.log10(minVal));
   const maxExp = Math.floor(Math.log10(maxVal));
 
   const tickvals = [];
   const ticktext = [];
 
-  for (let e = minExp; e <= maxExp; e += step){
-    tickvals.push(Math.pow(10, e));
-    ticktext.push(`10<sup>${e}</sup>`);
+  if (nLabels <= 1 || minExp === maxExp) {
+    tickvals.push(Math.pow(10, minExp));
+    ticktext.push(`10<sup>${minExp}</sup>`);
+    return {tickvals, ticktext};
   }
 
-  const maxTick = Math.pow(10, maxExp);
-  if (!tickvals.includes(maxTick)) {
-    tickvals.push(maxTick);
-    ticktext.push(`10<sup>${maxExp}</sup>`);
+  const step = (maxExp - minExp) / (nLabels - 1);
+
+  for (let i = 0; i < nLabels; i++){
+    const e = Math.round(minExp + i * step);
+    const val = Math.pow(10, e);
+
+    if (!tickvals.includes(val)){
+      tickvals.push(val);
+      ticktext.push(`10<sup>${e}</sup>`);
+    }
   }
 
   return {tickvals, ticktext};
@@ -293,7 +301,10 @@ function buildChartCard(groupKey, subfolder, datasets){
       y: d.y,
       type: "scatter",
       mode: "lines",
-      hovertemplate: `λ = %{x:.2e} m<br>limit ≤ %{y:.2e}<extra></extra>`,
+      hovertemplate:
+        `<b>%{fullData.name}</b><br>` +
+        `λ = %{x:.2e} m<br>` +
+        `limit ≤ %{y:.2e}<extra></extra>`,
       visible: true,
       line: { width: BASE_LINE.width },
       opacity: BASE_LINE.opacity
@@ -302,13 +313,8 @@ function buildChartCard(groupKey, subfolder, datasets){
 
   const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, datasets);
 
-  const xTicks = makeLogTicks(xRange[0], xRange[1], 2);
-
-  let yTickStep = 5;
-  if (groupKey === "gAgA") yTickStep = 10;
-  if (groupKey === "gAgV") yTickStep = 10;
-
-  const yTicks = makeLogTicks(yRange[0], yRange[1], yTickStep);
+  const xTicks = makeMajorLogTicks(xRange[0], xRange[1], 5);
+  const yTicks = makeMajorLogTicks(yRange[0], yRange[1], 5);
 
   const layout = {
     margin:{l:90,r:20,t:10,b:95},
@@ -318,7 +324,11 @@ function buildChartCard(groupKey, subfolder, datasets){
       title:{text:"λ [m]"},
       tickmode:"array",
       tickvals:xTicks.tickvals,
-      ticktext:xTicks.ticktext
+      ticktext:xTicks.ticktext,
+      ticks:"outside",
+      showline:true,
+      mirror:true,
+      showgrid:true
     },
     yaxis:{
       type:"log",
@@ -326,7 +336,11 @@ function buildChartCard(groupKey, subfolder, datasets){
       title:{text:"Limit"},
       tickmode:"array",
       tickvals:yTicks.tickvals,
-      ticktext:yTicks.ticktext
+      ticktext:yTicks.ticktext,
+      ticks:"outside",
+      showline:true,
+      mirror:true,
+      showgrid:true
     },
     legend:{orientation:"h", x:0.5, xanchor:"center", y:-0.25},
     hovermode:"closest"
@@ -550,7 +564,10 @@ function addUploadTrace(chartId, groupKey, subfolder, name, x, y){
     y,
     type: "scatter",
     mode: "lines",
-    hovertemplate: `λ = %{x:.2e} m<br>limit ≤ %{y:.2e}<extra></extra>`,
+    hovertemplate:
+      `<b>%{fullData.name}</b><br>` +
+      `λ = %{x:.2e} m<br>` +
+      `limit ≤ %{y:.2e}<extra></extra>`,
     visible: true,
     line: { width: HILIGHT_LINE.width },
     opacity: HILIGHT_LINE.opacity
@@ -576,13 +593,8 @@ function addUploadTrace(chartId, groupKey, subfolder, name, x, y){
     const all = baseDatasets.concat(UPLOADS[groupKey][subfolder]);
     const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, all);
 
-    const xTicks = makeLogTicks(xRange[0], xRange[1], 2);
-
-    let yTickStep = 5;
-    if (groupKey === "gAgA") yTickStep = 10;
-    if (groupKey === "gAgV") yTickStep = 10;
-
-    const yTicks = makeLogTicks(yRange[0], yRange[1], yTickStep);
+    const xTicks = makeMajorLogTicks(xRange[0], xRange[1], 5);
+    const yTicks = makeMajorLogTicks(yRange[0], yRange[1], 5);
 
     Plotly.relayout(chartId, {
       "xaxis.range": [Math.log10(xRange[0]), Math.log10(xRange[1])],
