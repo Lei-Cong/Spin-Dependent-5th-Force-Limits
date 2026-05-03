@@ -68,8 +68,6 @@
 </div>
 
 <script>
-/* ====== CONFIG ====== */
-
 const MANIFEST_PATH = "./datasets_multi.json";
 
 const AXIS_CONFIG = {
@@ -88,8 +86,6 @@ const GROUP_Y_RANGES = {
   gpgp: [1e-27, 1e12],
   gsgs: [1e-50, 1e6]
 };
-
-/* ====== UTIL ====== */
 
 async function fetchText(url){
   const r = await fetch(url);
@@ -157,8 +153,6 @@ function makeMajorLogTicks(minVal, maxVal, nLabels = 5){
   return {tickvals, ticktext};
 }
 
-/* ====== Global State ====== */
-
 const BASE_LINE = { width:2, opacity:0.9 };
 const HILIGHT_LINE = { width:4, opacity:1.0 };
 const DIM_LINE = { width:2, opacity:0.25 };
@@ -168,8 +162,6 @@ let DATA = {};
 let current = "gAgA";
 let traceIndex = {};
 let UPLOADS = {};
-
-/* ====== Manifest and Lazy Loading ====== */
 
 async function loadManifestIfNeeded(){
   if (MANIFEST) return MANIFEST;
@@ -213,8 +205,6 @@ async function loadGroupIfNeeded(groupKey){
 
   DATA[groupKey] = result;
 }
-
-/* ====== Axis ====== */
 
 function computeYMin(datasets){
   let m = Infinity;
@@ -269,8 +259,6 @@ function resolveAxisRanges(groupKey, subfolder, datasets){
   return { xRange: x, yRange: [yMin, yMax] };
 }
 
-/* ====== Rendering ====== */
-
 function buildChartCard(groupKey, subfolder, datasets){
   const chartsDiv = document.getElementById("charts");
 
@@ -299,14 +287,16 @@ function buildChartCard(groupKey, subfolder, datasets){
       name: d.name,
       x: d.x,
       y: d.y,
+      customdata: d.x.map(() => d.name),
       type: "scatter",
-      mode: "lines",
+      mode: "lines+markers",
       hovertemplate:
-        `<b>%{fullData.name}</b><br>` +
+        `<b>%{customdata}</b><br>` +
         `λ = %{x:.2e} m<br>` +
         `limit ≤ %{y:.2e}<extra></extra>`,
       visible: true,
       line: { width: BASE_LINE.width },
+      marker: { size: 5, opacity: 0 },
       opacity: BASE_LINE.opacity
     };
   });
@@ -516,8 +506,6 @@ function renderChecklist(){
   });
 }
 
-/* ====== Interactions ====== */
-
 function highlightTrace(chartId, datasetId){
   const idxMap = traceIndex[chartId];
   if (!idxMap) return;
@@ -562,14 +550,16 @@ function addUploadTrace(chartId, groupKey, subfolder, name, x, y){
     name,
     x,
     y,
+    customdata: x.map(() => name),
     type: "scatter",
-    mode: "lines",
+    mode: "lines+markers",
     hovertemplate:
-      `<b>%{fullData.name}</b><br>` +
+      `<b>%{customdata}</b><br>` +
       `λ = %{x:.2e} m<br>` +
       `limit ≤ %{y:.2e}<extra></extra>`,
     visible: true,
     line: { width: HILIGHT_LINE.width },
+    marker: { size: 5, opacity: 0 },
     opacity: HILIGHT_LINE.opacity
   };
 
@@ -609,8 +599,6 @@ function addUploadTrace(chartId, groupKey, subfolder, name, x, y){
   });
 }
 
-/* ====== Event Listeners ====== */
-
 document.getElementById("filter").addEventListener("input", renderChecklist);
 document.getElementById("showAll").addEventListener("click", () => setAllVisible(true));
 document.getElementById("hideAll").addEventListener("click", () => setAllVisible(false));
@@ -646,8 +634,6 @@ document.querySelectorAll(".btn").forEach(btn => {
     }
   });
 });
-
-/* ====== Bootstrap ====== */
 
 (async function main(){
   try{
