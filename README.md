@@ -156,6 +156,7 @@ Then commit and push the updated datasets_multi.json file.
 - 29.03 to 01.04, 2026 [Parity Violation in Molecules](https://www.we-heraeus-stiftung.de/veranstaltungen/parity-violation-in-molecules/), Bad Honnef, Germany
 - 18.05 to 22.05, 2026 [International Conference on Precision Physics of Simple Atomic Systems (PSAS 2026)](https://indico.global/event/15739/)
 - 02.08.2026 to 07.08.2026 [Dark Intersections](https://www.dpg-physik.de/veranstaltungen/2026/dark_intersections), Bad Honnef, Germany
+- Summer 2027 [Proposed workshop “Spin-dependent exotic interactions and precision tests of fundamental symmetries''], European Centre for Theoretical Studies in Nuclear Physics and Related Areas, Trento, Italy
 
 ---
 
