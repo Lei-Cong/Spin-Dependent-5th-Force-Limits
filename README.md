@@ -28,6 +28,13 @@ Spin-dependent exotic interactions (SDFFs), also referred to as spin-dependent f
 
 Unlike conventional spin-independent interactions, SDFFs depend explicitly on the spin degrees of freedom of the involved particles, analogous in some aspects to magnetic interactions.
 
+<figure style="text-align:center;">
+  <img src="./Cover.png" alt="SDFF illustration" width="400">
+  <figcaption>
+    <b>Figure 1:</b> Illustration of an exotic boson mediating a spin-dependent fifth force between fermions.
+  </figcaption>
+</figure>
+
 ### What this platform provides
 
 This repository provides a standardized and continuously updated research software platform for collecting, analyzing, and visualizing experimental constraints on spin-dependent exotic interactions.
@@ -51,6 +58,7 @@ For notation conventions and operator definitions, see the RMP review:
 Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14572652.svg)](https://doi.org/10.5281/zenodo.14572652). One can copy the BibTeX file from here: [**BibTeX Format**](./Citation.bib).
 
 For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
+
 ---
 
 ##   🌐 Interactive Plot Viewer 👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
@@ -102,12 +110,6 @@ We categorize SDFFs into the following interaction types:
    - pseudotensor/tensor
    - pseudotensor/pseudotensor
 
-<figure style="text-align:center;">
-  <img src="./Cover.png" alt="SDFF illustration" width="400">
-  <figcaption>
-    <b>Figure 1:</b> Illustration of an exotic boson mediating a spin-dependent fifth force between fermions.
-  </figcaption>
-</figure>
 
 
 ### Fermion Pairs
