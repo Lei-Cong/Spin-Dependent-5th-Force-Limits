@@ -100,8 +100,7 @@ Then commit and push the updated datasets_multi.json file.
 ### Interaction Categories
 
 <details>
-
-<summary><b>Click to expand interaction categories</b></summary>
+<summary><span style="font-size:14px;"><b>Click to expand interaction categories</b></span></summary>
 
 <br>
 
