@@ -172,7 +172,7 @@ We categorize SDFFs into the following interaction types:
 📦 [Browse Full Dataset Documentation](Datasets.md)
 
 ## 7. Resources for the Community
-📦 [Browse Full Dataset Documentation](Resources for the Community.md)
+📦 [Browse Full Resources Documentation](Resources.md)
 
 
 ---
