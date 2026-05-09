@@ -86,6 +86,12 @@ Then commit and push the updated datasets_multi.json file.
 -->
 
 
+<figure style="text-align:center;">
+  <img src="./Interactive Limits Viewer screenshot.png" alt="SDFF illustration" width="400">
+  <figcaption>
+    <b>Figure 2:</b> Interactive Limits Viewer screenshot.
+  </figcaption>
+</figure>
 ---
 
 
@@ -136,7 +142,6 @@ We categorize SDFFs into the following interaction types:
 
 ## Datasets
 
----
 * Download the complete normalized dataset and example plotting code:  
 [📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
 * For additional explanations of the constraints, see the [Author Notes](notes.md) page.
@@ -198,8 +203,6 @@ We categorize SDFFs into the following interaction types:
 ---
 
 ## Community Resources
-
-### Courses
 
 ### Course
  - [TASI Lectures](https://www.colorado.edu/physics/events/summer-intensive-programs/theoretical-advanced-study-institute-elementary-particle-physics#TASI-2023)
