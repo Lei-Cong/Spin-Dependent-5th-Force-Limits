@@ -10,7 +10,7 @@ A community platform for:
 - theory conventions
 - future projections
 
-## 1. Quick Access
+## Quick Access
 
 - 🚀 [Interactive Plot Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)
 - 📦 [Download Normalized Dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
@@ -20,11 +20,11 @@ A community platform for:
 - 📬 [Subscribe for Updates](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true)
 
 
-## 2. Overview
+## 1. Overview
 
 ### What is SDFF?
 
-Spin-dependent exotic interactions (SDFFs), also referred to as spin-dependent fifth forces, may arise from the exchange of a hypothetical boson of mass $begin:math:text$M$end:math:text$ between fermions $begin:math:text$X$end:math:text$ and $begin:math:text$Y$end:math:text$, representing a possible extension beyond the [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html).
+Spin-dependent exotic interactions (SDFFs), also referred to as spin-dependent fifth forces, may arise from the exchange of a hypothetical boson of mass $M$ between fermions $begin:math:text$X$end:math:text$ and $begin:math:text$Y$end:math:text$, representing a possible extension beyond the [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html).
 
 Unlike conventional spin-independent interactions, SDFFs depend explicitly on the spin degrees of freedom of the involved particles, analogous in some aspects to magnetic interactions.
 
@@ -61,7 +61,7 @@ For contributions or to include your new results, please feel free to contact Dr
 
 ---
 
-##  3. 🌐 Interactive Plot Viewer 👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
+##  2. 🌐 Interactive Plot Viewer 👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
 
   - The viewer allows users to:
   a. Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.);
@@ -95,7 +95,7 @@ Then commit and push the updated datasets_multi.json file.
 ---
 
 
-## 4. Research Landscape 
+## 3. Research Landscape 
 
 ### Interaction Categories
 
@@ -165,19 +165,19 @@ We categorize SDFFs into the following interaction types:
 
 ---
 
-## 5.  Latest References
+## 4.  Latest References
 
 
-## 6. Datasets
+## 5. Datasets
 📦 [Browse Full Dataset Documentation](Datasets.md)
 
-## 7. Resources for the Community
+## 6. Resources for the Community
 📦 [Browse Full Resources Documentation](Resources.md)
 
 
 ---
 
-## 8. Subscription
+## 7. Subscription
 
 [Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan:
 
