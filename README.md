@@ -170,18 +170,14 @@ We categorize SDFFs into the following interaction types:
 ## 4.  Latest References
 
 
-## 5. Datasets
-📦 [Browse Full Dataset Documentation](Datasets.md)
+## 5. Datasets (📦 [Browse Full Documentation](Datasets.md))
 
-## 6. Resources for the Community
-📦 [Browse Full Resources Documentation](Resources.md)
+## 6. Resources for the Community (📦 [Browse Full Documentation](Resources.md))
 
 
 ---
 
-## 7. Subscription
-
-[Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan:
+## 7. Subscription ([Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan:)
 
 <figure style="text-align:center;">
   <img src="./QR-QODE2.png" alt="My Figure" width="200">
