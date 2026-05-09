@@ -24,62 +24,33 @@ A community platform for:
 
 ### What is SDFF?
 
-The SDFF arises from the exchange of a hypothetical boson of mass M between fermions X and Y, representing a possible extension beyond the [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html). Unlike conventional forces, SDFF depends explicitly on the spin degrees of freedom, analogous in some aspects to magnetic interactions.
+Spin-dependent exotic interactions (SDFFs), also referred to as spin-dependent fifth forces, may arise from the exchange of a hypothetical boson of mass $begin:math:text$M$end:math:text$ between fermions $begin:math:text$X$end:math:text$ and $begin:math:text$Y$end:math:text$, representing a possible extension beyond the [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html).
+
+Unlike conventional spin-independent interactions, SDFFs depend explicitly on the spin degrees of freedom of the involved particles, analogous in some aspects to magnetic interactions.
 
 ### What this platform provides
 
-This repository provides a standardized, continuously updated research software platform for collecting, analyzing, and visualizing experimental constraints on spin-dependent exotic interactions.
+This repository provides a standardized and continuously updated research software platform for collecting, analyzing, and visualizing experimental constraints on spin-dependent exotic interactions.
 
-The platform integrates a curated dataset of experimental limits with an interactive visualization and comparison tool, enabling researchers to:
+The platform integrates curated datasets with interactive visualization and comparison tools, enabling researchers to:
 
 - Access and compare constraints across different experiments and interaction types;
-
-- Generate exclusion plots in a unified and consistent framework;
-
+- Generate exclusion plots within a unified and consistent framework;
 - Benchmark new theoretical models or experimental results against existing bounds;
+- Contribute and update datasets as part of a growing community resource.
 
-- Contribute and update data as part of a growing community resource.
+### Community Role
 
-### Community role
+This project is designed as a **community-driven scientific software platform**, rather than a static dataset repository. It serves as a reference infrastructure for the field, accompanying recent review work and supporting ongoing theoretical and experimental studies.
 
-This project is designed as a **community-driven scientific software platform**, rather than a static dataset. It serves as a reference infrastructure for the field, accompanying recent review work and supporting ongoing theoretical and experimental studies.
+For notation conventions and operator definitions, see the RMP review:
+[Spin-Dependent Exotic Interactions](https://link.aps.org/doi/10.1103/RevModPhys.97.025005).
 
-
-
-
-
-
-
-The SDFF arises from the exchange of a hypothetical boson of mass M between fermions X and Y, representing a possible extension beyond the  [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html)￼. Unlike conventional forces, SDFF depends explicitly on the spin degrees of freedom, analogous in some aspects to magnetic interactions.
-
-<!--This repository contains datasets of constraints on spin-dependent exotic interactions—also referred to as the spin-dependent fifth force (SDFF)—mediated by the exchange of a single boson of mass M between fermions X and Y. The fifth force refers to a new force beyond the existing  [four fundamental forces](https://www2.lbl.gov/abc/wallchart/chapters/04/0.html). An SDFF is a force that depends on the spins of the involved fermions, similar to the magnetic force.-->
-
-<figure style="text-align:center;">
-  <img src="./Cover.png" alt="My Figure" width="400">
-  <figcaption><b>Figure 1:</b> An exotic boson carrying a fifth force that depends on the spins of the involved fermions.</figcaption>
-</figure>
-
-We categorize interactions into the following types:
-
-1. Axial-vector/vector, axial-vector/axial-vector, vector/vector.
-2. Pseudoscalar/scalar, pseudoscalar/pseudoscalar, scalar/scalar.
-3. Tensor/tensor, pseudotensor/tensor, and pseudotensor/pseudotensor.
-
-For notation and operator definitions, see the RMP review: [Spin-Dependent Exotic Interactions](https://link.aps.org/doi/10.1103/RevModPhys.97.025005).
-
-### Role as a Community Research Tool
-
-This project is designed as a **community-driven scientific software platform**, rather than a static dataset. It serves as a reference infrastructure for the field, accompanying recent review work and supporting ongoing theoretical and experimental studies.
-
-The software is actively used within our collaboration and is intended for broader adoption by the community.
-
-<!--The repository serves as a **live** webpage designed to present the latest experimental results. -->
-For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
-
-### Citation
+### Citation and Contribution
 
 Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14572652.svg)](https://doi.org/10.5281/zenodo.14572652). One can copy the BibTeX file from here: [**BibTeX Format**](./Citation.bib).
 
+For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
 ---
 
 ##   🌐 Interactive Plot Viewer 👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
@@ -112,6 +83,33 @@ Then commit and push the updated datasets_multi.json file.
 
 ## Research Landscape 
 
+### Interaction Categories
+
+We categorize SDFFs into the following interaction types:
+
+1. **Axial-vector and vector interactions**
+   - axial-vector/vector
+   - axial-vector/axial-vector
+   - vector/vector
+
+2. **Scalar and pseudoscalar interactions**
+   - pseudoscalar/scalar
+   - pseudoscalar/pseudoscalar
+   - scalar/scalar
+
+3. **Tensor and pseudotensor interactions**
+   - tensor/tensor
+   - pseudotensor/tensor
+   - pseudotensor/pseudotensor
+
+<figure style="text-align:center;">
+  <img src="./Cover.png" alt="SDFF illustration" width="400">
+  <figcaption>
+    <b>Figure 1:</b> Illustration of an exotic boson mediating a spin-dependent fifth force between fermions.
+  </figcaption>
+</figure>
+
+
 ### Fermion Pairs
 
 <figure style="text-align:center;">
@@ -137,33 +135,35 @@ Then commit and push the updated datasets_multi.json file.
 ## Datasets
 
 ---
-* For additional explanations of the constraints, see the [Author Notes](notes.md) page.
 * Download the complete normalized dataset and example plotting code:  
 [📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
-
+* For additional explanations of the constraints, see the [Author Notes](notes.md) page.
 
 ---
 
-### 1. g<sub>A</sub>g<sub>A</sub>
+### Axial-vector and vector interactions
+
+#### 1. g<sub>A</sub>g<sub>A</sub>
 
 - **Description**: Constraints for axial-vector/axial-vector couplings ($g_Ag_A$) are presented across different interaction categories, including lepton-lepton, lepton-nucleon, and nucleon-nucleon interactions.
 - **Data**: The data are available in the folder [**gAgA**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gAgA).
 
 ---
-
-### 2. g<sub>A</sub>g<sub>V</sub>
+#### 2. g<sub>A</sub>g<sub>V</sub>
 - **Description**: Constraints for vector/vector couplings ($g_Ag_V$).
 - **Data**: The data are available in the folder [**gAgV**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gAgV).
 
 ---
 
-### 3. g<sub>V</sub>g<sub>V</sub>
+#### 3. g<sub>V</sub>g<sub>V</sub>
 - **Description**: Constraints for vector/vector couplings ($g_Vg_V$).
 - **Data**: The data are available in the folder [**gVgV**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gVgV).
 
 ---
 
-### 4. g<sub>p</sub>g<sub>s</sub>
+### Scalar and pseudoscalar interactions
+
+#### 4. g<sub>p</sub>g<sub>s</sub>
 - **Description**: Constraints for pseudoscalar/scalar couplings ($g_pg_s$).
 - **Data**: The data are available in the folder [**gpgs**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gpgs).
 
@@ -171,13 +171,13 @@ Then commit and push the updated datasets_multi.json file.
 
 ---
 
-### 5. g<sub>p</sub>g<sub>p</sub>
+#### 5. g<sub>p</sub>g<sub>p</sub>
 - **Description**: Constraints for pseudoscalar/pseudoscalar couplings ($g_pg_p$).
 - **Data**: The data are available in the folder [**gpgp**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gpgp).
 
 ---
 
-### 6. g<sub>s</sub>g<sub>s</sub>
+#### 6. g<sub>s</sub>g<sub>s</sub>
 - **Description**: Constraints for scalar/scalar couplings ($g_sg_s$).
 - **Data**: The data are available in the folder [**gsgs**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gsgs).
 
@@ -194,7 +194,12 @@ Then commit and push the updated datasets_multi.json file.
 - **Data**: The data are available in the folder [**V1**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/V1).
  
 ---
-## Course
+
+## Community Resources
+
+### Courses
+
+### Course
  - [TASI Lectures](https://www.colorado.edu/physics/events/summer-intensive-programs/theoretical-advanced-study-institute-elementary-particle-physics#TASI-2023)
  - ETH, [Quantum Technologies for Searches of New Physics](https://www.lehrbetrieb.ethz.ch/Vorlesungsverzeichnis/dozent.view?dozide=10032887&ansicht=2&semkez=2024W&lang=en)
 - [University of Bologna](https://www.unibo.it/en/study/phd-professional-masters-specialisation-schools-and-other-programmes/course-unit-catalogue/course-unit/2024/492255)
@@ -205,7 +210,7 @@ Then commit and push the updated datasets_multi.json file.
 ---
 
 
-## Conference Information
+### Conference Information
 - 2020 [Seminar on Precision Physics and Fundamental Symmetries](https://indico.cern.ch/category/12183/?utm_source=chatgpt.com)
 - 17.01 to 20.01, 2025, [International Symposium on New Physics Beyond the Standard Model](https://isnp2025.casconf.cn/page/1830408968258850816), Sanya, China
 - 17.02 to 21.02, 2025 [CAU BSM Workshop](https://indico.cern.ch/event/1492675/), Seoul, Korea
@@ -225,8 +230,8 @@ Then commit and push the updated datasets_multi.json file.
 ---
 
 
-## Job Information
-### Fellowships:
+### Job Information
+#### Fellowships:
 - [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship)
 - [Marie Skłodowska-Curie Actions - Postdoctoral Fellowships](https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships); [More Information](https://mp.weixin.qq.com/s/Gx92VvQ4Hl2UAyHi9A3gFA)
 - [Helmholtz-OCPC Postdoctoral Program](https://www.helmholtz.de/assets/helmholtz_gemeinschaft/user_upload/Ausschreibungen/2023/Call_Helmholtz-OCPC-Postdocprogram_2023.pdf); [OCPC Announcement](https://www.chinapostdoctor.org.cn/article?inid=cbcb0e46-8ed6-44ef-94c5-f2d78b8055c5&catname=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A&catid=8c892b1c-4ade-4a5f-9a87-5e736cb5e9f9)
@@ -235,7 +240,7 @@ Then commit and push the updated datasets_multi.json file.
 - [Enrico Fermi Fellowships](https://www.eff.cstq.org/)
 - [Postdoc-theory](https://academicjobsonline.org/ajo/jobs/30778)
 
-### New Research Groups:
+#### New Research Groups:
 [Open Positions in Emerging Research Groups](open-positions.md) 
 
 ---
