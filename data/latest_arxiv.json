@@ -1,0 +1,105 @@
+[
+  {
+    "title": "Dzyaloshinskii-Moriya interaction as a coherence diagnostic for chirality-induced spin selectivity",
+    "authors": "Vishvendra S. Poonia",
+    "published": "2026-05-07",
+    "summary": "Whether chirality-induced spin selectivity (CISS) reflects coherent SU(2) spin rotation or incoherent spin-dependent filtering is a central unresolved question in molecular spintronics, with implications ranging from asymmetric chemistry to quantum information. We show that these two scenarios are distinguishable by a sharp symmetry criterion on the superexchange interaction mediated by a chiral molecular bridge. Coherent CISS, implemented as a unitary spin rotation of the tunneling electron, generates a giant Dzyaloshinskii-Moriya (DM) interaction with ratio |D|/JH up to 3, which is two orders of magnitude beyond intrinsic Rashba spin-orbit coupling in Si/SiGe. Incoherent CISS, represented ...",
+    "link": "https://arxiv.org/abs/2605.06008v1",
+    "tags": [
+      "spin-dependent",
+      "spectroscopy"
+    ]
+  },
+  {
+    "title": "Light-Induced Even-Wave Spin Splittings in Nonmagnetic Centrosymmetric Systems with Spin-Orbit Coupling",
+    "authors": "Xiao-Jiao Wang, Dongling Liu, Di Zhu, Zheng-Yang Zhuang, Zhongbo Yan",
+    "published": "2026-05-06",
+    "summary": "Spin splitting underpins a vast range of spin-dependent phenomena. Traditionally, two primary mechanisms generate such splitting: relativistic spin-orbit coupling (SOC) and nonrelativistic magnetic exchange coupling (MEC). Governed by distinct symmetry constraints, they produce splittings of opposite parity -- odd for SOC and even for MEC -- a dichotomy that underpins the distinct spin physics of nonmagnetic and magnetic systems. In this work, we break this dichotomy by demonstrating the dynamic generation of even-parity spin splitting in centrosymmetric, nonmagnetic systems driven by circularly polarized light. We show that the symmetry of the induced splitting is controlled by the angular ...",
+    "link": "https://arxiv.org/abs/2605.05316v1",
+    "tags": [
+      "spin-dependent"
+    ]
+  },
+  {
+    "title": "The one and the only: the pulsar - white dwarf system in NGC 6749",
+    "authors": "Paulo C. C. Freire, Yinfeng Dai, Mario Cadelano, Cristina Pallanca, Zurong Zhou, Zhichen Pan, Luca Rosignoli, Davide Massari, Mattia Libralato and, Craig Heinke",
+    "published": "2026-05-06",
+    "summary": "PSR J1905+0154A is a binary millisecond pulsar located in the globular cluster (GC) NGC 6749. It was discovered in 2004 in a search for pulsars in GCs carried out with the Arecibo 305-m radio telescope. The pulsar has a spin period of 3.2 ms, an orbital period of 0.81 days, and is in a low-eccentricity orbit with a low-mass WD companion. Combining early Arecibo and latter Five Hundred meter Aperture Spherical Telescope (FAST) data, we were able to derive a phase-coherent timing solution for this pulsar, which now spans 20 years. This includes a precise measurement of the astrometric, spin and orbital parameters of the system. The small range of predicted accelerations expected from the gravi...",
+    "link": "https://arxiv.org/abs/2605.04988v1",
+    "tags": [
+      "related"
+    ]
+  },
+  {
+    "title": "Charged current neutrino processes in hot nuclear matter with a recent Skyrme parametrization constrained by microscopic calculations",
+    "authors": "Mingya Duan, Michael Urban",
+    "published": "2026-05-06",
+    "summary": "Neutrino processes are important in the modeling of supernova explosions, proto-neutron star evolution, and binary neutron star mergers. We study neutrino production and absorption in proto-neutron star and supernova matter and direct Urca neutrino emission of neutron star matter in the framework of the random phase approximation (RPA). As interactions, we employ the recent extended Skyrme parametrization Sky3s whose effective masses and spin-dependent terms were adjusted to microscopic calculations, and the SLy4 parametrization that was used in previous calculations of neutrino rates. The rates obtained for Sky3s differ from those for SLy4 by up to one order of magnitude for some processes ...",
+    "link": "https://arxiv.org/abs/2605.04814v1",
+    "tags": [
+      "spin-dependent"
+    ]
+  },
+  {
+    "title": "Differential measurements of $γγ\\toττ$ and constraints on $τ$-lepton electromagnetic moments in Pb+Pb collisions at $\\sqrt{s_{_\\text{NN}}} = 5.02$ TeV with ATLAS",
+    "authors": "The ATLAS Collaboration",
+    "published": "2026-05-06",
+    "summary": "This paper presents the first differential fiducial measurements of $γγ\\toττ$ using 1.93 nb$^{-1}$ of Pb+Pb data at $\\sqrt{s_{_\\text{NN}}} = 5.02$ TeV recorded by the ATLAS detector. Events in which one of the $τ$-leptons decays into a muon and two neutrinos $τ\\toν_τ\\barν_μμ$ are selected and are categorized into three regions by the presence of an electron or either one or three charged-particle track(s) from the second $τ$-lepton decay. The measurement is performed in events where both Pb ions remain intact and no neutrons are emitted. Differential cross-sections are measured for seven variables in three fiducial regions at particle level. The measurements are compared to theory prediction...",
+    "link": "https://arxiv.org/abs/2605.04584v1",
+    "tags": [
+      "EDM"
+    ]
+  },
+  {
+    "title": "Stability and dynamics of dark-bright solitons in spin-orbit- and Rabi-coupled binary Bose-Einstein condensates",
+    "authors": "K. Rajaswathi, R. Ravisankar, R. Radha, P. K. Mishra, P. Muruganandam",
+    "published": "2026-05-06",
+    "summary": "We investigate the stability and nonlinear dynamics of dark-bright solitons in a one-dimensional binary Bose-Einstein condensate subjected to synthetic spin-orbit and Rabi couplings. In the absence of spin-orbit coupling, we map the coupled Gross-Pitaevskii equations onto the integrable Manakov model and obtain exact dark-bright soliton solutions, providing a rigorous theoretical benchmark. We demonstrate that finite spin-orbit coupling breaks integrability by inducing spin-dependent phase gradients, which result in spatial separation of the spin components and the emergence of intrinsic density oscillations. By contrast, Rabi coupling enforces phase locking between components and supports r...",
+    "link": "https://arxiv.org/abs/2605.04441v1",
+    "tags": [
+      "spin-dependent"
+    ]
+  },
+  {
+    "title": "Landscape of Spontaneous CP Violation",
+    "authors": "Yuichiro Nakai",
+    "published": "2026-05-06",
+    "summary": "Spontaneous CP violation (SCPV) provides a promising solution to the strong CP problem, explaining the smallness of the QCD $θ$-angle while generating the Cabibbo-Kobayashi-Maskawa (CKM) phase. In the present work, we review and discuss the realization of SCPV in the supersymmetric framework, which addresses critical issues such as the naturalness of the scale of SCPV and the presence of problematic higher dimensional operators and radiative corrections spoiling the mechanism. It is explicitly shown that SCPV is realized along flat directions and stabilized through supersymmetry-breaking effects and a non-perturbative dynamics, predicting light SCPV sector particles feebly coupled to the Sta...",
+    "link": "https://arxiv.org/abs/2605.04387v1",
+    "tags": [
+      "dark matter",
+      "EDM"
+    ]
+  },
+  {
+    "title": "On the spin dependence of the emergent gravity phenomena as observed in axially symmetric black hole accretion with spatially varying adiabatic index",
+    "authors": "Kalyanbrata Pal, Souvik Ghose, Ripon Sk, Arpan Krishna Mitra, Tapas K. Das",
+    "published": "2026-05-05",
+    "summary": "The present work addresses an axisymmetrically accreting black hole system from three perspectives: the astrophysical, the dynamical systems, and the emergent gravity standpoint. Steady-state equations governing low angular momentum axially symmetric accretion under a pseudo-Kerr potential are formulated for a multi-species flow with a spatially varying adiabatic index. The resulting transonic solutions are shown to be multi-transonic and may accommodate a stationary shock. Critical points are classified via perturbative dynamical systems methods, and linear stability analysis confirms that the stationary solutions remain stable under radial perturbation. The ensuing acoustic geometry harbou...",
+    "link": "https://arxiv.org/abs/2605.04156v1",
+    "tags": [
+      "related"
+    ]
+  },
+  {
+    "title": "Precision hyperfine spectroscopy of an individual nuclear-spin-9/2",
+    "authors": "J. Travesedo, Z. W. Huang, L. Mykolyshyn, N. Thill, L. Pallegoix, P. Goldner, T. Chaneliere, S. Bertaina, T. Charpentier, D. Esteve, P. Abgrall, D. Vion, J. OSullivan, E. Flurin, P. Bertet",
+    "published": "2026-05-04",
+    "summary": "Single-spin magnetic resonance spectroscopy promises to yield structural and chemical information at the level of individual atoms or molecules, in a non-invasive way. Here, we use an Er3+ paramagnetic center in a CaWO4 crystal, detected by microwave photon counting at 10 mK, as a nanoscale magnetic sensor to measure the NMR spectrum of a proximal individual nuclear-spin-9/2 93Nb impurity with Hertz spectral resolution. From these measurements, we determine the 93Nb insertion site, its position relative to the Er3+ , and its complete quadrupolar tensor. We moreover harness the high spectral resolution of our measurements to establish the presence of two previously unobserved terms in the spi...",
+    "link": "https://arxiv.org/abs/2605.02857v1",
+    "tags": [
+      "spin-dependent",
+      "spectroscopy"
+    ]
+  },
+  {
+    "title": "Axion-mediated electron-electron interaction in RaOCH_3 molecule",
+    "authors": "Anna Zakharova, Mikhail Reiter",
+    "published": "2026-05-04",
+    "summary": "We study the parity-violating electron-electron interaction mediated by the axion-like in the hexatomic molecule of a symmetric top type. The rich rovibrational behavior require electronic computations for multiple molecular configurations which can be reduced using Generalized Relativistic Effective Core Potential. To restore the correct behavior in the core region we use a one-center restoration technique generalized by us earlier to the two-electron properties. The property is averaged on the lowest-lying rovibrational states....",
+    "link": "https://arxiv.org/abs/2605.02833v1",
+    "tags": [
+      "axion"
+    ]
+  }
+]
