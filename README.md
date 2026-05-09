@@ -106,15 +106,6 @@ Then commit and push the updated datasets_multi.json file.
 
 ### [Explore Experimental System](Experiments.md)
 
-* comagnetometer
-* NV centers
-* spectroscopy
-* torsion balance
-* APV
-* EDM
-* trapped ions
-
-
 ---
 
 ## 4.  Latest References
