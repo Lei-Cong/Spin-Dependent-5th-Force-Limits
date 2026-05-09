@@ -100,63 +100,11 @@ Then commit and push the updated datasets_multi.json file.
 
 ## 3. Research Landscape 
 
-### Interaction Categories
+### [Interaction Categories](Interaction-Categories.md)
 
-<details>
-<summary><span style="font-size:8px;"><b>Click to expand</b></span></summary>
+### [Fermion Pairs](Fermion-Pairs.md)
 
-<br>
-
-We categorize SDFFs into the following interaction types:
-
-1. **Axial-vector and vector interactions**
-
-   - axial-vector/vector
-
-   - axial-vector/axial-vector
-
-   - vector/vector
-
-2. **Scalar and pseudoscalar interactions**
-
-   - pseudoscalar/scalar
-
-   - pseudoscalar/pseudoscalar
-
-   - scalar/scalar
-
-3. **Tensor and pseudotensor interactions**
-
-   - tensor/tensor
-
-   - pseudotensor/tensor
-
-   - pseudotensor/pseudotensor
-
-</details>
-
-
-
-### Fermion Pairs
-
-<details>
-<summary><span style="font-size:8px;"><b>Click to expand</b></span></summary>
-
-<br>
-
-<figure style="text-align:center;">
-  <img src="./FermionPairs.png" alt="My Figure" width="400">
-  <figcaption>
-  <b>Figure 3:</b> Studied and unexplored fermion pairs.</figcaption>
-</figure>
-
-</details>
-
-### Explore Experimental System
-<details>
-<summary><span style="font-size:8px;"><b>Click to expand</b></span></summary>
-
-<br>
+### [Explore Experimental System](Experiments.md)
 
 * comagnetometer
 * NV centers
@@ -165,7 +113,7 @@ We categorize SDFFs into the following interaction types:
 * APV
 * EDM
 * trapped ions
-</details>
+
 
 ---
 
