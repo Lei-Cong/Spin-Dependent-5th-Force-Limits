@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latest arXiv Papers | Spin-Dependent Fifth-Force Limits</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #333;
+    }
+    .paper {
+      border-bottom: 1px solid #ddd;
+      padding: 18px 0;
+    }
+    .paper-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .paper-meta {
+      color: #666;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .paper-summary {
+      margin-top: 8px;
+    }
+    .tag {
+      display: inline-block;
+      background: #f1f1f1;
+      padding: 2px 8px;
+      margin-right: 5px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    button {
+      padding: 10px 16px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Latest arXiv Papers</h1>
+
+  <p>
+    This page lists recent arXiv papers potentially related to spin-dependent fifth-force searches,
+    exotic interactions, precision measurements, axions, dark matter, and related topics.
+  </p>
+
+  <button onclick="loadPapers()">Show latest 10 papers</button>
+
+  <div id="paper-list"></div>
+
+  <script>
+    async function loadPapers() {
+      const container = document.getElementById("paper-list");
+      container.innerHTML = "Loading...";
+
+      try {
+        const response = await fetch("./data/latest_arxiv.json");
+        const papers = await response.json();
+
+        if (!papers.length) {
+          container.innerHTML = "<p>No papers found.</p>";
+          return;
+        }
+
+        container.innerHTML = papers.map(paper => `
+          <div class="paper">
+            <div class="paper-title">
+              <a href="${paper.link}" target="_blank">${paper.title}</a>
+            </div>
+            <div class="paper-meta">
+              ${paper.published} | ${paper.authors}
+            </div>
+            <div>
+              ${paper.tags.map(tag => `<span class="tag">${tag}</span>`).join(" ")}
+            </div>
+            <div class="paper-summary">
+              ${paper.summary}
+            </div>
+          </div>
+        `).join("");
+
+      } catch (error) {
+        container.innerHTML = "<p>Could not load arXiv papers.</p>";
+        console.error(error);
+      }
+    }
+  </script>
+</body>
+</html>
