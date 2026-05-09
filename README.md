@@ -43,19 +43,8 @@ Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.
 
 ---
 
-## Datasets
+##   🌐 Interactive Plot Viewer 👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
 
-<figure style="text-align:center;">
-  <img src="./FermionPairs.png" alt="My Figure" width="400">
-  <figcaption><b>Figure 2:</b> Studied and unexplored fermion pairs.</figcaption>
-</figure>
-
----
-* For additional explanations of the constraints, see the [Author Notes](notes.md) page.
-* Download the complete normalized dataset and example plotting code:  
-[📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
-
-*  🌐 Interactive Plot Viewer 👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
   - The viewer allows users to:
   a. Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.);
   b. Display or hide datasets;
@@ -77,6 +66,42 @@ After adding, deleting, renaming, or moving dataset files, regenerate the manife
 
 Then commit and push the updated datasets_multi.json file.
 -->
+
+
+---
+
+
+## Research Landscape 
+
+### Fermion Pairs
+
+<figure style="text-align:center;">
+  <img src="./FermionPairs.png" alt="My Figure" width="400">
+  <figcaption><b>Figure 2:</b> Studied and unexplored fermion pairs.</figcaption>
+</figure>
+
+### Explore Experimental System
+
+* comagnetometer
+* NV centers
+* spectroscopy
+* torsion balance
+* APV
+* EDM
+* trapped ions
+
+---
+
+## Latest References
+
+
+## Datasets
+
+---
+* For additional explanations of the constraints, see the [Author Notes](notes.md) page.
+* Download the complete normalized dataset and example plotting code:  
+[📦 Download SDFF normalized dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
+
 
 ---
 
