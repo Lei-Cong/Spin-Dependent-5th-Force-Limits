@@ -61,7 +61,8 @@ For contributions or to include your new results, please feel free to contact Dr
 
 ---
 
-##  2. 🌐 Interactive Plot Viewer 👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
+##  2. 🌐 Interactive Plot Viewer 
+👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
 
   - The viewer allows users to:
   a. Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.);
@@ -93,7 +94,7 @@ Then commit and push the updated datasets_multi.json file.
 
 
 <figure style="text-align:center;">
-  <img src="./Interactive Limits Viewer screenshot.png" alt="SDFF illustration" width="400">
+  <img src="./Interactive Limits Viewer screenshot.png" alt="SDFF illustration" width="500">
   <figcaption>
     <b>Figure 2:</b> Interactive Limits Viewer screenshot.
   </figcaption>
