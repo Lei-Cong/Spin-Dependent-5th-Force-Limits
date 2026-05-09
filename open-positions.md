@@ -10,19 +10,165 @@ nav_order: 3
 
 ### Wei Ji [Email: wei.ji@pku.edu.cn]
 
-https://mp.weixin.qq.com/s/0Wf2_3C3IvxGZEoj2_DZdQ
+The research group of Dr. Wei Ji is continuously recruiting motivated students and young researchers, including:
+
+* Master’s students
+* PhD students
+* Postdoctoral researchers
+
+Applicants with backgrounds in:
+
+* Physics
+* Atomic, Molecular and Optical (AMO) Physics
+* Quantum Optics
+* Precision Measurement
+* Nuclear Physics
+* Quantum Information
+* Electronics and Instrumentation
+* Applied Physics
+
+are warmly welcome to apply. Both theoretical and experimental interests are encouraged.
+
+⸻
+
+About Dr. Wei Ji
+
+Dr. Wei Ji is currently working in the field of quantum precision measurement and fundamental physics. He received his PhD from the Department of Physics at Tsinghua University in 2019 and subsequently carried out postdoctoral research at the Helmholtz Institute Mainz in Germany. (physics.bit.edu.cn￼)
+
+His research focuses on:
+
+* Atomic-spin-based quantum precision measurements
+* Comagnetometers and spin-based sensing
+* Searches for exotic spin-dependent interactions
+* Axion and dark-matter searches
+* Precision tests of fundamental symmetries
+
+Dr. Ji has been actively involved in the development of advanced quantum sensing technologies and precision spin experiments, with research interests spanning both fundamental physics and quantum metrology. His work has contributed to improving experimental sensitivity in searches for physics beyond the Standard Model. Recent collaborative work includes precision measurements using ultra-sensitive comagnetometers for axion-mediated spin-dependent interactions. (MIT Technology Review￼)
+
+⸻
+
+Research Environment
+
+The group is supported by Beijing Institute of Technology and maintains active collaborations with leading domestic and international research teams in quantum sensing and precision measurement.
+
+The laboratory provides research platforms and infrastructure including:
+
+* Atomic-spin quantum sensors
+* Precision magnetic-field control systems
+* Laser and optical systems
+* Quantum measurement electronics
+* High-precision timing and data-acquisition systems
+* Precision spectroscopy and spin-manipulation platforms
+
+⸻
+
+Research Directions
+
+Current research topics include:
+
+* Quantum precision measurement
+* Atomic-spin comagnetometers
+* Exotic spin-dependent interactions
+* Axion and ultralight dark matter searches
+* Precision tests of fundamental symmetries
+* Quantum sensing technologies
+
+⸻
+
+Application
+
+Interested applicants are invited to send their CV to:
+
+📧 [wei.ji@pku.edu.cn]
+
+Please use the following email subject format:
+
+“Application for Master/PhD/Postdoctoral Position + Your Name”
+
+
 
 ### Ke Zhang [kezhangvv@bit.edu.cn ]
 
-招生招聘｜北京理工大学前沿交叉科学院张科教授课题组
+School of Integrated Circuits and Electronics / Advanced Interdisciplinary Institute
 
-课题组现招收硕士生、博士生及博士后，欢迎具有物理学、原子分子物理、光学、核物理、核科学、量子信息、精密仪器、电子信息等相关背景的同学和青年学者加入，理论实验都可以。
+Beijing Institute of Technology (BIT)
 
-本人张科，北京理工大学前沿交叉科学院教授。2019年博士毕业于中国工程物理研究院，此后先后在德国亥姆霍兹研究所和德国联邦物理技术研究院（PTB）从事研究工作，曾作为欧盟核光钟项目核心成员开展Th-229核光钟相关研究。
-本人长期从事Th-229核光钟、核量子精密测量与基础物理应用研究，围绕“激光—电子—核”耦合机制取得多项代表性成果，包括：国际上首次实现Th-229低能核跃迁直接激光激发(Nature 629, 514-515 (2024)报道)，建立Th³⁺离子俘获冷却与重元素精密谱学基础，并实现Th-229核异能态寿命主动调控及相关基础物理应用拓展。以第一/通讯作者（含共同）身份发表Phys. Rev. Lett. 3篇，曾获德国亥姆霍兹联合会奖学金。
-课题组依托北京理工大学前沿交叉科学院，具备离子阱与固态双平台研究基础，拥有超稳激光、超高真空、离子状态探测、高精度时序控制以及固态样品制备与表征等实验条件，并与国内外相关团队保持长期合作。
+The research group of Prof. Ke Zhang at the Advanced Interdisciplinary Institute of Beijing Institute of Technology (BIT) is continuously recruiting motivated students and young researchers, including:
 
-研究方向包括：
-Th-229核光钟、离子阱精密谱学、固态核跃迁激发与探测、核态操控、暗物质与新物理搜索。
-有意者请将简历发送至：kezhangvv@bit.edu.cn
-邮件标题：“硕士/博士/博士后申请 + 姓名”
+* Master’s students
+* PhD students
+* Postdoctoral researchers
+
+Applicants with backgrounds in:
+
+* Physics
+* Atomic, Molecular and Optical (AMO) Physics
+* Optics and Photonics
+* Nuclear Physics and Nuclear Science
+* Quantum Information
+* Precision Instrumentation
+* Electronic Information Engineering
+
+are warmly welcome to apply. Both theoretical and experimental interests are encouraged.
+
+⸻
+
+About Prof. Ke Zhang
+
+Prof. Ke Zhang received his PhD in 2019 from the China Academy of Engineering Physics. He subsequently conducted research at the Helmholtz Institute Mainz and the Physikalisch-Technische Bundesanstalt (PTB, Germany). He was also a core member of the European nuclear clock project focusing on the Th-229 nuclear optical clock.
+
+His research has long focused on:
+
+* Th-229 nuclear optical clocks
+* Nuclear quantum precision measurements
+* Fundamental physics applications
+
+with particular emphasis on laser–electron–nucleus coupling mechanisms.
+
+Representative achievements include:
+
+* Participation in the world’s first direct laser excitation of the low-energy nuclear transition in Th-229, reported in Nature 629, 514–515 (2024);
+* Establishment of trapped and laser-cooled Th$^{3+}$ ion platforms for precision spectroscopy of heavy elements;
+* Active control of the Th-229 nuclear isomer lifetime and exploration of related applications in fundamental physics.
+
+Prof. Zhang has published multiple papers as first/corresponding author (including co-authorship) in journals such as Physical Review Letters, and was awarded a fellowship from the Helmholtz Association in Germany.
+
+⸻
+
+Research Environment
+
+The group is supported by the Advanced Interdisciplinary Institute at BIT and has established both ion-trap and solid-state experimental platforms.
+
+Available research infrastructure includes:
+
+* Ultra-stable laser systems
+* Ultra-high vacuum systems
+* Ion-state detection platforms
+* High-precision timing and control electronics
+* Solid-state sample preparation and characterization facilities
+
+The group also maintains long-term collaborations with leading domestic and international research teams.
+
+⸻
+
+Research Directions
+
+Current research topics include:
+
+* Th-229 nuclear optical clocks
+* Precision spectroscopy with trapped ions
+* Solid-state excitation and detection of nuclear transitions
+* Nuclear-state manipulation and control
+* Searches for dark matter and physics beyond the Standard Model
+
+⸻
+
+Application
+
+Interested applicants are invited to send their CV to:
+
+📧 kezhangvv@bit.edu.cn
+
+Please use the following email subject format:
+
+“Application for Master/PhD/Postdoctoral Position + Your Name”
