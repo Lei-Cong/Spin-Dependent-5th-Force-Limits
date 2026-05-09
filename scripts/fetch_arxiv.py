@@ -5,14 +5,14 @@ from urllib.parse import quote
 
 SEARCH_QUERY = (
     '"spin-dependent" OR '
+    '"spin dependent" OR '
     '"fifth force" OR '
     '"exotic interaction" OR '
-    '"axion-mediated" OR '
-    '"new boson" OR '
-    '"precision measurement" OR '
-    '"comagnetometer" OR '
-    '"electric dipole moment" OR '
-    '"atomic parity violation"'
+    '"spin-dependent exotic interaction" OR '
+    '"axion-mediated force" OR '
+    '"monopole-dipole interaction" OR '
+    '"dipole-dipole interaction" OR '
+    '"new spin-dependent force"'
 )
 
 ARXIV_URL = (

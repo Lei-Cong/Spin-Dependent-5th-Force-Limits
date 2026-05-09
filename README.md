@@ -109,7 +109,6 @@ Then commit and push the updated datasets_multi.json file.
 ---
 
 ## 4.  Latest References
-test
 
 [![Latest arXiv Papers](https://img.shields.io/badge/arXiv-Latest%2010%20Papers-b31b1b?logo=arxiv)](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/latest_arxiv.html)
 
