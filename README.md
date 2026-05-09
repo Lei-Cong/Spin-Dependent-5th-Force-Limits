@@ -68,6 +68,12 @@ For contributions or to include your new results, please feel free to contact Dr
   b. Display or hide datasets;
   c. Upload your own data files (λ [m], gg) for direct comparison.
 
+The viewer allows users to:
+
+- Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.);
+- Display or hide datasets;
+- Upload custom data files (λ [m], gg) for direct comparison.
+
 <!--
 Interactive viewer structure:
 
@@ -170,14 +176,17 @@ We categorize SDFFs into the following interaction types:
 ## 4.  Latest References
 
 
-## 5. Datasets (📦 [Browse Full Documentation](Datasets.md))
+## 5. Datasets 
+📦 [Browse Full Documentation](Datasets.md)
 
-## 6. Resources for the Community (📦 [Browse Full Documentation](Resources.md))
+## 6. Resources for the Community 
+📦 [Browse Full Documentation](Resources.md)
 
 
 ---
 
-## 7. Subscription ([Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan:)
+## 7. Subscription 
+[Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan:
 
 <figure style="text-align:center;">
   <img src="./QR-QODE2.png" alt="My Figure" width="200">
