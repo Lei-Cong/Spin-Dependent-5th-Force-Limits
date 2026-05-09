@@ -64,11 +64,6 @@ For contributions or to include your new results, please feel free to contact Dr
 ##  2. 🌐 Interactive Plot Viewer 
 👉 **[Spin-Dependent Fifth-Force Interactive Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)**
 
-  - The viewer allows users to:
-  a. Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.);
-  b. Display or hide datasets;
-  c. Upload your own data files (λ [m], gg) for direct comparison.
-
 The viewer allows users to:
 
 - Select and overlay different coupling types (e.g., g<sub>A</sub>g<sub>A</sub>, g<sub>p</sub>g<sub>p</sub>, etc.);
