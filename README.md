@@ -101,7 +101,7 @@ Then commit and push the updated datasets_multi.json file.
 ### Interaction Categories
 
 <details>
-<summary><span style="font-size:18px;"><b>Click to expand</b></span></summary>
+<summary><span style="font-size:8px;"><b>Click to expand</b></span></summary>
 
 <br>
 
@@ -138,7 +138,7 @@ We categorize SDFFs into the following interaction types:
 ### Fermion Pairs
 
 <details>
-<summary><span style="font-size:18px;"><b>Click to expand</b></span></summary>
+<summary><span style="font-size:8px;"><b>Click to expand</b></span></summary>
 
 <br>
 
@@ -152,7 +152,7 @@ We categorize SDFFs into the following interaction types:
 
 ### Explore Experimental System
 <details>
-<summary><span style="font-size:18px;"><b>Click to expand</b></span></summary>
+<summary><span style="font-size:8px;"><b>Click to expand</b></span></summary>
 
 <br>
 
