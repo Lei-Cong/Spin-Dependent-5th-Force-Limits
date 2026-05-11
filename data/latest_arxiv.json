@@ -1,5 +1,15 @@
 [
   {
+    "title": "Superintegrability in the interaction of two particles with spin: First-order pseudo-scalar integrals of motion",
+    "authors": "Fatih Turkkan, O. Ogulcan Tuncer, I. Yurdusen",
+    "published": "2026-05-08",
+    "summary": "In recent work, we initiated a research program aimed at the systematic investigation of quantum superintegrable systems describing the interaction of two non-relativistic spin-$1/2$ particles in three-dimensional Euclidean space. In that study, we classified all such superintegrable systems admitting additional first-order scalar integrals of motion. In the present paper, we continue this program by focusing on systems that admit additional pseudo-scalar integrals of motion. Starting from the most general rotationally invariant Hamiltonian for two interacting spin-$1/2$ particles, we construct the most general first-order pseudo-scalar operator in the form of a matrix polynomial in the mome...",
+    "link": "https://arxiv.org/abs/2605.07659v1",
+    "tags": [
+      "spin-dependent"
+    ]
+  },
+  {
     "title": "Dzyaloshinskii-Moriya interaction as a coherence diagnostic for chirality-induced spin selectivity",
     "authors": "Vishvendra S. Poonia",
     "published": "2026-05-07",
@@ -85,20 +95,10 @@
     "title": "Spin-polarized Josephson current induced by inhomogeneous altermagnetic interlayers",
     "authors": "Wenjun Zhao, Yuri Fukaya, Pablo Burset, Jorge Cayao, Yukio Tanaka, Bo Lu",
     "published": "2026-05-04",
-    "summary": "The pursuit of dissipationless spin supercurrents is a central theme in superconducting spintronics. We propose a field-free Josephson junction using an inhomogeneous altermagnetic interlayer with in-plane Néel vectors. We show that the current-phase relation and critical Josephson current is highly sensitive to the misorientation angle between the altermagnetic layers' Néel vectors. Specifically, at a $π$ misorientation with equal layer thicknesses the spatial oscillations of the superconducting pair amplitude, governed by the center-of-mass momentum, undergo mutual cancellation. This compensation suppresses individual layer pair-breaking, significantly enhancing the critical current and el...",
-    "link": "https://arxiv.org/abs/2605.02140v1",
+    "summary": "The pursuit of dissipationless spin supercurrents is a central theme in superconducting spintronics. We propose a field-free Josephson junction using an inhomogeneous altermagnetic interlayer with in-plane Néel vectors. We show that the current-phase relation and the critical Josephson current are highly sensitive to the misorientation angle between the altermagnetic layers' Néel vectors. Specifically, at a $π$ misorientation with equal layer thicknesses the spatial oscillations of the superconducting pair amplitude, governed by the center-of-mass momentum, undergo mutual cancellation. This compensation suppresses individual layer pair-breaking, significantly enhancing the critical current a...",
+    "link": "https://arxiv.org/abs/2605.02140v2",
     "tags": [
       "spin-dependent"
-    ]
-  },
-  {
-    "title": "Reservoir computing by thin film embedded with magnetic impurities",
-    "authors": "Shuto Kamakura, Tomi Ohtsuki, Jun-ichiro Ohe",
-    "published": "2026-05-02",
-    "summary": "The reservoir computing based on the thin film embedded with magnetic impurities in the presence of the long-range (the dipole-dipole) interaction is numerically investigated. We simulated the magnetization dynamics by taking into account the dipole-dipole interaction and performed the handwritten-digit recognition task. Although the training data is prepared by taking spatial average in the sample, the high classification accuracy is achieved. Our result demonstrates that the long range interaction effectively encodes the complex spatial input pattern into the time domain, even when only a spatially averaged output is accessible. The proposed system paves the way for easily realizable magne...",
-    "link": "https://arxiv.org/abs/2605.01360v1",
-    "tags": [
-      "related"
     ]
   }
 ]
