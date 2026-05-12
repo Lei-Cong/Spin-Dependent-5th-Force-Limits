@@ -1,104 +1,125 @@
 [
   {
-    "title": "Superintegrability in the interaction of two particles with spin: First-order pseudo-scalar integrals of motion",
-    "authors": "Fatih Turkkan, O. Ogulcan Tuncer, I. Yurdusen",
-    "published": "2026-05-08",
-    "summary": "In recent work, we initiated a research program aimed at the systematic investigation of quantum superintegrable systems describing the interaction of two non-relativistic spin-$1/2$ particles in three-dimensional Euclidean space. In that study, we classified all such superintegrable systems admitting additional first-order scalar integrals of motion. In the present paper, we continue this program by focusing on systems that admit additional pseudo-scalar integrals of motion. Starting from the most general rotationally invariant Hamiltonian for two interacting spin-$1/2$ particles, we construct the most general first-order pseudo-scalar operator in the form of a matrix polynomial in the mome...",
-    "link": "https://arxiv.org/abs/2605.07659v1",
+    "title": "Searching for ultralight bosons with Josephson junction interferometry",
+    "authors": "Djuna Croon, Tanmay Kumar Poddar",
+    "published": "2026-04-26",
+    "summary": "Ultralight bosons sourced by macroscopic objects can generate long-range spin-independent and spin-dependent potentials that are accessible to precision interferometry. Such potentials induce phase shifts in Josephson junctions, detectable through precision current measurements. We propose three experimental scenarios to probe photophilic scalar interactions, Lorentz-violating scalar-mediated interactions, and axion-mediated monopole-dipole interactions, depending on the nature (unpolarized or polarized) of the source. The proposed setups provide sensitivities to novel mixed couplings that are largely unconstrained by existing bounds and enables the exploration of new forces at centimeter to...",
+    "link": "https://arxiv.org/abs/2604.23879v1",
     "tags": [
-      "spin-dependent"
-    ]
+      "fifth force",
+      "spin-dependent",
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 29
   },
   {
-    "title": "Dzyaloshinskii-Moriya interaction as a coherence diagnostic for chirality-induced spin selectivity",
-    "authors": "Vishvendra S. Poonia",
-    "published": "2026-05-07",
-    "summary": "Whether chirality-induced spin selectivity (CISS) reflects coherent SU(2) spin rotation or incoherent spin-dependent filtering is a central unresolved question in molecular spintronics, with implications ranging from asymmetric chemistry to quantum information. We show that these two scenarios are distinguishable by a sharp symmetry criterion on the superexchange interaction mediated by a chiral molecular bridge. Coherent CISS, implemented as a unitary spin rotation of the tunneling electron, generates a giant Dzyaloshinskii-Moriya (DM) interaction with ratio |D|/JH up to 3, which is two orders of magnitude beyond intrinsic Rashba spin-orbit coupling in Si/SiGe. Incoherent CISS, represented ...",
-    "link": "https://arxiv.org/abs/2605.06008v1",
+    "title": "Equivalence Principle tests, Equivalence theorems and New long-range forces",
+    "authors": "Pierre Fayet",
+    "published": "2001-11-22",
+    "summary": "We discuss the possible existence of new long-range forces mediated by spin-1 or spin-0 particles. By adding their effects to those of gravity, they could lead to apparent violations of the Equivalence Principle. While the vector part in the couplings of a new spin-1 U boson involves, in general, a combination of the B and L currents, there may also be, in addition, an axial part as well. If the new force has a finite range λ, its intensity is proportional to 1/(λ^2 F^2), F being the extra U(1) symmetry-breaking scale. Quite surprisingly, particle physics experiments can provide constraints on such a new force, even if it is extremely weak, the corresponding gauge coupling being extremely sm...",
+    "link": "https://arxiv.org/abs/hep-ph/0111282v1",
     "tags": [
+      "fifth force",
+      "spin-dependent",
+      "axion"
+    ],
+    "score": 19
+  },
+  {
+    "title": "Pseudovector and pseudoscalar spin-dependent interactions in atoms",
+    "authors": "Pavel Fadeev, Filip Ficek, Mikhail G. Kozlov, Dmitry Budker, Victor V. Flambaum",
+    "published": "2019-11-13",
+    "summary": "Hitherto unknown elementary particles can be searched for with atomic spectroscopy. We conduct such a search using a potential that results from the longitudinal polarization of a pseudovector particle. We show that such a potential, inversely proportional to the boson's mass squared, $V \\propto 1/M^2$, can stay finite at $M \\to 0$ if the theory is renormalizable. We also look for a pseudoscalar boson, which induces a contact spin-dependent potential that does not contribute to new forces searched for in experiments with macroscopic objects, but may be seen in atomic spectroscopy. We extract limits on the interaction constants of these potentials from the experimental spectra of antiprotonic...",
+    "link": "https://arxiv.org/abs/1911.05816v2",
+    "tags": [
+      "fifth force",
       "spin-dependent",
       "spectroscopy"
-    ]
+    ],
+    "score": 16
   },
   {
-    "title": "Light-Induced Even-Wave Spin Splittings in Nonmagnetic Centrosymmetric Systems with Spin-Orbit Coupling",
-    "authors": "Xiao-Jiao Wang, Dongling Liu, Di Zhu, Zheng-Yang Zhuang, Zhongbo Yan",
-    "published": "2026-05-06",
-    "summary": "Spin splitting underpins a vast range of spin-dependent phenomena. Traditionally, two primary mechanisms generate such splitting: relativistic spin-orbit coupling (SOC) and nonrelativistic magnetic exchange coupling (MEC). Governed by distinct symmetry constraints, they produce splittings of opposite parity -- odd for SOC and even for MEC -- a dichotomy that underpins the distinct spin physics of nonmagnetic and magnetic systems. In this work, we break this dichotomy by demonstrating the dynamic generation of even-parity spin splitting in centrosymmetric, nonmagnetic systems driven by circularly polarized light. We show that the symmetry of the induced splitting is controlled by the angular ...",
-    "link": "https://arxiv.org/abs/2605.05316v1",
+    "title": "Hyperbolic form factors for Yukawa interactions, and applications to the Earth",
+    "authors": "Pierre Fayet",
+    "published": "2026-03-22",
+    "summary": "We define the hyperbolic form factor of a density distribution as its bilateral Laplace transform, related by duality or analytic continuation to its form factor. For a sphere it is given by $Φ(x = kR) =\\langle \\cosh \\vec k.\\vec r\\rangle=\\langle\\sinh kr /kr\\rangle $, expanded as $\\sum \\frac{x^{2n}}{(2n+1)!} \\frac{\\langle r^{2n}\\rangle}{R^{2n}} $, and similarly for the form factor $ \\langle \\sin kr/kr\\rangle$. It is also obtained from the bilateral Laplace transform of $2πr\\,ρ(|r|)$, and enters in the determination of the outside Yukawa potential induced by a new charge for a mediator of mass $m=k=1/λ$. $Φ(x)$ may be expressed as $\\frac{3}{x^3}\\,(x \\cosh x - \\sinh x)\\ \\barρ(x)/ρ_0$, where $\\b...",
+    "link": "https://arxiv.org/abs/2603.21275v1",
     "tags": [
-      "spin-dependent"
-    ]
+      "fifth force",
+      "Yukawa"
+    ],
+    "score": 14
   },
   {
-    "title": "Dimeric Perylene-Bisimide Organic Molecules: Fractional-Time Control of Quantum Resources",
-    "authors": "Abdessamie Chhieb, Chaimae Banouni, Sliha Abdessamie",
-    "published": "2026-05-06",
-    "summary": "In this work, we explore the dynamics of quantum correlations, namely coherence, entanglement, and nonlocality associated with a Bell state, in a dimeric arrangement of organic PBI molecules, mediated by dipole-dipole interactions, under time-fractional dynamics. Within the framework of the time-fractional Schrödinger equation (TFSE) with Caputo fractional derivatives, we explore system dynamics for different values of the fractional order $τ$, transition energies, interaction strength, and purity $p$. We employ the relative entropy of coherence, logarithmic entanglement entropy and concurrence, and CHSH inequality to estimate system dynamics associated with coherence, entanglement, and nonl...",
-    "link": "https://arxiv.org/abs/2605.05109v1",
+    "title": "Limits on the Axial Coupling Constant of New Light Bosons",
+    "authors": "F. Piegsa, G. Pignol",
+    "published": "2012-05-02",
+    "summary": "We report on a neutron particle physics experiment, which provides for the first time an upper limit on the strength of an axial coupling constant for a new light spin 1 boson in the millimeter range. Such a new boson would mediate a new force between ordinary fermions, like neutrons and protons. The experiment was set up at the cold neutron reflectometer Narziss at the Paul Scherrer Institute and uses Ramsey's technique of separated oscillating fields to search for a pseudomagnetic neutron spin precession induced by this new interaction. For the axial coupling constant $g_A^2$, an upper limit of $6\\times10^{-13}$ (95% C.L.) was determined for an interaction range of 1 mm....",
+    "link": "https://arxiv.org/abs/1205.0340v1",
     "tags": [
-      "related"
-    ]
+      "fifth force"
+    ],
+    "score": 14
   },
   {
-    "title": "Charged current neutrino processes in hot nuclear matter with a recent Skyrme parametrization constrained by microscopic calculations",
-    "authors": "Mingya Duan, Michael Urban",
-    "published": "2026-05-06",
-    "summary": "Neutrino processes are important in the modeling of supernova explosions, proto-neutron star evolution, and binary neutron star mergers. We study neutrino production and absorption in proto-neutron star and supernova matter and direct Urca neutrino emission of neutron star matter in the framework of the random phase approximation (RPA). As interactions, we employ the recent extended Skyrme parametrization Sky3s whose effective masses and spin-dependent terms were adjusted to microscopic calculations, and the SLy4 parametrization that was used in previous calculations of neutrino rates. The rates obtained for Sky3s differ from those for SLy4 by up to one order of magnitude for some processes ...",
-    "link": "https://arxiv.org/abs/2605.04814v1",
+    "title": "Second-order hyperfine structure and its impact on new physics searches using isotope shift spectroscopy",
+    "authors": "Julian C. Berengut, Natalia S. Oreshkina",
+    "published": "2024-09-03",
+    "summary": "Recent precision isotope shift spectroscopy experiments have reported King plot non-linearities that may uncover previously hidden nuclear properties or hint at new force-carrying bosons. Interpreting the data requires many isotope pairs, but sufficient stable spin-zero nuclei are not always available. In this paper we consider the use of isotopes with non-zero nuclear spin for these studies. We confirm that observed King plot non-linearity in strontium is explained by second-order hyperfine shift in the fermionic nucleus, and we discuss the limitations of using Yb isotopes with non-zero spin in King plot studies. By introducing a specific difference of two isotopes with nuclear spin, we all...",
+    "link": "https://arxiv.org/abs/2409.01530v2",
     "tags": [
-      "spin-dependent"
-    ]
+      "fifth force",
+      "spectroscopy"
+    ],
+    "score": 11
   },
   {
-    "title": "Stability and dynamics of dark-bright solitons in spin-orbit- and Rabi-coupled binary Bose-Einstein condensates",
-    "authors": "K. Rajaswathi, R. Ravisankar, R. Radha, P. K. Mishra, P. Muruganandam",
-    "published": "2026-05-06",
-    "summary": "We investigate the stability and nonlinear dynamics of dark-bright solitons in a one-dimensional binary Bose-Einstein condensate subjected to synthetic spin-orbit and Rabi couplings. In the absence of spin-orbit coupling, we map the coupled Gross-Pitaevskii equations onto the integrable Manakov model and obtain exact dark-bright soliton solutions, providing a rigorous theoretical benchmark. We demonstrate that finite spin-orbit coupling breaks integrability by inducing spin-dependent phase gradients, which result in spatial separation of the spin components and the emergence of intrinsic density oscillations. By contrast, Rabi coupling enforces phase locking between components and supports r...",
-    "link": "https://arxiv.org/abs/2605.04441v1",
+    "title": "Muonic vs electronic dark forces: a complete EFT treatment for atomic spectroscopy",
+    "authors": "Claudia Frugiuele, Clara Peset",
+    "published": "2021-07-28",
+    "summary": "Precision atomic spectroscopy provides a solid model independent bound on the existence of new dark forces among the atomic constituents. We focus on the keV-GeV region investigating the sensitivity to such dark sectors of the recent measurements on muonic atoms at PSI. To this end we develop for the first time, the effective field theory that describes the leading effect of a new (pseudo-)vector or a (pseudo-)scalar particle of any mass at atomic energies. We identify in the Lamb Shift measurement in muonic deuterium ($μ$D) and the $2s$ Hyperfine Splitting (HFS) in muonic hydrogen ($μ$H) the most promising measurements to probe respectively spin-independent and spin-dependent new forces. Fu...",
+    "link": "https://arxiv.org/abs/2107.13512v1",
     "tags": [
-      "spin-dependent"
-    ]
-  },
-  {
-    "title": "On the spin dependence of the emergent gravity phenomena as observed in axially symmetric black hole accretion with spatially varying adiabatic index",
-    "authors": "Kalyanbrata Pal, Souvik Ghose, Ripon Sk, Arpan Krishna Mitra, Tapas K. Das",
-    "published": "2026-05-05",
-    "summary": "The present work addresses an axisymmetrically accreting black hole system from three perspectives: the astrophysical, the dynamical systems, and the emergent gravity standpoint. Steady-state equations governing low angular momentum axially symmetric accretion under a pseudo-Kerr potential are formulated for a multi-species flow with a spatially varying adiabatic index. The resulting transonic solutions are shown to be multi-transonic and may accommodate a stationary shock. Critical points are classified via perturbative dynamical systems methods, and linear stability analysis confirms that the stationary solutions remain stable under radial perturbation. The ensuing acoustic geometry harbou...",
-    "link": "https://arxiv.org/abs/2605.04156v1",
-    "tags": [
-      "related"
-    ]
-  },
-  {
-    "title": "Precision hyperfine spectroscopy of an individual nuclear-spin-9/2",
-    "authors": "J. Travesedo, Z. W. Huang, L. Mykolyshyn, N. Thill, L. Pallegoix, P. Goldner, T. Chaneliere, S. Bertaina, T. Charpentier, D. Esteve, P. Abgrall, D. Vion, J. OSullivan, E. Flurin, P. Bertet",
-    "published": "2026-05-04",
-    "summary": "Single-spin magnetic resonance spectroscopy promises to yield structural and chemical information at the level of individual atoms or molecules, in a non-invasive way. Here, we use an Er3+ paramagnetic center in a CaWO4 crystal, detected by microwave photon counting at 10 mK, as a nanoscale magnetic sensor to measure the NMR spectrum of a proximal individual nuclear-spin-9/2 93Nb impurity with Hertz spectral resolution. From these measurements, we determine the 93Nb insertion site, its position relative to the Er3+ , and its complete quadrupolar tensor. We moreover harness the high spectral resolution of our measurements to establish the presence of two previously unobserved terms in the spi...",
-    "link": "https://arxiv.org/abs/2605.02857v1",
-    "tags": [
+      "fifth force",
       "spin-dependent",
       "spectroscopy"
-    ]
+    ],
+    "score": 11
   },
   {
-    "title": "Constraints on Ultralight Scalar and Dark Photon Dark Matter from PPTA-DR3 and EPTA-DR2",
-    "authors": "Xiao-Song Hu, Siyuan Chen, Kuo Liu, Xingjiang Zhu, Shi-Yi Zhao, Wu Jiang, John Antoniadis, N. D. Ramesh Bhat, Amodio Carleo, Shi Dai, Valentina Di Marco, Huanchen Hu, Wenhua Ling, Yang Liu, Saurav Mishra, Christopher J Russell, Ryan M. Shannon, Clemente Smarra, Jingbo Wang, Lin Wang, Andrew Zic",
-    "published": "2026-05-04",
-    "summary": "The cold dark matter model successfully describes the Universe on large scales, yet faces challenges at sub-galactic scales. Ultralight dark matter (ULDM), with particle masses around $10^{-22} \\mathrm{eV}$, offers a promising solution to these small-scale issues. Pulsar Timing Arrays (PTAs), designed to detect nanohertz gravitational waves, can also provide a sensitive probe for ULDM signals. In this work, we perform a Bayesian search for ULDM using PTA data sets, focusing on two types of signals: the oscillatory gravitational potential from scalar ULDM and the fifth-force interaction mediated by dark photon dark matter (DPDM). We incorporate pulsar distances in the analysis to better model...",
-    "link": "https://arxiv.org/abs/2605.02172v1",
+    "title": "Gauge CPT as a Possible Alternative to the Dark Matter Hypothesis",
+    "authors": "Kurt Koltko",
+    "published": "2013-08-29",
+    "summary": "A new force is proposed in order to explain galactic rotation curves. CPT is chosen as the underlying symmetry of the new force because it is a universal spacetime symmetry. Local CPT transformations are presented for the Dirac field (matter) and the vierbein describing curved spacetime. A nonvanishing variation of the Dirac action in curved spacetime is thus derived. Because the metric spin connection of general relativity cannot accommodate the variation induced by the local CPT symmetry, a new gauge field is introduced. The transformation of the new field is derived which implies the new field is massless. Experimental speculations based on the zero mass of the new gauge field are present...",
+    "link": "https://arxiv.org/abs/1308.6341v1",
     "tags": [
+      "fifth force",
       "dark matter"
-    ]
+    ],
+    "score": 11
   },
   {
-    "title": "Spin-polarized Josephson current induced by inhomogeneous altermagnetic interlayers",
-    "authors": "Wenjun Zhao, Yuri Fukaya, Pablo Burset, Jorge Cayao, Yukio Tanaka, Bo Lu",
-    "published": "2026-05-04",
-    "summary": "The pursuit of dissipationless spin supercurrents is a central theme in superconducting spintronics. We propose a field-free Josephson junction using an inhomogeneous altermagnetic interlayer with in-plane Néel vectors. We show that the current-phase relation and the critical Josephson current are highly sensitive to the misorientation angle between the altermagnetic layers' Néel vectors. Specifically, at a $π$ misorientation with equal layer thicknesses the spatial oscillations of the superconducting pair amplitude, governed by the center-of-mass momentum, undergo mutual cancellation. This compensation suppresses individual layer pair-breaking, significantly enhancing the critical current a...",
-    "link": "https://arxiv.org/abs/2605.02140v2",
+    "title": "Long-range interactions between dark-matter particles in a model with a cosmological, spontaneously-broken chiral symmetry",
+    "authors": "Saul Barshay, Georg Kreyerhoff",
+    "published": "2005-01-03",
+    "summary": "In a cosmological model with a chiral symmetry, there are two, dynamically-related spin-zero fields, a scalar $φ$ and a pseudoscalar $b$. These fields have self-interactions. Spontaneous symmetry breaking results in a very massive scalar particle with $m_φ\\cong 5 \\times 10^{11}\\GeV$, and a nearly massless, (Goldstone-like) pseudoscalar particle with $0< m_b <~ 2.7\\times 10^{-6}\\eV$. One or both particles can be part of dark matter. There are coherent long-range interactions (at range $\\sim 1/m_b \\simgt 10\\cm$), from exchange of a $b$ particle between a pair of $b$ particles, a pair of $φ$ particles, and between a $φ$ and a $b$. We compare the strength of potentials for the different pairs to...",
+    "link": "https://arxiv.org/abs/astro-ph/0501021v4",
     "tags": [
-      "spin-dependent"
-    ]
+      "fifth force",
+      "dark matter"
+    ],
+    "score": 11
+  },
+  {
+    "title": "Causal Modifications of Gravity and Their Observational Bounds",
+    "authors": "Mark P. Hertzberg, Jacob A. Litterer, Neil Shah",
+    "published": "2022-09-15",
+    "summary": "Since general relativity is the unique theory of massless spin 2 particles at large distances, the most reasonable way to have significant modifications is to introduce one or more light scalars that mediate a new long-range force. Most existing studies of such scalars invoke models that exhibit some kind of \"screening\" at short distances to hide the force from solar system tests. However, as is well known, such modifications also exhibit superluminality, which can be interpreted as a form of acausality. In this work we explore explicitly subluminal and causal scalar field models. In particular, we study a conformally coupled scalar $φ$, with a small coupling to matter to obey solar system b...",
+    "link": "https://arxiv.org/abs/2209.07525v3",
+    "tags": [
+      "fifth force"
+    ],
+    "score": 9
   }
 ]
