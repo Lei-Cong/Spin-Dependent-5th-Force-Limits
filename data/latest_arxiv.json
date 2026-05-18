@@ -1,1 +1,135 @@
-[]
+[
+  {
+    "title": "Spin-dependent exotic interactions",
+    "authors": "Lei Cong, Wei Ji, Pavel Fadeev, Filip Ficek, Min Jiang, Victor V. Flambaum, Haosen Guan, Derek F. Jackson Kimball, Mikhail G. Kozlov, Yevgeny V. Stadnik, Dmitry Budker",
+    "published": "2024-08-28",
+    "summary": "Novel interactions beyond the four known fundamental forces in nature (electromagnetic, gravitational, strong and weak interactions), may arise due to \"new physics\" beyond the standard model, manifesting as a \"fifth force\". This review is focused on spin-dependent fifth forces mediated by exotic bosons such as spin-0 axions and axionlike particles and spin-1 Z' bosons, dark photons, or paraphotons. Many of these exotic bosons are candidates to explain the nature of dark matter and dark energy, and their interactions may violate fundamental symmetries. Spin-dependent interactions between fermions mediated by the exchange of exotic bosons have been investigated in a variety of experiments, par...",
+    "link": "https://arxiv.org/abs/2408.15691v3",
+    "tags": [
+      "fifth force",
+      "spin-dependent",
+      "axion",
+      "dark matter",
+      "comagnetometer",
+      "spectroscopy"
+    ],
+    "score": 32
+  },
+  {
+    "title": "Searching for Exotic Spin-Dependent Interactions with Diamond-Based Vector Magnetometer",
+    "authors": "Aolong Guo, Runqi Kang, Man Jiao, Xing Rong",
+    "published": "2024-02-23",
+    "summary": "We propose a new method to search for exotic spin-spin interactions between electrons and nucleons using a diamond-based vector magnetometer. The vector magnetometer can be constructed from ensembles of nitrogen-vacancy centers along different axes in a diamond. The $^{14}\\mathrm{N} $ nuclear spins of nitrogen-vacancy centers in the same diamond can be polarized through the dynamic nuclear polarization method to serve as spin sources. With the vector magnetometer, the sought-after exotic interactions can be distinguished from the magnetic dipole-dipole interaction. For the axion-mediated interaction $ V_{PP} $, new upper bounds of the coupling $ |g_{P}^{e} g_{P}^{N}| $ are expected within th...",
+    "link": "https://arxiv.org/abs/2402.15042v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "dipole-dipole"
+    ],
+    "score": 29
+  },
+  {
+    "title": "Constraints on exotic spin-dependent interactions between electrons from helium fine-structure spectroscopy",
+    "authors": "Filip Ficek, Derek F. Jackson Kimball, Mikhail Kozlov, Nathan Leefer, Szymon Pustelny, Dmitry Budker",
+    "published": "2016-08-20",
+    "summary": "Agreement between theoretical calculations of atomic structure and spectroscopic measurements is used to constrain possible contribution of exotic spin-dependent interactions between electrons to the energy differences between states in helium-4. In particular, constraints on dipole-dipole interactions associated with the exchange of pseudoscalar bosons (such as axions or axion-like particles, ALPs) with masses $10^{-2}~{\\rm eV} \\lesssim m \\lesssim 10^{4}~{\\rm eV}$ are improved by a factor of $\\sim 100$. The first atomic-scale constraints on several exotic velocity-dependent dipole-dipole interactions are established as well....",
+    "link": "https://arxiv.org/abs/1608.05779v2",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "dipole-dipole",
+      "spectroscopy"
+    ],
+    "score": 28
+  },
+  {
+    "title": "Searches for exotic spin-dependent interactions with spin sensors",
+    "authors": "Min Jiang, Haowen Su, Yifan Chen, Man Jiao, Ying Huang, Yuanhong Wang, Xing Rong, Xinhua Peng, Jiangfeng Du",
+    "published": "2024-12-04",
+    "summary": "Numerous theories have postulated the existence of exotic spin-dependent interactions beyond the Standard Model of particle physics. Spin-based quantum sensors, which utilize the quantum properties of spins to enhance measurement precision, emerge as powerful tools for probing these exotic interactions. These sensors encompass a wide range of technologies, such as optically pumped magnetometers, atomic comagnetometers, spin masers, nuclear magnetic resonance, spin amplifiers, and nitrogen-vacancy centers. These technologies stand out for their ultrahigh sensitivity, compact tabletop design, and cost-effectiveness, offering complementary approaches to the large-scale particle colliders and as...",
+    "link": "https://arxiv.org/abs/2412.03288v2",
+    "tags": [
+      "spin-dependent",
+      "dark matter",
+      "comagnetometer",
+      "EDM"
+    ],
+    "score": 25
+  },
+  {
+    "title": "Response of Comagnetometer to Exotic Spin-Dependent Couplings",
+    "authors": "Yixin Zhao, Xiang Peng, Teng Wu, Hong Guo",
+    "published": "2025-06-18",
+    "summary": "Comagnetometers offer unique advantages in measuring exotic spin-dependent interactions by suppressing magnetic noise. Understanding the frequency response to exotic interactions is essential for evaluating and improving the sensitivity of comagnetometers, as the signals often exhibit distinct spectral features. We conduct theoretical and experimental studies on the frequency response of a differential comagnetometer. We derive analytical expressions for the frequency response of the differential comagnetometer to both magnetic field and exotic couplings, along with the conversion relationship between them. Based on this, we revise the method for determining the axion-nucleon coupling streng...",
+    "link": "https://arxiv.org/abs/2506.15046v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "dark matter",
+      "comagnetometer",
+      "spectroscopy"
+    ],
+    "score": 23
+  },
+  {
+    "title": "Exotic Spin-Dependent Interaction Searches at Indiana University",
+    "authors": "I. Lee, J. Shortino, J. Biermen, A. Din, A. Grossman, M. Gabel, E. Guess, C. -Y. Liu, J. C. Long, S. Reger, A. Reid, M. Severinov, B. Short, W. M. Snow, E. Smith, M. Zhang, the ARIADNE Collaboration",
+    "published": "2019-06-14",
+    "summary": "The axion is a hypothesized particle appearing in various theories beyond the Standard Model. It is a light spin-0 boson initially postulated to solve the strong CP problem and is also a strong candidate for dark matter. If the axion or an axion-like particle exists, it would mediate a P-odd and T-odd spin-dependent interaction. We describe two experiments under development at Indiana University-Bloomington to search for such an interaction....",
+    "link": "https://arxiv.org/abs/1906.07163v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "dark matter"
+    ],
+    "score": 21
+  },
+  {
+    "title": "Searching for an Exotic Spin-Dependent Interaction between Electrons at the Nanometer Scale with Molecular Rulers",
+    "authors": "Man Jiao, Xing Rong, Hang Liang, Yi-Fu Cai, Jiangfeng Du",
+    "published": "2019-04-20",
+    "summary": "We propose that a type of molecular rulers, which contains two electron spins with precisely adjustable distance by varying the length of the shape-persistent polymer chains, can be utilized to constrain the axial-vector mediated interaction between electron spins at the nanometer scale. With measurements of the coupling strengths between two electron spins within different molecular rulers, an improved laboratory bound of exotic dipole-dipole interaction between electrons is established within the force range from 3 to 220 nm. The upper bound of the coupling $g_A^e g_A^e/4π\\hbar c $ at 200 nm is $|g_A^e g_A^e/4π\\hbar c| \\leq 4.9\\times10^{-13}$, which is about 20 times more stringent than pr...",
+    "link": "https://arxiv.org/abs/1904.09428v1",
+    "tags": [
+      "spin-dependent",
+      "dipole-dipole"
+    ],
+    "score": 19
+  },
+  {
+    "title": "Slotted Rotatable Target Assembly Used In a Search for Possible Long Range Spin Dependent Interactions From Vector Boson Exchange Using Polarized Slow Neutrons",
+    "authors": "Christopher Haddock, Bret Crawford, Walter Fox, Ian Francis, Adam Holley, Murad Sarsour, W. Michael Snow, John Vanderwerp",
+    "published": "2017-07-26",
+    "summary": "We discuss the design and construction of a novel target array of nonmagnetic test masses used in a neutron polarimetry measurement made in search for new possible exotic spin dependent neutron-atom interactions of Nature at sub\\,-$mm$ length scales. This target was designed to accept and efficiently transmit a transversely polarized slow neutron beam through a series of long open parallel slots bounded by flat rectangular plates. These openings possessed equal atom density gradients across the slots from the flat test masses with dimensions optimized to achieve maximum sensitivity to an exotic spin-dependent interaction from vector boson exchanges with ranges in the millimeter to micron reg...",
+    "link": "https://arxiv.org/abs/1707.08303v2",
+    "tags": [
+      "spin-dependent"
+    ],
+    "score": 19
+  },
+  {
+    "title": "100 years of spin: fundamental physics, dark matter, exotic interactions, and all that",
+    "authors": "Dmitry Budker, Tim Chupp, Klaus Kirch, W. Mike Snow",
+    "published": "2026-03-31",
+    "summary": "For a century, spin has been an indispensable probe of the fundamental laws of nature. A reflection on the role of spin in shaping modern physics is presented, from the early days of quantum mechanics to the latest precision tests of the Standard Model. The significance of magnetic and electric dipole moments in testing CP and CPT symmetries is surveyed, along with the ongoing searches for exotic spin-dependent interactions that may reveal the nature of dark matter and its connection to spacetime geometry. Through these vignettes, it is shown that spin continues to provide a fresh perspective on the most profound questions in physics today....",
+    "link": "https://arxiv.org/abs/2604.00231v1",
+    "tags": [
+      "spin-dependent",
+      "dark matter",
+      "EDM"
+    ],
+    "score": 18
+  },
+  {
+    "title": "Magnetic flux threading a planar holed superconductor",
+    "authors": "Jaume Cunill-Subiranas, Natanael Bort-Soldevila, Nuria Del-Valle, Carles Navau",
+    "published": "2025-07-07",
+    "summary": "We analytically evaluate the currents in a planar-holed ideal (perfect magnetic shielding) superconductor when an axial dipole is located along the system's axis, obtaining a simple relation between the fluxoid (in this geometry, it equals the flux) threading the hole, the net current circling it, and the magnitude and position of the dipole. This expression has to be added to the basic screening equations describing the superconductor to understand the different physical situations that can appear. Thus several scenarios are studied: field and zero-field cooling cases, where the flux threading the hole is fixed; superconductors with a slit where the net current circling the hole is zero; an...",
+    "link": "https://arxiv.org/abs/2507.05041v1",
+    "tags": [
+      "spin-dependent",
+      "dark matter"
+    ],
+    "score": 16
+  }
+]
