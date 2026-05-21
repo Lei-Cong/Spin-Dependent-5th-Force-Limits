@@ -45,45 +45,6 @@
     "score": 29
   },
   {
-    "title": "Searching for Exotic Spin-Dependent Interactions with Diamond-Based Vector Magnetometer",
-    "authors": "Aolong Guo, Runqi Kang, Man Jiao, Xing Rong",
-    "published": "2024-02-23",
-    "summary": "We propose a new method to search for exotic spin-spin interactions between electrons and nucleons using a diamond-based vector magnetometer. The vector magnetometer can be constructed from ensembles of nitrogen-vacancy centers along different axes in a diamond. The $^{14}\\mathrm{N} $ nuclear spins of nitrogen-vacancy centers in the same diamond can be polarized through the dynamic nuclear polarization method to serve as spin sources. With the vector magnetometer, the sought-after exotic interactions can be distinguished from the magnetic dipole-dipole interaction. For the axion-mediated interaction $ V_{PP} $, new upper bounds of the coupling $ |g_{P}^{e} g_{P}^{N}| $ are expected within th...",
-    "link": "https://arxiv.org/abs/2402.15042v1",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dipole-dipole"
-    ],
-    "score": 29
-  },
-  {
-    "title": "Constraints on exotic spin-dependent interactions between electrons from helium fine-structure spectroscopy",
-    "authors": "Filip Ficek, Derek F. Jackson Kimball, Mikhail Kozlov, Nathan Leefer, Szymon Pustelny, Dmitry Budker",
-    "published": "2016-08-20",
-    "summary": "Agreement between theoretical calculations of atomic structure and spectroscopic measurements is used to constrain possible contribution of exotic spin-dependent interactions between electrons to the energy differences between states in helium-4. In particular, constraints on dipole-dipole interactions associated with the exchange of pseudoscalar bosons (such as axions or axion-like particles, ALPs) with masses $10^{-2}~{\\rm eV} \\lesssim m \\lesssim 10^{4}~{\\rm eV}$ are improved by a factor of $\\sim 100$. The first atomic-scale constraints on several exotic velocity-dependent dipole-dipole interactions are established as well....",
-    "link": "https://arxiv.org/abs/1608.05779v2",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dipole-dipole",
-      "spectroscopy"
-    ],
-    "score": 28
-  },
-  {
-    "title": "Quantum Sensors for High Precision Measurements of Spin-dependent Interactions",
-    "authors": "Dmitry Budker, Thomas Cecil, Timothy E. Chupp, Andrew A. Geraci, Derek F. Jackson Kimball, Shimon Kolkowitz, Surjeet Rajendran, Jaideep T. Singh, Alexander O. Sushkov",
-    "published": "2022-03-17",
-    "summary": "The applications of spin-based quantum sensors to measurements probing fundamental physics are surveyed. Experimental methods and technologies developed for quantum information science have rapidly advanced in recent years, and these tools enable increasingly precise control and measurement of spin dynamics. Theories of beyond-the-Standard-Model physics predict, for example, symmetry violating electromagnetic moments aligned with particle spins, exotic spin-dependent forces, coupling of spins to ultralight bosonic dark matter fields, and changes to the local environment that affect spins. Spin-based quantum sensors can be used to search for these myriad phenomena, and offer a methodology for...",
-    "link": "https://arxiv.org/abs/2203.09488v2",
-    "tags": [
-      "spin-dependent",
-      "dark matter"
-    ],
-    "score": 26
-  },
-  {
     "title": "Searches for exotic spin-dependent interactions with spin sensors",
     "authors": "Min Jiang, Haowen Su, Yifan Chen, Man Jiao, Ying Huang, Yuanhong Wang, Xing Rong, Xinhua Peng, Jiangfeng Du",
     "published": "2024-12-04",
@@ -137,5 +98,44 @@
       "EDM"
     ],
     "score": 23
+  },
+  {
+    "title": "Equivalence Principle tests, Equivalence theorems and New long-range forces",
+    "authors": "Pierre Fayet",
+    "published": "2001-11-22",
+    "summary": "We discuss the possible existence of new long-range forces mediated by spin-1 or spin-0 particles. By adding their effects to those of gravity, they could lead to apparent violations of the Equivalence Principle. While the vector part in the couplings of a new spin-1 U boson involves, in general, a combination of the B and L currents, there may also be, in addition, an axial part as well. If the new force has a finite range λ, its intensity is proportional to 1/(λ^2 F^2), F being the extra U(1) symmetry-breaking scale. Quite surprisingly, particle physics experiments can provide constraints on such a new force, even if it is extremely weak, the corresponding gauge coupling being extremely sm...",
+    "link": "https://arxiv.org/abs/hep-ph/0111282v1",
+    "tags": [
+      "fifth force",
+      "spin-dependent",
+      "axion"
+    ],
+    "score": 19
+  },
+  {
+    "title": "An atomic probe of dark matter differential interactions with elementary particles",
+    "authors": "Yossi Rosenzweig, Yevgeny Kats, Menachem Givon, Yonathan Japha, Ron Folman",
+    "published": "2023-12-10",
+    "summary": "Searching for physics beyond the Standard Model is one of the main tasks of experimental physics. Candidates for dark matter include axion-like ultralight bosonic particles. Comagnetometers form ultra-high sensitivity probes for such particles and any exotic field that interacts with the spin of an atom. Here, we propose a multi-atom-species probe that enables not only to discover such fields and measure their spectrum but also to determine the ratios of their coupling strengths to sub-atomic elementary particles, electrons, neutrons and protons. We further show that the multi-faceted capabilities of this probe may be demonstrated with synthetic exotic fields generated by a combination of re...",
+    "link": "https://arxiv.org/abs/2312.05894v2",
+    "tags": [
+      "axion",
+      "dark matter",
+      "comagnetometer"
+    ],
+    "score": 18
+  },
+  {
+    "title": "The Os$^{16+}$ and Ir$^{17+}$ ions as candidates for accurate optical clock sensitive to physics beyond standard model",
+    "authors": "V. A. Dzuba, V. V. Flambaum",
+    "published": "2023-09-14",
+    "summary": "We perform detailed calculations of the electronic structure of the Os$^{16+}$ ion and demonstrate that it has several metastable states which can be used for very accurate optical clocks. The clocks are highly sensitive to manifestations of the physics beyond standard model, such as time variation of the fine structure constant $α$, interaction with scalar and pseudoscalar (axion) dark matter fields, local Lorentz invariance and local position invariance violations, and interaction of atomic electrons with nucleus mediated by new boson. The latter can be studied by analysing King plot for isotope shifts and its possible non-linearities since Os has 5 stable isotopes with zero nuclear spin. ...",
+    "link": "https://arxiv.org/abs/2309.07507v2",
+    "tags": [
+      "axion",
+      "dark matter",
+      "spectroscopy"
+    ],
+    "score": 18
   }
 ]
