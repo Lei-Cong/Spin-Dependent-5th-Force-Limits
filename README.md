@@ -116,7 +116,7 @@ Then commit and push the updated datasets_multi.json file.
 📦 [Browse Full Documentation](Datasets.md)
 
 ## 6. Resources (Meetings, Scholarships, Openings)
-📦 [Browse Full Documentation](Resources.md)
+📦 [Browse Full List](Resources.md)
 
 
 ---
