@@ -122,13 +122,12 @@ Then commit and push the updated datasets_multi.json file.
 ---
 
 ## 7. Subscription 
-[Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan:
+[Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan (Your email address will be recorded, and you will receive notifications when major updates to the webpage occur.):
 
 <figure style="text-align:center;">
   <img src="./QR-QODE2.png" alt="My Figure" width="200">
 </figure>
 
-Your email address will be recorded, and you will receive notifications when major updates to the webpage occur.
 ---
 
 ## Acknowledgement
