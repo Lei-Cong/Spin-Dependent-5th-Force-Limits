@@ -108,14 +108,14 @@ Then commit and push the updated datasets_multi.json file.
 
 ---
 
-## 4.  Latest References
+## 4.  Latest References 
 
 [![Latest arXiv Papers](https://img.shields.io/badge/arXiv-Latest%2010%20Papers-b31b1b?logo=arxiv)](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/latest_arxiv.html)
 
 ## 5. Datasets 
 📦 [Browse Full Documentation](Datasets.md)
 
-## 6. Resources for the Community 
+## 6. Resources (Meetings, Scholarships, Openings)
 📦 [Browse Full Documentation](Resources.md)
 
 
@@ -128,6 +128,7 @@ Then commit and push the updated datasets_multi.json file.
   <img src="./QR-QODE2.png" alt="My Figure" width="200">
 </figure>
 
+Your email address will be recorded, and you will receive notifications when major updates to the webpage occur.
 ---
 
 ## Acknowledgement
