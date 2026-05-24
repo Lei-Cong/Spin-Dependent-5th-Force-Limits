@@ -140,8 +140,4 @@ Additionally, we would like to thank all contributors, including Peng-Shun Luo, 
 
  ![Badge](https://visitor-badge.laobi.icu/badge?page_id=lei-cong.Spin-Dependent-5th-Force-Limits)
  
- <a href="https://mapmyvisitors.com/web/1c4pd" title="Visitor Map">
-
-<img src="https://mapmyvisitors.com/map.png?d=qhZDbq7oaspXxCEtOOf26QvRB5hBUAAIZKWxHfSRyOs&cl=000000" width="240">
-
-</a>
+<a href="https://mapmyvisitors.com/web/1c4pd" title="Visitor Map"><img src="https://mapmyvisitors.com/map.png?d=qhZDbq7oaspXxCEtOOf26QvRB5hBUAAIZKWxHfSRyOs&cl=000000" width="200"></a>
