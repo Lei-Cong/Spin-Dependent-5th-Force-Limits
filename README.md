@@ -122,7 +122,7 @@ Then commit and push the updated datasets_multi.json file.
 ---
 
 ## 7. Subscription 
-[Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan (Your email address will be recorded, and you will receive notifications when major updates to the webpage occur.):
+[Click](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true) or scan (Your email address will be recorded, and you will receive notifications when major updates to the webpage occur):
 
 <figure style="text-align:center;">
   <img src="./QR-QODE2.png" alt="My Figure" width="200">
@@ -139,3 +139,9 @@ Additionally, we would like to thank all contributors, including Peng-Shun Luo, 
 ## **Views count:**
 
  ![Badge](https://visitor-badge.laobi.icu/badge?page_id=lei-cong.Spin-Dependent-5th-Force-Limits)
+ 
+ <a href="https://mapmyvisitors.com/web/1c4pd" title="Visitor Map">
+
+<img src="https://mapmyvisitors.com/map.png?d=qhZDbq7oaspXxCEtOOf26QvRB5hBUAAIZKWxHfSRyOs&cl=000000" width="600">
+
+</a>
