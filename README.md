@@ -142,6 +142,6 @@ Additionally, we would like to thank all contributors, including Peng-Shun Luo, 
  
  <a href="https://mapmyvisitors.com/web/1c4pd" title="Visitor Map">
 
-<img src="https://mapmyvisitors.com/map.png?d=qhZDbq7oaspXxCEtOOf26QvRB5hBUAAIZKWxHfSRyOs&cl=000000" width="600">
+<img src="https://mapmyvisitors.com/map.png?d=qhZDbq7oaspXxCEtOOf26QvRB5hBUAAIZKWxHfSRyOs&cl=000000" width="300">
 
 </a>
