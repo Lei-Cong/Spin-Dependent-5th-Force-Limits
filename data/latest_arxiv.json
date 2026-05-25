@@ -15,22 +15,6 @@
     "score": 33
   },
   {
-    "title": "Spin-dependent exotic interactions",
-    "authors": "Lei Cong, Wei Ji, Pavel Fadeev, Filip Ficek, Min Jiang, Victor V. Flambaum, Haosen Guan, Derek F. Jackson Kimball, Mikhail G. Kozlov, Yevgeny V. Stadnik, Dmitry Budker",
-    "published": "2024-08-28",
-    "summary": "Novel interactions beyond the four known fundamental forces in nature (electromagnetic, gravitational, strong and weak interactions), may arise due to \"new physics\" beyond the standard model, manifesting as a \"fifth force\". This review is focused on spin-dependent fifth forces mediated by exotic bosons such as spin-0 axions and axionlike particles and spin-1 Z' bosons, dark photons, or paraphotons. Many of these exotic bosons are candidates to explain the nature of dark matter and dark energy, and their interactions may violate fundamental symmetries. Spin-dependent interactions between fermions mediated by the exchange of exotic bosons have been investigated in a variety of experiments, par...",
-    "link": "https://arxiv.org/abs/2408.15691v3",
-    "tags": [
-      "fifth force",
-      "spin-dependent",
-      "axion",
-      "dark matter",
-      "comagnetometer",
-      "spectroscopy"
-    ],
-    "score": 32
-  },
-  {
     "title": "Searching for ultralight bosons with Josephson junction interferometry",
     "authors": "Djuna Croon, Tanmay Kumar Poddar",
     "published": "2026-04-26",
@@ -72,70 +56,80 @@
     "score": 28
   },
   {
-    "title": "Quantum Sensors for High Precision Measurements of Spin-dependent Interactions",
-    "authors": "Dmitry Budker, Thomas Cecil, Timothy E. Chupp, Andrew A. Geraci, Derek F. Jackson Kimball, Shimon Kolkowitz, Surjeet Rajendran, Jaideep T. Singh, Alexander O. Sushkov",
-    "published": "2022-03-17",
-    "summary": "The applications of spin-based quantum sensors to measurements probing fundamental physics are surveyed. Experimental methods and technologies developed for quantum information science have rapidly advanced in recent years, and these tools enable increasingly precise control and measurement of spin dynamics. Theories of beyond-the-Standard-Model physics predict, for example, symmetry violating electromagnetic moments aligned with particle spins, exotic spin-dependent forces, coupling of spins to ultralight bosonic dark matter fields, and changes to the local environment that affect spins. Spin-based quantum sensors can be used to search for these myriad phenomena, and offer a methodology for...",
-    "link": "https://arxiv.org/abs/2203.09488v2",
+    "title": "Search for an interaction mediated by axion-like particles with ultracold neutrons at the PSI",
+    "authors": "N. J. Ayres, G. Bison, K. Bodek, V. Bondar, T. Bouillaud, E. Chanel, P. -J. Chiu, B. Clement, C. B. Crawford, M. Daum, C. B. Doorenbos, S. Emmenegger, M. Fertl, P. Flaux, W. C. Griffith, P. G. Harris, N. Hild, M. Kasprzak, K. Kirch, V. Kletzl, P. A. Koss, J. Krempel, B. Lauss, T. Lefort, P. Mohanmurthy, O. Naviliat-Cuncic, D. Pais, F. M. Piegsa, G. Pignol, M. Rawlik, I. Rienäcker, D. Ries, S. Roccia, D. Rozpedzik, P. Schmidt-Wellenburg, N. Severijns, B. Shen, K. Svirina, R. Tavakoli Dinani, J. A. Thorne, S. Touati, A. Weis, E. Wursten, N. Yazdandoost, J. Zejma, N. Ziehl, G. Zsigmond",
+    "published": "2023-03-31",
+    "summary": "We report on a search for a new, short-range, spin-dependent interaction using a modified version of the experimental apparatus used to measure the permanent neutron electric dipole moment at the Paul Scherrer Institute. This interaction, which could be mediated by axion-like particles, concerned the unpolarized nucleons (protons and neutrons) near the material surfaces of the apparatus and polarized ultracold neutrons stored in vacuum. The dominant systematic uncertainty resulting from magnetic-field gradients was controlled to an unprecedented level of approximately 4 pT/cm using an array of optically-pumped cesium vapor magnetometers and magnetic-field maps independently recorded using a ...",
+    "link": "https://arxiv.org/abs/2303.18081v1",
     "tags": [
       "spin-dependent",
-      "dark matter"
-    ],
-    "score": 26
-  },
-  {
-    "title": "Searches for exotic spin-dependent interactions with spin sensors",
-    "authors": "Min Jiang, Haowen Su, Yifan Chen, Man Jiao, Ying Huang, Yuanhong Wang, Xing Rong, Xinhua Peng, Jiangfeng Du",
-    "published": "2024-12-04",
-    "summary": "Numerous theories have postulated the existence of exotic spin-dependent interactions beyond the Standard Model of particle physics. Spin-based quantum sensors, which utilize the quantum properties of spins to enhance measurement precision, emerge as powerful tools for probing these exotic interactions. These sensors encompass a wide range of technologies, such as optically pumped magnetometers, atomic comagnetometers, spin masers, nuclear magnetic resonance, spin amplifiers, and nitrogen-vacancy centers. These technologies stand out for their ultrahigh sensitivity, compact tabletop design, and cost-effectiveness, offering complementary approaches to the large-scale particle colliders and as...",
-    "link": "https://arxiv.org/abs/2412.03288v2",
-    "tags": [
-      "spin-dependent",
-      "dark matter",
-      "comagnetometer",
+      "axion",
+      "monopole-dipole",
       "EDM"
     ],
-    "score": 25
+    "score": 21
   },
   {
-    "title": "Response of Comagnetometer to Exotic Spin-Dependent Couplings",
-    "authors": "Yixin Zhao, Xiang Peng, Teng Wu, Hong Guo",
-    "published": "2025-06-18",
-    "summary": "Comagnetometers offer unique advantages in measuring exotic spin-dependent interactions by suppressing magnetic noise. Understanding the frequency response to exotic interactions is essential for evaluating and improving the sensitivity of comagnetometers, as the signals often exhibit distinct spectral features. We conduct theoretical and experimental studies on the frequency response of a differential comagnetometer. We derive analytical expressions for the frequency response of the differential comagnetometer to both magnetic field and exotic couplings, along with the conversion relationship between them. Based on this, we revise the method for determining the axion-nucleon coupling streng...",
-    "link": "https://arxiv.org/abs/2506.15046v1",
+    "title": "Search for spin-dependent gravitational interactions at the Earth range",
+    "authors": "Shaobo Zhang, Zengli Ba, Denghui Ning, Nianfu Zhai, Zhengtian Lu, Dong Sheng",
+    "published": "2023-03-18",
+    "summary": "Among the four fundamental forces, only gravity does not couple to particle spins according to the general theory of relativity. We test this principle by searching for an anomalous scalar coupling between the neutron spin and the Earth gravity on the ground. We develop an atomic gas comagnetometer to measure the ratio of nuclear spin-precession frequencies between $^{129}$Xe and $^{131}$Xe, and search for a change of this ratio to the precision of 10$^{-9}$ as the sensor is flipped in the Earth gravitational field. The null results of this search set an upper limit on the coupling energy between the neutron spin and the gravity on the ground at 5.3$\\times$10$^{-22}$~eV (95\\% confidence leve...",
+    "link": "https://arxiv.org/abs/2303.10352v1",
     "tags": [
       "spin-dependent",
       "axion",
-      "dark matter",
-      "comagnetometer",
-      "spectroscopy"
+      "monopole-dipole",
+      "comagnetometer"
     ],
-    "score": 23
+    "score": 21
   },
   {
-    "title": "Searching for Exotic Interactions between Antimatter",
-    "authors": "Lei Cong, Filip Ficek, Pavel Fadeev, Yevgeny V. Stadnik, Dmitry Budker",
-    "published": "2025-03-10",
-    "summary": "We show that atomic antimatter spectroscopy can be used to search for new bosons that carry spin-dependent exotic forces between antifermions. A comparison of a recent precise measurement of the hyperfine splitting of the $1$S and $2$S electronic levels of antihydrogen and bound-state quantum electrodynamics theory yields the first tests of positron-antiproton exotic interactions, constraining the dimensionless coupling strengths $g_pg_p$, $g_Vg_V$ and $g_Ag_A$, corresponding to the exchange of a pseudoscalar (axionlike), vector, or axial-vector boson, respectively. We also discuss new tests of CPT invariance with exotic spin-dependent and spin-independent interactions involving antimatter....",
-    "link": "https://arxiv.org/abs/2503.07161v1",
+    "title": "New bounds and future prospects for axion force searches at Penning trap experiments",
+    "authors": "Xing Fan, Mario Reig",
+    "published": "2023-10-28",
+    "summary": "In this note we consider Penning trap experiments as probes of axion-mediated forces. We show that the current measurement of electron's $g$-factor already sets a new exclusion limit for monopole-dipole axion forces acting on the electron spin. We also show that the Penning trap's capability of switching an electron and a positron can isolate the effect of an axion force and suppress systematic effects....",
+    "link": "https://arxiv.org/abs/2310.18797v2",
+    "tags": [
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 19
+  },
+  {
+    "title": "Searching for axion forces with spin precession in atoms and molecules",
+    "authors": "Prateek Agrawal, Nicholas R. Hutzler, David E. Kaplan, Surjeet Rajendran, Mario Reig",
+    "published": "2023-09-18",
+    "summary": "We propose to use atoms and molecules as quantum sensors of axion-mediated monopole-dipole forces. We show that electron spin precession experiments using atomic and molecular beams are well-suited for axion searches thanks to the presence of co-magnetometer states and single-shot temporal resolution. Experimental strategies to detect axion gradients from localised sources and the earth are presented, taking ACME III as a prototype example. Other possibilities including atomic beams, and laser-cooled atoms and molecules are discussed....",
+    "link": "https://arxiv.org/abs/2309.10023v2",
+    "tags": [
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 19
+  },
+  {
+    "title": "Probing axion mediated fermion--fermion interaction by means of entanglement",
+    "authors": "Antonio Capolupo, Gaetano Lambiase, Aniello Quaranta, Salvatore Marco Giampaolo",
+    "published": "2019-10-03",
+    "summary": "We propose a new approach in the investigation and detection of axion and axion-like particles based on the study of the entanglement for two interacting fermions. We study a system made of two identical fermions with spin-1/2, and we show that fermion-fermion interaction mediated by axions leads to a non-zero entanglement between the fermions. An entanglement measurement can reveal the interaction, providing an indirect evidence of the existence of axions. We discuss how the other interactions affect the entanglement, and how to isolate the axion contribution. Particular care is devoted to the analysis of the magnetic dipole-dipole interaction, which turns out to be, apart from axions, the ...",
+    "link": "https://arxiv.org/abs/1910.01533v4",
+    "tags": [
+      "axion",
+      "dipole-dipole"
+    ],
+    "score": 19
+  },
+  {
+    "title": "Constraints on short-range spin-dependent interactions from scalar spin-spin coupling in deuterated molecular hydrogen",
+    "authors": "Micah Ledbetter, Michael Romalis, Derek Jackson-Kimball",
+    "published": "2012-03-30",
+    "summary": "A comparison between existing measurements and calculations of the scalar spin-spin interaction (J-coupling) in deuterated molecular hydrogen (HD) yields stringent constraints on anomalous spin-dependent potentials between nucleons at the atomic scale (${\\rm \\sim 1 Å}$). The dimensionless coupling constant $g_P^pg_P^{N}/4π$ associated with exchange of pseudoscalar (axion-like) bosons between nucleons is constrained to be less than $5\\times 10^{-7}$ for boson masses in the range of $5 {\\rm keV}$. This represents improvement by a factor of about 100 over constraints placed by measurements of the dipole-dipole interaction in molecular ${\\rm H_2}$. The dimensionless coupling constant $g_A^pg_A^N...",
+    "link": "https://arxiv.org/abs/1203.6894v2",
     "tags": [
       "spin-dependent",
       "axion",
-      "spectroscopy"
+      "dipole-dipole"
     ],
-    "score": 23
-  },
-  {
-    "title": "Axion Window on New Macroscopic Forces",
-    "authors": "Luca Di Luzio, Hector Gisbert, Fabrizio Nesti, Philip Sørensen",
-    "published": "2024-07-22",
-    "summary": "Axion-mediated forces are enhanced by the presence of CP-violating axion couplings, which are however tightly constrained by electric dipole moment (EDM) searches. We discuss the underlying hypotheses behind different sources of CP violation at high energies and the interplay between axion-mediated force experiments and EDM observables. Specifically, we identify various mechanisms, based on new sources of CP violation or Peccei-Quinn symmetry breaking, that can significantly relax EDM constraints, leading to a substantial redefinition of the QCD axion window for axion-mediated forces. By considerably enlarging the QCD axion parameter space, our results provide a well-motivated target for exp...",
-    "link": "https://arxiv.org/abs/2407.15928v2",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "EDM"
-    ],
-    "score": 23
+    "score": 19
   }
 ]
