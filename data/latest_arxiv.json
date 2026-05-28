@@ -1,5 +1,20 @@
 [
   {
+    "title": "New Constraints on Axion Mediated Dipole-Dipole Interactions",
+    "authors": "Zitong Xu, Xing Heng, Guoqing Tian, Di Gong, Lei Cong, Wei Ji, Dmitry Budker, Kai Wei",
+    "published": "2025-01-14",
+    "summary": "The search for axions sits at the intersection of solving critical problems in fundamental physics, including the strong CP problem in QCD, uncovering the nature of dark matter, and understanding the origin of the universe's matter-antimatter asymmetry. The measurement of axion-mediated spin-dependent interactions offers a powerful approach for axion detection. However, it has long been restricted to regions outside the 'axion window' due to a significant trade-off: the need to effectively suppress the magnetic leakage from highly polarized spin sources while simultaneously detecting sub-femtotesla level exotic physics signals at sub-decimeter-scale distances. In this work, we report new exp...",
+    "link": "https://arxiv.org/abs/2501.07865v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "dark matter",
+      "dipole-dipole",
+      "comagnetometer"
+    ],
+    "score": 33
+  },
+  {
     "title": "Spin-dependent exotic interactions",
     "authors": "Lei Cong, Wei Ji, Pavel Fadeev, Filip Ficek, Min Jiang, Victor V. Flambaum, Haosen Guan, Derek F. Jackson Kimball, Mikhail G. Kozlov, Yevgeny V. Stadnik, Dmitry Budker",
     "published": "2024-08-28",
@@ -14,6 +29,20 @@
       "spectroscopy"
     ],
     "score": 32
+  },
+  {
+    "title": "Searching for ultralight bosons with Josephson junction interferometry",
+    "authors": "Djuna Croon, Tanmay Kumar Poddar",
+    "published": "2026-04-26",
+    "summary": "Ultralight bosons sourced by macroscopic objects can generate long-range spin-independent and spin-dependent potentials that are accessible to precision interferometry. Such potentials induce phase shifts in Josephson junctions, detectable through precision current measurements. We propose three experimental scenarios to probe photophilic scalar interactions, Lorentz-violating scalar-mediated interactions, and axion-mediated monopole-dipole interactions, depending on the nature (unpolarized or polarized) of the source. The proposed setups provide sensitivities to novel mixed couplings that are largely unconstrained by existing bounds and enables the exploration of new forces at centimeter to...",
+    "link": "https://arxiv.org/abs/2604.23879v1",
+    "tags": [
+      "fifth force",
+      "spin-dependent",
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 29
   },
   {
     "title": "Searching for Exotic Spin-Dependent Interactions with Diamond-Based Vector Magnetometer",
@@ -84,6 +113,19 @@
     "score": 23
   },
   {
+    "title": "Searching for Exotic Interactions between Antimatter",
+    "authors": "Lei Cong, Filip Ficek, Pavel Fadeev, Yevgeny V. Stadnik, Dmitry Budker",
+    "published": "2025-03-10",
+    "summary": "We show that atomic antimatter spectroscopy can be used to search for new bosons that carry spin-dependent exotic forces between antifermions. A comparison of a recent precise measurement of the hyperfine splitting of the $1$S and $2$S electronic levels of antihydrogen and bound-state quantum electrodynamics theory yields the first tests of positron-antiproton exotic interactions, constraining the dimensionless coupling strengths $g_pg_p$, $g_Vg_V$ and $g_Ag_A$, corresponding to the exchange of a pseudoscalar (axionlike), vector, or axial-vector boson, respectively. We also discuss new tests of CPT invariance with exotic spin-dependent and spin-independent interactions involving antimatter....",
+    "link": "https://arxiv.org/abs/2503.07161v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "spectroscopy"
+    ],
+    "score": 23
+  },
+  {
     "title": "Axion Window on New Macroscopic Forces",
     "authors": "Luca Di Luzio, Hector Gisbert, Fabrizio Nesti, Philip Sørensen",
     "published": "2024-07-22",
@@ -95,41 +137,5 @@
       "EDM"
     ],
     "score": 23
-  },
-  {
-    "title": "Exotic Spin-Dependent Interaction Searches at Indiana University",
-    "authors": "I. Lee, J. Shortino, J. Biermen, A. Din, A. Grossman, M. Gabel, E. Guess, C. -Y. Liu, J. C. Long, S. Reger, A. Reid, M. Severinov, B. Short, W. M. Snow, E. Smith, M. Zhang, the ARIADNE Collaboration",
-    "published": "2019-06-14",
-    "summary": "The axion is a hypothesized particle appearing in various theories beyond the Standard Model. It is a light spin-0 boson initially postulated to solve the strong CP problem and is also a strong candidate for dark matter. If the axion or an axion-like particle exists, it would mediate a P-odd and T-odd spin-dependent interaction. We describe two experiments under development at Indiana University-Bloomington to search for such an interaction....",
-    "link": "https://arxiv.org/abs/1906.07163v1",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dark matter"
-    ],
-    "score": 21
-  },
-  {
-    "title": "Searching for an Exotic Spin-Dependent Interaction between Electrons at the Nanometer Scale with Molecular Rulers",
-    "authors": "Man Jiao, Xing Rong, Hang Liang, Yi-Fu Cai, Jiangfeng Du",
-    "published": "2019-04-20",
-    "summary": "We propose that a type of molecular rulers, which contains two electron spins with precisely adjustable distance by varying the length of the shape-persistent polymer chains, can be utilized to constrain the axial-vector mediated interaction between electron spins at the nanometer scale. With measurements of the coupling strengths between two electron spins within different molecular rulers, an improved laboratory bound of exotic dipole-dipole interaction between electrons is established within the force range from 3 to 220 nm. The upper bound of the coupling $g_A^e g_A^e/4π\\hbar c $ at 200 nm is $|g_A^e g_A^e/4π\\hbar c| \\leq 4.9\\times10^{-13}$, which is about 20 times more stringent than pr...",
-    "link": "https://arxiv.org/abs/1904.09428v1",
-    "tags": [
-      "spin-dependent",
-      "dipole-dipole"
-    ],
-    "score": 19
-  },
-  {
-    "title": "Slotted Rotatable Target Assembly Used In a Search for Possible Long Range Spin Dependent Interactions From Vector Boson Exchange Using Polarized Slow Neutrons",
-    "authors": "Christopher Haddock, Bret Crawford, Walter Fox, Ian Francis, Adam Holley, Murad Sarsour, W. Michael Snow, John Vanderwerp",
-    "published": "2017-07-26",
-    "summary": "We discuss the design and construction of a novel target array of nonmagnetic test masses used in a neutron polarimetry measurement made in search for new possible exotic spin dependent neutron-atom interactions of Nature at sub\\,-$mm$ length scales. This target was designed to accept and efficiently transmit a transversely polarized slow neutron beam through a series of long open parallel slots bounded by flat rectangular plates. These openings possessed equal atom density gradients across the slots from the flat test masses with dimensions optimized to achieve maximum sensitivity to an exotic spin-dependent interaction from vector boson exchanges with ranges in the millimeter to micron reg...",
-    "link": "https://arxiv.org/abs/1707.08303v2",
-    "tags": [
-      "spin-dependent"
-    ],
-    "score": 19
   }
 ]
