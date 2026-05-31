@@ -2,22 +2,16 @@
 
 # Spin-Dependent Fifth-Force Limits
 
-A community platform for:
-
-- standardized datasets
-- interactive exclusion plots
-- literature tracking
-- theory conventions
-- future projections
+This platform provides a unified, citable, and continuously updated database of spin-dependent fifth-force limits for theorists and experimentalists.
 
 ## Quick Access
 
-- 🚀 [Interactive Plot Viewer](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)
-- 📦 [Download Normalized Dataset](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
-- 📖 [RMP Review: Spin-Dependent Exotic Interactions](https://link.aps.org/doi/10.1103/RevModPhys.97.025005)
-- 📝 [Author Notes](notes.md)
-- 📚 [Citation / BibTeX](./Citation.bib)
-- 📬 [Subscribe for Updates](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true)
+[🚀 Interactive Viewer]
+[📦 Download Dataset]
+[📖 RMP Review]
+
+...
+
 
 ## Quick Access
 
