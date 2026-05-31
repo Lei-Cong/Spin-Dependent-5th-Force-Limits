@@ -19,6 +19,14 @@ A community platform for:
 - 📚 [Citation / BibTeX](./Citation.bib)
 - 📬 [Subscribe for Updates](https://docs.google.com/forms/d/1uBL-03QrSyvg8hI3q2GMD_WNH4RxMFbJobg6wHXMI7I/edit?usp=forms_home&ouid=108197834418205394547&ths=true)
 
+## Quick Access
+
+[![Interactive Viewer](https://img.shields.io/badge/🚀-Interactive%20Viewer-blue?style=for-the-badge)](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)
+
+[![Download Dataset](https://img.shields.io/badge/📦-Download%20Dataset-green?style=for-the-badge)](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
+
+[![BibTeX](https://img.shields.io/badge/📚-Citation%20BibTeX-purple?style=for-the-badge)](./Citation.bib)
+
 
 ## 1. Overview
 
