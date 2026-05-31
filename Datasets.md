@@ -15,7 +15,7 @@
 
 ---
 #### 2. g<sub>A</sub>g<sub>V</sub>
-- **Description**: Constraints for vector/vector couplings ($g_Ag_V$).
+- **Description**: Constraints for axial-vector/vector couplings ($g_Ag_V$).
 - **Data**: The data are available in the folder [**gAgV**](https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits/tree/main/Dataset/normalized/gAgV).
 
 ---
