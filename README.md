@@ -2,7 +2,7 @@
 
 # Spin-Dependent Fifth-Force Limits
 
-This platform provides a unified, citable, and continuously updated database of spin-dependent fifth-force limits for theorists and experimentalists.
+An open community platform for spin-dependent exotic interactions and fifth-force research.
 
 
 ## Quick Access
