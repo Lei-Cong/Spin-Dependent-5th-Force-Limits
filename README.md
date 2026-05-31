@@ -4,17 +4,6 @@
 
 An open community platform for spin-dependent exotic interactions and fifth-force research.
 
-[Experimental Limits](#experimental-limits) •
-
-[Interactive Tools](#interactive-tools) •
-
-[Literature Updates](#latest-references)
-
-[Meetings](#meetings) •
-
-[Opportunities](#opportunities) •
-
-[Educational Resources](#educational-resources)
 
 ## Quick Access
 
