@@ -4,14 +4,6 @@
 
 This platform provides a unified, citable, and continuously updated database of spin-dependent fifth-force limits for theorists and experimentalists.
 
-## Quick Access
-
-[🚀 Interactive Viewer]
-[📦 Download Dataset]
-[📖 RMP Review]
-
-...
-
 
 ## Quick Access
 
