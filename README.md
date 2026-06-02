@@ -7,70 +7,44 @@ An open community platform for spin-dependent exotic interactions and fifth-forc
 
 ## Quick Access
 
-
 <table align="center">
   <tr>
-    <td align="center" width="280">
-      <h3>Interactive Limit Explorer</h3>
-      <p>Explore, compare, and visualize spin-dependent fifth-force limits.</p>
-      <a href="https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html">
-        <b>Open Viewer →</b>
-      </a>
-    </td>
-    <td align="center" width="280">
-      <h3>Curated Research Dataset</h3>
-      <p>Download normalized datasets, references, and supporting materials.</p>
-      <a href="https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0">
-        <b>Download Dataset →</b>
-      </a>
-    </td>
-    <td align="center" width="280">
-      <h3>Citation Record</h3>
-      <p>Use the BibTeX entry to cite the database in your research work.</p>
-      <a href="./Citation.bib">
-        <b>Get BibTeX →</b>
-      </a>
-    </td>
-  </tr>
-</table>
-
-
-<table align="center">
-  <tr>
-    <td align="center" width="300" bgcolor="#f6f8fa">
+    <td align="center" width="280" bgcolor="#eef3f8">
       <br>
       <h3>Interactive Limit Explorer</h3>
       <p>
-        Explore, compare, and visualize<br>
+        Visualize and compare published<br>
         spin-dependent fifth-force limits.
       </p>
       <p>
         <a href="https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html">
-          <b>Open Viewer →</b>
+          <b>Launch Explorer →</b>
         </a>
       </p>
       <br>
     </td>
-    <td align="center" width="300" bgcolor="#f6f8fa">
+    <td width="20"></td>
+    <td align="center" width="280" bgcolor="#edf7f6">
       <br>
-      <h3>Curated Research Dataset</h3>
+      <h3>Curated Dataset</h3>
       <p>
-        Download normalized datasets,<br>
-        references, and supporting materials.
+        Access normalized data tables<br>
+        and reference materials.
       </p>
       <p>
         <a href="https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0">
-          <b>Download Dataset →</b>
+          <b>Download Data →</b>
         </a>
       </p>
       <br>
     </td>
-    <td align="center" width="300" bgcolor="#f6f8fa">
+    <td width="20"></td>
+    <td align="center" width="280" bgcolor="#f2f0f7">
       <br>
       <h3>Citation Record</h3>
       <p>
-        Use the BibTeX entry to cite<br>
-        the database in your research.
+        Cite the database using the<br>
+        provided BibTeX record.
       </p>
       <p>
         <a href="./Citation.bib">
@@ -81,6 +55,7 @@ An open community platform for spin-dependent exotic interactions and fifth-forc
     </td>
   </tr>
 </table>
+
 
 
 ## 1. Overview
