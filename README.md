@@ -7,25 +7,28 @@ An open community platform for spin-dependent exotic interactions and fifth-forc
 
 ## Quick Access
 
-[![Interactive Viewer](https://img.shields.io/badge/🚀-Interactive%20Viewer-blue?style=for-the-badge)](https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html)
-
-[![Download Dataset](https://img.shields.io/badge/📦-Download%20Dataset-green?style=for-the-badge)](https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0)
-
-[![BibTeX](https://img.shields.io/badge/📚-Citation%20BibTeX-purple?style=for-the-badge)](./Citation.bib)
-
-
 <div align="center">
-<a href="https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html">
-  <img src="https://img.shields.io/badge/Interactive%20Limit%20Explorer-Open%20Viewer-0B3D91?style=for-the-badge&logo=plotly&logoColor=white" alt="Interactive Limit Explorer">
-</a>
 
-<a href="https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0">
-  <img src="https://img.shields.io/badge/Curated%20Research%20Dataset-Download-006D77?style=for-the-badge&logo=databricks&logoColor=white" alt="Curated Research Dataset">
-</a>
+<p align="center">
+  <a href="https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html">
+    <img src="https://img.shields.io/badge/Interactive%20Limit%20Explorer-Open%20Viewer-0B3D91?style=for-the-badge&logo=plotly&logoColor=white" alt="Interactive Limit Explorer">
+  </a>
+</p>
 
-<a href="./Citation.bib">
-  <img src="https://img.shields.io/badge/Citation%20Record-BibTeX-4B3F72?style=for-the-badge&logo=readthedocs&logoColor=white" alt="BibTeX Citation">
-</a>
+
+<p align="center">
+  <a href="https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0">
+    <img src="https://img.shields.io/badge/Curated%20Research%20Dataset-Download-006D77?style=for-the-badge&logo=databricks&logoColor=white" alt="Curated Research Dataset">
+  </a>
+</p>
+
+
+<p align="center">
+  <a href="./Citation.bib">
+    <img src="https://img.shields.io/badge/Citation%20Record-BibTeX-4B3F72?style=for-the-badge&logo=readthedocs&logoColor=white" alt="BibTeX Citation">
+  </a>
+</p>
+
 
 </div>
 
