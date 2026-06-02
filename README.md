@@ -33,6 +33,33 @@ An open community platform for spin-dependent exotic interactions and fifth-forc
 </div>
 
 
+<table align="center">
+  <tr>
+    <td align="center" width="280">
+      <h3>Interactive Limit Explorer</h3>
+      <p>Explore, compare, and visualize spin-dependent fifth-force limits.</p>
+      <a href="https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html">
+        <b>Open Viewer →</b>
+      </a>
+    </td>
+    <td align="center" width="280">
+      <h3>Curated Research Dataset</h3>
+      <p>Download normalized datasets, references, and supporting materials.</p>
+      <a href="https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0">
+        <b>Download Dataset →</b>
+      </a>
+    </td>
+    <td align="center" width="280">
+      <h3>Citation Record</h3>
+      <p>Use the BibTeX entry to cite the database in your research work.</p>
+      <a href="./Citation.bib">
+        <b>Get BibTeX →</b>
+      </a>
+    </td>
+  </tr>
+</table>
+
+
 
 ## 1. Overview
 
