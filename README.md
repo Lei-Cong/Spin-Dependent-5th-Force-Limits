@@ -7,31 +7,6 @@ An open community platform for spin-dependent exotic interactions and fifth-forc
 
 ## Quick Access
 
-<div align="center">
-
-<p align="center">
-  <a href="https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html">
-    <img src="https://img.shields.io/badge/Interactive%20Limit%20Explorer-Open%20Viewer-0B3D91?style=for-the-badge&logo=plotly&logoColor=white" alt="Interactive Limit Explorer">
-  </a>
-</p>
-
-
-<p align="center">
-  <a href="https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0">
-    <img src="https://img.shields.io/badge/Curated%20Research%20Dataset-Download-006D77?style=for-the-badge&logo=databricks&logoColor=white" alt="Curated Research Dataset">
-  </a>
-</p>
-
-
-<p align="center">
-  <a href="./Citation.bib">
-    <img src="https://img.shields.io/badge/Citation%20Record-BibTeX-4B3F72?style=for-the-badge&logo=readthedocs&logoColor=white" alt="BibTeX Citation">
-  </a>
-</p>
-
-
-</div>
-
 
 <table align="center">
   <tr>
@@ -59,6 +34,53 @@ An open community platform for spin-dependent exotic interactions and fifth-forc
   </tr>
 </table>
 
+
+<table align="center">
+  <tr>
+    <td align="center" width="300" bgcolor="#f6f8fa">
+      <br>
+      <h3>Interactive Limit Explorer</h3>
+      <p>
+        Explore, compare, and visualize<br>
+        spin-dependent fifth-force limits.
+      </p>
+      <p>
+        <a href="https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/index_multi.html">
+          <b>Open Viewer →</b>
+        </a>
+      </p>
+      <br>
+    </td>
+    <td align="center" width="300" bgcolor="#f6f8fa">
+      <br>
+      <h3>Curated Research Dataset</h3>
+      <p>
+        Download normalized datasets,<br>
+        references, and supporting materials.
+      </p>
+      <p>
+        <a href="https://www.dropbox.com/scl/fi/dq5a37d9ieqfmpm5sjwty/SDFF_dataset_normalized.zip?rlkey=cn53fzpnph8te1j2y9atgfrdz&st=rdf14omq&dl=0">
+          <b>Download Dataset →</b>
+        </a>
+      </p>
+      <br>
+    </td>
+    <td align="center" width="300" bgcolor="#f6f8fa">
+      <br>
+      <h3>Citation Record</h3>
+      <p>
+        Use the BibTeX entry to cite<br>
+        the database in your research.
+      </p>
+      <p>
+        <a href="./Citation.bib">
+          <b>Get BibTeX →</b>
+        </a>
+      </p>
+      <br>
+    </td>
+  </tr>
+</table>
 
 
 ## 1. Overview
