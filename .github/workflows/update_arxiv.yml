@@ -34,9 +34,6 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git fetch origin main
-          git rebase origin/main
-
           git add data/latest_arxiv.json
 
           if git diff --cached --quiet; then
@@ -45,4 +42,7 @@ jobs:
           fi
 
           git commit -m "Update latest arXiv papers"
+
+          git pull --rebase origin main
+
           git push origin main
