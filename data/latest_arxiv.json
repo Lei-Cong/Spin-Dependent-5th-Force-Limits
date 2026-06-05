@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "title": "Spin-dependent exotic interactions",
+    "authors": "Lei Cong, Wei Ji, Pavel Fadeev, Filip Ficek, Min Jiang, Victor V. Flambaum, Haosen Guan, Derek F. Jackson Kimball, Mikhail G. Kozlov, Yevgeny V. Stadnik, Dmitry Budker",
+    "published": "2024-08-28",
+    "summary": "Novel interactions beyond the four known fundamental forces in nature (electromagnetic, gravitational, strong and weak interactions), may arise due to \"new physics\" beyond the standard model, manifesting as a \"fifth force\". This review is focused on spin-dependent fifth forces mediated by exotic bosons such as spin-0 axions and axionlike particles and spin-1 Z' bosons, dark photons, or paraphotons. Many of these exotic bosons are candidates to explain the nature of dark matter and dark energy, and their interactions may violate fundamental symmetries. Spin-dependent interactions between fermions mediated by the exchange of exotic bosons have been investigated in a variety of experiments, par...",
+    "link": "https://arxiv.org/abs/2408.15691v3",
+    "tags": [
+      "fifth force",
+      "spin-dependent",
+      "axion",
+      "dark matter",
+      "comagnetometer",
+      "spectroscopy"
+    ],
+    "score": 32
+  },
+  {
+    "title": "Searching for ultralight bosons with Josephson junction interferometry",
+    "authors": "Djuna Croon, Tanmay Kumar Poddar",
+    "published": "2026-04-26",
+    "summary": "Ultralight bosons sourced by macroscopic objects can generate long-range spin-independent and spin-dependent potentials that are accessible to precision interferometry. Such potentials induce phase shifts in Josephson junctions, detectable through precision current measurements. We propose three experimental scenarios to probe photophilic scalar interactions, Lorentz-violating scalar-mediated interactions, and axion-mediated monopole-dipole interactions, depending on the nature (unpolarized or polarized) of the source. The proposed setups provide sensitivities to novel mixed couplings that are largely unconstrained by existing bounds and enables the exploration of new forces at centimeter to...",
+    "link": "https://arxiv.org/abs/2604.23879v1",
+    "tags": [
+      "fifth force",
+      "spin-dependent",
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 29
+  },
+  {
+    "title": "Searching for Exotic Interactions between Antimatter",
+    "authors": "Lei Cong, Filip Ficek, Pavel Fadeev, Yevgeny V. Stadnik, Dmitry Budker",
+    "published": "2025-03-10",
+    "summary": "We show that atomic antimatter spectroscopy can be used to search for new bosons that carry spin-dependent exotic forces between antifermions. A comparison of a recent precise measurement of the hyperfine splitting of the $1$S and $2$S electronic levels of antihydrogen and bound-state quantum electrodynamics theory yields the first tests of positron-antiproton exotic interactions, constraining the dimensionless coupling strengths $g_pg_p$, $g_Vg_V$ and $g_Ag_A$, corresponding to the exchange of a pseudoscalar (axionlike), vector, or axial-vector boson, respectively. We also discuss new tests of CPT invariance with exotic spin-dependent and spin-independent interactions involving antimatter....",
+    "link": "https://arxiv.org/abs/2503.07161v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "spectroscopy"
+    ],
+    "score": 23
+  },
+  {
+    "title": "Testing Gravity and Predictions Beyond the Standard Model at Short Distances: The Casimir Effect",
+    "authors": "Galina L. Klimchitskaya, Vladimir M. Mostepanenko",
+    "published": "2023-12-03",
+    "summary": "The Standard Model of elementary particles and their interactions does not include the gravitational interaction and faces problems in understanding of the dark matter, dark energy, strong CP violation etc. In continuing attempts to solve these problems, many predictions of new light elementary particles and hypothetical interactions beyond the Standard Model have been made. These predictions can be constrained by many means and, specifically, by measuring the Casimir force arising between two closely spaced bodies due to the zero-point and thermal fluctuations of the electromagnetic field. After a brief survey in the theory of the Casimir effect, the strongest constraints on the power-type ...",
+    "link": "https://arxiv.org/abs/2312.01422v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "dark matter",
+      "Yukawa"
+    ],
+    "score": 23
+  },
+  {
+    "title": "Reply to 'Comment for \"Limits on a nucleon-nucleon monopole-dipole (axionlike) P,T-noninvariant interaction from spin relaxation of polarized He-3\" [arXiv:0912.4963], by A.P. Serebrov'",
+    "authors": "Yu. N. Pokotilovski",
+    "published": "2010-01-21",
+    "summary": "It is shown, that criticism, presented in [arXiv:0912.4963], is based on an elementary error in the calculation of the collision frequency of an atom in a gas with walls of a container and misunderstanding of the method used in [arXiv:0902.1682v2] for obtaining constraints on new short-range spin-dependent interactions....",
+    "link": "https://arxiv.org/abs/1001.3851v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "monopole-dipole",
+      "spectroscopy"
+    ],
+    "score": 21
+  },
+  {
+    "title": "Limits on short-range spin-dependent force from spin relaxation of polarized He-3",
+    "authors": "Yu. N. Pokotilovski",
+    "published": "2009-02-10",
+    "summary": "A new limit is presented on the axionlike P,T-noninvariant monopole-dipole coupling in a range (10^{-4} - 1) cm from existing data on the relaxation of spin-polarized He-3....",
+    "link": "https://arxiv.org/abs/0902.1682v3",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 21
+  },
+  {
+    "title": "Effective Field Theory for Dark Matter Absorption on Single Phonons",
+    "authors": "Andrea Mitridate, Kris Pardo, Tanner Trickle, Kathryn M. Zurek",
+    "published": "2023-08-11",
+    "summary": "Single phonon excitations, with energies in the $1-100 \\, \\text{meV}$ range, are a powerful probe of light dark matter (DM). Utilizing effective field theory, we derive a framework to compute DM absorption rates into single phonons starting from general DM-electron, proton, and neutron interactions. We apply the framework to a variety of DM models: Yukawa coupled scalars, axionlike particles (ALPs) with derivative interactions, and vector DM coupling via gauge interactions or Standard Model electric and magnetic dipole moments. We find that GaAs or $\\text{Al}_2\\text{O}_3$ targets can set powerful constraints on a $U(1)_{B-L}$ model, and targets with electronic spin ordering are similarly sen...",
+    "link": "https://arxiv.org/abs/2308.06314v1",
+    "tags": [
+      "axion",
+      "dark matter",
+      "Yukawa"
+    ],
+    "score": 20
+  },
+  {
+    "title": "Equivalence Principle tests, Equivalence theorems and New long-range forces",
+    "authors": "Pierre Fayet",
+    "published": "2001-11-22",
+    "summary": "We discuss the possible existence of new long-range forces mediated by spin-1 or spin-0 particles. By adding their effects to those of gravity, they could lead to apparent violations of the Equivalence Principle. While the vector part in the couplings of a new spin-1 U boson involves, in general, a combination of the B and L currents, there may also be, in addition, an axial part as well. If the new force has a finite range λ, its intensity is proportional to 1/(λ^2 F^2), F being the extra U(1) symmetry-breaking scale. Quite surprisingly, particle physics experiments can provide constraints on such a new force, even if it is extremely weak, the corresponding gauge coupling being extremely sm...",
+    "link": "https://arxiv.org/abs/hep-ph/0111282v1",
+    "tags": [
+      "fifth force",
+      "spin-dependent",
+      "axion"
+    ],
+    "score": 19
+  },
+  {
+    "title": "Frequency-scanning considerations in axionlike dark matter spin-precession experiments",
+    "authors": "Yuzhe Zhang, Deniz Aybas Tumturk, Hendrik Bekker, Dmitry Budker, Derek F. Jackson Kimball, Alexander O. Sushkov, Arne Wickenbrock",
+    "published": "2023-09-15",
+    "summary": "Galactic dark matter may consist of axionlike particles (ALPs) that can be described as an \"ultralight bosonic field\" oscillating at the ALP Compton frequency. The ALP field can be searched for using nuclear magnetic resonance (NMR), where resonant precession of spins of a polarized sample can be sensitively detected. The ALP mass to which the experiment is sensitive is scanned by sweeping the bias magnetic field. The scanning either results in detection of ALP dark matter or rules out ALP dark matter with sufficiently strong couplings to nuclear spins over the range of ALP masses corresponding to the covered span of Larmor frequencies. In this work, scanning strategies are analyzed with the...",
+    "link": "https://arxiv.org/abs/2309.08462v1",
+    "tags": [
+      "axion",
+      "dark matter",
+      "spectroscopy"
+    ],
+    "score": 16
+  },
+  {
+    "title": "Pseudovector and pseudoscalar spin-dependent interactions in atoms",
+    "authors": "Pavel Fadeev, Filip Ficek, Mikhail G. Kozlov, Dmitry Budker, Victor V. Flambaum",
+    "published": "2019-11-13",
+    "summary": "Hitherto unknown elementary particles can be searched for with atomic spectroscopy. We conduct such a search using a potential that results from the longitudinal polarization of a pseudovector particle. We show that such a potential, inversely proportional to the boson's mass squared, $V \\propto 1/M^2$, can stay finite at $M \\to 0$ if the theory is renormalizable. We also look for a pseudoscalar boson, which induces a contact spin-dependent potential that does not contribute to new forces searched for in experiments with macroscopic objects, but may be seen in atomic spectroscopy. We extract limits on the interaction constants of these potentials from the experimental spectra of antiprotonic...",
+    "link": "https://arxiv.org/abs/1911.05816v2",
+    "tags": [
+      "fifth force",
+      "spin-dependent",
+      "spectroscopy"
+    ],
+    "score": 16
+  }
+]
