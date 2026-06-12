@@ -98,6 +98,19 @@
     "score": 25
   },
   {
+    "title": "Exploring Exotic Spin-Dependent Interactions Beyond the Standard Model: Theoretical Foundations and Experimental Investigations",
+    "authors": "L. Y. Wu, H. Yan",
+    "published": "2026-06-11",
+    "summary": "New interactions mediated by novel particles propose solutions to several important questions in modern physics. Axions serve as examples of such particles; they are lightweight and interact weakly with ordinary matter. This category of particles, including those similar to axions-termed Axion-Like Particles (ALPs)-arises from diverse theoretical frameworks, such as the Peccei-Quinn mechanism addressing the strong CP problem, string theory, and spontaneous supersymmetry breaking. Given their light mass and weak coupling, ALPs are also possible candidates for cold dark matter. Introducing these new interactions mediated by novel particles not only tackles several challenges in modern physics ...",
+    "link": "https://arxiv.org/abs/2606.13318v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "dark matter"
+    ],
+    "score": 23
+  },
+  {
     "title": "Response of Comagnetometer to Exotic Spin-Dependent Couplings",
     "authors": "Yixin Zhao, Xiang Peng, Teng Wu, Hong Guo",
     "published": "2025-06-18",
@@ -122,19 +135,6 @@
       "spin-dependent",
       "axion",
       "spectroscopy"
-    ],
-    "score": 23
-  },
-  {
-    "title": "Axion Window on New Macroscopic Forces",
-    "authors": "Luca Di Luzio, Hector Gisbert, Fabrizio Nesti, Philip Sørensen",
-    "published": "2024-07-22",
-    "summary": "Axion-mediated forces are enhanced by the presence of CP-violating axion couplings, which are however tightly constrained by electric dipole moment (EDM) searches. We discuss the underlying hypotheses behind different sources of CP violation at high energies and the interplay between axion-mediated force experiments and EDM observables. Specifically, we identify various mechanisms, based on new sources of CP violation or Peccei-Quinn symmetry breaking, that can significantly relax EDM constraints, leading to a substantial redefinition of the QCD axion window for axion-mediated forces. By considerably enlarging the QCD axion parameter space, our results provide a well-motivated target for exp...",
-    "link": "https://arxiv.org/abs/2407.15928v2",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "EDM"
     ],
     "score": 23
   }
