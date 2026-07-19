@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="t d"><title id="t">SDFF Interaction Spectrum</title><desc id="d">Nine interaction channels organized around a central exotic mediator</desc>
-  <circle cx="80" cy="80" r="70" fill="#092B43"/>
-  <g fill="none" stroke="#59CDD0" stroke-width="5" stroke-linecap="round">
-    <path d="M80 28v16M113.4 40.7l-10.3 12.2M131.2 69.8l-15.8 2.8M125 105l-13.9-8M97.8 128.9l-5.5-15M62.2 128.9l5.5-15M35 105l13.9-8M28.8 69.8l15.8 2.8M46.6 40.7l10.3 12.2"/>
-  </g>
-  <circle cx="80" cy="80" r="26" fill="#F8FBFC"/>
-  <path d="M62 80c6-15 12-15 18 0s12 15 18 0" fill="none" stroke="#176494" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="80" cy="80" r="4" fill="#59CDD0"/>
-</svg>

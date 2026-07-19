@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 210" role="img" aria-labelledby="t d">
-  <title id="t">SD5F</title><desc id="d">Light-background version of the SD5F identity</desc>
-  <rect width="540" height="210" rx="12" fill="#F6F8F8"/>
-  <text x="34" y="144" fill="#08283E" font-family="Arial,Helvetica,sans-serif" font-size="128" font-weight="800" letter-spacing="-8">SD</text>
-  <text x="222" y="144" fill="#168EA1" font-family="Arial,Helvetica,sans-serif" font-size="128" font-weight="800" letter-spacing="-8">5</text>
-  <text x="307" y="144" fill="#08283E" font-family="Arial,Helvetica,sans-serif" font-size="128" font-weight="800">F</text>
-  <rect x="36" y="166" width="374" height="3" rx="1.5" fill="#168EA1"/>
-  <text x="36" y="193" fill="#627682" font-family="Arial,Helvetica,sans-serif" font-size="10.5" font-weight="700" letter-spacing="3.45">SPIN-DEPENDENT FIFTH FORCE</text>
-</svg>
