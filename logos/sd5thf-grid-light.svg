@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">SD5thF square mark, light version</title>
+  <desc id="desc">The letters S, D, 5th and F arranged as a four-cell mark on warm ivory</desc>
+  <rect width="512" height="512" rx="64" fill="#F3F0E8"/>
+  <path d="M256 70v174" stroke="#677176" stroke-width="7" stroke-linecap="round"/>
+  <path d="M268 256h174" stroke="#3475A3" stroke-width="7" stroke-linecap="round"/>
+  <path d="M256 268v174" stroke="#963F3B" stroke-width="7" stroke-linecap="round"/>
+  <path d="M70 256h174" stroke="#665986" stroke-width="7" stroke-linecap="round"/>
+  <g fill="#102A35" font-family="Arial, Helvetica, sans-serif" font-size="154" font-weight="800" text-anchor="middle">
+    <text x="156" y="218">S</text>
+    <text x="356" y="218">D</text>
+    <text x="356" y="409">F</text>
+  </g>
+  <text x="151" y="409" text-anchor="middle" fill="#B8860B" font-family="Arial, Helvetica, sans-serif" font-size="154" font-weight="800">5</text>
+  <text x="193" y="310" fill="#B8860B" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" letter-spacing="-1">th</text>
+</svg>

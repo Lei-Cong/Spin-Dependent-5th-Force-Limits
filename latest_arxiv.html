@@ -1,32 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#071b2d">
-  <title>Selected Literature · SDFF Limits</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap" rel="stylesheet">
-  <style>
-    :root{--navy:#071b2d;--ink:#102231;--blue:#1b67a5;--paper:#f6f8f8;--muted:#62717d;--line:#dce4e7;--serif:"Source Serif 4",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 var(--sans)}a{color:var(--blue)}.topbar{height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;max-width:1140px;margin:auto;padding:0 24px}.brand{font-weight:700;color:var(--navy);text-decoration:none}.topbar nav{display:flex;gap:25px}.topbar nav a{font-size:13px;font-weight:600;color:#53646f;text-decoration:none}.shell{max-width:1020px;margin:auto;padding:75px 24px 100px}.eyebrow{font-size:11px;color:#3e859c;text-transform:uppercase;letter-spacing:.15em;font-weight:700}.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:end;padding-bottom:48px;border-bottom:1px solid var(--line)}h1{font:600 clamp(3rem,7vw,5rem)/1 var(--serif);letter-spacing:-.05em;margin:14px 0 0;color:var(--navy)}.intro p{color:var(--muted);margin:0}.status{font-size:13px;color:var(--muted);padding:22px 0 8px}.paper{display:grid;grid-template-columns:115px 1fr;gap:30px;padding:34px 0;border-bottom:1px solid var(--line)}.date{font-size:12px;color:#778791;letter-spacing:.04em}.paper-title{font:600 1.5rem/1.25 var(--serif)}.paper-title a{color:var(--navy);text-decoration:none}.paper-title a:hover{color:var(--blue)}.paper-meta{font-size:12px;color:var(--muted);margin:8px 0 13px}.paper-summary{font-size:14px;color:#53646f;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.tag{display:inline-block;background:#e6eef0;color:#3f6573;padding:2px 8px;margin:12px 5px 0 0;border-radius:99px;font-size:10px;font-weight:600}.message{padding:40px 0;color:var(--muted)}@media(max-width:700px){.topbar nav a:not(:first-child){display:none}.intro,.paper{grid-template-columns:1fr}.intro{gap:25px}.paper{gap:8px}.shell{padding-top:52px}}
-  </style>
-</head>
-<body>
-  <header class="topbar"><a class="brand" href="./">SDFF · Research &amp; Community</a><nav aria-label="Primary navigation"><a href="./index_multi.html">Explorer</a><a href="./Datasets.html">Data</a><a href="./community.html">Community</a><a href="https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits">GitHub ↗</a></nav></header>
-  <main class="shell">
-    <section class="intro"><div><span class="eyebrow">Research intelligence</span><h1>Selected literature</h1></div><p>Recent papers relevant to spin-dependent fifth-force searches, precision measurements, axions, ultralight bosons, and related experimental methods.</p></section>
-    <div id="status" class="status" aria-live="polite">Loading selected papers…</div>
-    <section id="paper-list" aria-label="Selected papers"></section>
-  </main>
-  <script>
-    const escapeHTML = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
-    async function loadPapers(){
-      const container=document.getElementById('paper-list');const status=document.getElementById('status');
-      try{const response=await fetch('./data/latest_arxiv.json');if(!response.ok)throw new Error('Request failed');const papers=await response.json();status.textContent=`${papers.length} selected records · updated from the project bibliography`;
-        container.innerHTML=papers.map(paper=>`<article class="paper"><time class="date">${escapeHTML(paper.published)}</time><div><div class="paper-title"><a href="${escapeHTML(paper.link)}" target="_blank" rel="noopener">${escapeHTML(paper.title)} ↗</a></div><div class="paper-meta">${escapeHTML(paper.authors)}</div><div class="paper-summary">${escapeHTML(paper.summary)}</div><div>${(paper.tags||[]).map(tag=>`<span class="tag">${escapeHTML(tag)}</span>`).join('')}</div></div></article>`).join('');
-      }catch(error){status.textContent='';container.innerHTML='<p class="message">The literature feed could not be loaded. Please try again later.</p>';console.error(error)}
-    }loadPapers();
-  </script>
-</body>
-</html>
+---
+layout: default
+title: Selected Literature
+description: Selected papers relevant to spin-dependent fifth-force searches and precision measurements.
+---
+<section class="literature-intro">
+  <div><span class="eyebrow">Research intelligence</span><h1>Selected literature</h1></div>
+  <p>Recent papers relevant to spin-dependent fifth-force searches, precision measurements, axions, ultralight bosons, and related experimental methods.</p>
+</section>
+<div id="status" class="literature-status" aria-live="polite">Loading selected papers…</div>
+<section id="paper-list" class="paper-list" aria-label="Selected papers"></section>
+<script>
+  const escapeHTML = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+  async function loadPapers(){
+    const container=document.getElementById('paper-list');const status=document.getElementById('status');
+    try{const response=await fetch("{{ '/data/latest_arxiv.json' | relative_url }}");if(!response.ok)throw new Error('Request failed');const papers=await response.json();status.textContent=`${papers.length} selected records · updated from the project bibliography`;
+      container.innerHTML=papers.map(paper=>`<article class="paper"><time class="paper-date">${escapeHTML(paper.published)}</time><div><div class="paper-title"><a href="${escapeHTML(paper.link)}" target="_blank" rel="noopener">${escapeHTML(paper.title)} ↗</a></div><div class="paper-meta">${escapeHTML(paper.authors)}</div><div class="paper-summary">${escapeHTML(paper.summary)}</div><div>${(paper.tags||[]).map(tag=>`<span class="paper-tag">${escapeHTML(tag)}</span>`).join('')}</div></div></article>`).join('');
+    }catch(error){status.textContent='';container.innerHTML='<p class="literature-message">The literature feed could not be loaded. Please try again later.</p>';console.error(error)}
+  }loadPapers();
+</script>

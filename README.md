@@ -4,6 +4,10 @@
 
 An open community platform for spin-dependent exotic interactions and fifth-force research.
 
+### SD5thF visual identity
+
+The final vector logos for web, print, posters, and presentations are available in the [`logos/`](./logos/) folder. SVG files can be downloaded and scaled without loss of quality.
+
 
 ## Quick Access
 
