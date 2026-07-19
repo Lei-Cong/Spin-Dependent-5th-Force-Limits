@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 700" role="img" aria-labelledby="t"><title id="t">5FORCE refined identity system</title>
+  <rect width="1120" height="700" rx="28" fill="#E8EDEE"/>
+  <text x="70" y="64" fill="#60737E" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="4">5FORCE · REFINED IDENTITY</text>
+  <image href="5force-primary.svg" x="70" y="96" width="980" height="286" preserveAspectRatio="xMidYMid meet"/>
+  <image href="5force-reverse.svg" x="70" y="398" width="720" height="210"/>
+  <image href="5f-compact.svg" x="830" y="423" width="160" height="160"/>
+  <text x="70" y="646" fill="#60737E" font-family="Arial,sans-serif" font-size="12">Primary wordmark · reverse wordmark · compact navigation mark</text>
+</svg>

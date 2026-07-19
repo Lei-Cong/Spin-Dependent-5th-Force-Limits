@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="t d"><title id="t">SDFF Precession</title><desc id="d">A spin vector precessing around an exotic interaction field</desc>
+  <circle cx="80" cy="80" r="70" fill="#F6FAFB" stroke="#0A304A" stroke-width="7"/>
+  <path d="M36 89c10 30 78 31 91-1" fill="none" stroke="#49B7C0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M128 88l-14-7m14 7-10 12" fill="none" stroke="#49B7C0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80 110V40m0 0-13 15m13-15 13 15" fill="none" stroke="#0A304A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="80" cy="110" r="10" fill="#0A304A"/><circle cx="80" cy="80" r="5" fill="#49B7C0"/>
+</svg>

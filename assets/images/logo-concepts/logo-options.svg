@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img" aria-labelledby="t"><title id="t">Three SDFF logo directions</title>
+  <rect width="900" height="340" rx="24" fill="#F4F7F8"/>
+  <g transform="translate(70 40)"><image href="concept-a-exchange.svg" width="180" height="180"/><text x="90" y="220" text-anchor="middle" fill="#092B43" font-family="Arial,sans-serif" font-size="20" font-weight="700">A · EXCHANGE</text><text x="90" y="247" text-anchor="middle" fill="#687A85" font-family="Arial,sans-serif" font-size="13">bold · direct · high contrast</text></g>
+  <g transform="translate(360 40)"><image href="concept-b-precession.svg" width="180" height="180"/><text x="90" y="220" text-anchor="middle" fill="#092B43" font-family="Arial,sans-serif" font-size="20" font-weight="700">B · PRECESSION</text><text x="90" y="247" text-anchor="middle" fill="#687A85" font-family="Arial,sans-serif" font-size="13">experimental · dynamic · precise</text></g>
+  <g transform="translate(650 40)"><image href="concept-c-spectrum.svg" width="180" height="180"/><text x="90" y="220" text-anchor="middle" fill="#092B43" font-family="Arial,sans-serif" font-size="20" font-weight="700">C · SPECTRUM</text><text x="90" y="247" text-anchor="middle" fill="#687A85" font-family="Arial,sans-serif" font-size="13">platform · taxonomy · unified</text></g>
+</svg>

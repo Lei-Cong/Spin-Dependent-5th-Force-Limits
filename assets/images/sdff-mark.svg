@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title desc">
+  <title id="title">SDFF</title>
+  <desc id="desc">Opposing spin states coupled through a wave-like exotic interaction</desc>
+  <defs>
+    <linearGradient id="field" x1="20" y1="40" x2="60" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1D6297"/>
+      <stop offset="1" stop-color="#53B7BE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Stable outer boundary: a field / research domain rather than a literal atom. -->
+  <circle cx="40" cy="40" r="35" fill="#F8FBFC" stroke="#A8C5D0" stroke-width="2"/>
+
+  <!-- A restrained fifth-force wave. The single continuous stroke remains legible at 24 px. -->
+  <path d="M21 40 C27 29 33 29 40 40 C47 51 53 51 59 40"
+        fill="none" stroke="url(#field)" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Two fermionic endpoints. -->
+  <circle cx="19" cy="40" r="5.5" fill="#103B5B" stroke="#F8FBFC" stroke-width="2"/>
+  <circle cx="61" cy="40" r="5.5" fill="#45AEB8" stroke="#F8FBFC" stroke-width="2"/>
+
+  <!-- Opposing spin projections, deliberately separated from the interaction curve. -->
+  <path d="M19 29 V17 M19 17 L15.5 21 M19 17 L22.5 21"
+        fill="none" stroke="#103B5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M61 51 V63 M61 63 L57.5 59 M61 63 L64.5 59"
+        fill="none" stroke="#327F8C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Small central mediator: visually anchors the exchange without cluttering the mark. -->
+  <circle cx="40" cy="40" r="2.4" fill="#F8FBFC" stroke="#2F879C" stroke-width="1.8"/>
+</svg>

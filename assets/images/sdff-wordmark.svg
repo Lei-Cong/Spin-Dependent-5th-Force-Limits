@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 92" role="img" aria-labelledby="title desc">
+  <title id="title">SDFF Research and Community Platform</title>
+  <desc id="desc">SDFF wordmark with two opposing spin states coupled through an exotic interaction</desc>
+  <defs>
+    <linearGradient id="field" x1="20" y1="46" x2="66" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1D6297"/><stop offset="1" stop-color="#53B7BE"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(4 4)">
+    <circle cx="42" cy="42" r="37" fill="#F8FBFC" stroke="#A8C5D0" stroke-width="2"/>
+    <path d="M21 42 C27 31 34 31 42 42 C50 53 57 53 63 42" fill="none" stroke="url(#field)" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="19" cy="42" r="5.5" fill="#103B5B" stroke="#F8FBFC" stroke-width="2"/>
+    <circle cx="65" cy="42" r="5.5" fill="#45AEB8" stroke="#F8FBFC" stroke-width="2"/>
+    <path d="M19 31V18m0 0-3.5 4m3.5-4 3.5 4M65 53v13m0 0-3.5-4m3.5 4 3.5-4" fill="none" stroke="#234F69" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="42" cy="42" r="2.4" fill="#F8FBFC" stroke="#2F879C" stroke-width="1.8"/>
+  </g>
+  <text x="102" y="48" fill="#092238" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" letter-spacing="1">SDFF</text>
+  <text x="104" y="69" fill="#647786" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="600" letter-spacing="2.35">RESEARCH &amp; COMMUNITY PLATFORM</text>
+</svg>

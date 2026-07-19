@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210" role="img" aria-labelledby="t d">
+  <title id="t">5FORCE</title><desc id="d">Light-background version of the 5FORCE identity</desc>
+  <rect width="720" height="210" rx="12" fill="#F6F8F8"/>
+  <text x="174" y="46" fill="#657986" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" letter-spacing="7">SPIN-DEPENDENT</text>
+  <text x="44" y="156" fill="#178DA0" font-family="Arial,Helvetica,sans-serif" font-size="132" font-weight="800" letter-spacing="-5">5</text>
+  <text x="151" y="156" fill="#08283E" font-family="Arial,Helvetica,sans-serif" font-size="132" font-weight="800" letter-spacing="-7">FORCE</text>
+  <rect x="174" y="177" width="450" height="3" rx="1.5" fill="#178DA0"/>
+  <text x="174" y="197" fill="#657986" font-family="Arial,Helvetica,sans-serif" font-size="9.5" font-weight="700" letter-spacing="3.8">RESEARCH · DATA · COMMUNITY</text>
+</svg>
