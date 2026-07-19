@@ -4,7 +4,11 @@
 <meta charset="utf-8" />
 <title>SDFF Limits — Multi-Group Viewer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#071b2d" />
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap" rel="stylesheet">
 
 <style>
   :root{--bd:#e5e7eb;--fg:#111;--muted:#666;}
@@ -32,13 +36,19 @@
   .search{display:flex;gap:.4rem;margin:.2rem 0 .6rem 0;}
   .search input{flex:1;border:1px solid var(--bd);border-radius:8px;padding:.35rem .6rem;}
 </style>
+<link rel="stylesheet" href="./assets/css/viewer.css">
 </head>
 
 <body>
-<h2>Spin-Dependent Fifth Force — Interactive Limits Viewer</h2>
-<p class="viewer-intro">
-  Start by selecting a coupling group below, then use the checklist on the right to show, hide, or highlight individual constraints. You can also upload your own two-column dataset for comparison.
-</p>
+<header class="viewer-nav">
+  <a class="viewer-brand" href="./"><span class="viewer-brand-mark">SD</span><span><strong>SDFF Limits</strong><small>Research platform</small></span></a>
+  <nav aria-label="Viewer navigation"><a href="./">Overview</a><a href="./Datasets.html">Data</a><a href="./Experiments.html">Experiments</a><a href="https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits">GitHub ↗</a></nav>
+</header>
+
+<section class="viewer-heading">
+  <div><span class="viewer-eyebrow">Interactive analysis</span><h1>Experimental Limit Explorer</h1></div>
+  <p>Select a coupling family, inspect published constraints, or upload a two-column dataset to compare a new result in the same parameter space.</p>
+</section>
 
 <div class="controls">
   <button class="btn active" data-group="gAgA">g<sub>A</sub>g<sub>A</sub></button>
@@ -58,7 +68,7 @@
 
   <div id="side" class="panel">
     <div class="search">
-      <input id="filter" placeholder="Filter by filename or folder..." />
+      <input id="filter" aria-label="Filter constraints" placeholder="Search constraints…" />
     </div>
     <div id="checklist"></div>
     <div class="hint">

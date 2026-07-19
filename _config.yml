@@ -1,3 +1,8 @@
+title: Spin-Dependent Fifth-Force Limits
+description: A community research platform for standardized constraints on spin-dependent exotic interactions.
+url: "https://lei-cong.github.io"
+baseurl: "/Spin-Dependent-5th-Force-Limits"
+
 markdown: kramdown
 kramdown:
   math_engine: mathjax
@@ -5,3 +10,15 @@ kramdown:
     cdn: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 theme: jekyll-theme-minimal
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.log
+  - READMEMay9-2026.md
+  - environment.yml
+  - requirements.txt
