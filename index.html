@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Spin-Dependent Fifth-Force Limits
+title: SDFF
 description: Explore, compare, and reuse standardized constraints on spin-dependent exotic interactions.
 ---
 <section class="home-hero">
@@ -16,7 +16,7 @@ description: Explore, compare, and reuse standardized constraints on spin-depend
   </div>
   <div class="hero-visual">
     <img src="{{ '/Interactive Limits Viewer screenshot.png' | relative_url }}" alt="Selection of experimental exclusion curves in the SDFF interactive viewer">
-    <div class="visual-label"><span>Interactive exclusion limits</span><span>7 coupling families</span></div>
+    <div class="visual-label"><span>Interactive exclusion limits</span><span>9 coupling types</span></div>
   </div>
 </section>
 
@@ -26,10 +26,10 @@ description: Explore, compare, and reuse standardized constraints on spin-depend
 </section>
 
 <section class="metrics" aria-label="Platform summary">
-  <div class="metric"><strong>285</strong><span>Curated datasets</span></div>
-  <div class="metric"><strong>7</strong><span>Coupling families</span></div>
-  <div class="metric"><strong>10⁻¹⁴–10¹⁴ m</strong><span>Interaction range</span></div>
-  <div class="metric"><strong>Open</strong><span>Community resource</span></div>
+  <div class="metric"><strong id="dataset-count">285</strong><span>Curated datasets</span></div>
+  <div class="metric"><strong>9</strong><span>Coupling types</span></div>
+  <div class="metric"><strong>10<sup>−19</sup>–10<sup>14</sup> m</strong><span>Interaction range</span></div>
+  <a class="metric metric-link" href="{{ '/community.html' | relative_url }}"><strong>Open <span aria-hidden="true">→</span></strong><span>Community resource</span></a>
 </section>
 
 <section>
@@ -51,6 +51,17 @@ description: Explore, compare, and reuse standardized constraints on spin-depend
     </div>
   </div>
 </section>
+
+<script>
+  fetch("{{ '/datasets_multi.json' | relative_url }}")
+    .then(response => response.ok ? response.json() : Promise.reject())
+    .then(manifest => {
+      const total = Object.values(manifest).reduce((groupTotal, group) =>
+        groupTotal + Object.values(group).reduce((sum, entries) => sum + entries.length, 0), 0);
+      document.getElementById('dataset-count').textContent = total.toLocaleString('en-US');
+    })
+    .catch(() => {});
+</script>
 
 <section>
   <div class="section-heading">

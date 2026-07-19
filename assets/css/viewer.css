@@ -2,7 +2,7 @@
 body{font-family:var(--sans);color:var(--ink);background:var(--paper);padding:0 28px 60px}
 .viewer-nav{height:72px;max-width:1800px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
 .viewer-brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--navy)}
-.viewer-brand-mark{width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:11px;font-weight:700;letter-spacing:.04em}
+.viewer-brand-mark{width:42px;height:42px;object-fit:contain}
 .viewer-brand>span:last-child{display:flex;flex-direction:column;line-height:1.15}.viewer-brand strong{font-size:15px}.viewer-brand small{font-size:9px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted);margin-top:3px}
 .viewer-nav nav{display:flex;gap:26px}.viewer-nav nav a{font-size:13px;font-weight:600;color:#52636f;text-decoration:none}.viewer-nav nav a:hover{color:var(--blue)}
 .viewer-heading{max-width:1800px;margin:0 auto;padding:48px 0 28px;display:flex;justify-content:space-between;align-items:end;gap:40px}
