@@ -72,18 +72,6 @@
     "score": 28
   },
   {
-    "title": "Quantum Sensors for High Precision Measurements of Spin-dependent Interactions",
-    "authors": "Dmitry Budker, Thomas Cecil, Timothy E. Chupp, Andrew A. Geraci, Derek F. Jackson Kimball, Shimon Kolkowitz, Surjeet Rajendran, Jaideep T. Singh, Alexander O. Sushkov",
-    "published": "2022-03-17",
-    "summary": "The applications of spin-based quantum sensors to measurements probing fundamental physics are surveyed. Experimental methods and technologies developed for quantum information science have rapidly advanced in recent years, and these tools enable increasingly precise control and measurement of spin dynamics. Theories of beyond-the-Standard-Model physics predict, for example, symmetry violating electromagnetic moments aligned with particle spins, exotic spin-dependent forces, coupling of spins to ultralight bosonic dark matter fields, and changes to the local environment that affect spins. Spin-based quantum sensors can be used to search for these myriad phenomena, and offer a methodology for...",
-    "link": "https://arxiv.org/abs/2203.09488v2",
-    "tags": [
-      "spin-dependent",
-      "dark matter"
-    ],
-    "score": 26
-  },
-  {
     "title": "Searches for exotic spin-dependent interactions with spin sensors",
     "authors": "Min Jiang, Haowen Su, Yifan Chen, Man Jiao, Ying Huang, Yuanhong Wang, Xing Rong, Xinhua Peng, Jiangfeng Du",
     "published": "2024-12-04",
@@ -135,6 +123,19 @@
       "spin-dependent",
       "axion",
       "spectroscopy"
+    ],
+    "score": 23
+  },
+  {
+    "title": "Axion Window on New Macroscopic Forces",
+    "authors": "Luca Di Luzio, Hector Gisbert, Fabrizio Nesti, Philip Sørensen",
+    "published": "2024-07-22",
+    "summary": "Axion-mediated forces are enhanced by the presence of CP-violating axion couplings, which are however tightly constrained by electric dipole moment (EDM) searches. We discuss the underlying hypotheses behind different sources of CP violation at high energies and the interplay between axion-mediated force experiments and EDM observables. Specifically, we identify various mechanisms, based on new sources of CP violation or Peccei-Quinn symmetry breaking, that can significantly relax EDM constraints, leading to a substantial redefinition of the QCD axion window for axion-mediated forces. By considerably enlarging the QCD axion parameter space, our results provide a well-motivated target for exp...",
+    "link": "https://arxiv.org/abs/2407.15928v2",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "EDM"
     ],
     "score": 23
   }
