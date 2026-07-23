@@ -912,10 +912,6 @@
         "label": "45Heckel_2008_m_abs_eN"
       },
       {
-        "path": "Dataset/normalized/gVgV/lepton-nucleon/23Cong_2025_m_ep_gVgV_90CL.csv",
-        "label": "23Cong_2025_m_ep_gVgV_90CL"
-      },
-      {
         "path": "Dataset/normalized/gVgV/lepton-nucleon/45Ding_2020_m_abs_eN.csv",
         "label": "45Ding_2020_m_abs_eN"
       },
@@ -930,8 +926,8 @@
     ],
     "nucleon-nucleon": [
       {
-        "path": "Dataset/normalized/gVgV/nucleon-nucleon/45Haddock_2018a_m_abs_nN.csv",
-        "label": "45Haddock_2018a_m_abs_nN"
+        "path": "Dataset/normalized/gVgV/nucleon-nucleon/45Haddock_2018c_m_abs_nN.csv",
+        "label": "45Haddock_2018c_m_abs_nN"
       },
       {
         "path": "Dataset/normalized/gVgV/nucleon-nucleon/3Vasilakis_2009_m_abs_nn.csv",
@@ -982,42 +978,20 @@
         "label": "45Clayburn_2023c_m_abs_pN"
       },
       {
-        "path": "Dataset/normalized/gVgV/nucleon-nucleon/45Haddock_2018b_m_abs_nN copy.csv",
-        "label": "45Haddock_2018b_m_abs_nN copy"
-      }
-    ],
-    "gV_squareV1bounds": [
-      {
-        "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_Torsion.csv",
-        "label": "V1_gse_Torsion"
-      },
-      {
         "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gsN_Casimir.csv",
-        "label": "V1_gsN_Casimir"
+        "label": "V1 · Casimir"
       },
       {
         "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gsN_MS.csv",
-        "label": "V1_gsN_MS"
-      },
-      {
-        "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_EEP.csv",
-        "label": "V1_gse_EEP"
+        "label": "V1 · Molecular spectroscopy"
       },
       {
         "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gsN_EEP.csv",
-        "label": "V1_gsN_EEP"
+        "label": "V1 · EEP"
       },
       {
         "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gsN_Torsion.csv",
-        "label": "V1_gsN_Torsion"
-      },
-      {
-        "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_EMM.csv",
-        "label": "V1_gse_EMM"
-      },
-      {
-        "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_Casimir.csv",
-        "label": "V1_gse_Casimir"
+        "label": "V1 · Torsion"
       }
     ],
     "lepton-lepton": [
@@ -1038,8 +1012,8 @@
         "label": "3Fadeev_2022_3_m_abs_emubar"
       },
       {
-        "path": "Dataset/normalized/gVgV/lepton-lepton/3Terrano_2015_m_abs_eN.csv",
-        "label": "3Terrano_2015_m_abs_eN"
+        "path": "Dataset/normalized/gVgV/lepton-lepton/3Terrano_2015_m_abs_ee.csv",
+        "label": "3Terrano_2015_m_abs_ee"
       },
       {
         "path": "Dataset/normalized/gVgV/lepton-lepton/45Ficek_2017_V4+5_m_abs_ee.csv",
@@ -1047,7 +1021,23 @@
       },
       {
         "path": "Dataset/normalized/gVgV/lepton-lepton/V_1gfactor.csv",
-        "label": "V_1gfactor"
+        "label": "V1 · Electron magnetic moment"
+      },
+      {
+        "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_Torsion.csv",
+        "label": "V1 · Torsion"
+      },
+      {
+        "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_EEP.csv",
+        "label": "V1 · EEP"
+      },
+      {
+        "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_EMM.csv",
+        "label": "V1 · Electron magnetic moment"
+      },
+      {
+        "path": "Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_Casimir.csv",
+        "label": "V1 · Casimir"
       }
     ]
   },

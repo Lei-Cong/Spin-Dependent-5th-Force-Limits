@@ -94,7 +94,7 @@
     .exclusion-notice{display:block}.encoding-key{text-align:left;margin-top:.4rem}
   }
 </style>
-<link rel="stylesheet" href="./assets/css/viewer.css">
+<link rel="stylesheet" href="./assets/css/viewer.css?v=20260723-3">
 </head>
 
 <body>
@@ -110,7 +110,7 @@
 
 <div class="exclusion-notice">
   <div><strong>How to read these limits:</strong> for the upper-limit curves shown here, parameter values above a curve are excluded by that constraint; the region below remains allowed.</div>
-  <div class="encoding-key">Colour = fermion pair · most represented potential = solid · other potentials = distinct line styles · gray solid = combined or astrophysical/cosmological constraint</div>
+  <div class="encoding-key">Colour = fermion pair · most represented potential = solid · other potentials = distinct line styles · dark-gray dash-dot = V₁ comparison · light-gray solid = astrophysical/cosmological constraint</div>
 </div>
 
 <div class="controls">
@@ -173,10 +173,11 @@
 </footer>
 
 <script>
-const MANIFEST_PATH = "./datasets_multi.json";
+const MANIFEST_PATH = "./datasets_multi.json?v=20260723-gvgv1";
 const METADATA_PATHS = {
   gAgV: "./metadata/generated/gAgV-constraints.json",
-  gAgA: "./metadata/generated/gAgA-constraints.json"
+  gAgA: "./metadata/generated/gAgA-constraints.json",
+  gVgV: "./metadata/generated/gVgV-constraints.json"
 };
 
 const AXIS_CONFIG = {
@@ -285,6 +286,20 @@ let metadataByPath = new Map();
 let metadataCollapsed = false;
 let activeRecordText = "";
 
+function updateSidebarPinning(){
+  const side = document.getElementById("side");
+  const wrap = document.getElementById("wrap");
+  if (!side || !wrap || window.matchMedia("(max-width: 900px)").matches){
+    side?.classList.remove("viewport-pinned");
+    return;
+  }
+  const wrapTop = wrap.getBoundingClientRect().top + window.scrollY;
+  side.classList.toggle("viewport-pinned", window.scrollY >= wrapTop - 16);
+}
+
+window.addEventListener("scroll", updateSidebarPinning, { passive:true });
+window.addEventListener("resize", updateSidebarPinning);
+
 function escapeHtml(value){
   return String(value ?? "").replace(/[&<>"']/g, char => ({
     "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;"
@@ -333,7 +348,7 @@ function fullRecordText(record){
     `Method: ${humanize(record.method.technique)}`,
     ...(record.method.source ? [`Source: ${humanize(record.method.source)}`] : []),
     ...(record.method.sensor ? [`Sensor: ${humanize(record.method.sensor)}`] : []),
-    `Review location: ${record.review_location.figure}; ${record.review_location.section}`,
+    ...(record.review_location ? [`Review location: ${record.review_location.figure}; ${record.review_location.section}`] : []),
     `Curation status: ${record.curation.status}`,
     `Dataset ID: ${record.id}`,
     "",
@@ -378,12 +393,16 @@ function renderMetadata(dataset){
   const panel = document.getElementById("metadata-panel");
   const metadata = METADATA_BY_COUPLING[current];
   if (!metadata){
-    panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>g<sub>A</sub>g<sub>V</sub> and g<sub>A</sub>g<sub>A</sub> are available now</h3><p class="metadata-note">These two coupling types include literature-linked records. The remaining coupling types continue to use the established plotting workflow while their records are curated.</p>`;
+    panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>g<sub>A</sub>g<sub>V</sub>, g<sub>A</sub>g<sub>A</sub>, and g<sub>V</sub>g<sub>V</sub> are available now</h3><p class="metadata-note">These three coupling types include literature-linked records. The remaining coupling types continue to use the established plotting workflow while their records are curated.</p>`;
     return;
   }
   const record = dataset ? metadataByPath.get(dataset.path) : null;
   if (!record){
-    const couplingMarkup = current === "gAgA" ? "g<sub>A</sub>g<sub>A</sub>" : "g<sub>A</sub>g<sub>V</sub>";
+    const couplingMarkup = current === "gAgA"
+      ? "g<sub>A</sub>g<sub>A</sub>"
+      : current === "gVgV"
+        ? "g<sub>V</sub>g<sub>V</sub>"
+        : "g<sub>A</sub>g<sub>V</sub>";
     panel.innerHTML = `<span class="metadata-kicker">Literature-linked data</span><h3>Select a ${couplingMarkup} constraint</h3><p class="metadata-note">Click a curve, legend item, or constraint name to inspect its method, publication, DOI, and downloadable data.</p>`;
     return;
   }
@@ -410,13 +429,14 @@ function renderMetadata(dataset){
         ${record.method.category !== "dedicated_source_sensor" || (!record.method.source && !record.method.sensor) ? `<dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>` : ""}
         ${record.method.category === "dedicated_source_sensor" && record.method.source ? `<dt>Source</dt><dd>${escapeHtml(humanize(record.method.source))}</dd>` : ""}
         ${record.method.category === "dedicated_source_sensor" && record.method.sensor ? `<dt>Sensor</dt><dd>${escapeHtml(humanize(record.method.sensor))}</dd>` : ""}
-        <dt>Review</dt><dd>${escapeHtml(record.review_location.figure)} · ${escapeHtml(record.review_location.section)}</dd>
+        ${record.review_location ? `<dt>Review</dt><dd>${escapeHtml(record.review_location.figure)} · ${escapeHtml(record.review_location.section)}</dd>` : ""}
       </dl>
       ${references}
       <div class="metadata-actions"><a href="./${escapeHtml(record.data_file)}" download>Download CSV ↓</a><a href="https://doi.org/10.1103/RevModPhys.97.025005" target="_blank" rel="noopener">Read the RMP review ↗</a></div>
       <p class="metadata-note">${escapeHtml(metadata.notice)}</p>
       <button type="button" id="metadata-info" class="metadata-record-link">Something incomplete or incorrect? View full record →</button>
     </div>`;
+  document.getElementById("side")?.scrollTo({ top: 0, behavior: "smooth" });
   bindMetadataControls(record);
 }
 
@@ -540,12 +560,13 @@ function datasetTags(dataset){
       filename.startsWith("V16_") ? "V16" :
       filename.startsWith("Combined_") ? "combined" : "other");
   const combined = potential === "combined" || /^Combined_/i.test(filename);
-  const hasNamedPotential = !["combined","other","astrophysical","cosmological"].includes(potential);
+  const v1Comparison = potential === "V1" && record?.method?.category === "comparison_v1";
+  const hasNamedPotential = !["combined","other","astrophysical","cosmological","V1"].includes(potential);
   const astrophysical = potential === "astrophysical" ||
     (!hasNamedPotential && record?.method?.source === "astrophysical") ||
     (!hasNamedPotential && /astro|astronom/i.test(`${dataset.path} ${record?.method?.technique || ""}`));
   const cosmological = !hasNamedPotential && /cosmolog/i.test(`${dataset.path} ${record?.method?.technique || ""}`);
-  return { potential, pair, combined, astrophysical, cosmological };
+  return { potential, pair, combined, astrophysical, cosmological, v1Comparison };
 }
 
 const PAIR_COLORS = {
@@ -568,7 +589,7 @@ function potentialLineStyles(datasets){
   const counts = {};
   datasets.forEach(dataset => {
     const tags = datasetTags(dataset);
-    if (!tags.combined && !tags.astrophysical && !tags.cosmological){
+    if (!tags.combined && !tags.astrophysical && !tags.cosmological && !tags.v1Comparison){
       counts[tags.potential] = (counts[tags.potential] || 0) + 1;
     }
   });
@@ -584,6 +605,7 @@ function potentialLineStyles(datasets){
 function curveStyle(dataset, potentialStyles){
   const tags = datasetTags(dataset);
   if (tags.combined) return { color:"#4f5961", dash:"solid" };
+  if (tags.v1Comparison) return { color:"#596168", dash:"dashdot" };
   if (tags.astrophysical || tags.cosmological) return { color:"#a3aaaf", dash:"solid" };
   return {
     color: PAIR_COLORS[tags.pair] || "#287a94",
@@ -700,6 +722,7 @@ function traceIsVisible(chartId, dataset){
     state[`pair:${tags.pair}`] !== false &&
     (!tags.astrophysical || state.astrophysical !== false) &&
     (!tags.cosmological || state.cosmological !== false) &&
+    (!tags.v1Comparison || state.v1Comparison !== false) &&
     (!tags.combined || state.combined !== false);
 }
 
@@ -829,7 +852,7 @@ function buildChartCard(groupKey, subfolder, datasets){
   const filterWrap = document.createElement("div");
   filterWrap.className = "chart-filters";
   const potentials = [...new Set(datasets.map(dataset => datasetTags(dataset).potential))]
-    .filter(value => !["combined","other","astrophysical","cosmological"].includes(value));
+    .filter(value => !["combined","other","astrophysical","cosmological","V1"].includes(value));
   const pairs = [...new Set(datasets.map(dataset => datasetTags(dataset).pair))]
     .filter(value => value !== "other");
   const filterRows = [
@@ -837,6 +860,7 @@ function buildChartCard(groupKey, subfolder, datasets){
     { label:"Fermion pair", specs:pairs.map(value => ({ key:`pair:${value}`, label:value, kind:"pair", visual:PAIR_COLORS[value] })) },
     { label:"Other constraints", specs:[
       ...(datasets.some(dataset => datasetTags(dataset).combined) ? [{ key:"combined", label:"Combined" }] : []),
+      ...(datasets.some(dataset => datasetTags(dataset).v1Comparison) ? [{ key:"v1Comparison", label:"V₁ comparison" }] : []),
       ...(datasets.some(dataset => datasetTags(dataset).astrophysical) ? [{ key:"astrophysical", label:"Astrophysical" }] : []),
       ...(datasets.some(dataset => datasetTags(dataset).cosmological) ? [{ key:"cosmological", label:"Cosmological" }] : [])
     ]}
@@ -1191,6 +1215,7 @@ document.querySelectorAll(".btn").forEach(btn => {
     renderCharts();
     renderChecklist();
     renderMetadata(null);
+    updateSidebarPinning();
   }catch(e){
     console.error(e);
     alert("Failed to load data:\n" + e.message);
