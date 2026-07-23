@@ -49,7 +49,7 @@ This is a pilot, not an authoritative scientific release. Existing CSV data and 
 | `V1213_Clayburn_2023_p-N.csv` | V12+13 | proton-nucleon | `clayburn_using_2023` | earth_source_spin_velocity_experiment | **probable** |  |
 | `V1213_Shu_2024_p-N.csv` | V12+13 | proton-nucleon | `shu_constraint_2024` | atom_interferometer | **probable** |  |
 | `V1213_Su_2021_n-N.csv` | V12+13 | neutron-nucleon | `su_search_2021` | spin_based_amplifier | **probable** |  |
-| `V1213_Wu_2023_n-N.csv` | V12+13 | neutron-nucleon | `wu_new_2023` | astronomical_source_reanalysis | **probable** |  |
+| `V1213_Wu_2023_n-N.csv` | V12+13 | neutron-nucleon | `wu_new_2023` | solar_lunar_source_comagnetometer_reanalysis | **probable** |  |
 | `V1213_Yan_2013_n-N.csv` | V12+13 | neutron-nucleon | `yan_new_2013` | neutron_spin_rotation | **probable** |  |
 | `V1213_Yan_2015_n-N.csv` | V12+13 | neutron-nucleon | `yan_searching_2015` | polarized_helium_spin_relaxation | **probable** |  |
 

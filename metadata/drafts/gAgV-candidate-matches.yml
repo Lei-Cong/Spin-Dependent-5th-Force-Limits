@@ -760,10 +760,10 @@ records:
     potential: "V12+13"
     fermion_pair: "neutron-nucleon"
     method:
-      category: "complementary_experiment"
-      technique: "astronomical_source_reanalysis"
-      source: ""
-      sensor: ""
+      category: "dedicated_source_sensor"
+      technique: "solar_lunar_source_comagnetometer_reanalysis"
+      source: "sun_and_moon"
+      sensor: "dual_species_comagnetometers"
     references:
       - "wu_new_2023"
     review_location:

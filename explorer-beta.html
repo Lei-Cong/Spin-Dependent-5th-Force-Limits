@@ -32,6 +32,10 @@
   .filter-row>span{width:7.2rem;color:#6b7785;font-size:.72rem;font-weight:700;letter-spacing:.03em}
   .filter-chip{border:1px solid #9eb8c2;border-radius:999px;background:#eaf4f6;color:#125d73;padding:.28rem .55rem;font-size:.74rem;font-weight:700;cursor:pointer}
   .filter-chip.off{background:#fff;color:#84929a;border-color:#d7dfe3;text-decoration:line-through}
+  .filter-chip.pair-key{color:var(--key-color);border-color:var(--key-color);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--key-color) 28%,transparent)}
+  .filter-chip.pair-key.off{color:var(--key-color);border-color:var(--key-color);opacity:.4}
+  .filter-chip.potential-key{border-width:2px;background:#fff}
+  .filter-chip.potential-key.off{opacity:.4}
   .exclusion-notice{display:flex;justify-content:space-between;gap:1.5rem;align-items:center;margin:.35rem 0 .85rem;padding:.75rem .9rem;border:1px solid #c7dce3;border-left:4px solid #197997;border-radius:8px;background:#f3f9fa;color:#294552;font-size:.84rem;line-height:1.45}
   .exclusion-notice strong{color:#0c526a}
   .encoding-key{color:#627681;font-size:.76rem;text-align:right}
@@ -106,7 +110,7 @@
 
 <div class="exclusion-notice">
   <div><strong>How to read these limits:</strong> for the upper-limit curves shown here, parameter values above a curve are excluded by that constraint; the region below remains allowed.</div>
-  <div class="encoding-key">Colour = fermion pair · line style = interaction potential · gray solid = combined or astrophysical constraint</div>
+  <div class="encoding-key">Colour = fermion pair · most represented potential = solid · other potentials = distinct line styles · gray solid = combined or astrophysical/cosmological constraint</div>
 </div>
 
 <div class="controls">
@@ -187,6 +191,10 @@ const GROUP_Y_RANGES = {
   gpgs: [1e-40, 1e10],
   gpgp: [1e-27, 1e12],
   gsgs: [1e-50, 1e6]
+};
+
+const CHART_Y_RANGES = {
+  "gAgV/nucleon-nucleon": [1e-60, 1e0]
 };
 
 async function fetchText(url){
@@ -387,7 +395,7 @@ function renderMetadata(dataset){
       <dl class="metadata-grid">
         <dt>Interaction potential</dt><dd>${potentialMarkup(record.potential)}</dd>
         <dt>Fermion pair</dt><dd>${escapeHtml(record.fermion_pair)}</dd>
-        <dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>
+        ${record.method.category !== "dedicated_source_sensor" || (!record.method.source && !record.method.sensor) ? `<dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>` : ""}
         ${record.method.category === "dedicated_source_sensor" && record.method.source ? `<dt>Source</dt><dd>${escapeHtml(humanize(record.method.source))}</dd>` : ""}
         ${record.method.category === "dedicated_source_sensor" && record.method.sensor ? `<dt>Sensor</dt><dd>${escapeHtml(humanize(record.method.sensor))}</dd>` : ""}
         <dt>Review</dt><dd>${escapeHtml(record.review_location.figure)} · ${escapeHtml(record.review_location.section)}</dd>
@@ -492,6 +500,12 @@ function resolveAxisRanges(groupKey, subfolder, datasets){
     yMax = GROUP_Y_RANGES[groupKey][1];
   }
 
+  const chartRange = CHART_Y_RANGES[`${groupKey}/${subfolder}`];
+  if (chartRange) {
+    yMin = chartRange[0];
+    yMax = chartRange[1];
+  }
+
   if (!(x[0] > 0 && x[1] > x[0])) {
     x = AXIS_CONFIG.defaults.x.slice();
   }
@@ -514,10 +528,11 @@ function datasetTags(dataset){
       filename.startsWith("V16_") ? "V16" :
       filename.startsWith("Combined_") ? "combined" : "other");
   const combined = potential === "combined" || /^Combined_/i.test(filename);
-  const astrophysical =
+  const hasNamedPotential = !["combined","other"].includes(potential);
+  const astrophysical = !hasNamedPotential &&
     record?.method?.source === "astrophysical" ||
-    /astro|astronom/i.test(`${dataset.path} ${record?.method?.technique || ""}`);
-  const cosmological = /cosmolog/i.test(`${dataset.path} ${record?.method?.technique || ""}`);
+    (!hasNamedPotential && /astro|astronom/i.test(`${dataset.path} ${record?.method?.technique || ""}`));
+  const cosmological = !hasNamedPotential && /cosmolog/i.test(`${dataset.path} ${record?.method?.technique || ""}`);
   return { potential, pair, combined, astrophysical, cosmological };
 }
 
@@ -533,20 +548,30 @@ const PAIR_COLORS = {
   "n-n":"#566f9e"
 };
 
-const POTENTIAL_DASHES = {
-  "V11":"solid",
-  "V12+13":"dash",
-  "V16":"dot",
-  "other":"dashdot"
-};
+function potentialLineStyles(datasets){
+  const counts = {};
+  datasets.forEach(dataset => {
+    const tags = datasetTags(dataset);
+    if (!tags.combined && !tags.astrophysical && !tags.cosmological){
+      counts[tags.potential] = (counts[tags.potential] || 0) + 1;
+    }
+  });
+  const ranked = Object.entries(counts).sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const styles = {};
+  const alternatives = ["dash","dot","dashdot","longdash"];
+  ranked.forEach(([potential], index) => {
+    styles[potential] = index === 0 ? "solid" : alternatives[(index - 1) % alternatives.length];
+  });
+  return styles;
+}
 
-function curveStyle(dataset){
+function curveStyle(dataset, potentialStyles){
   const tags = datasetTags(dataset);
   if (tags.combined) return { color:"#4f5961", dash:"solid" };
   if (tags.astrophysical || tags.cosmological) return { color:"#a3aaaf", dash:"solid" };
   return {
     color: PAIR_COLORS[tags.pair] || "#287a94",
-    dash: POTENTIAL_DASHES[tags.potential] || POTENTIAL_DASHES.other
+    dash: potentialStyles[tags.potential] || "dashdot"
   };
 }
 
@@ -611,17 +636,34 @@ function createExportMenu(chartId, groupKey, subfolder){
     <button type="button" data-export="json">View configuration as JSON</button>
   </div>`;
   menu.querySelectorAll("[data-export]").forEach(button => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       const format = button.dataset.export;
       const base = `${safeFilename(groupKey)}-${safeFilename(subfolder)}-limits`;
       if (format === "png" || format === "svg"){
-        Plotly.downloadImage(document.getElementById(chartId), {
-          format,
-          filename: base,
-          width: 1400,
-          height: 900,
-          scale: format === "png" ? 2 : 1
-        });
+        const graph = document.getElementById(chartId);
+        const originalTitle = graph.layout.title;
+        const originalTopMargin = graph.layout.margin.t;
+        try{
+          await Plotly.relayout(graph, {
+            "title.text": `${groupKey} / ${subfolder}`,
+            "title.x": 0.5,
+            "title.xanchor": "center",
+            "title.font.size": 22,
+            "margin.t": 65
+          });
+          await Plotly.downloadImage(graph, {
+            format,
+            filename: base,
+            width: 1400,
+            height: 900,
+            scale: format === "png" ? 2 : 1
+          });
+        }finally{
+          await Plotly.relayout(graph, {
+            title: originalTitle || null,
+            "margin.t": originalTopMargin
+          });
+        }
       } else if (format === "csv"){
         exportVisibleCsv(chartId, groupKey, subfolder);
       } else {
@@ -676,10 +718,11 @@ function buildChartCard(groupKey, subfolder, datasets){
   traceIndex[chartId] = {};
   chartDatasets[chartId] = datasets;
   chartFilterState[chartId] = {};
+  const potentialStyles = potentialLineStyles(datasets);
 
   const traces = datasets.map((d, idx) => {
     traceIndex[chartId][d.id] = idx;
-    const visual = curveStyle(d);
+    const visual = curveStyle(d, potentialStyles);
 
     return {
       name: d.name,
@@ -774,8 +817,8 @@ function buildChartCard(groupKey, subfolder, datasets){
   const pairs = [...new Set(datasets.map(dataset => datasetTags(dataset).pair))]
     .filter(value => value !== "other");
   const filterRows = [
-    { label:"Potential", specs:potentials.map(value => ({ key:`potential:${value}`, label:value })) },
-    { label:"Fermion pair", specs:pairs.map(value => ({ key:`pair:${value}`, label:value })) },
+    { label:"Potential", specs:potentials.map(value => ({ key:`potential:${value}`, label:value, kind:"potential", visual:potentialStyles[value] })) },
+    { label:"Fermion pair", specs:pairs.map(value => ({ key:`pair:${value}`, label:value, kind:"pair", visual:PAIR_COLORS[value] })) },
     { label:"Other constraints", specs:[
       ...(datasets.some(dataset => datasetTags(dataset).combined) ? [{ key:"combined", label:"Combined" }] : []),
       ...(datasets.some(dataset => datasetTags(dataset).astrophysical) ? [{ key:"astrophysical", label:"Astrophysical" }] : []),
@@ -792,6 +835,16 @@ function buildChartCard(groupKey, subfolder, datasets){
       chip.type = "button";
       chip.className = "filter-chip";
       chip.textContent = spec.label;
+      if (spec.kind === "pair"){
+        chip.classList.add("pair-key");
+        chip.style.setProperty("--key-color", spec.visual || "#287a94");
+      }
+      if (spec.kind === "potential"){
+        chip.classList.add("potential-key");
+        chip.style.borderStyle = ({
+          solid:"solid", dash:"dashed", dot:"dotted", dashdot:"double", longdash:"dashed"
+        })[spec.visual] || "solid";
+      }
       chip.setAttribute("aria-pressed", "true");
       chip.addEventListener("click", () => {
         const next = chartFilterState[chartId][spec.key] === false;

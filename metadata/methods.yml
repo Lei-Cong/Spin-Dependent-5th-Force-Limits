@@ -32,6 +32,7 @@ techniques:
   atom_interferometer: Atom interferometer
   spin_based_amplifier: Spin-based amplifier
   astronomical_source_reanalysis: Astronomical-source reanalysis
+  solar_lunar_source_comagnetometer_reanalysis: Solar/lunar-source comagnetometer reanalysis
   neutron_spin_rotation: Neutron-spin rotation
   polarized_helium_spin_relaxation: Polarized-helium spin relaxation
   casimir: Casimir constraints combined with astrophysical bounds
@@ -52,6 +53,7 @@ source_keywords:
   cell_walls: Cell walls
   preferred_frame_background: Preferred-frame background
   astrophysical: Astrophysical source
+  sun_and_moon: Sun and Moon
 
 sensor_keywords:
   torsion_pendulum: Torsion pendulum
@@ -67,5 +69,6 @@ sensor_keywords:
   atom_interferometer: Atom interferometer
   spin_based_amplifier: Spin-based amplifier
   astronomical_observation: Astronomical observation
+  dual_species_comagnetometers: Dual-species comagnetometers
   neutron_spin_rotation: Neutron-spin rotation
   polarized_helium_spin_relaxation: Polarized-helium spin relaxation

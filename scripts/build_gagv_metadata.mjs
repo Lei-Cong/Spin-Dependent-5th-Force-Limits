@@ -100,7 +100,7 @@ const sourceMap = {
   "Vasilakis_2009": { key: "vasilakis_limits_2009", category: "dedicated_source_sensor", technique: "comagnetometer", source: "earth", sensor: "comagnetometer" },
   "Shu_2024": { key: "shu_constraint_2024", category: "dedicated_source_sensor", technique: "atom_interferometer", source: "earth", sensor: "atom_interferometer" },
   "Su_2021": { key: "su_search_2021", category: "dedicated_source_sensor", technique: "spin_based_amplifier", source: "polarized_spin_source", sensor: "spin_based_amplifier" },
-  "Wu_2023": { key: "wu_new_2023", category: "complementary_experiment", technique: "astronomical_source_reanalysis", source: "astrophysical", sensor: "astronomical_observation" },
+  "Wu_2023": { key: "wu_new_2023", category: "dedicated_source_sensor", technique: "solar_lunar_source_comagnetometer_reanalysis", source: "sun_and_moon", sensor: "dual_species_comagnetometers" },
   "Yan_2013": { key: "yan_new_2013", category: "dedicated_source_sensor", technique: "neutron_spin_rotation", source: "bulk_matter", sensor: "neutron_spin_rotation" },
   "Yan_2015": { key: "yan_searching_2015", category: "dedicated_source_sensor", technique: "polarized_helium_spin_relaxation", source: "cell_walls", sensor: "polarized_helium_spin_relaxation" }
 };
