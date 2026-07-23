@@ -23,9 +23,9 @@
   .btn.secondary{background:#f7f7f7;}
   .hint{color:#555;font-size:.9rem;line-height:1.35;margin-top:.5rem;}
   .viewer-intro{color:#555;margin:.25rem 0 1rem 0;line-height:1.5;max-width:1000px;}
-  .chartcard{margin:0 0 1rem 0;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;}
+  .chartcard{height:min(820px,calc(100dvh - 24px));min-height:620px;display:grid;grid-template-rows:auto minmax(0,1fr) auto;margin:0 0 1rem 0;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;}
   .chartcard .title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bd);padding:.55rem .8rem;font-weight:600}
-  .chart{height:120vh;background:#fff;}
+  #charts .chart{width:100%;height:auto;min-height:0;background:#fff;}
   .chart-toolbar{display:flex;gap:.5rem;align-items:center;padding:.5rem .8rem;border-top:1px solid #e5e7eb;background:#fafafa;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
   .chart-filters{display:grid;gap:.32rem;flex:1}
   .filter-row{display:flex;gap:.35rem;align-items:center;flex-wrap:wrap}
@@ -72,7 +72,12 @@
   .metadata-dialog pre{max-height:44vh;overflow:auto;padding:1rem;border-radius:9px;background:#f2f6f7;border:1px solid #dde7ea;white-space:pre-wrap;overflow-wrap:anywhere;font:500 .78rem/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
   .metadata-dialog-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem}
   .metadata-dialog-actions button,.metadata-dialog-actions a{border:1px solid #a9c0c9;border-radius:8px;background:#fff;color:#0b647e;padding:.48rem .72rem;text-decoration:none;font:700 .82rem/1 "DM Sans",sans-serif;cursor:pointer}
-  @media(max-width:900px){#wrap{grid-template-columns:1fr}.chart{height:75vh}#checklist{max-height:50vh}}
+  @media(max-width:900px){
+    #wrap{grid-template-columns:1fr}
+    .chartcard{height:auto;min-height:0;display:block}
+    #charts .chart{height:68vh;min-height:430px}
+    #checklist{max-height:50vh}
+  }
 </style>
 <link rel="stylesheet" href="./assets/css/viewer.css">
 </head>
