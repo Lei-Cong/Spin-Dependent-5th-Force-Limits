@@ -1,0 +1,59 @@
+schema_version: 0.1
+description: Pilot schema for linking standardized constraint curves to methods and bibliography records.
+
+required:
+  - id
+  - label
+  - data_file
+  - coupling
+  - fermion_pair
+  - method
+  - references
+  - review_location
+  - curation
+
+fields:
+  id:
+    type: string
+    description: Stable identifier for one displayed curve.
+  label:
+    type: string
+    description: Human-readable curve label.
+  data_file:
+    type: string
+    description: Repository-relative path to the numerical CSV.
+  coupling:
+    type: string
+    allowed: [gAgV]
+  potential:
+    type: string
+    allowed: [V11, V12+13, V16, combined]
+  fermion_pair:
+    type: string
+    description: Pair encoded by the normalized dataset.
+  method:
+    type: object
+    fields:
+      category:
+        type: string
+        allowed: [dedicated_source_sensor, complementary_experiment, combined]
+      technique:
+        type: string
+  references:
+    type: array
+    description: Citation keys resolved against MyLibrary.bib.
+  review_location:
+    type: object
+    fields:
+      section: {type: string}
+      figure: {type: string}
+  curation:
+    type: object
+    fields:
+      status:
+        type: string
+        allowed: [confirmed, probable, needs_review, review_only]
+      evidence:
+        type: array
+      note:
+        type: string

@@ -1,0 +1,41 @@
+schema_version: 0.1
+source_taxonomy:
+  citation_key: cong_spin-dependent_2025
+  sections:
+    - Dedicated source-sensor experiments
+    - Complementary experiments and observations to detect exotic spin-dependent interactions
+
+categories:
+  dedicated_source_sensor:
+    label: Dedicated source–sensor experiments
+    description: Experiments designed around a controlled or naturally occurring source and a spin-sensitive detector.
+  complementary_experiment:
+    label: Complementary experiments and observations
+    description: Precision measurements or observations reinterpreted as constraints on exotic spin-dependent interactions.
+  combined:
+    label: Combined comparison bounds
+    description: Combined bounds shown for comparison in the review; the pilot links these records to the review only.
+
+techniques:
+  spin_polarized_torsion_pendulum: Spin-polarized torsion pendulum
+  earth_source_spin_experiment: Earth-source spin experiment
+  geoelectron_source_spin_experiment: Geoelectron-source spin experiment
+  earth_source_spin_velocity_experiment: Earth-source spin–velocity experiment
+  quantum_spin_amplifier: Quantum spin amplifier
+  atomic_parity_violation: Atomic parity violation
+  atomic_parity_violation_interpretation: Atomic parity-violation interpretation
+  single_electron_spin_quantum_sensor: Single-electron-spin quantum sensor
+  optically_polarized_vapor: Optically polarized vapor
+  ensemble_nv_diamond_magnetometer: Ensemble-NV-diamond magnetometer
+  atomic_magnetometer_array: Atomic-magnetometer array
+  comagnetometer: Comagnetometer
+  atom_interferometer: Atom interferometer
+  spin_based_amplifier: Spin-based amplifier
+  astronomical_source_reanalysis: Astronomical-source reanalysis
+  neutron_spin_rotation: Neutron-spin rotation
+  polarized_helium_spin_relaxation: Polarized-helium spin relaxation
+  casimir: Casimir constraints combined with astrophysical bounds
+  eep: Equivalence-principle constraints combined with astrophysical bounds
+  emm: Electron-magnetic-moment constraints combined with astrophysical bounds
+  ms: Molecular-spectroscopy constraints combined with astrophysical bounds
+  torsion: Torsion-pendulum constraints combined with astrophysical bounds

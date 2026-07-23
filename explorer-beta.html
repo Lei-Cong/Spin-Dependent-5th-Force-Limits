@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SD5thF — Experimental Limit Explorer Beta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0C2340" />
+<link rel="icon" href="./assets/images/brand/sd5thf-grid.svg" type="image/svg+xml" />
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap" rel="stylesheet">
+
+<style>
+  :root{--bd:#e5e7eb;--fg:#111;--muted:#666;}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;padding:1rem;background:#fafafa;}
+  h2{margin:0 0 .25rem 0;font-weight:700;}
+  #wrap{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:1rem;align-items:start;max-width:1800px;margin:0 auto;}
+  .panel{border:1px solid var(--bd);border-radius:12px;padding:.8rem;background:#fff;}
+  .controls{display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0 .8rem 0}
+  .btn{border:1px solid #d1d5db;padding:.35rem .7rem;border-radius:9px;background:#fff;cursor:pointer;}
+  .btn.active{background:#111;color:#fff;border-color:#111;}
+  .btn.secondary{background:#f7f7f7;}
+  .hint{color:#555;font-size:.9rem;line-height:1.35;margin-top:.5rem;}
+  .viewer-intro{color:#555;margin:.25rem 0 1rem 0;line-height:1.5;max-width:1000px;}
+  .chartcard{margin:0 0 1rem 0;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;}
+  .chartcard .title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bd);padding:.55rem .8rem;font-weight:600}
+  .chart{height:120vh;background:#fff;}
+  .chart-toolbar{display:flex;gap:.5rem;align-items:center;padding:.5rem .8rem;border-top:1px solid #e5e7eb;background:#fafafa;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
+  #checklist{max-height:50vh;overflow:auto;border:1px dashed var(--bd);border-radius:10px;padding:.5rem;background:#fff;}
+  .folder{margin:.5rem 0 .8rem 0;}
+  .folder>div.title{font-weight:600;color:#333;margin:.2rem 0 .2rem 0;display:flex;justify-content:space-between;align-items:center;}
+  .folder .count{color:#999;font-weight:500;}
+  .item{display:flex;align-items:center;margin:.28rem 0;}
+  .item input{margin-right:.5rem;}
+  .item label{cursor:pointer;user-select:none;flex:1;}
+  .item label:hover{color:#126f8c;}
+  .search{display:flex;gap:.4rem;margin:.2rem 0 .6rem 0;}
+  .search input{flex:1;border:1px solid var(--bd);border-radius:8px;padding:.35rem .6rem;}
+  .beta-badge{display:inline-flex;align-items:center;margin-left:.6rem;padding:.18rem .48rem;border:1px solid rgba(237,191,78,.6);border-radius:999px;color:#f5d77f;font:700 .68rem/1 "DM Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase;vertical-align:middle}
+  .metadata-panel{margin:.2rem 0 1rem;border:1px solid #dce7eb;border-radius:10px;padding:1rem;background:#f7fbfc}
+  .metadata-kicker{color:#247b98;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+  .metadata-panel h3{margin:.3rem 0 .65rem;font:600 1.35rem/1.2 "Source Serif 4",serif;color:#0c2340}
+  .metadata-grid{display:grid;grid-template-columns:7rem 1fr;gap:.35rem .7rem;margin:.7rem 0;font-size:.88rem}
+  .metadata-grid dt{color:#6b7785}.metadata-grid dd{margin:0;color:#172b3a}
+  .reference-card{padding:.75rem 0;border-top:1px solid #e9edf0}
+  .reference-card strong{display:block;font-size:.92rem;line-height:1.35}
+  .reference-card span{display:block;color:#687784;font-size:.82rem;margin:.25rem 0}
+  .reference-card a{color:#0a617d;font-size:.84rem;font-weight:600;text-decoration:none}
+  .metadata-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.65rem}
+  .metadata-actions a{display:inline-flex;padding:.38rem .62rem;border:1px solid #b9c8d0;border-radius:7px;color:#0a617d;text-decoration:none;font-size:.82rem;font-weight:600}
+  .metadata-note{color:#63717c;font-size:.82rem;line-height:1.45}
+  @media(max-width:900px){#wrap{grid-template-columns:1fr}.chart{height:75vh}#checklist{max-height:50vh}}
+</style>
+<link rel="stylesheet" href="./assets/css/viewer.css">
+</head>
+
+<body>
+<header class="viewer-nav">
+  <a class="viewer-brand" href="./" aria-label="SD5thF Research and Community Platform"><img class="viewer-brand-lockup" src="./assets/images/brand/sd5thf-reverse.svg" alt="SD5thF — Spin-dependent fifth force"></a>
+  <nav aria-label="Primary navigation"><a href="./explorer-beta.html">Limits Explorer</a><a href="./Datasets.html">Data</a><a href="./Experiments.html">Experiments</a><a href="./latest_arxiv.html">Literature</a><a href="./community.html">Community</a><a href="https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits">GitHub ↗</a></nav>
+</header>
+
+<section class="viewer-heading">
+  <div><span class="viewer-eyebrow">Interactive analysis</span><h1>Experimental Limit Explorer <span class="beta-badge">Beta</span></h1></div>
+  <p>Select a coupling type, inspect published constraints and their literature context, or upload a two-column dataset for comparison.</p>
+</section>
+
+<div class="controls">
+  <button class="btn" data-group="gAgA">g<sub>A</sub>g<sub>A</sub></button>
+  <button class="btn active" data-group="gAgV">g<sub>A</sub>g<sub>V</sub></button>
+  <button class="btn" data-group="gpgp">g<sub>p</sub>g<sub>p</sub></button>
+  <button class="btn" data-group="gpgs">g<sub>p</sub>g<sub>s</sub></button>
+  <button class="btn" data-group="gsgs">g<sub>s</sub>g<sub>s</sub></button>
+  <button class="btn" data-group="gVgV">g<sub>V</sub>g<sub>V</sub></button>
+  <button class="btn" data-group="V1">V<sub>1</sub></button>
+  <button class="btn secondary" id="showAll">Show all</button>
+  <button class="btn secondary" id="hideAll">Hide all</button>
+  <button class="btn secondary" id="resetHL">Reset highlight</button>
+</div>
+
+<div id="wrap">
+  <div id="charts" class="panel"></div>
+
+  <div id="side" class="panel">
+    <div class="search">
+      <input id="filter" aria-label="Filter constraints" placeholder="Search constraints…" />
+    </div>
+    <section id="metadata-panel" class="metadata-panel" aria-live="polite">
+      <span class="metadata-kicker">Literature-linked pilot</span>
+      <h3>Select a constraint</h3>
+      <p class="metadata-note">Choose <strong>g<sub>A</sub>g<sub>V</sub></strong>, then click a curve or its name to see the experimental method, source publication, DOI, and data download.</p>
+    </section>
+    <div id="checklist"></div>
+    <div class="hint">
+      • Data are loaded from <strong>datasets_multi.json</strong>.<br/>
+      • Only the selected coupling group is loaded.<br/>
+      • Checklist: check = show/hide; click name = highlight and inspect.<br/>
+      • Hover over a curve to see the dataset name.<br/>
+      • Use “Add my data for comparison” to upload a two-column file.
+    </div>
+  </div>
+</div>
+
+<footer class="viewer-footer">
+  <div class="viewer-footer-grid">
+    <div><a class="viewer-footer-logo" href="./"><img src="./assets/images/brand/sd5thf-primary.svg" alt="SD5thF — Spin-dependent fifth force"></a><p>An open infrastructure for spin-dependent exotic-interaction research, data, tools, literature, and academic exchange.</p></div>
+    <div><strong>Explore</strong><a href="./">Overview</a><a href="./Datasets.html">Curated data</a><a href="./latest_arxiv.html">Literature</a></div>
+    <div><strong>Community</strong><a href="./community.html">Meetings &amp; opportunities</a><a href="./open-positions.html">Open positions</a><a href="./contact.html">Contact the team</a></div>
+  </div>
+  <div class="viewer-footer-bottom"><span>Maintained by Lei Cong and collaborators.</span><span>Data and code available for research reuse.</span></div>
+</footer>
+
+<script>
+const MANIFEST_PATH = "./datasets_multi.json";
+const METADATA_PATH = "./metadata/generated/gAgV-constraints.json";
+
+const AXIS_CONFIG = {
+  defaults: {
+    x: [1e-14, 1e14],
+    y: { min: "auto", max: 1e10 }
+  },
+  overrides: {}
+};
+
+const GROUP_Y_RANGES = {
+  gAgA: [1e-50, 1e20],
+  gAgV: [1e-60, 1e0],
+  gVgV: [1e-50, 1e10],
+  gpgs: [1e-40, 1e10],
+  gpgp: [1e-27, 1e12],
+  gsgs: [1e-50, 1e6]
+};
+
+async function fetchText(url){
+  const r = await fetch(url);
+  if(!r.ok) throw new Error("Fetch failed " + r.status + " " + url);
+  return r.text();
+}
+
+function parse2col(txt){
+  let sep = null;
+  if (txt.includes("\t")) sep = "\t";
+  else if (txt.includes(",")) sep = ",";
+
+  const rows = txt.trim().split(/\r?\n/).map(r =>
+    sep ? r.split(sep) : r.trim().split(/\s+/)
+  );
+
+  let start = 0;
+  if (
+    rows.length &&
+    (isNaN(parseFloat(rows[0][0])) || isNaN(parseFloat(rows[0][1])))
+  ) {
+    start = 1;
+  }
+
+  const x = [], y = [];
+
+  for (let i = start; i < rows.length; i++){
+    const xi = parseFloat(rows[i][0]);
+    const yi = parseFloat(rows[i][1]);
+
+    if (isFinite(xi) && isFinite(yi) && xi > 0 && yi > 0){
+      x.push(xi);
+      y.push(yi);
+    }
+  }
+
+  return {x, y};
+}
+
+function makeMajorLogTicks(minVal, maxVal, nLabels = 5){
+  const minExp = Math.ceil(Math.log10(minVal));
+  const maxExp = Math.floor(Math.log10(maxVal));
+
+  const tickvals = [];
+  const ticktext = [];
+
+  if (nLabels <= 1 || minExp === maxExp) {
+    tickvals.push(Math.pow(10, minExp));
+    ticktext.push(`10<sup>${minExp}</sup>`);
+    return {tickvals, ticktext};
+  }
+
+  const step = (maxExp - minExp) / (nLabels - 1);
+
+  for (let i = 0; i < nLabels; i++){
+    const e = Math.round(minExp + i * step);
+    const val = Math.pow(10, e);
+
+    if (!tickvals.includes(val)){
+      tickvals.push(val);
+      ticktext.push(`10<sup>${e}</sup>`);
+    }
+  }
+
+  return {tickvals, ticktext};
+}
+
+const BASE_LINE = { width:2, opacity:0.9 };
+const HILIGHT_LINE = { width:4, opacity:1.0 };
+const DIM_LINE = { width:2, opacity:0.25 };
+
+let MANIFEST = null;
+let DATA = {};
+let current = "gAgV";
+let traceIndex = {};
+let UPLOADS = {};
+let METADATA = null;
+let metadataByPath = new Map();
+
+function escapeHtml(value){
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;"
+  })[char]);
+}
+
+function humanize(value){
+  return String(value || "—").replaceAll("_", " ").replace(/\b\w/g, c => c.toUpperCase());
+}
+
+async function loadMetadataIfNeeded(){
+  if (METADATA) return METADATA;
+  const res = await fetch(METADATA_PATH + "?_=" + Date.now());
+  if (!res.ok) throw new Error("Failed to load constraint metadata");
+  METADATA = await res.json();
+  metadataByPath = new Map(METADATA.records.map(record => [record.data_file, record]));
+  return METADATA;
+}
+
+function renderMetadata(dataset){
+  const panel = document.getElementById("metadata-panel");
+  if (current !== "gAgV"){
+    panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>g<sub>A</sub>g<sub>V</sub> is available now</h3><p class="metadata-note">The first metadata release covers g<sub>A</sub>g<sub>V</sub>. The remaining coupling types continue to use the established plotting workflow while their records are curated.</p>`;
+    return;
+  }
+  const record = dataset ? metadataByPath.get(dataset.path) : null;
+  if (!record){
+    panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>Select a g<sub>A</sub>g<sub>V</sub> constraint</h3><p class="metadata-note">Click a curve, legend item, or constraint name to inspect its method, publication, DOI, and downloadable data.</p>`;
+    return;
+  }
+  const references = record.references.map(reference => {
+    const link = reference.doi_url || reference.url || reference.arxiv_url;
+    return `<article class="reference-card"><strong>${escapeHtml(reference.title || reference.citation_key)}</strong><span>${escapeHtml([reference.journal, reference.year].filter(Boolean).join(" · "))}</span>${link ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener">Open publication ↗</a>` : ""}</article>`;
+  }).join("");
+  panel.innerHTML = `
+    <span class="metadata-kicker">Constraint record</span>
+    <h3>${escapeHtml(record.label)}</h3>
+    <dl class="metadata-grid">
+      <dt>Interaction</dt><dd>${escapeHtml(record.potential)}</dd>
+      <dt>Fermion pair</dt><dd>${escapeHtml(record.fermion_pair)}</dd>
+      <dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>
+      <dt>Review</dt><dd>${escapeHtml(record.review_location.figure)} · ${escapeHtml(record.review_location.section)}</dd>
+    </dl>
+    ${references}
+    <div class="metadata-actions"><a href="./${escapeHtml(record.data_file)}" download>Download CSV ↓</a><a href="https://doi.org/10.1103/RevModPhys.97.025005" target="_blank" rel="noopener">Read the RMP review ↗</a></div>
+    <p class="metadata-note">${escapeHtml(METADATA.notice)}</p>`;
+}
+
+async function loadManifestIfNeeded(){
+  if (MANIFEST) return MANIFEST;
+
+  const res = await fetch(MANIFEST_PATH + "?_=" + Date.now());
+  if(!res.ok) throw new Error("Failed to load datasets_multi.json");
+
+  MANIFEST = await res.json();
+  return MANIFEST;
+}
+
+async function loadGroupIfNeeded(groupKey){
+  if (DATA[groupKey]) return;
+
+  const manifest = await loadManifestIfNeeded();
+  const group = manifest[groupKey] || {};
+  const result = {};
+
+  for (const sub of Object.keys(group)){
+    result[sub] = [];
+
+    for (const entry of group[sub]){
+      try{
+        const txt = await fetchText(entry.path);
+        const {x, y} = parse2col(txt);
+
+        if (x.length && y.length){
+          result[sub].push({
+            id: `${groupKey}:${entry.path}`,
+            name: entry.label || entry.path,
+            path: entry.path,
+            x,
+            y
+          });
+        }
+      }catch(e){
+        console.warn("Skip", entry.path, e);
+      }
+    }
+  }
+
+  DATA[groupKey] = result;
+}
+
+function computeYMin(datasets){
+  let m = Infinity;
+
+  datasets.forEach(ds => {
+    ds.y.forEach(v => {
+      if (v > 0 && v < m) m = v;
+    });
+  });
+
+  if (!isFinite(m)) m = 1e-20;
+  return m * 0.8;
+}
+
+function resolveAxisRanges(groupKey, subfolder, datasets){
+  let x = AXIS_CONFIG.defaults.x.slice();
+
+  let yMin = AXIS_CONFIG.defaults.y.min === "auto"
+    ? computeYMin(datasets)
+    : AXIS_CONFIG.defaults.y.min;
+
+  let yMax = AXIS_CONFIG.defaults.y.max;
+
+  const g = AXIS_CONFIG.overrides[groupKey] || {};
+  const ov = g[subfolder] || g["*"] || null;
+
+  if (ov){
+    if (ov.x && ov.x.length === 2) {
+      x = ov.x.slice();
+    }
+
+    if (ov.y){
+      if (typeof ov.y.min !== "undefined") yMin = ov.y.min;
+      if (typeof ov.y.max !== "undefined") yMax = ov.y.max;
+    }
+  }
+
+  if (GROUP_Y_RANGES[groupKey]) {
+    yMin = GROUP_Y_RANGES[groupKey][0];
+    yMax = GROUP_Y_RANGES[groupKey][1];
+  }
+
+  if (!(x[0] > 0 && x[1] > x[0])) {
+    x = AXIS_CONFIG.defaults.x.slice();
+  }
+
+  if (!(yMin > 0 && yMax > yMin)) {
+    yMin = 1e-20;
+    yMax = 1e10;
+  }
+
+  return { xRange: x, yRange: [yMin, yMax] };
+}
+
+function buildChartCard(groupKey, subfolder, datasets){
+  const chartsDiv = document.getElementById("charts");
+
+  const card = document.createElement("div");
+  card.className = "chartcard";
+
+  const title = document.createElement("div");
+  title.className = "title";
+  title.innerHTML = `<span>${groupKey} / ${subfolder}</span>`;
+  card.appendChild(title);
+
+  const chartDiv = document.createElement("div");
+  const chartId = `chart-${groupKey}-${subfolder}`.replace(/[^a-zA-Z0-9_-]/g, "_");
+  chartDiv.id = chartId;
+  chartDiv.className = "chart";
+  card.appendChild(chartDiv);
+
+  chartsDiv.appendChild(card);
+
+  traceIndex[chartId] = {};
+
+  const traces = datasets.map((d, idx) => {
+    traceIndex[chartId][d.id] = idx;
+
+    return {
+      name: d.name,
+      x: d.x,
+      y: d.y,
+      customdata: d.x.map(() => d.name),
+      type: "scatter",
+      mode: "lines+markers",
+      hovertemplate:
+        `<b>%{customdata}</b><br>` +
+        `λ = %{x:.2e} m<br>` +
+        `limit ≤ %{y:.2e}<extra></extra>`,
+      visible: true,
+      line: { width: BASE_LINE.width },
+      marker: { size: 5, opacity: 0 },
+      opacity: BASE_LINE.opacity
+    };
+  });
+
+  const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, datasets);
+
+  const xTicks = makeMajorLogTicks(xRange[0], xRange[1], 5);
+  const yTicks = makeMajorLogTicks(yRange[0], yRange[1], 5);
+
+  const layout = {
+    margin:{l:90,r:20,t:10,b:95},
+    xaxis:{
+      type:"log",
+      range:[Math.log10(xRange[0]), Math.log10(xRange[1])],
+      title:{text:"λ [m]"},
+      tickmode:"array",
+      tickvals:xTicks.tickvals,
+      ticktext:xTicks.ticktext,
+      ticks:"outside",
+      showline:true,
+      mirror:true,
+      showgrid:true
+    },
+    yaxis:{
+      type:"log",
+      range:[Math.log10(yRange[0]), Math.log10(yRange[1])],
+      title:{text:"Limit"},
+      tickmode:"array",
+      tickvals:yTicks.tickvals,
+      ticktext:yTicks.ticktext,
+      ticks:"outside",
+      showline:true,
+      mirror:true,
+      showgrid:true
+    },
+    legend:{orientation:"h", x:0.5, xanchor:"center", y:-0.25},
+    hovermode:"closest"
+  };
+
+  const config = {
+    responsive:true,
+    displaylogo:false,
+    modeBarButtonsToAdd:["toImage"]
+  };
+
+  Plotly.newPlot(chartId, traces, layout, config).then(gd => {
+    gd.on("plotly_legendclick", ev => {
+      const ds = datasets[ev.curveNumber];
+      highlightTrace(chartId, ds.id);
+      renderMetadata(ds);
+      return false;
+    });
+    gd.on("plotly_click", ev => {
+      const ds = datasets[ev.points[0].curveNumber];
+      if (!ds) return;
+      highlightTrace(chartId, ds.id);
+      renderMetadata(ds);
+    });
+  });
+
+  const bar = document.createElement("div");
+  bar.className = "chart-toolbar";
+
+  const btn = document.createElement("button");
+  btn.className = "btn";
+  btn.textContent = "➕ Add my data for comparison";
+  btn.style.marginLeft = "auto";
+
+  const file = document.createElement("input");
+  file.type = "file";
+  file.accept = ".csv,.tsv,.txt";
+  file.style.display = "none";
+
+  btn.addEventListener("click", () => file.click());
+
+  file.addEventListener("change", async ev => {
+    const f = ev.target.files && ev.target.files[0];
+    if(!f) return;
+
+    try{
+      const txt = await f.text();
+      const {x, y} = parse2col(txt);
+
+      if(!x.length || !y.length){
+        alert("No valid two-column numerical data detected.");
+        return;
+      }
+
+      const name = f.name.replace(/\.(csv|tsv|txt)$/i, "") + " (upload)";
+      addUploadTrace(chartId, groupKey, subfolder, name, x, y);
+
+    }catch(e){
+      console.error(e);
+      alert("Failed to read or parse file: " + e.message);
+    }finally{
+      ev.target.value = "";
+    }
+  });
+
+  bar.appendChild(btn);
+  bar.appendChild(file);
+  card.appendChild(bar);
+}
+
+function renderCharts(){
+  const chartsDiv = document.getElementById("charts");
+  chartsDiv.innerHTML = "";
+  traceIndex = {};
+
+  const group = DATA[current] || {};
+  const subfolders = Object.keys(group).sort();
+
+  if (subfolders.length === 0){
+    chartsDiv.innerHTML = `<div class="hint">No data for this group.</div>`;
+    return;
+  }
+
+  subfolders.forEach(sub => {
+    buildChartCard(current, sub, group[sub]);
+  });
+}
+
+function renderChecklist(){
+  const box = document.getElementById("checklist");
+  box.innerHTML = "";
+
+  const group = DATA[current] || {};
+  const filterValue = (document.getElementById("filter").value || "").toLowerCase();
+
+  Object.keys(group).sort().forEach(sub => {
+    const baseList = group[sub].filter(d =>
+      d.name.toLowerCase().includes(filterValue) ||
+      sub.toLowerCase().includes(filterValue)
+    );
+
+    const uploadsForSub =
+      UPLOADS[current] && UPLOADS[current][sub]
+        ? UPLOADS[current][sub]
+        : [];
+
+    if (baseList.length === 0 && uploadsForSub.length === 0) return;
+
+    const sec = document.createElement("div");
+    sec.className = "folder";
+
+    const title = document.createElement("div");
+    title.className = "title";
+    const total = baseList.length + uploadsForSub.length;
+    title.innerHTML = `<span>${sub}</span><span class="count">${total} files</span>`;
+    sec.appendChild(title);
+
+    baseList.forEach(d => {
+      const div = document.createElement("div");
+      div.className = "item";
+
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.checked = true;
+      cb.dataset.id = d.id;
+      cb.dataset.sub = sub;
+
+      cb.addEventListener("change", e => {
+        const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g, "_");
+        const idx = traceIndex[chartId][d.id];
+        Plotly.restyle(chartId, { visible: e.target.checked ? true : "legendonly" }, [idx]);
+      });
+
+      const label = document.createElement("label");
+      label.textContent = d.name;
+      label.addEventListener("click", () => {
+        const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g, "_");
+        highlightTrace(chartId, d.id);
+        renderMetadata(d);
+      });
+
+      div.appendChild(cb);
+      div.appendChild(label);
+      sec.appendChild(div);
+    });
+
+    if (uploadsForSub.length){
+      const uplTitle = document.createElement("div");
+      uplTitle.className = "title";
+      uplTitle.innerHTML = `<span>Uploads</span><span class="count">${uploadsForSub.length}</span>`;
+      sec.appendChild(uplTitle);
+
+      uploadsForSub.forEach(u => {
+        const div = document.createElement("div");
+        div.className = "item";
+
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.checked = true;
+
+        cb.addEventListener("change", e => {
+          const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g, "_");
+          const idx = traceIndex[chartId][u.id];
+          Plotly.restyle(chartId, { visible: e.target.checked ? true : "legendonly" }, [idx]);
+        });
+
+        const label = document.createElement("label");
+        label.textContent = u.name;
+        label.addEventListener("click", () => {
+          const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g, "_");
+          highlightTrace(chartId, u.id);
+        });
+
+        div.appendChild(cb);
+        div.appendChild(label);
+        sec.appendChild(div);
+      });
+    }
+
+    box.appendChild(sec);
+  });
+}
+
+function highlightTrace(chartId, datasetId){
+  const idxMap = traceIndex[chartId];
+  if (!idxMap) return;
+
+  Object.entries(idxMap).forEach(([id, idx]) => {
+    const on = id === datasetId;
+
+    Plotly.restyle(chartId, {
+      "line.width": on ? HILIGHT_LINE.width : BASE_LINE.width,
+      "opacity": on ? HILIGHT_LINE.opacity : DIM_LINE.opacity
+    }, [idx]);
+  });
+}
+
+function resetHighlights(){
+  Object.keys(traceIndex).forEach(chartId => {
+    Object.values(traceIndex[chartId]).forEach(idx => {
+      Plotly.restyle(chartId, {
+        "line.width": BASE_LINE.width,
+        "opacity": BASE_LINE.opacity
+      }, [idx]);
+    });
+  });
+}
+
+function setAllVisible(flag){
+  Object.keys(traceIndex).forEach(chartId => {
+    Object.values(traceIndex[chartId]).forEach(idx => {
+      Plotly.restyle(chartId, {
+        visible: flag ? true : "legendonly"
+      }, [idx]);
+    });
+  });
+
+  document.querySelectorAll("#checklist input[type='checkbox']").forEach(cb => {
+    cb.checked = !!flag;
+  });
+}
+
+function addUploadTrace(chartId, groupKey, subfolder, name, x, y){
+  const trace = {
+    name,
+    x,
+    y,
+    customdata: x.map(() => name),
+    type: "scatter",
+    mode: "lines+markers",
+    hovertemplate:
+      `<b>%{customdata}</b><br>` +
+      `λ = %{x:.2e} m<br>` +
+      `limit ≤ %{y:.2e}<extra></extra>`,
+    visible: true,
+    line: { width: HILIGHT_LINE.width },
+    marker: { size: 5, opacity: 0 },
+    opacity: HILIGHT_LINE.opacity
+  };
+
+  Plotly.addTraces(chartId, trace).then(() => {
+    const idx = document.getElementById(chartId).data.length - 1;
+    const id = `${groupKey}:upload:${Date.now()}:${Math.random().toString(36).slice(2,7)}`;
+
+    if(!traceIndex[chartId]) traceIndex[chartId] = {};
+    traceIndex[chartId][id] = idx;
+
+    if(!UPLOADS[groupKey]) UPLOADS[groupKey] = {};
+    if(!UPLOADS[groupKey][subfolder]) UPLOADS[groupKey][subfolder] = [];
+
+    UPLOADS[groupKey][subfolder].push({ id, name, x, y });
+
+    const baseDatasets =
+      DATA[groupKey] && DATA[groupKey][subfolder]
+        ? DATA[groupKey][subfolder]
+        : [];
+
+    const all = baseDatasets.concat(UPLOADS[groupKey][subfolder]);
+    const { xRange, yRange } = resolveAxisRanges(groupKey, subfolder, all);
+
+    const xTicks = makeMajorLogTicks(xRange[0], xRange[1], 5);
+    const yTicks = makeMajorLogTicks(yRange[0], yRange[1], 5);
+
+    Plotly.relayout(chartId, {
+      "xaxis.range": [Math.log10(xRange[0]), Math.log10(xRange[1])],
+      "xaxis.tickvals": xTicks.tickvals,
+      "xaxis.ticktext": xTicks.ticktext,
+      "yaxis.range": [Math.log10(yRange[0]), Math.log10(yRange[1])],
+      "yaxis.tickvals": yTicks.tickvals,
+      "yaxis.ticktext": yTicks.ticktext
+    });
+
+    renderChecklist();
+  });
+}
+
+document.getElementById("filter").addEventListener("input", renderChecklist);
+document.getElementById("showAll").addEventListener("click", () => setAllVisible(true));
+document.getElementById("hideAll").addEventListener("click", () => setAllVisible(false));
+document.getElementById("resetHL").addEventListener("click", resetHighlights);
+
+document.querySelectorAll(".btn").forEach(btn => {
+  const id = btn.getAttribute("id");
+
+  if (id === "showAll" || id === "hideAll" || id === "resetHL") return;
+
+  btn.addEventListener("click", async () => {
+    document.querySelectorAll(".btn").forEach(b => {
+      const bid = b.getAttribute("id");
+      if (bid !== "showAll" && bid !== "hideAll" && bid !== "resetHL") {
+        b.classList.remove("active");
+      }
+    });
+
+    btn.classList.add("active");
+    current = btn.dataset.group;
+
+    document.getElementById("charts").innerHTML = `<div class="hint">Loading ${current}...</div>`;
+    document.getElementById("checklist").innerHTML = "";
+
+    try{
+      if (current === "gAgV") await loadMetadataIfNeeded();
+      await loadGroupIfNeeded(current);
+      renderCharts();
+      renderChecklist();
+      renderMetadata(null);
+    }catch(e){
+      console.error(e);
+      document.getElementById("charts").innerHTML =
+        `<div class="hint">Failed to load ${current}: ${e.message}</div>`;
+    }
+  });
+});
+
+(async function main(){
+  try{
+    document.getElementById("charts").innerHTML = `<div class="hint">Loading ${current}...</div>`;
+    await loadGroupIfNeeded(current);
+    await loadMetadataIfNeeded();
+    renderCharts();
+    renderChecklist();
+    renderMetadata(null);
+  }catch(e){
+    console.error(e);
+    alert("Failed to load data:\n" + e.message);
+  }
+})();
+</script>
+</body>
+</html>

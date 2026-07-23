@@ -1,0 +1,1548 @@
+{
+  "schema_version": "0.1",
+  "coupling": "gAgV",
+  "notice": "Unless otherwise noted, the constraints shown here have been standardized using the interaction conventions adopted in the RMP review and may therefore differ from values presented in the original publications.",
+  "records": [
+    {
+      "id": "combined-casimir-e-e",
+      "label": "Combined Casimir e-e",
+      "data_file": "Dataset/normalized/gAgV/lepton-lepton/Combined_Casimir_e-e.csv",
+      "potential": "combined",
+      "fermion_pair": "electron-electron",
+      "method": {
+        "category": "combined",
+        "technique": "casimir"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-eep-e-e",
+      "label": "Combined EEP e-e",
+      "data_file": "Dataset/normalized/gAgV/lepton-lepton/Combined_EEP_e-e.csv",
+      "potential": "combined",
+      "fermion_pair": "electron-electron",
+      "method": {
+        "category": "combined",
+        "technique": "eep"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-emm-e-e",
+      "label": "Combined EMM e-e",
+      "data_file": "Dataset/normalized/gAgV/lepton-lepton/Combined_EMM_e-e.csv",
+      "potential": "combined",
+      "fermion_pair": "electron-electron",
+      "method": {
+        "category": "combined",
+        "technique": "emm"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-torsion-e-e",
+      "label": "Combined Torsion e-e",
+      "data_file": "Dataset/normalized/gAgV/lepton-lepton/Combined_Torsion_e-e.csv",
+      "potential": "combined",
+      "fermion_pair": "electron-electron",
+      "method": {
+        "category": "combined",
+        "technique": "torsion"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v11-heckel-2013-e-e",
+      "label": "Heckel 2013",
+      "data_file": "Dataset/normalized/gAgV/lepton-lepton/V11_Heckel_2013_e-e.csv",
+      "potential": "V11",
+      "fermion_pair": "electron-electron",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_polarized_torsion_pendulum"
+      },
+      "references": [
+        {
+          "citation_key": "heckel_limits_2013",
+          "type": "article",
+          "title": "Limits on Exotic Long-Range Spin-Spin Interactions of Electrons",
+          "authors_bibtex": "Heckel, B. R. and Terrano, W. A. and Adelberger, E. G.",
+          "year": "2013",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "111",
+          "issue": "15",
+          "pages": "151802",
+          "doi": "10.1103/PhysRevLett.111.151802",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.111.151802",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.111.151802"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v11-hunter-2013-e-e",
+      "label": "Hunter 2013",
+      "data_file": "Dataset/normalized/gAgV/lepton-lepton/V11_Hunter_2013_e-e.csv",
+      "potential": "V11",
+      "fermion_pair": "electron-electron",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "earth_source_spin_experiment"
+      },
+      "references": [
+        {
+          "citation_key": "hunter_using_2013",
+          "type": "article",
+          "title": "Using the Earth as a Polarized Electron Source to Search for Long-Range Spin-Spin Interactions",
+          "authors_bibtex": "Hunter, Larry and Gordon, Joel and Peck, Stephen and Ang, Daniel and Lin, Jung-Fu",
+          "year": "2013",
+          "journal": "Science",
+          "volume": "339",
+          "issue": "6122",
+          "pages": "928-932",
+          "doi": "10.1126/science.1227460",
+          "doi_url": "https://doi.org/10.1126/science.1227460",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1126/science.1227460"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-casimir-e-n",
+      "label": "Combined Casimir e-N",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/Combined_Casimir_e-N.csv",
+      "potential": "combined",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "combined",
+        "technique": "casimir"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-eep-e-n",
+      "label": "Combined EEP e-N",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/Combined_EEP_e-N.csv",
+      "potential": "combined",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "combined",
+        "technique": "eep"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-ms-e-n",
+      "label": "Combined MS e-N",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/Combined_MS_e-N.csv",
+      "potential": "combined",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "combined",
+        "technique": "ms"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-torsion-e-n",
+      "label": "Combined Torsion e-N",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/Combined_Torsion_e-N.csv",
+      "potential": "combined",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "combined",
+        "technique": "torsion"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v11-hunter-2013-e-n",
+      "label": "Hunter 2013",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V11_Hunter_2013_e-n.csv",
+      "potential": "V11",
+      "fermion_pair": "electron-neutron",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "earth_source_spin_experiment"
+      },
+      "references": [
+        {
+          "citation_key": "hunter_using_2013",
+          "type": "article",
+          "title": "Using the Earth as a Polarized Electron Source to Search for Long-Range Spin-Spin Interactions",
+          "authors_bibtex": "Hunter, Larry and Gordon, Joel and Peck, Stephen and Ang, Daniel and Lin, Jung-Fu",
+          "year": "2013",
+          "journal": "Science",
+          "volume": "339",
+          "issue": "6122",
+          "pages": "928-932",
+          "doi": "10.1126/science.1227460",
+          "doi_url": "https://doi.org/10.1126/science.1227460",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1126/science.1227460"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v11-hunter-2013-e-p",
+      "label": "Hunter 2013",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V11_Hunter_2013_e-p.csv",
+      "potential": "V11",
+      "fermion_pair": "electron-proton",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "earth_source_spin_experiment"
+      },
+      "references": [
+        {
+          "citation_key": "hunter_using_2013",
+          "type": "article",
+          "title": "Using the Earth as a Polarized Electron Source to Search for Long-Range Spin-Spin Interactions",
+          "authors_bibtex": "Hunter, Larry and Gordon, Joel and Peck, Stephen and Ang, Daniel and Lin, Jung-Fu",
+          "year": "2013",
+          "journal": "Science",
+          "volume": "339",
+          "issue": "6122",
+          "pages": "928-932",
+          "doi": "10.1126/science.1227460",
+          "doi_url": "https://doi.org/10.1126/science.1227460",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1126/science.1227460"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v11-wang-2023-e-n",
+      "label": "Wang 2023",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V11_Wang_2023_e-n.csv",
+      "potential": "V11",
+      "fermion_pair": "electron-neutron",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "quantum_spin_amplifier"
+      },
+      "references": [
+        {
+          "citation_key": "wang_search_2023",
+          "type": "article",
+          "title": "Search for Exotic Parity-Violation Interactions with Quantum Spin Amplifiers",
+          "authors_bibtex": "Wang, Yuanhong and Huang, Ying and Guo, Chang and Jiang, Min and Kang, Xiang and Su, Haowen and Qin, Yushu and Ji, Wei and Hu, Dongdong and Peng, Xinhua and Budker, Dmitry",
+          "year": "2023",
+          "journal": "Sci. Adv.",
+          "volume": "9",
+          "issue": "1",
+          "pages": "eade0353",
+          "doi": "10.1126/sciadv.ade0353",
+          "doi_url": "https://doi.org/10.1126/sciadv.ade0353",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1126/sciadv.ade0353"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-antypas-2019-e-n",
+      "label": "Antypas 2019",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V1213_Antypas_2019_e-n.csv",
+      "potential": "V12+13",
+      "fermion_pair": "electron-neutron",
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_parity_violation"
+      },
+      "references": [
+        {
+          "citation_key": "antypas_isotopic_2019",
+          "type": "article",
+          "title": "Isotopic Variation of Parity Violation in Atomic Ytterbium",
+          "authors_bibtex": "Antypas, D. and Fabricant, A. and Stalnaker, J. E. and Tsigutkin, K. and Flambaum, V. V. and Budker, D.",
+          "year": "2019",
+          "journal": "Nat. Phys.",
+          "volume": "15",
+          "issue": "2",
+          "pages": "120-123",
+          "doi": "10.1038/s41567-018-0312-8",
+          "doi_url": "https://doi.org/10.1038/s41567-018-0312-8",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1038/s41567-018-0312-8"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-antypas-2019-e-p",
+      "label": "Antypas 2019",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V1213_Antypas_2019_e-p.csv",
+      "potential": "V12+13",
+      "fermion_pair": "electron-proton",
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_parity_violation"
+      },
+      "references": [
+        {
+          "citation_key": "antypas_isotopic_2019",
+          "type": "article",
+          "title": "Isotopic Variation of Parity Violation in Atomic Ytterbium",
+          "authors_bibtex": "Antypas, D. and Fabricant, A. and Stalnaker, J. E. and Tsigutkin, K. and Flambaum, V. V. and Budker, D.",
+          "year": "2019",
+          "journal": "Nat. Phys.",
+          "volume": "15",
+          "issue": "2",
+          "pages": "120-123",
+          "doi": "10.1038/s41567-018-0312-8",
+          "doi_url": "https://doi.org/10.1038/s41567-018-0312-8",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1038/s41567-018-0312-8"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-clayburn-2023-e-n",
+      "label": "Clayburn 2023",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V1213_Clayburn_2023_e-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "earth_source_spin_velocity_experiment"
+      },
+      "references": [
+        {
+          "citation_key": "clayburn_using_2023",
+          "type": "article",
+          "title": "Using Earth to Search for Long-Range Spin-Velocity Interactions",
+          "authors_bibtex": "Clayburn, N. B. and Hunter, L. R.",
+          "year": "2023",
+          "journal": "Phys. Rev. D",
+          "volume": "108",
+          "issue": "5",
+          "pages": "L051701",
+          "doi": "10.1103/PhysRevD.108.L051701",
+          "doi_url": "https://doi.org/10.1103/PhysRevD.108.L051701",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevD.108.L051701"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-dzuba-2017-e-n",
+      "label": "Dzuba 2017",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V1213_Dzuba_2017_e-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_parity_violation_interpretation"
+      },
+      "references": [
+        {
+          "citation_key": "dzuba_probing_2017",
+          "type": "article",
+          "title": "Probing Low-Mass Vector Bosons with Parity Nonconservation and Nuclear Anapole Moment Measurements in Atoms and Molecules",
+          "authors_bibtex": "Dzuba, V. A. and Flambaum, V. V. and Stadnik, Y. V.",
+          "year": "2017",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "119",
+          "issue": "22",
+          "pages": "223201",
+          "doi": "10.1103/PhysRevLett.119.223201",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.119.223201",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.119.223201"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-heckel-2008-e-n",
+      "label": "Heckel 2008",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V1213_Heckel_2008_e-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_polarized_torsion_pendulum"
+      },
+      "references": [
+        {
+          "citation_key": "heckel_preferred-frame_2008",
+          "type": "article",
+          "title": "Preferred-Frame and $CP$-Violation Tests with Polarized Electrons",
+          "authors_bibtex": "Heckel, B. R. and Adelberger, E. G. and Cramer, C. E. and Cook, T. S. and Schlamminger, S. and Schmidt, U.",
+          "year": "2008",
+          "journal": "Phys. Rev. D",
+          "volume": "78",
+          "issue": "9",
+          "pages": "092006",
+          "doi": "10.1103/PhysRevD.78.092006",
+          "doi_url": "https://doi.org/10.1103/PhysRevD.78.092006",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevD.78.092006"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-jiao-2021-e-n",
+      "label": "Jiao 2021",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V1213_Jiao_2021_e-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "single_electron_spin_quantum_sensor"
+      },
+      "references": [
+        {
+          "citation_key": "jiao_experimental_2021",
+          "type": "article",
+          "title": "Experimental Constraint on an Exotic Parity-Odd Spin- and Velocity-Dependent Interaction with a Single Electron Spin Quantum Sensor",
+          "authors_bibtex": "Jiao, Man and Guo, Maosen and Rong, Xing and Cai, Yi-Fu and Du, Jiangfeng",
+          "year": "2021",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "127",
+          "issue": "1",
+          "pages": "010501",
+          "doi": "10.1103/PhysRevLett.127.010501",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.127.010501",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.127.010501"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-kim-2019-e-n",
+      "label": "Kim 2019",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V1213_Kim_2019_e-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "optically_polarized_vapor"
+      },
+      "references": [
+        {
+          "citation_key": "kim_experimental_2019",
+          "type": "article",
+          "title": "Experimental Limit on an Exotic Parity-Odd Spin- and Velocity-Dependent Interaction Using an Optically Polarized Vapor",
+          "authors_bibtex": "Kim, Young Jin and Chu, Ping-Han and Savukov, Igor and Newman, Shaun",
+          "year": "2019",
+          "journal": "Nat. Commun.",
+          "volume": "10",
+          "issue": "1",
+          "pages": "2245",
+          "doi": "10.1038/s41467-019-10169-1",
+          "doi_url": "https://doi.org/10.1038/s41467-019-10169-1",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1038/s41467-019-10169-1"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-liang-2022-e-n",
+      "label": "Liang 2023",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V1213_Liang_2022_e-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "ensemble_nv_diamond_magnetometer"
+      },
+      "references": [
+        {
+          "citation_key": "liang_new_2023",
+          "type": "article",
+          "title": "New Constraints on Exotic Spin-Dependent Interactions with an Ensemble-NV-Diamond Magnetometer",
+          "authors_bibtex": "Liang, Hang and Jiao, Man and Huang, Yue and Yu, Pei and Ye, Xiangyu and Wang, Ya and Xie, Yijin and Cai, Yi-Fu and Rong, Xing and Du, Jiangfeng",
+          "year": "2023",
+          "journal": "Natl. Sci. Rev.",
+          "volume": "10",
+          "issue": "7",
+          "pages": "nwac262",
+          "doi": "10.1093/nsr/nwac262",
+          "doi_url": "https://doi.org/10.1093/nsr/nwac262",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1093/nsr/nwac262"
+        }
+      ],
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename author/year",
+          "BibTeX record"
+        ],
+        "note": "Published in 2023; the legacy CSV filename retains the 2022 pre-publication year."
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-wu-2022-e-n",
+      "label": "Wu 2022",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V1213_Wu_2022_e-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "electron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "atomic_magnetometer_array"
+      },
+      "references": [
+        {
+          "citation_key": "wu_experimental_2022",
+          "type": "article",
+          "title": "Experimental Limits on Exotic Spin and Velocity Dependent Interactions Using Rotationally Modulated Source Masses and an Atomic-Magnetometer Array",
+          "authors_bibtex": "Wu, K. Y. and Chen, S. Y. and Sun, G. A. and Peng, S. M. and Peng, M. and Yan, H.",
+          "year": "2022",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "129",
+          "issue": "5",
+          "pages": "051802",
+          "doi": "10.1103/PhysRevLett.129.051802",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.129.051802",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.129.051802"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v16-hunter-2014-e-n",
+      "label": "Hunter 2014",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V16_Hunter_2014_e-n.csv",
+      "potential": "V16",
+      "fermion_pair": "electron-neutron",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "geoelectron_source_spin_experiment"
+      },
+      "references": [
+        {
+          "citation_key": "hunter_using_2014",
+          "type": "article",
+          "title": "Using Geoelectrons to Search for Velocity-Dependent Spin-Spin Interactions",
+          "authors_bibtex": "Hunter, L. R. and Ang, D. G.",
+          "year": "2014",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "112",
+          "issue": "9",
+          "pages": "091803",
+          "doi": "10.1103/PhysRevLett.112.091803",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.112.091803",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.112.091803"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v16-hunter-2014-e-p",
+      "label": "Hunter 2014",
+      "data_file": "Dataset/normalized/gAgV/lepton-nucleon/V16_Hunter_2014_e-p.csv",
+      "potential": "V16",
+      "fermion_pair": "electron-proton",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "geoelectron_source_spin_experiment"
+      },
+      "references": [
+        {
+          "citation_key": "hunter_using_2014",
+          "type": "article",
+          "title": "Using Geoelectrons to Search for Velocity-Dependent Spin-Spin Interactions",
+          "authors_bibtex": "Hunter, L. R. and Ang, D. G.",
+          "year": "2014",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "112",
+          "issue": "9",
+          "pages": "091803",
+          "doi": "10.1103/PhysRevLett.112.091803",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.112.091803",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.112.091803"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-casimir-n-n",
+      "label": "Combined Casimir N-N",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/Combined_Casimir_N-N.csv",
+      "potential": "combined",
+      "fermion_pair": "nucleon-nucleon",
+      "method": {
+        "category": "combined",
+        "technique": "casimir"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-eep-n-n",
+      "label": "Combined EEP N-N",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/Combined_EEP_N-N.csv",
+      "potential": "combined",
+      "fermion_pair": "nucleon-nucleon",
+      "method": {
+        "category": "combined",
+        "technique": "eep"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-ms-n-n",
+      "label": "Combined MS N-N",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/Combined_MS_N-N.csv",
+      "potential": "combined",
+      "fermion_pair": "nucleon-nucleon",
+      "method": {
+        "category": "combined",
+        "technique": "ms"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "combined-torsion-n-n",
+      "label": "Combined Torsion N-N",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/Combined_Torsion_N-N.csv",
+      "potential": "combined",
+      "fermion_pair": "nucleon-nucleon",
+      "method": {
+        "category": "combined",
+        "technique": "torsion"
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "type": "article",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors_bibtex": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "year": "2025",
+          "journal": "Rev. Mod. Phys.",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "filename",
+          "review Fig. 9",
+          "review comparison appendix"
+        ]
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v11-vasilakis-2009-n-n",
+      "label": "Vasilakis 2009",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/V11_Vasilakis_2009_n-n.csv",
+      "potential": "V11",
+      "fermion_pair": "neutron-neutron",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "comagnetometer"
+      },
+      "references": [
+        {
+          "citation_key": "vasilakis_limits_2009",
+          "type": "article",
+          "title": "Limits on New Long Range Nuclear Spin-Dependent Forces Set with a K - He 3 Comagnetometer",
+          "authors_bibtex": "Vasilakis, G. and Brown, J. M. and Kornack, T. W. and Romalis, M. V.",
+          "year": "2009",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "103",
+          "issue": "26",
+          "pages": "261801",
+          "doi": "10.1103/PhysRevLett.103.261801",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.103.261801",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.103.261801"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v11-wang-2023-n-p",
+      "label": "Wang 2023",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/V11_Wang_2023_n-p.csv",
+      "potential": "V11",
+      "fermion_pair": "neutron-proton",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "quantum_spin_amplifier"
+      },
+      "references": [
+        {
+          "citation_key": "wang_search_2023",
+          "type": "article",
+          "title": "Search for Exotic Parity-Violation Interactions with Quantum Spin Amplifiers",
+          "authors_bibtex": "Wang, Yuanhong and Huang, Ying and Guo, Chang and Jiang, Min and Kang, Xiang and Su, Haowen and Qin, Yushu and Ji, Wei and Hu, Dongdong and Peng, Xinhua and Budker, Dmitry",
+          "year": "2023",
+          "journal": "Sci. Adv.",
+          "volume": "9",
+          "issue": "1",
+          "pages": "eade0353",
+          "doi": "10.1126/sciadv.ade0353",
+          "doi_url": "https://doi.org/10.1126/sciadv.ade0353",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1126/sciadv.ade0353"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-clayburn-2023-n-n",
+      "label": "Clayburn 2023",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Clayburn_2023_n-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "neutron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "earth_source_spin_velocity_experiment"
+      },
+      "references": [
+        {
+          "citation_key": "clayburn_using_2023",
+          "type": "article",
+          "title": "Using Earth to Search for Long-Range Spin-Velocity Interactions",
+          "authors_bibtex": "Clayburn, N. B. and Hunter, L. R.",
+          "year": "2023",
+          "journal": "Phys. Rev. D",
+          "volume": "108",
+          "issue": "5",
+          "pages": "L051701",
+          "doi": "10.1103/PhysRevD.108.L051701",
+          "doi_url": "https://doi.org/10.1103/PhysRevD.108.L051701",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevD.108.L051701"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-clayburn-2023-p-n",
+      "label": "Clayburn 2023",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Clayburn_2023_p-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "proton-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "earth_source_spin_velocity_experiment"
+      },
+      "references": [
+        {
+          "citation_key": "clayburn_using_2023",
+          "type": "article",
+          "title": "Using Earth to Search for Long-Range Spin-Velocity Interactions",
+          "authors_bibtex": "Clayburn, N. B. and Hunter, L. R.",
+          "year": "2023",
+          "journal": "Phys. Rev. D",
+          "volume": "108",
+          "issue": "5",
+          "pages": "L051701",
+          "doi": "10.1103/PhysRevD.108.L051701",
+          "doi_url": "https://doi.org/10.1103/PhysRevD.108.L051701",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevD.108.L051701"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-shu-2024-p-n",
+      "label": "Shu 2024",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Shu_2024_p-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "proton-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "atom_interferometer"
+      },
+      "references": [
+        {
+          "citation_key": "shu_constraint_2024",
+          "type": "article",
+          "title": "Constraint on an Exotic Parity-Odd Spin- and Velocity-Dependent Interaction with Atom Interferometer",
+          "authors_bibtex": "Shu, Yu-Biao and Zhang, Tao and Chen, Le-Le and Luo, Qin and Deng, Xiao-Bing and Xu, Wen-Jie and Duan, Xiao-Chun and Fang, Xue-Ting and Cao, Lu-Shuai and Hu, Zhong-Kun and Zhou, Min-Kang",
+          "year": "2024",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "133",
+          "issue": "21",
+          "pages": "213401",
+          "doi": "10.1103/PhysRevLett.133.213401",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.133.213401",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.133.213401"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-su-2021-n-n",
+      "label": "Su 2021",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Su_2021_n-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "neutron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_based_amplifier"
+      },
+      "references": [
+        {
+          "citation_key": "su_search_2021",
+          "type": "article",
+          "title": "Search for Exotic Spin-Dependent Interactions with a Spin-Based Amplifier",
+          "authors_bibtex": "Su, Haowen and Wang, Yuanhong and Jiang, Min and Ji, Wei and Fadeev, Pavel and Hu, Dongdong and Peng, Xinhua and Budker, Dmitry",
+          "year": "2021",
+          "journal": "Sci. Adv.",
+          "volume": "7",
+          "issue": "47",
+          "pages": "eabi9535",
+          "doi": "10.1126/sciadv.abi9535",
+          "doi_url": "https://doi.org/10.1126/sciadv.abi9535",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1126/sciadv.abi9535"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-wu-2023-n-n",
+      "label": "Wu 2023",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Wu_2023_n-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "neutron-nucleon",
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "astronomical_source_reanalysis"
+      },
+      "references": [
+        {
+          "citation_key": "wu_new_2023",
+          "type": "article",
+          "title": "New Limits on Exotic Spin-Dependent Interactions at Astronomical Distances",
+          "authors_bibtex": "Wu, L. Y. and Zhang, K. Y. and Peng, M. and Gong, J. and Yan, H.",
+          "year": "2023",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "131",
+          "issue": "9",
+          "pages": "091002",
+          "doi": "10.1103/PhysRevLett.131.091002",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.131.091002",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.131.091002"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-yan-2013-n-n",
+      "label": "Yan 2013",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Yan_2013_n-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "neutron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "neutron_spin_rotation"
+      },
+      "references": [
+        {
+          "citation_key": "yan_new_2013",
+          "type": "article",
+          "title": "New Limit on Possible Long-Range Parity-Odd Interactions of the Neutron from Neutron-Spin Rotation in Liquid $^{4}\\mathrm{He}$",
+          "authors_bibtex": "Yan, H. and Snow, W. M.",
+          "year": "2013",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "110",
+          "issue": "8",
+          "pages": "082003",
+          "doi": "10.1103/PhysRevLett.110.082003",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.110.082003",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.110.082003"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    },
+    {
+      "id": "v1213-yan-2015-n-n",
+      "label": "Yan 2015",
+      "data_file": "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Yan_2015_n-N.csv",
+      "potential": "V12+13",
+      "fermion_pair": "neutron-nucleon",
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "polarized_helium_spin_relaxation"
+      },
+      "references": [
+        {
+          "citation_key": "yan_searching_2015",
+          "type": "article",
+          "title": "Searching for New Spin- and Velocity-Dependent Interactions by Spin Relaxation of Polarized $^{3}\\mathrm{He}$ Gas",
+          "authors_bibtex": "Yan, H. and Sun, G. A. and Peng, S. M. and Zhang, Y. and Fu, C. and Guo, H. and Liu, B. Q.",
+          "year": "2015",
+          "journal": "Phys. Rev. Lett.",
+          "volume": "115",
+          "issue": "18",
+          "pages": "182001",
+          "doi": "10.1103/PhysRevLett.115.182001",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.115.182001",
+          "arxiv": "",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.115.182001"
+        }
+      ],
+      "curation": {
+        "status": "probable",
+        "evidence": [
+          "filename author/year",
+          "citation in review gAgV section",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "review_location": {
+        "section": "Axial-vector/Vector interaction gAgV",
+        "figure": "Fig. 9"
+      }
+    }
+  ]
+}

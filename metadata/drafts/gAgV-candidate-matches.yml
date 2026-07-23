@@ -1,0 +1,747 @@
+# AUTO-GENERATED CANDIDATE FILE — scientific review required before publication.
+schema_version: 0.1
+coupling: gAgV
+generated_from:
+  review_latex: "review-source/0MainTextversion3.tex"
+  bibliography: "MyLibrary.bib"
+records:
+  - id: "combined-casimir-e-e"
+    label: "Combined Casimir e-e"
+    data_file: "Dataset/normalized/gAgV/lepton-lepton/Combined_Casimir_e-e.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "electron-electron"
+    method:
+      category: "combined"
+      technique: "casimir"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "combined-eep-e-e"
+    label: "Combined EEP e-e"
+    data_file: "Dataset/normalized/gAgV/lepton-lepton/Combined_EEP_e-e.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "electron-electron"
+    method:
+      category: "combined"
+      technique: "eep"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "combined-emm-e-e"
+    label: "Combined EMM e-e"
+    data_file: "Dataset/normalized/gAgV/lepton-lepton/Combined_EMM_e-e.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "electron-electron"
+    method:
+      category: "combined"
+      technique: "emm"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "combined-torsion-e-e"
+    label: "Combined Torsion e-e"
+    data_file: "Dataset/normalized/gAgV/lepton-lepton/Combined_Torsion_e-e.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "electron-electron"
+    method:
+      category: "combined"
+      technique: "torsion"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "v11-heckel-2013-e-e"
+    label: "Heckel 2013"
+    data_file: "Dataset/normalized/gAgV/lepton-lepton/V11_Heckel_2013_e-e.csv"
+    coupling: gAgV
+    potential: "V11"
+    fermion_pair: "electron-electron"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "spin_polarized_torsion_pendulum"
+    references:
+      - "heckel_limits_2013"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v11-hunter-2013-e-e"
+    label: "Hunter 2013"
+    data_file: "Dataset/normalized/gAgV/lepton-lepton/V11_Hunter_2013_e-e.csv"
+    coupling: gAgV
+    potential: "V11"
+    fermion_pair: "electron-electron"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "earth_source_spin_experiment"
+    references:
+      - "hunter_using_2013"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "combined-casimir-e-n"
+    label: "Combined Casimir e-N"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/Combined_Casimir_e-N.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "combined"
+      technique: "casimir"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "combined-eep-e-n"
+    label: "Combined EEP e-N"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/Combined_EEP_e-N.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "combined"
+      technique: "eep"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "combined-ms-e-n"
+    label: "Combined MS e-N"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/Combined_MS_e-N.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "combined"
+      technique: "ms"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "combined-torsion-e-n"
+    label: "Combined Torsion e-N"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/Combined_Torsion_e-N.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "combined"
+      technique: "torsion"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "v11-hunter-2013-e-n"
+    label: "Hunter 2013"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V11_Hunter_2013_e-n.csv"
+    coupling: gAgV
+    potential: "V11"
+    fermion_pair: "electron-neutron"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "earth_source_spin_experiment"
+    references:
+      - "hunter_using_2013"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v11-hunter-2013-e-p"
+    label: "Hunter 2013"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V11_Hunter_2013_e-p.csv"
+    coupling: gAgV
+    potential: "V11"
+    fermion_pair: "electron-proton"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "earth_source_spin_experiment"
+    references:
+      - "hunter_using_2013"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v11-wang-2023-e-n"
+    label: "Wang 2023"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V11_Wang_2023_e-n.csv"
+    coupling: gAgV
+    potential: "V11"
+    fermion_pair: "electron-neutron"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "quantum_spin_amplifier"
+    references:
+      - "wang_search_2023"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-antypas-2019-e-n"
+    label: "Antypas 2019"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V1213_Antypas_2019_e-n.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "electron-neutron"
+    method:
+      category: "complementary_experiment"
+      technique: "atomic_parity_violation"
+    references:
+      - "antypas_isotopic_2019"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-antypas-2019-e-p"
+    label: "Antypas 2019"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V1213_Antypas_2019_e-p.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "electron-proton"
+    method:
+      category: "complementary_experiment"
+      technique: "atomic_parity_violation"
+    references:
+      - "antypas_isotopic_2019"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-clayburn-2023-e-n"
+    label: "Clayburn 2023"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V1213_Clayburn_2023_e-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "earth_source_spin_velocity_experiment"
+    references:
+      - "clayburn_using_2023"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-dzuba-2017-e-n"
+    label: "Dzuba 2017"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V1213_Dzuba_2017_e-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "complementary_experiment"
+      technique: "atomic_parity_violation_interpretation"
+    references:
+      - "dzuba_probing_2017"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-heckel-2008-e-n"
+    label: "Heckel 2008"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V1213_Heckel_2008_e-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "spin_polarized_torsion_pendulum"
+    references:
+      - "heckel_preferred-frame_2008"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-jiao-2021-e-n"
+    label: "Jiao 2021"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V1213_Jiao_2021_e-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "single_electron_spin_quantum_sensor"
+    references:
+      - "jiao_experimental_2021"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-kim-2019-e-n"
+    label: "Kim 2019"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V1213_Kim_2019_e-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "optically_polarized_vapor"
+    references:
+      - "kim_experimental_2019"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-liang-2022-e-n"
+    label: "Liang 2023"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V1213_Liang_2022_e-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "ensemble_nv_diamond_magnetometer"
+    references:
+      - "liang_new_2023"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "confirmed"
+      evidence:
+        - "filename author/year"
+        - "BibTeX record"
+      note: "Published in 2023; the legacy CSV filename retains the 2022 pre-publication year."
+  - id: "v1213-wu-2022-e-n"
+    label: "Wu 2022"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V1213_Wu_2022_e-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "electron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "atomic_magnetometer_array"
+    references:
+      - "wu_experimental_2022"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v16-hunter-2014-e-n"
+    label: "Hunter 2014"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V16_Hunter_2014_e-n.csv"
+    coupling: gAgV
+    potential: "V16"
+    fermion_pair: "electron-neutron"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "geoelectron_source_spin_experiment"
+    references:
+      - "hunter_using_2014"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v16-hunter-2014-e-p"
+    label: "Hunter 2014"
+    data_file: "Dataset/normalized/gAgV/lepton-nucleon/V16_Hunter_2014_e-p.csv"
+    coupling: gAgV
+    potential: "V16"
+    fermion_pair: "electron-proton"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "geoelectron_source_spin_experiment"
+    references:
+      - "hunter_using_2014"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "combined-casimir-n-n"
+    label: "Combined Casimir N-N"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/Combined_Casimir_N-N.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "nucleon-nucleon"
+    method:
+      category: "combined"
+      technique: "casimir"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "combined-eep-n-n"
+    label: "Combined EEP N-N"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/Combined_EEP_N-N.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "nucleon-nucleon"
+    method:
+      category: "combined"
+      technique: "eep"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "combined-ms-n-n"
+    label: "Combined MS N-N"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/Combined_MS_N-N.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "nucleon-nucleon"
+    method:
+      category: "combined"
+      technique: "ms"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "combined-torsion-n-n"
+    label: "Combined Torsion N-N"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/Combined_Torsion_N-N.csv"
+    coupling: gAgV
+    potential: "combined"
+    fermion_pair: "nucleon-nucleon"
+    method:
+      category: "combined"
+      technique: "torsion"
+    references:
+      - "cong_spin-dependent_2025"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "review_only"
+      evidence:
+        - "filename"
+        - "review Fig. 9"
+        - "review comparison appendix"
+  - id: "v11-vasilakis-2009-n-n"
+    label: "Vasilakis 2009"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/V11_Vasilakis_2009_n-n.csv"
+    coupling: gAgV
+    potential: "V11"
+    fermion_pair: "neutron-neutron"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "comagnetometer"
+    references:
+      - "vasilakis_limits_2009"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v11-wang-2023-n-p"
+    label: "Wang 2023"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/V11_Wang_2023_n-p.csv"
+    coupling: gAgV
+    potential: "V11"
+    fermion_pair: "neutron-proton"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "quantum_spin_amplifier"
+    references:
+      - "wang_search_2023"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-clayburn-2023-n-n"
+    label: "Clayburn 2023"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Clayburn_2023_n-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "neutron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "earth_source_spin_velocity_experiment"
+    references:
+      - "clayburn_using_2023"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-clayburn-2023-p-n"
+    label: "Clayburn 2023"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Clayburn_2023_p-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "proton-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "earth_source_spin_velocity_experiment"
+    references:
+      - "clayburn_using_2023"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-shu-2024-p-n"
+    label: "Shu 2024"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Shu_2024_p-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "proton-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "atom_interferometer"
+    references:
+      - "shu_constraint_2024"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-su-2021-n-n"
+    label: "Su 2021"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Su_2021_n-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "neutron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "spin_based_amplifier"
+    references:
+      - "su_search_2021"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-wu-2023-n-n"
+    label: "Wu 2023"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Wu_2023_n-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "neutron-nucleon"
+    method:
+      category: "complementary_experiment"
+      technique: "astronomical_source_reanalysis"
+    references:
+      - "wu_new_2023"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-yan-2013-n-n"
+    label: "Yan 2013"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Yan_2013_n-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "neutron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "neutron_spin_rotation"
+    references:
+      - "yan_new_2013"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"
+  - id: "v1213-yan-2015-n-n"
+    label: "Yan 2015"
+    data_file: "Dataset/normalized/gAgV/nucleon-nucleon/V1213_Yan_2015_n-N.csv"
+    coupling: gAgV
+    potential: "V12+13"
+    fermion_pair: "neutron-nucleon"
+    method:
+      category: "dedicated_source_sensor"
+      technique: "polarized_helium_spin_relaxation"
+    references:
+      - "yan_searching_2015"
+    review_location:
+      section: "Axial-vector/Vector interaction gAgV"
+      figure: "Fig. 9"
+    curation:
+      status: "probable"
+      evidence:
+        - "filename author/year"
+        - "citation in review gAgV section"
+        - "BibTeX record"

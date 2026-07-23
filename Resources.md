@@ -28,6 +28,8 @@
 - 18.05 to 22.05, 2026 [International Conference on Precision Physics of Simple Atomic Systems (PSAS 2026)](https://indico.global/event/15739/)
 - 02.08.2026 to 07.08.2026 [Dark Intersections](https://www.dpg-physik.de/veranstaltungen/2026/dark_intersections), Bad Honnef, Germany
 - 24.08.2026 to 28.08.2026 [WE-Heraeus Seminar "Quest of New Physics at the Precision Frontier"](https://conferences.ptb.de/event/20/), PTB-Berlin, Germany
+- 09.11.2026 to 13.11.2026 [21st Patras Workshop on Axions, WIMPs and WISPs](https://axion-wimp2026.desy.de/), University of Western Australia, Perth, Australia
+- 18.01.2027 to 22.01.2027 [Mechanical Quantum Sensors for New Physics Searches](https://indico.mitp.uni-mainz.de/event/473/registrations/279/), MITP, Mainz, Germany
 - 13-17 September, 2027 [Spin-dependent exotic interactions and precision tests of fundamental symmetries], European Centre for Theoretical Studies in Nuclear Physics and Related Areas, Trento, Italy
 
 ---
