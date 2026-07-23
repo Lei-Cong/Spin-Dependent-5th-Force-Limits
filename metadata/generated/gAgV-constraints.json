@@ -41,7 +41,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · Casimir e-e",
+      "display_label": "Combined · Casimir",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -85,7 +85,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · EEP e-e",
+      "display_label": "Combined · EEP",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -129,7 +129,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · EMM e-e",
+      "display_label": "Combined · EMM",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -173,7 +173,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · Torsion e-e",
+      "display_label": "Combined · Torsion",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -311,7 +311,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · Casimir e-N",
+      "display_label": "Combined · Casimir",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -355,7 +355,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · EEP e-N",
+      "display_label": "Combined · EEP",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -399,7 +399,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · MS e-N",
+      "display_label": "Combined · MS",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -443,7 +443,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · Torsion e-N",
+      "display_label": "Combined · Torsion",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1144,7 +1144,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · Casimir N-N",
+      "display_label": "Combined · Casimir",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1188,7 +1188,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · EEP N-N",
+      "display_label": "Combined · EEP",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1232,7 +1232,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · MS N-N",
+      "display_label": "Combined · MS",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1276,7 +1276,7 @@
           "review comparison appendix"
         ]
       },
-      "display_label": "Combined · Torsion N-N",
+      "display_label": "Combined · Torsion",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"

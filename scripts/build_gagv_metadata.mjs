@@ -283,7 +283,7 @@ const browserConstraints = {
     ...record,
     display_label: record.curation.status !== "review_only" && record.references[0] && publications[record.references[0]]
       ? publications[record.references[0]].short_citation.replace(" et al.", "")
-      : record.label.replace(/^Combined /, "Combined · "),
+      : record.label.replace(/^Combined /, "Combined · ").replace(/ [enpN]-[enpN]$/, ""),
     review_location: {
       section: "Axial-vector/Vector interaction gAgV",
       figure: "Fig. 9"

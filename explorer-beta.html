@@ -27,8 +27,9 @@
   .chartcard .title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bd);padding:.55rem .8rem;font-weight:600}
   .chart{height:120vh;background:#fff;}
   .chart-toolbar{display:flex;gap:.5rem;align-items:center;padding:.5rem .8rem;border-top:1px solid #e5e7eb;background:#fafafa;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
-  .chart-filters{display:flex;gap:.35rem;align-items:center;flex-wrap:wrap}
-  .chart-filters>span{color:#6b7785;font-size:.76rem;font-weight:600;margin-right:.1rem}
+  .chart-filters{display:grid;gap:.32rem;flex:1}
+  .filter-row{display:flex;gap:.35rem;align-items:center;flex-wrap:wrap}
+  .filter-row>span{width:4.7rem;color:#6b7785;font-size:.72rem;font-weight:700;letter-spacing:.03em}
   .filter-chip{border:1px solid #9eb8c2;border-radius:999px;background:#eaf4f6;color:#125d73;padding:.28rem .55rem;font-size:.74rem;font-weight:700;cursor:pointer}
   .filter-chip.off{background:#fff;color:#84929a;border-color:#d7dfe3;text-decoration:line-through}
   #checklist{max-height:50vh;overflow:auto;border:1px dashed var(--bd);border-radius:10px;padding:.5rem;background:#fff;}
@@ -405,14 +406,17 @@ async function loadGroupIfNeeded(groupKey){
 
         if (x.length && y.length){
           const metadata = metadataByPath.get(entry.path);
+          const pairSymbol = entry.path.split("/").at(-1).match(/_([enpN]-[enpN])\.csv$/)?.[1] || "";
+          const displayLabel = metadata?.display_label || entry.label || entry.path;
           result[sub].push({
             id: `${groupKey}:${entry.path}`,
-            name: metadata?.display_label || entry.label || entry.path,
+            name: pairSymbol ? `${displayLabel} ${pairSymbol}` : displayLabel,
             listName: metadata
-              ? `${metadata.display_label} · ${metadata.fermion_pair}`
+              ? `${metadata.display_label} · ${pairSymbol || metadata.fermion_pair}`
               : (entry.label || entry.path),
             fullName: entry.label || entry.path,
             path: entry.path,
+            pairSymbol,
             x,
             y
           });
@@ -482,6 +486,7 @@ function resolveAxisRanges(groupKey, subfolder, datasets){
 function datasetTags(dataset){
   const record = metadataByPath.get(dataset.path);
   const filename = dataset.path.split("/").at(-1);
+  const pair = dataset.pairSymbol || filename.match(/_([enpN]-[enpN])\.csv$/)?.[1] || "other";
   const potential = record?.potential ||
     (filename.startsWith("V1213_") ? "V12+13" :
       filename.startsWith("V11_") ? "V11" :
@@ -491,7 +496,8 @@ function datasetTags(dataset){
   const astrophysical =
     record?.method?.source === "astrophysical" ||
     /astro|astronom/i.test(`${dataset.path} ${record?.method?.technique || ""}`);
-  return { potential, combined, astrophysical };
+  const cosmological = /cosmolog/i.test(`${dataset.path} ${record?.method?.technique || ""}`);
+  return { potential, pair, combined, astrophysical, cosmological };
 }
 
 function traceIsVisible(chartId, dataset){
@@ -500,7 +506,9 @@ function traceIsVisible(chartId, dataset){
   const potentialKey = `potential:${tags.potential}`;
   return manualVisibility[dataset.id] !== false &&
     state[potentialKey] !== false &&
+    state[`pair:${tags.pair}`] !== false &&
     (!tags.astrophysical || state.astrophysical !== false) &&
+    (!tags.cosmological || state.cosmological !== false) &&
     (!tags.combined || state.combined !== false);
 }
 
@@ -618,29 +626,40 @@ function buildChartCard(groupKey, subfolder, datasets){
 
   const filterWrap = document.createElement("div");
   filterWrap.className = "chart-filters";
-  filterWrap.innerHTML = "<span>Show</span>";
   const potentials = [...new Set(datasets.map(dataset => datasetTags(dataset).potential))]
     .filter(value => value !== "combined" && value !== "other");
-  const filterSpecs = [
-    ...potentials.map(value => ({ key:`potential:${value}`, label:value })),
-    ...(datasets.some(dataset => datasetTags(dataset).astrophysical) ? [{ key:"astrophysical", label:"Astrophysical" }] : []),
-    ...(datasets.some(dataset => datasetTags(dataset).combined) ? [{ key:"combined", label:"Combined" }] : [])
+  const pairs = [...new Set(datasets.map(dataset => datasetTags(dataset).pair))]
+    .filter(value => value !== "other");
+  const filterRows = [
+    { label:"Potential", specs:potentials.map(value => ({ key:`potential:${value}`, label:value })) },
+    { label:"Fermion pair", specs:pairs.map(value => ({ key:`pair:${value}`, label:value })) },
+    { label:"Constraint", specs:[
+      ...(datasets.some(dataset => datasetTags(dataset).combined) ? [{ key:"combined", label:"Combined" }] : []),
+      ...(datasets.some(dataset => datasetTags(dataset).astrophysical) ? [{ key:"astrophysical", label:"Astrophysical" }] : []),
+      ...(datasets.some(dataset => datasetTags(dataset).cosmological) ? [{ key:"cosmological", label:"Cosmological" }] : [])
+    ]}
   ];
-  filterSpecs.forEach(spec => {
-    chartFilterState[chartId][spec.key] = true;
-    const chip = document.createElement("button");
-    chip.type = "button";
-    chip.className = "filter-chip";
-    chip.textContent = spec.label;
-    chip.setAttribute("aria-pressed", "true");
-    chip.addEventListener("click", () => {
-      const next = chartFilterState[chartId][spec.key] === false;
-      chartFilterState[chartId][spec.key] = next;
-      chip.classList.toggle("off", !next);
-      chip.setAttribute("aria-pressed", String(next));
-      applyChartFilters(chartId);
+  filterRows.filter(row => row.specs.length).forEach(row => {
+    const rowElement = document.createElement("div");
+    rowElement.className = "filter-row";
+    rowElement.innerHTML = `<span>${row.label}</span>`;
+    row.specs.forEach(spec => {
+      chartFilterState[chartId][spec.key] = true;
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "filter-chip";
+      chip.textContent = spec.label;
+      chip.setAttribute("aria-pressed", "true");
+      chip.addEventListener("click", () => {
+        const next = chartFilterState[chartId][spec.key] === false;
+        chartFilterState[chartId][spec.key] = next;
+        chip.classList.toggle("off", !next);
+        chip.setAttribute("aria-pressed", String(next));
+        applyChartFilters(chartId);
+      });
+      rowElement.appendChild(chip);
     });
-    filterWrap.appendChild(chip);
+    filterWrap.appendChild(rowElement);
   });
 
   const btn = document.createElement("button");
