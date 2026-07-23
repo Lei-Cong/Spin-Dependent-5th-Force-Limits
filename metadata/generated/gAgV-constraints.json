@@ -599,8 +599,8 @@
       "method": {
         "category": "complementary_experiment",
         "technique": "atomic_parity_violation",
-        "source": "ytterbium_nucleus",
-        "sensor": "atomic_parity_violation_spectroscopy"
+        "source": "",
+        "sensor": ""
       },
       "references": [
         {
@@ -646,8 +646,8 @@
       "method": {
         "category": "complementary_experiment",
         "technique": "atomic_parity_violation",
-        "source": "ytterbium_nucleus",
-        "sensor": "atomic_parity_violation_spectroscopy"
+        "source": "",
+        "sensor": ""
       },
       "references": [
         {
@@ -740,8 +740,8 @@
       "method": {
         "category": "complementary_experiment",
         "technique": "atomic_parity_violation_interpretation",
-        "source": "atomic_nucleus",
-        "sensor": "atomic_parity_violation_measurement"
+        "source": "",
+        "sensor": ""
       },
       "references": [
         {
@@ -1573,8 +1573,8 @@
       "method": {
         "category": "complementary_experiment",
         "technique": "astronomical_source_reanalysis",
-        "source": "astrophysical",
-        "sensor": "astronomical_observation"
+        "source": "",
+        "sensor": ""
       },
       "references": [
         {

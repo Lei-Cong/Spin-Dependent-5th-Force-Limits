@@ -208,7 +208,12 @@ for (const fullPath of listCsvFiles(dataRoot)) {
     potential,
     fermion_pair: fermionPair,
     method: mapping
-      ? { category: mapping.category, technique: mapping.technique, source: mapping.source || "", sensor: mapping.sensor || "" }
+      ? {
+          category: mapping.category,
+          technique: mapping.technique,
+          source: mapping.category === "dedicated_source_sensor" ? (mapping.source || "") : "",
+          sensor: mapping.category === "dedicated_source_sensor" ? (mapping.sensor || "") : ""
+        }
       : { category: "complementary_experiment", technique: "unresolved", source: "", sensor: "" },
     references: mapping ? [mapping.key] : [],
     curation: {

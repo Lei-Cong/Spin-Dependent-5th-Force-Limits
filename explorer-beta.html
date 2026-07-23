@@ -43,6 +43,13 @@
   .search input{flex:1;border:1px solid var(--bd);border-radius:8px;padding:.35rem .6rem;}
   .beta-badge{display:inline-flex;align-items:center;margin-left:.6rem;padding:.18rem .48rem;border:1px solid rgba(237,191,78,.6);border-radius:999px;color:#f5d77f;font:700 .68rem/1 "DM Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase;vertical-align:middle}
   .metadata-panel{margin:.2rem 0 1rem;border:1px solid #dce7eb;border-radius:10px;padding:1rem;background:#f7fbfc}
+  .metadata-head{display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem}
+  .metadata-head-actions{display:flex;gap:.35rem}
+  .metadata-icon-button{width:1.85rem;height:1.85rem;border:1px solid #b9cbd2;border-radius:7px;background:#fff;color:#145f75;font-weight:800;cursor:pointer;line-height:1}
+  .metadata-icon-button:hover{background:#eaf4f6}
+  .metadata-panel.collapsed .metadata-body{display:none}
+  .metadata-panel.collapsed{padding:.75rem 1rem}
+  .metadata-panel.collapsed .metadata-head h3{margin-bottom:.15rem}
   .metadata-kicker{color:#247b98;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
   .metadata-panel h3{margin:.3rem 0 .65rem;font:600 1.35rem/1.2 "Source Serif 4",serif;color:#0c2340}
   .metadata-grid{display:grid;grid-template-columns:7rem 1fr;gap:.35rem .7rem;margin:.7rem 0;font-size:.88rem}
@@ -54,6 +61,14 @@
   .metadata-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.65rem}
   .metadata-actions a{display:inline-flex;padding:.38rem .62rem;border:1px solid #b9c8d0;border-radius:7px;color:#0a617d;text-decoration:none;font-size:.82rem;font-weight:600}
   .metadata-note{color:#63717c;font-size:.82rem;line-height:1.45}
+  .metadata-dialog{width:min(680px,calc(100vw - 2rem));max-height:82vh;border:0;border-radius:14px;padding:0;box-shadow:0 24px 80px rgba(3,24,42,.28);color:#132a3a}
+  .metadata-dialog::backdrop{background:rgba(3,22,38,.56)}
+  .metadata-dialog-inner{padding:1.25rem}
+  .metadata-dialog-head{display:flex;align-items:start;justify-content:space-between;gap:1rem}
+  .metadata-dialog h2{font:600 1.55rem/1.2 "Source Serif 4",serif;margin:.15rem 0 .45rem;color:#0c2340}
+  .metadata-dialog pre{max-height:44vh;overflow:auto;padding:1rem;border-radius:9px;background:#f2f6f7;border:1px solid #dde7ea;white-space:pre-wrap;overflow-wrap:anywhere;font:500 .78rem/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+  .metadata-dialog-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem}
+  .metadata-dialog-actions button,.metadata-dialog-actions a{border:1px solid #a9c0c9;border-radius:8px;background:#fff;color:#0b647e;padding:.48rem .72rem;text-decoration:none;font:700 .82rem/1 "DM Sans",sans-serif;cursor:pointer}
   @media(max-width:900px){#wrap{grid-template-columns:1fr}.chart{height:75vh}#checklist{max-height:50vh}}
 </style>
 <link rel="stylesheet" href="./assets/css/viewer.css">
@@ -105,6 +120,21 @@
     </div>
   </div>
 </div>
+
+<dialog id="metadata-dialog" class="metadata-dialog">
+  <div class="metadata-dialog-inner">
+    <div class="metadata-dialog-head">
+      <div><span class="metadata-kicker">Full constraint record</span><h2>Check or correct this information</h2></div>
+      <button type="button" id="metadata-dialog-close" class="metadata-icon-button" aria-label="Close full record">×</button>
+    </div>
+    <p class="metadata-note">If anything is incomplete or incorrect, copy the complete record below and email it to <strong>congllzu@gmail.com</strong> using the fixed subject provided.</p>
+    <pre id="metadata-full-record"></pre>
+    <div class="metadata-dialog-actions">
+      <button type="button" id="metadata-copy-record">Copy complete record</button>
+      <a id="metadata-email-link" href="mailto:congllzu@gmail.com?subject=SD5thF%20constraint%20metadata%20feedback">Email metadata feedback ↗</a>
+    </div>
+  </div>
+</dialog>
 
 <footer class="viewer-footer">
   <div class="viewer-footer-grid">
@@ -216,6 +246,8 @@ let chartFilterState = {};
 let manualVisibility = {};
 let METADATA = null;
 let metadataByPath = new Map();
+let metadataCollapsed = false;
+let activeRecordText = "";
 
 function escapeHtml(value){
   return String(value ?? "").replace(/[&<>"']/g, char => ({
@@ -241,6 +273,56 @@ function publicationLine(reference){
     ? `${reference.volume}${reference.issue ? `(${reference.issue})` : ""}`
     : "";
   return [reference.journal, volumeIssue, reference.pages, reference.year].filter(Boolean).join(" · ");
+}
+
+function fullRecordText(record){
+  const references = record.references.map(reference =>
+    [
+      reference.short_citation || reference.citation_key,
+      reference.title,
+      publicationLine(reference),
+      reference.doi ? `DOI: ${reference.doi}` : "",
+      reference.url ? `URL: ${reference.url}` : ""
+    ].filter(Boolean).join("\n")
+  ).join("\n\n");
+  return [
+    `Constraint: ${record.label}`,
+    `Data file: ${record.data_file}`,
+    `Coupling: ${record.coupling || "gAgV"}`,
+    `Interaction potential: ${record.potential}`,
+    `Fermion pair: ${record.fermion_pair}`,
+    `Method category: ${record.method.category}`,
+    `Method: ${humanize(record.method.technique)}`,
+    ...(record.method.source ? [`Source: ${humanize(record.method.source)}`] : []),
+    ...(record.method.sensor ? [`Sensor: ${humanize(record.method.sensor)}`] : []),
+    `Review location: ${record.review_location.figure}; ${record.review_location.section}`,
+    `Curation status: ${record.curation.status}`,
+    `Dataset ID: ${record.id}`,
+    "",
+    "Publication(s)",
+    references || "No separate publication linked; see the RMP review."
+  ].join("\n");
+}
+
+function bindMetadataControls(record){
+  const panel = document.getElementById("metadata-panel");
+  const collapse = document.getElementById("metadata-collapse");
+  const info = document.getElementById("metadata-info");
+  panel.classList.toggle("collapsed", metadataCollapsed);
+  collapse?.setAttribute("aria-expanded", String(!metadataCollapsed));
+  if (collapse) collapse.textContent = metadataCollapsed ? "⌄" : "⌃";
+  collapse?.addEventListener("click", () => {
+    metadataCollapsed = !metadataCollapsed;
+    panel.classList.toggle("collapsed", metadataCollapsed);
+    collapse.setAttribute("aria-expanded", String(!metadataCollapsed));
+    collapse.textContent = metadataCollapsed ? "⌄" : "⌃";
+    collapse.setAttribute("aria-label", metadataCollapsed ? "Expand constraint card" : "Collapse constraint card");
+  });
+  info?.addEventListener("click", () => {
+    activeRecordText = fullRecordText(record);
+    document.getElementById("metadata-full-record").textContent = activeRecordText;
+    document.getElementById("metadata-dialog").showModal();
+  });
 }
 
 async function loadMetadataIfNeeded(){
@@ -272,19 +354,27 @@ function renderMetadata(dataset){
     return `<article class="reference-card"><strong>${escapeHtml(reference.title || reference.citation_key)}</strong><span>${escapeHtml(publicationLine(reference))}</span>${link ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener">Open publication ↗</a>` : ""}</article>`;
   }).join("");
   panel.innerHTML = `
-    <span class="metadata-kicker">Constraint record</span>
-    <h3>${escapeHtml(recordTitle)}</h3>
-    <dl class="metadata-grid">
-      <dt>Interaction potential</dt><dd>${potentialMarkup(record.potential)}</dd>
-      <dt>Fermion pair</dt><dd>${escapeHtml(record.fermion_pair)}</dd>
-      <dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>
-      ${record.method.source ? `<dt>Source</dt><dd>${escapeHtml(humanize(record.method.source))}</dd>` : ""}
-      ${record.method.sensor ? `<dt>Sensor</dt><dd>${escapeHtml(humanize(record.method.sensor))}</dd>` : ""}
-      <dt>Review</dt><dd>${escapeHtml(record.review_location.figure)} · ${escapeHtml(record.review_location.section)}</dd>
-    </dl>
-    ${references}
-    <div class="metadata-actions"><a href="./${escapeHtml(record.data_file)}" download>Download CSV ↓</a><a href="https://doi.org/10.1103/RevModPhys.97.025005" target="_blank" rel="noopener">Read the RMP review ↗</a></div>
-    <p class="metadata-note">${escapeHtml(METADATA.notice)}</p>`;
+    <div class="metadata-head">
+      <div><span class="metadata-kicker">Constraint record</span><h3>${escapeHtml(recordTitle)}</h3></div>
+      <div class="metadata-head-actions">
+        <button type="button" id="metadata-info" class="metadata-icon-button" aria-label="View complete record and report a correction" title="Full record and corrections">?</button>
+        <button type="button" id="metadata-collapse" class="metadata-icon-button" aria-label="${metadataCollapsed ? "Expand" : "Collapse"} constraint card" aria-expanded="${String(!metadataCollapsed)}">${metadataCollapsed ? "⌄" : "⌃"}</button>
+      </div>
+    </div>
+    <div class="metadata-body">
+      <dl class="metadata-grid">
+        <dt>Interaction potential</dt><dd>${potentialMarkup(record.potential)}</dd>
+        <dt>Fermion pair</dt><dd>${escapeHtml(record.fermion_pair)}</dd>
+        <dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>
+        ${record.method.category === "dedicated_source_sensor" && record.method.source ? `<dt>Source</dt><dd>${escapeHtml(humanize(record.method.source))}</dd>` : ""}
+        ${record.method.category === "dedicated_source_sensor" && record.method.sensor ? `<dt>Sensor</dt><dd>${escapeHtml(humanize(record.method.sensor))}</dd>` : ""}
+        <dt>Review</dt><dd>${escapeHtml(record.review_location.figure)} · ${escapeHtml(record.review_location.section)}</dd>
+      </dl>
+      ${references}
+      <div class="metadata-actions"><a href="./${escapeHtml(record.data_file)}" download>Download CSV ↓</a><a href="https://doi.org/10.1103/RevModPhys.97.025005" target="_blank" rel="noopener">Read the RMP review ↗</a></div>
+      <p class="metadata-note">${escapeHtml(METADATA.notice)}</p>
+    </div>`;
+  bindMetadataControls(record);
 }
 
 async function loadManifestIfNeeded(){
@@ -802,6 +892,22 @@ function addUploadTrace(chartId, groupKey, subfolder, name, x, y){
     renderChecklist();
   });
 }
+
+const metadataDialog = document.getElementById("metadata-dialog");
+document.getElementById("metadata-dialog-close").addEventListener("click", () => metadataDialog.close());
+metadataDialog.addEventListener("click", event => {
+  if (event.target === metadataDialog) metadataDialog.close();
+});
+document.getElementById("metadata-copy-record").addEventListener("click", async event => {
+  const button = event.currentTarget;
+  try{
+    await navigator.clipboard.writeText(activeRecordText);
+    button.textContent = "Copied";
+  }catch(error){
+    console.warn("Clipboard unavailable", error);
+    button.textContent = "Select and copy the record above";
+  }
+});
 
 document.getElementById("filter").addEventListener("input", renderChecklist);
 document.getElementById("showAll").addEventListener("click", () => setAllVisible(true));
