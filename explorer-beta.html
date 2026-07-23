@@ -32,6 +32,16 @@
   .filter-row>span{width:7.2rem;color:#6b7785;font-size:.72rem;font-weight:700;letter-spacing:.03em}
   .filter-chip{border:1px solid #9eb8c2;border-radius:999px;background:#eaf4f6;color:#125d73;padding:.28rem .55rem;font-size:.74rem;font-weight:700;cursor:pointer}
   .filter-chip.off{background:#fff;color:#84929a;border-color:#d7dfe3;text-decoration:line-through}
+  .exclusion-notice{display:flex;justify-content:space-between;gap:1.5rem;align-items:center;margin:.35rem 0 .85rem;padding:.75rem .9rem;border:1px solid #c7dce3;border-left:4px solid #197997;border-radius:8px;background:#f3f9fa;color:#294552;font-size:.84rem;line-height:1.45}
+  .exclusion-notice strong{color:#0c526a}
+  .encoding-key{color:#627681;font-size:.76rem;text-align:right}
+  .export-menu{position:relative;margin-left:auto}
+  .export-menu summary{list-style:none;border:1px solid #a9bec7;border-radius:8px;background:#fff;color:#0c627b;padding:.38rem .65rem;font-size:.78rem;font-weight:700;cursor:pointer;white-space:nowrap}
+  .export-menu summary::-webkit-details-marker{display:none}
+  .export-menu[open] summary{background:#eaf4f6}
+  .export-options{position:absolute;right:0;bottom:calc(100% + .4rem);z-index:20;min-width:185px;padding:.35rem;border:1px solid #cad8dd;border-radius:9px;background:#fff;box-shadow:0 12px 30px rgba(10,38,52,.16)}
+  .export-options button{display:block;width:100%;border:0;border-radius:6px;background:#fff;color:#24424f;padding:.48rem .55rem;text-align:left;font:600 .78rem/1.25 "DM Sans",sans-serif;cursor:pointer}
+  .export-options button:hover{background:#eef6f7;color:#0b617a}
   #checklist{max-height:50vh;overflow:auto;border:1px dashed var(--bd);border-radius:10px;padding:.5rem;background:#fff;}
   .folder{margin:.5rem 0 .8rem 0;}
   .folder>div.title{font-weight:600;color:#333;margin:.2rem 0 .2rem 0;display:flex;justify-content:space-between;align-items:center;}
@@ -77,6 +87,7 @@
     .chartcard{height:auto;min-height:0;display:block}
     #charts .chart{height:68vh;min-height:430px}
     #checklist{max-height:50vh}
+    .exclusion-notice{display:block}.encoding-key{text-align:left;margin-top:.4rem}
   }
 </style>
 <link rel="stylesheet" href="./assets/css/viewer.css">
@@ -92,6 +103,11 @@
   <div><span class="viewer-eyebrow">Interactive analysis</span><h1>Experimental Limit Explorer <span class="beta-badge">Beta</span></h1></div>
   <p>Select a coupling type, inspect published constraints and their literature context, or upload a two-column dataset for comparison.</p>
 </section>
+
+<div class="exclusion-notice">
+  <div><strong>How to read these limits:</strong> for the upper-limit curves shown here, parameter values above a curve are excluded by that constraint; the region below remains allowed.</div>
+  <div class="encoding-key">Colour = fermion pair · line style = interaction potential · gray solid = combined or astrophysical constraint</div>
+</div>
 
 <div class="controls">
   <button class="btn" data-group="gAgA">g<sub>A</sub>g<sub>A</sub></button>
@@ -505,6 +521,118 @@ function datasetTags(dataset){
   return { potential, pair, combined, astrophysical, cosmological };
 }
 
+const PAIR_COLORS = {
+  "e-e":"#1479a8",
+  "e-N":"#188878",
+  "e-p":"#d17316",
+  "e-n":"#7b61a8",
+  "N-N":"#9b4f67",
+  "n-N":"#4b7f2a",
+  "p-N":"#c24f3d",
+  "n-p":"#8b6b21",
+  "n-n":"#566f9e"
+};
+
+const POTENTIAL_DASHES = {
+  "V11":"solid",
+  "V12+13":"dash",
+  "V16":"dot",
+  "other":"dashdot"
+};
+
+function curveStyle(dataset){
+  const tags = datasetTags(dataset);
+  if (tags.combined) return { color:"#4f5961", dash:"solid" };
+  if (tags.astrophysical || tags.cosmological) return { color:"#a3aaaf", dash:"solid" };
+  return {
+    color: PAIR_COLORS[tags.pair] || "#287a94",
+    dash: POTENTIAL_DASHES[tags.potential] || POTENTIAL_DASHES.other
+  };
+}
+
+function safeFilename(value){
+  return String(value).replace(/[^a-z0-9_-]+/gi, "-").replace(/^-|-$/g, "");
+}
+
+function downloadBlob(filename, content, type){
+  const url = URL.createObjectURL(new Blob([content], { type }));
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = filename;
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+
+function visibleDatasets(chartId){
+  return (chartDatasets[chartId] || []).filter(dataset => traceIsVisible(chartId, dataset));
+}
+
+function exportVisibleCsv(chartId, groupKey, subfolder){
+  const rows = [["dataset","data_file","interaction_potential","fermion_pair","lambda_m","limit"]];
+  visibleDatasets(chartId).forEach(dataset => {
+    const tags = datasetTags(dataset);
+    dataset.x.forEach((x, index) => rows.push([
+      dataset.name, dataset.path, tags.potential, tags.pair, x, dataset.y[index]
+    ]));
+  });
+  const csv = rows.map(row => row.map(value => `"${String(value).replaceAll('"','""')}"`).join(",")).join("\n");
+  downloadBlob(`${safeFilename(groupKey)}-${safeFilename(subfolder)}-visible-curves.csv`, csv, "text/csv;charset=utf-8");
+}
+
+function exportConfiguration(chartId, groupKey, subfolder){
+  const payload = {
+    schema_version: "0.1",
+    exported_at: new Date().toISOString(),
+    coupling: groupKey,
+    chart: subfolder,
+    filters: chartFilterState[chartId],
+    visible_datasets: visibleDatasets(chartId).map(dataset => ({
+      label: dataset.name,
+      data_file: dataset.path,
+      ...datasetTags(dataset)
+    }))
+  };
+  downloadBlob(
+    `${safeFilename(groupKey)}-${safeFilename(subfolder)}-view.json`,
+    JSON.stringify(payload, null, 2) + "\n",
+    "application/json"
+  );
+}
+
+function createExportMenu(chartId, groupKey, subfolder){
+  const menu = document.createElement("details");
+  menu.className = "export-menu";
+  menu.innerHTML = `<summary>Export ↓</summary><div class="export-options">
+    <button type="button" data-export="png">Figure as PNG</button>
+    <button type="button" data-export="svg">Figure as SVG</button>
+    <button type="button" data-export="csv">Visible curves as CSV</button>
+    <button type="button" data-export="json">View configuration as JSON</button>
+  </div>`;
+  menu.querySelectorAll("[data-export]").forEach(button => {
+    button.addEventListener("click", () => {
+      const format = button.dataset.export;
+      const base = `${safeFilename(groupKey)}-${safeFilename(subfolder)}-limits`;
+      if (format === "png" || format === "svg"){
+        Plotly.downloadImage(document.getElementById(chartId), {
+          format,
+          filename: base,
+          width: 1400,
+          height: 900,
+          scale: format === "png" ? 2 : 1
+        });
+      } else if (format === "csv"){
+        exportVisibleCsv(chartId, groupKey, subfolder);
+      } else {
+        exportConfiguration(chartId, groupKey, subfolder);
+      }
+      menu.removeAttribute("open");
+    });
+  });
+  return menu;
+}
+
 function traceIsVisible(chartId, dataset){
   const state = chartFilterState[chartId] || {};
   const tags = datasetTags(dataset);
@@ -551,6 +679,7 @@ function buildChartCard(groupKey, subfolder, datasets){
 
   const traces = datasets.map((d, idx) => {
     traceIndex[chartId][d.id] = idx;
+    const visual = curveStyle(d);
 
     return {
       name: d.name,
@@ -564,7 +693,7 @@ function buildChartCard(groupKey, subfolder, datasets){
         `λ = %{x:.2e} m<br>` +
         `limit ≤ %{y:.2e}<extra></extra>`,
       visible: true,
-      line: { width: BASE_LINE.width },
+      line: { width: BASE_LINE.width, color:visual.color, dash:visual.dash },
       marker: { size: 5, opacity: 0 },
       opacity: BASE_LINE.opacity
     };
@@ -679,7 +808,6 @@ function buildChartCard(groupKey, subfolder, datasets){
   const btn = document.createElement("button");
   btn.className = "btn";
   btn.textContent = "➕ Add my data for comparison";
-  btn.style.marginLeft = "auto";
 
   const file = document.createElement("input");
   file.type = "file";
@@ -713,6 +841,7 @@ function buildChartCard(groupKey, subfolder, datasets){
   });
 
   bar.appendChild(filterWrap);
+  bar.appendChild(createExportMenu(chartId, groupKey, subfolder));
   bar.appendChild(btn);
   bar.appendChild(file);
   card.appendChild(bar);
