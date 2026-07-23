@@ -502,8 +502,8 @@
         "label": "910Stadnik_2018_1_m_abs_eN"
       },
       {
-        "path": "Dataset/normalized/gpgs/lepton-nucleon/910Dzuba_2018_m_abs_eN.csv",
-        "label": "910Dzuba_2018_m_abs_eN"
+        "path": "Dataset/normalized/gpgs/lepton-nucleon/910Dzuba_2018_m_abs_Ne.csv",
+        "label": "910Dzuba_2018_m_abs_Ne"
       },
       {
         "path": "Dataset/normalized/gpgs/lepton-nucleon/910Crescini_2022_1_m_abs_eN.csv",
@@ -604,8 +604,8 @@
         "label": "1agnpgNscombined4_m_abs"
       },
       {
-        "path": "Dataset/normalized/gpgs/nucleon-nucleon/neutron-nucleon/910Voronin_2018_m_abs_nN.csv",
-        "label": "910Voronin_2018_m_abs_nN"
+        "path": "Dataset/normalized/gpgs/nucleon-nucleon/neutron-nucleon/910Voronin_2009_m_abs_nN.csv",
+        "label": "910Voronin_2009_m_abs_nN"
       },
       {
         "path": "Dataset/normalized/gpgs/nucleon-nucleon/neutron-nucleon/1agnpgNscombined3_m_abs.csv",
@@ -652,8 +652,8 @@
         "label": "1agppgNscombined3_m_abs"
       },
       {
-        "path": "Dataset/normalized/gpgs/nucleon-nucleon/proton-nucleon/910Chaja_2024_abs_m_pN.csv",
-        "label": "910Chaja_2024_abs_m_pN"
+        "path": "Dataset/normalized/gpgs/nucleon-nucleon/nucleon-nucleon/910Baruch_2024_abs_m_NN.csv",
+        "label": "910Baruch_2024_abs_m_NN"
       },
       {
         "path": "Dataset/normalized/gpgs/nucleon-nucleon/proton-nucleon/910guigue_2015_m_abs_pN.csv",

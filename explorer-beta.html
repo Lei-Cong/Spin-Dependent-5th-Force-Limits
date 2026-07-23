@@ -110,7 +110,7 @@
 
 <div class="exclusion-notice">
   <div><strong>How to read these limits:</strong> for the upper-limit curves shown here, parameter values above a curve are excluded by that constraint; the region below remains allowed.</div>
-  <div class="encoding-key">Colour = fermion pair · most represented potential = solid · other potentials = distinct line styles · dark-gray dash-dot = V₁ comparison · light-gray solid = astrophysical/cosmological constraint</div>
+  <div class="encoding-key">Colour = fermion pair · most represented potential = solid · other potentials = distinct line styles · dark-gray solid = combined constraint · light-gray solid = astrophysical/cosmological constraint · dark-gray dash-dot = V₁ comparison</div>
 </div>
 
 <div class="controls">
@@ -173,11 +173,12 @@
 </footer>
 
 <script>
-const MANIFEST_PATH = "./datasets_multi.json?v=20260723-gvgv1";
+const MANIFEST_PATH = "./datasets_multi.json?v=20260723-gpgs1";
 const METADATA_PATHS = {
   gAgV: "./metadata/generated/gAgV-constraints.json",
   gAgA: "./metadata/generated/gAgA-constraints.json",
-  gVgV: "./metadata/generated/gVgV-constraints.json"
+  gVgV: "./metadata/generated/gVgV-constraints.json",
+  gpgs: "./metadata/gpgs_records.json?v=20260723-gpgs1"
 };
 
 const AXIS_CONFIG = {
@@ -310,6 +311,21 @@ function humanize(value){
   return String(value || "—").replaceAll("_", " ").replace(/\b\w/g, c => c.toUpperCase());
 }
 
+function canonicalPair(value){
+  const clean = String(value || "");
+  return ({
+    "electron-electron":"e-e",
+    "electron-neutron":"e-n",
+    "electron-proton":"e-p",
+    "electron-nucleon":"e-N",
+    "neutron-neutron":"n-n",
+    "neutron-proton":"n-p",
+    "neutron-nucleon":"n-N",
+    "proton-nucleon":"p-N",
+    "nucleon-nucleon":"N-N"
+  })[clean] || clean;
+}
+
 function potentialMarkup(value){
   const clean = String(value || "—");
   if (clean === "combined") return "Combined";
@@ -343,12 +359,13 @@ function fullRecordText(record){
     `Data file: ${record.data_file}`,
     `Coupling: ${record.coupling || "gAgV"}`,
     `Interaction potential: ${record.potential}`,
-    `Fermion pair: ${record.fermion_pair}`,
+    `Fermion pair: ${canonicalPair(record.fermion_pair)}`,
     `Method category: ${record.method.category}`,
     `Method: ${humanize(record.method.technique)}`,
     ...(record.method.source ? [`Source: ${humanize(record.method.source)}`] : []),
     ...(record.method.sensor ? [`Sensor: ${humanize(record.method.sensor)}`] : []),
     ...(record.review_location ? [`Review location: ${record.review_location.figure}; ${record.review_location.section}`] : []),
+    ...(record.context_note ? [`Context: ${record.context_note}`] : []),
     `Curation status: ${record.curation.status}`,
     `Dataset ID: ${record.id}`,
     "",
@@ -393,7 +410,7 @@ function renderMetadata(dataset){
   const panel = document.getElementById("metadata-panel");
   const metadata = METADATA_BY_COUPLING[current];
   if (!metadata){
-    panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>g<sub>A</sub>g<sub>V</sub>, g<sub>A</sub>g<sub>A</sub>, and g<sub>V</sub>g<sub>V</sub> are available now</h3><p class="metadata-note">These three coupling types include literature-linked records. The remaining coupling types continue to use the established plotting workflow while their records are curated.</p>`;
+    panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>Four coupling types are available now</h3><p class="metadata-note">g<sub>A</sub>g<sub>V</sub>, g<sub>A</sub>g<sub>A</sub>, g<sub>V</sub>g<sub>V</sub>, and g<sub>p</sub>g<sub>s</sub> include literature-linked records. The remaining coupling types continue to use the established plotting workflow while their records are curated.</p>`;
     return;
   }
   const record = dataset ? metadataByPath.get(dataset.path) : null;
@@ -402,6 +419,8 @@ function renderMetadata(dataset){
       ? "g<sub>A</sub>g<sub>A</sub>"
       : current === "gVgV"
         ? "g<sub>V</sub>g<sub>V</sub>"
+        : current === "gpgs"
+          ? "g<sub>p</sub>g<sub>s</sub>"
         : "g<sub>A</sub>g<sub>V</sub>";
     panel.innerHTML = `<span class="metadata-kicker">Literature-linked data</span><h3>Select a ${couplingMarkup} constraint</h3><p class="metadata-note">Click a curve, legend item, or constraint name to inspect its method, publication, DOI, and downloadable data.</p>`;
     return;
@@ -424,13 +443,14 @@ function renderMetadata(dataset){
     <div class="metadata-body">
       <dl class="metadata-grid">
         <dt>Interaction potential</dt><dd>${potentialMarkup(record.potential)}</dd>
-        <dt>Fermion pair</dt><dd>${escapeHtml(record.fermion_pair)}</dd>
+        <dt>Fermion pair</dt><dd>${escapeHtml(canonicalPair(record.fermion_pair))}</dd>
         ${record.confidence_level ? `<dt>Confidence level</dt><dd>${escapeHtml(record.confidence_level)}</dd>` : ""}
         ${record.method.category !== "dedicated_source_sensor" || (!record.method.source && !record.method.sensor) ? `<dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>` : ""}
         ${record.method.category === "dedicated_source_sensor" && record.method.source ? `<dt>Source</dt><dd>${escapeHtml(humanize(record.method.source))}</dd>` : ""}
         ${record.method.category === "dedicated_source_sensor" && record.method.sensor ? `<dt>Sensor</dt><dd>${escapeHtml(humanize(record.method.sensor))}</dd>` : ""}
         ${record.review_location ? `<dt>Review</dt><dd>${escapeHtml(record.review_location.figure)} · ${escapeHtml(record.review_location.section)}</dd>` : ""}
       </dl>
+      ${record.context_note ? `<p class="metadata-note">${escapeHtml(record.context_note)}</p>` : ""}
       ${references}
       <div class="metadata-actions"><a href="./${escapeHtml(record.data_file)}" download>Download CSV ↓</a><a href="https://doi.org/10.1103/RevModPhys.97.025005" target="_blank" rel="noopener">Read the RMP review ↗</a></div>
       <p class="metadata-note">${escapeHtml(metadata.notice)}</p>
@@ -467,13 +487,13 @@ async function loadGroupIfNeeded(groupKey){
 
         if (x.length && y.length){
           const metadata = metadataByPath.get(entry.path);
-          const pairSymbol = metadata?.fermion_pair || entry.path.split("/").at(-1).match(/_([enpN]-[enpN])\.csv$/)?.[1] || "";
+          const pairSymbol = canonicalPair(metadata?.fermion_pair) || entry.path.split("/").at(-1).match(/_([enpN]-[enpN])\.csv$/)?.[1] || "";
           const displayLabel = metadata?.display_label || entry.label || entry.path;
           result[sub].push({
             id: `${groupKey}:${entry.path}`,
             name: pairSymbol ? `${displayLabel} · ${pairSymbol}` : displayLabel,
             listName: metadata
-              ? `${metadata.display_label} · ${pairSymbol || metadata.fermion_pair}`
+              ? `${metadata.display_label} · ${pairSymbol || canonicalPair(metadata.fermion_pair)}`
               : (entry.label || entry.path),
             fullName: entry.label || entry.path,
             path: entry.path,
@@ -553,7 +573,7 @@ function resolveAxisRanges(groupKey, subfolder, datasets){
 function datasetTags(dataset){
   const record = metadataByPath.get(dataset.path);
   const filename = dataset.path.split("/").at(-1);
-  const pair = record?.fermion_pair || dataset.pairSymbol || filename.match(/_([enpN]-[enpN])\.csv$/)?.[1] || "other";
+  const pair = canonicalPair(record?.fermion_pair) || dataset.pairSymbol || filename.match(/_([enpN]-[enpN])\.csv$/)?.[1] || "other";
   const potential = record?.potential ||
     (filename.startsWith("V1213_") ? "V12+13" :
       filename.startsWith("V11_") ? "V11" :
@@ -575,6 +595,7 @@ const PAIR_COLORS = {
   "e-p":"#d17316",
   "e-n":"#7b61a8",
   "N-N":"#9b4f67",
+  "N-e":"#b45f9d",
   "n-N":"#4b7f2a",
   "p-N":"#c24f3d",
   "n-p":"#8b6b21",
@@ -758,13 +779,20 @@ function buildChartCard(groupKey, subfolder, datasets){
   chartDatasets[chartId] = datasets;
   chartFilterState[chartId] = {};
   const potentialStyles = potentialLineStyles(datasets);
+  const seenCombinedLegendGroups = new Set();
 
   const traces = datasets.map((d, idx) => {
     traceIndex[chartId][d.id] = idx;
     const visual = curveStyle(d, potentialStyles);
+    const tags = datasetTags(d);
+    const combinedLegendGroup = tags.combined ? `combined:${tags.pair}` : "";
+    const showlegend = !combinedLegendGroup || !seenCombinedLegendGroups.has(combinedLegendGroup);
+    if (combinedLegendGroup) seenCombinedLegendGroups.add(combinedLegendGroup);
 
     return {
-      name: d.name,
+      name: tags.combined ? `Combined · ${tags.pair}` : d.name,
+      legendgroup: combinedLegendGroup || undefined,
+      showlegend,
       x: d.x,
       y: d.y,
       customdata: d.x.map(() => d.name),
