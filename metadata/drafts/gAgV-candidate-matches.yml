@@ -14,6 +14,8 @@ records:
     method:
       category: "combined"
       technique: "casimir"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -34,6 +36,8 @@ records:
     method:
       category: "combined"
       technique: "eep"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -54,6 +58,8 @@ records:
     method:
       category: "combined"
       technique: "emm"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -74,6 +80,8 @@ records:
     method:
       category: "combined"
       technique: "torsion"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -94,6 +102,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "spin_polarized_torsion_pendulum"
+      source: "polarized_electron_source"
+      sensor: "torsion_pendulum"
     references:
       - "heckel_limits_2013"
     review_location:
@@ -114,6 +124,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "earth_source_spin_experiment"
+      source: "earth_geoelectrons"
+      sensor: "spin_polarized_torsion_pendulum"
     references:
       - "hunter_using_2013"
     review_location:
@@ -134,6 +146,8 @@ records:
     method:
       category: "combined"
       technique: "casimir"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -154,6 +168,8 @@ records:
     method:
       category: "combined"
       technique: "eep"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -174,6 +190,8 @@ records:
     method:
       category: "combined"
       technique: "ms"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -194,6 +212,8 @@ records:
     method:
       category: "combined"
       technique: "torsion"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -214,6 +234,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "earth_source_spin_experiment"
+      source: "earth_geoelectrons"
+      sensor: "spin_polarized_torsion_pendulum"
     references:
       - "hunter_using_2013"
     review_location:
@@ -234,6 +256,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "earth_source_spin_experiment"
+      source: "earth_geoelectrons"
+      sensor: "spin_polarized_torsion_pendulum"
     references:
       - "hunter_using_2013"
     review_location:
@@ -254,6 +278,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "quantum_spin_amplifier"
+      source: "polarized_spin_source"
+      sensor: "quantum_spin_amplifier"
     references:
       - "wang_search_2023"
     review_location:
@@ -274,6 +300,8 @@ records:
     method:
       category: "complementary_experiment"
       technique: "atomic_parity_violation"
+      source: "ytterbium_nucleus"
+      sensor: "atomic_parity_violation_spectroscopy"
     references:
       - "antypas_isotopic_2019"
     review_location:
@@ -294,6 +322,8 @@ records:
     method:
       category: "complementary_experiment"
       technique: "atomic_parity_violation"
+      source: "ytterbium_nucleus"
+      sensor: "atomic_parity_violation_spectroscopy"
     references:
       - "antypas_isotopic_2019"
     review_location:
@@ -314,6 +344,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "earth_source_spin_velocity_experiment"
+      source: "earth"
+      sensor: "spin_polarized_torsion_pendulum"
     references:
       - "clayburn_using_2023"
     review_location:
@@ -334,6 +366,8 @@ records:
     method:
       category: "complementary_experiment"
       technique: "atomic_parity_violation_interpretation"
+      source: "atomic_nucleus"
+      sensor: "atomic_parity_violation_measurement"
     references:
       - "dzuba_probing_2017"
     review_location:
@@ -354,6 +388,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "spin_polarized_torsion_pendulum"
+      source: "preferred_frame_background"
+      sensor: "spin_polarized_torsion_pendulum"
     references:
       - "heckel_preferred-frame_2008"
     review_location:
@@ -374,6 +410,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "single_electron_spin_quantum_sensor"
+      source: "moving_mass"
+      sensor: "single_nv_center"
     references:
       - "jiao_experimental_2021"
     review_location:
@@ -394,6 +432,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "optically_polarized_vapor"
+      source: "moving_mass"
+      sensor: "optically_polarized_vapor"
     references:
       - "kim_experimental_2019"
     review_location:
@@ -414,6 +454,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "ensemble_nv_diamond_magnetometer"
+      source: "moving_mass"
+      sensor: "ensemble_nv_diamond_magnetometer"
     references:
       - "liang_new_2023"
     review_location:
@@ -434,6 +476,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "atomic_magnetometer_array"
+      source: "polarized_spin_source"
+      sensor: "atomic_magnetometer_array"
     references:
       - "wu_experimental_2022"
     review_location:
@@ -454,6 +498,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "geoelectron_source_spin_experiment"
+      source: "earth_geoelectrons"
+      sensor: "spin_polarized_torsion_pendulum"
     references:
       - "hunter_using_2014"
     review_location:
@@ -474,6 +520,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "geoelectron_source_spin_experiment"
+      source: "earth_geoelectrons"
+      sensor: "spin_polarized_torsion_pendulum"
     references:
       - "hunter_using_2014"
     review_location:
@@ -494,6 +542,8 @@ records:
     method:
       category: "combined"
       technique: "casimir"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -514,6 +564,8 @@ records:
     method:
       category: "combined"
       technique: "eep"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -534,6 +586,8 @@ records:
     method:
       category: "combined"
       technique: "ms"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -554,6 +608,8 @@ records:
     method:
       category: "combined"
       technique: "torsion"
+      source: ""
+      sensor: ""
     references:
       - "cong_spin-dependent_2025"
     review_location:
@@ -574,6 +630,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "comagnetometer"
+      source: "earth"
+      sensor: "comagnetometer"
     references:
       - "vasilakis_limits_2009"
     review_location:
@@ -594,6 +652,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "quantum_spin_amplifier"
+      source: "polarized_spin_source"
+      sensor: "quantum_spin_amplifier"
     references:
       - "wang_search_2023"
     review_location:
@@ -614,6 +674,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "earth_source_spin_velocity_experiment"
+      source: "earth"
+      sensor: "spin_polarized_torsion_pendulum"
     references:
       - "clayburn_using_2023"
     review_location:
@@ -634,6 +696,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "earth_source_spin_velocity_experiment"
+      source: "earth"
+      sensor: "spin_polarized_torsion_pendulum"
     references:
       - "clayburn_using_2023"
     review_location:
@@ -654,6 +718,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "atom_interferometer"
+      source: "earth"
+      sensor: "atom_interferometer"
     references:
       - "shu_constraint_2024"
     review_location:
@@ -674,6 +740,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "spin_based_amplifier"
+      source: "polarized_spin_source"
+      sensor: "spin_based_amplifier"
     references:
       - "su_search_2021"
     review_location:
@@ -694,6 +762,8 @@ records:
     method:
       category: "complementary_experiment"
       technique: "astronomical_source_reanalysis"
+      source: "astrophysical"
+      sensor: "astronomical_observation"
     references:
       - "wu_new_2023"
     review_location:
@@ -714,6 +784,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "neutron_spin_rotation"
+      source: "bulk_matter"
+      sensor: "neutron_spin_rotation"
     references:
       - "yan_new_2013"
     review_location:
@@ -734,6 +806,8 @@ records:
     method:
       category: "dedicated_source_sensor"
       technique: "polarized_helium_spin_relaxation"
+      source: "cell_walls"
+      sensor: "polarized_helium_spin_relaxation"
     references:
       - "yan_searching_2015"
     review_location:

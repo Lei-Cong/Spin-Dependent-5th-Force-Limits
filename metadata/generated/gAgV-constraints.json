@@ -28,7 +28,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -39,6 +41,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · Casimir e-e",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -69,7 +72,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -80,6 +85,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · EEP e-e",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -110,7 +116,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -121,6 +129,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · EMM e-e",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -151,7 +160,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -162,6 +173,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · Torsion e-e",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -175,7 +187,9 @@
       "fermion_pair": "electron-electron",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "spin_polarized_torsion_pendulum"
+        "technique": "spin_polarized_torsion_pendulum",
+        "source": "polarized_electron_source",
+        "sensor": "torsion_pendulum"
       },
       "references": [
         {
@@ -192,7 +206,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.111.151802",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.111.151802"
+          "url": "https://doi.org/10.1103/PhysRevLett.111.151802",
+          "first_author": "Heckel",
+          "short_citation": "Heckel et al. 2013"
         }
       ],
       "curation": {
@@ -204,6 +220,7 @@
         ],
         "note": ""
       },
+      "display_label": "Heckel 2013",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -217,7 +234,9 @@
       "fermion_pair": "electron-electron",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "earth_source_spin_experiment"
+        "technique": "earth_source_spin_experiment",
+        "source": "earth_geoelectrons",
+        "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
         {
@@ -234,7 +253,9 @@
           "doi_url": "https://doi.org/10.1126/science.1227460",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1126/science.1227460"
+          "url": "https://doi.org/10.1126/science.1227460",
+          "first_author": "Hunter",
+          "short_citation": "Hunter et al. 2013"
         }
       ],
       "curation": {
@@ -246,6 +267,7 @@
         ],
         "note": ""
       },
+      "display_label": "Hunter 2013",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -276,7 +298,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -287,6 +311,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · Casimir e-N",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -317,7 +342,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -328,6 +355,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · EEP e-N",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -358,7 +386,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -369,6 +399,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · MS e-N",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -399,7 +430,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -410,6 +443,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · Torsion e-N",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -423,7 +457,9 @@
       "fermion_pair": "electron-neutron",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "earth_source_spin_experiment"
+        "technique": "earth_source_spin_experiment",
+        "source": "earth_geoelectrons",
+        "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
         {
@@ -440,7 +476,9 @@
           "doi_url": "https://doi.org/10.1126/science.1227460",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1126/science.1227460"
+          "url": "https://doi.org/10.1126/science.1227460",
+          "first_author": "Hunter",
+          "short_citation": "Hunter et al. 2013"
         }
       ],
       "curation": {
@@ -452,6 +490,7 @@
         ],
         "note": ""
       },
+      "display_label": "Hunter 2013",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -465,7 +504,9 @@
       "fermion_pair": "electron-proton",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "earth_source_spin_experiment"
+        "technique": "earth_source_spin_experiment",
+        "source": "earth_geoelectrons",
+        "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
         {
@@ -482,7 +523,9 @@
           "doi_url": "https://doi.org/10.1126/science.1227460",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1126/science.1227460"
+          "url": "https://doi.org/10.1126/science.1227460",
+          "first_author": "Hunter",
+          "short_citation": "Hunter et al. 2013"
         }
       ],
       "curation": {
@@ -494,6 +537,7 @@
         ],
         "note": ""
       },
+      "display_label": "Hunter 2013",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -507,7 +551,9 @@
       "fermion_pair": "electron-neutron",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "quantum_spin_amplifier"
+        "technique": "quantum_spin_amplifier",
+        "source": "polarized_spin_source",
+        "sensor": "quantum_spin_amplifier"
       },
       "references": [
         {
@@ -524,7 +570,9 @@
           "doi_url": "https://doi.org/10.1126/sciadv.ade0353",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1126/sciadv.ade0353"
+          "url": "https://doi.org/10.1126/sciadv.ade0353",
+          "first_author": "Wang",
+          "short_citation": "Wang et al. 2023"
         }
       ],
       "curation": {
@@ -536,6 +584,7 @@
         ],
         "note": ""
       },
+      "display_label": "Wang 2023",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -549,7 +598,9 @@
       "fermion_pair": "electron-neutron",
       "method": {
         "category": "complementary_experiment",
-        "technique": "atomic_parity_violation"
+        "technique": "atomic_parity_violation",
+        "source": "ytterbium_nucleus",
+        "sensor": "atomic_parity_violation_spectroscopy"
       },
       "references": [
         {
@@ -566,7 +617,9 @@
           "doi_url": "https://doi.org/10.1038/s41567-018-0312-8",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1038/s41567-018-0312-8"
+          "url": "https://doi.org/10.1038/s41567-018-0312-8",
+          "first_author": "Antypas",
+          "short_citation": "Antypas et al. 2019"
         }
       ],
       "curation": {
@@ -578,6 +631,7 @@
         ],
         "note": ""
       },
+      "display_label": "Antypas 2019",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -591,7 +645,9 @@
       "fermion_pair": "electron-proton",
       "method": {
         "category": "complementary_experiment",
-        "technique": "atomic_parity_violation"
+        "technique": "atomic_parity_violation",
+        "source": "ytterbium_nucleus",
+        "sensor": "atomic_parity_violation_spectroscopy"
       },
       "references": [
         {
@@ -608,7 +664,9 @@
           "doi_url": "https://doi.org/10.1038/s41567-018-0312-8",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1038/s41567-018-0312-8"
+          "url": "https://doi.org/10.1038/s41567-018-0312-8",
+          "first_author": "Antypas",
+          "short_citation": "Antypas et al. 2019"
         }
       ],
       "curation": {
@@ -620,6 +678,7 @@
         ],
         "note": ""
       },
+      "display_label": "Antypas 2019",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -633,7 +692,9 @@
       "fermion_pair": "electron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "earth_source_spin_velocity_experiment"
+        "technique": "earth_source_spin_velocity_experiment",
+        "source": "earth",
+        "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
         {
@@ -650,7 +711,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevD.108.L051701",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevD.108.L051701"
+          "url": "https://doi.org/10.1103/PhysRevD.108.L051701",
+          "first_author": "Clayburn",
+          "short_citation": "Clayburn et al. 2023"
         }
       ],
       "curation": {
@@ -662,6 +725,7 @@
         ],
         "note": ""
       },
+      "display_label": "Clayburn 2023",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -675,7 +739,9 @@
       "fermion_pair": "electron-nucleon",
       "method": {
         "category": "complementary_experiment",
-        "technique": "atomic_parity_violation_interpretation"
+        "technique": "atomic_parity_violation_interpretation",
+        "source": "atomic_nucleus",
+        "sensor": "atomic_parity_violation_measurement"
       },
       "references": [
         {
@@ -692,7 +758,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.119.223201",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.119.223201"
+          "url": "https://doi.org/10.1103/PhysRevLett.119.223201",
+          "first_author": "Dzuba",
+          "short_citation": "Dzuba et al. 2017"
         }
       ],
       "curation": {
@@ -704,6 +772,7 @@
         ],
         "note": ""
       },
+      "display_label": "Dzuba 2017",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -717,7 +786,9 @@
       "fermion_pair": "electron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "spin_polarized_torsion_pendulum"
+        "technique": "spin_polarized_torsion_pendulum",
+        "source": "preferred_frame_background",
+        "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
         {
@@ -734,7 +805,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevD.78.092006",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevD.78.092006"
+          "url": "https://doi.org/10.1103/PhysRevD.78.092006",
+          "first_author": "Heckel",
+          "short_citation": "Heckel et al. 2008"
         }
       ],
       "curation": {
@@ -746,6 +819,7 @@
         ],
         "note": ""
       },
+      "display_label": "Heckel 2008",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -759,7 +833,9 @@
       "fermion_pair": "electron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "single_electron_spin_quantum_sensor"
+        "technique": "single_electron_spin_quantum_sensor",
+        "source": "moving_mass",
+        "sensor": "single_nv_center"
       },
       "references": [
         {
@@ -776,7 +852,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.127.010501",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.127.010501"
+          "url": "https://doi.org/10.1103/PhysRevLett.127.010501",
+          "first_author": "Jiao",
+          "short_citation": "Jiao et al. 2021"
         }
       ],
       "curation": {
@@ -788,6 +866,7 @@
         ],
         "note": ""
       },
+      "display_label": "Jiao 2021",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -801,7 +880,9 @@
       "fermion_pair": "electron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "optically_polarized_vapor"
+        "technique": "optically_polarized_vapor",
+        "source": "moving_mass",
+        "sensor": "optically_polarized_vapor"
       },
       "references": [
         {
@@ -818,7 +899,9 @@
           "doi_url": "https://doi.org/10.1038/s41467-019-10169-1",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1038/s41467-019-10169-1"
+          "url": "https://doi.org/10.1038/s41467-019-10169-1",
+          "first_author": "Kim",
+          "short_citation": "Kim et al. 2019"
         }
       ],
       "curation": {
@@ -830,6 +913,7 @@
         ],
         "note": ""
       },
+      "display_label": "Kim 2019",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -843,7 +927,9 @@
       "fermion_pair": "electron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "ensemble_nv_diamond_magnetometer"
+        "technique": "ensemble_nv_diamond_magnetometer",
+        "source": "moving_mass",
+        "sensor": "ensemble_nv_diamond_magnetometer"
       },
       "references": [
         {
@@ -860,7 +946,9 @@
           "doi_url": "https://doi.org/10.1093/nsr/nwac262",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1093/nsr/nwac262"
+          "url": "https://doi.org/10.1093/nsr/nwac262",
+          "first_author": "Liang",
+          "short_citation": "Liang et al. 2023"
         }
       ],
       "curation": {
@@ -871,6 +959,7 @@
         ],
         "note": "Published in 2023; the legacy CSV filename retains the 2022 pre-publication year."
       },
+      "display_label": "Liang 2023",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -884,7 +973,9 @@
       "fermion_pair": "electron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "atomic_magnetometer_array"
+        "technique": "atomic_magnetometer_array",
+        "source": "polarized_spin_source",
+        "sensor": "atomic_magnetometer_array"
       },
       "references": [
         {
@@ -901,7 +992,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.129.051802",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.129.051802"
+          "url": "https://doi.org/10.1103/PhysRevLett.129.051802",
+          "first_author": "Wu",
+          "short_citation": "Wu et al. 2022"
         }
       ],
       "curation": {
@@ -913,6 +1006,7 @@
         ],
         "note": ""
       },
+      "display_label": "Wu 2022",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -926,7 +1020,9 @@
       "fermion_pair": "electron-neutron",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "geoelectron_source_spin_experiment"
+        "technique": "geoelectron_source_spin_experiment",
+        "source": "earth_geoelectrons",
+        "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
         {
@@ -943,7 +1039,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.112.091803",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.112.091803"
+          "url": "https://doi.org/10.1103/PhysRevLett.112.091803",
+          "first_author": "Hunter",
+          "short_citation": "Hunter et al. 2014"
         }
       ],
       "curation": {
@@ -955,6 +1053,7 @@
         ],
         "note": ""
       },
+      "display_label": "Hunter 2014",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -968,7 +1067,9 @@
       "fermion_pair": "electron-proton",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "geoelectron_source_spin_experiment"
+        "technique": "geoelectron_source_spin_experiment",
+        "source": "earth_geoelectrons",
+        "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
         {
@@ -985,7 +1086,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.112.091803",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.112.091803"
+          "url": "https://doi.org/10.1103/PhysRevLett.112.091803",
+          "first_author": "Hunter",
+          "short_citation": "Hunter et al. 2014"
         }
       ],
       "curation": {
@@ -997,6 +1100,7 @@
         ],
         "note": ""
       },
+      "display_label": "Hunter 2014",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1027,7 +1131,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -1038,6 +1144,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · Casimir N-N",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1068,7 +1175,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -1079,6 +1188,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · EEP N-N",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1109,7 +1219,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -1120,6 +1232,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · MS N-N",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1150,7 +1263,9 @@
           "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "first_author": "Cong",
+          "short_citation": "Cong et al. 2025"
         }
       ],
       "curation": {
@@ -1161,6 +1276,7 @@
           "review comparison appendix"
         ]
       },
+      "display_label": "Combined · Torsion N-N",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1174,7 +1290,9 @@
       "fermion_pair": "neutron-neutron",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "comagnetometer"
+        "technique": "comagnetometer",
+        "source": "earth",
+        "sensor": "comagnetometer"
       },
       "references": [
         {
@@ -1191,7 +1309,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.103.261801",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.103.261801"
+          "url": "https://doi.org/10.1103/PhysRevLett.103.261801",
+          "first_author": "Vasilakis",
+          "short_citation": "Vasilakis et al. 2009"
         }
       ],
       "curation": {
@@ -1203,6 +1323,7 @@
         ],
         "note": ""
       },
+      "display_label": "Vasilakis 2009",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1216,7 +1337,9 @@
       "fermion_pair": "neutron-proton",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "quantum_spin_amplifier"
+        "technique": "quantum_spin_amplifier",
+        "source": "polarized_spin_source",
+        "sensor": "quantum_spin_amplifier"
       },
       "references": [
         {
@@ -1233,7 +1356,9 @@
           "doi_url": "https://doi.org/10.1126/sciadv.ade0353",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1126/sciadv.ade0353"
+          "url": "https://doi.org/10.1126/sciadv.ade0353",
+          "first_author": "Wang",
+          "short_citation": "Wang et al. 2023"
         }
       ],
       "curation": {
@@ -1245,6 +1370,7 @@
         ],
         "note": ""
       },
+      "display_label": "Wang 2023",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1258,7 +1384,9 @@
       "fermion_pair": "neutron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "earth_source_spin_velocity_experiment"
+        "technique": "earth_source_spin_velocity_experiment",
+        "source": "earth",
+        "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
         {
@@ -1275,7 +1403,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevD.108.L051701",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevD.108.L051701"
+          "url": "https://doi.org/10.1103/PhysRevD.108.L051701",
+          "first_author": "Clayburn",
+          "short_citation": "Clayburn et al. 2023"
         }
       ],
       "curation": {
@@ -1287,6 +1417,7 @@
         ],
         "note": ""
       },
+      "display_label": "Clayburn 2023",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1300,7 +1431,9 @@
       "fermion_pair": "proton-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "earth_source_spin_velocity_experiment"
+        "technique": "earth_source_spin_velocity_experiment",
+        "source": "earth",
+        "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
         {
@@ -1317,7 +1450,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevD.108.L051701",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevD.108.L051701"
+          "url": "https://doi.org/10.1103/PhysRevD.108.L051701",
+          "first_author": "Clayburn",
+          "short_citation": "Clayburn et al. 2023"
         }
       ],
       "curation": {
@@ -1329,6 +1464,7 @@
         ],
         "note": ""
       },
+      "display_label": "Clayburn 2023",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1342,7 +1478,9 @@
       "fermion_pair": "proton-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "atom_interferometer"
+        "technique": "atom_interferometer",
+        "source": "earth",
+        "sensor": "atom_interferometer"
       },
       "references": [
         {
@@ -1359,7 +1497,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.133.213401",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.133.213401"
+          "url": "https://doi.org/10.1103/PhysRevLett.133.213401",
+          "first_author": "Shu",
+          "short_citation": "Shu et al. 2024"
         }
       ],
       "curation": {
@@ -1371,6 +1511,7 @@
         ],
         "note": ""
       },
+      "display_label": "Shu 2024",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1384,7 +1525,9 @@
       "fermion_pair": "neutron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "spin_based_amplifier"
+        "technique": "spin_based_amplifier",
+        "source": "polarized_spin_source",
+        "sensor": "spin_based_amplifier"
       },
       "references": [
         {
@@ -1401,7 +1544,9 @@
           "doi_url": "https://doi.org/10.1126/sciadv.abi9535",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1126/sciadv.abi9535"
+          "url": "https://doi.org/10.1126/sciadv.abi9535",
+          "first_author": "Su",
+          "short_citation": "Su et al. 2021"
         }
       ],
       "curation": {
@@ -1413,6 +1558,7 @@
         ],
         "note": ""
       },
+      "display_label": "Su 2021",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1426,7 +1572,9 @@
       "fermion_pair": "neutron-nucleon",
       "method": {
         "category": "complementary_experiment",
-        "technique": "astronomical_source_reanalysis"
+        "technique": "astronomical_source_reanalysis",
+        "source": "astrophysical",
+        "sensor": "astronomical_observation"
       },
       "references": [
         {
@@ -1443,7 +1591,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.131.091002",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.131.091002"
+          "url": "https://doi.org/10.1103/PhysRevLett.131.091002",
+          "first_author": "Wu",
+          "short_citation": "Wu et al. 2023"
         }
       ],
       "curation": {
@@ -1455,6 +1605,7 @@
         ],
         "note": ""
       },
+      "display_label": "Wu 2023",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1468,7 +1619,9 @@
       "fermion_pair": "neutron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "neutron_spin_rotation"
+        "technique": "neutron_spin_rotation",
+        "source": "bulk_matter",
+        "sensor": "neutron_spin_rotation"
       },
       "references": [
         {
@@ -1485,7 +1638,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.110.082003",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.110.082003"
+          "url": "https://doi.org/10.1103/PhysRevLett.110.082003",
+          "first_author": "Yan",
+          "short_citation": "Yan et al. 2013"
         }
       ],
       "curation": {
@@ -1497,6 +1652,7 @@
         ],
         "note": ""
       },
+      "display_label": "Yan 2013",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"
@@ -1510,7 +1666,9 @@
       "fermion_pair": "neutron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "polarized_helium_spin_relaxation"
+        "technique": "polarized_helium_spin_relaxation",
+        "source": "cell_walls",
+        "sensor": "polarized_helium_spin_relaxation"
       },
       "references": [
         {
@@ -1527,7 +1685,9 @@
           "doi_url": "https://doi.org/10.1103/PhysRevLett.115.182001",
           "arxiv": "",
           "arxiv_url": "",
-          "url": "https://doi.org/10.1103/PhysRevLett.115.182001"
+          "url": "https://doi.org/10.1103/PhysRevLett.115.182001",
+          "first_author": "Yan",
+          "short_citation": "Yan et al. 2015"
         }
       ],
       "curation": {
@@ -1539,6 +1699,7 @@
         ],
         "note": ""
       },
+      "display_label": "Yan 2015",
       "review_location": {
         "section": "Axial-vector/Vector interaction gAgV",
         "figure": "Fig. 9"

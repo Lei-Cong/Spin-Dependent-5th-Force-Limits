@@ -27,6 +27,10 @@
   .chartcard .title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bd);padding:.55rem .8rem;font-weight:600}
   .chart{height:120vh;background:#fff;}
   .chart-toolbar{display:flex;gap:.5rem;align-items:center;padding:.5rem .8rem;border-top:1px solid #e5e7eb;background:#fafafa;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
+  .chart-filters{display:flex;gap:.35rem;align-items:center;flex-wrap:wrap}
+  .chart-filters>span{color:#6b7785;font-size:.76rem;font-weight:600;margin-right:.1rem}
+  .filter-chip{border:1px solid #9eb8c2;border-radius:999px;background:#eaf4f6;color:#125d73;padding:.28rem .55rem;font-size:.74rem;font-weight:700;cursor:pointer}
+  .filter-chip.off{background:#fff;color:#84929a;border-color:#d7dfe3;text-decoration:line-through}
   #checklist{max-height:50vh;overflow:auto;border:1px dashed var(--bd);border-radius:10px;padding:.5rem;background:#fff;}
   .folder{margin:.5rem 0 .8rem 0;}
   .folder>div.title{font-weight:600;color:#333;margin:.2rem 0 .2rem 0;display:flex;justify-content:space-between;align-items:center;}
@@ -207,6 +211,9 @@ let DATA = {};
 let current = "gAgV";
 let traceIndex = {};
 let UPLOADS = {};
+let chartDatasets = {};
+let chartFilterState = {};
+let manualVisibility = {};
 let METADATA = null;
 let metadataByPath = new Map();
 
@@ -218,6 +225,22 @@ function escapeHtml(value){
 
 function humanize(value){
   return String(value || "—").replaceAll("_", " ").replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function potentialMarkup(value){
+  const clean = String(value || "—");
+  if (clean === "combined") return "Combined";
+  if (clean === "V12+13") return "<i>V</i><sub>12+13</sub>";
+  const match = clean.match(/^V(.+)$/);
+  return match ? `<i>V</i><sub>${escapeHtml(match[1])}</sub>` : escapeHtml(clean);
+}
+
+function publicationLine(reference){
+  if (!reference) return "";
+  const volumeIssue = reference.volume
+    ? `${reference.volume}${reference.issue ? `(${reference.issue})` : ""}`
+    : "";
+  return [reference.journal, volumeIssue, reference.pages, reference.year].filter(Boolean).join(" · ");
 }
 
 async function loadMetadataIfNeeded(){
@@ -240,17 +263,23 @@ function renderMetadata(dataset){
     panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>Select a g<sub>A</sub>g<sub>V</sub> constraint</h3><p class="metadata-note">Click a curve, legend item, or constraint name to inspect its method, publication, DOI, and downloadable data.</p>`;
     return;
   }
+  const primaryReference = record.references[0];
+  const recordTitle = record.curation.status === "review_only"
+    ? record.label
+    : (primaryReference?.short_citation || record.label);
   const references = record.references.map(reference => {
     const link = reference.doi_url || reference.url || reference.arxiv_url;
-    return `<article class="reference-card"><strong>${escapeHtml(reference.title || reference.citation_key)}</strong><span>${escapeHtml([reference.journal, reference.year].filter(Boolean).join(" · "))}</span>${link ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener">Open publication ↗</a>` : ""}</article>`;
+    return `<article class="reference-card"><strong>${escapeHtml(reference.title || reference.citation_key)}</strong><span>${escapeHtml(publicationLine(reference))}</span>${link ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener">Open publication ↗</a>` : ""}</article>`;
   }).join("");
   panel.innerHTML = `
     <span class="metadata-kicker">Constraint record</span>
-    <h3>${escapeHtml(record.label)}</h3>
+    <h3>${escapeHtml(recordTitle)}</h3>
     <dl class="metadata-grid">
-      <dt>Interaction</dt><dd>${escapeHtml(record.potential)}</dd>
+      <dt>Interaction potential</dt><dd>${potentialMarkup(record.potential)}</dd>
       <dt>Fermion pair</dt><dd>${escapeHtml(record.fermion_pair)}</dd>
       <dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>
+      ${record.method.source ? `<dt>Source</dt><dd>${escapeHtml(humanize(record.method.source))}</dd>` : ""}
+      ${record.method.sensor ? `<dt>Sensor</dt><dd>${escapeHtml(humanize(record.method.sensor))}</dd>` : ""}
       <dt>Review</dt><dd>${escapeHtml(record.review_location.figure)} · ${escapeHtml(record.review_location.section)}</dd>
     </dl>
     ${references}
@@ -284,9 +313,14 @@ async function loadGroupIfNeeded(groupKey){
         const {x, y} = parse2col(txt);
 
         if (x.length && y.length){
+          const metadata = metadataByPath.get(entry.path);
           result[sub].push({
             id: `${groupKey}:${entry.path}`,
-            name: entry.label || entry.path,
+            name: metadata?.display_label || entry.label || entry.path,
+            listName: metadata
+              ? `${metadata.display_label} · ${metadata.fermion_pair}`
+              : (entry.label || entry.path),
+            fullName: entry.label || entry.path,
             path: entry.path,
             x,
             y
@@ -354,6 +388,40 @@ function resolveAxisRanges(groupKey, subfolder, datasets){
   return { xRange: x, yRange: [yMin, yMax] };
 }
 
+function datasetTags(dataset){
+  const record = metadataByPath.get(dataset.path);
+  const filename = dataset.path.split("/").at(-1);
+  const potential = record?.potential ||
+    (filename.startsWith("V1213_") ? "V12+13" :
+      filename.startsWith("V11_") ? "V11" :
+      filename.startsWith("V16_") ? "V16" :
+      filename.startsWith("Combined_") ? "combined" : "other");
+  const combined = potential === "combined" || /^Combined_/i.test(filename);
+  const astrophysical =
+    record?.method?.source === "astrophysical" ||
+    /astro|astronom/i.test(`${dataset.path} ${record?.method?.technique || ""}`);
+  return { potential, combined, astrophysical };
+}
+
+function traceIsVisible(chartId, dataset){
+  const state = chartFilterState[chartId] || {};
+  const tags = datasetTags(dataset);
+  const potentialKey = `potential:${tags.potential}`;
+  return manualVisibility[dataset.id] !== false &&
+    state[potentialKey] !== false &&
+    (!tags.astrophysical || state.astrophysical !== false) &&
+    (!tags.combined || state.combined !== false);
+}
+
+function applyChartFilters(chartId){
+  const datasets = chartDatasets[chartId] || [];
+  datasets.forEach((dataset, index) => {
+    Plotly.restyle(chartId, { visible: traceIsVisible(chartId, dataset) ? true : "legendonly" }, [index]);
+    const checkbox = document.querySelector(`#checklist input[data-id="${CSS.escape(dataset.id)}"]`);
+    if (checkbox) checkbox.checked = manualVisibility[dataset.id] !== false;
+  });
+}
+
 function buildChartCard(groupKey, subfolder, datasets){
   const chartsDiv = document.getElementById("charts");
 
@@ -374,6 +442,8 @@ function buildChartCard(groupKey, subfolder, datasets){
   chartsDiv.appendChild(card);
 
   traceIndex[chartId] = {};
+  chartDatasets[chartId] = datasets;
+  chartFilterState[chartId] = {};
 
   const traces = datasets.map((d, idx) => {
     traceIndex[chartId][d.id] = idx;
@@ -455,6 +525,33 @@ function buildChartCard(groupKey, subfolder, datasets){
   const bar = document.createElement("div");
   bar.className = "chart-toolbar";
 
+  const filterWrap = document.createElement("div");
+  filterWrap.className = "chart-filters";
+  filterWrap.innerHTML = "<span>Show</span>";
+  const potentials = [...new Set(datasets.map(dataset => datasetTags(dataset).potential))]
+    .filter(value => value !== "combined" && value !== "other");
+  const filterSpecs = [
+    ...potentials.map(value => ({ key:`potential:${value}`, label:value })),
+    ...(datasets.some(dataset => datasetTags(dataset).astrophysical) ? [{ key:"astrophysical", label:"Astrophysical" }] : []),
+    ...(datasets.some(dataset => datasetTags(dataset).combined) ? [{ key:"combined", label:"Combined" }] : [])
+  ];
+  filterSpecs.forEach(spec => {
+    chartFilterState[chartId][spec.key] = true;
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "filter-chip";
+    chip.textContent = spec.label;
+    chip.setAttribute("aria-pressed", "true");
+    chip.addEventListener("click", () => {
+      const next = chartFilterState[chartId][spec.key] === false;
+      chartFilterState[chartId][spec.key] = next;
+      chip.classList.toggle("off", !next);
+      chip.setAttribute("aria-pressed", String(next));
+      applyChartFilters(chartId);
+    });
+    filterWrap.appendChild(chip);
+  });
+
   const btn = document.createElement("button");
   btn.className = "btn";
   btn.textContent = "➕ Add my data for comparison";
@@ -491,6 +588,7 @@ function buildChartCard(groupKey, subfolder, datasets){
     }
   });
 
+  bar.appendChild(filterWrap);
   bar.appendChild(btn);
   bar.appendChild(file);
   card.appendChild(bar);
@@ -500,6 +598,8 @@ function renderCharts(){
   const chartsDiv = document.getElementById("charts");
   chartsDiv.innerHTML = "";
   traceIndex = {};
+  chartDatasets = {};
+  chartFilterState = {};
 
   const group = DATA[current] || {};
   const subfolders = Object.keys(group).sort();
@@ -524,6 +624,8 @@ function renderChecklist(){
   Object.keys(group).sort().forEach(sub => {
     const baseList = group[sub].filter(d =>
       d.name.toLowerCase().includes(filterValue) ||
+      d.listName.toLowerCase().includes(filterValue) ||
+      d.fullName.toLowerCase().includes(filterValue) ||
       sub.toLowerCase().includes(filterValue)
     );
 
@@ -549,18 +651,18 @@ function renderChecklist(){
 
       const cb = document.createElement("input");
       cb.type = "checkbox";
-      cb.checked = true;
+      cb.checked = manualVisibility[d.id] !== false;
       cb.dataset.id = d.id;
       cb.dataset.sub = sub;
 
       cb.addEventListener("change", e => {
         const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g, "_");
-        const idx = traceIndex[chartId][d.id];
-        Plotly.restyle(chartId, { visible: e.target.checked ? true : "legendonly" }, [idx]);
+        manualVisibility[d.id] = e.target.checked;
+        applyChartFilters(chartId);
       });
 
       const label = document.createElement("label");
-      label.textContent = d.name;
+      label.textContent = d.listName;
       label.addEventListener("click", () => {
         const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g, "_");
         highlightTrace(chartId, d.id);
@@ -635,12 +737,11 @@ function resetHighlights(){
 }
 
 function setAllVisible(flag){
+  Object.values(chartDatasets).flat().forEach(dataset => {
+    manualVisibility[dataset.id] = !!flag;
+  });
   Object.keys(traceIndex).forEach(chartId => {
-    Object.values(traceIndex[chartId]).forEach(idx => {
-      Plotly.restyle(chartId, {
-        visible: flag ? true : "legendonly"
-      }, [idx]);
-    });
+    applyChartFilters(chartId);
   });
 
   document.querySelectorAll("#checklist input[type='checkbox']").forEach(cb => {
@@ -743,8 +844,8 @@ document.querySelectorAll(".btn").forEach(btn => {
 (async function main(){
   try{
     document.getElementById("charts").innerHTML = `<div class="hint">Loading ${current}...</div>`;
-    await loadGroupIfNeeded(current);
     await loadMetadataIfNeeded();
+    await loadGroupIfNeeded(current);
     renderCharts();
     renderChecklist();
     renderMetadata(null);

@@ -85,24 +85,24 @@ function listCsvFiles(dir) {
 }
 
 const sourceMap = {
-  "Heckel_2013": { key: "heckel_limits_2013", category: "dedicated_source_sensor", technique: "spin_polarized_torsion_pendulum" },
-  "Hunter_2013": { key: "hunter_using_2013", category: "dedicated_source_sensor", technique: "earth_source_spin_experiment" },
-  "Hunter_2014": { key: "hunter_using_2014", category: "dedicated_source_sensor", technique: "geoelectron_source_spin_experiment" },
-  "Wang_2023": { key: "wang_search_2023", category: "dedicated_source_sensor", technique: "quantum_spin_amplifier" },
-  "Antypas_2019": { key: "antypas_isotopic_2019", category: "complementary_experiment", technique: "atomic_parity_violation" },
-  "Clayburn_2023": { key: "clayburn_using_2023", category: "dedicated_source_sensor", technique: "earth_source_spin_velocity_experiment" },
-  "Dzuba_2017": { key: "dzuba_probing_2017", category: "complementary_experiment", technique: "atomic_parity_violation_interpretation" },
-  "Heckel_2008": { key: "heckel_preferred-frame_2008", category: "dedicated_source_sensor", technique: "spin_polarized_torsion_pendulum" },
-  "Jiao_2021": { key: "jiao_experimental_2021", category: "dedicated_source_sensor", technique: "single_electron_spin_quantum_sensor" },
-  "Kim_2019": { key: "kim_experimental_2019", category: "dedicated_source_sensor", technique: "optically_polarized_vapor" },
-  "Liang_2022": { key: "liang_new_2023", category: "dedicated_source_sensor", technique: "ensemble_nv_diamond_magnetometer", confirmed: true, label: "Liang 2023", note: "Published in 2023; the legacy CSV filename retains the 2022 pre-publication year." },
-  "Wu_2022": { key: "wu_experimental_2022", category: "dedicated_source_sensor", technique: "atomic_magnetometer_array" },
-  "Vasilakis_2009": { key: "vasilakis_limits_2009", category: "dedicated_source_sensor", technique: "comagnetometer" },
-  "Shu_2024": { key: "shu_constraint_2024", category: "dedicated_source_sensor", technique: "atom_interferometer" },
-  "Su_2021": { key: "su_search_2021", category: "dedicated_source_sensor", technique: "spin_based_amplifier" },
-  "Wu_2023": { key: "wu_new_2023", category: "complementary_experiment", technique: "astronomical_source_reanalysis" },
-  "Yan_2013": { key: "yan_new_2013", category: "dedicated_source_sensor", technique: "neutron_spin_rotation" },
-  "Yan_2015": { key: "yan_searching_2015", category: "dedicated_source_sensor", technique: "polarized_helium_spin_relaxation" }
+  "Heckel_2013": { key: "heckel_limits_2013", category: "dedicated_source_sensor", technique: "spin_polarized_torsion_pendulum", source: "polarized_electron_source", sensor: "torsion_pendulum" },
+  "Hunter_2013": { key: "hunter_using_2013", category: "dedicated_source_sensor", technique: "earth_source_spin_experiment", source: "earth_geoelectrons", sensor: "spin_polarized_torsion_pendulum" },
+  "Hunter_2014": { key: "hunter_using_2014", category: "dedicated_source_sensor", technique: "geoelectron_source_spin_experiment", source: "earth_geoelectrons", sensor: "spin_polarized_torsion_pendulum" },
+  "Wang_2023": { key: "wang_search_2023", category: "dedicated_source_sensor", technique: "quantum_spin_amplifier", source: "polarized_spin_source", sensor: "quantum_spin_amplifier" },
+  "Antypas_2019": { key: "antypas_isotopic_2019", category: "complementary_experiment", technique: "atomic_parity_violation", source: "ytterbium_nucleus", sensor: "atomic_parity_violation_spectroscopy" },
+  "Clayburn_2023": { key: "clayburn_using_2023", category: "dedicated_source_sensor", technique: "earth_source_spin_velocity_experiment", source: "earth", sensor: "spin_polarized_torsion_pendulum" },
+  "Dzuba_2017": { key: "dzuba_probing_2017", category: "complementary_experiment", technique: "atomic_parity_violation_interpretation", source: "atomic_nucleus", sensor: "atomic_parity_violation_measurement" },
+  "Heckel_2008": { key: "heckel_preferred-frame_2008", category: "dedicated_source_sensor", technique: "spin_polarized_torsion_pendulum", source: "preferred_frame_background", sensor: "spin_polarized_torsion_pendulum" },
+  "Jiao_2021": { key: "jiao_experimental_2021", category: "dedicated_source_sensor", technique: "single_electron_spin_quantum_sensor", source: "moving_mass", sensor: "single_nv_center" },
+  "Kim_2019": { key: "kim_experimental_2019", category: "dedicated_source_sensor", technique: "optically_polarized_vapor", source: "moving_mass", sensor: "optically_polarized_vapor" },
+  "Liang_2022": { key: "liang_new_2023", category: "dedicated_source_sensor", technique: "ensemble_nv_diamond_magnetometer", source: "moving_mass", sensor: "ensemble_nv_diamond_magnetometer", confirmed: true, label: "Liang 2023", note: "Published in 2023; the legacy CSV filename retains the 2022 pre-publication year." },
+  "Wu_2022": { key: "wu_experimental_2022", category: "dedicated_source_sensor", technique: "atomic_magnetometer_array", source: "polarized_spin_source", sensor: "atomic_magnetometer_array" },
+  "Vasilakis_2009": { key: "vasilakis_limits_2009", category: "dedicated_source_sensor", technique: "comagnetometer", source: "earth", sensor: "comagnetometer" },
+  "Shu_2024": { key: "shu_constraint_2024", category: "dedicated_source_sensor", technique: "atom_interferometer", source: "earth", sensor: "atom_interferometer" },
+  "Su_2021": { key: "su_search_2021", category: "dedicated_source_sensor", technique: "spin_based_amplifier", source: "polarized_spin_source", sensor: "spin_based_amplifier" },
+  "Wu_2023": { key: "wu_new_2023", category: "complementary_experiment", technique: "astronomical_source_reanalysis", source: "astrophysical", sensor: "astronomical_observation" },
+  "Yan_2013": { key: "yan_new_2013", category: "dedicated_source_sensor", technique: "neutron_spin_rotation", source: "bulk_matter", sensor: "neutron_spin_rotation" },
+  "Yan_2015": { key: "yan_searching_2015", category: "dedicated_source_sensor", technique: "polarized_helium_spin_relaxation", source: "cell_walls", sensor: "polarized_helium_spin_relaxation" }
 };
 
 const pairNames = {
@@ -132,6 +132,8 @@ function recordToYaml(record) {
     `  method:`,
     `    category: ${quote(record.method.category)}`,
     `    technique: ${quote(record.method.technique)}`,
+    `    source: ${quote(record.method.source || "")}`,
+    `    sensor: ${quote(record.method.sensor || "")}`,
     `  references:`
   ];
   for (const reference of record.references) lines.push(`    - ${quote(reference)}`);
@@ -205,7 +207,9 @@ for (const fullPath of listCsvFiles(dataRoot)) {
     data_file: relative,
     potential,
     fermion_pair: fermionPair,
-    method: mapping ? { category: mapping.category, technique: mapping.technique } : { category: "complementary_experiment", technique: "unresolved" },
+    method: mapping
+      ? { category: mapping.category, technique: mapping.technique, source: mapping.source || "", sensor: mapping.sensor || "" }
+      : { category: "complementary_experiment", technique: "unresolved", source: "", sensor: "" },
     references: mapping ? [mapping.key] : [],
     curation: {
       status,
@@ -217,6 +221,11 @@ for (const fullPath of listCsvFiles(dataRoot)) {
 
 const usedKeys = [...new Set(records.flatMap(record => record.references))].sort();
 const publications = {};
+function firstAuthorSurname(authors) {
+  const first = String(authors || "").split(/\s+and\s+/i)[0].trim();
+  if (!first) return "";
+  return (first.includes(",") ? first.split(",")[0] : first.split(/\s+/).at(-1)).replace(/[{}]/g, "").trim();
+}
 for (const key of usedKeys) {
   const entry = bibByKey.get(key);
   if (!entry) continue;
@@ -238,6 +247,8 @@ for (const key of usedKeys) {
     arxiv_url: eprint ? `https://arxiv.org/abs/${eprint.replace(/^arXiv:/i, "")}` : "",
     url: entry.fields.url || (doi ? `https://doi.org/${doi}` : "")
   };
+  publications[key].first_author = firstAuthorSurname(publications[key].authors_bibtex);
+  publications[key].short_citation = [publications[key].first_author ? `${publications[key].first_author} et al.` : "", publications[key].year].filter(Boolean).join(" ");
 }
 
 const outputDirs = [
@@ -265,6 +276,9 @@ const browserConstraints = {
   notice: "Unless otherwise noted, the constraints shown here have been standardized using the interaction conventions adopted in the RMP review and may therefore differ from values presented in the original publications.",
   records: records.map(record => ({
     ...record,
+    display_label: record.curation.status !== "review_only" && record.references[0] && publications[record.references[0]]
+      ? publications[record.references[0]].short_citation.replace(" et al.", "")
+      : record.label.replace(/^Combined /, "Combined · "),
     review_location: {
       section: "Axial-vector/Vector interaction gAgV",
       figure: "Fig. 9"

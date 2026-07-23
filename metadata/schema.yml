@@ -39,6 +39,12 @@ fields:
         allowed: [dedicated_source_sensor, complementary_experiment, combined]
       technique:
         type: string
+      source:
+        type: string
+        description: Controlled keyword for the physical source of the interaction signal; blank when not yet verified.
+      sensor:
+        type: string
+        description: Controlled keyword for the sensing or readout system; blank when not yet verified.
   references:
     type: array
     description: Citation keys resolved against MyLibrary.bib.

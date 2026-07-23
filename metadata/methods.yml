@@ -39,3 +39,33 @@ techniques:
   emm: Electron-magnetic-moment constraints combined with astrophysical bounds
   ms: Molecular-spectroscopy constraints combined with astrophysical bounds
   torsion: Torsion-pendulum constraints combined with astrophysical bounds
+
+source_keywords:
+  earth: Earth
+  earth_geoelectrons: Earth geoelectrons
+  polarized_electron_source: Polarized electron source
+  polarized_spin_source: Polarized spin source
+  moving_mass: Moving unpolarized mass
+  atomic_nucleus: Atomic nucleus
+  ytterbium_nucleus: Ytterbium nucleus
+  bulk_matter: Bulk matter
+  cell_walls: Cell walls
+  preferred_frame_background: Preferred-frame background
+  astrophysical: Astrophysical source
+
+sensor_keywords:
+  torsion_pendulum: Torsion pendulum
+  spin_polarized_torsion_pendulum: Spin-polarized torsion pendulum
+  quantum_spin_amplifier: Quantum spin amplifier
+  atomic_parity_violation_spectroscopy: Atomic parity-violation spectroscopy
+  atomic_parity_violation_measurement: Atomic parity-violation measurement
+  single_nv_center: Single NV center
+  ensemble_nv_diamond_magnetometer: Ensemble-NV-diamond magnetometer
+  optically_polarized_vapor: Optically polarized vapor
+  atomic_magnetometer_array: Atomic-magnetometer array
+  comagnetometer: Comagnetometer
+  atom_interferometer: Atom interferometer
+  spin_based_amplifier: Spin-based amplifier
+  astronomical_observation: Astronomical observation
+  neutron_spin_rotation: Neutron-spin rotation
+  polarized_helium_spin_relaxation: Polarized-helium spin relaxation
