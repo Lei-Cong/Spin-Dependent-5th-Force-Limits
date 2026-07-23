@@ -43,7 +43,7 @@ This is a pilot, not an authoritative scientific release. Existing CSV data and 
 | `Combined_EEP_N-N.csv` | combined | nucleon-nucleon | `cong_spin-dependent_2025` | eep | **review_only** |  |
 | `Combined_MS_N-N.csv` | combined | nucleon-nucleon | `cong_spin-dependent_2025` | ms | **review_only** |  |
 | `Combined_Torsion_N-N.csv` | combined | nucleon-nucleon | `cong_spin-dependent_2025` | torsion | **review_only** |  |
-| `V11_Vasilakis_2009_n-n.csv` | V11 | neutron-neutron | `vasilakis_limits_2009` | comagnetometer | **probable** |  |
+| `V11_Vasilakis_2009_n-n.csv` | V11 | neutron-neutron | `vasilakis_limits_2009` | self_compensating_comagnetometer | **probable** |  |
 | `V11_Wang_2023_n-p.csv` | V11 | neutron-proton | `wang_search_2023` | quantum_spin_amplifier | **probable** |  |
 | `V1213_Clayburn_2023_n-N.csv` | V12+13 | neutron-nucleon | `clayburn_using_2023` | earth_source_spin_velocity_experiment | **probable** |  |
 | `V1213_Clayburn_2023_p-N.csv` | V12+13 | proton-nucleon | `clayburn_using_2023` | earth_source_spin_velocity_experiment | **probable** |  |

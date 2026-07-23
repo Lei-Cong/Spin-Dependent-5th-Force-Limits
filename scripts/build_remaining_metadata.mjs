@@ -140,7 +140,7 @@ function gsgsRecord(entry) {
       key:isNew?"cong_testing_2026":null,
       reviewLocation:isNew?null:loc("Scalar/Scalar interaction gsgs","Fig. 15"),
       context:isNew?"Updated electron-magnetic-moment constraint from Cong et al. (2026), superseding the legacy viewer curve.":null,
-      method:{ category:"comparison_v1", technique:isNew?"electron magnetic moment":"spin-independent V1 comparison", source:"", sensor:"" },
+      method:{ category:"combined", technique:isNew?"electron magnetic moment":"combined constraint", source:"", sensor:"" },
       status:isNew?"curated":"review_only" });
   }
   if (/astro/i.test(f)) return record({ entry, coupling:"gsgs", pair:/ee/i.test(f)?"e-e":/NN/i.test(f)?"N-N":"e-N",
@@ -191,7 +191,7 @@ function v1Record(entry, chart) {
     ];
     const m=mappings.find(([pattern])=>pattern.test(f));
     if(!m) return record({ entry,coupling:"V1",pair:"universal",potential:"V1",label:entry.label.replaceAll("_"," "),
-      reviewLocation:loc("Spin-independent V1","Fig. 16"),method:{category:"review_compilation",technique:"compiled universal alpha constraint",source:"",sensor:""},status:"review_only" });
+      reviewLocation:loc("Spin-independent V1","Fig. 16"),method:{category:"combined",technique:"combined constraint",source:"",sensor:""},status:"review_only" });
     return record({ entry,coupling:"V1",pair:"universal",potential:"V1",label:m[2],key:m[1],
       reviewLocation:loc("Spin-independent V1","Fig. 16"),method:{category:"complementary",technique:"universal Yukawa-force constraint",source:"",sensor:""} });
   }
@@ -204,7 +204,7 @@ function v1Record(entry, chart) {
       : null;
     return record({ entry,coupling:"V1",pair,potential:"V1",label:methodLabel,
       reviewLocation:loc("Spin-independent V1","Fig. 17"),context:alphaContext,
-      method:{category:"review_compilation",technique:"compiled review constraint",source:"",sensor:""},status:"review_only" });
+      method:{category:"combined",technique:"combined constraint",source:"",sensor:""},status:"review_only" });
   }
   const mappings=[
     [/Delaunay_2022_NN/,"delaunay_self-consistent_2022","Delaunay et al. 2022","N-N",false],

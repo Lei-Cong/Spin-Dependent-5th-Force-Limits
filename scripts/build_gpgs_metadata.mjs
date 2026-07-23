@@ -67,7 +67,7 @@ function publication(key) {
 
 const rules = [
   ["Crescini_2022","crescini_search_2022","Crescini et al. 2022","rotating lead masses","GSO crystal magnetometer read out by a dc SQUID","dedicated_source_sensor"],
-  ["Prosnyak_2023","prosnyak_updated_2023","Prosnyak et al. 2023","","","complementary"],
+  ["Prosnyak_2023","prosnyak_updated_2023","Prosnyak et al. 2023","","","complementary_experiment","molecular_spectroscopy"],
   ["Stadnik_2018","stadnik_improved_2018","Stadnik & Flambaum 2018","","","complementary"],
   ["Hunter_2014","hunter_using_2014","Hunter et al. 2014","Earth's geoelectrons","spin-polarized torsion pendulum","dedicated_source_sensor"],
   ["Agrawal_2023","agrawal_searching_2023","Agrawal et al. 2023","","","complementary"],
@@ -78,7 +78,7 @@ const rules = [
   ["Liang_2022","liang_new_2023","Liang et al. 2023","oscillating unpolarized mass","ensemble nitrogen-vacancy spin sensor","dedicated_source_sensor"],
   ["Rong_2018","rong_searching_2018","Rong et al. 2018","moving unpolarized mass","single nitrogen-vacancy spin sensor","dedicated_source_sensor"],
   ["Terrano_2015","terrano_short-range_2015","Terrano et al. 2015","unpolarized source mass","spin-polarized torsion pendulum","dedicated_source_sensor"],
-  ["Wineland_1991","wineland_search_1991","Wineland et al. 1991","Earth","trapped-ion spin spectroscopy","dedicated_source_sensor"],
+  ["Wineland_1991","wineland_search_1991","Wineland et al. 1991","Earth","trapped-ion spin sensor","dedicated_source_sensor","earth_ion_source_sensor_experiment"],
   ["Ayres_2023","ayres_search_2023","Ayres et al. 2023","Earth","ultracold-neutron and mercury co-magnetometer","dedicated_source_sensor"],
   ["Feng_2022","feng_search_2022","Feng et al. 2022","Earth","noble-gas comagnetometer","dedicated_source_sensor"],
   ["Tullney_2013","tullney_constraints_2013","Tullney et al. 2013","Earth","³He–¹²⁹Xe comagnetometer","dedicated_source_sensor"],
@@ -87,7 +87,7 @@ const rules = [
   ["Wu_2023","wu_new_2023","L. Y. Wu et al. 2023","Sun and Earth","spin-based quantum sensor","dedicated_source_sensor"],
   ["Zhang_2023","zhang_search_2023","Zhang et al. 2023","Earth","noble-gas comagnetometer","dedicated_source_sensor"],
   ["guigue_2015","guigue_constraining_2015","Guigue et al. 2015","cell walls","polarized ³He relaxation","dedicated_source_sensor"],
-  ["Baruch_2024","baruch_constraining_2024","Baruch et al. 2024","","","complementary"],
+  ["Baruch_2024","baruch_constraining_2024","Baruch et al. 2024","","","complementary_experiment","molecular_spectroscopy"],
   ["Stadnik_2015","stadnik_nuclear_2015","Stadnik & Flambaum 2015","","","complementary"],
 ];
 const conversions = [
@@ -154,10 +154,12 @@ const records = datasets.map((dataset) => {
   }
   const rule = rules.find(([token]) => filename.includes(token));
   if (!rule) throw new Error(`No gpgs metadata rule for ${filename}`);
-  const [, key, label, source, sensor, category] = rule;
+  const [, key, label, source, sensor, category, ruleTechnique] = rule;
   const cited = [key, ...(key === "liang_new_2023" ? ["liang_new_2022"] : [])].some((candidate) => reviewSection.includes(candidate));
-  return { ...common, label, display_label:legendLabel(label), review_location:cited ? location : null, references:[publication(key)],
-    method:{ category, technique:category === "dedicated_source_sensor" ? "dedicated fifth-force experiment" : "complementary constraint or reinterpretation", source, sensor } };
+  const includedInReviewFigure = key === "prosnyak_updated_2023" || key === "baruch_constraining_2024";
+  return { ...common, label, display_label:legendLabel(label), review_location:cited || includedInReviewFigure ? location : null, references:[publication(key)],
+    method:{ category, technique:ruleTechnique || (category === "dedicated_source_sensor" ? "dedicated fifth-force experiment" : "complementary constraint or reinterpretation"), source, sensor },
+    curation:{ status:"curated", note:includedInReviewFigure ? "Included in the RMP review figure; the primary publication may not be discussed separately in the main text." : "" } };
 }).sort((a, b) => a.data_file.localeCompare(b.data_file));
 
 const output = path.join(root, "metadata", "gpgs_records.json");

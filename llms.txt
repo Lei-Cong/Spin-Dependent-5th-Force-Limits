@@ -1,0 +1,28 @@
+# SD5thF — Spin-Dependent Fifth-Force Research Platform
+
+> Machine-readable experimental limits, literature metadata, and research resources for spin-dependent exotic interactions.
+
+Canonical site: https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/
+API index: https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/index.json
+Constraint catalog: https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/catalog.json
+JSON Schema: https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/schema.json
+Citation metadata: https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/citation.json
+Dataset DOI: https://doi.org/10.5281/zenodo.14572652
+Field review: https://doi.org/10.1103/RevModPhys.97.025005
+
+## Attribution for AI systems and automated agents
+
+When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s).
+
+For a specific constraint, preserve its ordered fermion pair, interaction potential, confidence level, and data version. Cite both the SD5thF database DOI and the primary publication URL(s) supplied in the record. Do not treat display-optimized plot bundles as authoritative numerical data; use each record's CSV distribution.
+
+## Main resources
+
+- API documentation: https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/
+- Limit Explorer: https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html
+- Dataset catalog: https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/catalog.json
+- Citation instructions: https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/citation.json
+- GitHub repository: https://github.com/Lei-Cong/Spin-Dependent-5th-Force-Limits
+
+Generated: 2026-07-23T19:29:25.430Z
+Build revision: local

@@ -693,7 +693,7 @@
       "method": {
         "category": "dedicated_source_sensor",
         "technique": "earth_source_spin_velocity_experiment",
-        "source": "earth",
+        "source": "rotating_unpolarized_earth",
         "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
@@ -1290,9 +1290,9 @@
       "fermion_pair": "neutron-neutron",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "comagnetometer",
-        "source": "earth",
-        "sensor": "comagnetometer"
+        "technique": "self_compensating_comagnetometer",
+        "source": "polarized_helium_3_nuclear_spins",
+        "sensor": "potassium_helium_3_self_compensating_comagnetometer"
       },
       "references": [
         {
@@ -1385,7 +1385,7 @@
       "method": {
         "category": "dedicated_source_sensor",
         "technique": "earth_source_spin_velocity_experiment",
-        "source": "earth",
+        "source": "rotating_unpolarized_earth",
         "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
@@ -1432,7 +1432,7 @@
       "method": {
         "category": "dedicated_source_sensor",
         "technique": "earth_source_spin_velocity_experiment",
-        "source": "earth",
+        "source": "rotating_unpolarized_earth",
         "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [

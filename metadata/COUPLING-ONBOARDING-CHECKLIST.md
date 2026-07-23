@@ -60,3 +60,13 @@ public Limits Explorer.
 - Upload the viewer HTML, manifest, metadata JSON, renamed CSV files, and
   changed scripts/styles together; updating only the HTML is insufficient.
 - Bump manifest and metadata cache-version query strings for every release.
+
+## Performance
+
+- Rebuild `data/plot-bundles/*.json` after changing the manifest or any CSV.
+- Load one lightweight plotting bundle per coupling instead of fetching every
+  CSV separately.
+- Preserve each full CSV as the authoritative download; fetch full-resolution
+  values only when a user exports visible curves.
+- Update visibility, width, and opacity for all traces in one batched Plotly
+  call rather than one call per curve.

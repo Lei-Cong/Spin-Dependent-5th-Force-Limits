@@ -1,0 +1,75 @@
+{
+  "api_version": "v1",
+  "id": "gAgA:45wu-2021-m-abs-en",
+  "coupling": "gAgA",
+  "label": "Wu 2022",
+  "display_label": "Wu 2022",
+  "interaction": "V4+5",
+  "fermion_pair": "e-N",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "atomic_magnetometer_array",
+    "source": "rotating_source_masses",
+    "sensor": "atomic_magnetometer_array"
+  },
+  "review_location": {
+    "section": "Axial-vector/Axial-vector interaction gAgA",
+    "figure": "Fig. 11"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "confirmed",
+    "evidence": [
+      "filename",
+      "RMP review gAgA section",
+      "BibTeX record"
+    ],
+    "note": "Legacy filename retained; the paper was published in 2022."
+  },
+  "references": [
+    {
+      "citation_key": "wu_experimental_2022",
+      "title": "Experimental Limits on Exotic Spin and Velocity Dependent Interactions Using Rotationally Modulated Source Masses and an Atomic-Magnetometer Array",
+      "journal": "Phys. Rev. Lett.",
+      "year": "2022",
+      "volume": "129",
+      "issue": "5",
+      "pages": "051802",
+      "doi": "10.1103/PhysRevLett.129.051802",
+      "url": "https://doi.org/10.1103/PhysRevLett.129.051802"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45Wu_2021_m_abs_eN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gAgA.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevLett.129.051802"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gAgA/45wu-2021-m-abs-en.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

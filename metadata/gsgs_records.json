@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T16:46:13.973Z",
+  "generated_at": "2026-07-23T19:29:25.280Z",
   "notice": "Scalar/scalar constraints combine V4+5 searches with clearly identified V1 and astrophysical comparisons.",
   "records": [
     {
@@ -12,8 +12,8 @@
       "fermion_pair": "e-e",
       "confidence_level": null,
       "method": {
-        "category": "comparison_v1",
-        "technique": "spin-independent V1 comparison",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -54,8 +54,8 @@
       "fermion_pair": "N-N",
       "confidence_level": null,
       "method": {
-        "category": "comparison_v1",
-        "technique": "spin-independent V1 comparison",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -96,7 +96,7 @@
       "fermion_pair": "e-e",
       "confidence_level": null,
       "method": {
-        "category": "comparison_v1",
+        "category": "combined",
         "technique": "electron magnetic moment",
         "source": "",
         "sensor": ""
@@ -136,8 +136,8 @@
       "fermion_pair": "N-N",
       "confidence_level": null,
       "method": {
-        "category": "comparison_v1",
-        "technique": "spin-independent V1 comparison",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -178,8 +178,8 @@
       "fermion_pair": "e-e",
       "confidence_level": null,
       "method": {
-        "category": "comparison_v1",
-        "technique": "spin-independent V1 comparison",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -220,8 +220,8 @@
       "fermion_pair": "N-N",
       "confidence_level": null,
       "method": {
-        "category": "comparison_v1",
-        "technique": "spin-independent V1 comparison",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -262,8 +262,8 @@
       "fermion_pair": "N-N",
       "confidence_level": null,
       "method": {
-        "category": "comparison_v1",
-        "technique": "spin-independent V1 comparison",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -304,8 +304,8 @@
       "fermion_pair": "e-e",
       "confidence_level": null,
       "method": {
-        "category": "comparison_v1",
-        "technique": "spin-independent V1 comparison",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -348,7 +348,7 @@
       "method": {
         "category": "dedicated_source_sensor",
         "technique": "earth_source_spin_velocity_experiment",
-        "source": "earth",
+        "source": "rotating_unpolarized_earth",
         "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
@@ -767,7 +767,7 @@
       "confidence_level": null,
       "method": {
         "category": "complementary_experiment",
-        "technique": "thermal_motion_noise_analysis",
+        "technique": "alkali_vapor_frequency_shift_noise_analysis",
         "source": "",
         "sensor": ""
       },
@@ -1061,7 +1061,7 @@
       "method": {
         "category": "dedicated_source_sensor",
         "technique": "earth_source_spin_velocity_experiment",
-        "source": "earth",
+        "source": "rotating_unpolarized_earth",
         "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
@@ -1229,7 +1229,7 @@
       "method": {
         "category": "dedicated_source_sensor",
         "technique": "earth_source_spin_velocity_experiment",
-        "source": "earth",
+        "source": "rotating_unpolarized_earth",
         "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [

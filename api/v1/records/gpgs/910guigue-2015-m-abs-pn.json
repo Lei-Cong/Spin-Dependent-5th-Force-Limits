@@ -1,0 +1,68 @@
+{
+  "api_version": "v1",
+  "id": "gpgs:910guigue-2015-m-abs-pn",
+  "coupling": "gpgs",
+  "label": "Guigue et al. 2015",
+  "display_label": "Guigue 2015",
+  "interaction": "V9+10",
+  "fermion_pair": "p-N",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "dedicated fifth-force experiment",
+    "source": "cell walls",
+    "sensor": "polarized ³He relaxation"
+  },
+  "review_location": null,
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "guigue_constraining_2015",
+      "title": "Constraining Short-Range Spin-Dependent Forces with Polarized $^3\\mathrmHe$",
+      "authors": "Guigue, M. and Jullien, D. and Petukhov, A. K. and Pignol, G.",
+      "journal": "Phys. Rev. D",
+      "year": 2015,
+      "volume": "92",
+      "issue": "11",
+      "pages": "114001",
+      "doi": "10.1103/PhysRevD.92.114001",
+      "url": "https://doi.org/10.1103/PhysRevD.92.114001"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gpgs/nucleon-nucleon/proton-nucleon/910guigue_2015_m_abs_pN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gpgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevD.92.114001"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gpgs/910guigue-2015-m-abs-pn.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

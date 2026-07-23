@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0C2340">
     <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="citation_title" content="Spin-Dependent Exotic Interactions Dataset">
+    <meta name="citation_author" content="Lei Cong">
+    <meta name="citation_author" content="Wei Ji">
+    <meta name="citation_author" content="Dmitry Budker">
+    <meta name="citation_publication_date" content="2024">
+    <meta name="citation_doi" content="10.5281/zenodo.14572652">
+    <link rel="alternate" type="application/json" title="SD5thF API" href="{{ '/api/v1/index.json' | relative_url }}">
+    <link rel="alternate" type="text/plain" title="AI and agent guidance" href="{{ '/llms.txt' | relative_url }}">
     <link rel="icon" href="{{ '/assets/images/brand/sd5thf-grid.svg' | relative_url }}" type="image/svg+xml">
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +30,7 @@
       window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    {% include generated-dataset-jsonld.html %}
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>

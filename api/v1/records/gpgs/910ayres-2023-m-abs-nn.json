@@ -1,0 +1,68 @@
+{
+  "api_version": "v1",
+  "id": "gpgs:910ayres-2023-m-abs-nn",
+  "coupling": "gpgs",
+  "label": "Ayres et al. 2023",
+  "display_label": "Ayres 2023",
+  "interaction": "V9+10",
+  "fermion_pair": "n-N",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "dedicated fifth-force experiment",
+    "source": "Earth",
+    "sensor": "ultracold-neutron and mercury co-magnetometer"
+  },
+  "review_location": null,
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "ayres_search_2023",
+      "title": "Search for an Interaction Mediated by Axion-like Particles with Ultracold Neutrons at the PSI",
+      "authors": "Ayres, N. J. and Bison, G. and Bodek, K. and Bondar, V. and Bouillaud, T. and Chanel, E. and Chiu, P.-J. and Clement, B. and Crawford, C. B. and Daum, M. and Doorenbos, C. B. and Emmenegger, S. and Fertl, M. and Flaux, P. and Griffith, W. C. and Harris, P. G. and Hild, N. and Kasprzak, M. and Kirch, K. and Kletzl, V. and Koss, P. A. and Krempel, J. and Lauss, B. and Lefort, T. and Mohanmurthy, P. and Naviliat-Cuncic, O. and Pais, D. and Piegsa, F. M. and Pignol, G. and Rawlik, M. and Rienacker, I. and Ries, D. and Roccia, S. and Rozpedzik, D. and Schmidt-Wellenburg, P. and Severijns, N. and Shen, B. and Svirina, K. and Dinani, R. Tavakoli and Thorne, J. A. and Touati, S. and Weis, A. and Wursten, E. and Yazdandoost, N. and Zejma, J. and Ziehl, N. and Zsigmond, G.",
+      "journal": "New J. Phys.",
+      "year": 2023,
+      "volume": "25",
+      "issue": "10",
+      "pages": "103012",
+      "doi": "10.1088/1367-2630/acfdc3",
+      "url": "https://doi.org/10.1088/1367-2630/acfdc3"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gpgs/nucleon-nucleon/neutron-nucleon/910Ayres_2023_m_abs_nN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gpgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1088/1367-2630/acfdc3"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gpgs/910ayres-2023-m-abs-nn.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

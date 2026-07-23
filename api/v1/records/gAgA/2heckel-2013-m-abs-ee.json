@@ -1,0 +1,75 @@
+{
+  "api_version": "v1",
+  "id": "gAgA:2heckel-2013-m-abs-ee",
+  "coupling": "gAgA",
+  "label": "Heckel 2013",
+  "display_label": "Heckel 2013",
+  "interaction": "V2",
+  "fermion_pair": "e-e",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "spin_polarized_torsion_pendulum",
+    "source": "polarized_electron_source",
+    "sensor": "spin_polarized_torsion_pendulum"
+  },
+  "review_location": {
+    "section": "Axial-vector/Axial-vector interaction gAgA",
+    "figure": "Fig. 10"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "confirmed",
+    "evidence": [
+      "filename",
+      "RMP review gAgA section",
+      "BibTeX record"
+    ],
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "heckel_limits_2013",
+      "title": "Limits on Exotic Long-Range Spin-Spin Interactions of Electrons",
+      "journal": "Phys. Rev. Lett.",
+      "year": "2013",
+      "volume": "111",
+      "issue": "15",
+      "pages": "151802",
+      "doi": "10.1103/PhysRevLett.111.151802",
+      "url": "https://doi.org/10.1103/PhysRevLett.111.151802"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gAgA/lepton-lepton/2Heckel_2013_m_abs_ee.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gAgA.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevLett.111.151802"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gAgA/2heckel-2013-m-abs-ee.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

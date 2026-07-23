@@ -1,0 +1,73 @@
+{
+  "api_version": "v1",
+  "id": "V1:hoskins-1985",
+  "coupling": "V1",
+  "label": "Hoskins et al. 1985",
+  "display_label": "Hoskins 1985",
+  "interaction": "V1",
+  "fermion_pair": "universal",
+  "confidence_level": null,
+  "method": {
+    "category": "complementary",
+    "technique": "universal Yukawa-force constraint",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": {
+    "section": "Spin-independent V1",
+    "figure": "Fig. 16"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "evidence": [
+      "Fig. 16, RMP review"
+    ]
+  },
+  "references": [
+    {
+      "citation_key": "hoskins_experimental_1985",
+      "title": "Experimental Tests of the Gravitational Inverse-Square Law for Mass Separations from 2 to 105 Cm",
+      "authors": "Hoskins, J. K. and Newman, R. D. and Spero, R. and Schultz, J.",
+      "journal": "Phys. Rev. D",
+      "year": 1985,
+      "volume": "32",
+      "issue": "12",
+      "pages": "3084-3095",
+      "doi": "10.1103/PhysRevD.32.3084",
+      "url": "https://doi.org/10.1103/PhysRevD.32.3084"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/V1/V1_alpha_data/Hoskins_1985.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/V1.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevD.32.3084"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/V1/hoskins-1985.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

@@ -1,0 +1,73 @@
+{
+  "api_version": "v1",
+  "id": "gsgs:45haddock-2018a-m-abs-nn",
+  "coupling": "gsgs",
+  "label": "Haddock et al. 2018",
+  "display_label": "Haddock 2018",
+  "interaction": "V4+5",
+  "fermion_pair": "n-N",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "neutron_spin_rotation",
+    "source": "bulk_matter",
+    "sensor": "neutron_spin_rotation"
+  },
+  "review_location": {
+    "section": "Scalar/Scalar interaction gsgs",
+    "figure": "Fig. 15"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "evidence": [
+      "Fig. 15, RMP review"
+    ]
+  },
+  "references": [
+    {
+      "citation_key": "haddock_search_2018",
+      "title": "A Search for Possible Long Range Spin Dependent Interactions of the Neutron from Exotic Vector Boson Exchange",
+      "authors": "Haddock, C. and Amadio, J. and Anderson, E. and Barron-Palos, L. and Crawford, B. and Crawford, C. and Esposito, D. and Fox, W. and Francis, I. and Fry, J. and Gardiner, H. and Holley, A. and Korsak, K. and Lieffers, J. and Magers, S. and Maldonado-Velazquez, M. and Mayorov, D. and Nico, J.S. and Okudaira, T. and Paudel, C. and Santra, S. and Sarsour, M. and Shimizu, H.M. and Snow, W.M. and Sprow, A. and Steffen, K. and Swanson, H.E. and Tovesson, F. and Vanderwerp, J. and Yergeau, P.A.",
+      "journal": "Phys. Lett. B",
+      "year": 2018,
+      "volume": "783",
+      "issue": "",
+      "pages": "227-233",
+      "doi": "10.1016/j.physletb.2018.06.066",
+      "url": "https://doi.org/10.1016/j.physletb.2018.06.066"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gsgs/nucleon-nucleon/45Haddock_2018a_m_abs_nN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gsgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1016/j.physletb.2018.06.066"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gsgs/45haddock-2018a-m-abs-nn.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

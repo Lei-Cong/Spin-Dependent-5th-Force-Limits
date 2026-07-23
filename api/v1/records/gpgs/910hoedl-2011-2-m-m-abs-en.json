@@ -1,0 +1,68 @@
+{
+  "api_version": "v1",
+  "id": "gpgs:910hoedl-2011-2-m-m-abs-en",
+  "coupling": "gpgs",
+  "label": "Hoedl et al. 2011",
+  "display_label": "Hoedl 2011",
+  "interaction": "V9+10",
+  "fermion_pair": "e-N",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "dedicated fifth-force experiment",
+    "source": "unpolarized source mass",
+    "sensor": "spin-polarized torsion pendulum"
+  },
+  "review_location": null,
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "hoedl_improved_2011",
+      "title": "Improved Constraints on an Axion-Mediated Force",
+      "authors": "Hoedl, S. A. and Fleischer, F. and Adelberger, E. G. and Heckel, B. R.",
+      "journal": "Phys. Rev. Lett.",
+      "year": 2011,
+      "volume": "106",
+      "issue": "4",
+      "pages": "041801",
+      "doi": "10.1103/PhysRevLett.106.041801",
+      "url": "https://doi.org/10.1103/PhysRevLett.106.041801"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gpgs/lepton-nucleon/910Hoedl_2011_2_m_m_abs_eN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gpgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevLett.106.041801"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gpgs/910hoedl-2011-2-m-m-abs-en.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

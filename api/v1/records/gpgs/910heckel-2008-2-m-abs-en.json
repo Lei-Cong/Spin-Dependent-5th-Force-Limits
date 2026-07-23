@@ -1,0 +1,68 @@
+{
+  "api_version": "v1",
+  "id": "gpgs:910heckel-2008-2-m-abs-en",
+  "coupling": "gpgs",
+  "label": "Heckel et al. 2008",
+  "display_label": "Heckel 2008",
+  "interaction": "V9+10",
+  "fermion_pair": "e-N",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "dedicated fifth-force experiment",
+    "source": "unpolarized laboratory source masses",
+    "sensor": "spin-polarized torsion pendulum"
+  },
+  "review_location": null,
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "heckel_preferred-frame_2008",
+      "title": "Preferred-Frame and $CP$-Violation Tests with Polarized Electrons",
+      "authors": "Heckel, B. R. and Adelberger, E. G. and Cramer, C. E. and Cook, T. S. and Schlamminger, S. and Schmidt, U.",
+      "journal": "Phys. Rev. D",
+      "year": 2008,
+      "volume": "78",
+      "issue": "9",
+      "pages": "092006",
+      "doi": "10.1103/PhysRevD.78.092006",
+      "url": "https://doi.org/10.1103/PhysRevD.78.092006"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gpgs/lepton-nucleon/910Heckel_2008_2_m_abs_eN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gpgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevD.78.092006"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gpgs/910heckel-2008-2-m-abs-en.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

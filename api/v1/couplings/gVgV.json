@@ -1,0 +1,3266 @@
+{
+  "api_version": "v1",
+  "coupling": "gVgV",
+  "count": 44,
+  "records": [
+    {
+      "api_version": "v1",
+      "id": "gVgV:45clayburn-2023a-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Clayburn 2023",
+      "display_label": "Clayburn 2023",
+      "interaction": "V4+5",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "earth_source_spin_velocity_experiment",
+        "source": "rotating_unpolarized_earth",
+        "sensor": "spin_polarized_torsion_pendulum"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "clayburn_using_2023",
+          "title": "Using Earth to Search for Long-Range Spin-Velocity Interactions",
+          "journal": "Phys. Rev. D",
+          "year": "2023",
+          "volume": "108",
+          "issue": "5",
+          "pages": "L051701",
+          "doi": "10.1103/PhysRevD.108.L051701",
+          "url": "https://doi.org/10.1103/PhysRevD.108.L051701"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45Clayburn_2023a_m_abs_eN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevD.108.L051701"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45clayburn-2023a-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3wang-2022-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Wang 2022",
+      "display_label": "Wang 2022",
+      "interaction": "V3",
+      "fermion_pair": "e-n",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "noble_gas_spin_amplifier",
+        "source": "optically_polarized_rubidium_87_electron_spins",
+        "sensor": "xenon_129_nuclear_spin_amplifier_with_rubidium_readout"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "wang_limits_2022",
+          "title": "Limits on Axions and Axionlike Particles within the Axion Window Using a Spin-Based Amplifier",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2022",
+          "volume": "129",
+          "issue": "5",
+          "pages": "051801",
+          "doi": "10.1103/PhysRevLett.129.051801",
+          "url": "https://doi.org/10.1103/PhysRevLett.129.051801"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/3Wang_2022_m_abs_en.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.129.051801"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3wang-2022-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3ficek-2018-m-abs-epbar",
+      "coupling": "gVgV",
+      "label": "Ficek 2018",
+      "display_label": "Ficek 2018",
+      "interaction": "V3",
+      "fermion_pair": "e-pbar",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "antiprotonic_helium_spectroscopy",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "ficek_constraints_2018",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2018",
+          "volume": "120",
+          "issue": "18",
+          "pages": "183002",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "url": "https://doi.org/10.1103/PhysRevLett.120.183002"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/3Ficek_2018_m_abs_epbar.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.120.183002"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3ficek-2018-m-abs-epbar.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45kim-2018-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Kim 2018",
+      "display_label": "Kim 2018",
+      "interaction": "V4+5",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "optically_polarized_vapor",
+        "source": "moving_mass",
+        "sensor": "optically_polarized_vapor"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "kim_experimental_2018",
+          "title": "Experimental Constraint on an Exotic Spin- and Velocity-Dependent Interaction in the Sub-meV Range of Axion Mass with a Spin-Exchange Relaxation-Free Magnetometer",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2018",
+          "volume": "121",
+          "issue": "9",
+          "pages": "091802",
+          "doi": "10.1103/PhysRevLett.121.091802",
+          "url": "https://doi.org/10.1103/PhysRevLett.121.091802"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45Kim_2018_m_abs_eN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.121.091802"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45kim-2018-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45lh-wu-2023-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Wu 2023",
+      "display_label": "Wu 2023",
+      "interaction": "V4+5",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_mechanical_quantum_sensor",
+        "source": "moving_mass",
+        "sensor": "spin_mechanical_quantum_chip"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "wu_spin-mechanical_2023",
+          "title": "A Spin-Mechanical Quantum Chip for Exploring Exotic Interactions",
+          "journal": "Proc. Natl. Acad. Sci.",
+          "year": "2023",
+          "volume": "120",
+          "issue": "36",
+          "pages": "e2302145120",
+          "doi": "10.1073/pnas.2302145120",
+          "url": "https://doi.org/10.1073/pnas.2302145120"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45LH Wu_2023_m_abs_eN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1073/pnas.2302145120"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45lh-wu-2023-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45ficek-2018-m-v4-5-abs-epbar",
+      "coupling": "gVgV",
+      "label": "Ficek 2018",
+      "display_label": "Ficek 2018",
+      "interaction": "V4+5",
+      "fermion_pair": "e-pbar",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "antiprotonic_helium_spectroscopy",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "ficek_constraints_2018",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2018",
+          "volume": "120",
+          "issue": "18",
+          "pages": "183002",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "url": "https://doi.org/10.1103/PhysRevLett.120.183002"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45Ficek_2018_m_V4+5_abs_epbar.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.120.183002"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45ficek-2018-m-v4-5-abs-epbar.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45wei-xiao-2024-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Xiao 2024",
+      "display_label": "Xiao 2024",
+      "interaction": "V4+5",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "alkali_vapor_frequency_shift_noise_analysis",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": null,
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "xiao_exotic_2024",
+          "title": "Exotic Spin-Dependent Energy-Level Shift Noise Induced by Thermal Motion",
+          "journal": "ArXiv Prepr. ArXiv240105862",
+          "year": "2024",
+          "volume": "",
+          "issue": "",
+          "pages": "",
+          "doi": "",
+          "url": "https://arxiv.org/abs/2401.05862"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45Wei Xiao_2024_m_abs_eN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://arxiv.org/abs/2401.05862"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45wei-xiao-2024-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45dg-wu-2023-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Wu 2023",
+      "display_label": "Wu 2023",
+      "interaction": "V4+5",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "ensemble_nv_diamond_magnetometer",
+        "source": "moving_mass",
+        "sensor": "ensemble_nv_diamond_magnetometer"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "wu_improved_2023",
+          "title": "Improved Limits on an Exotic Spin- and Velocity-Dependent Interaction at the Micrometer Scale with an Ensemble-NV-Diamond Magnetometer",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2023",
+          "volume": "131",
+          "issue": "7",
+          "pages": "071801",
+          "doi": "10.1103/PhysRevLett.131.071801",
+          "url": "https://doi.org/10.1103/PhysRevLett.131.071801"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45DG Wu_2023_m_abs_eN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.131.071801"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45dg-wu-2023-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3fadeev-2022-5-m-abs-ep",
+      "coupling": "gVgV",
+      "label": "Fadeev 2022",
+      "display_label": "Fadeev 2022",
+      "interaction": "V3",
+      "fermion_pair": "e-p",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_spectroscopy_reanalysis",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "journal": "Phys. Rev. A",
+          "year": "2022",
+          "volume": "105",
+          "issue": "2",
+          "pages": "022812",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "url": "https://doi.org/10.1103/PhysRevA.105.022812"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/3Fadeev_2022_5_m_abs_ep.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevA.105.022812"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3fadeev-2022-5-m-abs-ep.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:1aenastro-m-abs",
+      "coupling": "gVgV",
+      "label": "Astrophysical · e-N",
+      "display_label": "Astrophysical",
+      "interaction": "astrophysical",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "astrophysical",
+        "technique": "astrophysical_constraints",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/1aeNastro_m_abs.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/1aenastro-m-abs.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45wu-2021-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Wu 2022",
+      "display_label": "Wu 2022",
+      "interaction": "V4+5",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "atomic_magnetometer_array",
+        "source": "rotating_source_masses",
+        "sensor": "atomic_magnetometer_array"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": "Legacy filename retained; the paper was published in 2022."
+      },
+      "references": [
+        {
+          "citation_key": "wu_experimental_2022",
+          "title": "Experimental Limits on Exotic Spin and Velocity Dependent Interactions Using Rotationally Modulated Source Masses and an Atomic-Magnetometer Array",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2022",
+          "volume": "129",
+          "issue": "5",
+          "pages": "051802",
+          "doi": "10.1103/PhysRevLett.129.051802",
+          "url": "https://doi.org/10.1103/PhysRevLett.129.051802"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45Wu_2021_m_abs_eN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.129.051802"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45wu-2021-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3almasi-2020-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Almasi 2020",
+      "display_label": "Almasi 2020",
+      "interaction": "V3",
+      "fermion_pair": "e-n",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "self_compensating_comagnetometer",
+        "source": "rotatable_iron_shielded_samarium_cobalt_5_electron_spin_source",
+        "sensor": "rubidium_21_neon_self_compensating_comagnetometer"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "almasi_new_2020",
+          "title": "New Limits on Anomalous Spin-Spin Interactions",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2020",
+          "volume": "125",
+          "issue": "20",
+          "pages": "201802",
+          "doi": "10.1103/PhysRevLett.125.201802",
+          "url": "https://doi.org/10.1103/PhysRevLett.125.201802"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/3Almasi_2020_m_abs_en.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.125.201802"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3almasi-2020-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45heckel-2008-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Heckel 2008",
+      "display_label": "Heckel 2008",
+      "interaction": "V4+5",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_polarized_torsion_pendulum",
+        "source": "preferred_frame_background",
+        "sensor": "spin_polarized_torsion_pendulum"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "heckel_preferred-frame_2008",
+          "title": "Preferred-Frame and $CP$-Violation Tests with Polarized Electrons",
+          "journal": "Phys. Rev. D",
+          "year": "2008",
+          "volume": "78",
+          "issue": "9",
+          "pages": "092006",
+          "doi": "10.1103/PhysRevD.78.092006",
+          "url": "https://doi.org/10.1103/PhysRevD.78.092006"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45Heckel_2008_m_abs_eN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevD.78.092006"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45heckel-2008-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45ding-2020-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Ding 2020",
+      "display_label": "Ding 2020",
+      "interaction": "V4+5",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "single_nv_center",
+        "source": "moving_mass",
+        "sensor": "single_nv_center"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "ding_constraints_2020",
+          "title": "Constraints on the Velocity and Spin Dependent Exotic Interaction at the Micrometer Range",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2020",
+          "volume": "124",
+          "issue": "16",
+          "pages": "161801",
+          "doi": "10.1103/PhysRevLett.124.161801",
+          "url": "https://doi.org/10.1103/PhysRevLett.124.161801"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45Ding_2020_m_abs_eN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.124.161801"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45ding-2020-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:23cong-2025-m-ep-gvgv-95cl",
+      "coupling": "gVgV",
+      "label": "Cong 2025 · 95% CL",
+      "display_label": "Cong 2025 · 95% CL",
+      "interaction": "V2+V3",
+      "fermion_pair": "e-p",
+      "confidence_level": "95%",
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "hydrogen_spectroscopy",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": null,
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record"
+        ],
+        "note": "Published after the review bibliography snapshot; no review figure attribution is displayed."
+      },
+      "references": [
+        {
+          "citation_key": "cong_improved_2025",
+          "title": "Improved Constraints on Exotic Electron-Proton Interactions in Hydrogen",
+          "journal": "Phys. Rev. A",
+          "year": "2025",
+          "volume": "112",
+          "issue": "5",
+          "pages": "052824",
+          "doi": "10.1103/8nyk-sysy",
+          "url": "https://doi.org/10.1103/8nyk-sysy"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/23Cong_2025_m_ep_gVgV_95CL.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/8nyk-sysy"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/23cong-2025-m-ep-gvgv-95cl.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45xiao-2023-m-abs-en",
+      "coupling": "gVgV",
+      "label": "Xiao 2023",
+      "display_label": "Xiao 2023",
+      "interaction": "V4+5",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "diffusion_optical_pumping_magnetometer",
+        "source": "moving_mass",
+        "sensor": "atomic_magnetometer"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "xiao_femtotesla_2023",
+          "title": "Femtotesla Atomic Magnetometer Employing Diffusion Optical Pumping to Search for Exotic Spin-Dependent Interactions",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2023",
+          "volume": "130",
+          "issue": "14",
+          "pages": "143201",
+          "doi": "10.1103/PhysRevLett.130.143201",
+          "url": "https://doi.org/10.1103/PhysRevLett.130.143201"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/45Xiao_2023_m_abs_eN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.130.143201"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45xiao-2023-m-abs-en.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45haddock-2018c-m-abs-nn",
+      "coupling": "gVgV",
+      "label": "Haddock 2018",
+      "display_label": "Haddock 2018",
+      "interaction": "V4+5",
+      "fermion_pair": "n-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "neutron_spin_rotation",
+        "source": "bulk_matter",
+        "sensor": "neutron_spin_rotation"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": "Complete replacement dataset selected; earlier partial a/b files are excluded."
+      },
+      "references": [
+        {
+          "citation_key": "haddock_search_2018",
+          "title": "A Search for Possible Long Range Spin Dependent Interactions of the Neutron from Exotic Vector Boson Exchange",
+          "journal": "Phys. Lett. B",
+          "year": "2018",
+          "volume": "783",
+          "issue": "",
+          "pages": "227-233",
+          "doi": "10.1016/j.physletb.2018.06.066",
+          "url": "https://doi.org/10.1016/j.physletb.2018.06.066"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/45Haddock_2018c_m_abs_nN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1016/j.physletb.2018.06.066"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45haddock-2018c-m-abs-nn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3vasilakis-2009-m-abs-nn",
+      "coupling": "gVgV",
+      "label": "Vasilakis 2009",
+      "display_label": "Vasilakis 2009",
+      "interaction": "V3",
+      "fermion_pair": "n-n",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "self_compensating_comagnetometer",
+        "source": "polarized_helium_3_nuclear_spins",
+        "sensor": "potassium_helium_3_self_compensating_comagnetometer"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "vasilakis_limits_2009",
+          "title": "Limits on New Long Range Nuclear Spin-Dependent Forces Set with a K - He 3 Comagnetometer",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2009",
+          "volume": "103",
+          "issue": "26",
+          "pages": "261801",
+          "doi": "10.1103/PhysRevLett.103.261801",
+          "url": "https://doi.org/10.1103/PhysRevLett.103.261801"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/3Vasilakis_2009_m_abs_nn.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.103.261801"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3vasilakis-2009-m-abs-nn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45su-2021b-m-abs-nn",
+      "coupling": "gVgV",
+      "label": "Su 2021",
+      "display_label": "Su 2021",
+      "interaction": "V4+5",
+      "fermion_pair": "N-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_based_amplifier",
+        "source": "polarized_spin_source",
+        "sensor": "spin_based_amplifier"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "su_search_2021",
+          "title": "Search for Exotic Spin-Dependent Interactions with a Spin-Based Amplifier",
+          "journal": "Sci. Adv.",
+          "year": "2021",
+          "volume": "7",
+          "issue": "47",
+          "pages": "eabi9535",
+          "doi": "10.1126/sciadv.abi9535",
+          "url": "https://doi.org/10.1126/sciadv.abi9535"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/45Su_2021b_m_abs_NN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1126/sciadv.abi9535"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45su-2021b-m-abs-nn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45wei-2022a-m-abs-nn",
+      "coupling": "gVgV",
+      "label": "Wei 2022",
+      "display_label": "Wei 2022",
+      "interaction": "V4+5",
+      "fermion_pair": "n-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_based_amplifier",
+        "source": "polarized_spin_source",
+        "sensor": "spin_based_amplifier"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "wei_constraints_2022",
+          "title": "Constraints on Exotic Spin-Velocity-Dependent Interactions",
+          "journal": "Nat. Commun.",
+          "year": "2022",
+          "volume": "13",
+          "issue": "1",
+          "pages": "7387",
+          "doi": "10.1038/s41467-022-34924-z",
+          "url": "https://doi.org/10.1038/s41467-022-34924-z"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/45Wei_2022a_m_abs_nN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1038/s41467-022-34924-z"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45wei-2022a-m-abs-nn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45-wu-2023-m-abs-nn",
+      "coupling": "gVgV",
+      "label": "Wu 2023",
+      "display_label": "Wu 2023",
+      "interaction": "V4+5",
+      "fermion_pair": "n-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "astronomical_source_reanalysis",
+        "source": "sun_and_moon",
+        "sensor": "comagnetometer"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "wu_new_2023",
+          "title": "New Limits on Exotic Spin-Dependent Interactions at Astronomical Distances",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2023",
+          "volume": "131",
+          "issue": "9",
+          "pages": "091002",
+          "doi": "10.1103/PhysRevLett.131.091002",
+          "url": "https://doi.org/10.1103/PhysRevLett.131.091002"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/45_Wu_2023_m_abs_nN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.131.091002"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45-wu-2023-m-abs-nn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45wei-2022b-m-abs-pn",
+      "coupling": "gVgV",
+      "label": "Wei 2022",
+      "display_label": "Wei 2022",
+      "interaction": "V4+5",
+      "fermion_pair": "p-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_based_amplifier",
+        "source": "polarized_spin_source",
+        "sensor": "spin_based_amplifier"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "wei_constraints_2022",
+          "title": "Constraints on Exotic Spin-Velocity-Dependent Interactions",
+          "journal": "Nat. Commun.",
+          "year": "2022",
+          "volume": "13",
+          "issue": "1",
+          "pages": "7387",
+          "doi": "10.1038/s41467-022-34924-z",
+          "url": "https://doi.org/10.1038/s41467-022-34924-z"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/45Wei_2022b_m_abs_pN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1038/s41467-022-34924-z"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45wei-2022b-m-abs-pn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45clayburn-2023b-m-abs-nn",
+      "coupling": "gVgV",
+      "label": "Clayburn 2023",
+      "display_label": "Clayburn 2023",
+      "interaction": "V4+5",
+      "fermion_pair": "n-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "earth_source_spin_velocity_experiment",
+        "source": "rotating_unpolarized_earth",
+        "sensor": "spin_polarized_torsion_pendulum"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "clayburn_using_2023",
+          "title": "Using Earth to Search for Long-Range Spin-Velocity Interactions",
+          "journal": "Phys. Rev. D",
+          "year": "2023",
+          "volume": "108",
+          "issue": "5",
+          "pages": "L051701",
+          "doi": "10.1103/PhysRevD.108.L051701",
+          "url": "https://doi.org/10.1103/PhysRevD.108.L051701"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/45Clayburn_2023b_m_abs_nN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevD.108.L051701"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45clayburn-2023b-m-abs-nn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45voronin-2020-m-abs-nn",
+      "coupling": "gVgV",
+      "label": "Voronin 2020",
+      "display_label": "Voronin 2020",
+      "interaction": "V4+5",
+      "fermion_pair": "N-N",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "neutron_diffraction",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "voronin_constraint_2020",
+          "title": "Constraint on a New Short-Range Spin---Orbit Interaction from Neutron Diffraction Data for a Noncentrosymmetric Crystal",
+          "journal": "Pis'ma Zh. Eksp. Teor. Fiz.",
+          "year": "2020",
+          "volume": "112",
+          "issue": "10",
+          "pages": "639-643 [JETP Lett. $\\textbf{112}$, 597 (2020)]",
+          "doi": "10.1134/S0021364020220142",
+          "url": "https://doi.org/10.1134/S0021364020220142"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/45voronin_2020_m_abs_NN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1134/S0021364020220142"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45voronin-2020-m-abs-nn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3ramsey-1979-m-abs-np",
+      "coupling": "gVgV",
+      "label": "Ramsey 1979",
+      "display_label": "Ramsey 1979",
+      "interaction": "V3",
+      "fermion_pair": "n-p",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "molecular_beam_magnetic_resonance",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "ramsey_tensor_1979",
+          "title": "The Tensor Force between Two Protons at Long Range",
+          "journal": "Phys. Stat. Mech. Its Appl.",
+          "year": "1979",
+          "volume": "96",
+          "issue": "1",
+          "pages": "285-289",
+          "doi": "10.1016/0378-4371(79)90217-6",
+          "url": "https://doi.org/10.1016/0378-4371(79)90217-6"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/3Ramsey_1979_m_abs_np.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1016/0378-4371(79)90217-6"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3ramsey-1979-m-abs-np.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:1annastro-m-abs",
+      "coupling": "gVgV",
+      "label": "Astrophysical · N-N",
+      "display_label": "Astrophysical",
+      "interaction": "astrophysical",
+      "fermion_pair": "N-N",
+      "confidence_level": null,
+      "method": {
+        "category": "astrophysical",
+        "technique": "astrophysical_constraints",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/1aNNastro_m_abs.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/1annastro-m-abs.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3ledbetter-2013-m-abs-pn",
+      "coupling": "gVgV",
+      "label": "Ledbetter 2013",
+      "display_label": "Ledbetter 2013",
+      "interaction": "V3",
+      "fermion_pair": "p-N",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "molecular_spectroscopy",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "ledbetter_constraints_2013",
+          "title": "Constraints on Short-Range Spin-Dependent Interactions from Scalar Spin-Spin Coupling in Deuterated Molecular Hydrogen",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2013",
+          "volume": "110",
+          "issue": "4",
+          "pages": "040402",
+          "doi": "10.1103/PhysRevLett.110.040402",
+          "url": "https://doi.org/10.1103/PhysRevLett.110.040402"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/3Ledbetter_2013_m_abs_pN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.110.040402"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3ledbetter-2013-m-abs-pn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3kimball-2010-m-abs-np",
+      "coupling": "gVgV",
+      "label": "Jackson Kimball 2010",
+      "display_label": "Jackson Kimball 2010",
+      "interaction": "V3",
+      "fermion_pair": "n-p",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "spin_exchange_collision_analysis",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "jackson_kimball_constraints_2010",
+          "title": "Constraints on Anomalous Spin-Spin Interactions from Spin-Exchange Collisions",
+          "journal": "Phys. Rev. A",
+          "year": "2010",
+          "volume": "82",
+          "issue": "6",
+          "pages": "062714",
+          "doi": "10.1103/PhysRevA.82.062714",
+          "url": "https://doi.org/10.1103/PhysRevA.82.062714"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/3Kimball_2010_m_abs_np.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevA.82.062714"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3kimball-2010-m-abs-np.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45clayburn-2023c-m-abs-pn",
+      "coupling": "gVgV",
+      "label": "Clayburn 2023",
+      "display_label": "Clayburn 2023",
+      "interaction": "V4+5",
+      "fermion_pair": "p-N",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "earth_source_spin_velocity_experiment",
+        "source": "rotating_unpolarized_earth",
+        "sensor": "spin_polarized_torsion_pendulum"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "clayburn_using_2023",
+          "title": "Using Earth to Search for Long-Range Spin-Velocity Interactions",
+          "journal": "Phys. Rev. D",
+          "year": "2023",
+          "volume": "108",
+          "issue": "5",
+          "pages": "L051701",
+          "doi": "10.1103/PhysRevD.108.L051701",
+          "url": "https://doi.org/10.1103/PhysRevD.108.L051701"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/nucleon-nucleon/45Clayburn_2023c_m_abs_pN.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevD.108.L051701"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45clayburn-2023c-m-abs-pn.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:v1-gsn-casimir",
+      "coupling": "gVgV",
+      "label": "V1 · Casimir",
+      "display_label": "V1 · Casimir",
+      "interaction": "V1",
+      "fermion_pair": "N-N",
+      "confidence_level": null,
+      "method": {
+        "category": "comparison_v1",
+        "technique": "spin_independent_v1_comparison",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/gV_squareV1bounds/V1_gsN_Casimir.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v1-gsn-casimir.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:v1-gsn-ms",
+      "coupling": "gVgV",
+      "label": "V1 · Molecular spectroscopy",
+      "display_label": "V1 · Molecular spectroscopy",
+      "interaction": "V1",
+      "fermion_pair": "N-N",
+      "confidence_level": null,
+      "method": {
+        "category": "comparison_v1",
+        "technique": "spin_independent_v1_comparison",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/gV_squareV1bounds/V1_gsN_MS.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v1-gsn-ms.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:v1-gsn-eep",
+      "coupling": "gVgV",
+      "label": "V1 · EEP",
+      "display_label": "V1 · EEP",
+      "interaction": "V1",
+      "fermion_pair": "N-N",
+      "confidence_level": null,
+      "method": {
+        "category": "comparison_v1",
+        "technique": "spin_independent_v1_comparison",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/gV_squareV1bounds/V1_gsN_EEP.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v1-gsn-eep.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:v1-gsn-torsion",
+      "coupling": "gVgV",
+      "label": "V1 · Torsion",
+      "display_label": "V1 · Torsion",
+      "interaction": "V1",
+      "fermion_pair": "N-N",
+      "confidence_level": null,
+      "method": {
+        "category": "comparison_v1",
+        "technique": "spin_independent_v1_comparison",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/gV_squareV1bounds/V1_gsN_Torsion.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v1-gsn-torsion.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:1aeeastro-m-abs",
+      "coupling": "gVgV",
+      "label": "Astrophysical · e-e",
+      "display_label": "Astrophysical",
+      "interaction": "astrophysical",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "astrophysical",
+        "technique": "astrophysical_constraints",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-lepton/1aeeastro_m_abs.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/1aeeastro-m-abs.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3fadeev-2022-2-m-abs-ebare",
+      "coupling": "gVgV",
+      "label": "Fadeev 2022",
+      "display_label": "Fadeev 2022",
+      "interaction": "V3",
+      "fermion_pair": "e-e+",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_spectroscopy_reanalysis",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "journal": "Phys. Rev. A",
+          "year": "2022",
+          "volume": "105",
+          "issue": "2",
+          "pages": "022812",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "url": "https://doi.org/10.1103/PhysRevA.105.022812"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-lepton/3Fadeev_2022_2_m_abs_ebare.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevA.105.022812"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3fadeev-2022-2-m-abs-ebare.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3fadeev-2022-4-m-abs-ee",
+      "coupling": "gVgV",
+      "label": "Fadeev 2022",
+      "display_label": "Fadeev 2022",
+      "interaction": "V3",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_spectroscopy_reanalysis",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "journal": "Phys. Rev. A",
+          "year": "2022",
+          "volume": "105",
+          "issue": "2",
+          "pages": "022812",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "url": "https://doi.org/10.1103/PhysRevA.105.022812"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-lepton/3Fadeev_2022_4_m_abs_ee.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevA.105.022812"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3fadeev-2022-4-m-abs-ee.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3fadeev-2022-3-m-abs-emubar",
+      "coupling": "gVgV",
+      "label": "Fadeev 2022",
+      "display_label": "Fadeev 2022",
+      "interaction": "V3",
+      "fermion_pair": "e-mu+",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_spectroscopy_reanalysis",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "journal": "Phys. Rev. A",
+          "year": "2022",
+          "volume": "105",
+          "issue": "2",
+          "pages": "022812",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "url": "https://doi.org/10.1103/PhysRevA.105.022812"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-lepton/3Fadeev_2022_3_m_abs_emubar.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevA.105.022812"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3fadeev-2022-3-m-abs-emubar.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:3terrano-2015-m-abs-ee",
+      "coupling": "gVgV",
+      "label": "Terrano 2015",
+      "display_label": "Terrano 2015",
+      "interaction": "V3",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_polarized_torsion_pendulum",
+        "source": "polarized_electron_source",
+        "sensor": "spin_polarized_torsion_pendulum"
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "terrano_short-range_2015",
+          "title": "Short-Range, Spin-Dependent Interactions of Electrons: A Probe for Exotic Pseudo-Goldstone Bosons",
+          "journal": "Phys. Rev. Lett.",
+          "year": "2015",
+          "volume": "115",
+          "issue": "20",
+          "pages": "201801",
+          "doi": "10.1103/PhysRevLett.115.201801",
+          "url": "https://doi.org/10.1103/PhysRevLett.115.201801"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-lepton/3Terrano_2015_m_abs_ee.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevLett.115.201801"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3terrano-2015-m-abs-ee.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:45ficek-2017-v4-5-m-abs-ee",
+      "coupling": "gVgV",
+      "label": "Ficek 2017",
+      "display_label": "Ficek 2017",
+      "interaction": "V4+5",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "helium_fine_structure_spectroscopy",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "confirmed",
+        "evidence": [
+          "filename",
+          "BibTeX record",
+          "citation in RMP gVgV section"
+        ],
+        "note": ""
+      },
+      "references": [
+        {
+          "citation_key": "ficek_constraints_2017",
+          "title": "Constraints on Exotic Spin-Dependent Interactions between Electrons from Helium Fine-Structure Spectroscopy",
+          "journal": "Phys. Rev. A",
+          "year": "2017",
+          "volume": "95",
+          "issue": "3",
+          "pages": "032505",
+          "doi": "10.1103/PhysRevA.95.032505",
+          "url": "https://doi.org/10.1103/PhysRevA.95.032505"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-lepton/45Ficek_2017_V4+5_m_abs_ee.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/PhysRevA.95.032505"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/45ficek-2017-v4-5-m-abs-ee.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:v-1gfactor",
+      "coupling": "gVgV",
+      "label": "V1 · Electron magnetic moment",
+      "display_label": "V1 · Electron magnetic moment",
+      "interaction": "V1",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "comparison_v1",
+        "technique": "spin_independent_v1_comparison",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-lepton/V_1gfactor.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v-1gfactor.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:v1-gse-torsion",
+      "coupling": "gVgV",
+      "label": "V1 · Torsion",
+      "display_label": "V1 · Torsion",
+      "interaction": "V1",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "comparison_v1",
+        "technique": "spin_independent_v1_comparison",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_Torsion.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v1-gse-torsion.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:v1-gse-eep",
+      "coupling": "gVgV",
+      "label": "V1 · EEP",
+      "display_label": "V1 · EEP",
+      "interaction": "V1",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "comparison_v1",
+        "technique": "spin_independent_v1_comparison",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_EEP.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v1-gse-eep.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:v1-gse-emm",
+      "coupling": "gVgV",
+      "label": "V1 · Electron magnetic moment",
+      "display_label": "V1 · Electron magnetic moment",
+      "interaction": "V1",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "comparison_v1",
+        "technique": "spin_independent_v1_comparison",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_EMM.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v1-gse-emm.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    },
+    {
+      "api_version": "v1",
+      "id": "gVgV:v1-gse-casimir",
+      "coupling": "gVgV",
+      "label": "V1 · Casimir",
+      "display_label": "V1 · Casimir",
+      "interaction": "V1",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "comparison_v1",
+        "technique": "spin_independent_v1_comparison",
+        "source": "",
+        "sensor": ""
+      },
+      "review_location": {
+        "section": "Vector/Vector interaction gVgV",
+        "figure": "Fig. 12"
+      },
+      "context_note": null,
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "RMP review Fig. 12 and comparison appendices"
+        ]
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "journal": "Rev. Mod. Phys.",
+          "year": "2025",
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "distributions": {
+        "csv": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/gV_squareV1bounds/V1_gse_Casimir.csv",
+          "encoding_format": "text/csv",
+          "authoritative": true
+        },
+        "plot_bundle": {
+          "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+          "encoding_format": "application/json",
+          "authoritative": false,
+          "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+        }
+      },
+      "citation": {
+        "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+        "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+        "primary_publications": [
+          "https://doi.org/10.1103/RevModPhys.97.025005"
+        ],
+        "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+      },
+      "correction_contact": {
+        "email": "congllzu@gmail.com",
+        "subject": "Correction/Question about SDFF dataset"
+      },
+      "links": {
+        "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v1-gse-casimir.json",
+        "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+      },
+      "dataset_version": "1.0.0",
+      "generated_at": "2026-07-23T19:29:25.430Z",
+      "build_revision": "local"
+    }
+  ],
+  "citation_instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s).",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

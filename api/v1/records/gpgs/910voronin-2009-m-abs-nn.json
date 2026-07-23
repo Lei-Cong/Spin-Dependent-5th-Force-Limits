@@ -1,0 +1,68 @@
+{
+  "api_version": "v1",
+  "id": "gpgs:910voronin-2009-m-abs-nn",
+  "coupling": "gpgs",
+  "label": "Voronin et al. 2009",
+  "display_label": "Voronin 2009",
+  "interaction": "V9+10",
+  "fermion_pair": "n-N",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "dedicated fifth-force experiment",
+    "source": "noncentrosymmetric crystal electric field",
+    "sensor": "polarized-neutron diffraction"
+  },
+  "review_location": null,
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "voronin_neutron_2009",
+      "title": "Neutron Diffraction Test on Spin-Dependent Short Range Interaction",
+      "authors": "Voronin, V. V. and Fedorov, V. V. and Kuznetsov, I. A.",
+      "journal": "Pis'ma Zh. Eksp. Teor. Fiz.",
+      "year": 2009,
+      "volume": "90",
+      "issue": "",
+      "pages": "7 [JETP Lett. $\\textbf90$, 5 (2009)]",
+      "doi": "10.1134/S0021364009130025",
+      "url": "https://doi.org/10.1134/S0021364009130025"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gpgs/nucleon-nucleon/neutron-nucleon/910Voronin_2009_m_abs_nN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gpgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1134/S0021364009130025"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gpgs/910voronin-2009-m-abs-nn.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

@@ -99,6 +99,30 @@ For notation conventions and operator definitions, see the RMP review:
 
 Please cite this repository as follows: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14572652.svg)](https://doi.org/10.5281/zenodo.14572652). One can copy the BibTeX file from here: [**BibTeX Format**](./Citation.bib).
 
+### Machine-readable API
+
+The versioned read-only API is generated from the same manifest and metadata
+used by the interactive explorer. It is designed for research software,
+reproducible analysis, automated workflows, and machine-assisted scientific
+discovery.
+
+- Current API version: **v1**
+- API documentation: <https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/>
+- API index: <https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/index.json>
+- Catalog: <https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/catalog.json>
+- Citation metadata: <https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/citation.json>
+- AI and automated-agent guidance: `llms.txt`
+
+The API version and the database release version serve different purposes.
+`v1` identifies the interface contract: compatible additions can be published
+under `v1`, while incompatible changes to fields or endpoint structure will be
+released under a new path such as `v2`. The separately versioned scientific
+database releases are archived and cited through Zenodo DOI
+[10.5281/zenodo.14572652](https://doi.org/10.5281/zenodo.14572652).
+
+Run `npm run build:data` after changing CSV files, the manifest, or metadata.
+The GitHub Pages workflow runs the same command automatically before deployment.
+
 For contributions or to include your new results, please feel free to contact Dr. Lei Cong (congllzu@gmail.com), Dr. Wei Ji (weiji001@uni-mainz.de), or Prof. Dmitry Budker (budker@uni-mainz.de).
 
 ---

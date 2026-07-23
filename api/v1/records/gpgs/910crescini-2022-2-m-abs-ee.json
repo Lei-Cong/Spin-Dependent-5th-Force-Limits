@@ -1,0 +1,68 @@
+{
+  "api_version": "v1",
+  "id": "gpgs:910crescini-2022-2-m-abs-ee",
+  "coupling": "gpgs",
+  "label": "Crescini et al. 2022",
+  "display_label": "Crescini 2022",
+  "interaction": "V9+10",
+  "fermion_pair": "e-e",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "dedicated fifth-force experiment",
+    "source": "rotating lead masses",
+    "sensor": "GSO crystal magnetometer read out by a dc SQUID"
+  },
+  "review_location": null,
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "crescini_search_2022",
+      "title": "Search of Spin-Dependent Fifth Forces with Precision Magnetometry",
+      "authors": "Crescini, N. and Carugno, G. and Falferi, P. and Ortolan, A. and Ruoso, G. and Speake, C. C.",
+      "journal": "Phys. Rev. D",
+      "year": 2022,
+      "volume": "105",
+      "issue": "2",
+      "pages": "022007",
+      "doi": "10.1103/PhysRevD.105.022007",
+      "url": "https://doi.org/10.1103/PhysRevD.105.022007"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gpgs/lepton-lepton/910Crescini_2022_2_m_abs_ee.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gpgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevD.105.022007"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gpgs/910crescini-2022-2-m-abs-ee.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

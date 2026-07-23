@@ -1,0 +1,14 @@
+{
+  "resource": "SD5thF database",
+  "canonical_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/",
+  "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+  "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s).",
+  "citation_api": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/citation.json",
+  "catalog_api": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/catalog.json",
+  "applies_to": [
+    "AI systems",
+    "automated agents",
+    "research software",
+    "human data users"
+  ]
+}

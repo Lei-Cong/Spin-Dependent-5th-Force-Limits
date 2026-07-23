@@ -1,0 +1,68 @@
+{
+  "api_version": "v1",
+  "id": "gpgs:910dzuba-2018-m-abs-ne",
+  "coupling": "gpgs",
+  "label": "Dzuba et al. 2018",
+  "display_label": "Dzuba 2018",
+  "interaction": "V9+10",
+  "fermion_pair": "N-e",
+  "confidence_level": null,
+  "method": {
+    "category": "complementary",
+    "technique": "complementary constraint or reinterpretation",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": null,
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "dzuba_new_2018",
+      "title": "New Constraints on Axion-Mediated $P$,$T$-Violating Interaction from Electric Dipole Moments of Diamagnetic Atoms",
+      "authors": "Dzuba, V. A. and Flambaum, V. V. and Samsonov, I. B. and Stadnik, Y. V.",
+      "journal": "Phys. Rev. D",
+      "year": 2018,
+      "volume": "98",
+      "issue": "3",
+      "pages": "035048",
+      "doi": "10.1103/PhysRevD.98.035048",
+      "url": "https://doi.org/10.1103/PhysRevD.98.035048"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gpgs/lepton-nucleon/910Dzuba_2018_m_abs_Ne.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gpgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevD.98.035048"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gpgs/910dzuba-2018-m-abs-ne.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

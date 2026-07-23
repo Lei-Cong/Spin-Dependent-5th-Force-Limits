@@ -1,0 +1,71 @@
+{
+  "api_version": "v1",
+  "id": "gVgV:23cong-2025-m-ep-gvgv-95cl",
+  "coupling": "gVgV",
+  "label": "Cong 2025 · 95% CL",
+  "display_label": "Cong 2025 · 95% CL",
+  "interaction": "V2+V3",
+  "fermion_pair": "e-p",
+  "confidence_level": "95%",
+  "method": {
+    "category": "complementary_experiment",
+    "technique": "hydrogen_spectroscopy",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": null,
+  "context_note": null,
+  "curation": {
+    "status": "confirmed",
+    "evidence": [
+      "filename",
+      "BibTeX record"
+    ],
+    "note": "Published after the review bibliography snapshot; no review figure attribution is displayed."
+  },
+  "references": [
+    {
+      "citation_key": "cong_improved_2025",
+      "title": "Improved Constraints on Exotic Electron-Proton Interactions in Hydrogen",
+      "journal": "Phys. Rev. A",
+      "year": "2025",
+      "volume": "112",
+      "issue": "5",
+      "pages": "052824",
+      "doi": "10.1103/8nyk-sysy",
+      "url": "https://doi.org/10.1103/8nyk-sysy"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-nucleon/23Cong_2025_m_ep_gVgV_95CL.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/8nyk-sysy"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/23cong-2025-m-ep-gvgv-95cl.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

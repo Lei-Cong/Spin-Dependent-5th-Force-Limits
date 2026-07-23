@@ -15,7 +15,7 @@
       "method": {
         "category": "dedicated_source_sensor",
         "technique": "earth_source_spin_velocity_experiment",
-        "source": "earth",
+        "source": "rotating_unpolarized_earth",
         "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
@@ -63,9 +63,9 @@
       "confidence_level": "",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "spin_based_amplifier",
-        "source": "polarized_spin_source",
-        "sensor": "spin_based_amplifier"
+        "technique": "noble_gas_spin_amplifier",
+        "source": "optically_polarized_rubidium_87_electron_spins",
+        "sensor": "xenon_129_nuclear_spin_amplifier_with_rubidium_readout"
       },
       "references": [
         {
@@ -308,7 +308,7 @@
       "confidence_level": "",
       "method": {
         "category": "complementary_experiment",
-        "technique": "thermal_motion_noise_analysis",
+        "technique": "alkali_vapor_frequency_shift_noise_analysis",
         "source": "",
         "sensor": ""
       },
@@ -544,10 +544,10 @@
       "fermion_pair": "e-n",
       "confidence_level": "",
       "method": {
-        "category": "complementary_experiment",
-        "technique": "precision_spin_measurement",
-        "source": "",
-        "sensor": ""
+        "category": "dedicated_source_sensor",
+        "technique": "self_compensating_comagnetometer",
+        "source": "rotatable_iron_shielded_samarium_cobalt_5_electron_spin_source",
+        "sensor": "rubidium_21_neon_self_compensating_comagnetometer"
       },
       "references": [
         {
@@ -835,9 +835,9 @@
       "confidence_level": "",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "comagnetometer",
-        "source": "earth",
-        "sensor": "comagnetometer"
+        "technique": "self_compensating_comagnetometer",
+        "source": "polarized_helium_3_nuclear_spins",
+        "sensor": "potassium_helium_3_self_compensating_comagnetometer"
       },
       "references": [
         {
@@ -1081,7 +1081,7 @@
       "method": {
         "category": "dedicated_source_sensor",
         "technique": "earth_source_spin_velocity_experiment",
-        "source": "earth",
+        "source": "rotating_unpolarized_earth",
         "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [
@@ -1371,7 +1371,7 @@
       "method": {
         "category": "dedicated_source_sensor",
         "technique": "earth_source_spin_velocity_experiment",
-        "source": "earth",
+        "source": "rotating_unpolarized_earth",
         "sensor": "spin_polarized_torsion_pendulum"
       },
       "references": [

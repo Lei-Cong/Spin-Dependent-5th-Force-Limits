@@ -1,0 +1,73 @@
+{
+  "api_version": "v1",
+  "id": "gsgs:45xiao-2023-m-abs-en",
+  "coupling": "gsgs",
+  "label": "Xiao et al. 2023",
+  "display_label": "Xiao 2023",
+  "interaction": "V4+5",
+  "fermion_pair": "e-N",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "diffusion_optical_pumping_magnetometer",
+    "source": "moving_mass",
+    "sensor": "atomic_magnetometer"
+  },
+  "review_location": {
+    "section": "Scalar/Scalar interaction gsgs",
+    "figure": "Fig. 15"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "evidence": [
+      "Fig. 15, RMP review"
+    ]
+  },
+  "references": [
+    {
+      "citation_key": "xiao_femtotesla_2023",
+      "title": "Femtotesla Atomic Magnetometer Employing Diffusion Optical Pumping to Search for Exotic Spin-Dependent Interactions",
+      "authors": "Xiao, Wei and Liu, Meng and Wu, Teng and Peng, Xiang and Guo, Hong",
+      "journal": "Phys. Rev. Lett.",
+      "year": 2023,
+      "volume": "130",
+      "issue": "14",
+      "pages": "143201",
+      "doi": "10.1103/PhysRevLett.130.143201",
+      "url": "https://doi.org/10.1103/PhysRevLett.130.143201"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gsgs/lepton-nucleon/45Xiao_2023_m_abs_eN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gsgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevLett.130.143201"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gsgs/45xiao-2023-m-abs-en.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

@@ -1,0 +1,72 @@
+{
+  "api_version": "v1",
+  "id": "gsgs:45xiao-2024-m-abs-en",
+  "coupling": "gsgs",
+  "label": "Xiao et al. 2024",
+  "display_label": "Xiao 2024",
+  "interaction": "V4+5",
+  "fermion_pair": "e-N",
+  "confidence_level": null,
+  "method": {
+    "category": "complementary_experiment",
+    "technique": "alkali_vapor_frequency_shift_noise_analysis",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": {
+    "section": "Scalar/Scalar interaction gsgs",
+    "figure": "Fig. 15"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "evidence": [
+      "Fig. 15, RMP review"
+    ]
+  },
+  "references": [
+    {
+      "citation_key": "xiao_exotic_2024",
+      "title": "Exotic Spin-Dependent Energy-Level Shift Noise Induced by Thermal Motion",
+      "authors": "Xiao, Wei and Liu, Xiyu and Wu, Teng and Peng, Xiang and Guo, Hong",
+      "journal": "ArXiv Prepr. ArXiv240105862",
+      "year": 2024,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "url": "https://arxiv.org/abs/2401.05862"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gsgs/lepton-nucleon/45Xiao_2024_m_abs_eN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gsgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://arxiv.org/abs/2401.05862"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gsgs/45xiao-2024-m-abs-en.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

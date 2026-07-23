@@ -1,0 +1,75 @@
+{
+  "api_version": "v1",
+  "id": "gVgV:3fadeev-2022-4-m-abs-ee",
+  "coupling": "gVgV",
+  "label": "Fadeev 2022",
+  "display_label": "Fadeev 2022",
+  "interaction": "V3",
+  "fermion_pair": "e-e",
+  "confidence_level": null,
+  "method": {
+    "category": "complementary_experiment",
+    "technique": "atomic_spectroscopy_reanalysis",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": {
+    "section": "Vector/Vector interaction gVgV",
+    "figure": "Fig. 12"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "confirmed",
+    "evidence": [
+      "filename",
+      "BibTeX record",
+      "citation in RMP gVgV section"
+    ],
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "fadeev_pseudovector_2022",
+      "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+      "journal": "Phys. Rev. A",
+      "year": "2022",
+      "volume": "105",
+      "issue": "2",
+      "pages": "022812",
+      "doi": "10.1103/PhysRevA.105.022812",
+      "url": "https://doi.org/10.1103/PhysRevA.105.022812"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/lepton-lepton/3Fadeev_2022_4_m_abs_ee.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevA.105.022812"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/3fadeev-2022-4-m-abs-ee.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

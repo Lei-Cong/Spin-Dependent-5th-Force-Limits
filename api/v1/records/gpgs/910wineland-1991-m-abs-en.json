@@ -1,0 +1,68 @@
+{
+  "api_version": "v1",
+  "id": "gpgs:910wineland-1991-m-abs-en",
+  "coupling": "gpgs",
+  "label": "Wineland et al. 1991",
+  "display_label": "Wineland 1991",
+  "interaction": "V9+10",
+  "fermion_pair": "e-N",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "earth_ion_source_sensor_experiment",
+    "source": "Earth",
+    "sensor": "trapped-ion spin sensor"
+  },
+  "review_location": null,
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "wineland_search_1991",
+      "title": "Search for Anomalous Spin-Dependent Forces Using Stored-Ion Spectroscopy",
+      "authors": "Wineland, D. J. and Bollinger, J. J. and Heinzen, D. J. and Itano, W. M. and Raizen, M. G.",
+      "journal": "Phys. Rev. Lett.",
+      "year": 1991,
+      "volume": "67",
+      "issue": "13",
+      "pages": "1735-1738",
+      "doi": "10.1103/PhysRevLett.67.1735",
+      "url": "https://doi.org/10.1103/PhysRevLett.67.1735"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gpgs/lepton-nucleon/910Wineland_1991_m_abs_eN.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gpgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevLett.67.1735"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gpgs/910wineland-1991-m-abs-en.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

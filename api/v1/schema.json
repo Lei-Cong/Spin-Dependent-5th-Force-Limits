@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/schema.json",
+  "title": "SD5thF constraint record",
+  "type": "object",
+  "required": [
+    "api_version",
+    "id",
+    "coupling",
+    "interaction",
+    "fermion_pair",
+    "method",
+    "references",
+    "distributions",
+    "citation"
+  ],
+  "properties": {
+    "api_version": {
+      "const": "v1"
+    },
+    "id": {
+      "type": "string"
+    },
+    "coupling": {
+      "type": "string"
+    },
+    "interaction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fermion_pair": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "confidence_level": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "method": {
+      "type": "object"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "distributions": {
+      "type": "object"
+    },
+    "citation": {
+      "type": "object"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T16:46:13.973Z",
+  "generated_at": "2026-07-23T19:29:25.280Z",
   "notice": "The two V1 panels are independent: one displays |g_s g_s| constraints and the other displays the universal Yukawa strength |α|.",
   "records": [
     {
@@ -51,8 +51,8 @@
       "fermion_pair": "e-e",
       "confidence_level": null,
       "method": {
-        "category": "review_compilation",
-        "technique": "compiled review constraint",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -136,8 +136,8 @@
       "fermion_pair": "N-N",
       "confidence_level": null,
       "method": {
-        "category": "review_compilation",
-        "technique": "compiled review constraint",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -262,8 +262,8 @@
       "fermion_pair": "e-e",
       "confidence_level": null,
       "method": {
-        "category": "review_compilation",
-        "technique": "compiled review constraint",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -431,8 +431,8 @@
       "fermion_pair": "N-N",
       "confidence_level": null,
       "method": {
-        "category": "review_compilation",
-        "technique": "compiled review constraint",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -474,8 +474,8 @@
       "fermion_pair": "e-e",
       "confidence_level": null,
       "method": {
-        "category": "review_compilation",
-        "technique": "compiled review constraint",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -558,8 +558,8 @@
       "fermion_pair": "N-N",
       "confidence_level": null,
       "method": {
-        "category": "review_compilation",
-        "technique": "compiled review constraint",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -643,8 +643,8 @@
       "fermion_pair": "N-N",
       "confidence_level": null,
       "method": {
-        "category": "review_compilation",
-        "technique": "compiled review constraint",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -1064,8 +1064,8 @@
       "fermion_pair": "universal",
       "confidence_level": null,
       "method": {
-        "category": "review_compilation",
-        "technique": "compiled universal alpha constraint",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },
@@ -1106,8 +1106,8 @@
       "fermion_pair": "universal",
       "confidence_level": null,
       "method": {
-        "category": "review_compilation",
-        "technique": "compiled universal alpha constraint",
+        "category": "combined",
+        "technique": "combined constraint",
         "source": "",
         "sensor": ""
       },

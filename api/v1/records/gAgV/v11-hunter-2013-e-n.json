@@ -1,0 +1,75 @@
+{
+  "api_version": "v1",
+  "id": "gAgV:v11-hunter-2013-e-n",
+  "coupling": "gAgV",
+  "label": "Hunter 2013",
+  "display_label": "Hunter 2013",
+  "interaction": "V11",
+  "fermion_pair": "electron-neutron",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "earth_source_spin_experiment",
+    "source": "earth_geoelectrons",
+    "sensor": "spin_polarized_torsion_pendulum"
+  },
+  "review_location": {
+    "section": "Axial-vector/Vector interaction gAgV",
+    "figure": "Fig. 9"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "probable",
+    "evidence": [
+      "filename author/year",
+      "citation in review gAgV section",
+      "BibTeX record"
+    ],
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "hunter_using_2013",
+      "title": "Using the Earth as a Polarized Electron Source to Search for Long-Range Spin-Spin Interactions",
+      "journal": "Science",
+      "year": "2013",
+      "volume": "339",
+      "issue": "6122",
+      "pages": "928-932",
+      "doi": "10.1126/science.1227460",
+      "url": "https://doi.org/10.1126/science.1227460"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gAgV/lepton-nucleon/V11_Hunter_2013_e-n.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gAgV.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1126/science.1227460"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gAgV/v11-hunter-2013-e-n.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

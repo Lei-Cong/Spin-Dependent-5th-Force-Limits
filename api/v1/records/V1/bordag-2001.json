@@ -1,0 +1,73 @@
+{
+  "api_version": "v1",
+  "id": "V1:bordag-2001",
+  "coupling": "V1",
+  "label": "Bordag et al. 2001",
+  "display_label": "Bordag 2001",
+  "interaction": "V1",
+  "fermion_pair": "universal",
+  "confidence_level": null,
+  "method": {
+    "category": "complementary",
+    "technique": "universal Yukawa-force constraint",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": {
+    "section": "Spin-independent V1",
+    "figure": "Fig. 16"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "evidence": [
+      "Fig. 16, RMP review"
+    ]
+  },
+  "references": [
+    {
+      "citation_key": "bordag_new_2001",
+      "title": "New Developments in the Casimir Effect",
+      "authors": "Bordag, M. and Mohideen, U. and Mostepanenko, V. M.",
+      "journal": "Phys. Rep.",
+      "year": 2001,
+      "volume": "353",
+      "issue": "1",
+      "pages": "1-205",
+      "doi": "10.1016/S0370-1573(01)00015-1",
+      "url": "https://doi.org/10.1016/S0370-1573(01)00015-1"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/V1/V1_alpha_data/Bordag_2001.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/V1.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1016/S0370-1573(01)00015-1"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/V1/bordag-2001.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

@@ -1,0 +1,48 @@
+{
+  "api_version": "v1",
+  "name": "SD5thF constraint catalog",
+  "description": "Machine-readable catalog of standardized limits on spin-dependent exotic interactions and related comparison constraints.",
+  "dataset_version": "1.0.0",
+  "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+  "total_records": 274,
+  "couplings": [
+    {
+      "coupling": "gAgA",
+      "count": 64,
+      "url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/couplings/gAgA.json"
+    },
+    {
+      "coupling": "gAgV",
+      "count": 37,
+      "url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/couplings/gAgV.json"
+    },
+    {
+      "coupling": "gpgp",
+      "count": 16,
+      "url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/couplings/gpgp.json"
+    },
+    {
+      "coupling": "gpgs",
+      "count": 53,
+      "url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/couplings/gpgs.json"
+    },
+    {
+      "coupling": "gsgs",
+      "count": 32,
+      "url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/couplings/gsgs.json"
+    },
+    {
+      "coupling": "gVgV",
+      "count": 44,
+      "url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/couplings/gVgV.json"
+    },
+    {
+      "coupling": "V1",
+      "count": 28,
+      "url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/couplings/V1.json"
+    }
+  ],
+  "citation_instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s).",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

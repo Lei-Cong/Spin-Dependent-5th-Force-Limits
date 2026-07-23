@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/#dataset",
+  "name": "Spin-Dependent Exotic Interactions Dataset",
+  "alternateName": [
+    "SD5thF database",
+    "Spin-Dependent Fifth-Force Limits"
+  ],
+  "description": "Standardized experimental constraints on spin-dependent exotic interactions, with literature metadata and downloadable numerical limits.",
+  "url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits",
+  "identifier": [
+    "https://doi.org/10.5281/zenodo.14572652",
+    "10.5281/zenodo.14572652"
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Lei Cong",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University, Mainz 55128, Germany"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Ji",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University, Mainz 55128, Germany"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Dmitry Budker",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University, Mainz 55128, Germany"
+      }
+    }
+  ],
+  "keywords": [
+    "new physics",
+    "exotic interactions",
+    "dataset"
+  ],
+  "license": "https://opensource.org/license/mit",
+  "isAccessibleForFree": true,
+  "citation": [
+    "https://doi.org/10.5281/zenodo.14572652",
+    "https://doi.org/10.1103/RevModPhys.97.025005"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "SD5thF API catalog",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/catalog.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Dataset manifest",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/datasets_multi.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "BibTeX citation",
+      "encodingFormat": "application/x-bibtex",
+      "contentUrl": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Citation.bib"
+    }
+  ],
+  "version": "1.0.0",
+  "dateModified": "2026-07-23"
+}

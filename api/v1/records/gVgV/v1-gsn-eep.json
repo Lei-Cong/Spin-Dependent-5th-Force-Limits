@@ -1,0 +1,72 @@
+{
+  "api_version": "v1",
+  "id": "gVgV:v1-gsn-eep",
+  "coupling": "gVgV",
+  "label": "V1 · EEP",
+  "display_label": "V1 · EEP",
+  "interaction": "V1",
+  "fermion_pair": "N-N",
+  "confidence_level": null,
+  "method": {
+    "category": "comparison_v1",
+    "technique": "spin_independent_v1_comparison",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": {
+    "section": "Vector/Vector interaction gVgV",
+    "figure": "Fig. 12"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "review_only",
+    "evidence": [
+      "RMP review Fig. 12 and comparison appendices"
+    ]
+  },
+  "references": [
+    {
+      "citation_key": "cong_spin-dependent_2025",
+      "title": "Spin-Dependent Exotic Interactions",
+      "journal": "Rev. Mod. Phys.",
+      "year": "2025",
+      "volume": "97",
+      "issue": "2",
+      "pages": "025005",
+      "doi": "10.1103/RevModPhys.97.025005",
+      "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gVgV/gV_squareV1bounds/V1_gsN_EEP.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gVgV.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/RevModPhys.97.025005"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gVgV/v1-gsn-eep.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

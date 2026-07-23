@@ -1,0 +1,73 @@
+{
+  "api_version": "v1",
+  "id": "V1:tan-2020",
+  "coupling": "V1",
+  "label": "Tan et al. 2020",
+  "display_label": "Tan 2020",
+  "interaction": "V1",
+  "fermion_pair": "universal",
+  "confidence_level": null,
+  "method": {
+    "category": "complementary",
+    "technique": "universal Yukawa-force constraint",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": {
+    "section": "Spin-independent V1",
+    "figure": "Fig. 16"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "evidence": [
+      "Fig. 16, RMP review"
+    ]
+  },
+  "references": [
+    {
+      "citation_key": "tan_improvement_2020",
+      "title": "Improvement for Testing the Gravitational Inverse-Square Law at the Submillimeter Range",
+      "authors": "Tan, Wen-Hai and Du, An-Bin and Dong, Wen-Can and Yang, Shan-Qing and Shao, Cheng-Gang and Guan, Sheng-Guo and Wang, Qing-Lan and Zhan, Bi-Fu and Luo, Peng-Shun and Tu, Liang-Cheng and Luo, Jun",
+      "journal": "Phys. Rev. Lett.",
+      "year": 2020,
+      "volume": "124",
+      "issue": "5",
+      "pages": "051301",
+      "doi": "10.1103/PhysRevLett.124.051301",
+      "url": "https://doi.org/10.1103/PhysRevLett.124.051301"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/V1/V1_alpha_data/Tan_2020.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/V1.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevLett.124.051301"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/V1/tan-2020.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

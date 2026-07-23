@@ -1,0 +1,73 @@
+{
+  "api_version": "v1",
+  "id": "V1:salumbides-ddmu-2014",
+  "coupling": "V1",
+  "label": "Salumbides 2014 · ddμ",
+  "display_label": "Salumbides 2014 · ddμ",
+  "interaction": "V1",
+  "fermion_pair": "universal",
+  "confidence_level": null,
+  "method": {
+    "category": "complementary",
+    "technique": "universal Yukawa-force constraint",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": {
+    "section": "Spin-independent V1",
+    "figure": "Fig. 16"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "evidence": [
+      "Fig. 16, RMP review"
+    ]
+  },
+  "references": [
+    {
+      "citation_key": "salumbides_bounds_2014",
+      "title": "Bounds on Fifth Forces at the Sub-\\AA Length Scale",
+      "authors": "Salumbides, E.J. and Ubachs, W. and Korobov, V.I.",
+      "journal": "J. Mol. Spectrosc.",
+      "year": 2014,
+      "volume": "300",
+      "issue": "",
+      "pages": "65-69",
+      "doi": "10.1016/j.jms.2014.04.003",
+      "url": "https://doi.org/10.1016/j.jms.2014.04.003"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/V1/V1_alpha_data/Salumbides_ddmu_2014.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/V1.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1016/j.jms.2014.04.003"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/V1/salumbides-ddmu-2014.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

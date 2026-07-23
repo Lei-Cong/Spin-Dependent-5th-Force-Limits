@@ -1,0 +1,75 @@
+{
+  "api_version": "v1",
+  "id": "gAgV:v1213-antypas-2019-e-n",
+  "coupling": "gAgV",
+  "label": "Antypas 2019",
+  "display_label": "Antypas 2019",
+  "interaction": "V12+13",
+  "fermion_pair": "electron-neutron",
+  "confidence_level": null,
+  "method": {
+    "category": "complementary_experiment",
+    "technique": "atomic_parity_violation",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": {
+    "section": "Axial-vector/Vector interaction gAgV",
+    "figure": "Fig. 9"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "probable",
+    "evidence": [
+      "filename author/year",
+      "citation in review gAgV section",
+      "BibTeX record"
+    ],
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "antypas_isotopic_2019",
+      "title": "Isotopic Variation of Parity Violation in Atomic Ytterbium",
+      "journal": "Nat. Phys.",
+      "year": "2019",
+      "volume": "15",
+      "issue": "2",
+      "pages": "120-123",
+      "doi": "10.1038/s41567-018-0312-8",
+      "url": "https://doi.org/10.1038/s41567-018-0312-8"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gAgV/lepton-nucleon/V1213_Antypas_2019_e-n.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gAgV.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1038/s41567-018-0312-8"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gAgV/v1213-antypas-2019-e-n.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

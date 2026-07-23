@@ -1,0 +1,8 @@
+{
+  "name": "sd5thf-research-platform",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build:data": "node scripts/build_plot_bundles.mjs && node scripts/build_api.mjs && node scripts/verify_api.mjs"
+  }
+}

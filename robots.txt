@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Machine-readable catalog and attribution guidance:
+# /api/v1/index.json
+# /api/v1/catalog.json
+# /llms.txt
+# /ai-attribution.json

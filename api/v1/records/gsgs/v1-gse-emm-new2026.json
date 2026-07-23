@@ -1,0 +1,70 @@
+{
+  "api_version": "v1",
+  "id": "gsgs:v1-gse-emm-new2026",
+  "coupling": "gsgs",
+  "label": "Cong et al. 2026",
+  "display_label": "Cong 2026",
+  "interaction": "V1",
+  "fermion_pair": "e-e",
+  "confidence_level": null,
+  "method": {
+    "category": "combined",
+    "technique": "electron magnetic moment",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": null,
+  "context_note": "Updated electron-magnetic-moment constraint from Cong et al. (2026), superseding the legacy viewer curve.",
+  "curation": {
+    "status": "curated",
+    "evidence": [
+      "Primary publication and curated dataset"
+    ]
+  },
+  "references": [
+    {
+      "citation_key": "cong_testing_2026",
+      "title": "Testing Exotic Electron-Electron Interactions with the Helium Ionization-Energy Anomaly",
+      "authors": "Cong, Lei and Ficek, Filip and Abdullin, Rinat and Kozlov, Mikhail G. and Budker, Dmitry",
+      "journal": "",
+      "year": 2026,
+      "volume": "",
+      "issue": "arXiv:2602.09743",
+      "pages": "",
+      "doi": "10.48550/arXiv.2602.09743",
+      "url": "https://doi.org/10.48550/arXiv.2602.09743"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gsgs/gs_squareV1bounds/V1_gse_EMM_new2026.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gsgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.48550/arXiv.2602.09743"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gsgs/v1-gse-emm-new2026.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

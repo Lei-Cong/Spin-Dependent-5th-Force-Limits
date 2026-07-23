@@ -5,6 +5,13 @@
 <title>SD5thF — Experimental Limit Explorer Beta</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#0C2340" />
+<meta name="citation_title" content="Spin-Dependent Exotic Interactions Dataset" />
+<meta name="citation_author" content="Lei Cong" />
+<meta name="citation_author" content="Wei Ji" />
+<meta name="citation_author" content="Dmitry Budker" />
+<meta name="citation_doi" content="10.5281/zenodo.14572652" />
+<link rel="alternate" type="application/json" title="SD5thF API" href="./api/v1/index.json" />
+<link rel="alternate" type="text/plain" title="AI and agent guidance" href="./llms.txt" />
 <link rel="icon" href="./assets/images/brand/sd5thf-grid.svg" type="image/svg+xml" />
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -183,6 +190,7 @@ const METADATA_PATHS = {
   gsgs: "./metadata/gsgs_records.json?v=20260723-remaining2",
   V1: "./metadata/V1_records.json?v=20260723-remaining2"
 };
+const PLOT_BUNDLE_VERSION = "20260723-speed1";
 
 const AXIS_CONFIG = {
   defaults: {
@@ -252,6 +260,20 @@ function parse2col(txt){
   }
 
   return {x, y};
+}
+
+function decimateForDisplay(x, y, maxPoints = 1500){
+  if (x.length <= maxPoints) return { x, y };
+  const step = Math.ceil((x.length - 2) / (maxPoints - 2));
+  const displayX = [x[0]];
+  const displayY = [y[0]];
+  for (let i = step; i < x.length - 1; i += step){
+    displayX.push(x[i]);
+    displayY.push(y[i]);
+  }
+  displayX.push(x[x.length - 1]);
+  displayY.push(y[y.length - 1]);
+  return { x:displayX, y:displayY };
 }
 
 function makeMajorLogTicks(minVal, maxVal, nLabels = 5){
@@ -474,7 +496,7 @@ function renderMetadata(dataset){
       <p class="metadata-note">${escapeHtml(metadata.notice)}</p>
       <button type="button" id="metadata-info" class="metadata-record-link">Something incomplete or incorrect? View full record →</button>
     </div>`;
-  document.getElementById("side")?.scrollTo({ top: 0, behavior: "smooth" });
+  document.getElementById("side")?.scrollTo({ top: 0, behavior: "auto" });
   bindMetadataControls(record);
 }
 
@@ -494,20 +516,25 @@ async function loadGroupIfNeeded(groupKey){
   const manifest = await loadManifestIfNeeded();
   const group = manifest[groupKey] || {};
   const result = {};
+  let plotBundle = null;
+  try {
+    const bundleResponse = await fetch(`./data/plot-bundles/${encodeURIComponent(groupKey)}.json?v=${PLOT_BUNDLE_VERSION}`, { cache:"force-cache" });
+    if (bundleResponse.ok) plotBundle = await bundleResponse.json();
+  } catch (error) {
+    console.warn("Plot bundle unavailable; falling back to CSV files", groupKey, error);
+  }
 
   for (const sub of Object.keys(group)){
-    result[sub] = [];
-
-    for (const entry of group[sub]){
+    const loaded = await Promise.all(group[sub].map(async entry => {
       try{
-        const txt = await fetchText(entry.path);
-        const {x, y} = parse2col(txt);
+        const bundled = plotBundle?.[entry.path];
+        const {x, y} = bundled || parse2col(await fetchText(entry.path));
 
         if (x.length && y.length){
           const metadata = metadataByPath.get(entry.path);
           const pairSymbol = canonicalPair(metadata?.fermion_pair) || entry.path.split("/").at(-1).match(/_([enpN]-[enpN])\.csv$/)?.[1] || "";
           const displayLabel = metadata?.display_label || entry.label || entry.path;
-          result[sub].push({
+          return {
             id: `${groupKey}:${entry.path}`,
             name: pairSymbol ? `${displayLabel} · ${pairSymbol}` : displayLabel,
             listName: metadata
@@ -517,13 +544,17 @@ async function loadGroupIfNeeded(groupKey){
             path: entry.path,
             pairSymbol,
             x,
-            y
-          });
+            y,
+            bundled:!!bundled,
+            fullSeries:null
+          };
         }
       }catch(e){
         console.warn("Skip", entry.path, e);
       }
-    }
+      return null;
+    }));
+    result[sub] = loaded.filter(Boolean);
   }
 
   DATA[groupKey] = result;
@@ -691,12 +722,21 @@ function visibleDatasets(chartId){
   return (chartDatasets[chartId] || []).filter(dataset => traceIsVisible(chartId, dataset));
 }
 
-function exportVisibleCsv(chartId, groupKey, subfolder){
+async function fullSeriesForExport(dataset){
+  if (!dataset.bundled) return { x:dataset.x, y:dataset.y };
+  if (dataset.fullSeries) return dataset.fullSeries;
+  dataset.fullSeries = parse2col(await fetchText(dataset.path));
+  return dataset.fullSeries;
+}
+
+async function exportVisibleCsv(chartId, groupKey, subfolder){
   const rows = [["dataset","data_file","interaction_potential","fermion_pair","lambda_m","limit"]];
-  visibleDatasets(chartId).forEach(dataset => {
+  const datasets = visibleDatasets(chartId);
+  const fullSeries = await Promise.all(datasets.map(fullSeriesForExport));
+  datasets.forEach((dataset, datasetIndex) => {
     const tags = datasetTags(dataset);
-    dataset.x.forEach((x, index) => rows.push([
-      dataset.name, dataset.path, tags.potential, tags.pair, x, dataset.y[index]
+    fullSeries[datasetIndex].x.forEach((x, index) => rows.push([
+      dataset.name, dataset.path, tags.potential, tags.pair, x, fullSeries[datasetIndex].y[index]
     ]));
   });
   const csv = rows.map(row => row.map(value => `"${String(value).replaceAll('"','""')}"`).join(",")).join("\n");
@@ -762,7 +802,7 @@ function createExportMenu(chartId, groupKey, subfolder){
           });
         }
       } else if (format === "csv"){
-        exportVisibleCsv(chartId, groupKey, subfolder);
+        await exportVisibleCsv(chartId, groupKey, subfolder);
       } else {
         exportConfiguration(chartId, groupKey, subfolder);
       }
@@ -787,8 +827,10 @@ function traceIsVisible(chartId, dataset){
 
 function applyChartFilters(chartId){
   const datasets = chartDatasets[chartId] || [];
+  const indices = datasets.map((_, index) => index);
+  const visibility = datasets.map(dataset => traceIsVisible(chartId, dataset) ? true : "legendonly");
+  if (indices.length) Plotly.restyle(chartId, { visible:visibility }, indices);
   datasets.forEach((dataset, index) => {
-    Plotly.restyle(chartId, { visible: traceIsVisible(chartId, dataset) ? true : "legendonly" }, [index]);
     const checkbox = document.querySelector(`#checklist input[data-id="${CSS.escape(dataset.id)}"]`);
     if (checkbox) checkbox.checked = manualVisibility[dataset.id] !== false;
   });
@@ -826,23 +868,23 @@ function buildChartCard(groupKey, subfolder, datasets){
     const combinedLegendGroup = tags.combined ? `combined:${tags.pair}` : "";
     const showlegend = !combinedLegendGroup || !seenCombinedLegendGroups.has(combinedLegendGroup);
     if (combinedLegendGroup) seenCombinedLegendGroups.add(combinedLegendGroup);
+    const displaySeries = decimateForDisplay(d.x, d.y);
 
     return {
       name: legendName(d),
       legendgroup: combinedLegendGroup || undefined,
       showlegend,
-      x: d.x,
-      y: d.y,
-      customdata: d.x.map(() => d.name),
+      x: displaySeries.x,
+      y: displaySeries.y,
+      customdata: displaySeries.x.map(() => d.name),
       type: "scatter",
-      mode: "lines+markers",
+      mode: "lines",
       hovertemplate:
         `<b>%{customdata}</b><br>` +
         `λ = %{x:.2e} m<br>` +
         `limit ≤ %{y:.2e}<extra></extra>`,
       visible: true,
       line: { width: BASE_LINE.width, color:visual.color, dash:visual.dash },
-      marker: { size: 5, opacity: 0 },
       opacity: BASE_LINE.opacity
     };
   });
@@ -1130,25 +1172,22 @@ function renderChecklist(){
 function highlightTrace(chartId, datasetId){
   const idxMap = traceIndex[chartId];
   if (!idxMap) return;
-
-  Object.entries(idxMap).forEach(([id, idx]) => {
-    const on = id === datasetId;
-
-    Plotly.restyle(chartId, {
-      "line.width": on ? HILIGHT_LINE.width : BASE_LINE.width,
-      "opacity": on ? HILIGHT_LINE.opacity : DIM_LINE.opacity
-    }, [idx]);
-  });
+  const entries = Object.entries(idxMap);
+  const indices = entries.map(([, idx]) => idx);
+  Plotly.restyle(chartId, {
+    "line.width":entries.map(([id]) => id === datasetId ? HILIGHT_LINE.width : BASE_LINE.width),
+    opacity:entries.map(([id]) => id === datasetId ? HILIGHT_LINE.opacity : DIM_LINE.opacity)
+  }, indices);
 }
 
 function resetHighlights(){
   Object.keys(traceIndex).forEach(chartId => {
-    Object.values(traceIndex[chartId]).forEach(idx => {
-      Plotly.restyle(chartId, {
-        "line.width": BASE_LINE.width,
-        "opacity": BASE_LINE.opacity
-      }, [idx]);
-    });
+    const indices = Object.values(traceIndex[chartId]);
+    if (!indices.length) return;
+    Plotly.restyle(chartId, {
+      "line.width":indices.map(() => BASE_LINE.width),
+      opacity:indices.map(() => BASE_LINE.opacity)
+    }, indices);
   });
 }
 
@@ -1282,6 +1321,11 @@ document.querySelectorAll(".btn").forEach(btn => {
     renderChecklist();
     renderMetadata(null);
     updateSidebarPinning();
+    const warmMetadata = () => Promise.allSettled(
+      Object.keys(METADATA_PATHS).filter(key => key !== current).map(key => loadMetadataIfNeeded(key))
+    );
+    if ("requestIdleCallback" in window) requestIdleCallback(warmMetadata, { timeout:3000 });
+    else setTimeout(warmMetadata, 1000);
   }catch(e){
     console.error(e);
     alert("Failed to load data:\n" + e.message);

@@ -1,0 +1,8 @@
+{
+  "api_version": "v1",
+  "documentation": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/",
+  "catalog": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/catalog.json",
+  "schema": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/schema.json",
+  "citation": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/citation.json",
+  "dataset_jsonld": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/dataset.jsonld"
+}

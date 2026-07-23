@@ -1,0 +1,71 @@
+{
+  "api_version": "v1",
+  "id": "gpgs:910prosnyak-2023-2-m-abs-ee",
+  "coupling": "gpgs",
+  "label": "Prosnyak et al. 2023",
+  "display_label": "Prosnyak 2023",
+  "interaction": "V9+10",
+  "fermion_pair": "e-e",
+  "confidence_level": null,
+  "method": {
+    "category": "complementary_experiment",
+    "technique": "molecular_spectroscopy",
+    "source": "",
+    "sensor": ""
+  },
+  "review_location": {
+    "section": "Pseudoscalar/Scalar interaction gpgs",
+    "figure": "Fig. 13"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "curated",
+    "note": "Included in the RMP review figure; the primary publication may not be discussed separately in the main text."
+  },
+  "references": [
+    {
+      "citation_key": "prosnyak_updated_2023",
+      "title": "Updated Constraints on \\textbackslash (\\textbraceleft\\textbackslash mathcal\\textbraceleft T\\textbraceright\\textbraceright\\textbackslash ),\\textbackslash (\\textbraceleft\\textbackslash mathcal\\textbraceleft P\\textbraceright\\textbraceright\\textbackslash )-Violating Axionlike-Particle-Mediated Electron--Electron and Electron--Nucleus Interactions from HfF+ Experiment",
+      "authors": "Prosnyak, Sergey D. and Maison, Daniel E. and Skripnikov, Leonid V.",
+      "journal": "Symmetry",
+      "year": 2023,
+      "volume": "15",
+      "issue": "5",
+      "pages": "",
+      "doi": "10.3390/sym15051043",
+      "url": "https://doi.org/10.3390/sym15051043"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gpgs/lepton-lepton/910Prosnyak_2023_2_m_abs_ee.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gpgs.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.3390/sym15051043"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gpgs/910prosnyak-2023-2-m-abs-ee.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

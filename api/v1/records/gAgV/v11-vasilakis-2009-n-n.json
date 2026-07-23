@@ -1,0 +1,75 @@
+{
+  "api_version": "v1",
+  "id": "gAgV:v11-vasilakis-2009-n-n",
+  "coupling": "gAgV",
+  "label": "Vasilakis 2009",
+  "display_label": "Vasilakis 2009",
+  "interaction": "V11",
+  "fermion_pair": "neutron-neutron",
+  "confidence_level": null,
+  "method": {
+    "category": "dedicated_source_sensor",
+    "technique": "self_compensating_comagnetometer",
+    "source": "polarized_helium_3_nuclear_spins",
+    "sensor": "potassium_helium_3_self_compensating_comagnetometer"
+  },
+  "review_location": {
+    "section": "Axial-vector/Vector interaction gAgV",
+    "figure": "Fig. 9"
+  },
+  "context_note": null,
+  "curation": {
+    "status": "probable",
+    "evidence": [
+      "filename author/year",
+      "citation in review gAgV section",
+      "BibTeX record"
+    ],
+    "note": ""
+  },
+  "references": [
+    {
+      "citation_key": "vasilakis_limits_2009",
+      "title": "Limits on New Long Range Nuclear Spin-Dependent Forces Set with a K - He 3 Comagnetometer",
+      "journal": "Phys. Rev. Lett.",
+      "year": "2009",
+      "volume": "103",
+      "issue": "26",
+      "pages": "261801",
+      "doi": "10.1103/PhysRevLett.103.261801",
+      "url": "https://doi.org/10.1103/PhysRevLett.103.261801"
+    }
+  ],
+  "distributions": {
+    "csv": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/Dataset/normalized/gAgV/nucleon-nucleon/V11_Vasilakis_2009_n-n.csv",
+      "encoding_format": "text/csv",
+      "authoritative": true
+    },
+    "plot_bundle": {
+      "content_url": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/data/plot-bundles/gAgV.json",
+      "encoding_format": "application/json",
+      "authoritative": false,
+      "description": "Display-optimized representation; use the CSV for full-resolution numerical reuse."
+    }
+  },
+  "citation": {
+    "database": "Cong, L., Ji, W. & Budker, D. (2024). Fifth Force Limits (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.14572652",
+    "database_doi": "https://doi.org/10.5281/zenodo.14572652",
+    "primary_publications": [
+      "https://doi.org/10.1103/PhysRevLett.103.261801"
+    ],
+    "instruction": "When using numerical limits, metadata, or figures derived from this resource, cite the SD5thF database version and the relevant primary publication(s)."
+  },
+  "correction_contact": {
+    "email": "congllzu@gmail.com",
+    "subject": "Correction/Question about SDFF dataset"
+  },
+  "links": {
+    "self": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/api/v1/records/gAgV/v11-vasilakis-2009-n-n.json",
+    "explorer": "https://lei-cong.github.io/Spin-Dependent-5th-Force-Limits/explorer-beta.html"
+  },
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-07-23T19:29:25.430Z",
+  "build_revision": "local"
+}

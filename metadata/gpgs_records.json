@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T16:10:31.439Z",
+  "generated_at": "2026-07-23T19:29:25.225Z",
   "notice": "Constraint values use the standardized conventions of the RMP review; individual records link the relevant primary literature where available.",
   "records": [
     {
@@ -181,7 +181,10 @@
       "fermion_pair": "e-e",
       "potential": "V9+10",
       "confidence_level": null,
-      "review_location": null,
+      "review_location": {
+        "section": "Pseudoscalar/Scalar interaction gpgs",
+        "figure": "Fig. 13"
+      },
       "references": [
         {
           "citation_key": "prosnyak_updated_2023",
@@ -198,14 +201,14 @@
         }
       ],
       "method": {
-        "category": "complementary",
-        "technique": "complementary constraint or reinterpretation",
+        "category": "complementary_experiment",
+        "technique": "molecular_spectroscopy",
         "source": "",
         "sensor": ""
       },
       "curation": {
         "status": "curated",
-        "note": ""
+        "note": "Included in the RMP review figure; the primary publication may not be discussed separately in the main text."
       },
       "label": "Prosnyak et al. 2023",
       "display_label": "Prosnyak 2023"
@@ -759,7 +762,10 @@
       "fermion_pair": "e-N",
       "potential": "V9+10",
       "confidence_level": null,
-      "review_location": null,
+      "review_location": {
+        "section": "Pseudoscalar/Scalar interaction gpgs",
+        "figure": "Fig. 13"
+      },
       "references": [
         {
           "citation_key": "prosnyak_updated_2023",
@@ -776,14 +782,14 @@
         }
       ],
       "method": {
-        "category": "complementary",
-        "technique": "complementary constraint or reinterpretation",
+        "category": "complementary_experiment",
+        "technique": "molecular_spectroscopy",
         "source": "",
         "sensor": ""
       },
       "curation": {
         "status": "curated",
-        "note": ""
+        "note": "Included in the RMP review figure; the primary publication may not be discussed separately in the main text."
       },
       "label": "Prosnyak et al. 2023",
       "display_label": "Prosnyak 2023"
@@ -925,9 +931,9 @@
       ],
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "dedicated fifth-force experiment",
+        "technique": "earth_ion_source_sensor_experiment",
         "source": "Earth",
-        "sensor": "trapped-ion spin spectroscopy"
+        "sensor": "trapped-ion spin sensor"
       },
       "curation": {
         "status": "curated",
@@ -1411,7 +1417,10 @@
       "fermion_pair": "N-N",
       "potential": "V9+10",
       "confidence_level": null,
-      "review_location": null,
+      "review_location": {
+        "section": "Pseudoscalar/Scalar interaction gpgs",
+        "figure": "Fig. 13"
+      },
       "references": [
         {
           "citation_key": "baruch_constraining_2024",
@@ -1428,14 +1437,14 @@
         }
       ],
       "method": {
-        "category": "complementary",
-        "technique": "complementary constraint or reinterpretation",
+        "category": "complementary_experiment",
+        "technique": "molecular_spectroscopy",
         "source": "",
         "sensor": ""
       },
       "curation": {
         "status": "curated",
-        "note": ""
+        "note": "Included in the RMP review figure; the primary publication may not be discussed separately in the main text."
       },
       "label": "Baruch et al. 2024",
       "display_label": "Baruch 2024"
