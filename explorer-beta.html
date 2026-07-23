@@ -174,7 +174,10 @@
 
 <script>
 const MANIFEST_PATH = "./datasets_multi.json";
-const METADATA_PATH = "./metadata/generated/gAgV-constraints.json";
+const METADATA_PATHS = {
+  gAgV: "./metadata/generated/gAgV-constraints.json",
+  gAgA: "./metadata/generated/gAgA-constraints.json"
+};
 
 const AXIS_CONFIG = {
   defaults: {
@@ -275,7 +278,7 @@ let UPLOADS = {};
 let chartDatasets = {};
 let chartFilterState = {};
 let manualVisibility = {};
-let METADATA = null;
+let METADATA_BY_COUPLING = {};
 let metadataByPath = new Map();
 let metadataCollapsed = false;
 let activeRecordText = "";
@@ -294,6 +297,8 @@ function potentialMarkup(value){
   const clean = String(value || "—");
   if (clean === "combined") return "Combined";
   if (clean === "V12+13") return "<i>V</i><sub>12+13</sub>";
+  if (clean === "V2+V3") return "<i>V</i><sub>2</sub> + <i>V</i><sub>3</sub>";
+  if (clean === "V4+5") return "<i>V</i><sub>4+5</sub>";
   const match = clean.match(/^V(.+)$/);
   return match ? `<i>V</i><sub>${escapeHtml(match[1])}</sub>` : escapeHtml(clean);
 }
@@ -356,24 +361,28 @@ function bindMetadataControls(record){
   });
 }
 
-async function loadMetadataIfNeeded(){
-  if (METADATA) return METADATA;
-  const res = await fetch(METADATA_PATH + "?_=" + Date.now());
+async function loadMetadataIfNeeded(coupling = current){
+  if (!METADATA_PATHS[coupling]) return null;
+  if (METADATA_BY_COUPLING[coupling]) return METADATA_BY_COUPLING[coupling];
+  const res = await fetch(METADATA_PATHS[coupling], { cache:"force-cache" });
   if (!res.ok) throw new Error("Failed to load constraint metadata");
-  METADATA = await res.json();
-  metadataByPath = new Map(METADATA.records.map(record => [record.data_file, record]));
-  return METADATA;
+  const metadata = await res.json();
+  METADATA_BY_COUPLING[coupling] = metadata;
+  for (const record of metadata.records) metadataByPath.set(record.data_file, record);
+  return metadata;
 }
 
 function renderMetadata(dataset){
   const panel = document.getElementById("metadata-panel");
-  if (current !== "gAgV"){
-    panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>g<sub>A</sub>g<sub>V</sub> is available now</h3><p class="metadata-note">The first metadata release covers g<sub>A</sub>g<sub>V</sub>. The remaining coupling types continue to use the established plotting workflow while their records are curated.</p>`;
+  const metadata = METADATA_BY_COUPLING[current];
+  if (!metadata){
+    panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>g<sub>A</sub>g<sub>V</sub> and g<sub>A</sub>g<sub>A</sub> are available now</h3><p class="metadata-note">These two coupling types include literature-linked records. The remaining coupling types continue to use the established plotting workflow while their records are curated.</p>`;
     return;
   }
   const record = dataset ? metadataByPath.get(dataset.path) : null;
   if (!record){
-    panel.innerHTML = `<span class="metadata-kicker">Literature-linked pilot</span><h3>Select a g<sub>A</sub>g<sub>V</sub> constraint</h3><p class="metadata-note">Click a curve, legend item, or constraint name to inspect its method, publication, DOI, and downloadable data.</p>`;
+    const couplingMarkup = current === "gAgA" ? "g<sub>A</sub>g<sub>A</sub>" : "g<sub>A</sub>g<sub>V</sub>";
+    panel.innerHTML = `<span class="metadata-kicker">Literature-linked data</span><h3>Select a ${couplingMarkup} constraint</h3><p class="metadata-note">Click a curve, legend item, or constraint name to inspect its method, publication, DOI, and downloadable data.</p>`;
     return;
   }
   const primaryReference = record.references[0];
@@ -395,6 +404,7 @@ function renderMetadata(dataset){
       <dl class="metadata-grid">
         <dt>Interaction potential</dt><dd>${potentialMarkup(record.potential)}</dd>
         <dt>Fermion pair</dt><dd>${escapeHtml(record.fermion_pair)}</dd>
+        ${record.confidence_level ? `<dt>Confidence level</dt><dd>${escapeHtml(record.confidence_level)}</dd>` : ""}
         ${record.method.category !== "dedicated_source_sensor" || (!record.method.source && !record.method.sensor) ? `<dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>` : ""}
         ${record.method.category === "dedicated_source_sensor" && record.method.source ? `<dt>Source</dt><dd>${escapeHtml(humanize(record.method.source))}</dd>` : ""}
         ${record.method.category === "dedicated_source_sensor" && record.method.sensor ? `<dt>Sensor</dt><dd>${escapeHtml(humanize(record.method.sensor))}</dd>` : ""}
@@ -402,7 +412,7 @@ function renderMetadata(dataset){
       </dl>
       ${references}
       <div class="metadata-actions"><a href="./${escapeHtml(record.data_file)}" download>Download CSV ↓</a><a href="https://doi.org/10.1103/RevModPhys.97.025005" target="_blank" rel="noopener">Read the RMP review ↗</a></div>
-      <p class="metadata-note">${escapeHtml(METADATA.notice)}</p>
+      <p class="metadata-note">${escapeHtml(metadata.notice)}</p>
       <button type="button" id="metadata-info" class="metadata-record-link">Something incomplete or incorrect? View full record →</button>
     </div>`;
   bindMetadataControls(record);
@@ -411,7 +421,7 @@ function renderMetadata(dataset){
 async function loadManifestIfNeeded(){
   if (MANIFEST) return MANIFEST;
 
-  const res = await fetch(MANIFEST_PATH + "?_=" + Date.now());
+  const res = await fetch(MANIFEST_PATH, { cache:"force-cache" });
   if(!res.ok) throw new Error("Failed to load datasets_multi.json");
 
   MANIFEST = await res.json();
@@ -521,16 +531,16 @@ function resolveAxisRanges(groupKey, subfolder, datasets){
 function datasetTags(dataset){
   const record = metadataByPath.get(dataset.path);
   const filename = dataset.path.split("/").at(-1);
-  const pair = dataset.pairSymbol || filename.match(/_([enpN]-[enpN])\.csv$/)?.[1] || "other";
+  const pair = record?.fermion_pair || dataset.pairSymbol || filename.match(/_([enpN]-[enpN])\.csv$/)?.[1] || "other";
   const potential = record?.potential ||
     (filename.startsWith("V1213_") ? "V12+13" :
       filename.startsWith("V11_") ? "V11" :
       filename.startsWith("V16_") ? "V16" :
       filename.startsWith("Combined_") ? "combined" : "other");
   const combined = potential === "combined" || /^Combined_/i.test(filename);
-  const hasNamedPotential = !["combined","other"].includes(potential);
-  const astrophysical = !hasNamedPotential &&
-    record?.method?.source === "astrophysical" ||
+  const hasNamedPotential = !["combined","other","astrophysical","cosmological"].includes(potential);
+  const astrophysical = potential === "astrophysical" ||
+    (!hasNamedPotential && record?.method?.source === "astrophysical") ||
     (!hasNamedPotential && /astro|astronom/i.test(`${dataset.path} ${record?.method?.technique || ""}`));
   const cosmological = !hasNamedPotential && /cosmolog/i.test(`${dataset.path} ${record?.method?.technique || ""}`);
   return { potential, pair, combined, astrophysical, cosmological };
@@ -813,7 +823,7 @@ function buildChartCard(groupKey, subfolder, datasets){
   const filterWrap = document.createElement("div");
   filterWrap.className = "chart-filters";
   const potentials = [...new Set(datasets.map(dataset => datasetTags(dataset).potential))]
-    .filter(value => value !== "combined" && value !== "other");
+    .filter(value => !["combined","other","astrophysical","cosmological"].includes(value));
   const pairs = [...new Set(datasets.map(dataset => datasetTags(dataset).pair))]
     .filter(value => value !== "other");
   const filterRows = [
@@ -1150,7 +1160,7 @@ document.querySelectorAll(".btn").forEach(btn => {
     document.getElementById("checklist").innerHTML = "";
 
     try{
-      if (current === "gAgV") await loadMetadataIfNeeded();
+      await loadMetadataIfNeeded(current);
       await loadGroupIfNeeded(current);
       renderCharts();
       renderChecklist();

@@ -54,28 +54,12 @@
         "label": "2Karshenboim_2011_1_millionev_abs_ep"
       },
       {
-        "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/23Cong_2025_m_ep_gAgA_90CL.csv",
-        "label": "23Cong_2025_m_ep_gAgA_90CL"
-      },
-      {
-        "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/3Cong_2025_m_ep_gAgA_95CL.csv",
-        "label": "3Cong_2025_m_ep_gAgA_95CL"
-      },
-      {
         "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/2Hunter_2013_1_m_abs_ep.csv",
         "label": "2Hunter_2013_1_m_abs_ep"
       },
       {
-        "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/2Cong_2025_m_ep_gAgA_90CL.csv",
-        "label": "2Cong_2025_m_ep_gAgA_90CL"
-      },
-      {
         "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/8Ficek_2018_m_abs_epbar.csv",
         "label": "8Ficek_2018_m_abs_epbar"
-      },
-      {
-        "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/2Cong_2025_m_ep_gAgA_95CL.csv",
-        "label": "2Cong_2025_m_ep_gAgA_95CL"
       },
       {
         "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/1a_eNastro_m_abs.csv",
@@ -88,10 +72,6 @@
       {
         "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/8Hunter_2014_1_m_abs_ep.csv",
         "label": "8Hunter_2014_1_m_abs_ep"
-      },
-      {
-        "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/3Cong_2025_m_ep_gAgA_90CL.csv",
-        "label": "3Cong_2025_m_ep_gAgA_90CL"
       },
       {
         "path": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45Clayburn_2023a_m_abs_eN.csv",
@@ -131,10 +111,10 @@
       }
     ],
     "nucleon-nucleon": [
-      {
-        "path": "Dataset/normalized/gAgA/nucleon-nucleon/45Haddock_2018a_m_abs_nN.csv",
-        "label": "45Haddock_2018a_m_abs_nN"
-      },
+    {
+      "path": "Dataset/normalized/gAgA/nucleon-nucleon/45Haddock_2018c_m_abs_nN.csv",
+      "label": "45Haddock_2018c_m_abs_nN"
+    },
       {
         "path": "Dataset/normalized/gAgA/nucleon-nucleon/3Vasilakis_2009_m_abs_nn.csv",
         "label": "3Vasilakis_2009_m_abs_nn"
@@ -158,10 +138,6 @@
       {
         "path": "Dataset/normalized/gAgA/nucleon-nucleon/45Parnell_2020_m_abs_nN.csv",
         "label": "45Parnell_2020_m_abs_nN"
-      },
-      {
-        "path": "Dataset/normalized/gAgA/nucleon-nucleon/2Vasilakis_2009_1_m_abs_ee.csv",
-        "label": "2Vasilakis_2009_1_m_abs_ee"
       },
       {
         "path": "Dataset/normalized/gAgA/nucleon-nucleon/45Wei_2022b_m_abs_pN.csv",
@@ -202,11 +178,7 @@
       {
         "path": "Dataset/normalized/gAgA/nucleon-nucleon/45Clayburn_2023c_m_abs_pN.csv",
         "label": "45Clayburn_2023c_m_abs_pN"
-      },
-      {
-        "path": "Dataset/normalized/gAgA/nucleon-nucleon/45Haddock_2018b_m_abs_nN copy.csv",
-        "label": "45Haddock_2018b_m_abs_nN copy"
-      }
+    }
     ],
     "lepton-lepton": [
       {

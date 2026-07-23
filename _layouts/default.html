@@ -11,6 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    {% if page.preload_explorer %}
+    <link rel="preconnect" href="https://cdn.plot.ly">
+    <link rel="prefetch" href="{{ '/explorer-beta.html' | relative_url }}" as="document">
+    <link rel="prefetch" href="{{ '/datasets_multi.json' | relative_url }}" as="fetch" crossorigin>
+    <link rel="prefetch" href="{{ '/metadata/generated/gAgV-constraints.json' | relative_url }}" as="fetch" crossorigin>
+    <link rel="prefetch" href="https://cdn.plot.ly/plotly-2.35.2.min.js" as="script" crossorigin>
+    {% endif %}
     <script>
       window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
     </script>

@@ -2,6 +2,7 @@
 layout: default
 title: SD5thF
 description: Explore, compare, and reuse standardized constraints on spin-dependent exotic interactions.
+preload_explorer: true
 ---
 <section class="home-hero">
   <div class="hero-copy">
@@ -47,14 +48,53 @@ description: Explore, compare, and reuse standardized constraints on spin-depend
 </section>
 
 <script>
-  fetch("{{ '/datasets_multi.json' | relative_url }}")
+  const manifestPromise = fetch("{{ '/datasets_multi.json' | relative_url }}", { cache: 'force-cache' })
     .then(response => response.ok ? response.json() : Promise.reject())
     .then(manifest => {
       const total = Object.values(manifest).reduce((groupTotal, group) =>
         groupTotal + Object.values(group).reduce((sum, entries) => sum + entries.length, 0), 0);
       document.getElementById('dataset-count').textContent = total.toLocaleString('en-US');
+      return manifest;
     })
     .catch(() => {});
+
+  function warmResource(url) {
+    return fetch(url, { cache: 'force-cache', priority: 'low' }).catch(() => {});
+  }
+
+  async function warmGAgVExplorer() {
+    if (sessionStorage.getItem('sd5thf-gagv-warmed') === '1') return;
+
+    const explorerUrl = "{{ '/explorer-beta.html' | relative_url }}";
+    const metadataUrl = "{{ '/metadata/generated/gAgV-constraints.json' | relative_url }}";
+    await Promise.all([warmResource(explorerUrl), warmResource(metadataUrl)]);
+
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    if (connection?.saveData || /(^|-)2g$/.test(connection?.effectiveType || '')) return;
+
+    const manifest = await manifestPromise;
+    const paths = manifest?.gAgV
+      ? Object.values(manifest.gAgV).flat().map(entry => entry.path)
+      : [];
+
+    let next = 0;
+    async function worker() {
+      while (next < paths.length) {
+        const path = paths[next++];
+        await warmResource("{{ '/' | relative_url }}" + path);
+      }
+    }
+    await Promise.all(Array.from({ length: Math.min(4, paths.length) }, worker));
+    sessionStorage.setItem('sd5thf-gagv-warmed', '1');
+  }
+
+  window.addEventListener('load', () => {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(warmGAgVExplorer, { timeout: 2500 });
+    } else {
+      setTimeout(warmGAgVExplorer, 800);
+    }
+  }, { once: true });
 </script>
 
 <section>

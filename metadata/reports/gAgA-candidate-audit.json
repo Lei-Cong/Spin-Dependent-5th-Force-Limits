@@ -1,0 +1,1598 @@
+{
+  "schema_version": "0.1",
+  "coupling": "gAgA",
+  "review_citation_keys": [
+    "almasi_new_2020",
+    "anselm_possible_1982",
+    "arvanitaki_resonantly_2014",
+    "beckett_notitle_1979",
+    "beckett_temperature_1979",
+    "bollig_muons_2020",
+    "borbely_separated_2009",
+    "borel_spin-exchange_2003",
+    "bullis_ramsey_2023",
+    "butterworth_jet_2008",
+    "castillega_precise_2000",
+    "chen_muon_2017",
+    "chen_optomechanical_2020",
+    "clayburn_using_2023",
+    "cong_constraints_2024",
+    "cong_improved_2024",
+    "delannoy_probing_2013",
+    "ding_constraints_2020",
+    "dobrescu_massless_2005",
+    "dobrescu_spin-dependent_2006",
+    "dror_dark_2017",
+    "eides_hard_2014",
+    "enevoldsen_correlated_1998",
+    "fadeev_pseudovector_2022",
+    "fadeev_revisiting_2019",
+    "feng_laser-spectroscopy_2015",
+    "ficek_constraints_2017",
+    "ficek_constraints_2018",
+    "ficek_constraints_2018-1",
+    "frugiuele_current_2019",
+    "georgi_unparticle_2007",
+    "gorshkov_determination_1989",
+    "guo_searching_2024",
+    "haddock_search_2018",
+    "harrick_nuclear_1953",
+    "heckel_limits_2013",
+    "heckel_preferred-frame_2008",
+    "helgaker_nmr_2012",
+    "hiza_liquid-vapor_1981",
+    "hoedl_improved_2011",
+    "hunter_using_2013",
+    "hunter_using_2014",
+    "ishida_new_2014",
+    "jackson_kimball_constraints_2010",
+    "ji_constraints_2023",
+    "ji_new_2018",
+    "ji_searching_2017",
+    "jiao_searching_2020",
+    "karshenboim_constraints_2010",
+    "karshenboim_hyperfine_2002-1",
+    "karshenboim_hyperfine_2011",
+    "karshenboim_precision_2010",
+    "kim_experimental_2018",
+    "kornack_dynamics_2002",
+    "korobov_calculation_2008",
+    "kotler_constraints_2015",
+    "kotler_measurement_2014",
+    "ledbetter_constraints_2013",
+    "luo_constraints_2017",
+    "malta_comparative_2016",
+    "mills_line-shape_1983",
+    "mills_new_1975",
+    "moody_new_1984",
+    "neronov_nmr_1975",
+    "oddershede_nuclear_1988",
+    "pachucki_fine_2010",
+    "padniuk_response_2022",
+    "parnell_search_2020",
+    "pask_antiproton_2009",
+    "pastor_absolute_2004",
+    "peskin_introduction_2019",
+    "piegsa_limits_2012",
+    "ramsey_tensor_1979",
+    "ritter_experimental_1990",
+    "ritter_precision_1984",
+    "romalis_hybrid_2010",
+    "rong_constraints_2018",
+    "safronova_search_2018",
+    "smiciklas_new_2011",
+    "soboll_spin_1972",
+    "su_search_2021",
+    "terrano_short-range_2015",
+    "tscherbul_collision-induced_2009",
+    "vahtras_indirect_1992",
+    "vasilakis_limits_2009",
+    "von_buddenbrock_phenomenological_2016",
+    "voronin_constraint_2020",
+    "walker_estimates_1989",
+    "walker_spin-exchange_1997",
+    "wang_limits_2022",
+    "wang_proposal_2023",
+    "wei_constraints_2022",
+    "wu_experimental_2022",
+    "wu_improved_2023",
+    "wu_new_2023",
+    "wu_spin-mechanical_2023",
+    "xiao_exotic_2024",
+    "xiao_femtotesla_2023",
+    "yan_constraining_2019",
+    "yan_searching_2015",
+    "yerokhin_electron_2008",
+    "zee_quantum_2010",
+    "zelevinsky_precision_2005"
+  ],
+  "curves": [
+    {
+      "chart": "lepton-nucleon",
+      "filename": "3Wang_2022_m_abs_en",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-neutron/3Wang_2022_m_abs_en.csv",
+      "potential": "V3",
+      "fermion_pair": "e-n",
+      "author_year": {
+        "surname": "Wang",
+        "year": "2022"
+      },
+      "candidates": [
+        {
+          "key": "wang_limits_2022",
+          "title": "Limits on Axions and Axionlike Particles within the Axion Window Using a Spin-Based Amplifier",
+          "doi": "10.1103/PhysRevLett.129.051801",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "Wang:22",
+          "title": "Propagation of Gaussian Vortex Beams in Electromagnetically Induced Transparency Media",
+          "doi": "10.1364/OE.472845",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "2Almasi_2020_m_abs_en",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-neutron/2Almasi_2020_m_abs_en.csv",
+      "potential": "V2",
+      "fermion_pair": "e-n",
+      "author_year": {
+        "surname": "Almasi",
+        "year": "2020"
+      },
+      "candidates": [
+        {
+          "key": "almasi_new_2020",
+          "title": "New Limits on Anomalous Spin-Spin Interactions",
+          "doi": "10.1103/PhysRevLett.125.201802",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "2Karshenboim_2011_2_millionev_abs_en",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-neutron/2Karshenboim_2011_2_millionev_abs_en.csv",
+      "potential": "V2",
+      "fermion_pair": "e-n",
+      "author_year": {
+        "surname": "Karshenboim",
+        "year": "2011"
+      },
+      "candidates": [
+        {
+          "key": "karshenboim_hyperfine_2011",
+          "title": "Hyperfine Structure Interval of the 2 s State of Hydrogenlike Atoms and a Constraint on a Pseudovector Boson with Mass below 1 keV / c 2",
+          "doi": "10.1103/PhysRevA.83.062119",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "3Almasi_2020_m_abs_en",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-neutron/3Almasi_2020_m_abs_en.csv",
+      "potential": "V3",
+      "fermion_pair": "e-n",
+      "author_year": {
+        "surname": "Almasi",
+        "year": "2020"
+      },
+      "candidates": [
+        {
+          "key": "almasi_new_2020",
+          "title": "New Limits on Anomalous Spin-Spin Interactions",
+          "doi": "10.1103/PhysRevLett.125.201802",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "2Hunter_2013_3_m_abs_en",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-neutron/2Hunter_2013_3_m_abs_en.csv",
+      "potential": "V2",
+      "fermion_pair": "e-n",
+      "author_year": {
+        "surname": "Hunter",
+        "year": "2013"
+      },
+      "candidates": [
+        {
+          "key": "hunter_using_2013",
+          "title": "Using the Earth as a Polarized Electron Source to Search for Long-Range Spin-Spin Interactions",
+          "doi": "10.1126/science.1227460",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "1a_eNastro_m_abs",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-neutron/1a_eNastro_m_abs.csv",
+      "potential": "astrophysical",
+      "fermion_pair": "e-N",
+      "author_year": null,
+      "candidates": []
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "8Hunter_2014_3_m_abs_en",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-neutron/8Hunter_2014_3_m_abs_en.csv",
+      "potential": "V8",
+      "fermion_pair": "e-n",
+      "author_year": {
+        "surname": "Hunter",
+        "year": "2014"
+      },
+      "candidates": [
+        {
+          "key": "hunter_using_2014",
+          "title": "Using Geoelectrons to Search for Velocity-Dependent Spin-Spin Interactions",
+          "doi": "10.1103/PhysRevLett.112.091803",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "3Ficek_2018_m_abs_epbar",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/3Ficek_2018_m_abs_epbar.csv",
+      "potential": "V3",
+      "fermion_pair": "e-pbar",
+      "author_year": {
+        "surname": "Ficek",
+        "year": "2018"
+      },
+      "candidates": [
+        {
+          "key": "ficek_constraints_2018",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "ficek_constraints_2018-1",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "3Fadeev_2022_1_m_abs_ebarpabr",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/3Fadeev_2022_1_m_abs_ebarpabr.csv",
+      "potential": "V3",
+      "fermion_pair": "e+-pbar",
+      "author_year": {
+        "surname": "Fadeev",
+        "year": "2022"
+      },
+      "candidates": [
+        {
+          "key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "2Ficek_2018_V2_m_abs_epbar",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/2Ficek_2018_V2_m_abs_epbar.csv",
+      "potential": "V2",
+      "fermion_pair": "e-pbar",
+      "author_year": {
+        "surname": "Ficek",
+        "year": "2018"
+      },
+      "candidates": [
+        {
+          "key": "ficek_constraints_2018",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "ficek_constraints_2018-1",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45Ficek_2018_m_V4+5_abs_epbar",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/45Ficek_2018_m_V4+5_abs_epbar.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-pbar",
+      "author_year": {
+        "surname": "Ficek",
+        "year": "2018"
+      },
+      "candidates": [
+        {
+          "key": "ficek_constraints_2018",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "ficek_constraints_2018-1",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "3Fadeev_2022_5_m_abs_ep",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/3Fadeev_2022_5_m_abs_ep.csv",
+      "potential": "V3",
+      "fermion_pair": "e-p",
+      "author_year": {
+        "surname": "Fadeev",
+        "year": "2022"
+      },
+      "candidates": [
+        {
+          "key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "2Karshenboim_2011_1_millionev_abs_ep",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/2Karshenboim_2011_1_millionev_abs_ep.csv",
+      "potential": "V2",
+      "fermion_pair": "e-p",
+      "author_year": {
+        "surname": "Karshenboim",
+        "year": "2011"
+      },
+      "candidates": [
+        {
+          "key": "karshenboim_hyperfine_2011",
+          "title": "Hyperfine Structure Interval of the 2 s State of Hydrogenlike Atoms and a Constraint on a Pseudovector Boson with Mass below 1 keV / c 2",
+          "doi": "10.1103/PhysRevA.83.062119",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "23Cong_2025_m_ep_gAgA_90CL",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/23Cong_2025_m_ep_gAgA_90CL.csv",
+      "potential": "V2+V3",
+      "fermion_pair": "unresolved",
+      "author_year": {
+        "surname": "Cong",
+        "year": "2025"
+      },
+      "candidates": [
+        {
+          "key": "cong_improved_2025",
+          "title": "Improved Constraints on Exotic Electron-Proton Interactions in Hydrogen",
+          "doi": "10.1103/8nyk-sysy",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_searching_2025",
+          "title": "Searching for Exotic Interactions between Antimatter",
+          "doi": "10.48550/arXiv.2503.07161",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025-1",
+          "title": "Spin-Dependent Fifth Force Dataset",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "3Cong_2025_m_ep_gAgA_95CL",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/3Cong_2025_m_ep_gAgA_95CL.csv",
+      "potential": "V3",
+      "fermion_pair": "unresolved",
+      "author_year": {
+        "surname": "Cong",
+        "year": "2025"
+      },
+      "candidates": [
+        {
+          "key": "cong_improved_2025",
+          "title": "Improved Constraints on Exotic Electron-Proton Interactions in Hydrogen",
+          "doi": "10.1103/8nyk-sysy",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_searching_2025",
+          "title": "Searching for Exotic Interactions between Antimatter",
+          "doi": "10.48550/arXiv.2503.07161",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025-1",
+          "title": "Spin-Dependent Fifth Force Dataset",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "2Hunter_2013_1_m_abs_ep",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/2Hunter_2013_1_m_abs_ep.csv",
+      "potential": "V2",
+      "fermion_pair": "e-p",
+      "author_year": {
+        "surname": "Hunter",
+        "year": "2013"
+      },
+      "candidates": [
+        {
+          "key": "hunter_using_2013",
+          "title": "Using the Earth as a Polarized Electron Source to Search for Long-Range Spin-Spin Interactions",
+          "doi": "10.1126/science.1227460",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "2Cong_2025_m_ep_gAgA_90CL",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/2Cong_2025_m_ep_gAgA_90CL.csv",
+      "potential": "V2",
+      "fermion_pair": "unresolved",
+      "author_year": {
+        "surname": "Cong",
+        "year": "2025"
+      },
+      "candidates": [
+        {
+          "key": "cong_improved_2025",
+          "title": "Improved Constraints on Exotic Electron-Proton Interactions in Hydrogen",
+          "doi": "10.1103/8nyk-sysy",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_searching_2025",
+          "title": "Searching for Exotic Interactions between Antimatter",
+          "doi": "10.48550/arXiv.2503.07161",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025-1",
+          "title": "Spin-Dependent Fifth Force Dataset",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "8Ficek_2018_m_abs_epbar",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/8Ficek_2018_m_abs_epbar.csv",
+      "potential": "V8",
+      "fermion_pair": "e-pbar",
+      "author_year": {
+        "surname": "Ficek",
+        "year": "2018"
+      },
+      "candidates": [
+        {
+          "key": "ficek_constraints_2018",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "ficek_constraints_2018-1",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "2Cong_2025_m_ep_gAgA_95CL",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/2Cong_2025_m_ep_gAgA_95CL.csv",
+      "potential": "V2",
+      "fermion_pair": "unresolved",
+      "author_year": {
+        "surname": "Cong",
+        "year": "2025"
+      },
+      "candidates": [
+        {
+          "key": "cong_improved_2025",
+          "title": "Improved Constraints on Exotic Electron-Proton Interactions in Hydrogen",
+          "doi": "10.1103/8nyk-sysy",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_searching_2025",
+          "title": "Searching for Exotic Interactions between Antimatter",
+          "doi": "10.48550/arXiv.2503.07161",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025-1",
+          "title": "Spin-Dependent Fifth Force Dataset",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "1a_eNastro_m_abs",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/1a_eNastro_m_abs.csv",
+      "potential": "astrophysical",
+      "fermion_pair": "e-N",
+      "author_year": null,
+      "candidates": []
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "23Cong_2025_m_ep_gAgA_95CL",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/23Cong_2025_m_ep_gAgA_95CL.csv",
+      "potential": "V2+V3",
+      "fermion_pair": "unresolved",
+      "author_year": {
+        "surname": "Cong",
+        "year": "2025"
+      },
+      "candidates": [
+        {
+          "key": "cong_improved_2025",
+          "title": "Improved Constraints on Exotic Electron-Proton Interactions in Hydrogen",
+          "doi": "10.1103/8nyk-sysy",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_searching_2025",
+          "title": "Searching for Exotic Interactions between Antimatter",
+          "doi": "10.48550/arXiv.2503.07161",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025-1",
+          "title": "Spin-Dependent Fifth Force Dataset",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "8Hunter_2014_1_m_abs_ep",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/8Hunter_2014_1_m_abs_ep.csv",
+      "potential": "V8",
+      "fermion_pair": "e-p",
+      "author_year": {
+        "surname": "Hunter",
+        "year": "2014"
+      },
+      "candidates": [
+        {
+          "key": "hunter_using_2014",
+          "title": "Using Geoelectrons to Search for Velocity-Dependent Spin-Spin Interactions",
+          "doi": "10.1103/PhysRevLett.112.091803",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "3Cong_2025_m_ep_gAgA_90CL",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-proton_or_antiproton/3Cong_2025_m_ep_gAgA_90CL.csv",
+      "potential": "V3",
+      "fermion_pair": "unresolved",
+      "author_year": {
+        "surname": "Cong",
+        "year": "2025"
+      },
+      "candidates": [
+        {
+          "key": "cong_improved_2025",
+          "title": "Improved Constraints on Exotic Electron-Proton Interactions in Hydrogen",
+          "doi": "10.1103/8nyk-sysy",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_searching_2025",
+          "title": "Searching for Exotic Interactions between Antimatter",
+          "doi": "10.48550/arXiv.2503.07161",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "cited_in_gAgA": false
+        },
+        {
+          "key": "cong_spin-dependent_2025-1",
+          "title": "Spin-Dependent Fifth Force Dataset",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45Clayburn_2023a_m_abs_eN",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45Clayburn_2023a_m_abs_eN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-N",
+      "author_year": {
+        "surname": "Clayburn",
+        "year": "2023"
+      },
+      "candidates": [
+        {
+          "key": "clayburn_using_2023",
+          "title": "Using Earth to Search for Long-Range Spin-Velocity Interactions",
+          "doi": "10.1103/PhysRevD.108.L051701",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45Kim_2018_m_abs_eN",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45Kim_2018_m_abs_eN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-N",
+      "author_year": {
+        "surname": "Kim",
+        "year": "2018"
+      },
+      "candidates": [
+        {
+          "key": "kim_experimental_2018",
+          "title": "Experimental Constraint on an Exotic Spin- and Velocity-Dependent Interaction in the Sub-meV Range of Axion Mass with a Spin-Exchange Relaxation-Free Magnetometer",
+          "doi": "10.1103/PhysRevLett.121.091802",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45LH Wu_2023_m_abs_eN",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45LH Wu_2023_m_abs_eN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-N",
+      "author_year": {
+        "surname": "Wu",
+        "year": "2023"
+      },
+      "candidates": [
+        {
+          "key": "wu_improved_2023",
+          "title": "Improved Limits on an Exotic Spin- and Velocity-Dependent Interaction at the Micrometer Scale with an Ensemble-NV-Diamond Magnetometer",
+          "doi": "10.1103/PhysRevLett.131.071801",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "wu_new_2023",
+          "title": "New Limits on Exotic Spin-Dependent Interactions at Astronomical Distances",
+          "doi": "10.1103/PhysRevLett.131.091002",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "wu_spin-mechanical_2023",
+          "title": "A Spin-Mechanical Quantum Chip for Exploring Exotic Interactions",
+          "doi": "10.1073/pnas.2302145120",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "wu_exotic_2023",
+          "title": "Exotic Spin-Dependent Interactions through Unparticle Exchange",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45Wei Xiao_2024_m_abs_eN",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45Wei Xiao_2024_m_abs_eN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-N",
+      "author_year": {
+        "surname": "Xiao",
+        "year": "2024"
+      },
+      "candidates": [
+        {
+          "key": "xiao_exotic_2024",
+          "title": "Exotic Spin-Dependent Energy-Level Shift Noise Induced by Thermal Motion",
+          "doi": "",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45DG Wu_2023_m_abs_eN",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45DG Wu_2023_m_abs_eN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-N",
+      "author_year": {
+        "surname": "Wu",
+        "year": "2023"
+      },
+      "candidates": [
+        {
+          "key": "wu_improved_2023",
+          "title": "Improved Limits on an Exotic Spin- and Velocity-Dependent Interaction at the Micrometer Scale with an Ensemble-NV-Diamond Magnetometer",
+          "doi": "10.1103/PhysRevLett.131.071801",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "wu_new_2023",
+          "title": "New Limits on Exotic Spin-Dependent Interactions at Astronomical Distances",
+          "doi": "10.1103/PhysRevLett.131.091002",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "wu_spin-mechanical_2023",
+          "title": "A Spin-Mechanical Quantum Chip for Exploring Exotic Interactions",
+          "doi": "10.1073/pnas.2302145120",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "wu_exotic_2023",
+          "title": "Exotic Spin-Dependent Interactions through Unparticle Exchange",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45Wu_2021_m_abs_eN",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45Wu_2021_m_abs_eN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-N",
+      "author_year": {
+        "surname": "Wu",
+        "year": "2021"
+      },
+      "candidates": [
+        {
+          "key": "wu_superradiant_2021",
+          "title": "A Superradiant Maser with Nitrogen-Vacancy Center Spins",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45Heckel_2008_m_abs_eN",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45Heckel_2008_m_abs_eN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-N",
+      "author_year": {
+        "surname": "Heckel",
+        "year": "2008"
+      },
+      "candidates": [
+        {
+          "key": "heckel_preferred-frame_2008",
+          "title": "Preferred-Frame and $CP$-Violation Tests with Polarized Electrons",
+          "doi": "10.1103/PhysRevD.78.092006",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "heckel_preferred-frame_2008-1",
+          "title": "Preferred-Frame and $CP$-Violation Tests with Polarized Electrons",
+          "doi": "10.1103/PhysRevD.78.092006",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45Ding_2020_m_abs_eN",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45Ding_2020_m_abs_eN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-N",
+      "author_year": {
+        "surname": "Ding",
+        "year": "2020"
+      },
+      "candidates": [
+        {
+          "key": "ding_constraints_2020",
+          "title": "Constraints on the Velocity and Spin Dependent Exotic Interaction at the Micrometer Range",
+          "doi": "10.1103/PhysRevLett.124.161801",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-nucleon",
+      "filename": "45Xiao_2023_m_abs_eN",
+      "data_file": "Dataset/normalized/gAgA/lepton-nucleon/electron-Nucleon/45Xiao_2023_m_abs_eN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-N",
+      "author_year": {
+        "surname": "Xiao",
+        "year": "2023"
+      },
+      "candidates": [
+        {
+          "key": "xiao_femtotesla_2023",
+          "title": "Femtotesla Atomic Magnetometer Employing Diffusion Optical Pumping to Search for Exotic Spin-Dependent Interactions",
+          "doi": "10.1103/PhysRevLett.130.143201",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "45Haddock_2018a_m_abs_nN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/45Haddock_2018a_m_abs_nN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "n-N",
+      "author_year": {
+        "surname": "Haddock",
+        "year": "2018"
+      },
+      "candidates": [
+        {
+          "key": "haddock_search_2018",
+          "title": "A Search for Possible Long Range Spin Dependent Interactions of the Neutron from Exotic Vector Boson Exchange",
+          "doi": "10.1016/j.physletb.2018.06.066",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "haddock_search_2018-1",
+          "title": "Search for Deviations from the Inverse Square Law of Gravity at Nm Range Using a Pulsed Neutron Beam",
+          "doi": "10.1103/PhysRevD.97.062002",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "3Vasilakis_2009_m_abs_nn",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/3Vasilakis_2009_m_abs_nn.csv",
+      "potential": "V3",
+      "fermion_pair": "n-n",
+      "author_year": {
+        "surname": "Vasilakis",
+        "year": "2009"
+      },
+      "candidates": [
+        {
+          "key": "vasilakis_limits_2009",
+          "title": "Limits on New Long Range Nuclear Spin-Dependent Forces Set with a K - He 3 Comagnetometer",
+          "doi": "10.1103/PhysRevLett.103.261801",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "45Su_2021b_m_abs_NN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/45Su_2021b_m_abs_NN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "N-N",
+      "author_year": {
+        "surname": "Su",
+        "year": "2021"
+      },
+      "candidates": [
+        {
+          "key": "su_search_2021",
+          "title": "Search for Exotic Spin-Dependent Interactions with a Spin-Based Amplifier",
+          "doi": "10.1126/sciadv.abi9535",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "45Wei_2022a_m_abs_nN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/45Wei_2022a_m_abs_nN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "n-N",
+      "author_year": {
+        "surname": "Wei",
+        "year": "2022"
+      },
+      "candidates": [
+        {
+          "key": "wei_constraints_2022",
+          "title": "Constraints on Exotic Spin-Velocity-Dependent Interactions",
+          "doi": "10.1038/s41467-022-34924-z",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "451_Wu_2023_m_abs_nN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/451_Wu_2023_m_abs_nN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "n-N",
+      "author_year": {
+        "surname": "Wu",
+        "year": "2023"
+      },
+      "candidates": [
+        {
+          "key": "wu_improved_2023",
+          "title": "Improved Limits on an Exotic Spin- and Velocity-Dependent Interaction at the Micrometer Scale with an Ensemble-NV-Diamond Magnetometer",
+          "doi": "10.1103/PhysRevLett.131.071801",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "wu_new_2023",
+          "title": "New Limits on Exotic Spin-Dependent Interactions at Astronomical Distances",
+          "doi": "10.1103/PhysRevLett.131.091002",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "wu_spin-mechanical_2023",
+          "title": "A Spin-Mechanical Quantum Chip for Exploring Exotic Interactions",
+          "doi": "10.1073/pnas.2302145120",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "wu_exotic_2023",
+          "title": "Exotic Spin-Dependent Interactions through Unparticle Exchange",
+          "doi": "",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "8Kimball_2010_m_abs_np",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/8Kimball_2010_m_abs_np.csv",
+      "potential": "V8",
+      "fermion_pair": "n-p",
+      "author_year": {
+        "surname": "Kimball",
+        "year": "2010"
+      },
+      "candidates": []
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "45Parnell_2020_m_abs_nN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/45Parnell_2020_m_abs_nN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "n-N",
+      "author_year": {
+        "surname": "Parnell",
+        "year": "2020"
+      },
+      "candidates": [
+        {
+          "key": "parnell_search_2020",
+          "title": "Search for Exotic Spin-Dependent Couplings of the Neutron with Matter Using Spin-Echo Based Neutron Interferometry",
+          "doi": "10.1103/PhysRevD.101.122002",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "2Vasilakis_2009_1_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/2Vasilakis_2009_1_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Vasilakis",
+        "year": "2009"
+      },
+      "candidates": [
+        {
+          "key": "vasilakis_limits_2009",
+          "title": "Limits on New Long Range Nuclear Spin-Dependent Forces Set with a K - He 3 Comagnetometer",
+          "doi": "10.1103/PhysRevLett.103.261801",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "45Wei_2022b_m_abs_pN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/45Wei_2022b_m_abs_pN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "p-N",
+      "author_year": {
+        "surname": "Wei",
+        "year": "2022"
+      },
+      "candidates": [
+        {
+          "key": "wei_constraints_2022",
+          "title": "Constraints on Exotic Spin-Velocity-Dependent Interactions",
+          "doi": "10.1038/s41467-022-34924-z",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "2ledbetter_2013_m_abs_pN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/2ledbetter_2013_m_abs_pN.csv",
+      "potential": "V2",
+      "fermion_pair": "p-N",
+      "author_year": {
+        "surname": "ledbetter",
+        "year": "2013"
+      },
+      "candidates": [
+        {
+          "key": "ledbetter_constraints_2013",
+          "title": "Constraints on Short-Range Spin-Dependent Interactions from Scalar Spin-Spin Coupling in Deuterated Molecular Hydrogen",
+          "doi": "10.1103/PhysRevLett.110.040402",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "2Kimball_2010_m_abs_np",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/2Kimball_2010_m_abs_np.csv",
+      "potential": "V2",
+      "fermion_pair": "n-p",
+      "author_year": {
+        "surname": "Kimball",
+        "year": "2010"
+      },
+      "candidates": []
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "45Clayburn_2023b_m_abs_nN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/45Clayburn_2023b_m_abs_nN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "n-N",
+      "author_year": {
+        "surname": "Clayburn",
+        "year": "2023"
+      },
+      "candidates": [
+        {
+          "key": "clayburn_using_2023",
+          "title": "Using Earth to Search for Long-Range Spin-Velocity Interactions",
+          "doi": "10.1103/PhysRevD.108.L051701",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "45voronin_2020_m_abs_NN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/45voronin_2020_m_abs_NN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "N-N",
+      "author_year": {
+        "surname": "voronin",
+        "year": "2020"
+      },
+      "candidates": [
+        {
+          "key": "voronin_constraint_2020",
+          "title": "Constraint on a New Short-Range Spin---Orbit Interaction from Neutron Diffraction Data for a Noncentrosymmetric Crystal",
+          "doi": "10.1134/S0021364020220142",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "3Ramsey_1979_m_abs_np",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/3Ramsey_1979_m_abs_np.csv",
+      "potential": "V3",
+      "fermion_pair": "n-p",
+      "author_year": {
+        "surname": "Ramsey",
+        "year": "1979"
+      },
+      "candidates": [
+        {
+          "key": "ramsey_tensor_1979",
+          "title": "The Tensor Force between Two Protons at Long Range",
+          "doi": "10.1016/0378-4371(79)90217-6",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "1aNNastro_m_abs",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/1aNNastro_m_abs.csv",
+      "potential": "astrophysical",
+      "fermion_pair": "N-N",
+      "author_year": null,
+      "candidates": []
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "3Ledbetter_2013_m_abs_pN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/3Ledbetter_2013_m_abs_pN.csv",
+      "potential": "V3",
+      "fermion_pair": "p-N",
+      "author_year": {
+        "surname": "Ledbetter",
+        "year": "2013"
+      },
+      "candidates": [
+        {
+          "key": "ledbetter_constraints_2013",
+          "title": "Constraints on Short-Range Spin-Dependent Interactions from Scalar Spin-Spin Coupling in Deuterated Molecular Hydrogen",
+          "doi": "10.1103/PhysRevLett.110.040402",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "3Kimball_2010_m_abs_np",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/3Kimball_2010_m_abs_np.csv",
+      "potential": "V3",
+      "fermion_pair": "n-p",
+      "author_year": {
+        "surname": "Kimball",
+        "year": "2010"
+      },
+      "candidates": []
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "45Clayburn_2023c_m_abs_pN",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/45Clayburn_2023c_m_abs_pN.csv",
+      "potential": "V4+5",
+      "fermion_pair": "p-N",
+      "author_year": {
+        "surname": "Clayburn",
+        "year": "2023"
+      },
+      "candidates": [
+        {
+          "key": "clayburn_using_2023",
+          "title": "Using Earth to Search for Long-Range Spin-Velocity Interactions",
+          "doi": "10.1103/PhysRevD.108.L051701",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "nucleon-nucleon",
+      "filename": "45Haddock_2018b_m_abs_nN copy",
+      "data_file": "Dataset/normalized/gAgA/nucleon-nucleon/45Haddock_2018b_m_abs_nN copy.csv",
+      "potential": "V4+5",
+      "fermion_pair": "n-N",
+      "author_year": {
+        "surname": "Haddock",
+        "year": "2018"
+      },
+      "candidates": [
+        {
+          "key": "haddock_search_2018",
+          "title": "A Search for Possible Long Range Spin Dependent Interactions of the Neutron from Exotic Vector Boson Exchange",
+          "doi": "10.1016/j.physletb.2018.06.066",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "haddock_search_2018-1",
+          "title": "Search for Deviations from the Inverse Square Law of Gravity at Nm Range Using a Pulsed Neutron Beam",
+          "doi": "10.1103/PhysRevD.97.062002",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "3Terrano_2015_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/3Terrano_2015_m_abs_ee.csv",
+      "potential": "V3",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Terrano",
+        "year": "2015"
+      },
+      "candidates": [
+        {
+          "key": "terrano_short-range_2015",
+          "title": "Short-Range, Spin-Dependent Interactions of Electrons: A Probe for Exotic Pseudo-Goldstone Bosons",
+          "doi": "10.1103/PhysRevLett.115.201801",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "8Hunter_2014_2_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/8Hunter_2014_2_m_abs_ee.csv",
+      "potential": "V8",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Hunter",
+        "year": "2014"
+      },
+      "candidates": [
+        {
+          "key": "hunter_using_2014",
+          "title": "Using Geoelectrons to Search for Velocity-Dependent Spin-Spin Interactions",
+          "doi": "10.1103/PhysRevLett.112.091803",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Almasi2020_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Almasi2020_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": null,
+      "candidates": []
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "23Fadeev_2022_eV_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/23Fadeev_2022_eV_abs_ee.csv",
+      "potential": "V2+V3",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Fadeev",
+        "year": "2022"
+      },
+      "candidates": [
+        {
+          "key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "3Fadeev_2022_2_m_abs_ebare",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/3Fadeev_2022_2_m_abs_ebare.csv",
+      "potential": "V3",
+      "fermion_pair": "unresolved",
+      "author_year": {
+        "surname": "Fadeev",
+        "year": "2022"
+      },
+      "candidates": [
+        {
+          "key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Ficek_2017_V2_updated_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Ficek_2017_V2_updated_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Ficek",
+        "year": "2017"
+      },
+      "candidates": [
+        {
+          "key": "ficek_constraints_2017",
+          "title": "Constraints on Exotic Spin-Dependent Interactions between Electrons from Helium Fine-Structure Spectroscopy",
+          "doi": "10.1103/PhysRevA.95.032505",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Heckel_2013_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Heckel_2013_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Heckel",
+        "year": "2013"
+      },
+      "candidates": [
+        {
+          "key": "heckel_limits_2013",
+          "title": "Limits on Exotic Long-Range Spin-Spin Interactions of Electrons",
+          "doi": "10.1103/PhysRevLett.111.151802",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "3Ficek_2017_2_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/3Ficek_2017_2_m_abs_ee.csv",
+      "potential": "V3",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Ficek",
+        "year": "2017"
+      },
+      "candidates": [
+        {
+          "key": "ficek_constraints_2017",
+          "title": "Constraints on Exotic Spin-Dependent Interactions between Electrons from Helium Fine-Structure Spectroscopy",
+          "doi": "10.1103/PhysRevA.95.032505",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Hunter_2013_2_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Hunter_2013_2_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Hunter",
+        "year": "2013"
+      },
+      "candidates": [
+        {
+          "key": "hunter_using_2013",
+          "title": "Using the Earth as a Polarized Electron Source to Search for Long-Range Spin-Spin Interactions",
+          "doi": "10.1126/science.1227460",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Rong_2018_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Rong_2018_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Rong",
+        "year": "2018"
+      },
+      "candidates": [
+        {
+          "key": "rong_constraints_2018",
+          "title": "Constraints on a Spin-Dependent Exotic Interaction between Electrons with Single Electron Spin Quantum Sensors",
+          "doi": "10.1103/PhysRevLett.121.080402",
+          "cited_in_gAgA": true
+        },
+        {
+          "key": "rong_searching_2018",
+          "title": "Searching for an Exotic Spin-Dependent Interaction with a Single Electron-Spin Quantum Sensor",
+          "doi": "10.1038/s41467-018-03152-9",
+          "cited_in_gAgA": false
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "1a_eeastro_m_abs",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/1a_eeastro_m_abs.csv",
+      "potential": "astrophysical",
+      "fermion_pair": "e-e",
+      "author_year": null,
+      "candidates": []
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Ficek_2017_V2_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Ficek_2017_V2_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Ficek",
+        "year": "2017"
+      },
+      "candidates": [
+        {
+          "key": "ficek_constraints_2017",
+          "title": "Constraints on Exotic Spin-Dependent Interactions between Electrons from Helium Fine-Structure Spectroscopy",
+          "doi": "10.1103/PhysRevA.95.032505",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Kotler_2015_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Kotler_2015_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Kotler",
+        "year": "2015"
+      },
+      "candidates": [
+        {
+          "key": "kotler_constraints_2015",
+          "title": "Constraints on Exotic Dipole-Dipole Couplings between Electrons at the Micrometer Scale",
+          "doi": "10.1103/PhysRevLett.115.081801",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Jiao_2019_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Jiao_2019_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Jiao",
+        "year": "2019"
+      },
+      "candidates": []
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "8Ji_2018_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/8Ji_2018_m_abs_ee.csv",
+      "potential": "V8",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Ji",
+        "year": "2018"
+      },
+      "candidates": [
+        {
+          "key": "ji_new_2018",
+          "title": "New Experimental Limits on Exotic Spin-Spin-Velocity-Dependent Interactions by Using SmCo 5 Spin Sources",
+          "doi": "10.1103/PhysRevLett.121.261803",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "3Fadeev_2022_3_m_abs_emubar",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/3Fadeev_2022_3_m_abs_emubar.csv",
+      "potential": "V3",
+      "fermion_pair": "e-mu+",
+      "author_year": {
+        "surname": "Fadeev",
+        "year": "2022"
+      },
+      "candidates": [
+        {
+          "key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Ritter_1990_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Ritter_1990_m_abs_ee.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Ritter",
+        "year": "1990"
+      },
+      "candidates": [
+        {
+          "key": "ritter_experimental_1990",
+          "title": "Experimental Test of Equivalence Principle with Polarized Masses",
+          "doi": "10.1103/PhysRevD.42.977",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Karshenboim_2011_3_m_abs_eebar",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Karshenboim_2011_3_m_abs_eebar.csv",
+      "potential": "V2",
+      "fermion_pair": "e-e+",
+      "author_year": {
+        "surname": "Karshenboim",
+        "year": "2011"
+      },
+      "candidates": [
+        {
+          "key": "karshenboim_hyperfine_2011",
+          "title": "Hyperfine Structure Interval of the 2 s State of Hydrogenlike Atoms and a Constraint on a Pseudovector Boson with Mass below 1 keV / c 2",
+          "doi": "10.1103/PhysRevA.83.062119",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "45Ficek_2017_V4+5_m_abs_ee",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/45Ficek_2017_V4+5_m_abs_ee.csv",
+      "potential": "V4+5",
+      "fermion_pair": "e-e",
+      "author_year": {
+        "surname": "Ficek",
+        "year": "2017"
+      },
+      "candidates": [
+        {
+          "key": "ficek_constraints_2017",
+          "title": "Constraints on Exotic Spin-Dependent Interactions between Electrons from Helium Fine-Structure Spectroscopy",
+          "doi": "10.1103/PhysRevA.95.032505",
+          "cited_in_gAgA": true
+        }
+      ]
+    },
+    {
+      "chart": "lepton-lepton",
+      "filename": "2Karshenboim_2011_4_m_abs_emu",
+      "data_file": "Dataset/normalized/gAgA/lepton-lepton/2Karshenboim_2011_4_m_abs_emu.csv",
+      "potential": "V2",
+      "fermion_pair": "e-mu+",
+      "author_year": {
+        "surname": "Karshenboim",
+        "year": "2011"
+      },
+      "candidates": [
+        {
+          "key": "karshenboim_hyperfine_2011",
+          "title": "Hyperfine Structure Interval of the 2 s State of Hydrogenlike Atoms and a Constraint on a Pseudovector Boson with Mass below 1 keV / c 2",
+          "doi": "10.1103/PhysRevA.83.062119",
+          "cited_in_gAgA": true
+        }
+      ]
+    }
+  ]
+}
