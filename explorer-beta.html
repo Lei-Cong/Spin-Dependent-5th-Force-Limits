@@ -197,7 +197,9 @@ const GROUP_Y_RANGES = {
 };
 
 const CHART_Y_RANGES = {
-  "gAgV/nucleon-nucleon": [1e-60, 1e0]
+  "gAgV/nucleon-nucleon": [1e-60, 1e0],
+  "gAgA/lepton-lepton": [1e-50, 1e3],
+  "gAgA/nucleon-nucleon": [1e-50, 1e3]
 };
 
 async function fetchText(url){
@@ -445,11 +447,11 @@ async function loadGroupIfNeeded(groupKey){
 
         if (x.length && y.length){
           const metadata = metadataByPath.get(entry.path);
-          const pairSymbol = entry.path.split("/").at(-1).match(/_([enpN]-[enpN])\.csv$/)?.[1] || "";
+          const pairSymbol = metadata?.fermion_pair || entry.path.split("/").at(-1).match(/_([enpN]-[enpN])\.csv$/)?.[1] || "";
           const displayLabel = metadata?.display_label || entry.label || entry.path;
           result[sub].push({
             id: `${groupKey}:${entry.path}`,
-            name: pairSymbol ? `${displayLabel} ${pairSymbol}` : displayLabel,
+            name: pairSymbol ? `${displayLabel} · ${pairSymbol}` : displayLabel,
             listName: metadata
               ? `${metadata.display_label} · ${pairSymbol || metadata.fermion_pair}`
               : (entry.label || entry.path),
@@ -555,7 +557,11 @@ const PAIR_COLORS = {
   "n-N":"#4b7f2a",
   "p-N":"#c24f3d",
   "n-p":"#8b6b21",
-  "n-n":"#566f9e"
+  "n-n":"#566f9e",
+  "e-e+":"#a45e9a",
+  "e-mu+":"#6656a8",
+  "e-pbar":"#bb5d3b",
+  "e+-pbar":"#9b4f67"
 };
 
 function potentialLineStyles(datasets){
@@ -975,6 +981,10 @@ function renderChecklist(){
         const chartId = `chart-${current}-${sub}`.replace(/[^a-zA-Z0-9_-]/g, "_");
         manualVisibility[d.id] = e.target.checked;
         applyChartFilters(chartId);
+        if (e.target.checked) {
+          highlightTrace(chartId, d.id);
+          renderMetadata(d);
+        }
       });
 
       const label = document.createElement("label");
