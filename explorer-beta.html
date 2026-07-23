@@ -25,11 +25,11 @@
   .viewer-intro{color:#555;margin:.25rem 0 1rem 0;line-height:1.5;max-width:1000px;}
   .chartcard{height:min(820px,calc(100dvh - 24px));min-height:620px;display:grid;grid-template-rows:auto minmax(0,1fr) auto;margin:0 0 1rem 0;border:1px solid var(--bd);border-radius:12px;background:#fff;overflow:hidden;}
   .chartcard .title{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bd);padding:.55rem .8rem;font-weight:600}
-  #charts .chart{width:100%;height:auto;min-height:0;background:#fff;}
-  .chart-toolbar{display:flex;gap:.5rem;align-items:center;padding:.5rem .8rem;border-top:1px solid #e5e7eb;background:#fafafa;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
+  #charts .chart{position:relative;z-index:0;width:100%;height:auto;min-height:0;overflow:hidden;background:#fff;}
+  .chart-toolbar{position:relative;z-index:2;display:flex;gap:.5rem;align-items:center;padding:.5rem .8rem;border-top:1px solid #e5e7eb;background:#fafafa;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
   .chart-filters{display:grid;gap:.32rem;flex:1}
   .filter-row{display:flex;gap:.35rem;align-items:center;flex-wrap:wrap}
-  .filter-row>span{width:4.7rem;color:#6b7785;font-size:.72rem;font-weight:700;letter-spacing:.03em}
+  .filter-row>span{width:7.2rem;color:#6b7785;font-size:.72rem;font-weight:700;letter-spacing:.03em}
   .filter-chip{border:1px solid #9eb8c2;border-radius:999px;background:#eaf4f6;color:#125d73;padding:.28rem .55rem;font-size:.74rem;font-weight:700;cursor:pointer}
   .filter-chip.off{background:#fff;color:#84929a;border-color:#d7dfe3;text-decoration:line-through}
   #checklist{max-height:50vh;overflow:auto;border:1px dashed var(--bd);border-radius:10px;padding:.5rem;background:#fff;}
@@ -612,6 +612,15 @@ function buildChartCard(groupKey, subfolder, datasets){
   };
 
   Plotly.newPlot(chartId, traces, layout, config).then(gd => {
+    const resizePlot = () => {
+      if (gd.isConnected) Plotly.Plots.resize(gd);
+    };
+    requestAnimationFrame(() => requestAnimationFrame(resizePlot));
+    if (window.ResizeObserver){
+      const observer = new ResizeObserver(resizePlot);
+      observer.observe(chartDiv);
+      chartDiv._plotResizeObserver = observer;
+    }
     gd.on("plotly_legendclick", ev => {
       const ds = datasets[ev.curveNumber];
       highlightTrace(chartId, ds.id);
@@ -638,7 +647,7 @@ function buildChartCard(groupKey, subfolder, datasets){
   const filterRows = [
     { label:"Potential", specs:potentials.map(value => ({ key:`potential:${value}`, label:value })) },
     { label:"Fermion pair", specs:pairs.map(value => ({ key:`pair:${value}`, label:value })) },
-    { label:"Constraint", specs:[
+    { label:"Other constraints", specs:[
       ...(datasets.some(dataset => datasetTags(dataset).combined) ? [{ key:"combined", label:"Combined" }] : []),
       ...(datasets.some(dataset => datasetTags(dataset).astrophysical) ? [{ key:"astrophysical", label:"Astrophysical" }] : []),
       ...(datasets.some(dataset => datasetTags(dataset).cosmological) ? [{ key:"cosmological", label:"Cosmological" }] : [])
