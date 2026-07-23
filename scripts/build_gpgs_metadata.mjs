@@ -94,6 +94,12 @@ const conversions = [
   ["Safronova_2018_Kimball","jackson_kimball_constraints_2017","Jackson Kimball et al. 2017"],
   ["Safronova_2018_Youdin","youdin_limits_1996","Youdin et al. 1996"],
 ];
+const legendLabel = (label) => label
+  .replace(/^L\. Y\. /, "")
+  .replace(/^Jackson Kimball /, "Kimball ")
+  .replace(/ et al\./, "")
+  .replace(/ & Flambaum/, "")
+  .trim();
 
 const sectionStart = reviewText.search(/Pseudoscalar\/Scalar interaction/i);
 const sectionEnd = reviewText.indexOf("\\subsection", sectionStart + 100);
@@ -140,7 +146,7 @@ const records = datasets.map((dataset) => {
   const converted = conversions.find(([token]) => filename.includes(token));
   if (converted) {
     const [, key, label] = converted;
-    return { ...common, label, display_label:label, review_location:location,
+    return { ...common, label, display_label:legendLabel(label), review_location:location,
       references:[publication(key), publication("safronova_search_2018")],
       method:{ category:"complementary", technique:"converted primary experimental constraint", source:"", sensor:"" },
       context_note:"This curve presents the primary experimental result as converted to the gₚgₛ framework in Safronova et al. (2018).",
@@ -150,7 +156,7 @@ const records = datasets.map((dataset) => {
   if (!rule) throw new Error(`No gpgs metadata rule for ${filename}`);
   const [, key, label, source, sensor, category] = rule;
   const cited = [key, ...(key === "liang_new_2023" ? ["liang_new_2022"] : [])].some((candidate) => reviewSection.includes(candidate));
-  return { ...common, label, display_label:label, review_location:cited ? location : null, references:[publication(key)],
+  return { ...common, label, display_label:legendLabel(label), review_location:cited ? location : null, references:[publication(key)],
     method:{ category, technique:category === "dedicated_source_sensor" ? "dedicated fifth-force experiment" : "complementary constraint or reinterpretation", source, sensor } };
 }).sort((a, b) => a.data_file.localeCompare(b.data_file));
 

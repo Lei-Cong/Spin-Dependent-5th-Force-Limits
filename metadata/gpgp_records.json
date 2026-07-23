@@ -1,0 +1,675 @@
+{
+  "generated_at": "2026-07-23T16:46:13.971Z",
+  "notice": "Pseudoscalar/pseudoscalar constraints use the standardized review convention.",
+  "records": [
+    {
+      "id": "wang-2022-m-abs-en",
+      "label": "Wang et al. 2022",
+      "display_label": "Wang 2022",
+      "data_file": "Dataset/normalized/gpgp/lepton-nucleon/Wang_2022_m_abs_en.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "e-n",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_based_amplifier",
+        "source": "polarized_spin_source",
+        "sensor": "spin_based_amplifier"
+      },
+      "references": [
+        {
+          "citation_key": "wang_limits_2022",
+          "title": "Limits on Axions and Axionlike Particles within the Axion Window Using a Spin-Based Amplifier",
+          "authors": "Wang, Yuanhong and Su, Haowen and Jiang, Min and Huang, Ying and Qin, Yushu and Guo, Chang and Wang, Zehao and Hu, Dongdong and Ji, Wei and Fadeev, Pavel and Peng, Xinhua and Budker, Dmitry",
+          "journal": "Phys. Rev. Lett.",
+          "year": 2022,
+          "volume": "129",
+          "issue": "5",
+          "pages": "051801",
+          "doi": "10.1103/PhysRevLett.129.051801",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.129.051801",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.129.051801"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "3cong-2025-m-ep-gpgp-95cl",
+      "label": "Cong et al. 2025",
+      "display_label": "Cong 2025",
+      "data_file": "Dataset/normalized/gpgp/lepton-nucleon/3Cong_2025_m_ep_gpgp_95CL.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "e-p",
+      "confidence_level": "95%",
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "hydrogen_spectroscopy",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "cong_improved_2025",
+          "title": "Improved Constraints on Exotic Electron-Proton Interactions in Hydrogen",
+          "authors": "Cong, Lei and Ficek, Filip and Fadeev, Pavel and Budker, Dmitry",
+          "journal": "Phys. Rev. A",
+          "year": 2025,
+          "volume": "112",
+          "issue": "5",
+          "pages": "052824",
+          "doi": "10.1103/8nyk-sysy",
+          "doi_url": "https://doi.org/10.1103/8nyk-sysy",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/8nyk-sysy"
+        }
+      ],
+      "review_location": null,
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Primary publication and curated dataset"
+        ]
+      }
+    },
+    {
+      "id": "almasi-2020-m-abs-en",
+      "label": "Almasi et al. 2020",
+      "display_label": "Almasi 2020",
+      "data_file": "Dataset/normalized/gpgp/lepton-nucleon/Almasi_2020_m_abs_en.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "e-n",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "precision_spin_measurement",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "almasi_new_2020",
+          "title": "New Limits on Anomalous Spin-Spin Interactions",
+          "authors": "Almasi, Attaallah and Lee, Junyi and Winarto, Himawan and Smiciklas, Marc and Romalis, Michael V.",
+          "journal": "Phys. Rev. Lett.",
+          "year": 2020,
+          "volume": "125",
+          "issue": "20",
+          "pages": "201802",
+          "doi": "10.1103/PhysRevLett.125.201802",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.125.201802",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.125.201802"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "3fadeev-2022-5-m-abs-ep",
+      "label": "Fadeev et al. 2022",
+      "display_label": "Fadeev 2022",
+      "data_file": "Dataset/normalized/gpgp/lepton-nucleon/3Fadeev_2022_5_m_abs_ep.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "e-p",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_spectroscopy_reanalysis",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "authors": "Fadeev, Pavel and Ficek, Filip and Kozlov, Mikhail G. and Budker, Dmitry and Flambaum, Victor V.",
+          "journal": "Phys. Rev. A",
+          "year": 2022,
+          "volume": "105",
+          "issue": "2",
+          "pages": "022812",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "doi_url": "https://doi.org/10.1103/PhysRevA.105.022812",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevA.105.022812"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "ficek-2018-m-abs-epbar",
+      "label": "Ficek et al. 2018",
+      "display_label": "Ficek 2018",
+      "data_file": "Dataset/normalized/gpgp/lepton-nucleon/Ficek_2018_m_abs_epbar.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "e-pbar",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "antiprotonic_helium_spectroscopy",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "ficek_constraints_2018",
+          "title": "Constraints on Exotic Spin-Dependent Interactions Between Matter and Antimatter from Antiprotonic Helium Spectroscopy",
+          "authors": "Ficek, Filip and Fadeev, Pavel and Flambaum, Victor V. and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "journal": "Phys. Rev. Lett.",
+          "year": 2018,
+          "volume": "120",
+          "issue": "18",
+          "pages": "183002",
+          "doi": "10.1103/PhysRevLett.120.183002",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.120.183002",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.120.183002"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "enastro-m-abs",
+      "label": "Astrophysical",
+      "display_label": "Astrophysical",
+      "data_file": "Dataset/normalized/gpgp/lepton-nucleon/eNastro_m_abs.csv",
+      "coupling": "gpgp",
+      "potential": "astrophysical",
+      "fermion_pair": "e-N",
+      "confidence_level": null,
+      "method": {
+        "category": "astrophysical",
+        "technique": "astrophysical constraint",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "journal": "Rev. Mod. Phys.",
+          "year": 2025,
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "ramsey-1979-m-abs-np",
+      "label": "Ramsey 1979",
+      "display_label": "Ramsey 1979",
+      "data_file": "Dataset/normalized/gpgp/nucleon-nucleon/Ramsey_1979_m_abs_np.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "n-p",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "molecular_beam_magnetic_resonance",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "ramsey_tensor_1979",
+          "title": "The Tensor Force between Two Protons at Long Range",
+          "authors": "Ramsey, Norman F.",
+          "journal": "Phys. Stat. Mech. Its Appl.",
+          "year": 1979,
+          "volume": "96",
+          "issue": "1",
+          "pages": "285-289",
+          "doi": "10.1016/0378-4371(79)90217-6",
+          "doi_url": "https://doi.org/10.1016/0378-4371(79)90217-6",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1016/0378-4371(79)90217-6"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "nnastro-m-abs",
+      "label": "Astrophysical",
+      "display_label": "Astrophysical",
+      "data_file": "Dataset/normalized/gpgp/nucleon-nucleon/NNastro_m_abs.csv",
+      "coupling": "gpgp",
+      "potential": "astrophysical",
+      "fermion_pair": "N-N",
+      "confidence_level": null,
+      "method": {
+        "category": "astrophysical",
+        "technique": "astrophysical constraint",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "journal": "Rev. Mod. Phys.",
+          "year": 2025,
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "ledbetter-2013-m-abs-pn",
+      "label": "Ledbetter et al. 2013",
+      "display_label": "Ledbetter 2013",
+      "data_file": "Dataset/normalized/gpgp/nucleon-nucleon/Ledbetter_2013_m_abs_pN.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "p-N",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "molecular_spectroscopy",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "ledbetter_constraints_2013",
+          "title": "Constraints on Short-Range Spin-Dependent Interactions from Scalar Spin-Spin Coupling in Deuterated Molecular Hydrogen",
+          "authors": "Ledbetter, M. P. and Romalis, M. V. and Kimball, D. F. Jackson",
+          "journal": "Phys. Rev. Lett.",
+          "year": 2013,
+          "volume": "110",
+          "issue": "4",
+          "pages": "040402",
+          "doi": "10.1103/PhysRevLett.110.040402",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.110.040402",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.110.040402"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "vasilakis-2009-m-abs-nn",
+      "label": "Vasilakis et al. 2009",
+      "display_label": "Vasilakis 2009",
+      "data_file": "Dataset/normalized/gpgp/nucleon-nucleon/Vasilakis_2009_m_abs_nn.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "n-n",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "comagnetometer",
+        "source": "earth",
+        "sensor": "comagnetometer"
+      },
+      "references": [
+        {
+          "citation_key": "vasilakis_limits_2009",
+          "title": "Limits on New Long Range Nuclear Spin-Dependent Forces Set with a K - He 3 Comagnetometer",
+          "authors": "Vasilakis, G. and Brown, J. M. and Kornack, T. W. and Romalis, M. V.",
+          "journal": "Phys. Rev. Lett.",
+          "year": 2009,
+          "volume": "103",
+          "issue": "26",
+          "pages": "261801",
+          "doi": "10.1103/PhysRevLett.103.261801",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.103.261801",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.103.261801"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "kimball-2010-m-abs-np",
+      "label": "Jackson Kimball et al. 2010",
+      "display_label": "Kimball 2010",
+      "data_file": "Dataset/normalized/gpgp/nucleon-nucleon/Kimball_2010_m_abs_np.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "n-p",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "spin_exchange_collision_analysis",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "jackson_kimball_constraints_2010",
+          "title": "Constraints on Anomalous Spin-Spin Interactions from Spin-Exchange Collisions",
+          "authors": "Jackson Kimball, D. F. and Boyd, Alec and Budker, D.",
+          "journal": "Phys. Rev. A",
+          "year": 2010,
+          "volume": "82",
+          "issue": "6",
+          "pages": "062714",
+          "doi": "10.1103/PhysRevA.82.062714",
+          "doi_url": "https://doi.org/10.1103/PhysRevA.82.062714",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevA.82.062714"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "1aeeastro-m-abs",
+      "label": "Astrophysical",
+      "display_label": "Astrophysical",
+      "data_file": "Dataset/normalized/gpgp/lepton-lepton/1aeeastro_m_abs.csv",
+      "coupling": "gpgp",
+      "potential": "astrophysical",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "astrophysical",
+        "technique": "astrophysical constraint",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "cong_spin-dependent_2025",
+          "title": "Spin-Dependent Exotic Interactions",
+          "authors": "Cong, Lei and Ji, Wei and Fadeev, Pavel and Ficek, Filip and Jiang, Min and Flambaum, Victor V. and Guan, Haosen and Jackson Kimball, Derek F. and Kozlov, Mikhail G. and Stadnik, Yevgeny V. and Budker, Dmitry",
+          "journal": "Rev. Mod. Phys.",
+          "year": 2025,
+          "volume": "97",
+          "issue": "2",
+          "pages": "025005",
+          "doi": "10.1103/RevModPhys.97.025005",
+          "doi_url": "https://doi.org/10.1103/RevModPhys.97.025005",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/RevModPhys.97.025005"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "review_only",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "3fadeev-2022-2-m-abs-ebare",
+      "label": "Fadeev et al. 2022",
+      "display_label": "Fadeev 2022",
+      "data_file": "Dataset/normalized/gpgp/lepton-lepton/3Fadeev_2022_2_m_abs_ebare.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "e-e+",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_spectroscopy_reanalysis",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "authors": "Fadeev, Pavel and Ficek, Filip and Kozlov, Mikhail G. and Budker, Dmitry and Flambaum, Victor V.",
+          "journal": "Phys. Rev. A",
+          "year": 2022,
+          "volume": "105",
+          "issue": "2",
+          "pages": "022812",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "doi_url": "https://doi.org/10.1103/PhysRevA.105.022812",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevA.105.022812"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "3fadeev-2022-4-m-abs-ee",
+      "label": "Fadeev et al. 2022",
+      "display_label": "Fadeev 2022",
+      "data_file": "Dataset/normalized/gpgp/lepton-lepton/3Fadeev_2022_4_m_abs_ee.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_spectroscopy_reanalysis",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "authors": "Fadeev, Pavel and Ficek, Filip and Kozlov, Mikhail G. and Budker, Dmitry and Flambaum, Victor V.",
+          "journal": "Phys. Rev. A",
+          "year": 2022,
+          "volume": "105",
+          "issue": "2",
+          "pages": "022812",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "doi_url": "https://doi.org/10.1103/PhysRevA.105.022812",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevA.105.022812"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "3fadeev-2022-3-m-abs-emubar",
+      "label": "Fadeev et al. 2022",
+      "display_label": "Fadeev 2022",
+      "data_file": "Dataset/normalized/gpgp/lepton-lepton/3Fadeev_2022_3_m_abs_emubar.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "e-mu+",
+      "confidence_level": null,
+      "method": {
+        "category": "complementary_experiment",
+        "technique": "atomic_spectroscopy_reanalysis",
+        "source": "",
+        "sensor": ""
+      },
+      "references": [
+        {
+          "citation_key": "fadeev_pseudovector_2022",
+          "title": "Pseudovector and Pseudoscalar Spin-Dependent Interactions in Atoms",
+          "authors": "Fadeev, Pavel and Ficek, Filip and Kozlov, Mikhail G. and Budker, Dmitry and Flambaum, Victor V.",
+          "journal": "Phys. Rev. A",
+          "year": 2022,
+          "volume": "105",
+          "issue": "2",
+          "pages": "022812",
+          "doi": "10.1103/PhysRevA.105.022812",
+          "doi_url": "https://doi.org/10.1103/PhysRevA.105.022812",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevA.105.022812"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    },
+    {
+      "id": "3terrano-2015-m-abs-ee",
+      "label": "Terrano et al. 2015",
+      "display_label": "Terrano 2015",
+      "data_file": "Dataset/normalized/gpgp/lepton-lepton/3Terrano_2015_m_abs_ee.csv",
+      "coupling": "gpgp",
+      "potential": "V3",
+      "fermion_pair": "e-e",
+      "confidence_level": null,
+      "method": {
+        "category": "dedicated_source_sensor",
+        "technique": "spin_polarized_torsion_pendulum",
+        "source": "polarized_electron_source",
+        "sensor": "spin_polarized_torsion_pendulum"
+      },
+      "references": [
+        {
+          "citation_key": "terrano_short-range_2015",
+          "title": "Short-Range, Spin-Dependent Interactions of Electrons: A Probe for Exotic Pseudo-Goldstone Bosons",
+          "authors": "Terrano, W. A. and Adelberger, E. G. and Lee, J. G. and Heckel, B. R.",
+          "journal": "Phys. Rev. Lett.",
+          "year": 2015,
+          "volume": "115",
+          "issue": "20",
+          "pages": "201801",
+          "doi": "10.1103/PhysRevLett.115.201801",
+          "doi_url": "https://doi.org/10.1103/PhysRevLett.115.201801",
+          "arxiv_url": "",
+          "url": "https://doi.org/10.1103/PhysRevLett.115.201801"
+        }
+      ],
+      "review_location": {
+        "section": "Pseudoscalar/Pseudoscalar interaction gpgp",
+        "figure": "Fig. 14"
+      },
+      "curation": {
+        "status": "curated",
+        "evidence": [
+          "Fig. 14, RMP review"
+        ]
+      }
+    }
+  ]
+}

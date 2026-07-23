@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T15:55:49.082Z",
+  "generated_at": "2026-07-23T16:10:31.439Z",
   "notice": "Constraint values use the standardized conventions of the RMP review; individual records link the relevant primary literature where available.",
   "records": [
     {
@@ -171,7 +171,7 @@
         "note": ""
       },
       "label": "Crescini et al. 2022",
-      "display_label": "Crescini et al. 2022"
+      "display_label": "Crescini 2022"
     },
     {
       "id": "910prosnyak-2023-2-m-abs-ee-csv",
@@ -208,7 +208,7 @@
         "note": ""
       },
       "label": "Prosnyak et al. 2023",
-      "display_label": "Prosnyak et al. 2023"
+      "display_label": "Prosnyak 2023"
     },
     {
       "id": "910stadnik-2018-2-m-abs-ee-csv",
@@ -245,7 +245,7 @@
         "note": ""
       },
       "label": "Stadnik & Flambaum 2018",
-      "display_label": "Stadnik & Flambaum 2018"
+      "display_label": "Stadnik 2018"
     },
     {
       "id": "15hunter-2014-1-m-abs-ep-csv",
@@ -282,7 +282,7 @@
         "note": ""
       },
       "label": "Hunter et al. 2014",
-      "display_label": "Hunter et al. 2014"
+      "display_label": "Hunter 2014"
     },
     {
       "id": "15hunter-2014-2-m-abs-en-csv",
@@ -319,7 +319,7 @@
         "note": ""
       },
       "label": "Hunter et al. 2014",
-      "display_label": "Hunter et al. 2014"
+      "display_label": "Hunter 2014"
     },
     {
       "id": "1aenastro-m-abs-csv",
@@ -490,7 +490,7 @@
         "note": ""
       },
       "label": "Agrawal et al. 2023",
-      "display_label": "Agrawal et al. 2023"
+      "display_label": "Agrawal 2023"
     },
     {
       "id": "910crescini-2022-1-m-abs-en-csv",
@@ -527,7 +527,7 @@
         "note": ""
       },
       "label": "Crescini et al. 2022",
-      "display_label": "Crescini et al. 2022"
+      "display_label": "Crescini 2022"
     },
     {
       "id": "910dzuba-2018-m-abs-ne-csv",
@@ -564,7 +564,7 @@
         "note": ""
       },
       "label": "Dzuba et al. 2018",
-      "display_label": "Dzuba et al. 2018"
+      "display_label": "Dzuba 2018"
     },
     {
       "id": "910heckel-2008-1-m-abs-en-csv",
@@ -601,7 +601,7 @@
         "note": ""
       },
       "label": "Heckel et al. 2008",
-      "display_label": "Heckel et al. 2008"
+      "display_label": "Heckel 2008"
     },
     {
       "id": "910heckel-2008-2-m-abs-en-csv",
@@ -638,7 +638,7 @@
         "note": ""
       },
       "label": "Heckel et al. 2008",
-      "display_label": "Heckel et al. 2008"
+      "display_label": "Heckel 2008"
     },
     {
       "id": "910hoedl-2011-2-m-m-abs-en-csv",
@@ -675,7 +675,7 @@
         "note": ""
       },
       "label": "Hoedl et al. 2011",
-      "display_label": "Hoedl et al. 2011"
+      "display_label": "Hoedl 2011"
     },
     {
       "id": "910lee-2018-1-m-abs-en-csv",
@@ -712,7 +712,7 @@
         "note": ""
       },
       "label": "Lee et al. 2018",
-      "display_label": "Lee et al. 2018"
+      "display_label": "Lee 2018"
     },
     {
       "id": "910liang-2022-m-abs-en-csv",
@@ -749,7 +749,7 @@
         "note": ""
       },
       "label": "Liang et al. 2023",
-      "display_label": "Liang et al. 2023"
+      "display_label": "Liang 2023"
     },
     {
       "id": "910prosnyak-2023-1-m-abs-en-csv",
@@ -786,7 +786,7 @@
         "note": ""
       },
       "label": "Prosnyak et al. 2023",
-      "display_label": "Prosnyak et al. 2023"
+      "display_label": "Prosnyak 2023"
     },
     {
       "id": "910rong-2018-m-abs-en-csv",
@@ -823,7 +823,7 @@
         "note": ""
       },
       "label": "Rong et al. 2018",
-      "display_label": "Rong et al. 2018"
+      "display_label": "Rong 2018"
     },
     {
       "id": "910stadnik-2018-1-m-abs-en-csv",
@@ -860,7 +860,7 @@
         "note": ""
       },
       "label": "Stadnik & Flambaum 2018",
-      "display_label": "Stadnik & Flambaum 2018"
+      "display_label": "Stadnik 2018"
     },
     {
       "id": "910terrano-2015-m-m-abs-en-csv",
@@ -897,7 +897,7 @@
         "note": ""
       },
       "label": "Terrano et al. 2015",
-      "display_label": "Terrano et al. 2015"
+      "display_label": "Terrano 2015"
     },
     {
       "id": "910wineland-1991-m-abs-en-csv",
@@ -934,7 +934,7 @@
         "note": ""
       },
       "label": "Wineland et al. 1991",
-      "display_label": "Wineland et al. 1991"
+      "display_label": "Wineland 1991"
     },
     {
       "id": "1agnpgnscombined1-m-abs-csv",
@@ -1105,7 +1105,7 @@
         "note": ""
       },
       "label": "Ayres et al. 2023",
-      "display_label": "Ayres et al. 2023"
+      "display_label": "Ayres 2023"
     },
     {
       "id": "910feng-2022-m-abs-nn-csv",
@@ -1142,7 +1142,7 @@
         "note": ""
       },
       "label": "Feng et al. 2022",
-      "display_label": "Feng et al. 2022"
+      "display_label": "Feng 2022"
     },
     {
       "id": "910guigue-2015-m-abs-nn-csv",
@@ -1179,7 +1179,7 @@
         "note": ""
       },
       "label": "Guigue et al. 2015",
-      "display_label": "Guigue et al. 2015"
+      "display_label": "Guigue 2015"
     },
     {
       "id": "910lee-2018-2-m-abs-nn-csv",
@@ -1216,7 +1216,7 @@
         "note": ""
       },
       "label": "Lee et al. 2018",
-      "display_label": "Lee et al. 2018"
+      "display_label": "Lee 2018"
     },
     {
       "id": "910tullney-2013-m-abs-nn-csv",
@@ -1253,7 +1253,7 @@
         "note": ""
       },
       "label": "Tullney et al. 2013",
-      "display_label": "Tullney et al. 2013"
+      "display_label": "Tullney 2013"
     },
     {
       "id": "910venema-1992-m-abs-nn-csv",
@@ -1290,7 +1290,7 @@
         "note": ""
       },
       "label": "Venema et al. 1992",
-      "display_label": "Venema et al. 1992"
+      "display_label": "Venema 1992"
     },
     {
       "id": "910voronin-2009-m-abs-nn-csv",
@@ -1327,7 +1327,7 @@
         "note": ""
       },
       "label": "Voronin et al. 2009",
-      "display_label": "Voronin et al. 2009"
+      "display_label": "Voronin 2009"
     },
     {
       "id": "910wu-2023-m-abs-nn-csv",
@@ -1364,7 +1364,7 @@
         "note": ""
       },
       "label": "L. Y. Wu et al. 2023",
-      "display_label": "L. Y. Wu et al. 2023"
+      "display_label": "Wu 2023"
     },
     {
       "id": "910zhang-2023-m-abs-nn-csv",
@@ -1401,7 +1401,7 @@
         "note": ""
       },
       "label": "Zhang et al. 2023",
-      "display_label": "Zhang et al. 2023"
+      "display_label": "Zhang 2023"
     },
     {
       "id": "910baruch-2024-abs-m-nn-csv",
@@ -1438,7 +1438,7 @@
         "note": ""
       },
       "label": "Baruch et al. 2024",
-      "display_label": "Baruch et al. 2024"
+      "display_label": "Baruch 2024"
     },
     {
       "id": "1agppgnscombined1-m-abs-csv",
@@ -1609,7 +1609,7 @@
         "note": ""
       },
       "label": "Guigue et al. 2015",
-      "display_label": "Guigue et al. 2015"
+      "display_label": "Guigue 2015"
     },
     {
       "id": "910lee-2018-2-m-abs-pn-csv",
@@ -1646,7 +1646,7 @@
         "note": ""
       },
       "label": "Lee et al. 2018",
-      "display_label": "Lee et al. 2018"
+      "display_label": "Lee 2018"
     },
     {
       "id": "910safronova-2018-kimball-m-abs-pn-csv",
@@ -1699,7 +1699,7 @@
         "note": "Primary result linked together with the conversion source."
       },
       "label": "Jackson Kimball et al. 2017",
-      "display_label": "Jackson Kimball et al. 2017",
+      "display_label": "Kimball 2017",
       "context_note": "This curve presents the primary experimental result as converted to the gₚgₛ framework in Safronova et al. (2018)."
     },
     {
@@ -1753,7 +1753,7 @@
         "note": "Primary result linked together with the conversion source."
       },
       "label": "Youdin et al. 1996",
-      "display_label": "Youdin et al. 1996",
+      "display_label": "Youdin 1996",
       "context_note": "This curve presents the primary experimental result as converted to the gₚgₛ framework in Safronova et al. (2018)."
     },
     {
@@ -1791,7 +1791,7 @@
         "note": ""
       },
       "label": "Stadnik & Flambaum 2015",
-      "display_label": "Stadnik & Flambaum 2015"
+      "display_label": "Stadnik 2015"
     }
   ]
 }

@@ -430,10 +430,6 @@
         "label": "3Cong_2025_m_ep_gpgp_95CL"
       },
       {
-        "path": "Dataset/normalized/gpgp/lepton-nucleon/3Cong_2025_m_ep_gpgp_90CL.csv",
-        "label": "3Cong_2025_m_ep_gpgp_90CL"
-      },
-      {
         "path": "Dataset/normalized/gpgp/lepton-nucleon/Almasi_2020_m_abs_en.csv",
         "label": "Almasi_2020_m_abs_en"
       },
@@ -490,8 +486,8 @@
         "label": "3Fadeev_2022_3_m_abs_emubar"
       },
       {
-        "path": "Dataset/normalized/gpgp/lepton-lepton/3Terrano_2015_m_abs_eN.csv",
-        "label": "3Terrano_2015_m_abs_eN"
+        "path": "Dataset/normalized/gpgp/lepton-lepton/3Terrano_2015_m_abs_ee.csv",
+        "label": "3Terrano_2015_m_abs_ee"
       }
     ]
   },
@@ -744,10 +740,6 @@
       {
         "path": "Dataset/normalized/gsgs/gs_squareV1bounds/V1_gsN_Torsion.csv",
         "label": "V1_gsN_Torsion"
-      },
-      {
-        "path": "Dataset/normalized/gsgs/gs_squareV1bounds/V1_gse_EMM.csv",
-        "label": "V1_gse_EMM"
       },
       {
         "path": "Dataset/normalized/gsgs/gs_squareV1bounds/V1_gse_Casimir.csv",
@@ -1060,8 +1052,8 @@
         "label": "WEP_NN"
       },
       {
-        "path": "Dataset/normalized/V1/V1_gsgs_data/Salumbides_2018_p_N.csv",
-        "label": "Salumbides_2018_p_N"
+        "path": "Dataset/normalized/V1/V1_gsgs_data/Salumbides_2014_p_N.csv",
+        "label": "Salumbides_2014_p_N"
       },
       {
         "path": "Dataset/normalized/V1/V1_gsgs_data/Delaunay_2017.csv",
@@ -1108,8 +1100,8 @@
         "label": "Neutron_scattering"
       },
       {
-        "path": "Dataset/normalized/V1/V1_gsgs_data/Salumbides_2018_mu_N.csv",
-        "label": "Salumbides_2018_mu_N"
+        "path": "Dataset/normalized/V1/V1_gsgs_data/Salumbides_2014_mu_N.csv",
+        "label": "Salumbides_2014_mu_N"
       }
     ],
     "V1_alpha_data": [

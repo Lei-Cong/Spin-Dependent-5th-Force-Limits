@@ -173,12 +173,15 @@
 </footer>
 
 <script>
-const MANIFEST_PATH = "./datasets_multi.json?v=20260723-gpgs1";
+const MANIFEST_PATH = "./datasets_multi.json?v=20260723-remaining1";
 const METADATA_PATHS = {
-  gAgV: "./metadata/generated/gAgV-constraints.json",
+  gAgV: "./metadata/generated/gAgV-constraints.json?v=20260723-pair-colors2",
   gAgA: "./metadata/generated/gAgA-constraints.json",
   gVgV: "./metadata/generated/gVgV-constraints.json",
-  gpgs: "./metadata/gpgs_records.json?v=20260723-gpgs1"
+  gpgs: "./metadata/gpgs_records.json?v=20260723-pair-colors2",
+  gpgp: "./metadata/gpgp_records.json?v=20260723-remaining2",
+  gsgs: "./metadata/gsgs_records.json?v=20260723-remaining2",
+  V1: "./metadata/V1_records.json?v=20260723-remaining2"
 };
 
 const AXIS_CONFIG = {
@@ -186,7 +189,12 @@ const AXIS_CONFIG = {
     x: [1e-14, 1e14],
     y: { min: "auto", max: 1e10 }
   },
-  overrides: {}
+  overrides: {
+    V1: {
+      V1_gsgs_data: { x:[1e-16, 1e18] },
+      V1_alpha_data: { x:[1e-21, 1e2] }
+    }
+  }
 };
 
 const GROUP_Y_RANGES = {
@@ -201,7 +209,11 @@ const GROUP_Y_RANGES = {
 const CHART_Y_RANGES = {
   "gAgV/nucleon-nucleon": [1e-60, 1e0],
   "gAgA/lepton-lepton": [1e-50, 1e3],
-  "gAgA/nucleon-nucleon": [1e-50, 1e3]
+  "gAgA/nucleon-nucleon": [1e-50, 1e3],
+  "gpgs/lepton-lepton": [1e-40, 1e-10],
+  "gpgs/nucleon-nucleon": [1e-40, 1e-2],
+  "V1/V1_gsgs_data": [1e-50, 1e0],
+  "V1/V1_alpha_data": [1e-6, 1e40]
 };
 
 async function fetchText(url){
@@ -421,6 +433,12 @@ function renderMetadata(dataset){
         ? "g<sub>V</sub>g<sub>V</sub>"
         : current === "gpgs"
           ? "g<sub>p</sub>g<sub>s</sub>"
+          : current === "gpgp"
+            ? "g<sub>p</sub>g<sub>p</sub>"
+            : current === "gsgs"
+              ? "g<sub>s</sub>g<sub>s</sub>"
+              : current === "V1"
+                ? "<i>V</i><sub>1</sub>"
         : "g<sub>A</sub>g<sub>V</sub>";
     panel.innerHTML = `<span class="metadata-kicker">Literature-linked data</span><h3>Select a ${couplingMarkup} constraint</h3><p class="metadata-note">Click a curve, legend item, or constraint name to inspect its method, publication, DOI, and downloadable data.</p>`;
     return;
@@ -442,7 +460,7 @@ function renderMetadata(dataset){
     </div>
     <div class="metadata-body">
       <dl class="metadata-grid">
-        <dt>Interaction potential</dt><dd>${potentialMarkup(record.potential)}</dd>
+        <dt>Interaction</dt><dd>${potentialMarkup(record.potential)}</dd>
         <dt>Fermion pair</dt><dd>${escapeHtml(canonicalPair(record.fermion_pair))}</dd>
         ${record.confidence_level ? `<dt>Confidence level</dt><dd>${escapeHtml(record.confidence_level)}</dd>` : ""}
         ${record.method.category !== "dedicated_source_sensor" || (!record.method.source && !record.method.sensor) ? `<dt>Method</dt><dd>${escapeHtml(humanize(record.method.technique))}</dd>` : ""}
@@ -602,9 +620,18 @@ const PAIR_COLORS = {
   "n-n":"#566f9e",
   "e-e+":"#a45e9a",
   "e-mu+":"#6656a8",
+  "mu-mu":"#2f778f",
+  "mu-N":"#a35f2d",
   "e-pbar":"#bb5d3b",
   "e+-pbar":"#9b4f67"
 };
+
+const UNIVERSAL_COLORS = ["#1479a8","#c24f3d","#4b7f2a","#7b61a8","#d17316","#9b4f67","#2f778f","#a35f2d","#566f9e","#188878"];
+function stableDatasetColor(dataset){
+  let hash=0;
+  for(const char of dataset.id || dataset.path) hash=(hash*31+char.charCodeAt(0))>>>0;
+  return UNIVERSAL_COLORS[hash % UNIVERSAL_COLORS.length];
+}
 
 function potentialLineStyles(datasets){
   const counts = {};
@@ -629,9 +656,20 @@ function curveStyle(dataset, potentialStyles){
   if (tags.v1Comparison) return { color:"#596168", dash:"dashdot" };
   if (tags.astrophysical || tags.cosmological) return { color:"#a3aaaf", dash:"solid" };
   return {
-    color: PAIR_COLORS[tags.pair] || "#287a94",
+    color: tags.pair === "universal" ? stableDatasetColor(dataset) : (PAIR_COLORS[tags.pair] || "#287a94"),
     dash: potentialStyles[tags.potential] || "dashdot"
   };
+}
+
+function legendName(dataset){
+  const tags = datasetTags(dataset);
+  if (tags.combined) return `Combined · ${tags.pair}`;
+  if (tags.astrophysical) return `Astrophysical · ${tags.pair}`;
+  if (tags.cosmological) return `Cosmological · ${tags.pair}`;
+  const record = metadataByPath.get(dataset.path);
+  const shortLabel = record?.display_label || dataset.name.split(" · ")[0];
+  if (tags.pair === "universal") return shortLabel;
+  return `${shortLabel} · ${tags.pair}`;
 }
 
 function safeFilename(value){
@@ -790,7 +828,7 @@ function buildChartCard(groupKey, subfolder, datasets){
     if (combinedLegendGroup) seenCombinedLegendGroups.add(combinedLegendGroup);
 
     return {
-      name: tags.combined ? `Combined · ${tags.pair}` : d.name,
+      name: legendName(d),
       legendgroup: combinedLegendGroup || undefined,
       showlegend,
       x: d.x,
@@ -831,7 +869,7 @@ function buildChartCard(groupKey, subfolder, datasets){
     yaxis:{
       type:"log",
       range:[Math.log10(yRange[0]), Math.log10(yRange[1])],
-      title:{text:"Limit"},
+      title:{text:groupKey === "V1" && subfolder === "V1_alpha_data" ? "|α|" : groupKey === "V1" && subfolder === "V1_gsgs_data" ? "|g<sub>s</sub>g<sub>s</sub>|" : "Limit"},
       tickmode:"array",
       tickvals:yTicks.tickvals,
       ticktext:yTicks.ticktext,
@@ -882,7 +920,7 @@ function buildChartCard(groupKey, subfolder, datasets){
   const potentials = [...new Set(datasets.map(dataset => datasetTags(dataset).potential))]
     .filter(value => !["combined","other","astrophysical","cosmological","V1"].includes(value));
   const pairs = [...new Set(datasets.map(dataset => datasetTags(dataset).pair))]
-    .filter(value => value !== "other");
+    .filter(value => value !== "other" && value !== "universal");
   const filterRows = [
     { label:"Potential", specs:potentials.map(value => ({ key:`potential:${value}`, label:value, kind:"potential", visual:potentialStyles[value] })) },
     { label:"Fermion pair", specs:pairs.map(value => ({ key:`pair:${value}`, label:value, kind:"pair", visual:PAIR_COLORS[value] })) },
