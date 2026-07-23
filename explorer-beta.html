@@ -47,6 +47,8 @@
   .metadata-head-actions{display:flex;gap:.35rem}
   .metadata-icon-button{width:1.85rem;height:1.85rem;border:1px solid #b9cbd2;border-radius:7px;background:#fff;color:#145f75;font-weight:800;cursor:pointer;line-height:1}
   .metadata-icon-button:hover{background:#eaf4f6}
+  .metadata-record-link{display:inline-flex;border:0;background:transparent;color:#55717d;padding:0;font:600 .78rem/1.4 "DM Sans",sans-serif;cursor:pointer;text-align:left}
+  .metadata-record-link:hover{color:#0b647e;text-decoration:underline}
   .metadata-panel.collapsed .metadata-body{display:none}
   .metadata-panel.collapsed{padding:.75rem 1rem}
   .metadata-panel.collapsed .metadata-head h3{margin-bottom:.15rem}
@@ -127,11 +129,10 @@
       <div><span class="metadata-kicker">Full constraint record</span><h2>Check or correct this information</h2></div>
       <button type="button" id="metadata-dialog-close" class="metadata-icon-button" aria-label="Close full record">×</button>
     </div>
-    <p class="metadata-note">If anything is incomplete or incorrect, copy the complete record below and email it to <strong>congllzu@gmail.com</strong> using the fixed subject provided.</p>
+    <p class="metadata-note">If anything is incomplete or incorrect, copy the complete record below and email it to <strong>congllzu@gmail.com</strong> using the subject “Correction/Question about SD5thF dataset”.</p>
     <pre id="metadata-full-record"></pre>
     <div class="metadata-dialog-actions">
       <button type="button" id="metadata-copy-record">Copy complete record</button>
-      <a id="metadata-email-link" href="mailto:congllzu@gmail.com?subject=SD5thF%20constraint%20metadata%20feedback">Email metadata feedback ↗</a>
     </div>
   </div>
 </dialog>
@@ -357,7 +358,6 @@ function renderMetadata(dataset){
     <div class="metadata-head">
       <div><span class="metadata-kicker">Constraint record</span><h3>${escapeHtml(recordTitle)}</h3></div>
       <div class="metadata-head-actions">
-        <button type="button" id="metadata-info" class="metadata-icon-button" aria-label="View complete record and report a correction" title="Full record and corrections">?</button>
         <button type="button" id="metadata-collapse" class="metadata-icon-button" aria-label="${metadataCollapsed ? "Expand" : "Collapse"} constraint card" aria-expanded="${String(!metadataCollapsed)}">${metadataCollapsed ? "⌄" : "⌃"}</button>
       </div>
     </div>
@@ -373,6 +373,7 @@ function renderMetadata(dataset){
       ${references}
       <div class="metadata-actions"><a href="./${escapeHtml(record.data_file)}" download>Download CSV ↓</a><a href="https://doi.org/10.1103/RevModPhys.97.025005" target="_blank" rel="noopener">Read the RMP review ↗</a></div>
       <p class="metadata-note">${escapeHtml(METADATA.notice)}</p>
+      <button type="button" id="metadata-info" class="metadata-record-link">Something incomplete or incorrect? View full record →</button>
     </div>`;
   bindMetadataControls(record);
 }
