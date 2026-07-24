@@ -4,10 +4,17 @@ title: Experimental Methods
 description: Browse established experimental methods, linked SD5thF constraint records, and emerging approaches in spin-dependent fifth-force research.
 ---
 
-<section class="methods-hero methods-hero-compact">
-  <span class="eyebrow">Methods &amp; emerging approaches</span>
-  <h1>Experimental systems for spin-dependent fifth-force searches</h1>
-  <p>A concise, data-linked guide to established techniques—and new approaches shaping the next generation of searches.</p>
+<section class="methods-hero methods-hero-hybrid">
+  <span class="eyebrow">Experimental landscape</span>
+  <h1>How spin-dependent fifth forces are searched for</h1>
+  <p>Enter the field through the experimental architecture: what produces the possible interaction, what senses it, and which new ideas may extend the search.</p>
+  <div class="methods-path" aria-label="How experiments map to database constraints">
+    <div><small>01</small><strong>Source</strong><span>Generate or modulate the interaction</span></div>
+    <b aria-hidden="true">→</b>
+    <div><small>02</small><strong>Sensor</strong><span>Measure a spin-dependent response</span></div>
+    <b aria-hidden="true">→</b>
+    <div><small>03</small><strong>Constraint</strong><span>Limit a potential and coupling</span></div>
+  </div>
   <div class="methods-summary">
     <div><strong id="methods-record-total">…</strong><span>curated constraint records</span></div>
     <div><strong id="methods-paper-total">…</strong><span>linked publications</span></div>
@@ -24,34 +31,22 @@ description: Browse established experimental methods, linked SD5thF constraint r
     <p>Selected recent work that introduces a new experimental platform, extends a technique into a new interaction channel, or points toward substantially improved sensitivity.</p>
   </div>
 
-  <div class="emerging-grid">
-    <article>
-      <span class="emerging-state is-data">Constraint data available</span>
-      <h3>Polarized-atom interferometry</h3>
-      <p>Uses internal-state differential acceleration measurements to probe spin- and velocity-dependent interactions over terrestrial length scales.</p>
-      <div class="emerging-paper"><strong>Shu et al. 2024</strong><span>Phys. Rev. Lett. <b>133</b>, 213401</span></div>
-      <a href="https://doi.org/10.1103/PhysRevLett.133.213401">Open publication ↗</a>
-    </article>
-    <article>
-      <span class="emerging-state is-data">Constraint data available</span>
-      <h3>Spin-mechanical quantum chips</h3>
-      <p>Combines a solid-state spin sensor with a mechanically modulated source in a compact, short-range search architecture.</p>
-      <div class="emerging-paper"><strong>Wu et al. 2023</strong><span>Proc. Natl. Acad. Sci. <b>120</b>, e2302145120</span></div>
-      <a href="https://doi.org/10.1073/pnas.2302145120">Open publication ↗</a>
-    </article>
-    <article>
-      <span class="emerging-state is-data">Constraint data available</span>
-      <h3>Quantum spin amplifiers</h3>
-      <p>Employs coupled spin ensembles to amplify weak pseudomagnetic signals while retaining narrow-band precision.</p>
-      <div class="emerging-paper"><strong>Wang et al. 2023</strong><span>Science Advances <b>9</b>, eade0353</span></div>
-      <a href="https://doi.org/10.1126/sciadv.ade0353">Open publication ↗</a>
-    </article>
-    <article class="emerging-feature">
-      <span class="emerging-state">Literature highlight</span>
+  <div class="emerging-grid emerging-grid-hybrid emerging-grid-two">
+    <article class="emerging-feature emerging-lead">
+      <span class="emerging-state">Latest highlight · 2026</span>
+      <div class="emerging-number">01</div>
       <h3>Polar diatomic molecules</h3>
       <p>Connects molecular parity-violation spectroscopy with new vector-boson-mediated electron–nucleus interactions and future cold-molecule searches.</p>
       <div class="emerging-paper"><strong>Gaul, Cong &amp; Budker 2026</strong><span>Phys. Rev. Lett. <b>136</b>, 181805</span></div>
       <a href="https://doi.org/10.1103/d19m-s856">Open publication ↗</a>
+    </article>
+    <article>
+      <span class="emerging-state is-data">Constraint data available</span>
+      <div class="emerging-number">02</div>
+      <h3>Polarized-atom interferometry</h3>
+      <p>Uses internal-state differential acceleration measurements to probe spin- and velocity-dependent interactions over terrestrial length scales.</p>
+      <div class="emerging-paper"><strong>Shu et al. 2024</strong><span>Phys. Rev. Lett. <b>133</b>, 213401</span></div>
+      <a href="https://doi.org/10.1103/PhysRevLett.133.213401">Open publication ↗</a>
     </article>
   </div>
 </section>
@@ -90,6 +85,39 @@ description: Browse established experimental methods, linked SD5thF constraint r
     <small>Polarized atoms and natural source masses</small>
   </a>
 </nav>
+
+<section class="method-spotlight method-spotlight-compact">
+  <div class="spotlight-heading">
+    <div>
+      <span class="eyebrow">Established method · example</span>
+      <h2>Moving-mass source with an optically polarized vapor</h2>
+    </div>
+    <div class="method-status"><span></span>Linked to current metadata</div>
+  </div>
+
+  <div class="method-profile-grid">
+    <article class="method-principle">
+      <span class="card-index">METHOD AT A GLANCE</span>
+      <h3>A controlled source paired with an atomic spin sensor</h3>
+      <p>A nearby mass is translated or rotated while an optically polarized atomic vapor searches for a correlated spin response. This source–sensor architecture is represented by both single-magnetometer and sensor-array experiments.</p>
+      <div class="spotlight-papers">
+        <a href="https://doi.org/10.1038/s41467-019-10169-1"><strong>Kim et al. 2019</strong><span>Translated BGO source · atomic-vapor magnetometer</span></a>
+        <a href="https://doi.org/10.1103/PhysRevLett.129.051802"><strong>Wu et al. 2022</strong><span>Rotating source masses · magnetometer array</span></a>
+      </div>
+    </article>
+    <aside class="method-metadata">
+      <span class="card-index">CURATED TAGS</span>
+      <dl>
+        <div><dt>Source</dt><dd>Moving unpolarized mass</dd></div>
+        <div><dt>Sensor</dt><dd>Optically polarized vapor</dd></div>
+        <div><dt>Interaction</dt><dd>\(V_{12+13}\)</dd></div>
+        <div><dt>Fermion pair</dt><dd>electron–nucleon</dd></div>
+        <div><dt>Explore</dt><dd>\(g_A^e g_V^N\) constraints</dd></div>
+      </dl>
+      <a class="spotlight-explore" href="{{ '/explorer-beta.html' | relative_url }}">Open related limits →</a>
+    </aside>
+  </div>
+</section>
 
 <section class="method-catalogue">
   <div class="methods-intro">
