@@ -10,7 +10,7 @@ preload_explorer: true
     <h1>A shared platform for <em>spin-dependent forces</em> beyond the Standard Model.</h1>
     <p>Explore experimental limits, follow the research landscape, and connect with the people advancing exotic-interaction searches.</p>
     <div class="button-row">
-      <a class="button button-primary" href="{{ '/explorer-beta.html' | relative_url }}">Open Limit Explorer Beta <span aria-hidden="true">→</span></a>
+      <a class="button button-primary" href="{{ '/explorer-beta.html' | relative_url }}">Open Limit Explorer <span aria-hidden="true">→</span></a>
       <a class="button button-secondary" href="{{ '/Datasets.html' | relative_url }}">Browse the data</a>
     </div>
   </div>
@@ -42,8 +42,25 @@ preload_explorer: true
         <li>Filter by dataset or experimental system</li>
         <li>Upload a two-column dataset for comparison</li>
       </ul>
-      <a class="text-link" href="{{ '/explorer-beta.html' | relative_url }}">Launch the beta explorer →</a>
+      <a class="text-link" href="{{ '/explorer-beta.html' | relative_url }}">Launch the Limit Explorer →</a>
     </div>
+  </div>
+</section>
+
+<section class="api-panel" aria-labelledby="api-panel-title">
+  <div class="api-panel-copy">
+    <span class="eyebrow">Open research infrastructure</span>
+    <h2 id="api-panel-title">Built for people, software, and automated scientific workflows.</h2>
+    <p>SD5<sup>th</sup>F is more than a collection of downloadable curves. Its versioned, machine-readable records connect numerical constraints to interaction potentials, fermion pairs, experimental methods, and primary literature.</p>
+    <div class="button-row">
+      <a class="button button-primary" href="{{ '/api/' | relative_url }}">API &amp; documentation →</a>
+      <a class="button button-secondary" href="{{ '/api/v1/index.json' | relative_url }}">Open API v1</a>
+    </div>
+  </div>
+  <div class="api-capabilities" aria-label="API capabilities">
+    <div><strong>Versioned API</strong><span>Stable v1 endpoints for programmatic access</span></div>
+    <div><strong>Linked metadata</strong><span>Methods, publications, DOI links, and review context</span></div>
+    <div><strong>Reproducible reuse</strong><span>Structured records for analysis tools and automated agents</span></div>
   </div>
 </section>
 
