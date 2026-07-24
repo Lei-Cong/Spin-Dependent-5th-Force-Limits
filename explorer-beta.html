@@ -319,6 +319,10 @@ let METADATA_BY_COUPLING = {};
 let metadataByPath = new Map();
 let metadataCollapsed = false;
 let activeRecordText = "";
+const DEEP_LINK_PARAMS = new URLSearchParams(window.location.search);
+const DEEP_LINK_COUPLING = DEEP_LINK_PARAMS.get("coupling");
+const DEEP_LINK_DATASET = DEEP_LINK_PARAMS.get("dataset");
+if (DEEP_LINK_COUPLING && METADATA_PATHS[DEEP_LINK_COUPLING]) current = DEEP_LINK_COUPLING;
 
 function updateSidebarPinning(){
   const side = document.getElementById("side");
@@ -951,6 +955,12 @@ function buildChartCard(groupKey, subfolder, datasets){
       highlightTrace(chartId, ds.id);
       renderMetadata(ds);
     });
+    const linkedDataset = datasets.find(dataset => dataset.path === DEEP_LINK_DATASET);
+    if (linkedDataset){
+      highlightTrace(chartId, linkedDataset.id);
+      renderMetadata(linkedDataset);
+      requestAnimationFrame(() => card.scrollIntoView({ behavior:"smooth", block:"start" }));
+    }
   });
 
   const bar = document.createElement("div");
@@ -1313,6 +1323,9 @@ document.querySelectorAll(".btn").forEach(btn => {
 
 (async function main(){
   try{
+    document.querySelectorAll(".controls .btn[data-group]").forEach(button => {
+      button.classList.toggle("active", button.dataset.group === current);
+    });
     document.getElementById("charts").innerHTML = `<div class="hint">Loading ${current}...</div>`;
     await loadMetadataIfNeeded();
     await loadGroupIfNeeded(current);

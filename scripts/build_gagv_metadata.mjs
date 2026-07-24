@@ -102,7 +102,7 @@ const sourceMap = {
   "Su_2021": { key: "su_search_2021", category: "dedicated_source_sensor", technique: "spin_based_amplifier", source: "polarized_spin_source", sensor: "spin_based_amplifier" },
   "Wu_2023": { key: "wu_new_2023", category: "dedicated_source_sensor", technique: "solar_lunar_source_comagnetometer_reanalysis", source: "sun_and_moon", sensor: "dual_species_comagnetometers" },
   "Yan_2013": { key: "yan_new_2013", category: "dedicated_source_sensor", technique: "neutron_spin_rotation", source: "bulk_matter", sensor: "neutron_spin_rotation" },
-  "Yan_2015": { key: "yan_searching_2015", category: "dedicated_source_sensor", technique: "polarized_helium_spin_relaxation", source: "cell_walls", sensor: "polarized_helium_spin_relaxation" }
+  "Yan_2015": { key: "yan_searching_2015", category: "dedicated_source_sensor", technique: "vapor_cell_spin_relaxation", source: "cell_walls", sensor: "polarized_vapor_cell" }
 };
 
 const pairNames = {

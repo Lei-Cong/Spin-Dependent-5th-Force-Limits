@@ -146,9 +146,12 @@ const records = datasets.map((dataset) => {
   const converted = conversions.find(([token]) => filename.includes(token));
   if (converted) {
     const [, key, label] = converted;
+    const magnetometerExperiment = /Kimball|Youdin/.test(filename);
     return { ...common, label, display_label:legendLabel(label), review_location:location,
       references:[publication(key), publication("safronova_search_2018")],
-      method:{ category:"complementary", technique:"converted primary experimental constraint", source:"", sensor:"" },
+      method:magnetometerExperiment
+        ? { category:"dedicated_source_sensor", technique:"magnetometer_experiment", source:"unpolarized_source_mass", sensor:"atomic_magnetometer" }
+        : { category:"complementary", technique:"converted primary experimental constraint", source:"", sensor:"" },
       context_note:"This curve presents the primary experimental result as converted to the gₚgₛ framework in Safronova et al. (2018).",
       curation:{ status:"curated", note:"Primary result linked together with the conversion source." } };
   }

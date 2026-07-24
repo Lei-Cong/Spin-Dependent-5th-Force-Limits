@@ -15,11 +15,6 @@ description: Browse established experimental methods, linked SD5thF constraint r
     <b aria-hidden="true">→</b>
     <div><small>03</small><strong>Constraint</strong><span>Limit a potential and coupling</span></div>
   </div>
-  <div class="methods-summary">
-    <div><strong id="methods-record-total">…</strong><span>curated constraint records</span></div>
-    <div><strong id="methods-paper-total">…</strong><span>linked publications</span></div>
-    <div><strong>RMP</strong><span>review-based taxonomy</span></div>
-  </div>
 </section>
 
 <section class="emerging-methods">
@@ -46,45 +41,40 @@ description: Browse established experimental methods, linked SD5thF constraint r
       <h3>Polarized-atom interferometry</h3>
       <p>Uses internal-state differential acceleration measurements to probe spin- and velocity-dependent interactions over terrestrial length scales.</p>
       <div class="emerging-paper"><strong>Shu et al. 2024</strong><span>Phys. Rev. Lett. <b>133</b>, 213401</span></div>
-      <a href="https://doi.org/10.1103/PhysRevLett.133.213401">Open publication ↗</a>
+      <div class="emerging-actions"><a href="https://doi.org/10.1103/PhysRevLett.133.213401">Open publication ↗</a><a href="{{ '/explorer-beta.html?coupling=gAgV&dataset=Dataset%2Fnormalized%2FgAgV%2Fnucleon-nucleon%2FV1213_Shu_2024_p-N.csv' | relative_url }}">View constraint →</a></div>
     </article>
   </div>
 </section>
 
 <section class="methods-intro methods-directory-heading">
-  <div>
-    <span class="eyebrow">Established methods</span>
-    <h2>Browse the experimental landscape</h2>
-  </div>
-  <p>Choose a method family to jump to the experiments already represented in the database. Individual records inherit their source, sensor, interaction, and publication links from the curated metadata.</p>
+  <div><span class="eyebrow">Established methods</span><h2>Two routes to an experimental constraint</h2></div>
+  <p>The directory follows the review’s distinction between dedicated source–sensor searches and complementary precision experiments.</p>
 </section>
 
-<nav class="method-directory method-directory-compact" aria-label="Experimental method families">
-  <a href="#atomic-spin">
-    <span>01 · Spin sensors</span><strong>Atomic spin sensors</strong>
-    <small>Magnetometers, comagnetometers, and spin amplifiers</small>
-  </a>
-  <a href="#solid-state">
-    <span>02 · Quantum sensors</span><strong>Solid-state sensors</strong>
-    <small>NV centers and spin-mechanical devices</small>
-  </a>
-  <a href="#mechanical">
-    <span>03 · Macroscopic tests</span><strong>Mechanical sensors</strong>
-    <small>Torsion pendula and polarized test bodies</small>
-  </a>
-  <a href="#neutron">
-    <span>04 · Neutron probes</span><strong>Neutron methods</strong>
-    <small>Spin rotation, diffraction, and interferometry</small>
-  </a>
-  <a href="#spectroscopy">
-    <span>05 · Precision observables</span><strong>Spectroscopy &amp; APV</strong>
-    <small>Atoms, molecules, ions, and parity violation</small>
-  </a>
-  <a href="#interferometry">
-    <span>06 · Matter waves</span><strong>Atom interferometry</strong>
-    <small>Polarized atoms and natural source masses</small>
-  </a>
-</nav>
+<section class="method-route">
+  <header><span>01</span><div><h3>Dedicated source–sensor experiments</h3><p>A physical source and a spin-sensitive detector are intentionally paired to search for an exotic interaction.</p></div></header>
+  <div class="source-sensor-summary">
+    <div><strong>Sources</strong><span>Moving or rotating masses</span><span>Polarized electron or nuclear spins</span><span>Earth and terrestrial matter</span><span>Bulk matter and cell walls</span></div>
+    <div><strong>Sensors</strong><span>Magnetometers and comagnetometers</span><span>Solid-state spin sensors</span><span>Torsion pendula</span><span>Vapor cells and particle beams</span></div>
+  </div>
+  <nav class="method-directory method-directory-route" aria-label="Dedicated source-sensor method families">
+    <a href="#dedicated-magnetic"><span>Magnetic readout</span><strong>Magnetometers &amp; spin amplifiers</strong></a>
+    <a href="#dedicated-solid"><span>Quantum sensors</span><strong>Solid-state sensors</strong></a>
+    <a href="#dedicated-mechanical"><span>Macroscopic readout</span><strong>Mechanical sensors</strong></a>
+    <a href="#dedicated-vapor"><span>Confined spins</span><strong>Vapor cells</strong></a>
+    <a href="#dedicated-beam"><span>Particle probes</span><strong>Beam &amp; particle sensors</strong></a>
+  </nav>
+</section>
+
+<section class="method-route method-route-complementary">
+  <header><span>02</span><div><h3>Complementary experiments</h3><p>Existing precision measurements are interpreted as constraints on exotic spin-dependent interactions.</p></div></header>
+  <nav class="method-directory method-directory-route complementary-directory" aria-label="Complementary method families">
+    <a href="#comp-atomic"><span>Bound systems</span><strong>Atomic systems</strong></a>
+    <a href="#comp-molecular"><span>Bound systems</span><strong>Molecular systems</strong></a>
+    <a href="#comp-trapped"><span>Controlled particles</span><strong>Trapped particles</strong></a>
+    <a href="#comp-other"><span>Other observables</span><strong>Additional precision systems</strong></a>
+  </nav>
+</section>
 
 <section class="method-spotlight method-spotlight-compact">
   <div class="spotlight-heading">
@@ -114,7 +104,7 @@ description: Browse established experimental methods, linked SD5thF constraint r
         <div><dt>Fermion pair</dt><dd>electron–nucleon</dd></div>
         <div><dt>Explore</dt><dd>\(g_A^e g_V^N\) constraints</dd></div>
       </dl>
-      <a class="spotlight-explore" href="{{ '/explorer-beta.html' | relative_url }}">Open related limits →</a>
+      <a class="spotlight-explore" href="{{ '/explorer-beta.html?coupling=gAgV&dataset=Dataset%2Fnormalized%2FgAgV%2Flepton-nucleon%2FV1213_Kim_2019_e-N.csv' | relative_url }}">Open related limits →</a>
     </aside>
   </div>
 </section>
@@ -127,34 +117,57 @@ description: Browse established experimental methods, linked SD5thF constraint r
     </div>
     <p>Repeated curves from the same publication and method are combined into one entry. Interaction and fermion-pair tags show which constraint records are currently connected.</p>
   </div>
+  <div class="catalogue-note">
+    <p><strong>This literature map is growing.</strong> More publications are being classified and added. If an experiment or method is missing, please <a href="mailto:congllzu@gmail.com?subject=Suggested%20reference%20for%20SD5thF%20methods">email Lei Cong</a> with the paper and a suggested category.</p>
+    <button type="button" id="expand-all-methods">Expand all references</button>
+  </div>
 
-  <article class="method-family" id="atomic-spin" data-method-family="atomic-spin">
-    <header><span>01</span><div><h3>Atomic spin sensors</h3><p>Atomic magnetometers, comagnetometers, optically polarized vapors, and spin amplifiers.</p></div><strong class="family-count">…</strong></header>
+  <div class="catalogue-division"><span>01</span><div><strong>Dedicated source–sensor experiments</strong><small>Organized by the sensor platform used to read out the source-generated signal.</small></div></div>
+
+  <article class="method-family" id="dedicated-magnetic" data-method-family="dedicated-magnetic">
+    <header><span>A</span><div><h3>Magnetometers and spin amplifiers</h3><p>Atomic magnetometers, comagnetometers, optically polarized vapors, and spin amplifiers.</p></div><strong class="family-count">…</strong></header>
     <div class="method-record-list"><p class="method-loading">Reading curated metadata…</p></div>
   </article>
 
-  <article class="method-family" id="solid-state" data-method-family="solid-state">
-    <header><span>02</span><div><h3>Solid-state and spin-mechanical sensors</h3><p>Single and ensemble NV centers, diamond sensors, and spin-mechanical quantum devices.</p></div><strong class="family-count">…</strong></header>
+  <article class="method-family" id="dedicated-solid" data-method-family="dedicated-solid">
+    <header><span>B</span><div><h3>Solid-state sensors</h3><p>Single and ensemble NV centers, diamond sensors, and spin-mechanical devices.</p></div><strong class="family-count">…</strong></header>
     <div class="method-record-list"><p class="method-loading">Reading curated metadata…</p></div>
   </article>
 
-  <article class="method-family" id="mechanical" data-method-family="mechanical">
-    <header><span>03</span><div><h3>Mechanical sensors and torsion experiments</h3><p>Spin-polarized torsion pendula, torsion balances, and related macroscopic tests.</p></div><strong class="family-count">…</strong></header>
+  <article class="method-family" id="dedicated-mechanical" data-method-family="dedicated-mechanical">
+    <header><span>C</span><div><h3>Mechanical sensors</h3><p>Spin-polarized torsion pendula, torsion balances, and related macroscopic tests.</p></div><strong class="family-count">…</strong></header>
     <div class="method-record-list"><p class="method-loading">Reading curated metadata…</p></div>
   </article>
 
-  <article class="method-family" id="neutron" data-method-family="neutron">
-    <header><span>04</span><div><h3>Neutron methods</h3><p>Neutron spin rotation, spin relaxation, diffraction, and neutron interferometry.</p></div><strong class="family-count">…</strong></header>
+  <article class="method-family" id="dedicated-vapor" data-method-family="dedicated-vapor">
+    <header><span>D</span><div><h3>Vapor cells</h3><p>Spin relaxation and related measurements using polarized gases in vapor cells.</p></div><strong class="family-count">…</strong></header>
     <div class="method-record-list"><p class="method-loading">Reading curated metadata…</p></div>
   </article>
 
-  <article class="method-family" id="spectroscopy" data-method-family="spectroscopy">
-    <header><span>05</span><div><h3>Spectroscopy, trapped ions, and atomic parity violation</h3><p>Precision observables reinterpreted as constraints on exotic interactions.</p></div><strong class="family-count">…</strong></header>
+  <article class="method-family" id="dedicated-beam" data-method-family="dedicated-beam">
+    <header><span>E</span><div><h3>Beam and particle sensors</h3><p>Neutron-spin rotation and other dedicated particle-based source–sensor measurements.</p></div><strong class="family-count">…</strong></header>
     <div class="method-record-list"><p class="method-loading">Reading curated metadata…</p></div>
   </article>
 
-  <article class="method-family" id="interferometry" data-method-family="interferometry">
-    <header><span>06</span><div><h3>Atom interferometry</h3><p>Matter-wave measurements using polarized atoms and terrestrial source masses.</p></div><strong class="family-count">…</strong></header>
+  <div class="catalogue-division catalogue-division-complementary"><span>02</span><div><strong>Complementary experiments</strong><small>Organized by the atomic, molecular, or trapped system that supplies the precision observable.</small></div></div>
+
+  <article class="method-family" id="comp-atomic" data-method-family="comp-atomic">
+    <header><span>A</span><div><h3>Atomic systems</h3><p>Atomic spectroscopy, parity violation, fine and hyperfine structure, and collision observables.</p></div><strong class="family-count">…</strong></header>
+    <div class="method-record-list"><p class="method-loading">Reading curated metadata…</p></div>
+  </article>
+
+  <article class="method-family" id="comp-molecular" data-method-family="comp-molecular">
+    <header><span>B</span><div><h3>Molecular systems</h3><p>Molecular spectroscopy, molecular rulers, and molecular-beam measurements.</p></div><strong class="family-count">…</strong></header>
+    <div class="method-record-list"><p class="method-loading">Reading curated metadata…</p></div>
+  </article>
+
+  <article class="method-family" id="comp-trapped" data-method-family="comp-trapped">
+    <header><span>C</span><div><h3>Trapped particles</h3><p>Trapped ions and other confined-particle precision measurements.</p></div><strong class="family-count">…</strong></header>
+    <div class="method-record-list"><p class="method-loading">Reading curated metadata…</p></div>
+  </article>
+
+  <article class="method-family" id="comp-other" data-method-family="comp-other">
+    <header><span>D</span><div><h3>Additional precision systems</h3><p>Complementary laboratory measurements not covered by the three bound-system groups above.</p></div><strong class="family-count">…</strong></header>
     <div class="method-record-list"><p class="method-loading">Reading curated metadata…</p></div>
   </article>
 </section>
@@ -168,13 +181,13 @@ description: Browse established experimental methods, linked SD5thF constraint r
 <script>
 (() => {
   const files = [
-    "{{ '/metadata/generated/gAgV-constraints.json' | relative_url }}",
-    "{{ '/metadata/generated/gAgA-constraints.json' | relative_url }}",
-    "{{ '/metadata/generated/gVgV-constraints.json' | relative_url }}",
-    "{{ '/metadata/gpgs_records.json' | relative_url }}",
-    "{{ '/metadata/gpgp_records.json' | relative_url }}",
-    "{{ '/metadata/gsgs_records.json' | relative_url }}",
-    "{{ '/metadata/V1_records.json' | relative_url }}"
+    { coupling:"gAgV", path:"{{ '/metadata/generated/gAgV-constraints.json' | relative_url }}" },
+    { coupling:"gAgA", path:"{{ '/metadata/generated/gAgA-constraints.json' | relative_url }}" },
+    { coupling:"gVgV", path:"{{ '/metadata/generated/gVgV-constraints.json' | relative_url }}" },
+    { coupling:"gpgs", path:"{{ '/metadata/gpgs_records.json' | relative_url }}" },
+    { coupling:"gpgp", path:"{{ '/metadata/gpgp_records.json' | relative_url }}" },
+    { coupling:"gsgs", path:"{{ '/metadata/gsgs_records.json' | relative_url }}" },
+    { coupling:"V1", path:"{{ '/metadata/V1_records.json' | relative_url }}" }
   ];
 
   const labels = {
@@ -196,7 +209,9 @@ description: Browse established experimental methods, linked SD5thF constraint r
     earth_source_spin_velocity_experiment: "Earth-source spin–velocity experiment",
     polarized_mass_equivalence_test: "Polarized-mass equivalence test",
     neutron_spin_rotation: "Neutron-spin rotation",
-    polarized_helium_spin_relaxation: "Polarized-helium spin relaxation",
+    polarized_helium_spin_relaxation: "Vapor-cell spin relaxation",
+    vapor_cell_spin_relaxation: "Vapor-cell spin relaxation",
+    magnetometer_experiment: "Magnetometer experiment",
     neutron_diffraction: "Neutron diffraction",
     neutron_interferometry: "Neutron interferometry",
     atomic_parity_violation: "Atomic parity violation",
@@ -214,60 +229,71 @@ description: Browse established experimental methods, linked SD5thF constraint r
     atom_interferometer: "Atom interferometer"
   };
 
-  const familyFor = technique => {
-    const value = technique || "";
-    if (value === "atom_interferometer") return "interferometry";
-    if (/nv|diamond|spin_mechanical|single_electron_spin/.test(value)) return "solid-state";
-    if (/torsion|earth_source_spin|geoelectron|polarized_mass_equivalence/.test(value)) return "mechanical";
-    if (/neutron|helium_spin_relaxation/.test(value)) return "neutron";
-    if (/spectros|parity|trapped_ion|fine_structure|hyperfine|molecular_beam|spin_exchange/.test(value)) return "spectroscopy";
-    if (/magnetometer|comagnetometer|polarized_vapor|spin_amplifier|spin_based_amplifier/.test(value)) return "atomic-spin";
+  const familyFor = (record, reference) => {
+    const method = record.method || {};
+    const value = method.technique || "";
+    const recordLabel = record.display_label || record.label || "";
+    if (/Kimball 2017|Youdin 1996/.test(recordLabel)) return "dedicated-magnetic";
+    if (value === "atom_interferometer") return "";
+    if (method.category === "dedicated_source_sensor" || /dedicated/.test(method.category || "")) {
+      if (/polarized_helium_spin_relaxation|vapor_cell_spin_relaxation/.test(value)) return "dedicated-vapor";
+      if (/nv|diamond|spin_mechanical|single_electron_spin/.test(value)) return "dedicated-solid";
+      if (/torsion|earth_source_spin|geoelectron|polarized_mass_equivalence/.test(value)) return "dedicated-mechanical";
+      if (/neutron_spin_rotation|trapped_ion/.test(value)) return "dedicated-beam";
+      return "dedicated-magnetic";
+    }
+    if (/trapped_ion|earth_ion|ion_spin_sensor/.test(value)) return "comp-trapped";
+    if (/molecular|antiprotonic/.test(value)) return "comp-molecular";
+    if (/atomic|hydrogen|helium|parity|fine_structure|hyperfine|spin_exchange|electron magnetic moment/.test(value)) return "comp-atomic";
+    if (/constraint|reinterpretation|neutron|diffraction|interferometry/.test(value)) return "comp-other";
     return "";
   };
 
   const escapeHTML = value => String(value || "").replace(/[&<>"']/g, character => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
   })[character]);
+  const humanize = value => String(value || "").replaceAll("_", " ").replace(/\b\w/g, character => character.toUpperCase());
 
-  Promise.all(files.map(path => fetch(path)
+  Promise.all(files.map(file => fetch(file.path)
     .then(response => response.ok ? response.json() : null)
-    .catch(() => null)))
+    .then(data => ({ coupling:file.coupling, data }))
+    .catch(() => ({ coupling:file.coupling, data:null }))))
     .then(payloads => {
-      const records = payloads.flatMap(data => {
+      const records = payloads.flatMap(payload => {
+        const data = payload.data;
         if (!data) return [];
-        if (Array.isArray(data)) return data;
-        return data.constraints || data.records || [];
+        const source = Array.isArray(data) ? data : (data.constraints || data.records || []);
+        return source.map(record => ({ ...record, _coupling:payload.coupling }));
       });
-
-      const publications = new Set();
-      records.forEach(record => (record.references || []).forEach(reference => {
-        if (reference.citation_key) publications.add(reference.citation_key);
-      }));
-      document.getElementById("methods-record-total").textContent = String(records.length);
-      document.getElementById("methods-paper-total").textContent = String(publications.size);
 
       const grouped = {};
       records.forEach(record => {
         const method = record.method || {};
-        const family = familyFor(method.technique);
-        if (!family) return;
         const reference = (record.references || [])[0] || {};
+        if (reference.citation_key === "cong_spin-dependent_2025" || /Cong et al\. 2025/.test(record.display_label || record.label || "")) return;
+        const family = familyFor(record, reference);
+        if (!family) return;
+        const correctedTechnique = /Kimball 2017|Youdin 1996/.test(record.display_label || record.label || "")
+          ? "magnetometer_experiment" : method.technique || "";
         const key = `${family}|${method.technique || ""}|${reference.citation_key || record.label || record.id}`;
         if (!grouped[key]) grouped[key] = {
           family,
-          technique: method.technique || "",
+          technique: correctedTechnique,
           source: method.source || "",
           sensor: method.sensor || "",
           title: reference.title || record.label || record.display_label || "Dataset record",
           citation: reference.short_citation || record.display_label || record.label || "",
           year: reference.year || "",
           url: reference.doi_url || reference.arxiv_url || reference.url || "",
-          tags: new Set()
+          targets: new Map()
         };
         const potential = record.potential && !/astrophysical|combined/i.test(record.potential) ? record.potential : "";
         const pair = record.fermion_pair || "";
-        const coupling = record.coupling || "";
-        if (potential || pair || coupling) grouped[key].tags.add([coupling, potential, pair].filter(Boolean).join(" · "));
+        const coupling = record._coupling || record.coupling || "";
+        if (potential || pair || coupling) {
+          const label = [coupling, potential, pair].filter(Boolean).join(" · ");
+          grouped[key].targets.set(label, { coupling, dataset:record.data_file });
+        }
       });
 
       document.querySelectorAll("[data-method-family]").forEach(section => {
@@ -282,9 +308,12 @@ description: Browse established experimental methods, linked SD5thF constraint r
           return;
         }
         list.innerHTML = entries.map(entry => {
-          const tags = [...entry.tags].slice(0, 6)
-            .map(tag => `<span>${escapeHTML(tag)}</span>`).join("");
-          const context = [entry.source && `Source: ${entry.source}`, entry.sensor && `Sensor: ${entry.sensor}`]
+          const tags = [...entry.targets.entries()].slice(0, 6)
+            .map(([tag, target]) => {
+              const href = `{{ '/explorer-beta.html' | relative_url }}?coupling=${encodeURIComponent(target.coupling)}&dataset=${encodeURIComponent(target.dataset)}`;
+              return `<a href="${escapeHTML(href)}" title="Open this constraint in the Limits Explorer">${escapeHTML(tag)} ↗</a>`;
+            }).join("");
+          const context = [entry.source && `Source: ${humanize(entry.source)}`, entry.sensor && `Sensor: ${humanize(entry.sensor)}`]
             .filter(Boolean).map(escapeHTML).join(" · ");
           const link = entry.url ? `<a href="${escapeHTML(entry.url)}">Publication ↗</a>` : "";
           return `<div class="method-record">
@@ -297,7 +326,35 @@ description: Browse established experimental methods, linked SD5thF constraint r
             </div>
             ${link}
           </div>`;
-        }).join("");
+        }).join("") + (entries.length > 3
+          ? `<button type="button" class="method-show-more" aria-expanded="false">Show ${entries.length - 3} more references</button>`
+          : "");
+        const rows = [...list.querySelectorAll(".method-record")];
+        rows.slice(3).forEach(row => row.hidden = true);
+        const showMore = list.querySelector(".method-show-more");
+        showMore?.addEventListener("click", () => {
+          const expanding = showMore.getAttribute("aria-expanded") !== "true";
+          rows.slice(3).forEach(row => row.hidden = !expanding);
+          showMore.setAttribute("aria-expanded", String(expanding));
+          showMore.textContent = expanding ? "Show fewer references" : `Show ${entries.length - 3} more references`;
+        });
+      });
+      document.getElementById("expand-all-methods")?.addEventListener("click", event => {
+        const expanding = event.currentTarget.getAttribute("aria-expanded") !== "true";
+        document.querySelectorAll(".method-record[hidden]").forEach(row => {
+          if (expanding) row.hidden = false;
+        });
+        document.querySelectorAll(".method-record-list").forEach(list => {
+          const rows = [...list.querySelectorAll(".method-record")];
+          if (!expanding) rows.slice(3).forEach(row => row.hidden = true);
+          const button = list.querySelector(".method-show-more");
+          if (button) {
+            button.setAttribute("aria-expanded", String(expanding));
+            button.textContent = expanding ? "Show fewer references" : `Show ${Math.max(0, rows.length - 3)} more references`;
+          }
+        });
+        event.currentTarget.setAttribute("aria-expanded", String(expanding));
+        event.currentTarget.textContent = expanding ? "Collapse all references" : "Expand all references";
       });
     });
 })();

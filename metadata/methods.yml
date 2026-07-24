@@ -35,6 +35,8 @@ techniques:
   solar_lunar_source_comagnetometer_reanalysis: Solar/lunar-source comagnetometer reanalysis
   neutron_spin_rotation: Neutron-spin rotation
   polarized_helium_spin_relaxation: Polarized-helium spin relaxation
+  vapor_cell_spin_relaxation: Vapor-cell spin relaxation
+  magnetometer_experiment: Magnetometer experiment
   casimir: Casimir constraints combined with astrophysical bounds
   eep: Equivalence-principle constraints combined with astrophysical bounds
   emm: Electron-magnetic-moment constraints combined with astrophysical bounds
@@ -72,3 +74,5 @@ sensor_keywords:
   dual_species_comagnetometers: Dual-species comagnetometers
   neutron_spin_rotation: Neutron-spin rotation
   polarized_helium_spin_relaxation: Polarized-helium spin relaxation
+  polarized_vapor_cell: Polarized vapor cell
+  atomic_magnetometer: Atomic magnetometer

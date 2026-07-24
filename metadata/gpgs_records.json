@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T19:29:25.225Z",
+  "generated_at": "2026-07-24T14:25:21.924Z",
   "notice": "Constraint values use the standardized conventions of the RMP review; individual records link the relevant primary literature where available.",
   "records": [
     {
@@ -1698,10 +1698,10 @@
         }
       ],
       "method": {
-        "category": "complementary",
-        "technique": "converted primary experimental constraint",
-        "source": "",
-        "sensor": ""
+        "category": "dedicated_source_sensor",
+        "technique": "magnetometer_experiment",
+        "source": "unpolarized_source_mass",
+        "sensor": "atomic_magnetometer"
       },
       "curation": {
         "status": "curated",
@@ -1752,10 +1752,10 @@
         }
       ],
       "method": {
-        "category": "complementary",
-        "technique": "converted primary experimental constraint",
-        "source": "",
-        "sensor": ""
+        "category": "dedicated_source_sensor",
+        "technique": "magnetometer_experiment",
+        "source": "unpolarized_source_mass",
+        "sensor": "atomic_magnetometer"
       },
       "curation": {
         "status": "curated",

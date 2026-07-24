@@ -1666,9 +1666,9 @@
       "fermion_pair": "neutron-nucleon",
       "method": {
         "category": "dedicated_source_sensor",
-        "technique": "polarized_helium_spin_relaxation",
+        "technique": "vapor_cell_spin_relaxation",
         "source": "cell_walls",
-        "sensor": "polarized_helium_spin_relaxation"
+        "sensor": "polarized_vapor_cell"
       },
       "references": [
         {
