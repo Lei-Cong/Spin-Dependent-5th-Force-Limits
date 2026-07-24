@@ -1,0 +1,198 @@
+---
+layout: default
+title: Coupling Relations
+description: Translate SD5thF scalar and pseudoscalar couplings into effective energy scales and axion or ALP conventions.
+---
+
+<div class="relations-hero">
+  <span class="eyebrow">Theory bridge</span>
+  <h1>Coupling conventions and translations</h1>
+  <p class="relations-lead">Connect the dimensionless fermion couplings used in the SD5<sup>th</sup>F limits to effective energy scales, axion and ALP parameters, and conventions commonly used in neighboring fields.</p>
+</div>
+
+<aside class="convention-alert">
+  <strong>Conventions matter.</strong>
+  <p>The same symbol may be normalized differently across fifth-force, axion, dark-matter, equivalence-principle, and spectroscopy literature. The relations below follow the interaction Lagrangians displayed in each row. A limit should only be translated after matching the field normalization, factors of 2, signs, units, and particle species.</p>
+</aside>
+
+<section class="relations-section">
+  <div class="section-heading">
+    <div><span class="eyebrow">Reference table</span><h2>Scalar and pseudoscalar interactions</h2></div>
+    <p>Here \(\Lambda_X\) is an effective interaction scale, \(f_a\) is the axion or ALP decay constant, and \(C_f\) is a dimensionless, model-dependent fermion coefficient.</p>
+  </div>
+
+  <div class="relations-table-wrap">
+    <table class="relations-table">
+      <thead>
+        <tr><th>Interaction</th><th>Lagrangian term</th><th>Coupling relation</th><th>Dimensions</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Scalar–photon</td>
+          <td>\(\displaystyle \mathcal L\supset\frac{\phi}{4\Lambda_\gamma}F_{\mu\nu}F^{\mu\nu}\)</td>
+          <td>\(\displaystyle g_s^\gamma\equiv\frac{1}{\Lambda_\gamma}\)</td>
+          <td>\([g_s^\gamma]=E^{-1}\)</td>
+        </tr>
+        <tr>
+          <td>Scalar–electron</td>
+          <td>\(\displaystyle \mathcal L\supset\frac{\phi}{\Lambda_e}m_e\bar e e\)</td>
+          <td>\(\displaystyle g_s^e=\frac{m_e}{\Lambda_e}\)</td>
+          <td>\([g_s^e]=1\)</td>
+        </tr>
+        <tr>
+          <td>Scalar–proton</td>
+          <td>\(\displaystyle \mathcal L\supset\frac{\phi}{\Lambda_p}m_p\bar p p\)</td>
+          <td>\(\displaystyle g_s^p=\frac{m_p}{\Lambda_p}\)</td>
+          <td>\([g_s^p]=1\)</td>
+        </tr>
+        <tr>
+          <td>Scalar–neutron</td>
+          <td>\(\displaystyle \mathcal L\supset\frac{\phi}{\Lambda_n}m_n\bar n n\)</td>
+          <td>\(\displaystyle g_s^n=\frac{m_n}{\Lambda_n}\)</td>
+          <td>\([g_s^n]=1\)</td>
+        </tr>
+        <tr>
+          <td>Pseudoscalar–fermion</td>
+          <td>\(\displaystyle \mathcal L\supset i g_p^f a\,\bar\psi_f\gamma^5\psi_f\)</td>
+          <td>\(\displaystyle |g_p^f|=\frac{|C_f|m_f}{f_a}\)</td>
+          <td>\([g_p^f]=1\)</td>
+        </tr>
+        <tr>
+          <td>Derivative axion–fermion</td>
+          <td>\(\displaystyle \mathcal L\supset\frac{C_f}{2f_a}(\partial_\mu a)\bar\psi_f\gamma^\mu\gamma^5\psi_f\)</td>
+          <td>\(\displaystyle |g_{aff}|=\frac{|g_p^f|}{2m_f}=\frac{|C_f|}{2f_a}\)</td>
+          <td>\([g_{aff}]=E^{-1}\)</td>
+        </tr>
+        <tr>
+          <td>Pseudoscalar–photon</td>
+          <td>\(\displaystyle \mathcal L\supset\frac{g_{a\gamma\gamma}}{4}aF_{\mu\nu}\widetilde F^{\mu\nu}\)</td>
+          <td>\(\displaystyle g_{a\gamma\gamma}\equiv\frac{1}{\Lambda_\gamma}\)<div class="relation-cites" data-citation-key="ni_pseudoscalar-photon_2010"><a href="https://doi.org/10.1142/9789814335614_0054">Ni, Balakin &amp; Mei (2010) ↗</a></div></td>
+          <td>\([g_{a\gamma\gamma}]=E^{-1}\)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="translation-grid">
+  <article class="bridge-card">
+    <span class="card-index">01 / FIFTH FORCE → AXION → SPIN PRECESSION</span>
+    <h2>From SD5<sup>th</sup>F couplings to axion conventions</h2>
+    <p>The review and this database start from the dimensionless spin-0 fermion couplings</p>
+    <div class="equation-card">\[
+      \mathcal L_\phi=\phi\sum_\psi\bar\psi\left(g_s^\psi+i\gamma^5g_p^\psi\right)\psi .
+    \]</div>
+    <p>For an axion or ALP with fermion coefficient \(C_f\) and decay constant \(f_a\), the pseudoscalar coupling is connected to the gradient coupling used in spin-precession searches through</p>
+    <div class="coupling-bridge" aria-label="Translation from fifth-force coupling to axion and spin-precession conventions">
+      <div><span>SD5<sup>th</sup>F</span><strong>\(\displaystyle |g_p^f|\)</strong></div>
+      <b aria-hidden="true">=</b>
+      <div><span>Axion / ALP</span><strong>\(\displaystyle \frac{|C_f|m_f}{f_a}\)</strong></div>
+      <b aria-hidden="true">→</b>
+      <div><span>Spin precession</span><strong>\(\displaystyle |g_{aff}|=\frac{|g_p^f|}{2m_f}=\frac{|C_f|}{2f_a}\)</strong></div>
+    </div>
+    <p>In the review’s gradient-Hamiltonian notation, \(|g_{aNN}|=|g_p^N|/(2m_N)\) and \(|g_{aee}|=|g_p^e|/(2m_e)\). This is the bridge between the coupling products plotted by SD5<sup>th</sup>F and the parameters commonly reported by axion spin-precession experiments.</p>
+  </article>
+
+  <article>
+    <span class="card-index">02 / FORCE RANGE</span>
+    <h2>Mass–range conversion</h2>
+    <p>The mediator mass \(M\) and interaction range \(\lambda\) are related by its reduced Compton wavelength:</p>
+    <div class="equation-card">\[
+      \lambda=\frac{\hbar}{Mc}.
+    \]</div>
+    <p>This conversion links the boson-mass axes used in particle and axion searches to the interaction-range axes used throughout the SD5<sup>th</sup>F explorer.</p>
+  </article>
+
+  <article>
+    <span class="card-index">03 / QCD AXION</span>
+    <h2>Model dependence</h2>
+    <p>For a generic ALP, mass and couplings can be treated as independent parameters. For the canonical QCD axion, \(m_a\) and \(f_a\) are related approximately by</p>
+    <div class="equation-card">\[
+      m_a\simeq5.7\,\mu{\rm eV}\left(\frac{10^{12}\,{\rm GeV}}{f_a}\right).
+    \]</div>
+    <p>The coefficients \(C_f\), and therefore the translation from \(f_a\) to \(g_p^f\), depend on the axion model and renormalization scale.</p>
+  </article>
+</section>
+
+<section class="convention-notes">
+  <span class="eyebrow">Important qualifications</span>
+  <h2>Before translating a published bound</h2>
+  <ul>
+    <li>The derivative and non-derivative pseudoscalar interactions give the same leading nonrelativistic single-boson-exchange potential under the usual vacuum, on-shell assumptions. The equivalence need not hold unchanged for relativistic, in-medium, background-field, or loop processes.</li>
+    <li>Overall signs in the derivative-to-pseudoscalar conversion depend on Lagrangian, metric, \(\gamma^5\), and integration-by-parts conventions. The table therefore gives magnitudes for this conversion; signs must be matched to the source paper.</li>
+    <li>The shorthand \(g_{a\gamma\gamma}=1/\Lambda_\gamma\) defines an effective scale. In a specific axion model, \(g_{a\gamma\gamma}\) generally contains electromagnetic, anomaly, and model-dependent coefficients proportional to \(1/f_a\).</li>
+    <li>Nucleon-level coefficients can incorporate hadronic matrix elements. Quark-, proton-, neutron-, nucleus-, and composition-dependent couplings should not be interchanged without the relevant matching calculation.</li>
+    <li>Natural units \(\hbar=c=1\) are assumed in the Lagrangian relations. Restore units before combining them with quantities reported in SI units.</li>
+  </ul>
+</section>
+
+<section class="reference-library">
+  <div class="section-heading">
+    <div><span class="eyebrow">Selected literature</span><h2>References behind the translations</h2></div>
+    <p>Grouped by the physical connection they support. The definitions in the cited paper should always be checked before applying a numerical conversion.</p>
+  </div>
+
+  <div class="reference-groups">
+    <article>
+      <h3>Scalar fields and effective energy scales</h3>
+      <ol>
+        <li><a href="https://doi.org/10.1103/PhysRevLett.117.271601">Leefer et al., “Search for the Effect of Massive Bodies on Atomic Spectra and Constraints on Yukawa-Type Interactions of Scalar Particles,” <em>Phys. Rev. Lett.</em> <strong>117</strong>, 271601 (2016).</a></li>
+        <li><a href="https://doi.org/10.1103/RevModPhys.97.025005">Cong et al., “Spin-Dependent Exotic Interactions,” <em>Rev. Mod. Phys.</em> <strong>97</strong>, 025005 (2025), especially the spin-0 Lagrangian, dark-matter methods, and comparison appendices.</a></li>
+      </ol>
+    </article>
+
+    <article>
+      <h3>Axions, ALPs, and fermion couplings</h3>
+      <ol>
+        <li><a href="https://doi.org/10.1103/PhysRevD.16.1791">Peccei &amp; Quinn, “Constraints Imposed by CP Conservation in the Presence of Pseudoparticles,” <em>Phys. Rev. D</em> <strong>16</strong>, 1791 (1977).</a></li>
+        <li><a href="https://doi.org/10.1103/PhysRevLett.38.1440">Peccei &amp; Quinn, “CP Conservation in the Presence of Pseudoparticles,” <em>Phys. Rev. Lett.</em> <strong>38</strong>, 1440 (1977).</a></li>
+        <li><a href="https://doi.org/10.1103/PhysRevLett.40.223">Weinberg, “A New Light Boson?” <em>Phys. Rev. Lett.</em> <strong>40</strong>, 223 (1978).</a></li>
+        <li><a href="https://doi.org/10.1103/PhysRevLett.40.279">Wilczek, “Problem of Strong P and T Invariance in the Presence of Instantons,” <em>Phys. Rev. Lett.</em> <strong>40</strong>, 279 (1978).</a></li>
+        <li><a href="https://doi.org/10.1103/PhysRevD.30.130">Moody &amp; Wilczek, “New Macroscopic Forces?” <em>Phys. Rev. D</em> <strong>30</strong>, 130 (1984).</a></li>
+        <li><a href="https://doi.org/10.48550/arXiv.1712.03018">Marsh, “Axions and ALPs: A Very Short Introduction,” arXiv:1712.03018 (2017).</a></li>
+        <li><a href="https://doi.org/10.1007/JHEP01(2016)034">Grilli di Cortona et al., “The QCD Axion, Precisely,” <em>JHEP</em> <strong>01</strong>, 034 (2016), for the quoted QCD-axion mass–decay-constant relation.</a></li>
+      </ol>
+    </article>
+
+    <article>
+      <h3>Pseudoscalar–photon coupling</h3>
+      <ol>
+        <li data-citation-key="ni_pseudoscalar-photon_2010"><a href="https://doi.org/10.1142/9789814335614_0054">Ni, Balakin &amp; Mei, “Pseudoscalar-Photon Interactions, Axions, Non-Minimal Extensions, and Their Empirical Constraints from Observations,” in <em>Proceedings of the Conference in Honour of Murray Gell-Mann’s 80th Birthday</em>, 526–535 (2010).</a><span>Directly relevant to the \(aF\widetilde F\) interaction, photon–axion conversion, birefringence, and cosmic polarization rotation; its normalization should be matched before numerical reuse. <a href="https://arxiv.org/abs/1109.0581">arXiv:1109.0581</a> · BibTeX key: <code>ni_pseudoscalar-photon_2010</code></span></li>
+        <li><a href="https://doi.org/10.1103/PhysRevLett.51.1415">Sikivie, “Experimental Tests of the Invisible Axion,” <em>Phys. Rev. Lett.</em> <strong>51</strong>, 1415 (1983).</a></li>
+        <li><a href="https://doi.org/10.1103/PhysRevD.37.1237">Raffelt &amp; Stodolsky, “Mixing of the Photon with Low-Mass Particles,” <em>Phys. Rev. D</em> <strong>37</strong>, 1237 (1988).</a></li>
+      </ol>
+    </article>
+
+    <article>
+      <h3>Axion-gradient coupling and spin precession</h3>
+      <ol>
+        <li><a href="https://doi.org/10.1103/PhysRevD.88.035023">Graham &amp; Rajendran, “New Observables for Direct Detection of Axion Dark Matter,” <em>Phys. Rev. D</em> <strong>88</strong>, 035023 (2013).</a></li>
+        <li><a href="https://doi.org/10.1103/PhysRevD.89.043522">Stadnik &amp; Flambaum, “Axion-Induced Effects in Atoms, Molecules, and Nuclei,” <em>Phys. Rev. D</em> <strong>89</strong>, 043522 (2014).</a></li>
+        <li><a href="https://doi.org/10.1103/PhysRevX.4.021030">Budker et al., “Proposal for a Cosmic Axion Spin Precession Experiment (CASPEr),” <em>Phys. Rev. X</em> <strong>4</strong>, 021030 (2014).</a></li>
+        <li><a href="https://doi.org/10.1103/PhysRevX.7.041034">Abel et al., “Search for Axionlike Dark Matter through Nuclear Spin Precession in Electric and Magnetic Fields,” <em>Phys. Rev. X</em> <strong>7</strong>, 041034 (2017).</a></li>
+      </ol>
+    </article>
+
+    <article>
+      <h3>Derivative versus non-derivative conventions</h3>
+      <ol>
+        <li><a href="https://doi.org/10.1103/PhysRevA.99.022113">Fadeev et al., “Revisiting Spin-Dependent Forces Mediated by New Bosons,” <em>Phys. Rev. A</em> <strong>99</strong>, 022113 (2019).</a></li>
+        <li><a href="https://doi.org/10.48550/arXiv.2308.05375">Arza &amp; Evans, “Electron \(g-2\) Corrections from Axion Dark Matter,” arXiv:2308.05375 (2023).</a></li>
+        <li><a href="https://doi.org/10.1103/PhysRevLett.132.101802">Bauer &amp; Rostagni, “Fifth Forces from QCD Axions Scale Differently,” <em>Phys. Rev. Lett.</em> <strong>132</strong>, 101802 (2024).</a></li>
+      </ol>
+    </article>
+  </div>
+</section>
+
+<section class="citation-panel relations-citations">
+  <div>
+    <span class="eyebrow">Closely related work</span>
+    <h2>From effective scales to laboratory searches</h2>
+    <p>Leefer et al. connect scalar couplings and effective energy scales to atomic-spectroscopy and macroscopic fifth-force constraints. The RMP review supplies the spin-dependent interaction and axion-gradient conventions used by SD5<sup>th</sup>F.</p>
+  </div>
+  <div>
+    <p><a href="https://doi.org/10.1103/PhysRevLett.117.271601">Leefer et al., Phys. Rev. Lett. 117, 271601 (2016) ↗</a></p>
+    <p><a href="https://doi.org/10.1103/RevModPhys.97.025005">Cong et al., Rev. Mod. Phys. 97, 025005 (2025) ↗</a></p>
+    <p class="subtle-note">This page is a convention map, not a substitute for the definitions and assumptions in the cited primary analysis.</p>
+  </div>
+</section>
