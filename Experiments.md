@@ -118,8 +118,7 @@ description: Browse established experimental methods, linked SD5thF constraint r
     <p>Repeated curves from the same publication and method are combined into one entry. Interaction and fermion-pair tags show which constraint records are currently connected.</p>
   </div>
   <div class="catalogue-note">
-    <p><strong>This literature map is growing.</strong> More publications are being classified and added. If an experiment or method is missing, please <a href="mailto:congllzu@gmail.com?subject=Suggested%20reference%20for%20SD5thF%20methods">email Lei Cong</a> with the paper and a suggested category.</p>
-    <button type="button" id="expand-all-methods">Expand all references</button>
+    <p><strong>This literature map is growing.</strong> More publications are being classified and added. If an experiment or method is missing, please email Lei Cong (<a href="mailto:congllzu@gmail.com?subject=Suggested%20reference%20for%20SD5thF%20methods">congllzu@gmail.com</a>) with the paper and a suggested category.</p>
   </div>
 
   <div class="catalogue-division"><span>01</span><div><strong>Dedicated source–sensor experiments</strong><small>Organized by the sensor platform used to read out the source-generated signal.</small></div></div>
@@ -338,23 +337,6 @@ description: Browse established experimental methods, linked SD5thF constraint r
           showMore.setAttribute("aria-expanded", String(expanding));
           showMore.textContent = expanding ? "Show fewer references" : `Show ${entries.length - 3} more references`;
         });
-      });
-      document.getElementById("expand-all-methods")?.addEventListener("click", event => {
-        const expanding = event.currentTarget.getAttribute("aria-expanded") !== "true";
-        document.querySelectorAll(".method-record[hidden]").forEach(row => {
-          if (expanding) row.hidden = false;
-        });
-        document.querySelectorAll(".method-record-list").forEach(list => {
-          const rows = [...list.querySelectorAll(".method-record")];
-          if (!expanding) rows.slice(3).forEach(row => row.hidden = true);
-          const button = list.querySelector(".method-show-more");
-          if (button) {
-            button.setAttribute("aria-expanded", String(expanding));
-            button.textContent = expanding ? "Show fewer references" : `Show ${Math.max(0, rows.length - 3)} more references`;
-          }
-        });
-        event.currentTarget.setAttribute("aria-expanded", String(expanding));
-        event.currentTarget.textContent = expanding ? "Collapse all references" : "Expand all references";
       });
     });
 })();
