@@ -311,7 +311,7 @@ description: Browse established experimental methods, linked SD5thF constraint r
               <h4>${escapeHTML(entry.citation || entry.title)}</h4>
               <p>${escapeHTML(entry.title)}</p>
               ${context ? `<small>${context}</small>` : ""}
-              <div class="method-record-tags">${tags}</div>
+              ${tags ? `<div class="method-data-label">View constraint data</div><div class="method-record-tags">${tags}</div>` : ""}
             </div>
             ${link}
           </div>`;
