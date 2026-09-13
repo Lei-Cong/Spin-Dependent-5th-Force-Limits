@@ -1,77 +1,5 @@
 [
   {
-    "title": "New Constraints on Axion Mediated Dipole-Dipole Interactions",
-    "authors": "Zitong Xu, Xing Heng, Guoqing Tian, Di Gong, Lei Cong, Wei Ji, Dmitry Budker, Kai Wei",
-    "published": "2025-01-14",
-    "summary": "The search for axions sits at the intersection of solving critical problems in fundamental physics, including the strong CP problem in QCD, uncovering the nature of dark matter, and understanding the origin of the universe's matter-antimatter asymmetry. The measurement of axion-mediated spin-dependent interactions offers a powerful approach for axion detection. However, it has long been restricted to regions outside the 'axion window' due to a significant trade-off: the need to effectively suppress the magnetic leakage from highly polarized spin sources while simultaneously detecting sub-femtotesla level exotic physics signals at sub-decimeter-scale distances. In this work, we report new exp...",
-    "link": "https://arxiv.org/abs/2501.07865v1",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dark matter",
-      "dipole-dipole",
-      "comagnetometer"
-    ],
-    "score": 33
-  },
-  {
-    "title": "Spin-dependent exotic interactions",
-    "authors": "Lei Cong, Wei Ji, Pavel Fadeev, Filip Ficek, Min Jiang, Victor V. Flambaum, Haosen Guan, Derek F. Jackson Kimball, Mikhail G. Kozlov, Yevgeny V. Stadnik, Dmitry Budker",
-    "published": "2024-08-28",
-    "summary": "Novel interactions beyond the four known fundamental forces in nature (electromagnetic, gravitational, strong and weak interactions), may arise due to \"new physics\" beyond the standard model, manifesting as a \"fifth force\". This review is focused on spin-dependent fifth forces mediated by exotic bosons such as spin-0 axions and axionlike particles and spin-1 Z' bosons, dark photons, or paraphotons. Many of these exotic bosons are candidates to explain the nature of dark matter and dark energy, and their interactions may violate fundamental symmetries. Spin-dependent interactions between fermions mediated by the exchange of exotic bosons have been investigated in a variety of experiments, par...",
-    "link": "https://arxiv.org/abs/2408.15691v3",
-    "tags": [
-      "fifth force",
-      "spin-dependent",
-      "axion",
-      "dark matter",
-      "comagnetometer",
-      "spectroscopy"
-    ],
-    "score": 32
-  },
-  {
-    "title": "Searching for ultralight bosons with Josephson junction interferometry",
-    "authors": "Djuna Croon, Tanmay Kumar Poddar",
-    "published": "2026-04-26",
-    "summary": "Ultralight bosons sourced by macroscopic objects can generate long-range spin-independent and spin-dependent potentials that are accessible to precision interferometry. Such potentials induce phase shifts in Josephson junctions, detectable through precision current measurements. We propose three experimental scenarios to probe photophilic scalar interactions, Lorentz-violating scalar-mediated interactions, and axion-mediated monopole-dipole interactions, depending on the nature (unpolarized or polarized) of the source. The proposed setups provide sensitivities to novel mixed couplings that are largely unconstrained by existing bounds and enables the exploration of new forces at centimeter to...",
-    "link": "https://arxiv.org/abs/2604.23879v1",
-    "tags": [
-      "fifth force",
-      "spin-dependent",
-      "axion",
-      "monopole-dipole"
-    ],
-    "score": 29
-  },
-  {
-    "title": "Searching for Exotic Spin-Dependent Interactions with Diamond-Based Vector Magnetometer",
-    "authors": "Aolong Guo, Runqi Kang, Man Jiao, Xing Rong",
-    "published": "2024-02-23",
-    "summary": "We propose a new method to search for exotic spin-spin interactions between electrons and nucleons using a diamond-based vector magnetometer. The vector magnetometer can be constructed from ensembles of nitrogen-vacancy centers along different axes in a diamond. The $^{14}\\mathrm{N} $ nuclear spins of nitrogen-vacancy centers in the same diamond can be polarized through the dynamic nuclear polarization method to serve as spin sources. With the vector magnetometer, the sought-after exotic interactions can be distinguished from the magnetic dipole-dipole interaction. For the axion-mediated interaction $ V_{PP} $, new upper bounds of the coupling $ |g_{P}^{e} g_{P}^{N}| $ are expected within th...",
-    "link": "https://arxiv.org/abs/2402.15042v1",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dipole-dipole"
-    ],
-    "score": 29
-  },
-  {
-    "title": "Constraints on exotic spin-dependent interactions between electrons from helium fine-structure spectroscopy",
-    "authors": "Filip Ficek, Derek F. Jackson Kimball, Mikhail Kozlov, Nathan Leefer, Szymon Pustelny, Dmitry Budker",
-    "published": "2016-08-20",
-    "summary": "Agreement between theoretical calculations of atomic structure and spectroscopic measurements is used to constrain possible contribution of exotic spin-dependent interactions between electrons to the energy differences between states in helium-4. In particular, constraints on dipole-dipole interactions associated with the exchange of pseudoscalar bosons (such as axions or axion-like particles, ALPs) with masses $10^{-2}~{\\rm eV} \\lesssim m \\lesssim 10^{4}~{\\rm eV}$ are improved by a factor of $\\sim 100$. The first atomic-scale constraints on several exotic velocity-dependent dipole-dipole interactions are established as well....",
-    "link": "https://arxiv.org/abs/1608.05779v2",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dipole-dipole",
-      "spectroscopy"
-    ],
-    "score": 28
-  },
-  {
     "title": "Searches for exotic spin-dependent interactions with spin sensors",
     "authors": "Min Jiang, Haowen Su, Yifan Chen, Man Jiao, Ying Huang, Yuanhong Wang, Xing Rong, Xinhua Peng, Jiangfeng Du",
     "published": "2024-12-04",
@@ -86,47 +14,6 @@
     "score": 25
   },
   {
-    "title": "Exploring Exotic Spin-Dependent Interactions Beyond the Standard Model: Theoretical Foundations and Experimental Investigations",
-    "authors": "L. Y. Wu, H. Yan",
-    "published": "2026-06-11",
-    "summary": "New interactions mediated by novel particles propose solutions to several important questions in modern physics. Axions serve as examples of such particles; they are lightweight and interact weakly with ordinary matter. This category of particles, including those similar to axions-termed Axion-Like Particles (ALPs)-arises from diverse theoretical frameworks, such as the Peccei-Quinn mechanism addressing the strong CP problem, string theory, and spontaneous supersymmetry breaking. Given their light mass and weak coupling, ALPs are also possible candidates for cold dark matter. Introducing these new interactions mediated by novel particles not only tackles several challenges in modern physics ...",
-    "link": "https://arxiv.org/abs/2606.13318v1",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dark matter"
-    ],
-    "score": 23
-  },
-  {
-    "title": "Response of Comagnetometer to Exotic Spin-Dependent Couplings",
-    "authors": "Yixin Zhao, Xiang Peng, Teng Wu, Hong Guo",
-    "published": "2025-06-18",
-    "summary": "Comagnetometers offer unique advantages in measuring exotic spin-dependent interactions by suppressing magnetic noise. Understanding the frequency response to exotic interactions is essential for evaluating and improving the sensitivity of comagnetometers, as the signals often exhibit distinct spectral features. We conduct theoretical and experimental studies on the frequency response of a differential comagnetometer. We derive analytical expressions for the frequency response of the differential comagnetometer to both magnetic field and exotic couplings, along with the conversion relationship between them. Based on this, we revise the method for determining the axion-nucleon coupling streng...",
-    "link": "https://arxiv.org/abs/2506.15046v1",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dark matter",
-      "comagnetometer",
-      "spectroscopy"
-    ],
-    "score": 23
-  },
-  {
-    "title": "Searching for Exotic Interactions between Antimatter",
-    "authors": "Lei Cong, Filip Ficek, Pavel Fadeev, Yevgeny V. Stadnik, Dmitry Budker",
-    "published": "2025-03-10",
-    "summary": "We show that atomic antimatter spectroscopy can be used to search for new bosons that carry spin-dependent exotic forces between antifermions. A comparison of a recent precise measurement of the hyperfine splitting of the $1$S and $2$S electronic levels of antihydrogen and bound-state quantum electrodynamics theory yields the first tests of positron-antiproton exotic interactions, constraining the dimensionless coupling strengths $g_pg_p$, $g_Vg_V$ and $g_Ag_A$, corresponding to the exchange of a pseudoscalar (axionlike), vector, or axial-vector boson, respectively. We also discuss new tests of CPT invariance with exotic spin-dependent and spin-independent interactions involving antimatter....",
-    "link": "https://arxiv.org/abs/2503.07161v1",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "spectroscopy"
-    ],
-    "score": 23
-  },
-  {
     "title": "Axion Window on New Macroscopic Forces",
     "authors": "Luca Di Luzio, Hector Gisbert, Fabrizio Nesti, Philip Sørensen",
     "published": "2024-07-22",
@@ -138,5 +25,97 @@
       "EDM"
     ],
     "score": 23
+  },
+  {
+    "title": "Searching for axion dark matter with magnetic resonance force microscopy",
+    "authors": "Elham Kashi, Muhammad Hani Zaheer, Ryan Petery, Swati Singh",
+    "published": "2025-12-13",
+    "summary": "We propose a magnetic resonance force microscopy (MRFM) search for axion dark matter around 1 GHz. The experiment leverages the axion's derivative coupling to electrons, which induces an effective A.C. magnetic field on a sample of electron spins polarized by a D.C. magnetic field and a micromagnet. A second pump field at a nearby frequency enhances the signal, with the detuning matched to the resonant frequency of a magnet-loaded mechanical oscillator. The resulting spin-dependent force is detected with hih sensitivity via optical interferometry. Accounting for the relevant noise sources, we show that current technology can be used to put constraints competitive with those from laboratory e...",
+    "link": "https://arxiv.org/abs/2512.12120v2",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "dark matter",
+      "spectroscopy"
+    ],
+    "score": 16
+  },
+  {
+    "title": "Stringent Constraints on New Pseudoscalar & Vector Bosons from Precision Hyperfine Splitting Measurements",
+    "authors": "Cedric de Jonge, Fabian Heiße, Joerg Jaeckel, Lutz Leimenstoll, Christoph H. Keitel, Zoltán Harman",
+    "published": "2025-06-03",
+    "summary": "Axion-like particles and similar new pseudoscalar as well as vector bosons coupled to nucleons and electrons are predicted to lead to spin-dependent forces in atoms and ions. We argue that hyperfine structure measurements in hydrogen- and lithium-like charge states are a sensitive probe to this effect. Employing specific differences of these splittings reduces uncertainties due to nuclear effects in hyperfine structure calculations and measurements. Using this, we show that existing measurements on Be provide competitive limits in the region $m_φ\\gtrsim 100 {\\rm keV}$, confirming, or improving by up to a factor of 2, existing constraints for pseudoscalar couplings, depending on the nuclear m...",
+    "link": "https://arxiv.org/abs/2506.03274v2",
+    "tags": [
+      "spin-dependent",
+      "axion"
+    ],
+    "score": 14
+  },
+  {
+    "title": "Constraints on Spin-Spin-Velocity-Dependent Interaction",
+    "authors": "Wei Ji, Weipeng Li, Pavel Fadeev, Filip Ficek, Jianan Qin, Kai Wei, Yong-Chun Liu, Dmitry Budker",
+    "published": "2022-08-01",
+    "summary": "The existence of exotic spin-dependent forces may shine light on new physics beyond the Standard Model. We utilize two iron shielded SmCo$_5$ electron-spin sources and two optically pumped magnetometers to search for exotic long-range spin-spin-velocity-dependent force. The orientations of spin sources and magnetometers are optimized such that the exotic force is enhanced and common-mode noise is effectively subtracted. We set direct limit on proton-electron interaction in the force range from 1\\,cm to 1\\,km. Our experiment represents more than ten orders of magnitude improvement than previous works....",
+    "link": "https://arxiv.org/abs/2208.00658v2",
+    "tags": [
+      "spin-dependent"
+    ],
+    "score": 14
+  },
+  {
+    "title": "Spin-dependent fermion potentials from mixed tensor couplings of massive spin-1 and spin-2 bosons",
+    "authors": "D. Khadka, V. V. Flambaum",
+    "published": "2026-08-31",
+    "summary": "Searches for weak spin-dependent forces are commonly interpreted in terms of a basis of sixteen rotationally invariant two-fermion potentials, including potentials which violate parity (P) and time-reversal (T) invariance. We derive finite-range coordinate-space potentials generated by a massive spin-1 boson with vector, axial-vector, tensor, and pseudotensor couplings to Dirac fermions. In addition to the familiar vector--vector, vector--axial-vector, and axial-vector--axial-vector interactions, we obtain the mixed vector--tensor, vector--pseudotensor, axial-vector--tensor, and axial-vector--pseudotensor potentials, together with tensor--tensor, tensor--pseudotensor, and pseudotensor--pseud...",
+    "link": "https://arxiv.org/abs/2608.30240v2",
+    "tags": [
+      "spin-dependent"
+    ],
+    "score": 9
+  },
+  {
+    "title": "Topological insulator realization induced by fermionic interaction through BF mediators",
+    "authors": "G. B. de Gracia, R. da Rocha, A. A. Nogueira, M. A. C. de Barcelos",
+    "published": "2026-08-17",
+    "summary": "This paper demonstrates that ordinary fermions, interacting via a BF mediator, form a renormalized structure with non-trivial topological properties. We explore the analogy between the renormalized fermion and a subset of real three-dimensional topological insulators (TIs) in the vicinity of their single Dirac cones. Using the typical magnitude of TI lattice and gaps, we constrain model parameters. The topological structure induced by radiative corrections enters a class of modified Dirac equations, ensuring the existence of helical gapless near-boundary modes. We derive an effective potential for inter-quasi-particle interactions that incorporates finite-size effects in the axial direction,...",
+    "link": "https://arxiv.org/abs/2608.16660v1",
+    "tags": [
+      "spin-dependent"
+    ],
+    "score": 9
+  },
+  {
+    "title": "Experimental realisation of topological spin textures in a Penning trap",
+    "authors": "Julian Y. Z. Jee, Nihar Makadia, Joseph H. Pham, Gustavo Café de Miranda, Michael J. Biercuk, Athreya Shankar, Robert N. Wolf",
+    "published": "2026-04-15",
+    "summary": "Quantum simulation with controllable many-body platforms offers a powerful route to exploring complex phases and dynamics that are difficult to access in natural materials. Among these, topological spin textures such as skyrmions are central to modern condensed-matter physics and play a key role in chiral quantum many-body systems. Their controlled realisation in large, programmable quantum platforms, however, remains an outstanding challenge. Here, we report deterministic generation and site-resolved reconstruction of topological spin textures in a two-dimensional crystal of more than 150 trapped ions. Using globally applied spin-dependent forces, we generate skyrmion configurations and rec...",
+    "link": "https://arxiv.org/abs/2604.13872v1",
+    "tags": [
+      "spin-dependent"
+    ],
+    "score": 9
+  },
+  {
+    "title": "Three-body molecular states composed of $D^{(*)}$ and two nucleons",
+    "authors": "Si-Yi Chen, Fei-Yu Chen, Xu-Liang Chen, Lu Meng, Ning Li, Wei Chen",
+    "published": "2026-02-23",
+    "summary": "We study the three-body systems $DNN$ and $D^{*}NN$ within a hadronic molecular framework by combining a realistic nucleon-nucleon interaction with a $D^{(*)}N$ potential constrained by heavy-quark symmetry. The three-body Schrödinger equation is solved with the Gaussian Expansion Method, and the analytic structure of the spectrum is investigated using the Complex Scaling Method. We find that the $DNN$ system supports a robust and compact bound state in the $I(J^{P})=\\tfrac{1}{2}(1^-)$ channel over a broad range of cutoff values, even when the corresponding $DN$ subsystem is weakly bound or unbound. For $D^{*}NN$, the spin-$1$ nature of the heavy meson and the associated spin-dependent force...",
+    "link": "https://arxiv.org/abs/2602.19504v3",
+    "tags": [
+      "spin-dependent"
+    ],
+    "score": 9
+  },
+  {
+    "title": "Quantum simulation of the Dicke model in a two-dimensional ion crystal: chaos, quantum thermalization, and revivals",
+    "authors": "Bryce Bullock, Sean R. Muleady, Jennifer F. Lilieholm, Yicheng Zhang, Arghavan Safavi-Naini, Robert J. Lewis-Swan, John J. Bollinger, Ana Maria Rey, Allison L. Carter",
+    "published": "2026-02-05",
+    "summary": "Quantum many-body systems driven far from equilibrium can exhibit chaos, entanglement, and non-classical correlations, yet directly observing these phenomena in large, closed quantum systems remains challenging. Here we realize the Dicke model -- a fundamental description of light-matter interactions -- in a two-dimensional crystal of approximately 100 trapped ions. The ions' internal state is optically coupled to the center of mass vibrational mode via an optical spin-dependent force, enabling unitary many-body dynamics beyond the mean-field and few-body limits. In the integrable regime, where the phonons can be adiabatically eliminated, we observe a dynamical phase transition between ferro...",
+    "link": "https://arxiv.org/abs/2602.06114v2",
+    "tags": [
+      "spin-dependent"
+    ],
+    "score": 9
   }
 ]
