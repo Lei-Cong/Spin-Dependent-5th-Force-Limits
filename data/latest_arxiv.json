@@ -1,1 +1,130 @@
-[]
+[
+  {
+    "title": "Searching for ultralight bosons with Josephson junction interferometry",
+    "authors": "Djuna Croon, Tanmay Kumar Poddar",
+    "published": "2026-04-26",
+    "summary": "Ultralight bosons sourced by macroscopic objects can generate long-range spin-independent and spin-dependent potentials that are accessible to precision interferometry. Such potentials induce phase shifts in Josephson junctions, detectable through precision current measurements. We propose three experimental scenarios to probe photophilic scalar interactions, Lorentz-violating scalar-mediated interactions, and axion-mediated monopole-dipole interactions, depending on the nature (unpolarized or polarized) of the source. The proposed setups provide sensitivities to novel mixed couplings that are largely unconstrained by existing bounds and enables the exploration of new forces at centimeter to...",
+    "link": "https://arxiv.org/abs/2604.23879v1",
+    "tags": [
+      "fifth force",
+      "spin-dependent",
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 29
+  },
+  {
+    "title": "Search for an interaction mediated by axion-like particles with ultracold neutrons at the PSI",
+    "authors": "N. J. Ayres, G. Bison, K. Bodek, V. Bondar, T. Bouillaud, E. Chanel, P. -J. Chiu, B. Clement, C. B. Crawford, M. Daum, C. B. Doorenbos, S. Emmenegger, M. Fertl, P. Flaux, W. C. Griffith, P. G. Harris, N. Hild, M. Kasprzak, K. Kirch, V. Kletzl, P. A. Koss, J. Krempel, B. Lauss, T. Lefort, P. Mohanmurthy, O. Naviliat-Cuncic, D. Pais, F. M. Piegsa, G. Pignol, M. Rawlik, I. Rienäcker, D. Ries, S. Roccia, D. Rozpedzik, P. Schmidt-Wellenburg, N. Severijns, B. Shen, K. Svirina, R. Tavakoli Dinani, J. A. Thorne, S. Touati, A. Weis, E. Wursten, N. Yazdandoost, J. Zejma, N. Ziehl, G. Zsigmond",
+    "published": "2023-03-31",
+    "summary": "We report on a search for a new, short-range, spin-dependent interaction using a modified version of the experimental apparatus used to measure the permanent neutron electric dipole moment at the Paul Scherrer Institute. This interaction, which could be mediated by axion-like particles, concerned the unpolarized nucleons (protons and neutrons) near the material surfaces of the apparatus and polarized ultracold neutrons stored in vacuum. The dominant systematic uncertainty resulting from magnetic-field gradients was controlled to an unprecedented level of approximately 4 pT/cm using an array of optically-pumped cesium vapor magnetometers and magnetic-field maps independently recorded using a ...",
+    "link": "https://arxiv.org/abs/2303.18081v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "monopole-dipole",
+      "EDM"
+    ],
+    "score": 21
+  },
+  {
+    "title": "Search for spin-dependent gravitational interactions at the Earth range",
+    "authors": "Shaobo Zhang, Zengli Ba, Denghui Ning, Nianfu Zhai, Zhengtian Lu, Dong Sheng",
+    "published": "2023-03-18",
+    "summary": "Among the four fundamental forces, only gravity does not couple to particle spins according to the general theory of relativity. We test this principle by searching for an anomalous scalar coupling between the neutron spin and the Earth gravity on the ground. We develop an atomic gas comagnetometer to measure the ratio of nuclear spin-precession frequencies between $^{129}$Xe and $^{131}$Xe, and search for a change of this ratio to the precision of 10$^{-9}$ as the sensor is flipped in the Earth gravitational field. The null results of this search set an upper limit on the coupling energy between the neutron spin and the gravity on the ground at 5.3$\\times$10$^{-22}$~eV (95\\% confidence leve...",
+    "link": "https://arxiv.org/abs/2303.10352v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "monopole-dipole",
+      "comagnetometer"
+    ],
+    "score": 21
+  },
+  {
+    "title": "New bounds and future prospects for axion force searches at Penning trap experiments",
+    "authors": "Xing Fan, Mario Reig",
+    "published": "2023-10-28",
+    "summary": "In this note we consider Penning trap experiments as probes of axion-mediated forces. We show that the current measurement of electron's $g$-factor already sets a new exclusion limit for monopole-dipole axion forces acting on the electron spin. We also show that the Penning trap's capability of switching an electron and a positron can isolate the effect of an axion force and suppress systematic effects....",
+    "link": "https://arxiv.org/abs/2310.18797v2",
+    "tags": [
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 19
+  },
+  {
+    "title": "Searching for axion forces with spin precession in atoms and molecules",
+    "authors": "Prateek Agrawal, Nicholas R. Hutzler, David E. Kaplan, Surjeet Rajendran, Mario Reig",
+    "published": "2023-09-18",
+    "summary": "We propose to use atoms and molecules as quantum sensors of axion-mediated monopole-dipole forces. We show that electron spin precession experiments using atomic and molecular beams are well-suited for axion searches thanks to the presence of co-magnetometer states and single-shot temporal resolution. Experimental strategies to detect axion gradients from localised sources and the earth are presented, taking ACME III as a prototype example. Other possibilities including atomic beams, and laser-cooled atoms and molecules are discussed....",
+    "link": "https://arxiv.org/abs/2309.10023v2",
+    "tags": [
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 19
+  },
+  {
+    "title": "Searching for axion forces with precision precession in storage rings",
+    "authors": "Prateek Agrawal, David E. Kaplan, On Kim, Surjeet Rajendran, Mario Reig",
+    "published": "2022-10-31",
+    "summary": "We consider different types of storage rings as precision probes of axion-mediated monopole-dipole forces. We show that current and planned experiments aiming to measure magnetic and electric dipole moments of protons, muons and electrons very precisely may explore new parts of the parameter space beyond existing laboratory bounds and, in some cases, beyond astrophysical constraints. Remarkably, a light axion coupled to muons may explain the FNAL/BNL $(g-2)_μ$ anomaly as an environmental effect -- the coherent axion field generated by the earth nucleons induces an extra contribution to the anomalous precession frequency of the muon explaining the discrepancy with respect to the SM prediction...",
+    "link": "https://arxiv.org/abs/2210.17547v2",
+    "tags": [
+      "axion",
+      "monopole-dipole",
+      "EDM",
+      "spectroscopy"
+    ],
+    "score": 17
+  },
+  {
+    "title": "Spherically symmetric Earth models yield no net electron spin",
+    "authors": "Nathan B. Clayburn, Andrew Glassford, Andrew Leiker, Thomas Uelmen, Jung-Fu Lin, Larry R. Hunter",
+    "published": "2024-11-04",
+    "summary": "Terrestrial experiments that use electrons in Earth as a spin-polarized source have been demonstrated to provide strong bounds on exotic long-range spin-spin and spin-velocity interactions. These bounds constrain the coupling strength of many proposed ultralight bosonic dark-matter candidates. Recently, it was pointed out that a monopole-dipole coupling between the Sun and the spin-polarized electrons of Earth would result in a modification of the precession of the perihelion of Earth. Using an estimate for the net spin-polarization of Earth and experimental bounds on Earth's perihelion precession, interesting constraints were placed on the magnitude of this monopole-dipole coupling. Here we...",
+    "link": "https://arxiv.org/abs/2411.08050v1",
+    "tags": [
+      "monopole-dipole"
+    ],
+    "score": 14
+  },
+  {
+    "title": "Search for monopole-dipole interactions with atom interferometry",
+    "authors": "Mahiro Abe, Jason M. Hogan, David E. Kaplan, Chris Overstreet, Surjeet Rajendran",
+    "published": "2024-09-23",
+    "summary": "Light, weakly coupled bosonic particles such as axions can mediate long range monopole-dipole interactions between matter and spins. We propose a new experimental method using atom interferometry to detect such a force on a freely falling atom exerted by the spin of electrons. The intrinsic advantages of atom interferometry, such as the freely falling nature of the atom and the well-defined response of the atom to external magnetic fields, should enable the proposed method to overcome systematic effects induced by vibrations, magnetic fields, and gravity. This approach is most suited to probe forces with a range $\\gtrsim$~10~cm. With current technology, our proposed setup could potentially e...",
+    "link": "https://arxiv.org/abs/2409.14793v1",
+    "tags": [
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 14
+  },
+  {
+    "title": "On Dark Matter Self-interaction via Single Neutrino Exchange Potential",
+    "authors": "Yue Zhang",
+    "published": "2023-10-16",
+    "summary": "Neutrinos -- amongst the lightest known particles -- can mediate a force driving dark matter self-interaction and the small scale structure of the universe. We explore such a possibility in the simplest neutrino portal dark sector model where neutrino has a Yukawa coupling with a scalar $φ$ and fermion $χ$ that are degenerate in mass and together comprise 100\\% of dark matter in the universe. We derive the non-relativistic potential generated by single-neutrino exchange which is of the monopole-dipole form and explore $χφ\\toχφ$ scattering based on phase shift analysis. Our result shows that Born approximation continues to be valid in the low energy regime and the scattering cross section sca...",
+    "link": "https://arxiv.org/abs/2310.10743v1",
+    "tags": [
+      "dark matter",
+      "monopole-dipole",
+      "Yukawa"
+    ],
+    "score": 12
+  },
+  {
+    "title": "Constraints on monopole-dipole potential from the tests of gravity",
+    "authors": "Tanmay Kumar Poddar, Debashis Pachhar",
+    "published": "2023-02-08",
+    "summary": "Ultralight Axion Like Particle (ALP) can mediate a long range monopole-dipole macroscopic force between Earth and Sun if Earth is treated as a polarized source. There are about $10^{42}$ number of polarized electrons in Earth due to the presence of the geomagnetic field. The monopole-dipole interactions between electrons in Earth and nucleons in Sun can influence the perihelion precession of Earth, gravitational light bending and Shapiro time delay. The contribution of monopole-dipole potential is limited to be no larger than the measurement uncertainty. We obtain the first bound on monopole-dipole strength from single astrophysical observations. The perihelion precession of Earth puts the s...",
+    "link": "https://arxiv.org/abs/2302.03882v2",
+    "tags": [
+      "axion",
+      "monopole-dipole"
+    ],
+    "score": 12
+  }
+]
