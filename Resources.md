@@ -45,5 +45,8 @@
 - [Enrico Fermi Fellowships](https://www.eff.cstq.org/)
 - [Postdoc-theory](https://academicjobsonline.org/ajo/jobs/30778)
 
+#### [How to write a funding proposal](./assets/docs/funding/funding-application.pdf)
+
+
 #### New Research Groups:
 [Open Positions in Emerging Research Groups](open-positions.md) 
