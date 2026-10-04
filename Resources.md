@@ -44,6 +44,8 @@
 - [Fondazione Antonio Madonna ETS](https://www.cstq.org/opportunities/fam-scholarship-2025/)
 - [Enrico Fermi Fellowships](https://www.eff.cstq.org/)
 - [Postdoc-theory](https://academicjobsonline.org/ajo/jobs/30778)
+- [CZS Nexus](https://www.carl-zeiss-stiftung.de/en/programme/czs-nexus) Deadline: Autumn.
+- [Other funding opportunities](https://gsonet.org/karrierewissen/postdoc-funding-in-germany/?lang=en) suitable for various stages of postdoctoral research
 
 #### [How to write a funding proposal](./assets/docs/funding/funding-application.pdf)
 
