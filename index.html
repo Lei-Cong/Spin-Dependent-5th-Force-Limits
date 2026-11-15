@@ -46,24 +46,6 @@ preload_explorer: true
   </div>
 </section>
 
-<section class="api-panel" aria-labelledby="api-panel-title">
-  <div class="api-panel-copy">
-    <span class="eyebrow">Open research infrastructure</span>
-    <h2 id="api-panel-title">Built for people, software, and automated scientific workflows.</h2>
-    <p>SD5<sup>th</sup>F is more than a collection of downloadable curves. Its versioned, machine-readable records connect numerical constraints to interaction potentials, fermion pairs, experimental methods, and primary literature.</p>
-    <div class="button-row">
-      <a class="button button-primary" href="{{ '/api/' | relative_url }}">API &amp; documentation →</a>
-      <a class="button button-secondary" href="{{ '/api/v1/index.json' | relative_url }}">Open API v1</a>
-      <a class="button button-secondary" href="{{ '/ai-for-science.html' | relative_url }}">Our future vision →</a>
-    </div>
-  </div>
-  <div class="api-capabilities" aria-label="API capabilities">
-    <div><strong>Versioned API</strong><span>Stable v1 endpoints for programmatic access</span></div>
-    <div><strong>Linked metadata</strong><span>Methods, publications, DOI links, and review context</span></div>
-    <div><strong>Reproducible reuse</strong><span>Structured records for analysis tools and automated agents</span></div>
-  </div>
-</section>
-
 <script>
   const manifestPromise = fetch("{{ '/datasets_multi.json' | relative_url }}", { cache: 'force-cache' })
     .then(response => response.ok ? response.json() : Promise.reject())
@@ -143,5 +125,23 @@ preload_explorer: true
   </div>
   <div>
     <div class="citation-code">Cong, L., Ji, W. &amp; Budker, D. (2024). Fifth Force Limits. Zenodo. https://doi.org/10.5281/zenodo.14572652</div>
+  </div>
+</section>
+
+<section class="api-panel api-panel-after-citation" aria-labelledby="api-panel-title">
+  <div class="api-panel-copy">
+    <span class="eyebrow">Open research infrastructure</span>
+    <h2 id="api-panel-title">Built for people, software, and automated scientific workflows.</h2>
+    <p>SD5<sup>th</sup>F is more than a collection of downloadable curves. Its versioned, machine-readable records connect numerical constraints to interaction potentials, fermion pairs, experimental methods, and primary literature.</p>
+    <div class="button-row">
+      <a class="button button-primary" href="{{ '/api/' | relative_url }}">API &amp; documentation →</a>
+      <a class="button button-secondary" href="{{ '/api/v1/index.json' | relative_url }}">Open API v1</a>
+      <a class="button button-secondary" href="{{ '/ai-for-science.html' | relative_url }}">Our future vision →</a>
+    </div>
+  </div>
+  <div class="api-capabilities" aria-label="API capabilities">
+    <div><strong>Versioned API</strong><span>Stable v1 endpoints for programmatic access</span></div>
+    <div><strong>Linked metadata</strong><span>Methods, publications, DOI links, and review context</span></div>
+    <div><strong>Reproducible reuse</strong><span>Structured records for analysis tools and automated agents</span></div>
   </div>
 </section>
