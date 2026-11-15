@@ -1,11 +1,26 @@
 ---
 layout: default
-title: Experimental Methods
-description: Browse established experimental methods, linked SD5thF constraint records, and emerging approaches in spin-dependent fifth-force research.
+title: Research Landscape
+description: Enter spin-dependent fifth-force research through theory, particles, experimental methods, and coupling conventions.
 ---
 
 <section class="methods-hero methods-hero-hybrid">
-  <span class="eyebrow">Experimental landscape</span>
+  <span class="eyebrow">Research landscape</span>
+  <h1>Enter the field from different perspectives.</h1>
+  <p>Browse the same research landscape through theoretical interactions, fermion pairs, experimental approaches, or connections to conventions used across axion and new-physics searches.</p>
+</section>
+
+<section aria-label="Research landscape perspectives">
+  <div class="cards cards-four">
+    <a class="card" href="{{ '/Interaction-Categories.html' | relative_url }}"><span class="card-index">01 / THEORY</span><h3>Interaction categories</h3><p>Axial, vector, scalar, pseudoscalar, tensor, and pseudotensor coupling structures.</p><span class="card-arrow">↗</span></a>
+    <a class="card" href="{{ '/Fermion-Pairs.html' | relative_url }}"><span class="card-index">02 / PARTICLES</span><h3>Fermion pairs</h3><p>Navigate constraints across lepton–lepton, lepton–nucleon, and nucleon–nucleon systems.</p><span class="card-arrow">↗</span></a>
+    <a class="card" href="#experimental-methods"><span class="card-index">03 / METHODS</span><h3>Experimental systems</h3><p>Connect bounds to spectroscopy, spin sensors, macroscopic searches, and complementary precision probes.</p><span class="card-arrow">↓</span></a>
+    <a class="card" href="{{ '/Coupling-Relations.html' | relative_url }}"><span class="card-index">04 / TRANSLATIONS</span><h3>Coupling relations</h3><p>Translate SD5<sup>th</sup>F couplings into effective energy scales and axion or ALP conventions.</p><span class="card-arrow">↗</span></a>
+  </div>
+</section>
+
+<section class="methods-hero methods-hero-hybrid" id="experimental-methods">
+  <span class="eyebrow">Experimental methods</span>
   <h1>How spin-dependent fifth forces are searched for</h1>
   <p>Enter the field through the experimental architecture: what produces the possible interaction, what senses it, and which new ideas may extend the search.</p>
   <div class="methods-path" aria-label="How experiments map to database constraints">

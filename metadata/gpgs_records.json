@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T14:25:21.924Z",
+  "generated_at": "2026-11-15T10:44:13.413Z",
   "notice": "Constraint values use the standardized conventions of the RMP review; individual records link the relevant primary literature where available.",
   "records": [
     {
@@ -1705,11 +1705,11 @@
       },
       "curation": {
         "status": "curated",
-        "note": "Primary result linked together with the conversion source."
+        "note": "The factor-of-1/2 correction was confirmed by Wenjing Zhou and Derek F. Jackson Kimball."
       },
       "label": "Jackson Kimball et al. 2017",
       "display_label": "Kimball 2017",
-      "context_note": "This curve presents the primary experimental result as converted to the gₚgₛ framework in Safronova et al. (2018)."
+      "context_note": "The numerical values and interaction convention are taken from Jackson Kimball et al. (2017), including the confirmed factor-of-1/2 correction. Safronova et al. (2018) also uses these data but adopts a different interaction formula; the 2017 primary publication is authoritative here."
     },
     {
       "id": "910safronova-2018-youdin-m-abs-pn-csv",
@@ -1738,6 +1738,19 @@
           "url": "https://doi.org/10.1103/PhysRevLett.77.2170"
         },
         {
+          "citation_key": "jackson_kimball_constraints_2017",
+          "title": "Constraints on Long-Range Spin-Gravity and Monopole-Dipole Couplings of the Proton",
+          "authors": "Jackson Kimball, Derek F. and Dudley, Jordan and Li, Yan and Patel, Dilan and Valdez, Julian",
+          "journal": "Phys. Rev. D",
+          "year": 2017,
+          "volume": "96",
+          "issue": "7",
+          "pages": "075004; $\\textbf107$, 019903(E)",
+          "doi": "10.1103/PhysRevD.96.075004",
+          "doi_url": "https://doi.org/10.1103/PhysRevD.96.075004",
+          "url": "https://doi.org/10.1103/PhysRevD.96.075004"
+        },
+        {
           "citation_key": "safronova_search_2018",
           "title": "Search for New Physics with Atoms and Molecules",
           "authors": "Safronova, M. S. and Budker, D. and DeMille, D. and Kimball, Derek F. Jackson and Derevianko, A. and Clark, Charles W.",
@@ -1759,11 +1772,11 @@
       },
       "curation": {
         "status": "curated",
-        "note": "Primary result linked together with the conversion source."
+        "note": "The factor-of-1/2 correction was confirmed by Wenjing Zhou and Derek F. Jackson Kimball."
       },
       "label": "Youdin et al. 1996",
       "display_label": "Youdin 1996",
-      "context_note": "This curve presents the primary experimental result as converted to the gₚgₛ framework in Safronova et al. (2018)."
+      "context_note": "The numerical values and interaction convention are taken from Jackson Kimball et al. (2017), including the confirmed factor-of-1/2 correction. Safronova et al. (2018) also uses these data but adopts a different interaction formula; the 2017 primary publication is authoritative here."
     },
     {
       "id": "910stadnik-2015-m-abs-pn-csv",

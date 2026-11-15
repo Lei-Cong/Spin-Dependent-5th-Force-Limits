@@ -5,16 +5,66 @@ description: Selected papers relevant to spin-dependent fifth-force searches and
 ---
 <section class="literature-intro">
   <div><span class="eyebrow">Research intelligence</span><h1>Selected literature</h1></div>
-  <p>Recent papers relevant to spin-dependent fifth-force searches, precision measurements, axions, ultralight bosons, and related experimental methods.</p>
+  <p>Recent papers relevant to spin-dependent fifth-force searches, precision measurements, axions, ultralight bosons, and related experimental methods. The published list is shown by default; use the tabs to explore current preprints and accepted manuscripts.</p>
 </section>
+<div class="literature-tabs" role="tablist" aria-label="Literature status">
+  <button type="button" class="literature-tab is-active" id="published-tab" role="tab" aria-selected="true" aria-controls="paper-list" data-section="published">Published</button>
+  <button type="button" class="literature-tab" id="preprints-tab" role="tab" aria-selected="false" aria-controls="paper-list" data-section="preprints">arXiv / Preprints</button>
+</div>
 <div id="status" class="literature-status" aria-live="polite">Loading selected papers…</div>
 <section id="paper-list" class="paper-list" aria-label="Selected papers"></section>
+<section id="reviews" class="literature-reviews" aria-labelledby="reviews-title">
+  <div class="section-heading">
+    <div><span class="eyebrow">Foundational reading</span><h2 id="reviews-title">Review</h2></div>
+    <p>Our field review provides the primary theoretical framework, notation, and taxonomy used by SD5<sup>th</sup>F. Related reviews are included to place the database within the wider research landscape.</p>
+  </div>
+  <a class="featured-review" href="https://doi.org/10.1103/RevModPhys.97.025005" target="_blank" rel="noopener">
+    <div><span class="featured-review-label">The field review · Reviews of Modern Physics</span><h3>Spin-dependent exotic interactions</h3><p>Cong et al. · Rev. Mod. Phys. <strong>97</strong>, 025005 (2025)</p></div>
+    <div><p>The primary reference for the interaction conventions, potential taxonomy, experimental landscape, and standardized framework used throughout the SD5<sup>th</sup>F database.</p><strong>Read the RMP review →</strong></div>
+  </a>
+  <div class="related-review-heading"><span>Related reviews</span><p>Complementary perspectives on spin sensors, experimental searches, and AMO probes of new physics.</p></div>
+  <div class="cards related-review-grid">
+    <a class="card" href="https://doi.org/10.1088/1361-6633/ad99e6" target="_blank" rel="noopener"><span class="card-index">REPORTS ON PROGRESS IN PHYSICS · 2025</span><h3>Searches for exotic spin-dependent interactions with spin sensors</h3><p>Jiang et al. · Spin-sensor principles, platforms, and searches for exotic interactions.</p><span class="card-arrow">↗</span></a>
+    <a class="card" href="https://doi.org/10.1088/1361-6633/ae8919" target="_blank" rel="noopener"><span class="card-index">REPORTS ON PROGRESS IN PHYSICS · 2026</span><h3>Exploring exotic spin-dependent interactions beyond the Standard Model</h3><p>Wu and Yan · Theoretical foundations and experimental investigations.</p><span class="card-arrow">↗</span></a>
+    <a class="card" href="https://doi.org/10.1103/RevModPhys.90.025008" target="_blank" rel="noopener"><span class="card-index">REVIEWS OF MODERN PHYSICS · 2018</span><h3>Search for new physics with atoms and molecules</h3><p>Safronova et al. · A broad AMO perspective on precision tests, dark sectors, and extra forces.</p><span class="card-arrow">↗</span></a>
+  </div>
+</section>
+<style>
+  .literature-tabs{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.25rem 0 .75rem;padding:.35rem;border:1px solid rgba(71,110,132,.22);border-radius:999px;width:max-content;max-width:100%;background:rgba(255,255,255,.55)}
+  .literature-tab{appearance:none;border:0;border-radius:999px;padding:.7rem 1.05rem;background:transparent;color:var(--ink,#102638);font:inherit;font-weight:700;cursor:pointer;transition:background .2s ease,color .2s ease,box-shadow .2s ease}
+  .literature-tab:hover,.literature-tab:focus-visible{background:rgba(24,112,140,.1);outline:none}
+  .literature-tab.is-active{background:#0d566f;color:#fff;box-shadow:0 5px 16px rgba(10,57,76,.16)}
+  .paper-publication{margin-top:.28rem;color:#466273;font-weight:650}
+  .paper-status{display:inline-block;margin-left:.45rem;padding:.15rem .48rem;border-radius:999px;background:#f2dfaa;color:#5a4310;font-size:.76rem;font-weight:800;letter-spacing:.035em;text-transform:uppercase;vertical-align:.08rem}
+  .literature-reviews{margin-top:6rem;padding-top:4rem;border-top:1px solid var(--line,#d9e1e4)}
+  .featured-review{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;margin-bottom:2.2rem;padding:2.6rem 2.8rem;border-radius:16px;background:linear-gradient(135deg,#092b43,#104760);color:#fff;text-decoration:none;box-shadow:0 18px 48px rgba(7,34,52,.16);transition:transform .2s ease,box-shadow .2s ease}
+  .featured-review:hover{transform:translateY(-3px);box-shadow:0 22px 56px rgba(7,34,52,.22)}
+  .featured-review-label{color:#e0b94f;font-size:.76rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+  .featured-review h3{margin:.8rem 0 .7rem;color:#fff;font:600 clamp(2rem,4vw,3.15rem)/1.05 var(--serif);letter-spacing:-.035em}
+  .featured-review p{color:#c6d7df;max-width:650px}
+  .featured-review>div:last-child{display:flex;flex-direction:column;justify-content:center;border-left:1px solid rgba(255,255,255,.16);padding-left:3rem}
+  .featured-review>div:last-child strong{margin-top:1rem;color:#fff}
+  .related-review-heading{display:flex;justify-content:space-between;gap:2rem;align-items:end;margin:3.1rem 0 1.25rem}
+  .related-review-heading span{color:#173449;font:600 1.5rem var(--serif)}
+  .related-review-heading p{margin:0;color:#617580;font-size:.9rem}
+  .related-review-grid{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:850px){.featured-review{grid-template-columns:1fr;gap:1.5rem;padding:2rem}.featured-review>div:last-child{border-left:0;border-top:1px solid rgba(255,255,255,.16);padding:1.5rem 0 0}.related-review-heading{display:block}.related-review-grid{grid-template-columns:1fr}}
+</style>
 <script>
   const escapeHTML = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+  let selectedLiterature={published:[],preprints:[]};
+  let activeSection='published';
+  function renderPapers(){
+    const container=document.getElementById('paper-list');const status=document.getElementById('status');
+    const papers=selectedLiterature[activeSection]||[];
+    const label=activeSection==='published'?'published papers':'arXiv and preprint records';
+    status.textContent=`${papers.length} selected ${label} · curated from the project Zotero library`;
+    container.innerHTML=papers.map(paper=>`<article class="paper"><time class="paper-date">${escapeHTML(paper.published)}</time><div><div class="paper-title"><a href="${escapeHTML(paper.link)}" target="_blank" rel="noopener">${escapeHTML(paper.title)} ↗</a>${paper.status?`<span class="paper-status">${escapeHTML(paper.status)}</span>`:''}</div><div class="paper-meta">${escapeHTML(paper.authors)}</div>${paper.citation?`<div class="paper-publication">${escapeHTML(paper.citation)}</div>`:''}<div class="paper-summary">${escapeHTML(paper.summary)}</div><div>${(paper.tags||[]).map(tag=>`<span class="paper-tag">${escapeHTML(tag)}</span>`).join('')}</div></div></article>`).join('');
+  }
   async function loadPapers(){
     const container=document.getElementById('paper-list');const status=document.getElementById('status');
-    try{const response=await fetch("{{ '/data/latest_arxiv.json' | relative_url }}");if(!response.ok)throw new Error('Request failed');const papers=await response.json();status.textContent=`${papers.length} selected records · updated from the project bibliography`;
-      container.innerHTML=papers.map(paper=>`<article class="paper"><time class="paper-date">${escapeHTML(paper.published)}</time><div><div class="paper-title"><a href="${escapeHTML(paper.link)}" target="_blank" rel="noopener">${escapeHTML(paper.title)} ↗</a></div><div class="paper-meta">${escapeHTML(paper.authors)}</div><div class="paper-summary">${escapeHTML(paper.summary)}</div><div>${(paper.tags||[]).map(tag=>`<span class="paper-tag">${escapeHTML(tag)}</span>`).join('')}</div></div></article>`).join('');
-    }catch(error){status.textContent='';container.innerHTML='<p class="literature-message">The literature feed could not be loaded. Please try again later.</p>';console.error(error)}
+    try{const response=await fetch("{{ '/data/selected_literature.json' | relative_url }}");if(!response.ok)throw new Error('Request failed');selectedLiterature=await response.json();
+      document.querySelectorAll('.literature-tab').forEach(button=>{button.textContent=`${button.dataset.section==='published'?'Published':'arXiv / Preprints'} · ${(selectedLiterature[button.dataset.section]||[]).length}`;button.addEventListener('click',()=>{activeSection=button.dataset.section;document.querySelectorAll('.literature-tab').forEach(tab=>{const active=tab===button;tab.classList.toggle('is-active',active);tab.setAttribute('aria-selected',String(active))});renderPapers()})});renderPapers();
+    }catch(error){status.textContent='';container.innerHTML='<p class="literature-message">The literature list could not be loaded. Please try again later.</p>';console.error(error)}
   }loadPapers();
 </script>

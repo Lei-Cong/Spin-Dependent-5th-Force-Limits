@@ -148,12 +148,12 @@ const records = datasets.map((dataset) => {
     const [, key, label] = converted;
     const magnetometerExperiment = /Kimball|Youdin/.test(filename);
     return { ...common, label, display_label:legendLabel(label), review_location:location,
-      references:[publication(key), publication("safronova_search_2018")],
+      references:[publication(key), ...(key === "jackson_kimball_constraints_2017" ? [] : [publication("jackson_kimball_constraints_2017")]), publication("safronova_search_2018")],
       method:magnetometerExperiment
         ? { category:"dedicated_source_sensor", technique:"magnetometer_experiment", source:"unpolarized_source_mass", sensor:"atomic_magnetometer" }
         : { category:"complementary", technique:"converted primary experimental constraint", source:"", sensor:"" },
-      context_note:"This curve presents the primary experimental result as converted to the gₚgₛ framework in Safronova et al. (2018).",
-      curation:{ status:"curated", note:"Primary result linked together with the conversion source." } };
+      context_note:"The numerical values and interaction convention are taken from Jackson Kimball et al. (2017), including the confirmed factor-of-1/2 correction. Safronova et al. (2018) also uses these data but adopts a different interaction formula; the 2017 primary publication is authoritative here.",
+      curation:{ status:"curated", note:"The factor-of-1/2 correction was confirmed by Wenjing Zhou and Derek F. Jackson Kimball." } };
   }
   const rule = rules.find(([token]) => filename.includes(token));
   if (!rule) throw new Error(`No gpgs metadata rule for ${filename}`);

@@ -1,0 +1,171 @@
+{
+  "published": [
+    {
+      "title": "Testing exotic electron-electron interactions with the helium ionization-energy anomaly",
+      "authors": "Cong et al.",
+      "published": "2026-11-05",
+      "citation": "Physical Review D 114, 095010 (2026)",
+      "summary": "Uses the helium ionization-energy anomaly to test exotic interactions between electrons.",
+      "link": "https://doi.org/10.1103/djwc-193y",
+      "tags": ["electron-electron", "spectroscopy", "published"]
+    },
+    {
+      "title": "Magnetic resonance searches for Earth-sourced exotic nuclear spin-dependent interactions",
+      "authors": "Wang et al.",
+      "published": "2026-09-16",
+      "citation": "Science Advances 12, eaeg0974 (2026)",
+      "summary": "Searches for long-range nuclear-spin-dependent interactions sourced by Earth using magnetic resonance.",
+      "link": "https://doi.org/10.1126/sciadv.aeg0974",
+      "tags": ["Earth source", "magnetic resonance", "spin-dependent"]
+    },
+    {
+      "title": "Constraints on New Vector Boson Mediated Electron-Nucleus Interactions from Spectroscopy Data of Polar Diatomic Molecules",
+      "authors": "Gaul et al.",
+      "published": "2026-05-06",
+      "citation": "Physical Review Letters 136, 181805 (2026)",
+      "summary": "Extracts electron-nucleus constraints on new vector bosons from precision molecular spectroscopy.",
+      "link": "https://doi.org/10.1103/d19m-s856",
+      "tags": ["electron-nucleus", "molecules", "spectroscopy"]
+    },
+    {
+      "title": "Axial-vector leptophilic fifth force sourced by solar neutrinos",
+      "authors": "Fang et al.",
+      "published": "2026-03-25",
+      "citation": "Physical Review D 113, 055041 (2026)",
+      "summary": "Studies an axial-vector leptophilic fifth force sourced by the solar-neutrino flux and its laboratory signatures.",
+      "link": "https://doi.org/10.1103/mrm8-qv1j",
+      "tags": ["axial-vector", "solar neutrinos", "V12+13"]
+    },
+    {
+      "title": "Stringent Constraints on New Pseudoscalar and Vector Bosons from Precision Hyperfine Splitting Measurements",
+      "authors": "Quint et al.",
+      "published": "2026-03-19",
+      "citation": "Physical Review Letters 136, 113001 (2026)",
+      "summary": "Uses precision hyperfine splittings in highly charged ions to constrain new pseudoscalar and vector bosons.",
+      "link": "https://doi.org/10.1103/rvt1-93v2",
+      "tags": ["hyperfine splitting", "pseudoscalar", "vector boson"]
+    },
+    {
+      "title": "Proposal for the search for exotic spin-mass interaction in the micrometer range",
+      "authors": "Wang et al.",
+      "published": "2026-03-18",
+      "citation": "Physical Review D 113, 055029 (2026)",
+      "summary": "Proposes a dedicated micrometer-range search for exotic monopole-dipole spin-mass interactions.",
+      "link": "https://doi.org/10.1103/wp4k-xn53",
+      "tags": ["spin-mass", "micrometer", "V9+10"]
+    },
+    {
+      "title": "New Upper Bounds on Exotic Neutron-Spin–Electron-Spin Interactions via Neutron-Spin-Rotation Measurements in a Compensated Ferrimagnet",
+      "authors": "Mulkey et al.",
+      "published": "2026-02-18",
+      "citation": "Physical Review Letters 136, 071801 (2026)",
+      "summary": "Constrains neutron-electron spin interactions using neutron spin rotation in a compensated ferrimagnet.",
+      "link": "https://doi.org/10.1103/bjw2-fbfc",
+      "tags": ["neutron-electron", "spin rotation", "V2"]
+    },
+    {
+      "title": "Novel torsion-balance approach to probe exotic spin-dependent interactions",
+      "authors": "Jin et al.",
+      "published": "2026-01-30",
+      "citation": "Physical Review D 113, 015043 (2026)",
+      "summary": "Develops a torsion-balance approach for probing velocity- and spin-dependent interactions.",
+      "link": "https://doi.org/10.1103/zqy9-tbqs",
+      "tags": ["torsion balance", "V4+5", "V12+13"]
+    },
+    {
+      "title": "Fermion-Selective Tests of New Physics with the Bound-Electron g Factor",
+      "authors": "Moretti et al.",
+      "published": "2026-01-09",
+      "citation": "Physical Review Letters 136, 011803 (2026)",
+      "summary": "Uses bound-electron g-factor comparisons to perform fermion-selective tests of new interactions.",
+      "link": "https://doi.org/10.1103/zyb6-lvy8",
+      "tags": ["bound-electron g factor", "V1", "precision test"]
+    },
+    {
+      "title": "Exotic-interaction searches on small scales via near-threshold enhancement",
+      "authors": "Kang and Rong",
+      "published": "2025-12-15",
+      "citation": "Physical Review D 112, 115026 (2025)",
+      "summary": "Introduces near-threshold enhancement as a route to amplify short-range exotic-interaction signals.",
+      "link": "https://doi.org/10.1103/ztn5-bg2y",
+      "tags": ["near-threshold enhancement", "electron-electron", "new method"]
+    }
+  ],
+  "preprints": [
+    {
+      "title": "Probing Exotic Electron-Electron Interactions via Adiabatic Spin Inversion in MRFM",
+      "authors": "Li et al.",
+      "published": "2026-11-08",
+      "citation": "arXiv:2611.11367",
+      "summary": "Proposes an MRFM search using adiabatic spin inversion for short-range exotic electron-electron interactions.",
+      "link": "https://arxiv.org/abs/2611.11367",
+      "tags": ["MRFM", "V2", "V3"]
+    },
+    {
+      "title": "Neutron Optical Constraints on Exotic Parity-odd Interactions between Neutrons and Nucleons",
+      "authors": "Kurmangaliyeva et al.",
+      "published": "2026-10-29",
+      "citation": "arXiv:2610.39333",
+      "status": "Submitted to PRC",
+      "summary": "Uses neutron-optical parity-violation measurements to constrain parity-odd neutron-nucleon interactions.",
+      "link": "https://arxiv.org/abs/2610.39333",
+      "tags": ["neutron optics", "neutron-nucleon", "V12+13"]
+    },
+    {
+      "title": "Projected sensitivity of a spinor Bose-Einstein condensate comagnetometer to proton monopole-dipole interactions",
+      "authors": "Zhou, Blas, and Mitchell",
+      "published": "2026-10-15",
+      "citation": "arXiv:2610.22346",
+      "summary": "Evaluates a spinor-BEC comagnetometer for direct proton monopole-dipole searches at submillimeter ranges.",
+      "link": "https://arxiv.org/abs/2610.22346",
+      "tags": ["spinor BEC", "proton", "V9+10"]
+    },
+    {
+      "title": "Atomic structure calculations for constraining new electron-electron forces",
+      "authors": "West and Roberts",
+      "published": "2026-08-27",
+      "citation": "arXiv:2608.26532 · DOI 10.1103/s326-3nvs",
+      "status": "Accepted in PRA",
+      "summary": "Develops atomic-structure calculations for parity-odd electron-electron forces and extracts new bounds.",
+      "link": "https://doi.org/10.1103/s326-3nvs",
+      "tags": ["atomic structure", "electron-electron", "V9+10", "V12+13"]
+    },
+    {
+      "title": "Precision Positronium Spectroscopy as a Test of the Helium Ionization Energy Anomaly",
+      "authors": "Pérez-Ríos and Cassidy",
+      "published": "2026-08-13",
+      "citation": "arXiv:2608.12747",
+      "status": "Accepted in PRL",
+      "summary": "Assesses positronium spectroscopy as an independent test of a possible scalar explanation of the helium anomaly.",
+      "link": "https://arxiv.org/abs/2608.12747",
+      "tags": ["positronium", "helium anomaly", "V1"]
+    },
+    {
+      "title": "New Bounds on Exotic Long-Range Spin-Spin Interactions",
+      "authors": "Clayburn et al.",
+      "published": "2026-06-30",
+      "citation": "arXiv:2607.00200",
+      "summary": "Reports new long-range electron-nucleon bounds using a rotating mercury-cesium comagnetometer and Earth as a spin source.",
+      "link": "https://arxiv.org/abs/2607.00200",
+      "tags": ["Earth source", "V2", "V11"]
+    },
+    {
+      "title": "A Levitated-Magnet Vector Force Sensor for Spin-Dependent Exotic Interactions",
+      "authors": "Amaral et al.",
+      "published": "2026-06-29",
+      "citation": "arXiv:2606.30781",
+      "summary": "Develops a levitated-ferromagnet vector force sensor that separates directional signatures of spin-dependent interactions.",
+      "link": "https://arxiv.org/abs/2606.30781",
+      "tags": ["levitated magnet", "V11", "V12+13"]
+    },
+    {
+      "title": "Axion-Exchange Contribution to the Energy of Lithium-Like Ions",
+      "authors": "Abdullin et al.",
+      "published": "2026-05-12",
+      "citation": "arXiv:2605.12444",
+      "summary": "Calculates axion-exchange energy shifts in lithium-like ions and derives high-mass constraints from precision spectroscopy.",
+      "link": "https://arxiv.org/abs/2605.12444",
+      "tags": ["axion exchange", "lithium-like ions", "V2+V3"]
+    }
+  ]
+}

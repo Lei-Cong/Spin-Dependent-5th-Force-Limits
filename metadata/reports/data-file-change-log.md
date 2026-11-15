@@ -6,6 +6,7 @@ rename is explicitly recorded.
 
 | Date | Coupling | Previous file(s) | Current file | Action and reason |
 | --- | --- | --- | --- | --- |
+| 2026-11-15 | gpgs | `910Safronova_2018_Kimball_m_abs_pN.csv`; `910Safronova_2018_Youdin_m_abs_pN.csv` | Same files, corrected values | The affected p–N constraint values were multiplied by \(1/2\), following confirmation by Wenjing Zhou and Derek F. Jackson Kimball. The same data appear in Safronova et al. (2018), but its interaction formula differs; the convention of Jackson Kimball et al., Phys. Rev. D **96**, 075004 (2017), is used here. |
 | 2026-07-23 | gVgV | `lepton-lepton/3Terrano_2015_m_abs_eN.csv` | `lepton-lepton/3Terrano_2015_m_abs_ee.csv` | Renamed. The result is an electron–electron constraint; `eN` was an incorrect fermion-pair suffix. |
 | 2026-07-23 | gpgs | `lepton-nucleon/910Dzuba_2018_m_abs_eN.csv` | `lepton-nucleon/910Dzuba_2018_m_abs_Ne.csv` | Renamed to encode the ordered fermion pair consistently. The polarized nucleon precedes the unpolarized electron, so the viewer notation is `N-e`. The numerical data are unchanged. |
 | 2026-07-23 | gpgp | `lepton-lepton/3Terrano_2015_m_abs_eN.csv` | `lepton-lepton/3Terrano_2015_m_abs_ee.csv` | Renamed. The result is an electron–electron constraint; `eN` was an incorrect suffix. The numerical data are unchanged. |
