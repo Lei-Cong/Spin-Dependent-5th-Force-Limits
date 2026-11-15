@@ -200,7 +200,7 @@ Then commit and push the updated datasets_multi.json file.
 
 We would like to express our gratitude to Fadeev Pavel, Wei Ji for initiating the idea of this webpage. We sincerely acknowledge Haosen Guan for collecting most of the data. We deeply appreciate Yevgeny Stadnik for supervising the work on astrophysical limits and combined limits. We also extend our heartfelt thanks to Prof. Dmitry Budker for his invaluable support and guidance.
 
-Additionally, we would like to thank all contributors, including Peng-Shun Luo, Wenjing Zhou, and Derek F. Jackson Kimball, and everyone who has provided data, references, and corrections for this repository. Wenjing Zhou and Derek F. Jackson Kimball helped identify and confirm the correction to the p–N constraints derived from the 2017 work.
+Additionally, we would like to thank all contributors, including Peng-Shun Luo, Wenjing Zhou, and Derek F. Jackson Kimball, and everyone who has provided data, references, and corrections for this repository.
 
 ## **Views count:**
 
