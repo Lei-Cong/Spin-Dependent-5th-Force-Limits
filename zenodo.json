@@ -1,21 +1,34 @@
 {
-    "title": "Spin-Dependent Exotic Interactions Dataset",
-    "authors": [
-      {
-        "name": "Lei Cong",
-        "affiliation": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University, Mainz 55128, Germany"
-      },
-      {
-        "name": "Wei Ji",
-        "affiliation": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University, Mainz 55128, Germany"
-      },
-      {
-        "name": "Dmitry Budker",
-        "affiliation": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University, Mainz 55128, Germany"
-      }
-    ],
-    "description": "This dataset contains constraints on spin-dependent exotic interactions.",
-    "keywords": ["new physics", "exotic interactions", "dataset"],
-    "license": "MIT",
-    "version": "1.0.0"
-  }
+  "title": "SD5thF: Spin-Dependent Fifth-Force Limits and Research Platform",
+  "authors": [
+    {
+      "name": "Lei Cong",
+      "affiliation": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University Mainz, 55128 Mainz, Germany"
+    },
+    {
+      "name": "Wei Ji",
+      "affiliation": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University Mainz, 55128 Mainz, Germany"
+    },
+    {
+      "name": "Dmitry Budker",
+      "affiliation": "Helmholtz Institute Mainz, 55099 Mainz, Germany & Johannes Gutenberg University Mainz, 55128 Mainz, Germany"
+    }
+  ],
+  "description": "SD5thF is an open research platform and curated database of experimental constraints on spin-dependent fifth forces, also known as spin-dependent exotic interactions. It provides standardized numerical datasets, interactive limit plots, literature-linked metadata, experimental source and sensor classifications, coupling-convention resources, and a versioned machine-readable API for reproducible research and automated scientific workflows.",
+  "keywords": [
+    "spin-dependent fifth force",
+    "spin-dependent exotic interactions",
+    "fifth force",
+    "axions",
+    "axion-like particles",
+    "new bosons",
+    "precision measurement",
+    "quantum sensing",
+    "experimental constraints",
+    "interactive database",
+    "research data",
+    "API"
+  ],
+  "license": "MIT",
+  "version": "5.0"
+}
