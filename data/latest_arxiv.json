@@ -58,20 +58,6 @@
     "score": 29
   },
   {
-    "title": "Constraints on exotic spin-dependent interactions between electrons from helium fine-structure spectroscopy",
-    "authors": "Filip Ficek, Derek F. Jackson Kimball, Mikhail Kozlov, Nathan Leefer, Szymon Pustelny, Dmitry Budker",
-    "published": "2016-08-20",
-    "summary": "Agreement between theoretical calculations of atomic structure and spectroscopic measurements is used to constrain possible contribution of exotic spin-dependent interactions between electrons to the energy differences between states in helium-4. In particular, constraints on dipole-dipole interactions associated with the exchange of pseudoscalar bosons (such as axions or axion-like particles, ALPs) with masses $10^{-2}~{\\rm eV} \\lesssim m \\lesssim 10^{4}~{\\rm eV}$ are improved by a factor of $\\sim 100$. The first atomic-scale constraints on several exotic velocity-dependent dipole-dipole interactions are established as well....",
-    "link": "https://arxiv.org/abs/1608.05779v2",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dipole-dipole",
-      "spectroscopy"
-    ],
-    "score": 28
-  },
-  {
     "title": "Searches for exotic spin-dependent interactions with spin sensors",
     "authors": "Min Jiang, Haowen Su, Yifan Chen, Man Jiao, Ying Huang, Yuanhong Wang, Xing Rong, Xinhua Peng, Jiangfeng Du",
     "published": "2024-12-04",
@@ -84,19 +70,6 @@
       "EDM"
     ],
     "score": 25
-  },
-  {
-    "title": "Exploring Exotic Spin-Dependent Interactions Beyond the Standard Model: Theoretical Foundations and Experimental Investigations",
-    "authors": "L. Y. Wu, H. Yan",
-    "published": "2026-06-11",
-    "summary": "New interactions mediated by novel particles propose solutions to several important questions in modern physics. Axions serve as examples of such particles; they are lightweight and interact weakly with ordinary matter. This category of particles, including those similar to axions-termed Axion-Like Particles (ALPs)-arises from diverse theoretical frameworks, such as the Peccei-Quinn mechanism addressing the strong CP problem, string theory, and spontaneous supersymmetry breaking. Given their light mass and weak coupling, ALPs are also possible candidates for cold dark matter. Introducing these new interactions mediated by novel particles not only tackles several challenges in modern physics ...",
-    "link": "https://arxiv.org/abs/2606.13318v1",
-    "tags": [
-      "spin-dependent",
-      "axion",
-      "dark matter"
-    ],
-    "score": 23
   },
   {
     "title": "Response of Comagnetometer to Exotic Spin-Dependent Couplings",
@@ -138,5 +111,33 @@
       "EDM"
     ],
     "score": 23
+  },
+  {
+    "title": "Testing Gravity and Predictions Beyond the Standard Model at Short Distances: The Casimir Effect",
+    "authors": "Galina L. Klimchitskaya, Vladimir M. Mostepanenko",
+    "published": "2023-12-03",
+    "summary": "The Standard Model of elementary particles and their interactions does not include the gravitational interaction and faces problems in understanding of the dark matter, dark energy, strong CP violation etc. In continuing attempts to solve these problems, many predictions of new light elementary particles and hypothetical interactions beyond the Standard Model have been made. These predictions can be constrained by many means and, specifically, by measuring the Casimir force arising between two closely spaced bodies due to the zero-point and thermal fluctuations of the electromagnetic field. After a brief survey in the theory of the Casimir effect, the strongest constraints on the power-type ...",
+    "link": "https://arxiv.org/abs/2312.01422v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "dark matter",
+      "Yukawa"
+    ],
+    "score": 23
+  },
+  {
+    "title": "Search for spin-dependent gravitational interactions at the Earth range",
+    "authors": "Shaobo Zhang, Zengli Ba, Denghui Ning, Nianfu Zhai, Zhengtian Lu, Dong Sheng",
+    "published": "2023-03-18",
+    "summary": "Among the four fundamental forces, only gravity does not couple to particle spins according to the general theory of relativity. We test this principle by searching for an anomalous scalar coupling between the neutron spin and the Earth gravity on the ground. We develop an atomic gas comagnetometer to measure the ratio of nuclear spin-precession frequencies between $^{129}$Xe and $^{131}$Xe, and search for a change of this ratio to the precision of 10$^{-9}$ as the sensor is flipped in the Earth gravitational field. The null results of this search set an upper limit on the coupling energy between the neutron spin and the gravity on the ground at 5.3$\\times$10$^{-22}$~eV (95\\% confidence leve...",
+    "link": "https://arxiv.org/abs/2303.10352v1",
+    "tags": [
+      "spin-dependent",
+      "axion",
+      "monopole-dipole",
+      "comagnetometer"
+    ],
+    "score": 21
   }
 ]
